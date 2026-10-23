@@ -150,18 +150,26 @@ Jürinin tarayıcı üzerinden doğrudan deneyimlemesi için geliştirilen `stre
 
 ---
 
-## 🚀 8. Kurulum ve Çalıştırma Komutları
+## 🚀 8. Kurulum ve Çalıştırma Seçenekleri
 
-```powershell
-# 1) Proje klasörüne gidin
-cd "e:\Yazılım\Python\Altar Projesi\NASA_Flame_In_Freefall_2026"
+### 📦 Tek Tıkla Bağımsız `.exe` Programı Oluşturma (PyInstaller Otomatik Derleyici):
+Proje dizininde yer alan **`NASA_EXE_Olustur.bat`** dosyasına çift tıklayarak harici komut yazmaya gerek kalmadan tüm modülleri, fizik motorunu, CustomTkinter stil dosyalarını ve NTRS korpus verilerini otomatik sırayla `dist\NASA_Flame_In_Freefall\NASA_Flame_In_Freefall.exe` programına dönüştürebilirsiniz.
 
-# 2) İnteraktif Web Panosunu (Streamlit) başlatın
-"e:\Gemini API\NASA_Flame_In_Freefall_2026\.venv\Scripts\streamlit.exe" run streamlit_app.py
+### ⚡ Tek Tıkla Çalıştırma (`NASA_Baslat.bat`):
+- Derlenmiş bağımsız `.exe` mevcutsa doğrudan yüksek performansla başlatır.
+- Henüz `.exe` derlenmemişse sistemdeki Python ortamı üzerinden masaüstü arayüzünü sıfır gecikmeyle açar.
 
-# 3) Tam Ekran Masaüstü Uygulamasını (CustomTkinter - 8 Sekme) başlatın
-"e:\Gemini API\NASA_Flame_In_Freefall_2026\.venv\Scripts\python.exe" flame_in_freefall_app.py
+### 💻 Terminal / Python ile Çalıştırma:
+```bash
+# 1) Gerekli kütüphaneleri yükleyin
+pip install -r requirements.txt
+
+# 2) Tam Ekran Masaüstü Karar Destek Platformunu başlatın (CustomTkinter - 8 Sekmeli)
+python flame_in_freefall_app.py
+
+# 3) İnteraktif Web Panosunu başlatın (Streamlit)
+streamlit run streamlit_app.py
 
 # 4) (İsteğe Bağlı) NASA NTRS Korpusunu ve Tam Metinleri Güncelleyin
-"e:\Gemini API\NASA_Flame_In_Freefall_2026\.venv\Scripts\python.exe" korpus_olusturucu.py --tam-metin --maks-tam-metin 80
+python korpus_olusturucu.py --tam-metin --maks-tam-metin 80
 ```

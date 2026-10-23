@@ -35,7 +35,10 @@ MAKS_TAM_METIN_BAYT = 3 * 1024 * 1024    # Tam metin (.txt) için 3 MB üst sın
 MAKS_SORGU_UZUNLUGU = 300
 VARSAYILAN_ZAMAN_ASIMI = 20
 
-PROJE_KLASORU = os.path.dirname(os.path.abspath(__file__))
+if getattr(sys, 'frozen', False):
+    PROJE_KLASORU = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(sys.executable)))
+else:
+    PROJE_KLASORU = os.path.dirname(os.path.abspath(__file__))
 VERI_KLASORU = os.path.join(PROJE_KLASORU, "veri")
 KORPUS_DOSYASI = os.path.join(VERI_KLASORU, "ntrs_korpus.json")
 TAM_METIN_KLASORU = os.path.join(VERI_KLASORU, "tam_metin")

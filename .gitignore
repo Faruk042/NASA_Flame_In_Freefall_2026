@@ -10,6 +10,10 @@ env/
 venv/
 ENV/
 
+# Build & Dist Outputs (Local Builds)
+build/
+dist/
+
 # IDE files
 .idea/
 .vscode/
