@@ -1,0 +1,1326 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.6">
+<meta name="xmp:CreatorTool" content="Acrobat PDFMaker 25 for Word">
+<meta name="pdf:hasXFA" content="false">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_SiteId" content="9274ee3f-9425-4109-a27f-9fb15c10675d">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dc:format" content="application/pdf; version=1.6">
+<meta name="pdf:docinfo:creator_tool" content="Acrobat PDFMaker 25 for Word">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="xmp:CreateDate" content="2026-01-16T08:14:52Z">
+<meta name="pdf:docinfo:custom:SourceModified" content="D:20260112230755">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_SetDate" content="2025-02-19T16:10:59Z">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Tag" content="10, 3, 0, 1">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Method" content="Standard">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_SiteId" content="9274ee3f-9425-4109-a27f-9fb15c10675d">
+<meta name="pdf:hasMarkedContent" content="true">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2026-01-16T08:14:59Z">
+<meta name="pdf:docinfo:creator" content="Haworth, Daniel Connell">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_ActionId" content="80a96a38-9c08-4a61-85b2-ed958dfbe377">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Tag" content="10, 3, 0, 1">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Enabled" content="true">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_ContentBits" content="0">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Name" content="General Business">
+<meta name="pdf:docinfo:producer" content="Adobe PDF Library 25.1.5">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="dc:creator" content="Haworth, Daniel Connell">
+<meta name="dcterms:created" content="2026-01-16T13:14:52Z">
+<meta name="dcterms:modified" content="2026-01-16T13:14:59Z">
+<meta name="xmpMM:DocumentID" content="uuid:f65e0883-23ef-4438-af97-86f323e4034f">
+<meta name="pdf:docinfo:modified" content="2026-01-16T13:14:59Z">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_ContentBits" content="0">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:MetadataDate" content="2026-01-16T08:14:59Z">
+<meta name="dc:language" content="EN-US">
+<meta name="pdf:producer" content="Adobe PDF Library 25.1.5">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="15">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_ActionId" content="80a96a38-9c08-4a61-85b2-ed958dfbe377">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Method" content="Standard">
+<meta name="pdf:hasXMP" content="true">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Enabled" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="pdf:docinfo:custom:MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_Name" content="General Business">
+<meta name="SourceModified" content="D:20260112230755">
+<meta name="MSIP_Label_549ac42a-3eb4-4074-b885-aea26bd6241e_SetDate" content="2025-02-19T16:10:59Z">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:created" content="2026-01-16T13:14:52Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>1 
+ 
+</p>
+<p>Computational Fluid Dynamics Analysis of Flame 
+Dynamics in Partial Gravity Environments in a 
+Rotating Centrifuge 
+</p>
+<p> 
+Ankit Sharmaa,1, Arland Zatania Lojoa,1, Ya-Ting T. Liaoa,*, Paul V. Ferkulb,c, 
+Michael C. Johnstonc 
+ 
+aCase Western Reserve University, Cleveland, Ohio 44106, USA 
+bUniversities Space Research Association, Brook Park, OH 44142, USA 
+</p>
+<p>cNASA Glenn Research Center, Cleveland, OH 44135, USA 
+ 
+ 
+______________________________________________________________ 
+</p>
+<p> 
+Abstract 
+The safety of spacecraft and crew members is a critical concern for space research and exploration missions. It is 
+already known that fire hazards in a microgravity environment present unique challenges, primarily due to the 
+absence of buoyancy, which significantly alters fire behavior. The NASA’s Artemis program, which aims to send 
+humans to the Moon, introduces a new set of challenges due to the Moon partial gravity compared to the Earth. 
+This necessitates a better understanding of fire behavior in partial gravity conditions. However, conducting 
+experiments in true partial gravity environments is challenging, and the use of centrifuges to create artificial 
+partial gravity introduces complications, including the Coriolis force and limitations in chamber size. 
+Consequently, there have been limited studies on flame dynamics in partial gravity. To address these challenges, 
+this research employs Computational Fluid Dynamics (CFD) techniques to investigate flame behavior in a partial 
+gravity environment created by a rotating centrifuge. The numerical model is validated against NASA's previous 
+experiments and provides information on the effects of the Coriolis force and flow recirculation in the chamber. 
+The analysis reveals that the interaction between buoyancy, Coriolis force, and flow recirculation plays a 
+significant role in flame behavior. The flame tilt angle observed in both the experiments and the numerical results 
+is caused by the combined effects of these forces and their variations along the flame length. In conclusion, this 
+research contributes to our understanding of how flames behave in partial gravity environments created by 
+rotating centrifuges. It emphasizes the complexity of flame dynamics in such conditions and provides valuable 
+insights for future centrifuge experiments, with the goal of improving space exploration safety and understanding 
+flame behavior in unique partial gravity environment. 
+ 
+Keywords: Partial gravity; Flames; Coriolis force; Centrifuge. 
+</p>
+<p>______________________________________________________________ 
+*Corresponding author. 
+1Co-first author. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Novelty and Significance Statement 1 
+</p>
+<p>Fire behaviours are non-linear to gravity level. 2 
+While abundant data exists in normal (Earth) and 3 
+microgravity, fire behaviors cannot be interpolated 4 
+using ground and microgravity data. Microgravity 5 
+centrifuge has emerged as an effective experimental 6 
+platform to create partial gravity. This study pioneers 7 
+the numerical examination of flame dynamics in 8 
+artificial partial gravity created by rotating 9 
+centrifuges, revealing how the Coriolis effects and 10 
+flow recirculation inside the chamber may complicate 11 
+the results. The findings provide insights on how to 12 
+interpret existing data and guide the design of future 13 
+</p>
+<p>centrifuge experiments. Through these, this study 14 
+addresses the knowledge gaps in fire dynamics in 15 
+partial gravity environment, and contributes to safety 16 
+and success of future space exploration. 17 
+ 18 
+1. Introduction 19 
+</p>
+<p>The safety of spacecraft and astronauts in space is 20 
+of utmost importance for any space research and 21 
+exploration mission. In addition to various biological 22 
+and physiological challenges, fire hazard is a serious 23 
+concern due to limited evacuation and fire 24 
+suppression options. Furthermore, fire behavior is 25 
+remarkably different in micro- and partial gravities 26 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>2 
+ 
+</p>
+<p>compared to normal gravity due to the reduction (or 1 
+absence) of buoyancy [1–3]. There are situations 2 
+where, for other conditions being the same, 3 
+combustion occurs in reduced gravity but not in 4 
+normal gravity. It has also been observed that steady 5 
+flame spread can be achieved in microgravity in 6 
+concurrent flows [2, 4], whereas on Earth, flame 7 
+spread is usually regarded as an accelerating process 8 
+for typical fuel bed sizes [5–7]. These fundamental 9 
+differences in flame behavior have prompted many 10 
+experimental studies to develop a better 11 
+understanding of fire dynamics in reduced and 12 
+microgravity conditions using drop towers [3, 8], 13 
+parabolic flights [9–12], space shuttles [13], and 14 
+facilities aboard the International Space Station [14–15 
+16]. 16 
+</p>
+<p>For future missions such as NASA’s Artemis 17 
+program, there are plans to send humans to the Moon 18 
+for exploration and research. This program will 19 
+include the establishment of a new space station in 20 
+Lunar orbit (Gateway) and eventually the creation of 21 
+a habitable Lunar base. These new missions bring a 22 
+unique set of challenges due to the gravity level on the 23 
+Moon, which is 1/6th of the Earth’s gravity (ge). It is 24 
+well known that buoyancy plays a significant role in 25 
+fire growth processes in normal gravity [5–7, 17, 18]. 26 
+However, reduced buoyancy conditions in partial 27 
+gravity can create more severe fire hazards compared 28 
+to normal gravity [19–22]. The expected weaker 29 
+buoyant flow in partial gravity can lead to smaller 30 
+convective heat loss and a longer residence time of 31 
+reactants in the flame stabilization zone. As a result, a 32 
+material may be combustible over a wider range of 33 
+oxygen concentrations and pressures in partial gravity 34 
+than in normal gravity. Therefore, studying how a fire 35 
+would behave in these partial gravity conditions 36 
+becomes very important for the safe continuation of 37 
+space exploration in such environments. 38 
+</p>
+<p>There have been only limited studies [1, 9–11, 21, 39 
+22] on partial gravity flame behavior due to difficulty 40 
+in performing experiments in partial gravity 41 
+conditions (e.g., parabolic flights). Feier et al. [9] 42 
+performed upward, and downward flame spread and 43 
+extinction experiments over a thin solid in a partial 44 
+gravity environment created in an airplane flying 45 
+parabolic trajectories. A linearly increasing 46 
+relationship with gravity was observed for flame 47 
+spread rates and pyrolysis lengths with proportionality 48 
+constants dependent on the pressure and sample 49 
+width. They also developed a three-dimensional 50 
+numerical model and obtained good agreement with 51 
+the experiment. Similarly, Kleinhenz et al. 52 
+[10]conducted parabolic flight experiments on 53 
+upward flame spread over thin solid samples in 54 
+different pressure and gravity conditions. Through 55 
+pressure modeling, they successfully corelated the 56 
+flame spread rates to pressures and gravity levels 57 
+(with an empirical exponent for the pressure term, Vf 58 
+~ p1.8g). In a recent study, Konno et al. [11] conducted 59 
+parabolic flight experiments on downward flame 60 
+spread over electric wire samples (i.e., metallic core 61 
+</p>
+<p>wrapped by low-density polyethylene insulation). In 62 
+their results, the limiting oxygen concentrations and 63 
+flame spread rates were deduced and found to have 64 
+different dependencies on gravity levels for different 65 
+oxygen concentrations, forced flow speeds, and wire 66 
+characteristics (e.g., insulation thickness, core 67 
+material). 68 
+</p>
+<p> Another way to generate artificial gravity is by 69 
+using a centrifuge. This technique has been used in 70 
+various previous studies [23–29] to generate hyper 71 
+gravity by rotating the centrifuge in Earth’s normal 72 
+gravity and allowing the sample fixture to swing in 73 
+order to align it with the net acceleration vector. In 74 
+order to generate artificial partial gravity levels, the 75 
+centrifuge needs to be rotated in a microgravity 76 
+facility (e.g., drop tower, sounding rocket). 77 
+</p>
+<p>One of the complications of using a centrifuge 78 
+facility is the introduction of the Coriolis force [20, 79 
+25, 29–31]. When hot combusting gas “rises” toward 80 
+the axis of rotation, it experiences a Coriolis force 81 
+orthogonal to the velocity vector, tilting the flow 82 
+stream and hence the flame away from the radial line. 83 
+In previous hyper gravity centrifuge studies, Coriolis 84 
+force was assumed to cause negligible effects on the 85 
+flame. For example, in the study of Durox et al. [25], 86 
+for a 15 cm-long methane diffusion flame in a 5m-87 
+arm-length centrifuge, the lateral deflection caused by 88 
+the Coriolis effect was deduced to be less than 6 % of 89 
+the flame length. In another study by Altenkirch et al. 90 
+[24], errors caused by the Coriolis effects in flame 91 
+length measurement were considered less than 6 % 92 
+and was neglected. However, these effects have not 93 
+been thoroughly evaluated for microgravity 94 
+centrifuge. Furthermore, burning experiments using a 95 
+centrifuge will need to be contained in a closed 96 
+combustion chamber. If the chamber is not large 97 
+enough, additional challenges, including induced flow 98 
+due to recirculation in the limited space of the 99 
+chamber, and oxygen depletion (especially for thick 100 
+samples), are present. For a microgravity centrifuge, 101 
+the experiment time duration is also limited by the 102 
+hosting microgravity platform (e.g., ~5 s for drop 103 
+tower, 20-30s for parabolic aircraft flights, and 1-5 104 
+minutes for sounding rockets) and operations can be 105 
+costly. Due to these difficulties in setting up an 106 
+artificial partial gravity environment, there have been 107 
+only a handful of experimental studies on flame 108 
+dynamics in partial gravity. 109 
+</p>
+<p> These challenges can be addressed using 110 
+Computational Fluid Dynamics (CFD) techniques to 111 
+understand experiment results and to guide future 112 
+partial gravity tests. Some previous studies have 113 
+developed numerical models for studying partial 114 
+gravity flame spread in parabolic flights [32, 33]. 115 
+However, there is lack of numerical studies that 116 
+specifically investigated the effect of flame behavior 117 
+in the partial gravity environment created using a 118 
+rotating centrifuge, the objective of the present study. 119 
+In this work, a numerical model is developed and 120 
+validated against previous NASA microgravity 121 
+centrifuge experiments [20]], and the effects of 122 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>3 
+ 
+</p>
+<p>Coriolis force and flow recirculation are discussed. 1 
+The developed model, with potential to be extended 2 
+to different chamber geometry and fuel type, can 3 
+serve as a tool to provide suggestions for the design of 4 
+future centrifuge tests. It will also provide information 5 
+on interpreting results from existing and future 6 
+centrifuge burning tests. 7 
+</p>
+<p> 8 
+2. Numerical Model 9 
+</p>
+<p>A numerical model is developed using CFD 10 
+software ANSYS FLUENT 20.1. Details of the 11 
+numerical model can be found in [30, 31]. Below is a 12 
+brief description of the model setup. 13 
+</p>
+<p>The geometry is based on previous experiments 14 
+performed at the NASA Glenn Research Center using 15 
+a microgravity centrifuge operated in a 5.2 s drop 16 
+tower [20]. The experiments consisted of a simulated 17 
+candle (i.e., a wick made of a porous, sintered bronze 18 
+cylinder inserted into a small liquid fuel reservoir) 19 
+mounted horizontally on a turntable (XZ plane) inside 20 
+a dome-shaped chamber as shown in Fig. 1a. Heptane 21 
+liquid fuel was replenished in the wick through 22 
+capillarity as combustion took place. As the chamber 23 
+fell in the drop tower, different artificial gravity levels 24 
+were created by rotating the turntable at different 25 
+angular velocities. Two cameras were fixed inside the 26 
+chamber to record the flame growth process. 27 
+</p>
+<p> 28 
+</p>
+<p> 29 
+Fig. 1. Model geometry: (a) Image of the experimental setup (picture courtesy of NASA) [20]. (b) Chamber CAD model used 30 
+</p>
+<p>in the simulations. 31 
+ 32 
+</p>
+<p>In this numerical study, a CAD model is 33 
+constructed based on the experimental setup, as 34 
+shown in Fig. 1b. Dimensions of the model and wick 35 
+are shown in Fig. 2. The wick is fixed on the rotating 36 
+table such that its tip is at 32 cm from the axis of 37 
+rotation (at x = -32 cm). Heptane fuel is assumed 38 
+</p>
+<p>coming out of the wick at a constant mass flow rate of 39 
+2.083×10-6 kg/s (corresponding to a 100 W candle 40 
+flame [34]). All chamber walls are defined with no-41 
+slip (with respect to the rotating frame) and adiabatic 42 
+conditions. 43 
+</p>
+<p> 44 
+Fig. 2. Two-dimensional sketch of the simulation domain (all dimensions are in cm). 45 
+</p>
+<p> 46 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>4 
+ 
+</p>
+<p>To generate the artificial gravity, the 1 
+computational domain is rotated around the vertical 2 
+(i.e., negative y-) axis. The rotational speeds are 3 
+selected to match the tested conditions in the 4 
+experiments: 0.003 ge, 0.012 ge, 0.075 ge, 0.2 ge, 0.3 5 
+ge, 0.59 ge, and 1 ge (ge: earth gravity = 9.81 m/s2). 6 
+While the wick is located at 32 cm from the axis of 7 
+rotation, the rotational speeds are selected so that the 8 
+desired artificial gravities are achieved at 30 cm since 9 
+this location is approximately the center of the flame. 10 
+</p>
+<p>Conservation of mass, momentum, species and 11 
+energy are solved using Finite Volume Method 12 
+(FVM). Turbulence is modeled using the Reynolds-13 
+averaged Navier–Stokes (RANS) equations with a k-14 
+omega SST model. For the gas-phase combustion, 15 
+single step overall stoichiometric combustion is 16 
+adopted: C7H16 + 11O2 → 8H2O + 7CO2. The reaction 17 
+rate is assumed to be controlled by turbulent mixing 18 
+(fast kinetic) and is calculated using the eddy 19 
+dissipation model. 20 
+</p>
+<p>The initial conditions are set to 300K and zero 21 
+relative velocity (with respect to the rotational 22 
+chamber). This is to mimic the experimental setup. In 23 
+the experiments, the chamber was spun up for a period 24 
+of time before it was dropped (i.e., chamber gas was 25 
+considered to rotate as a solid body). The initial gas 26 
+composition is air. Small traces of combustion 27 
+products (H2O and CO2) are included, as required by 28 
+the eddy-dissipation reaction rate model in Fluent 29 
+(initial mass fraction of the gas: 23.13% O2, 76.77% 30 
+N2, 0.05% H2O, and 0.05% CO2). 31 
+</p>
+<p>Non-uniform meshing is used to optimize 32 
+computational time and resources with finer meshes 33 
+allocated near the wick where the flame is expected to 34 
+grow. Finer meshes are also allocated near the walls 35 
+to resolve the thermal and viscous boundary layers. A 36 
+grid independence study is performed to ensure that 37 
+the mesh resolution is appropriate [30]. Based on the 38 
+results, final mesh selected consists of 8.14 million 39 
+cells with the largest cell of volume 8.89 ×10-7 m3 and 40 
+</p>
+<p>the smallest 8.21 × 10-12 m3. A constant time step of 41 
+0.01 s for a total of 500 timesteps is employed to 42 
+capture 5 seconds of data aligning with the drop tower 43 
+experimental duration. The simulations are performed 44 
+on the Case High Performance Computing Cluster 45 
+using 16 cores and 32 GB memory. The simulation 46 
+time is ~ 16-24 hours for each case. 47 
+</p>
+<p> 48 
+3. Comparisons between Numerical and 49 
+Experimental Results 50 
+</p>
+<p>3.1 Transient flame growth process 51 
+</p>
+<p>Figure 3 shows a side-by-side comparison of the 52 
+flame growth process in the experiment [20] (left 53 
+panes) and in the numerical simulation (right panes) 54 
+for artificial gravity at 0.3 ge. A video version of this 55 
+comparison can be found in the supplemental 56 
+material. Numerical results on the right panes display 57 
+the temperature contour with a 5% oxygen isoline 58 
+(black line). The numerical simulation predicts a close 59 
+resemblance of the flame shape observed in the 60 
+experiment throughout the flame development 61 
+process. After ignition, the flame grew “upwards” 62 
+towards the center of rotation and tilted to the left due 63 
+to the effect of Coriolis force in both the experiment 64 
+and numerical simulation. 65 
+</p>
+<p>When the artificial gravity exceeds 0.075 ge, both 66 
+experimental and numerical results exhibit the 67 
+phenomenon of flame pulsation. This phenomenon 68 
+has been observed for a wide range of fuel types, 69 
+burner diameters, heat release rates, and Reynolds 70 
+numbers [35-39]. Previous study suggested that it is 71 
+caused by Kelvin-Helmholtz instability of the buoyant 72 
+flow [39]. In this study, it is more obvious at a higher 73 
+simulated ge (i.e., larger buoyant flow velocity). To 74 
+illustrate this, Fig. 4 shows one cycle of the pulsation 75 
+in the experiment (top row) and in the numerical 76 
+simulation (bottom row) at 1ge. The corresponding 77 
+video can be found in the supplemental material. 78 
+</p>
+<p> 79 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>5 
+ 
+</p>
+<p> 1 
+Fig. 3. Comparison of the flame growth between experiment [20] (left panes, image curtesy of NASA) and numerical 2 
+</p>
+<p>simulation (right panes). Black lines in the simulation results: isolines of Xo2 = 5%. Artificial gravity level: 0.3 ge. 3 
+ 4 
+</p>
+<p>In Fig. 4, experimental images are 17 ms apart 5 
+(total duration is ~ 0.11s) and the numerical images 6 
+are ~65 ms apart (total duration ~ 0.41 s). The 7 
+numerical simulation significantly underpredicts the 8 
+pulsation frequency (7-9 Hz in the experiments versus 9 
+~2.5 Hz in the numerical results). Multiple possible 10 
+reasons contribute to this discrepancy. Previous 11 
+research for pool fires and candle flames showed that 12 
+the pulsation frequency is negatively corelated to the 13 
+fire power. For pool fires, the pulsation frequency is 14 
+corelated to square root of gravity over the square root 15 
+of pool diameter (𝑓𝑓~�𝑔𝑔/𝐷𝐷) [35]. For a bundle of 16 
+candles, the pulsation frequency decreases linearly 17 
+with the number of candles [36, 37]. It is possible that 18 
+the constant uniform mass flux assumed on the 19 
+wicked surface in the simulations overestimates the 20 
+fire power (and hence the model underpredicts the 21 
+</p>
+<p>pulsation frequency). While this research focuses on 22 
+the Coriolis effect and the overall behavior of the 23 
+flames in the centrifuge, the model can be fine-tuned 24 
+in the future work to capture the pulsation frequency. 25 
+</p>
+<p>Figure 4 shows that in the first half of the pulsation 26 
+cycle (Fig. 4 a-c in the experimental result and Fig. 4 27 
+h-j in the numerical results), the flame is short and 28 
+exhibits a similar shape as in lower artificial gravity 29 
+(e.g., 0.3 ge). At the second half of the cycle (Fig. 4 d-30 
+f and Fig. 4 k-m), the flame bends in the middle with 31 
+the top portion tilting to the left at a larger angle. As 32 
+the flame grows, the bending location moves upward. 33 
+This flame pulsation and bending phenomenon 34 
+observed in the experiment was captured reasonably 35 
+well by the numerical model (except for the pulsation 36 
+frequency). 37 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>6 
+ 
+</p>
+<p> 1 
+Fig. 4. One cycle of flame pulsation in artificial gravity 1 ge in the experiment (a-g) and the simulation result (h-n). 2 
+</p>
+<p>Experimental images are 17 ms apart (total duration is ~ 0.11s). Numerical images are ~65 ms apart (total duration ~ 0.41 s). 3 
+ 4 
+</p>
+<p> 5 
+3.2 Flame shapes at different artificial gravity 6 
+levels 7 
+</p>
+<p>Figure 5 compares the flame profiles at different 8 
+artificial gravities. All simulation images are selected 9 
+at t ~ 1s. For cases where flame pulsation is observed, 10 
+images show the maximum flame length. A strong 11 
+concurrence is observed between the experimental 12 
+(top row) and simulated (bottom row) results. When 13 
+the artificial gravity increases from 0.003 ge to 0.012 14 
+ge, the flame grows in length and transitions from a 15 
+spherical to slightly elongated elliptical shape with no 16 
+obvious tilt. As the artificial gravity increases to 17 
+above 0.075 ge, the flame starts to tilt to the left due to 18 
+the Coriolis effect. 19 
+</p>
+<p>In this study, the blowing velocity on the wick 20 
+surface (in the order of mm/s) is negligible compared 21 
+to the buoyant flow. The Froude number ranges from 22 
+~0.6 to ~0.002 and the flame is considered as 23 
+buoyancy controlled in all simulated cases [40, 41]. In 24 
+Reynolds–Froude scaling analysis, flame length is 25 
+negatively correlated to the gravity level (e.g., ~𝑔𝑔−1/5 26 
+by Delichatsios [40], ~𝑔𝑔−1/3 by Altenkirch et al. [42] 27 
+and by D. Li et al. [41]). In the previous hyper gravity 28 
+centrifuge experiments by Durox et al. [25], methane-29 
+air jet diffusion flame length was observed to decrease 30 
+with 𝑔𝑔−1/3 for gravity level greater than 2 ge, 31 
+consistent with the Reynolds–Froude scaling analysis. 32 
+However, between 1 ge to 2 ge, the flame length was 33 
+observed to remain constant or even slightly increase 34 
+with the gravity. They attributed this to interactions 35 
+between vortices above the flame and the tip of the 36 
+reaction zone. In the study of Sunderland et al. [28], 37 
+flame lengths of laminar hydrogen, methane, ethane, 38 
+</p>
+<p>and propane flames from various experiments were 39 
+comprehensively examined. The collected data 40 
+covered a wide range of gravity level (1–15 ge). Their 41 
+results showed that the Reynolds scaling (i.e., non-42 
+dimensional flame length scales with Re) accurately 43 
+correlated the flame length measurements at both 44 
+Earth and elevated gravity, within experimental 45 
+uncertainties. They concluded that the stoichiometric 46 
+flame lengths at normal and elevated gravity are 47 
+independent of the gravity level. This is also 48 
+consistent with the observations for simulated partial 49 
+gravity above 0.012 ge in this study. 50 
+</p>
+<p>Notice that in Fig. 5, the tilt angles remain similar 51 
+in all tested artificial gravity levels. This is because 52 
+the Coriolis effect and artificial gravity are both 53 
+positively correlated to the rotational angular velocity 54 
+(to be discussed further later). In the previous hyper 55 
+gravity centrifuge study by Durox et al. [25], 56 
+differential analysis was performed to estimate 57 
+deflection of the streamlines in burned gases, caused 58 
+by the Coriolis effect. To simplify the analysis, they 59 
+used constant gas density and gravity acceleration 60 
+along the streamline, which was a reasonable 61 
+approach for their large rotating radius. Based on their 62 
+analysis, the lateral deflection at the flame tip can be 63 
+predicted as: 64 
+</p>
+<p>𝐿𝐿𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑 = 2√2
+3
+�𝑅𝑅 𝜌𝜌𝑓𝑓−𝜌𝜌∞
+</p>
+<p>𝜌𝜌𝑓𝑓
+�
+−1/2
+</p>
+<p>(𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝐿𝐿𝑑𝑑)3/2 (1) 65 
+</p>
+<p>where R is the rotating radius, 𝐿𝐿𝑑𝑑 is the flame 66 
+</p>
+<p>length, and 𝑠𝑠 is the inclination angle of the sample 67 
+fixture from the vertical (Earth gravity) direction. In 68 
+their experiments, the sample fixture was allowed to 69 
+swing freely to align the sample with the net 70 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>7 
+ 
+</p>
+<p>acceleration vector. As the rotational velocity 1 
+increased, 𝑠𝑠 increased, resulting in a larger deflection 2 
+due to Coriolis. 3 
+</p>
+<p>For the microgravity centrifuge experiments in this 4 
+study, 𝑠𝑠 is constant (90°). Based on Eq. 1, the lateral 5 
+deflection at the flame tip should remain constant, 6 
+consistent with the observation in Fig. 5 (except for 7 
+the two cases near microgravity: 0.003 and 0.012 ge, 8 
+where flame tilting is not obvious). Note that while 9 
+not reported in this paper, simulations were also 10 
+performed at hypergravity level of 2 ge, and the 11 
+preliminary results showed that the flame tilt angle 12 
+remained similar. 13 
+</p>
+<p>With R = 30 cm and a constant flame temperature 14 
+of 1500K, (𝜌𝜌 − 𝜌𝜌∞)/𝜌𝜌 ≈ 4 , for a 8.5 cm flame 15 
+length, the lateral deflection at the flame tip and the 16 
+flame tilt angles are estimated at 2.07 cm and 13.7° 17 
+respectively. The estimated tilt angle is smaller than 18 
+those observed in Fig. 5. The discrepancy is suspected 19 
+to be due to the constant gravitational acceleration 20 
+assumption in the analysis in [25]. For a small 21 
+chamber, centrifugal acceleration decreases as the hot 22 
+gas moves towards the rotating center. In the 23 
+meantime, the buoyant flow increases along the flame 24 
+</p>
+<p>length. As a result, the ratio between Coriolis and 25 
+buoyancy acceleration increases. The simplified 26 
+differential analysis, while providing reasonable 27 
+estimates of the flame shape, did not account for 28 
+variation of gravitational acceleration along the flame 29 
+length, which will be discussed further in this study in 30 
+the next section. The flame tilt angles are further 31 
+compared quantitatively through visual inspection as 32 
+shown in Fig. 5. Three angles are defined: angle A, 33 
+depicted by the red line, characterizes the overall 34 
+flame tile angle (from the vertical line) and is deduced 35 
+in all cases (except for 0.003 ge); angle B (the blue 36 
+line) and angle C (the purple line), the flame bottom 37 
+and top tilt angles, are defined in cases with larger 38 
+artificial gravities (0.59 ge and 1 ge). These angles are 39 
+compared in Fig. 6. Notably, the predicted angles 40 
+matched the experimental observations well (≤ 6°) 41 
+for artificial gravity less than 0.59 ge. However, angles 42 
+for the larger artificial gravies (0.59 ge and 1 ge) are 43 
+underestimated. This discrepancy is suspected to be 44 
+due to flow recirculation inside the chamber in the 45 
+simulation results (to be explained further). 46 
+</p>
+<p> 47 
+</p>
+<p> 48 
+</p>
+<p> 49 
+Fig. 5. Comparison of the flame shape in different artificial gravity levels (top: experiments [20], image courtesy of NASA; 50 
+</p>
+<p>bottom: simulations). Black lines in the simulations: isolines of Xo2 = 5%. All simulation images are chosen at t ~ 1s. For cases 51 
+where flame pulsation is observed, images show the maximum flame length. The degree angles marked in the images denote 52 
+</p>
+<p>the flame tile angles from the vertical line. 53 
+ 54 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>8 
+ 
+</p>
+<p> 1 
+Fig. 6. Comparison of the flame tilt angles (defined in Fig. 2 
+5) in different artificial gravity levels (experiment [20] and 3 
+present simulation). Error bars for Experimental Angle A 4 
+</p>
+<p>denote the variation of the maximum angle in the 5 
+experiments. 6 
+</p>
+<p> 7 
+</p>
+<p>4. Results and Discussions 8 
+</p>
+<p>4.1 Artificial gravity and Coriolis effect 9 
+</p>
+<p>As the centrifuge operates in the microgravity 10 
+environment of the drop tower, it remains unaffected 11 
+by Earth's standard gravitational force (ge). However, 12 
+all objects and entities within the rotating centrifuge 13 
+chamber encounter an outward centrifugal 14 
+acceleration, 𝑔𝑔𝑑𝑑����⃗ , along the radius of the centrifuge 15 
+which acts as artificial gravity. 16 
+</p>
+<p> 17 
+𝑔𝑔𝑑𝑑����⃗ = −Ω��⃗ × (Ω��⃗ × 𝑟𝑟) = −Ω2𝑟𝑟 (2) 18 
+</p>
+<p> 19 
+Here Ω��⃗ is the angular velocity (rad/s) of the 20 
+</p>
+<p>rotating centrifuge, and 𝑟𝑟 is the position vector (𝑟𝑟 = 0 21 
+is the axis of rotation). The artificial gravity varies 22 
+along the radius of the centrifuge due to its 23 
+dependence on position vector 𝑟𝑟 (Eq. 1). Figure 7 24 
+shows the vectors of the artificial (centrifugal) gravity 25 
+corresponding to the case of 1 ge (Ω = 5.72 rad/s). In 26 
+this case, for a flame with a flame length ~ 6.4 cm, the 27 
+artificial gravity varies from ~ 8.13 to 9.80 m/s2 (i.e., 28 
+83% - 100 % of the desired artificial gravity level) in 29 
+the flame region. The variation of the gravity along 30 
+the flame can be more significant for a centrifuge with 31 
+a shorter rotating arm. 32 
+</p>
+<p>After combustion is initiated near the wick surface, 33 
+hot combustion products rise to the rotating center due 34 
+</p>
+<p>to the artificial gravity buoyancy force. In the 35 
+meantime, the Coriolis force tilts the flame in the 36 
+tangential direction as seen in Fig. 5. The Coriolis 37 
+acceleration (�⃗�𝑎𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪) is calculated as below: 38 
+ 39 
+</p>
+<p>�⃗�𝑎𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪 = −2Ω��⃗ × �⃗�𝑣𝑟𝑟 (3) 40 
+ 41 
+</p>
+<p> 42 
+Fig. 7. Distribution of the artificial gravity on the 43 
+</p>
+<p>rotating table in the case of 1ge artificial gravity. Red line: 44 
+isolines of Xo2 = 5%. Vectors denote the direction, and the 45 
+color contours denote the magnitude of the acceleration. 46 
+</p>
+<p>The lengths of the vectors are also proportional to the 47 
+magnitude of the acceleration. 48 
+</p>
+<p> Here, �⃗�𝑣𝑟𝑟 is the velocity vector, relative to the 49 
+rotating frame. The magnitudes of �⃗�𝑣𝑟𝑟 and 50 
+�⃗�𝑎𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪 are shown in Figs. 8a and 8b, respectively 51 
+using the color contours. The directions of these 52 
+vectors are also indicated using the “streamlines” in 53 
+the plots. The effect of Coriolis force can be seen as 54 
+the flame is being pushed tangentially in the negative 55 
+z-direction (Fig. 8b). Note that the Coriolis 56 
+acceleration acts perpendicularly to the velocity as 57 
+expected based on Eq. 2. Also note that all velocities 58 
+and accelerations in this work are reported with 59 
+respect to the rotating reference frame. 60 
+</p>
+<p>Figure 9 further compares the maximum Coriolis 61 
+acceleration in different artificial gravities. It shows 62 
+that the Coriolis acceleration increases linearly with 63 
+the artificial gravity. This explains the roughly 64 
+constant flame tilt angles in different cases in Fig. 5 65 
+and will be further discussed in the next sections. 66 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>9 
+ 
+</p>
+<p> 1 
+Fig. 8. Direction (indicated by the white lines with arrows) and magnitude (shown as the color contours) of relative velocity 2 
+</p>
+<p>(in a) and Coriolis acceleration (in b) for artificial gravity 1 ge. 3 
+ 4 
+</p>
+<p> 5 
+Fig. 9. Maximum Coriolis acceleration vs. artificial gravity 6 
+level. Vertical lines represent range of maximum Coriolis 7 
+</p>
+<p>acceleration during flame pulsations. 8 
+ 9 
+ 10 
+4.2 Flame tilt angles 11 
+</p>
+<p>To understand the flame tilting phenomenon, 12 
+computational results are further analyzed to deduce 13 
+the buoyancy force, the Coriolis force, and their 14 
+variation along the flame length. Buoyancy force (𝐹𝐹𝐵𝐵����⃗ ) 15 
+per unit volume is evaluated using the following 16 
+equation: 17 
+</p>
+<p> 18 
+𝐹𝐹𝐵𝐵����⃗ ~ (𝜌𝜌 − 𝜌𝜌0)𝑔𝑔𝑑𝑑����⃗ (4) 19 
+</p>
+<p> 20 
+</p>
+<p>Where 𝜌𝜌0 is the density of the ambient air at 300K 21 
+and 𝜌𝜌 is the local density. Coriolis force (𝐹𝐹𝐶𝐶����⃗ ) per unit 22 
+volume is evaluated using the following equation: 23 
+ 24 
+</p>
+<p>𝐹𝐹𝐶𝐶����⃗ = 𝜌𝜌�⃗�𝑎𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪𝑪=−2Ω��⃗ × 𝜌𝜌�⃗�𝑣𝑟𝑟 (5) 25 
+ 26 
+</p>
+<p>Figure 10 shows the buoyancy force 𝐹𝐹𝐵𝐵����⃗ , Coriolis 27 
+force 𝐹𝐹𝐶𝐶����⃗ (estimated using Eqs. 3 and 4 respectively), 28 
+their confined force 𝐹𝐹𝑁𝑁����⃗ = 𝐹𝐹𝐵𝐵����⃗ + 𝐹𝐹𝐶𝐶����⃗ , and the gas 29 
+temperature (color contours) for the 0.3 ge and 1 ge 30 
+cases. On Fig. 10c, it is clear that the resultant net 31 
+force determines the tilt angle of the flame. To 32 
+estimate the tilt angle, the angle of the net force, 𝑠𝑠 =33 
+tan−1(−𝐹𝐹𝑁𝑁,𝑧𝑧/𝐹𝐹𝑁𝑁,𝑥𝑥) is calculated. The variations of 34 
+local temperature, gas density, flow velocity, together 35 
+with the estimated forces and flame tilt angle are 36 
+plotted along the flame length in Figs. 11 and 12 for 37 
+0.3 ge and 1 ge respectively. 38 
+</p>
+<p>Figure 11a shows that, in the lower artificial 39 
+gravity case (0.3 ge), away from the wick surface (x = 40 
+x1), the gas temperature increases, reaches a 41 
+maximum (at x2), and then decreases. As a result, the 42 
+local density reaches a minimum and the buoyant flow 43 
+a maximum near the tip of the flame (at x2). Because 44 
+the variations of the buoyant flow velocity (𝑢𝑢) and the 45 
+gas density (𝜌𝜌) have opposite trends, flow momentum 46 
+(𝜌𝜌𝑢𝑢) remain roughly constant, resulting in roughly 47 
+constant Coriolis force along the flame length (see Eq. 48 
+4), as shown in Fig. 11b. 49 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>10 
+ 
+</p>
+<p> 1 
+Fig. 10. Temperature contours (color) and force vectors (white arrows) for 0.3ge and 1 ge cases. (a) Buoyancy force. (b) 2 
+</p>
+<p>Coriolis force. (c) Combined force. Red lines are the iso-lines for oxygen molar fraction at 5%, 10%, and 15%. 3 
+</p>
+<p> 4 
+Fig. 11. Flow velocity, density, temperature, Coriolis force, buoyancy force, and angle of the net force along the flame length 5 
+</p>
+<p>for the 0.3 ge flame. 6 
+ 7 
+</p>
+<p>The variation of 𝑠𝑠 along the flame length in the 8 
+0.3 ge case, plotted in Fig. 11b, shows that the net 9 
+force is acting on the flame at a roughly constant angle 10 
+of 20°. This is consistent with the visual inspection of 11 
+the flame images in Fig. 5. 12 
+</p>
+<p>The results for the 1 ge case are shown in Fig. 12. 13 
+Similar to the 0.3 ge case, the gas temperature and 14 
+hence the buoyancy force increase, reach maximum 15 
+values, and then decrease along the flame length. 16 
+However, the Coriolis force exhibits a different 17 
+variation compared to the 0.3 ge case. At the flame 18 
+bottom (between x1 and x2), at this larger artificial 19 
+gravity level, the increase of the buoyant flow velocity 20 
+is more significant compared to the decrease of the 21 
+</p>
+<p>local density. As a result, the flow momentum and 22 
+hence the Coriolis force increase with the flow 23 
+velocity. In the middle portion of the flame (between 24 
+x2 and x3), the flow velocity and the Coriolis force 25 
+decrease slightly before increasing again. This is due 26 
+to the dynamic effects of the flame pulsation (a bubble 27 
+of higher speed flow rises up to the flame tip in each 28 
+pulsation cycle). After that (between x3 and x4), as the 29 
+flame temperature drops, buoyant flow velocity 30 
+decreases gradually along the flame length while the 31 
+gas density increases at a faster rate. As a result, the 32 
+flow momentum and the Coriolis force increases 33 
+throughout the remaining flame region. 34 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>11 
+ 
+</p>
+<p> 1 
+Fig. 12. Flow velocity, density, temperature, Coriolis force, buoyancy force, and angle of the net force along the flame length 2 
+</p>
+<p>for the 1 ge flame. 3 
+ 4 
+</p>
+<p>When inspecting the net force and its angle (shown 5 
+in Fig. 10c and Fig. 12b), the flame tilt angle is 6 
+predicted to remain roughly constant at 20° at the 7 
+bottom portion of the flame (between x1 and x2). In 8 
+the top portion of the flame (between x3 and x4), the 9 
+buoyancy force responsible for keeping the flame 10 
+vertical starts diminishing along the flame length (due 11 
+to decrease in gas temperature) while the Coriolis 12 
+force intensifies (due to increase in density and 13 
+comparatively lesser decrease in relative velocity). 14 
+This results in a more pronounced tilt of the flame 15 
+towards the direction of Coriolis force and explains 16 
+the second bending angle observed in cases with 17 
+larger artificial gravities in Fig. 5. Near the flame tip 18 
+(x = x4), the angle of the net force reaches ~40°. These 19 
+</p>
+<p>predicted flame tilt angles are once again consistent 20 
+with the observation in Fig. 5. 21 
+</p>
+<p>Notably, the magnitudes of buoyancy and Coriolis 22 
+forces are very different in 1 ge and 0.3 ge, as shown 23 
+in Fig. 13. This is because both Buoyancy and 24 
+Coriolis forces are positively corelated to the artificial 25 
+gravity level (Eqs. 3 and 4). Also note that in all 26 
+simulated cases, flows exhibit tangential component 27 
+in the flame region (see Fig. 7). This tangential 28 
+component of the flow leads to Coriolis acceleration 29 
+in the radial direction because the Coriolis force 30 
+always acts orthogonally to the flow direction. If the 31 
+radial component of the Coriolis force is comparable 32 
+to the centrifugal acceleration, it will contaminate the 33 
+artificial gravity and should not be overlooked. 34 
+</p>
+<p> 35 
+Fig. 13. Comparison of buoyancy and Coriolis forces for 1ge and 0.3ge. 36 
+</p>
+<p> 37 
+ 38 
+</p>
+<p>4.3 Flow recirculation 39 
+</p>
+<p>Since the chamber is closed, buoyant flows can 40 
+eventually recirculate back to the flame region and 41 
+affect the flame behaviors. To explore this, 42 
+simulations are extended to 7s (~ 2s longer than the 43 
+original drop tower experiment duration). Figure 14 44 
+</p>
+<p>compares the flame growth and dynamics of the flow 45 
+for the 1 ge case at 1s and 7s. In this study, the 46 
+centrifuge is rotating clockwise (viewed from the top), 47 
+the Coriolis force is always to the left with respect to 48 
+the flow direction. This results in a counterclockwise 49 
+circulation of the flow (see the white streamlines in 50 
+Fig. 14). 51 
+</p>
+<p> 52 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>12 
+ 
+</p>
+<p> 1 
+Fig. 14. Contours and streamlines of flow velocity for 1 ge at 1s and 7s. 2 
+</p>
+<p> 3 
+From Fig. 14, it appears that this establishment of 4 
+</p>
+<p>recirculation flow within the chamber eventually 5 
+pushes the flame towards right (+Z) i.e., in the 6 
+direction opposite to the Coriolis force. This 7 
+recirculating flow can also contribute to the 8 
+underestimation of the flame angles (Angles B and C) 9 
+in Fig. 5. 10 
+</p>
+<p>Notably, this process of flame tilting in the 11 
+opposite direction was not observed in the 12 
+experiments. It is because the recirculation effect only 13 
+becomes prominent in the simulation after ~ 5s (7 s 14 
+for 1ge and longer for lower artificial gravity cases) 15 
+while the experiments durations were limited to 5.2 s. 16 
+</p>
+<p>Another factor that has likely reduced or 17 
+eliminated the recirculating flow in the experiments is 18 
+the presence of equipment such as cameras, sensors, 19 
+cables, and other materials within the chamber. These 20 
+components act as obstructions disturbing the 21 
+recirculation flow and preventing the recirculating 22 
+flow from pushing the flame to the opposite direction. 23 
+</p>
+<p>It is important to note that the simulation results 24 
+presented in this study assume that the chamber is 25 
+empty and does not consist of any obstructions, except 26 
+the liquid wick. In additional simulations with random 27 
+obstructions inside the chamber [30], flow 28 
+recirculation is not observed even at longer durations. 29 
+</p>
+<p> 30 
+5. Conclusions and Future Works 31 
+</p>
+<p>A numerical model is developed to investigate the 32 
+dynamics of flames in simulated partial gravity 33 
+environments in a microgravity centrifuge. The 34 
+objective is to develop fundamental understanding of 35 
+how the Coriolis force affects the flame 36 
+characteristics. Various artificial partial gravity levels 37 
+ranging from 0.003 ge to 1 ge are achieved by 38 
+adjusting the centrifuge's rotational speed. 39 
+Simulations are compared with previous NASA’s 40 
+experiments and the effects of Coriolis force and flow 41 
+</p>
+<p>recirculation are presented. Key findings are as 42 
+follows. 43 
+</p>
+<p>The model is shown to be able to capture the 44 
+overall fire behavior observed in the experiments. 45 
+This includes the flame shapes and flame tilt angles at 46 
+different artificial gravity levels. Flame pulsation and 47 
+bending behaviors at larger artificial gravities are also 48 
+captured. However, the pulsation frequency is 49 
+underestimated. Further tuning of the model is 50 
+warranted to further investigation on the pulsation 51 
+phenomenon. 52 
+</p>
+<p>In both experimental and numerical results, as the 53 
+artificial gravity increases from 0.003 ge to 0.012 ge, 54 
+flame transits from spherical to elongated shapes. At 55 
+0.075 ge, the flame starts exhibiting lateral tilting due 56 
+to Coriolis effect, and at and above 0.59 ge, the flame 57 
+exhibits two-angle bending phenomenon. Detailed 58 
+examinations of local Coriolis and buoyancy forces 59 
+provided insights into the transition of flame shapes. 60 
+The Coriolis force tilts the flame in the tangential 61 
+direction while the buoyancy force is responsible for 62 
+keeping the flame vertical. The Coriolis acceleration 63 
+and the buoyancy forces are both positively corelated 64 
+to the artificial gravity level. As a result, the flame tilt 65 
+angle remains similar in all simulated artificial 66 
+gravities. 67 
+</p>
+<p>The variations in temperature, density, velocity, 68 
+and various forces along the flame length are 69 
+examined in details. For all simulated artificial 70 
+gravities, the buoyancy force, directly linked to the 71 
+gas temperature, initially rises, reaches a maximum in 72 
+the flame region, and subsequently diminishes. 73 
+Conversely, the Coriolis force, influenced by flow 74 
+momentum exhibits different trends in lower and 75 
+higher artificial gravities. At low ge, the Coriolis force 76 
+remains roughly constant along the flame length. For 77 
+artificial gravity at 0.59 ge and higher, the Coriolis 78 
+force remains similar in the bottom portion of the 79 
+flame but increases in the top portion of the flame due 80 
+to the increase in the local density and comparatively 81 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>13 
+ 
+</p>
+<p>lesser decrease in relative velocity. This increase in 1 
+the Coriolis force contributes to the more pronounced 2 
+tilt of the flame and explains the flame bending 3 
+phenomenon observed in the experiments at the 4 
+corresponding artificial gravity levels. 5 
+</p>
+<p>Potential impact of flow recirculation within the 6 
+combustion chamber's confined volume are also 7 
+analyzed. It is observed that flow recirculation in the 8 
+limited volume of the combustion chamber affects the 9 
+flame behavior. For artificial 1ge simulated case, the 10 
+flame is tilted to the left in the direction of Coriolis 11 
+force for the first five seconds, after which the 12 
+recirculating flow overcomes the Coriolis 13 
+acceleration and pushes the flame back to its neutral 14 
+position (i.e., being straight). However, this was not 15 
+observed in the experiments because of the short 16 
+duration and equipment components disturbing the 17 
+recirculation flow. Nevertheless, it is imperative not 18 
+to overlook these factors when assessing the overall 19 
+dynamics of the system. 20 
+</p>
+<p>To conclude, the developed numerical model can 21 
+be used for the examination of flame dynamics within 22 
+a simulated partial gravity environment, thereby 23 
+providing important inputs for designing future 24 
+centrifuge partial gravity experiments. However, it 25 
+should be noted that the observations in this numerical 26 
+study are based on the specific setup (e.g., chamber 27 
+size, fuel source arrangement and location) in the 28 
+previous NASA experiments. To extend the model to 29 
+different chamber and fuel arrangement, 30 
+modifications of initial and boundary conditions will 31 
+be required. It should also be noted that the current 32 
+model does not include radiation and soot formation, 33 
+and it assumes a constant mass flow rate of the fuel 34 
+source, overlooking heat feedback from the flame and 35 
+simplifying experimental conditions. Although it 36 
+provides a good estimate of overall fire dynamics, 37 
+incorporating flame and soot formation, and a user-38 
+defined function for simulating fuel evaporation rate 39 
+in the future work will offer further insights into the 40 
+impact of artificial gravity on the detailed flame 41 
+structure. This consideration will be part of our future 42 
+studies. 43 
+ 44 
+ 45 
+Authorship Contribution Statement 46 
+</p>
+<p>• A. S.: investigation, formal analysis, writing - 47 
+original draft, visualization. 48 
+</p>
+<p>• A. Z. L.: investigation, formal analysis, writing - 49 
+original draft, visualization. 50 
+</p>
+<p>• Y.-T. T. L.: conceptualization, investigation, 51 
+resources, writing - review &amp; editing, supervision, 52 
+project administration, funding acquisition. 53 
+</p>
+<p>• P. V. F.: provided experimental data, provided 54 
+science inputs, writing - review &amp; editing. 55 
+</p>
+<p>• M. C. J.: provided science inputs, writing - review 56 
+&amp; editing. 57 
+</p>
+<p> 58 
+Declaration of Competing Interest 59 
+</p>
+<p>The authors declare that they have no known 60 
+competing financial interests or personal relationships 61 
+that could have appeared to influence the work 62 
+reported in this paper. 63 
+</p>
+<p> 64 
+Acknowledgments 65 
+</p>
+<p>This work is supported by NASA Glenn Research 66 
+Center under Award #NNX16AL61A and Award 67 
+#80NSSC22M0011. This numerical study made use 68 
+of the High-Performance Computing Resource in the 69 
+Core Facility for Advanced Research Computing at 70 
+Case Western Reserve University. 71 
+ 72 
+Supplementary Material 73 
+</p>
+<p>S1. Video of the flame growth in artificial gravity 0.3 74 
+ge in the experiment and the simulation results. 75 
+</p>
+<p>S2. Video of flame pulsation in artificial gravity 1 ge 76 
+in the experiment and the simulation results. 77 
+</p>
+<p> 78 
+References 79 
+</p>
+<p>[1] K.R. Sacksteder, J.S. Tien, Buoyant downward 80 
+diffusion flame spread and extinction in partial-gravity 81 
+accelerations, Symp. Int. Combust. 25 (1994) 1685–82 
+1692. 83 
+</p>
+<p>[2] D.L. Urban, P. Ferkul, S. Olson, G.A. Ruff, J. Easton, 84 
+J.S. T’ien, Y.-T.T. Liao, C. Li, C. Fernandez-Pello, J.L. 85 
+Torero, G. Legros, C. Eigenbrod, N. Smirnov, O. 86 
+Fujita, S. Rouvreau, B. Toth, G. Jomaas, Flame spread: 87 
+effects of microgravity and scale, Combust. Flame 199 88 
+(2019) 168–182. 89 
+</p>
+<p>[3] S.L. Olson, P.V. Ferkul, J.S. T’ien, Near-limit flame 90 
+spread over a thin solid fuel in microgravity, Symp. Int. 91 
+Combust. 22 (1989) 1213–1222. 92 
+</p>
+<p>[4] X. Zhao, Y.-T.T. Liao, M.C. Johnston, J.S. T’ien, P.V. 93 
+Ferkul, S.L. Olson, Concurrent flame growth, spread, 94 
+and quenching over composite fabric samples in low 95 
+speed purely forced flow in microgravity, Proc. 96 
+Combust. Inst. 36 (2017) 2971–2978. 97 
+</p>
+<p>[5] G. H. Markstein, J. de Ris, Upward fire spread over 98 
+textiles, Symp. Int. Combust. 14 (1973) 1085–1097. 99 
+</p>
+<p>[6] A. C. Fernandez-Pello, A theoretical model for the 100 
+upward laminar spread of flames over vertical fuel 101 
+surfaces, Combust. Flame 31 (1978) 135–148. 102 
+</p>
+<p>[7] L. K. Honda, P. D. Ronney, Mechanisms of 103 
+concurrent-flow flame spread over solid fuel beds, 104 
+Proc. Combust. Inst. 28 (2000) 2793-2801. 105 
+</p>
+<p>[8] A. Carney, Y. Li, Y.-T. Liao, S. Olson, P. Ferkul, 106 
+Concurrent-flow flame spread over thin discrete fuels 107 
+in microgravity, Combust. Flame 226 (2021) 211–221. 108 
+</p>
+<p>[9] I.I. Feier, H.-Y. Shih, K.R. Sacksteder, J.S. Tien, 109 
+Upward flame spread over thin solids in partial gravity, 110 
+Proc. Combust. Inst. 29 (2002) 2569–2577. 111 
+</p>
+<p>[10] J. Kleinhenz, I.I. Feier, S.-Y. Hsu, J.S. T’ien, P.V. 112 
+Ferkul, K.R. Sacksteder, Pressure modeling of upward 113 
+flame spread and burning rates over solids in partial 114 
+gravity, Combust. Flame 154 (2008) 637–643. 115 
+</p>
+<p>[11] Y. Konno, Y. Li, J.-M. Citerne, G. Legros, A. Guibaud, 116 
+N. Hashimoto, O. Fujita, Experimental study on 117 
+downward/opposed flame spread and extinction over 118 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>14 
+ 
+</p>
+<p>electric wires in partial gravity environments, Proc. 1 
+Combust. Inst. 39 (2022) 3785–3794. 2 
+</p>
+<p>[12] Y. Konno, Y. Kobayashi, C. Fernandez-Pello, N. 3 
+Hashimoto, S. Nakaya, M. Tsue, O. Fujita, Opposed-4 
+Flow Flame Spread and Extinction in Electric Wires: 5 
+The effects of gravity, external radiant heat flux, and 6 
+wire characteristics on wire flammability, Fire 7 
+Technol. 56 (2020) 131–148. 8 
+</p>
+<p>[13] K.R. Sacksteder, P.S. Greenberg, R.D. Pettegrew, J.S. 9 
+Tien, P.V. Ferkul, H.-Y. Shih, Forced flow flame 10 
+spreading test: preliminary findings from the USMP-3 11 
+shuttle mission, in: 1998. 12 
+https://ntrs.nasa.gov/citations/19990020831 (accessed 13 
+August 11, 2023). 14 
+</p>
+<p>[14] Y. Li, Y.-T.T. Liao, P.V. Ferkul, M.C. Johnston, C. 15 
+Bunnell, Experimental study of concurrent-flow flame 16 
+spread over thin solids in confined space in 17 
+microgravity, Combust. Flame 227 (2021) 39–51. 18 
+</p>
+<p>[15] A. Sharma, Y. Li, Y.-T.T. Liao, P.V. Ferkul, M.C. 19 
+Johnston, C. Bunnell, Effects of confinement on 20 
+opposed-flow flame spread over cellulose and 21 
+polymeric solids in microgravity, Microgravity Sci. 22 
+Technol. 36 (2024) 1–13. 23 
+</p>
+<p>[16] Y. Li, Y.-T. Liao, P. V. Ferkul, M. C. Johnston, C. 24 
+Bunnell, Confined combustion of polymeric solid 25 
+materials in microgravity, Combust. Flame 234 (2021) 26 
+111637. 27 
+</p>
+<p>[17] W. Cui, A. Sharma, Y.-T.T. Liao, Upward flame 28 
+spread over discrete thin solids separated by heat-29 
+absorbing inert materials, J. Fire Sci. 41 (2023) 32–50. 30 
+</p>
+<p>[18] M.C. Johnston, J.S. T’ien, D.E. Muff, X. Zhao, S.L. 31 
+Olson, P.V. Ferkul, Self induced buoyant blow off in 32 
+upward flame spread on thin solid fuels, Fire Saf. J. 71 33 
+(2015) 279–286. 34 
+</p>
+<p>[19] S. A. Gokoglu, D. L. Dietrich, D. P. Stocker, P. V. 35 
+Ferkul, S. L. Olson, M. C. Hicks, A researcher’s guide 36 
+to International Space Station : Combustion Science, 37 
+NASA, 2015. 38 
+</p>
+<p>[20] P. Ferkul, Centrifuge in free fall: combustion at partial 39 
+gravity, in: Annu. Meet. Am. Soc. Gravitational Space 40 
+Res. ASGSR, 2017. 41 
+https://ntrs.nasa.gov/citations/20170011213 (accessed 42 
+November 9, 2023). 43 
+</p>
+<p>[21] S. L. Olson, P.V. Ferkul, Evaluating material 44 
+flammability in microgravity and Martian gravity 45 
+Compared to the NASA Standard Normal Gravity 46 
+Test, in: 42nd Int. Conf. Environ. Syst., American 47 
+Institute of Aeronautics and Astronautics, 2012. 48 
+</p>
+<p>[22] P.V. Ferkul, S.L. Olson, Zero-gravity centrifuge used 49 
+for the evaluation of material flammability in Lunar 50 
+gravity, J. Thermophys. Heat Transf. 25 (2011) 457–51 
+461. 52 
+</p>
+<p>[23] A. Hamins, J.C. Yang, T. Kashiwagi, An experimental 53 
+investigation of the pulsation frequency of flames, 54 
+Symp. Int. Combust. 24 (1992) 1695–1702. 55 
+</p>
+<p>[24] R.A. Altenkirch, R. Eichhorn, N.N. Hsu, A.B. Brancic, 56 
+N.E. Cevallos, Characteristics of laminar gas jet 57 
+diffusion flames under the influence of elevated 58 
+gravity, Symp. Int. Combust. 16 (1977) 1165–1174. 59 
+</p>
+<p> 60 
+</p>
+<p>[25] D. Durox, T. Yuan, F. Baillot, Premixed and diffusion 61 
+flames in a centrifuge, Combust. Flame 102 (1995) 62 
+501-511. 63 
+</p>
+<p>[26] H. Sato, K. Amagai, M. Arai, Diffusion flames and 64 
+their flickering motions related with Froude numbers 65 
+under various gravity levels, Combust. Flame 123 66 
+(2000) 107–118. 67 
+</p>
+<p>[27] M. Arai, H. Sato, K. Amagai, Gravity effects on stability 68 
+and flickering motion of diffusion flames, Combust. 69 
+Flame 118 (1999) 293-300. 70 
+</p>
+<p>[28] P. B. Sunderland, J. E. Haylett, D. L. Urban, V. 71 
+Nayagam, Lengths of laminar jet diffusion flames 72 
+under elevated gravity, Combust. Flame 152 (2008) 73 
+60-68. 74 
+</p>
+<p>[29] Y. Konno, S. Ishikawa, N. Hashimoto, O. Fujita, 75 
+Evaluation of Buoyant Flow Velocity Induced by 76 
+Centrifugal and Coriolis Acceleration During 77 
+Downward flame spread over thin wire in a centrifuge, 78 
+in: Proceedings, International Conference on 79 
+Environmental Systems (ICES), 2023. 80 
+https://hdl.handle.net/2346/94634 (accessed 81 
+November 9, 2023). 82 
+</p>
+<p>[30] A. Zatania Lojo, Effects of Coriolis force on liquid fuel 83 
+wick flames in artificial partial gravity in a centrifuge, 84 
+MS Thesis, Case Western Reserve University School 85 
+of Graduate Studies, 2022. 86 
+</p>
+<p>[31] A. Zatania Lojo, A. Sharma, Y.-T. Liao, M. Johnston, 87 
+P. Ferkul, A numerical study of liquid fuel wick flames 88 
+in artificial partial gravity in a centrifuge facility, in: 89 
+Proceedings in 51st International Conference on 90 
+Environmental Systems (ICES), 2022. https://ttu-91 
+ir.tdl.org/items/aadfdf45-c2f8-4058-a2e0-92 
+df955938c833 (accessed August 18, 2024). 93 
+</p>
+<p>[32] C.-B. Jiang, J.S. Tien, H.-Y. Shih, Model calculation 94 
+of steady upward flame spread over a thin solid in 95 
+reduced gravity, Symp. Int. Combust. 26 (1996) 1353–96 
+1360. 97 
+</p>
+<p>[33] S.-Y. Hsu, J.S. T’ien, Flame spread over solids in 98 
+buoyant and forced concurrent flows: model 99 
+computations and comparison with experiments, Proc. 100 
+Combust. Inst. 33 (2011) 2433–2440. 101 
+</p>
+<p>[34] A. Hamins, M. Bundy, S.E. Dillon, Characterization of 102 
+candle flames, J. Fire Prot. Eng. 15 (2005) 265–285. 103 
+</p>
+<p>[35] P.J. Pagni, Pool fire vortex shedding frequencies, Appl 104 
+Mech Rev 43 (1990) 160. 105 
+</p>
+<p>[36] T. Chen, X. Guo, J. Jia, J. Xiao, Frequency and phase 106 
+characteristics of candle flame oscillation, Sci. Rep. 9 107 
+(2019) 342. 108 
+</p>
+<p>[37] A. Gergely, B. Sándor, C. Paizs, R. Tötös, Z. Néda, 109 
+Flickering candle flames and their collective behavior, 110 
+Sci. Rep. 10 (2020) 21305. 111 
+</p>
+<p>[38] A. Hamins, J. C. Yang, T. Kashiwagi, An experimental 112 
+investigation of the pulsation frequency of flames, 113 
+Symp. Int. Combust. 24 (1992) 1695-1702. 114 
+</p>
+<p>[39] J. Buckmaster, N. Peters, The infinite candle and its 115 
+stability - a paradigm for flickering diffusion flames, 116 
+Symp. Int. Combust. 21 (1988) 1829-1836. 117 
+</p>
+<p>[40] M. A. Delichatsios, Transition from momentum to 118 
+buoyancy-controlled turbulent jet diffusion flames and 119 
+flame height relationships, Combust. Flame 92 (1993) 120 
+349-364. 121 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>15 
+ 
+</p>
+<p> [41] D. Li, Y. Wen, Y. C. Liu, S. Wang, On the transition 1 
+modes and mechanisms for laminar to turbulent lifted 2 
+jet diffusion flames at normal- and micro-gravity, 3 
+Combust. Flame 260 (2024) 113269. 4 
+</p>
+<p>[42] R. A. Altenkirch, R. Eichhorn, N. N. Hsu, A. B. 5 
+Brancic, N. E. Cevallos. Characteristics of laminar gas 6 
+jet diffusion flames under the influence of elevated 7 
+gravity, Symp. Int. Combust. 16 (1977) 1165-1174. 8 
+</p>
+<p> 9 </p>
+<p></p>
+</div>
+</body></html>

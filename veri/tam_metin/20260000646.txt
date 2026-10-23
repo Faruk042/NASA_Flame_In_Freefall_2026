@@ -1,0 +1,381 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.7">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dcterms:created" content="2026-01-07T22:28:38Z">
+<meta name="dcterms:modified" content="2026-01-07T22:28:38Z">
+<meta name="dc:format" content="application/pdf; version=1.7">
+<meta name="xmpMM:DocumentID" content="uuid:69A9EA97-097D-41FC-AF72-0C85F62BE2FC">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2026-01-07T22:28:38Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="xmp:CreateDate" content="2026-01-07T17:28:38Z">
+<meta name="pdf:hasMarkedContent" content="true">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2026-01-07T17:28:38Z">
+<meta name="dc:language" content="en">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="2">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:created" content="2026-01-07T22:28:38Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>MATERIAL FLAMMABILITY AT LUNAR AND MARTIAN GRAVITY. Paul Ferkul,1 Nathan Kralik2, and 
+</p>
+<p>Ya-Ting Liao2 
+</p>
+<p>1Universities Space Research Association, NASA Glenn Research Center, 21000 Brookpark Rd., Cleveland, OH 
+</p>
+<p>44135, paul.ferkul@nasa.gov) 2Case Western Reserve University, Cleveland, OH. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Introduction: NASA relies on NASA-STD-6001B 
+</p>
+<p>Test 1 for screening material flammability for flight 
+</p>
+<p>[1]. The test is conducted in normal Earth gravity, 
+</p>
+<p>with the assumption that if a material passes the 1-g 
+</p>
+<p>test, then it is considered safe for spaceflight. This 
+</p>
+<p>approach has provided a practical means to assess the 
+</p>
+<p>great number of materials that are used currently, and 
+</p>
+<p>which have been used in the past. But the approach 
+</p>
+<p>has important uncertainties. Microgravity research 
+</p>
+<p>over the last few decades has shown that normal 
+</p>
+<p>gravity may not necessarily represent the most 
+</p>
+<p>flammable condition for a material. Theoretical and 
+</p>
+<p>experimental results have demonstrated that some 
+</p>
+<p>materials that will not burn in 1-g will burn in 0-g 
+</p>
+<p>(with a low-speed flow) or in partial gravity (such as 
+</p>
+<p>Lunar-g). 
+</p>
+<p>This can be understood by examining the role of 
+</p>
+<p>buoyant flow on flame spread. On Earth, buoyancy 
+</p>
+<p>causes hot product gases to accelerate upwards and out 
+</p>
+<p>of the flame, at the same time drawing fresh oxidizer 
+</p>
+<p>into the flame base. This introduction of fresh oxygen 
+</p>
+<p>sustains the flame. The speed of the air entering the 
+</p>
+<p>flame can be so high, however, that the chemical 
+</p>
+<p>reactions are unable to keep pace. Furthermore, the 
+</p>
+<p>rate of heat release and/or transport may be too low to 
+</p>
+<p>provide the energy to heat the incoming cold flow. 
+</p>
+<p>These effects can lead to flame de-stabilization, 
+</p>
+<p>commonly known as blowoff. The governing non-
+</p>
+<p>dimensional parameter is the Damkohler Number, 
+</p>
+<p>which is the ratio of the characteristic flow time to the 
+</p>
+<p>chemical reaction time. 
+</p>
+<p>Consider a material that is marginally non-
+</p>
+<p>flammable on Earth. The same material may be 
+</p>
+<p>flammable at a lower gravity level (for example, on the 
+</p>
+<p>Moon) since the crucial mechanism of buoyant oxygen 
+</p>
+<p>entrainment at the flame base is still present, but at a 
+</p>
+<p>slower rate, allowing the chemical reaction rates to 
+</p>
+<p>“keep up” and the flame to adequately heat the 
+</p>
+<p>incoming cool air. Alternatively, a material that is not 
+</p>
+<p>flammable on Earth can be burned in microgravity, but 
+</p>
+<p>with the introduction of a low speed forced flow of air. 
+</p>
+<p>Applying a flow below the buoyant blowoff limit 
+</p>
+<p>speed permits a material to burn in microgravity, albeit 
+</p>
+<p>with a smaller flame size, even though it may not burn 
+</p>
+<p>at all in 1-g. 
+</p>
+<p>Current Knowledge: Using drop towers, aircraft, 
+</p>
+<p>sounding rockets, and modeling, it is observed that 
+</p>
+<p>certain partial-g environments are expected to increase 
+</p>
+<p>the flammability limits for some materials. Early 
+</p>
+<p>numerical and experimental evidence suggested that 
+</p>
+<p>Lunar gravity could be more hazardous, since flame 
+</p>
+<p>spread rate as a function of gravity peaks there [2]. 
+</p>
+<p>Related work suggests that oxygen concentration for 
+</p>
+<p>flammability reaches a minimum value in the vicinity 
+</p>
+<p>of g = g Lunar. 
+</p>
+<p>Furthermore, in order to facilitate the convenient 
+</p>
+<p>donning of space suits, future explorers of the Moon 
+</p>
+<p>and Mars are likely to live in atmospheres at sub-
+</p>
+<p>atmospheric pressure but higher oxygen concentration 
+</p>
+<p>compared to standard air Consequently, partial-g fire 
+</p>
+<p>in an extraterrestrial habitat is a real hazard that is 
+</p>
+<p>expected to be substantially worse than in 0-g and 
+</p>
+<p>potentially worse than even 1-g. 
+</p>
+<p>Discussion: This work contributes directly to 
+</p>
+<p>filling knowledge and capability gaps in spacecraft fire 
+</p>
+<p>safety that have been the focus of many projects at the 
+</p>
+<p>NASA John H. Glenn Research Center. NASA has 
+</p>
+<p>undertaken extensive tests examining solid fuel flame 
+</p>
+<p>spread with a particular application to material 
+</p>
+<p>flammability in microgravity culminating in a number 
+</p>
+<p>of flight experiments (e.g., [3-7]). Partial gravity tests 
+</p>
+<p>can be performed in drop towers [8] and aboard 
+</p>
+<p>aircraft [2], but the available times are too short to 
+</p>
+<p>provide significant flame development (5 s for drop 
+</p>
+<p>tower and ~25 s for aircraft). For an orbital platform 
+</p>
+<p>such as the International Space Station (ISS), partial 
+</p>
+<p>gravity tests can be performed using centrifuges, but 
+</p>
+<p>those currently available have small radii of rotation 
+</p>
+<p>producing appreciable Coriolis effects for the length 
+</p>
+<p>scales necessary, adding complexity to the 
+</p>
+<p>interpretation of results. A sounding rocket utilizing 
+</p>
+<p>vehicle rotation to simulate Lunar gravity provided test 
+</p>
+<p>times on the order of 150 s, burning two different 
+</p>
+<p>materials, but again the Coriolis force introduces 
+</p>
+<p>uncertainty. 
+</p>
+<p>Combustion on the Moon: The first-ever 
+</p>
+<p>combustion experiments on another world will be 
+</p>
+<p>performed, with a planned launch date of late 2026. 
+</p>
+<p>Flammability of Materials on the Moon (FM2) will 
+</p>
+<p>burn a total of four solid fuel samples in quiescent 
+</p>
+<p>habitable atmospheres in actual long duration Lunar 
+</p>
+<p>gravity (Fig. 1). Cameras will be used to record flame 
+</p>
+<p>characteristics, including spread rate. Radiometers and 
+</p>
+<p>an oxygen sensor will be included. The tests will 
+</p>
+<p>provide benchmark data and are part of the larger </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>effort to understand how Lunar gravity will affect 
+</p>
+<p>material flammability. 
+</p>
+<p>Direct Lunar access offers the best way to assess 
+</p>
+<p>flammability of materials on the Moon. An extensive 
+</p>
+<p>materials qualification test series there would be ideal, 
+</p>
+<p>but such tests will need to be put off until an extended 
+</p>
+<p>human presence on the Moon is established. Prior to 
+</p>
+<p>this, a limited series of tests would enable a 
+</p>
+<p>comparison between fires on the Moon and Earth and 
+</p>
+<p>would validate models and theories developed using 0-
+</p>
+<p>g and 1-g testing. 
+</p>
+<p> 
+Figure 1. Top: FM2 experiment design showing solid 
+</p>
+<p>model and cross section of the combustion chamber. 
+</p>
+<p>Four flat samples are burned in separate tests. Small, 
+</p>
+<p>pressurized gas bottles provide air for each test. 
+</p>
+<p>Cameras record flame images while sensors include 
+</p>
+<p>thermocouples, radiometers, and O2 concentration. 
+</p>
+<p>Bottom: FM2 Hardware. Left: Chamber exterior; 
+</p>
+<p>Right: Internal components. 
+</p>
+<p> 
+</p>
+<p>The outcome of this work would include the first-
+</p>
+<p>ever, long-duration observation and measurement of 
+</p>
+<p>flame spread in a partial-g environment. It is expected 
+</p>
+<p>that the fuels tested will provide verification of the 
+</p>
+<p>hypothesis that some materials burning in partial-g 
+</p>
+<p>environments may be more flammable compared to 1-
+</p>
+<p>g. The results will provide a bridge between the 
+</p>
+<p>current 1-g material screening method and actual 
+</p>
+<p>behavior in reduced gravity. This will refine 
+</p>
+<p>understanding of the conditions when the test may not 
+</p>
+<p>be conservative enough, and likely will lead to an 
+</p>
+<p>amended test procedure which is safer and more 
+</p>
+<p>accurate. 
+</p>
+<p>References: [1] Mulville, D., "NASA-STD-6001B: 
+</p>
+<p>Flammability, off-gassing, and compatibility require-
+</p>
+<p>ments and test procedures," NASA, 2016. [2] K. R. 
+</p>
+<p>Sacksteder and J. S. T'ien, "Buoyant downward 
+</p>
+<p>diffusion flame spread and extinction in partial-gravity 
+</p>
+<p>accelerations," Symposium (International) on 
+</p>
+<p>Combustion, vol. 25, no. 1, pp. 1685-1692, 1994. [3] 
+</p>
+<p>D. L. Urban, P. Ferkul, S. Olson, G. Ruff, J. Easton, J. 
+</p>
+<p>S. T'ien, Y.-T. T. Liao, C. Li, C. Fernandez-Pello, J. 
+</p>
+<p>Torero, G. Legros, C. Eigenbrod, N. Smirnov, O. 
+</p>
+<p>Fujita, S. Rouvreau, B. Toth and G. Jomaas, "Flame 
+</p>
+<p>spread: effects of microgravity and scale," Combustion 
+</p>
+<p>and Flame, vol. 199, pp. 168-182, 2019. [4] X. Zhao, 
+</p>
+<p>Y.-T. T. Liao, M. C. Johnston, J. S. T'ien, P. V. Ferkul 
+</p>
+<p>and S. L. Olson, "Concurrent flame growth, spread, 
+</p>
+<p>and quenching over composite fabric samples in low 
+</p>
+<p>speed purely forced flow in microgravity," 
+</p>
+<p>Proceedings of the Combustion Institute, vol. 36, pp. 
+</p>
+<p>2971- 2978, 2017. [5] Bhattacharjee, S., and 
+</p>
+<p>Altenkirch, R.A., “A comparison of theory and 
+</p>
+<p>experiment in flame spread over thin condensed fuel in 
+</p>
+<p>quiescent microgravity environment,” Proc. of the 
+</p>
+<p>Combustion Institute, pp. 1669-1676, 1992. [6] 
+</p>
+<p>Bhattacharjee, S., Altenkirch, R.A., and Sacksteder, 
+</p>
+<p>K., “Implications of spread rate and temperature 
+</p>
+<p>measurement in quiescent, microgravity, space-based 
+</p>
+<p>environment,” Combustion Science and Technology, 
+</p>
+<p>Vol. 91, pp. 225-231, 1993. [7] S. L. Olson and P. V. 
+</p>
+<p>Ferkul, “Microgravity flammability boundary for 
+</p>
+<p>PMMA rods in axial stagnation flow: experimental 
+</p>
+<p>results and energy balance analyses,” Comb. Flame 
+</p>
+<p>180, 2017. [8] P. V. Ferkul and S. L. Olson, "Zero-
+</p>
+<p>gravity centrifuge used for the evaluation of material 
+</p>
+<p>flammability in Lunar gravity," Journal of 
+</p>
+<p>Thermophysics and Heat Transfer, vol. 25, no. 3, pp. 
+</p>
+<p>457-461, 2011. 
+ 
+</p>
+<p> </p>
+<p></p>
+</div>
+</body></html>

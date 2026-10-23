@@ -1,0 +1,762 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sub Topic: Combustion Theory and Modeling
+
+12th U. S. National Combustion Meeting
+Organized by the Eastern States Section of the Combustion Institute
+
+May 24-26, College Station, Texas
+
+Asymptotic Analysis of Premixed N-alkane
+Cool Flame Propagation
+
+Vedha Nayagam1∗, Forman A. Williams2, and Daniel L. Dietrich3
+
+1Department of Mechanical and Aerospace Engineering
+Case Western Reserve University, Cleveland, OH 44106, USA
+
+3Department of Mechanical and Aerospace Engineering, UCSD, La Jolla, CA 92093, USA
+2NASA Glenn Research Center, Cleveland, OH 44135,USA
+
+∗Corresponding Author Email: vedha.nayagam-1@nasa.gov
+
+A simplified chemical-kinetic cool-flame mechanism for n-alkanes developed recently
+is applied to premixed laminar cool-flame deflagrations. The present contribution derives
+the structure of the associated freely propagating cool premixed flame controlled by the
+low-temperature chemistry and develops formulas for calculating the corresponding laminar
+burning velocity. Application of activation-energy asymptotics reveals finite-rate chemistry
+without heat release occurring throughout the preheat zone and leakage of both fuel and oxy-
+gen through the thin heat-release zone, there being zones of consumption of an intermediate
+species on each side of the heat-release zone, thicker than that zone but still thin compared
+with the preheat-zone thickness. Predicted laminar burning velocities are compared with re-
+cently reported measurements for n-dodecane, performed in a newly deigned high-pressure
+ignition apparatus, resulting in reasonable agreement.
+Keywords: cool flames, premixed flame speed, n-alkanes, asymptotics
+
+1. Introduction
+The term cool-flame chemistry commonly is applied to the chemistry that occurs at temperatures
+within and below the temperature region (entirely below 1000 K) over which a negative tempera-
+ture coefficient (NTC, induction time increasing with increasing temperature) is observed during
+autoignition of normal alkanes. In research motivated by measurements of the combustion and
+extinction of normal-alkane droplets supported by cool-flame chemistry [1], performed in the In-
+ternational Space Station (ISS), a maximally simplified chemical-kinetic description (developed
+beginning with the San Diego mechanism) was employed to describe the cool diffusion-flame
+structure and its extinction conditions [3]. That chemistry focused on n-heptane in air since n-
+heptane was the fuel investigated in most of the ISS experiments, but some measurements also
+were made with other normal alkanes, motivating later study of the applicability of the analysis
+to n-dodecane [4]. This last fuel is emphasized here because it is the fuel that was employed in
+recent ground-based experiments in which premixed cool-flame propagation was observed [5].
+
+1
+
+
+
+The cool diffusion flame is statically stable only if the heat-release rate in the reaction zone
+decreases with increasing temperature [6], as occurs in the NTC region, where there is compe-
+tition between hot-flame and cool-flame chemistry. That decrease ends at a temperature below
+which the hot-flame chemistry no longer can compete with the cool-flame chemistry because
+it becomes too slow, whence the diffusion flame extinguishes there because it cannot be stable
+at temperatures below that limit. Premixed cool flames, similarly, will extinguish if the flame
+temperature falls below temperatures in the NTC range. The present work addresses propagation
+of premixed cool flames in the low-temperature portion of the NTC range, where the influence
+of the hot-flame chemistry can be ignored, so that the chemical kinetics introduced previously
+[3] can be simplified.
+Cool flames have enjoyed a long history of scientific and engineering study. A thorough re-
+cent review documents these investigations [7]. Despite extensive experimental, computational,
+and theoretical work, relatively little is known about freely propagating, planar, steady-flow,
+premixed cool flames under adiabatic conditions, which are addressed here on the basis of low-
+temperature n-alkane chemistry. Interesting measurements have been made of cool-flame prop-
+agation in fuel-rich propane-oxygen mixtures, employing the low gravity levels achieved in air-
+craft flying parabolic trajectories [8]. All of the available steady-flow experiments, however, em-
+ploy burners that are akin to flow reactors, either stabilized by the inlet or temperature-controlled
+by externally supplied side-wall heating or with ozone added to stabilize the flame [9]. Although
+useful for investigating flame structures, these steady-flow experiments did not provide laminar
+burning velocities without ozone addition and so cannot be compared with present predictions,
+which were developed in light of the previously mentioned recent experiments [5].
+
+2. Chemistry
+The chemical reactions in the present simplified description are shown in Table 1, where F de-
+notes the normal alkane, R its alkyl radical, I the most relevant species resulting from the first
+oxygen addition to R (generally denoted as QOOH), and K the associated alkylketohydroper-
+oxide. Here P and Q stand for collections of species that do not have to be considered. In this
+simplified description, following hydrogen abstraction from the original fuel by hydroxyl, the
+second step presumes rapid isomerization following the first oxygen addition. The third step is
+derived from steady-state approximations for the species formed by the second oxygen addition
+and for its isomerizations, resulting in maintaining partial equilibrium for its re-dissociation, and
+the fourth completes the low-temperature branching, having generated two hydroxyl radicals for
+the one initially consumed. The values of the rate parameters listed in the table are those that
+were termed ”lumped” for n-dodecane in the previous publication [4].
+The I removal by decomposition to hydropreoxyl and the conjugate alkene, the last step in the
+table, is found to be essential quantitatively. To properly describe extinction diameters in normal-
+alkane droplet combustion supported by cool-flame chemistry, a sixth step accounting for alkyl
+removal by high-temperature chemistry is needed as well, to achieve sufficient quantitative accu-
+racy [3], but that chemistry is not included here because it plays no role in cool-flame deflagra-
+tions, which occur at flame temperatures in the NTC region but too low for hot-flame chemistry
+to be of importance. This chemistry then leads to a three-step formulation, rather than the four-
+step formulation found previously [3], when the facts that OH and R maintain steady states are
+introduced. Although this chemistry retains the dominant reaction-rate parameters, it does not
+reproduce correct cool-flame energetics. The heat release, which occurs largely at the rate of step
+4, is dominated by subsequent consumption of products in the groups P and Q. That consump-
+
+2
+
+
+
+Reaction A Ta
+1 F+OH → R+H2O 1.5 1012 0
+2 R+O2 → I 3.7 1012 0
+3 I+O2 → K+OH 6.4 107 -8360
+4 K → P’s+OH 6.0 1013 19,840
+5 I → Q’s 3.0 1012 12,090
+
+Table 1: The elementary reactions and their rate coefficients in Arrhenius form
+k = A exp (−Ta/T) with rate parameters in mol, s, cm3, and K.
+
+tion appears to be fast enough that the associated rates are not relevant, whence only the product
+distribution requires consideration. Computationally, the products mainly are CO and H2O, with
+lesser amounts of CH2O and C2H4, but it is difficult to determine well what the distribution will
+be in premixed flames. Therefore the amount of heat release is considered to be an empirically
+adjustable parameter, the rate being that of step 4. Perhaps surprisingly, the value of the heat
+release turns out to influence predictions only to a minor extent (only by affecting the oxygen
+concentration mildly).
+
+3. Formulation
+The problem is formulated on the basis of conservation equations for mass, energy, and chemical
+species, the concentration [i] of species i being related to its mass fraction Yi according to [i] =
+Yiρ/Wi, where Wi is the molecular mass of species i, and ρ is the density of the gas. In the frame
+of reference of the propagating flame, with m denoting the constant total mass flow rate per unit
+area in that frame and D the thermal diffusivity of the mixture, the dimensionless streamwise co-
+ordinate ξ is taken to be the integral over distance of m/(ρD). With ωj denoting the rate of step
+j in Table 1, after imposition of steady-state approximations for OH and R [3], the conservation
+equations for the remaining species become
+
+dYF
+dξ
+
+=
+1
+
+LF
+
+d2YF
+dξ2
+
+−
+ρD
+
+m2
+WFω4, (1)
+
+dYO
+dξ
+
+=
+d2YO
+dξ2
+
+−
+ρD
+
+m2
+WOω4, (2)
+
+dYI
+dξ
+
+=
+1
+
+LI
+
+d2YI
+dξ2
+
++
+ρD
+
+m2
+WI(ω4 −ω5), (3)
+
+dYK
+dξ
+
+=
+1
+
+LK
+
+d2YK
+dξ2
+
++
+ρD
+
+m2
+WK(ω3 −ω4), (4)
+
+where Li denoted the Lewis number of species i, the Lewis number of oxygen having been taken
+to be unity.
+To simplify the expression for energy conservation, the specific heat at constant pressure is taken
+to be constant, and its product with WKTQ is defined as the heat release associated with step
+4, that heat release being measured by the (empirical) temperature TQ, the value of which (less
+than 100 K) is less than one one-hundredth of the value in the previous work [3], largely because
+of a revised (and more appropriate) normalization (the molecular weight WK not having been
+
+3
+
+
+
+employed previously in the normalization). The differential equation for energy conservation
+then becomes
+
+dT
+
+dξ
+=
+
+d2T
+
+dξ2
++
+ρD
+
+m2
+WKTQω4. (5)
+
+Boundary conditions are applied upstream (subscript u) at ξ = −∞ and downstream (subscript f)
+at ξ = ∞. The values Tu, YFu, and YOu specify the mixture into which the flame is propagating,
+which may be lean, rich, or stoichiometric, with normal, diluted, or enriched air, while the
+intermediate mass fractions YI and YK must vanish at upstream infinity. The final temperature Tf
+is the flame temperature, which is approached at downstream infinity, but its value is determined
+by the flame structure and is not known in advance. Similarly, since both fuel and oxygen
+leak through the flame, the downstream values YFf and YOf depend on the flame structure.
+The downstream boundary conditions for T and these leaking chemical species therefore are
+simply zero-gradient conditions, while the intermediate mass fractions YI and YK must vanish at
+downstream infinity, just as they do upstream.
+
+4. Reaction Zones
+Step 4 of Table 1 is seen to have the largest activation energy and therefore may be expected
+to occur in a thinner reaction zone than any of other other steps. It is appropriate to apply
+activation-energy asymptotics to this zone, and it is reasonable to employ � = T2f /[Ta(Tf −Tu)]
+as the small parameter of expansion there, with Ta taken to be the activation temperature of
+step 4, having the large value 19,840 K (and the value of the prefactor of step 4 in Table 1 will
+later be denoted by A). It is convenient to place this thin reaction zone at ξ = 0 and to employ
+η = ξ/� as the stretched independent variable to describe the structure of the zone. The heat
+release and production of the intermediate I are seen from (3) and (5) and the chemistry to occur
+in that zone, while fuel, oxygen, and the intermediate K are consumed there according to (1),
+(2), and (4). This is the heat-release zone because it is the only region in which chemical energy
+is released. Consistency of the analysis requires that YF and YO be of order unity in an expansion
+in � in this zone, while YK and departures of T from Tf are of order �.
+Downstream from this thin reaction zone, to leading order YK is zero, and T , YF , and YO are
+constant, resulting in YI decaying unimolecularly, from its value, YIf , in the thin reaction zone
+where it is produced, to zero at downstream infinity, with a constant value of the specific reaction-
+rate constant, at the rate of step 5; the relevant prefactor and activation temperature for step 5,
+appearing in Table 1, will be denoted by Q and Tq, respectively, the latter value being 12,090
+K. The region over which this decay occurs may be thin compared with ξ but is thick compared
+with η, and matching to this solution at the thin reaction zone determines the gradient of YI to
+be applied there as a boundary condition for η approaching infinity.
+Since Tq < Ta, both of which are large, upstream from the thin heat-release zone is a thicker
+diffusive-reactive zone in which step 5 consumes some of species I. This zone is thin compared
+with ξ, but variations of the intermediate I across it, along with proper matching, must be taken
+into account to obtain the correct boundary condition to apply for the concentration of I at ξ = 0
+in considering the upstream region.
+Upstream from these two thin reaction zones only step 3 occurs at leading order in the activation-
+energy asymptotics, so that the temperature and all species except K maintain a convective-
+diffusive balance. Species K is produced in a continuous manner in this region, at a rate that
+increases rapidly with decreasing temperature because of the effective large negative activation
+energy of step 3. Nevertheless the rate, being is proportional to YI, does vanish at upstream
+
+4
+
+
+
+Tf
+
+Tu
+
+YOu
+
+YOf
+
+YFf
+
+YFu
+
+YK
+
+YI
+
+ξ
+
+Figure 1: Schematic illustration of the reaction zones.
+
+infinity, and, moreover, it does so exponentially with distance because of the exponential decay
+of YI that results from the convection-diffusion balance, whence integrations are convergent, no
+appeal being needed to initiation steps. In summary, then, there are four separate reaction regions
+in the present simplified model as illustrated schematically in figure 1
+
+5. Downstream I Consumption
+According to equation (3), for ξ > 0, where YK is small enough that ω4 is negligible, all quanti-
+ties remain constant except YI. If the rate of step 5 is fast enough that convection (the left-hand
+side) can be neglected, then the differential equation reduces to d2YI/dξ2 = b2YI, where the
+constant b2 = LIρ2fDfQe
+
+−Tq/Tf /m2. The solution, subject to the boundary conditions, is simply
+YI = YIf e
+
+−bξ, which requires LI/b << 1 for convection to remain negligible. The derivative
+of this provides, as a matching condition at ξ = 0 for the thin inner zone, dYI/dξ = −bYIf .
+More generally, if convection is important in this zone, then this matching condition becomes
+dYI/dξ = −YIf [(b2 + L2I/4)
+
+1/2 −LI/2], which will be employed in the analysis.
+
+6. Heat-Release Zone
+In applying activation-energy asymptotics to the thin heat-release zone, equations (4) and (5)
+have to be considered together, because the concentration of K appears in the rate of step 4. Since
+the convective terms are of higher order in this zone (and the rate of step 3 is negligible there),
+these two equations show that changes in YK there are LK/TQ times the changes in T . The useful
+dimensionless temperature-decrement variable for this zone is z = (Tf −T)/[�(Tf −Tu)], and
+the integrations are performed by treating this rather than η as the independent variable. Since z
+and the scaled K mass fraction both vanish at infinity, the latter is YK/� = LKz(Tf −Tu)/TQ. At
+leading order, (5) then becomes the familiar equation d2z/dη2 = Λze−z, where the burning-rate
+eigenvalue is
+
+Λ =
+T4f ρ
+
+2
+fDfLK
+
+T2a (Tf −Tu)2m2
+Ae−(Ta/Tf ), (6)
+
+in which, as previously indicated, A is the entry for step 4 in Table 1.
+Integration of the differential equation for z shows that dz/dη approaches −
+
+√
+2Λ as η ap-
+
+proaches −∞, which is the matching condition needed for solving the energy equation in the
+upstream zone (convective-diffusive for T ), providing a boundary condition at ξ = 0 for that
+
+5
+
+
+
+equation. This boundary condition, along with corresponding boundary conditions for other
+equations, may be summarized as
+
+dT
+
+dξ
+= (Tf −Tu)
+
+√
+2Λ,
+
+dYO
+dξ
+
+= −
+WO(Tf −Tu)
+
+WKTQ
+
+√
+2Λ,
+
+dYK
+dξ
+
+= −
+LK(Tf −Tu)
+
+TQ
+
+√
+2Λ, (7)
+
+and
+dYI
+dξ
+
+=
+LIWI(Tf −Tu)
+
+WKTQ
+
+√
+2Λ − [(b2 + L2I/4)
+
+1/2 −LI/2]YIf, (8)
+
+to be applied at ξ = 0. The boundary condition for the fuel is not given here because the solution
+for its mass fraction in the upstream zone is not needed. The result of the matching given here for
+oxygen is obtained from the leading-order inner-zone differential equation derived from (2), in
+the same manner that the result for species K is derived from (4). Equation (3), for the interme-
+diate I, is used in a similar way to derive the last result (8), making use of the matching condition
+as η approaches ∞, obtained from the solution in the downstream I-consumption region.
+
+7. Upstream I Consumption
+The small parameter of expansion in the narrow I-consumption region is T2f /[Tq(Tf−Tu)]. Since
+YI appears linearly in all terms, including the reaction term, its scaling does not affect the equa-
+tions. At leading order in this zone YI remains YIf ; only its gradient changes. The change of the
+gradient is obtained from the integral of the reaction rate across the zone, that rate decreasing as
+ξ decreases because of the associated temperature decrease. The stretched independent variable
+ζ for this zone is defined as −ξ divided by the small expansion parameter. For this zone, expan-
+sion of the Arrhenius factor about T = Tf at leading order results in the differential equation
+d2YI/dζ
+
+2 = cYIf e
+−ζ, where the constant c = (ΛLIT2aQe
+
+−Tq/Tf )/(LKT
+2
+q Ae
+
+−Ta/Tf ) and use has
+been made of (6). Integration of this equation from ζ = 0 to ζ = ∞ provides the change in
+the derivative across this zone, needed in matching to the preheat zone. This change, expressed
+in the ξ variable as the change in dYI/dξ, is cYIfTq(Tf − Tu)/T2f . Through matching of the
+solution in this zone to the solution for YI in the convective-diffusive zone, this last result, along
+with the boundary condition (8), then provides the boundary condition that is needed to complete
+the solutions for YI in all zones.
+
+8. Preheat Region
+Convective-diffusive balances apply for all species except K in the preheat region. The solution
+to equation (5) for the temperature is then simply
+
+T = Tu + (Tf −Tu)eξ. (9)
+
+Therefore, according to the first boundary condition in (7), Λ = 1/2, whence (6) provides an
+expression for the laminar burning velocity,
+
+SL =
+T2f ρf
+
+Ta(Tf −Tu)ρu
+
+√
+2LKDfAe
+
+−(Ta/Tf ), (10)
+
+in which the value of Tf remains as an unknown.
+It is convenient to express the solutions for the mass fractions of the species in terms of the
+temperature instead of ξ. Applying to equation (2) its boundary condition in (7) gives
+
+YO = YOu − (T −Tu)WO/(WKTQ). (11)
+
+6
+
+
+
+The convective-diffusive solution to equation (3) which satisfies the requirement that YI vanish
+at upstream infinity is proportional to eLIξ, which, in turn, clearly is proportional to (T −Tu)LI .
+At ξ = 0, where YI = YIf , the derivative dYI/dξ, obtained from matching to the slope of the
+upstream I-consumption zone, with use of Λ = 1/2 in (8), serves to determine the proportionality
+constant. The result is
+
+YI = 2(T −Tu)LIWI/[(1 + C)WKTQ(Tf −Tu)LI−1], (12)
+
+where the factor accounting for I consumption is
+
+C =
+T2a (Tf −Tu)Qe−Tq/Tf
+LKTqT
+
+2
+f Ae
+
+−Ta/Tf
++
+
+(
+1 +
+
+2T2a (Tf −Tu)2Qe−Tq/Tf
+LILKT
+
+4
+f Ae
+
+−Ta/Tf
+
+)1/2
+. (13)
+
+The source term for step 3 remains in equation (4) for YK which, with T as the independent
+variable, can be written as
+
+(LK − 1)
+dYK
+dT
+
+= (T −Tu)
+d2YK
+dT2
+
++
+WKT
+
+2
+a (Tf −Tu)2Bρ3DYOYIeTb/T
+
+2WOWIT
+4
+f ρ
+
+2
+fDfAe
+
+−Ta/Tf (T −Tu)
+, (14)
+
+where Tb is 8360 K, the negative of the activation temperature for step 3 in Table 1, B is the
+pre-factor listed in the table for that step, and use has been made of equation 6 with Λ = 1/2. In
+the source term here, the factors that are variable have been written last, starting with ρ. This
+equation is to be solved subject to YK = 0 at T = Tu and the last boundary condition in (7) at T =
+Tf . It is the further requirement that YK =0 at T = Tf at leading order in this outer solution that
+finally determines the value of Tf .
+The solution to the homogeneous form of (14) provides an integrating factor that can be used
+to solve the inhomogeneous equation. Application of the boundary conditions then ultimately
+results in the value of Tf being determined by a double integral, which can be integrated by parts
+to produce the single integral∫ Tf
+
+Tu
+
+WKT
+2
+aTQ(Tf −Tu)Bρ3DYOYIeTb/T
+
+2LKWOWIT
+4
+f ρ
+
+2
+fDfAe
+
+−Ta/Tf (T −Tu)
+dT = 1. (15)
+
+Substitution of equations (11) and (12) into this equation and introduction of suitable approxi-
+mations for the functional dependences of ρ and D, such as keeping their product constant and
+letting ρ vary inversely with T , then enables the integrals to be evaluated for guessed values of
+Tf , to be adjusted iteratively until this equality is satisfied. After that, the burning velocity can
+be calculated from equation (10).
+The calculation of Tf as a function of Tu from equation (15) results in a double-valued function,
+exhibiting Tf values that decrease with increasing Tu (typically starting above 1000 K at Tu =
+300 K), reaching a turning point (at Tu around 700 K), then decreasing further, asymptotically
+approaching Tu, as Tu is decreased from its turning-point value (where the temperature varia-
+tions would become so slight that heat release would begin to extend throughout the entire flame
+structure, so a reasonably accurate thin heat-release zone no longer would exist). The turning
+point corresponds to the flame temperature reaching the low-temperature end of the NTC region.
+Since there is substantial leakage of reactants through the reaction zones of cool flames, those
+reaction zones behave in the same manner as homogeneous systems, and the finding [6] that the
+
+7
+
+
+
+diffusion flame is statically stable only in the NTC region applies equally well to the premixed
+flame. It follows that only the upper branch of the double-valued function is physically relevant;
+the flame would extinguish on the lower branch. The simplified chemical-kinetic description be-
+comes increasingly accurate as the turning point is approached on the upper branch, but, lacking
+any high-temperature chemistry, it becomes increasingly inaccurate and eventually fails before
+the high-temperature end of the NTC region is reached, which occurs at a value of Tf around
+900 K. The result is that the analysis cannot reasonable be extended to temperatures Tu below
+about 350 K or above about 650 K.
+
+9. Aspects of the Predicted Burning Velocity
+The assumption that the heat release occurs only in the thinnest reaction zone led to the burning
+velocity in equation (10) being determined by the flame temperature, without any explicit depen-
+dence on the heat-release parameter TQ. That parameter appears indirectly in the integral (15)
+determining the flame temperature, although only through the oxygen mass fraction, as given in
+(11), since the product of TQ with the mass fraction of species I may be seen from equations (12)
+and (13) to be independent of TQ. Moreover, the predicted burning velocity is entirely indepen-
+dent of the fuel mass fraction YFu, which may affect the results only to the extent that it modifies
+the value of TQ, that is, only through its possible influence on the oxygen concentration profile.
+If oxygen depletion by the flame is negligible, then the burning velocity cannot depend on the
+initial fuel concentration (or on the heat release) according this this chemistry. This implies that
+the theory cannot be correct if the initial fuel concentration is too small. Further considerations
+of additional chemistry would be needed to address the question of when this failure occurs.
+Since the burning velocity increases with increasing flame temperature at the higher flame tem-
+peratures, it increases with decreasing initial temperature, Tu at the lower values of Tu. The rapid
+variation with Tf of the Arrhenius factor in the denominator of equation (15) causes the differ-
+ence (Tf − Tu) to increase rapidly with increasing Tf , resulting in the calculated Tf increase
+with decreasing Tu. This increase of the flame temperature with decreasing initial temperature
+ultimately is a consequence of the negative activation energy of step 3. As Tu decreases, the rate
+of production of species K rapidly increases, so that there is a substantial increase of the rate of
+diffusion of K into the heat-release zone with this flame structure, causing the increase in the
+rate of heat release there and a consequent increase in Tf . Although it may be counterintuitive
+that burning velocities may increase with decreasing initial temperatures of the reactant mixture,
+the present flame structure, having finite-rate chemistry occurring throughout the preheat zone,
+causes that result to arise.
+
+10. Comparisons of Predictions with Experiment
+In the previously mentioned experiment [5], a droplet of n-dodecane, supported by a fiber, is
+quickly inserted into a furnace maintained at a fixed elevated temperature. The liquid begins
+to vaporize, and the vapor, being heavier than the surrounding gas, forms a downward-moving
+plume, traversing the path along which the droplet traveled (leaving vapor behind) during its
+insertion into the furnace. Cool-flame ignition first occurs in the lower part of this plume, where
+the residence time has been longest, and a premixed cool flame is observed to propagate upward,
+eventually reaching the droplet. The upward propagation velocity initially is constant, although
+later the flame accelerates. The difference between that initial upward velocity and the local gas
+velocity at the point and time of ignition may be considered to be the theoretically calculated
+burning velocity. Measurements were made at various pressures and furnace temperatures, and
+
+8
+
+
+
+400 450 500 550 600 650
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+Tu (K)
+
+S L
+(m
+m
+/s
+)
+
+Figure 2: Theoretical (shaded region) and experimental (points) dependence of the burning ve-
+locity on the initial temperature at 3 atm for cool flames of n-dodecane in air.
+
+those at 3 atm, for furnace temperatures from 558 K to 703 K, are compared with the calculated
+burning velocities in figure 2.
+Local gas velocities at the point of ignition are uncertain in the experiment. Upward velocities
+imparted during the droplet-insertion process act against the downward plume velocities. in ad-
+dition, random gas velocities that are not in the vertical direction are generated during insertion
+(as well as during heating prior to insertion). These are seen most clearly in the shadowgraphs at
+higher pressures, where the contrasts are greater, and they fall in the range of a few cm/s, com-
+parable with calculated burning velocities (the normal-gravity experiments were merely work-
+bench tests of an apparatus designed for microgravity experimentation in a drop tower, where
+residual velocities are damped prior to ignition, and a more quiescent condition is observed to
+be achieved). Because of these variations, the scatter in the experimental burning-velocity data
+is large, especially at pressures above 3 atm, and therefore the high-pressure data cannot be em-
+ployed here. The scatter in the data shown in figure 2 is less than at higher pressures but is still
+evident.
+A further experimental uncertainty stemming from the droplet insertion and vaporization con-
+cerns the gas temperature at the point and time of cool-flame ignition. The droplet is at 300 K
+prior to insertion, and it is heated and partially vaporized during insertion, as well as during the
+period of time between its arrival at its final position and cool-flame ignition. These processes
+will cause the gas temperature at the point and time of cool-flame ignition to be less than the fur-
+nace temperature. The furnace temperature for the two highest-temperature data points in figure
+2 is, in fact, above the turning point of the theoretical curve, which emphasizes the importance of
+this effect. Since the transient nature of the variation of the temperature field precludes accurate
+determination of the gas temperature for any given point, in constructing the figure the tempera-
+ture for each data point was simply taken to be one quarter of the sum of 300 K and three times
+the furnace temperature at the time of droplet insertion. This appears to be the best estimate that
+can be made, in view of the complexity of the processes occurring. The shaded region of figure
+2 spans the range of Lewis numbers expected for species K. In earlier work, Lewis numbers of
+all carbon-containing species were takes to be 4, but, being even larger and heavier than the fuel
+
+9
+
+
+
+molecule, species I and K are likely to have a higher Lewis number than that. It is estimated
+that LI and LK lie between 4 and 6, and the upper bound of the shaded region is for LI = LK
+= 4, while the lower bound is for LI = LK = 6. The experimental data in the figure are seen
+to lie between these two bounds. In view of the very large uncertainties in both the property
+values employed in the computations and the experimental data, this extent of agreement seems
+noteworthy.
+
+11. Conclusions
+A maximally simplified cool-flame chemical-kinetic scheme, containing only five elementary
+steps, has been identified that results in a deflagration structure which, through activation-energy
+asymptotics, exhibits a thin heat-release zone, flanked on each side by a zone in which a key
+intermediate species (produced in the heat-release zone) is consumed, along with finite-rate pro-
+duction of a second key intermediate (from the first) throughout the preheat zone. Calculation of
+the laminar burning velocity from this description entails first calculating the flame temperature
+(determined by finite-rate chemistry with large amounts of reactant leakage) from a requirement
+that an integral (involving a reaction-rate ratio) across the flame structure be satisfied. When this
+is done, comparison of the predicted burning velocity with the only available measurements is
+found to be in agreement, within the (large) uncertainties of the properties and measurements.
+
+References
+[1] V. Nayagam, D. L. Dietrich, P.V. Ferkul, M. C. Hicks, and F. A. Williams. Can cool flames
+
+support quasi-steady alkane droplet burning? Combustion and Flame, 159:3583–3588,
+2012.
+
+[2] Forman A Williams and Vedha Nayagam. Quasi-steady combustion of normal-alkane
+droplets supported by cool-flame chemistry near diffusive extinction. Combustion Theory
+and Modelling, 23(4):748–770, 2019.
+
+[3] Forman A Williams and Vedha Nayagam. Cool-flame dodecane-droplet extinction diame-
+ters. Combustion and Flame, 212:242–244, 2020.
+
+[4] Evan N Rose, Vedha Nayagam, Daniel L Dietrich, Michael C Hicks, Uday G Hegde, Rosa E
+Padilla, and Forman A Williams. Autoignition dynamics of n-dodecane droplets under nor-
+mal gravity. Combustion Science and Technology, 192:1–20, 2020.
+
+[5] Guenter Paczko, Norbert Peters, Kalyanasundaram Seshadri, and Forman Arthur Williams.
+The role of cool-flame chemistry in quasi-steady combustion and extinction of n-heptane
+droplets. Combustion Theory and Modelling, 18(4-5):515–531, 2014.
+
+[6] Yiguang Ju, Christopher B Reuter, Omar R Yehia, Tanvir I Farouk, and Sang Hee Won.
+Dynamics of cool flames. Progress in Energy and Combustion Science, 75:100787, 2019.
+
+[7] Michael Foster and Howard Pearlman. Cool flame propagation speeds. Combustion Science
+and Technology, 179:1349–1360, 2007.
+
+[8] M. Hajilou, M. Q. Brown, M. C. Brown, and E. Belmont. Investigation of the structure and
+propagation speeds of n-heptane cool flames. Combustion and Flame, 208:99–109, 2019.
+
+10
+
+

@@ -1,0 +1,418 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purpose of BPS Science Data Policy
+
+
+1
+
+What’s New In the 
+PSI
+
+(Physical Sciences Informatics)
+
+ ASGSR 2021
+11-06-2021
+
+Karen Stephens/MSFC
+
+
+
+What is the PSI?
+(Physical Sciences Informatics)
+
+2
+
+• Open Science Repository for mG 
+
+Physical Science investigations 
+
+• Sponsor is Biological and Physical Sciences 
+
+(BPS) Program in SMD
+
+• Open to the public after registration at 
+
+https://www.nasa.gov/psi
+
+https://www.nasa.gov/psi
+
+
+3
+
+mG Physical Sciences data in 
+
+6 Research Areas
+
+- Biophysics
+
+- Combustion
+
+- Complex Fluids
+
+- Fluid Physics 
+
+- Fundamental Physics
+
+- Materials
+
+PSI
+
+
+
+4
+
+PSI
+
+78 Investigations
+
+- 2 Biophysics
+
+- 18 Combustion
+
+- 19 Complex Fluids
+
+- 16 Fluid Physics 
+
+- 4 Fundamental Physics
+
+- 19 Materials
+
+17+ TB investigation data
+
+# Research Area Acronym/Short Title I nvestigation Carrier/Source
+1 Biophysics Biophysics-1,4 The Effect of Macromolecular Transport on Microgravity Protein Crystallization ISS
+2 Biophysics Biophysics-2,5 Solution Convection and the Nucleation Precursors in Protein Crystallization ISS
+3 Combustion Science ACME E-FIELD Flames Advanced Combustion via Microgravity Experiments Electric Field Flames ISS
+4 Combustion Science AMCE s-Flame Advanced Combustion via Mg Experiments: Structure and Response of Spherical Diffusion Flames ISS
+5 Combustion Science BASS Burning and Suppression of Solids ISS
+6 Combustion Science BASS-II Burning and Suppression of Solids - II ISS
+7 Combustion Science CFI Cool Flames Investigation ISS
+8 Combustion Science DAFT Dust and Aerosol Measurement Feasibility Test ISS
+9 Combustion Science DAFT-2 Dust and Aerosol Measurement Feasibility Test - 2 ISS
+
+10 Combustion Science FLEX Flame Extinguishment Experiment ISS
+11 Combustion Science FLEX-2 Flame Extinguishment Experiment - 2 ISS
+12 Combustion Science FLEX PSI-A Quantitative Studies of Cool Flame Transitions at Radiation/Extinction Using Counterflow Flames Ground
+13 Combustion Science SAFFIRE I Spacecraft Fire Experiment I OA-6
+14 Combustion Science SAFFIRE II Spacecraft Fire Experiment II OA-5
+15 Combustion Science SAFFIRE III Spacecraft Fire Experiment III OA-7
+16 Combustion Science SAME Smoke Aerosol Measurement Experiment ISS
+17 Combustion Science SAME-R Smoke Aerosol Measurement Experiment - Reflight ISS
+20 Combustion Science SAME PSI-B Utilization of the SAME Data for Advanced Modeling and Simulation of Smoke Generation in Mg Ground
+18 Combustion Science SLICE Structure and Liftoff in Combustion Experiment ISS
+19 Combustion Science SPICE Smoke Point in Coflow Experiment ISS
+21 Complex Fluids ACE-M1 Advanced Colloids Experiment - Microscopy 1 ISS
+22 Complex Fluids ACE-M2 Advanced Colloids Experiment - Microscopy 2 ISS
+23 Complex Fluids ACE-T7 Advanced Colloids Experiment - Temperature 7 ISS
+39 Complex Fluids ACE/BCAT/PHaSE PSI-B Structure Evolution During Phase Separation in Colloids Under Mg Ground
+24 Complex Fluids BCAT-3 Binary Colloidal Alloy Test - 3 ISS
+25 Complex Fluids BCAT-4 Binary Colloidal Alloy Test - 4 ISS
+26 Complex Fluids BCAT-5 Binary Colloidal Alloy Test - 5 ISS
+27 Complex Fluids BCAT-6 Binary Colloidal Alloy Test - 6 ISS
+28 Complex Fluids InSPACE Investigating the Structure of Paramagnetic Aggregates from Colloidal Emulsions ISS
+29 Complex Fluids InSPACE-2 Investigating the Structure of Paramagnetic Aggregates from Colloidal Emulsions - 2 ISS
+30 Complex Fluids InSPACE-3 Investigating the Structure of Paramagnetic Aggregates from Colloidal Emulsions - 3 ISS
+31 Complex Fluids InSPACE-3+ Investigating the Structure of Paramagnetic Aggregates from Colloidal Emulsions - 3+ ISS
+32 Complex Fluids OASIS Observation and Analysis of Smectic Islands in Space ISS
+33 Complex Fluids PCS Physics of Colloids in Space ISS
+34 Complex Fluids PHaSE Physics of Hard Spheres Experiment STS-94
+35 Complex Fluids PKE-N, PKE-3+ Plasma Kristall Experiment; Dusty Plasma ISS
+36 Complex Fluids SHERE Shear History Extensional Rheology Experiment ISS
+37 Complex Fluids SHERE II Shear History Extensional Rheology Experiment II ISS
+38 Complex Fluids SHERE-R Shear History Extensional Rheology Experiment - Reflight ISS
+40 Fluid Physics CCF-CV-EU1 Capillary Channel Flow – Critical Velocities - Experiment Unit 1 ISS
+41 Fluid Physics CCF-CV-EU2 Capillary Channel Flow – Critical Velocities - Experiment Unit 2 ISS/DLR
+42 Fluid Physics CCF-PS-EU2 Capillary Channel Flow – Phase Separation - Experiment Unit 2 ISS/DLR
+43 Fluid Physics CFE Capillary Flow Ex periment ISS
+44 Fluid Physics CFE-2 Capillary Flow Ex periment – 2 ISS
+45 Fluid Physics CFE PSI-A Computational Framework for Capillary Flows Ground
+46 Fluid Physics CVB Constrained Vapor Bubble ISS
+47 Fluid Physics CVB-2 Constrained Vapor Bubble – 2 ISS
+50 Fluid Physics IVGEN IntraVenous Fluid GENeration for Exploration Missions ISS
+51 Fluid Physics MABE Microheater Array Heater Boiling Experiment ISS
+52 Fluid Physics NPBX Nucleate Pool Boiling Experiment ISS
+48 Fluid Physics NPBX PSI-B Dev elopment and Verification of a 3D Nucleate Pool Boiling Simulation Model Using PSI Data Ground
+49 Fluid Physics NPBX/MABE PSI-B Gravity Scaling of Pool Boiling Heat Transfer: Numerical Simulations and Validation Ground
+53 Fluid Physics PBE Pool Boiling Experiment STS-47,57,60,72,77
+54 Fluid Physics PBRE Packed Bed Reactor Experiment ISS
+55 Fluid Physics STDCE-1 Surface Tension Driven Convection Experiment - 1st US Microgravity Payload on Columbia (USML-1) STS-52
+56 Fundamental Physics CAL-Atom Interferometry Cold Atom Lab-Development of Atom Interferometry Experiments for the ISS ISS
+57 Fundamental Physics CAL-Fund Interactions Cold Atom Lab-Fundamental Interactions for Atom Interferometry with Ultracold Quantum Gases ISS
+58 Fundamental Physics DECLIC-ALI Dev ice for the Study of Critical Liquids and Crystallization-Alice Like Insert ISS
+59 Fundamental Physics GRADFLEX Gradient Driven Fluctuation Ex periment Foton-M3
+60 Materials Science CSLM Coarsening in Solid-Liquid Mix tures STS-83,94
+61 Materials Science CSLM-2 Coarsening in Solid-Liquid Mix tures - 2 ISS
+62 Materials Science CSLM-2R Coarsening in Solid-Liquid Mix tures - 2 Reflight ISS
+63 Materials Science CSLM-3 Coarsening in Solid-Liquid Mix tures - 3 ISS
+64 Materials Science CSLM-4 Coarsening in Solid-Liquid Mix tures - 4 ISS
+65 Materials Science DECLIC-DSI Dev ice for the Study of Critical Liquids and Crystallization - Directional Solidification Insert ISS
+66 Materials Science EML B1 EML Batch1-THERMOLAB Emagnetic Levitation (EML) Flight Support for Transient Obs of Nucleation ISS
+67 Materials Science CSLM PSI-B Enhancement and Verification of Quantitative Phase-Field Crystal Modeling using CSLM Data Ground
+68 Materials Science IDGE-STS-62 Isothermal Dendritic Growth Experiment-2nd US Mg Payload on Columbia (USMP-2) STS-62
+69 Materials Science IDGE-STS-75 Isothermal Dendritic Growth Experiment-3rd US Mg Payload on Columbia (USMP-3) STS-75
+70 Materials Science IDGE-STS-87 Isothermal Dendritic Growth Experiment)-4th US Mg Payload on Columbia (USMP-4) STS-87
+71 Materials Science ISSI In-Space Soldering Investigation ISS
+72 Materials Science MICAST/CSS Microstructure Formation in Casting of Technical Alloys under Controlled Conditions ISS
+73 Materials Science MICS Microgravity Investigation of Cement Solidification ISS
+74 Materials Science PFMI Pore Formation and Mobility Investigation ISS
+75 Materials Science PFMI PSI-B Pore-Mushy Zone Interaction in Directional Solidification of Alloy s: 3D Simulation and Comparison Ground
+76 Materials Science Strata-1 Strata-1 ISS
+77 Materials Science SUBSA Solidification Using a Baffle in Sealed Ampoules ISS
+78 Materials Science TEMPUS Tiegelfreies Elektromagnetisches Prozessieren Unter Schwerelosigkeit; Electromagnetic Processing STS-65,83,94
+
+
+
+5
+
+Who uses PSI?
+
+1,372 users to date
+
+
+
+6
+
+New in 2020
+
+BIOPHYSICS Biophysics-1,4 ISS
+
+COMBUSTION ACME E-FIELD Flames, SAME PSI-B ISS, Ground
+
+COMPLEX FLUIDS OASIS ISS
+
+FLUID PHYSICS NPXB PSI-B ISS, Ground
+
+MATERIALS MICS, CSLM-PSI-B, PFMI PSI-B ISS, Ground
+
+8 new projects in 5 Research Areas and additional OASIS data
+
+
+
+7
+
+New in 2021
+
+BIOPHYSICS Biophysics-2 ISS
+
+FUNDAMENTAL PHYSICS CAL-Atom Interferometry ISS
+
+FUNDAMENTAL PHYSICS CAL-Fundamental Interactions ISS
+
+COMBUSTION ACME s-Flame ISS
+
+COMPLEX FLUIDS ACE-T7, OASIS - 2021 portion ISS
+
+FLUID PHYSICS IVGEN ISS
+
+MATERIALS EML Batch 1 (US PIs) ISS
+
+6 new projects in all 6 Research Areas
+
+
+
+8
+
+New Each Year
+
+• BPS sponsors an annual opportunity to propose
+
+• $1,000,000 in 5 awards, up to $100K/year for 2 years
+
+• This year in ROSES-21 E.8
+• Released 9/15/21
+
+• NOI (optional) 10/29/21
+
+• Proposals due 1/10/22
+
+• Awards expected 6/15/22
+
+
+
+9
+
+Investigations in PSI
+
+BIOPHYSICS
+Biophysics-1 ISS
+Biophysics-2 ISS
+
+FUNDAMENTAL 
+
+PHYSICS
+
+CAL-Atom Interferometry ISS
+CAL-Fundamental Interactions ISS
+DECLIC-ALI ISS
+GRADFLEX Foton-M3
+
+
+
+10
+
+Investigations in PSI
+COMBUSTION ACME E-FIELD Flames ISS
+
+AMCE s-Flame ISS
+BASS ISS
+BASS-II ISS
+CFI ISS
+DAFT ISS
+DAFT-2 ISS
+FLEX ISS
+FLEX-2 ISS
+FLEX PSI-A Ground
+SAFFIRE I OA-6
+SAFFIRE II OA-5
+SAFFIRE III OA-7
+SAME ISS
+SAME-R ISS
+SAME PSI-B Ground
+SLICE ISS
+SPICE ISS
+
+
+
+11
+
+Investigations in PSI
+COMPLEX FLUIDS ACE-M1 ISS
+
+ACE-M2 ISS
+ACE-T7 ISS
+ACE/BCAT/PHaSE PSI-B Ground
+BCAT-3 ISS
+BCAT-4 ISS
+BCAT-5 ISS
+BCAT-6 ISS
+InSPACE ISS
+InSPACE-2 ISS
+InSPACE-3 ISS
+InSPACE-3+ ISS
+OASIS ISS
+PCS ISS
+PHaSE STS-94
+PKE-N, PKE-3+ ISS
+SHERE ISS
+SHERE II ISS
+SHERE-R ISS
+
+
+
+12
+
+Investigations in PSI
+FLUID PHYSICS CCF-CV-EU1 ISS
+
+CCF-CV-EU2 ISS/DLR
+CCF-PS-EU2 ISS/DLR
+CFE ISS
+CFE-2 ISS
+CFE PSI-A Ground
+CVB ISS
+CVB-2 ISS
+IVGEN ISS
+MABE ISS
+NPBX ISS
+NPBX PSI-B Ground
+NPBX/MABE PSI-B Ground
+PBE STS-47,57,60,72,77
+PBRE ISS
+STDCE-1 STS-52
+
+
+
+13
+
+Investigations in PSI
+MATERIALS CSLM STS-83,94
+
+CSLM-2 ISS
+CSLM-2R ISS
+CSLM-3 ISS
+CSLM-4 ISS
+DECLIC-DSI ISS
+EML B1 (US PIs) ISS
+CSLM PSI-B Ground
+IDGE-STS-62 STS-62
+IDGE-STS-75 STS-75
+IDGE-STS-87 STS-87
+ISSI ISS
+MICAST/CSS ISS
+MICS ISS
+PFMI ISS
+PFMI PSI-B Ground
+Strata-1 ISS
+SUBSA ISS
+TEMPUS STS-65,83,94
+
+
+
+14
+
+Coming in 2022
+
+• New Flight and Ground projects in work
+
+- ACE-T11, PBRE-2, STDCE-2, Perfect Crystal, LMM, CAL
+
+- Multiple PSI grants concluding
+
+- Additional data for OASIS, MICS, DECLIC
+
+• Improved User Interface
+
+• New Monthly User’s Meeting
+
+ We welcome your comments and participation
+
+
+ Slide 1
+ What is the PSI? (Physical Sciences Informatics)
+ Slide 3
+ PSI
+ Who uses PSI?
+ New in 2020
+ Slide 7
+ New Each Year
+ Investigations in PSI
+ Investigations in PSI
+ Slide 11
+ Investigations in PSI
+ Investigations in PSI
+ Coming in 2022
+

@@ -1,0 +1,751 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Evaluation of Combustion Products from Large-
+Scale Spacecraft Fires during the Saffire-IV and 
+
+Saffire-V Experiments
+
+Claire Fortenberry1, Michael Casteel2, John Graf3, John Easton4, Justin 
+Niehaus5, Marit Meyer5, David Urban5, Gary Ruff5
+
+1 Universities Space Research Association, NASA Glenn Research Center, Cleveland, OH 44135
+2 Jacobs Technology, NASA Johnson Space Center, Houston, TX 77058
+
+3 NASA Johnson Space Center, Houston, TX 77058
+4 Case Western Reserve University, NASA Glenn Research Center, Cleveland, OH 44135
+
+5 NASA Glenn Research Center, Cleveland, OH 44135
+
+50th International Conference on Environmental Systems
+12-14 July 2021
+
+claire.fortenberry@nasa.gov
+
+
+
+Why study combustion products from microgravity fires?
+
+1. Improve detection of spacecraft fires
+
+2. Evaluate best methods and practices for post-fire cleanup
+
+2
+
+Combustion Products (“Smoke”)
+
+Particles Gases
+
+Soot
+Ox. Pyrolysis 
+
+Products • CO2
+• CO
+• Acids (HF, HCl)
+• NOx
+
+• H2O
+• HCN
+• Volatile 
+
+organics
+• Others!
+
+
+
+Spacecraft Smoke Detection Challenges
+
+3
+
+• In microgravity, no buoyancy → plume does not rise to ceiling
+
+• How much smoke needs to be produced to reach detector alarm thresholds?
+
+3
+
+Earth Gravity Microgravity
+
+Urban et al., 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-318, July 2016.
+
+Slower dilution + high 
+filtration rates → longer 
+
+times to alarm in 
+microgravity
+
+
+
+Spacecraft Smoke Detection Challenges
+
+4
+
+• Different smoke detector designs are biased towards different particle sizes
+
+• Particle sizes/morphologies vary by fuel type and burn conditions
+
+• Particles can grow/evolve over time depending on flow conditions
+
+• How do you select an optimal detector? What particle sizes should be targeted?
+
+Meyer et al., Aerosol Sci. Tech., 49, 5, 299-309, 2015.
+Meyer et al., Fire Safety Journal, 98, 74-81, 2018.
+Urban et al., J. Aerospace, 114, 1, 375-384, 2005.
+
+Kapton (ox. pyrolysis) Teflon (ox. pyrolysis)
+
+Need for particle 
+size/morphology 
+
+measurements from 
+large-scale flaming 
+
+combustion in 
+microgravity
+
+Candle Soot (flaming)
+
+~0.2 μm
+
+All from burning very small amounts of fuel!
+
+
+
+Spacecraft Post-Fire Cleanup Challenges 
+
+• If a fire is survivable, need to be 
+able to remove toxic 
+combustion byproducts rapidly 
+to minimize harm to crew
+
+• Potential toxic byproducts 
+include particles, CO, and acid 
+gases
+
+• How are these components 
+transported throughout the 
+cabin? What is their fate and 
+how are they best removed?
+
+5
+M
+
+e
+ta
+
+l 
+su
+
+rf
+a
+
+ce
+s
+
+HF
+
+HCl
+
+Acid gases Particles
+
+Drag Force, 
+f(size, mass)
+
+Velocity Field
+
+Inertial 
+deposition 
+onto surfaces
+
+No gravitational 
+settling!
+
+
+
+Spacecraft Fire Safety Experiments (Saffire)
+
+6
+
+Opportunity to study large-scale fires in 
+microgravity with lower risk to crew
+
+• Saffire I-III (2016-2017): 
+
+• Measured flame spread rate, fuel 
+mass consumption, heat release
+
+• Saffire IV-VI (2020, 2021; S-VI TBD):
+
+• In addition to flame properties, 
+measure combustion products
+from variety of fuels
+
+• Test novel post-fire cleanup 
+technology: “Smoke Eater”
+
+Image credits: NASA
+
+nasa.gov/feature/northrop-grumman-cygnus-launches-
+arrivals-and-departures/
+
+nasa.gov/feature/glenn/2020/the-flame-of-discovery-grows-as-saffire-sets-new-fires-in-space
+
+Ruff and Urban, 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-428, July 2016.
+
+NG Cygnus 
+Vehicle
+
+
+
+S
+F
+
+U
+
+FFD
+
+1
+
+3
+
+2
+
+4
+
+5
+
+6
+
+Saffire-IV and V Experiment Description
+
+• Fire experiments housed within the Saffire Flow Unit (SFU)
+
+• Plume transport through cabin tracked by remote CO2 sensors
+
+• Far-field diagnostics (FFD) unit located at the opposite end of the cabin from the SFU
+
+• Materials tested: cotton/fiberglass blend (“SIBAL”), cotton jersey, PMMA (one-sided, two-sided, 
+structured)
+
+7
+
+Northrop-Grumman Cygnus Resupply Vehicle
+(filled with packed garbage)
+
+= remote CO2 sensor
+
+Saffire Flow Unit (SFU)
+Far-Field Diagnostics Unit (FFD)
+
+1.3 m
+
+0.52 m
+
+Urban et al., “Preliminary Results from Saffire IV and V Experiments on Large Scale 
+Spacecraft Fires,” 50th Int. Conf. Environ. Sys., ICES-2021-266, July 2021.
+
+
+
+The Far-Field Diagnostics Unit (FFD)
+
+8
+
+INLET
+
+FAN
+
+OUTLET
+
+CO
+
+ION
+
+TEMP
+
+CPM
+
+TEMP
+
+ΔP
+
+CO2
+
+O2
+
+AVIONICS
+
+DUSTTRAK DRX
+
+CO
+
+ION
+
+S
+
+CO2
+SCRUBBER
+
+SMOKE 
+
+EATER
+
+BYPASS
+
+ACT2
+
+ACT1
+
+RHHF/HCl
+
+ACT3
+
+• Three main flow paths: CO2 scrubber, smoke eater, and bypass
+
+• Gas sensors: CO, CO2, acid gas (HF/HCl), Combustion Products Monitor (CPM: CO, CO2, 
+HF, HCl, H2O, O2; Vista Photonics)
+
+• Particle measurements: DustTrak DRX (TSI, Inc.), ionization smoke detectors
+
+Inlet 
+sensors
+
+CPM
+
+0.52 m
+
+
+
+Post-Fire Cleanup: The Smoke Eater and the CO2 Scrubber
+
+9Casteel and Graf, 49
+th Int. Conf. Environ. Sys., Boston, MA, ICES-2019-32, July 2019.
+
+Smoke Eater:
+• CO oxidation catalyst reacts with CO in stream
+• Activated carbon captures reactive gases (e.g., acid 
+
+gases)
+
+CO2 Scrubber:
+• LiOH catalyst reacts with CO2 in stream
+• Main purpose in experiment: to improve signal-noise 
+
+ratios by reducing accumulated background CO2
+between experiments
+
+
+
+Saffire-IV and V Event Order
+
+10
+
+Event Description Purpose
+
+CO2 Scrub Reduce background CO2
+
+CO2 and Acid Gas Release
+Track plume/gas transport 
+
+throughout cabin
+
+Burn Event(s)
+Sample burn(s) with or without 
+
+concurrent acid gas release
+
+CO2 Scrub Reduce background CO2
+
+Burn Event(s)
+Sample burn(s) without 
+
+concurrent acid gas release
+
+
+
+Saffire-IV and V Results: CO2 Scrub
+
+11
+
+Saffire-IV, Event 1: CO2 Scrub
+
+Saffire-V, Event 1: CO2 Scrub
+
+• In both Saffire-IV and V, two scrub events were 
+performed: one at beginning of experiment, and 
+one between burns to reduce elevated 
+background CO2 concentrations
+
+• CO2 scrubber performed nominally during all 
+scrub tests except Saffire-V, event 7 (performed at 
+10.38 psi rather than 14 psi)
+
+CO2 Scrub Event
+Approx. Avg. Mass CO2
+
+Removed (g)
+
+Saffire-IV, Event 1 72 ± 2
+
+Saffire-IV, Event 6 85 ± 4
+
+Saffire-V, Event 1 79 ± 2
+
+Saffire-V, Event 7 41 ± 1
+
+
+
+Saffire-IV, Event 2: Tracer Gas Release
+
+CO2 Measurements
+
+Outflow from SFU reaches 
+forward-port standoff and 
+nadir (behind SFU) first
+
+Saffire-IV Results: Plume Transport
+
+12
+
+• Differences in trash packing contribute to different mixing times
+
+• Vehicle is ~fully mixed at all locations by 400-500 elapsed seconds
+
+S
+F
+
+U
+
+FFD
+PORT
+
+FWD
+
+AFT
+SBD
+
+???
+
+
+
+• Differences in trash packing contribute to different mixing times
+
+• Vehicle is ~fully mixed at all locations by 400-500 elapsed seconds
+
+S
+F
+
+U
+
+FFD
+
+Saffire-IV, Event 2: Tracer Gas Release
+
+CO2 Measurements
+
+Plume is mixed at zenith and 
+FFD by 180-200 seconds
+
+Saffire-IV Results: Plume Transport
+
+12
+
+PORT
+FWD
+
+AFT
+SBD
+
+
+
+S
+F
+
+U
+
+FFD
+
+Saffire-IV, Event 2: Tracer Gas Release
+
+CO2 Measurements
+
+Slower mixing at aft-port and
+forward-starboard positions 
+
+Saffire-IV Results: Plume Transport
+
+12
+
+• Differences in trash packing contribute to different mixing times
+
+• Vehicle is ~fully mixed at all locations by 400-500 elapsed seconds
+
+???
+
+???
+
+PORT
+FWD
+
+AFT
+SBD
+
+
+
+S
+F
+
+U
+
+FFD
+
+Saffire-V, Event 2: Tracer Gas Release
+
+CO2 Measurements
+
+Quicker transport to aft-
+port in Saffire-V
+
+Saffire-V Results: Plume Transport
+
+13
+
+• Differences in trash packing contribute to different mixing times
+
+• Vehicle is ~fully mixed at all locations by 400 elapsed seconds
+
+PORT
+FWD
+
+AFT
+SBD
+
+Outflow from SFU reaches 
+forward-port standoff and 
+nadir (behind SFU) first
+
+
+
+S
+F
+
+U
+
+FFD
+PORT
+
+FWD
+
+AFT
+SBD
+
+Saffire-V, Event 2: Tracer Gas Release
+
+CO2 Measurements
+
+Plume is mixed at other 
+locations by ~300-400 seconds
+
+Saffire-V Results: Plume Transport
+
+13
+
+• Differences in trash packing contribute to different mixing times
+
+• Vehicle is ~fully mixed at all locations by 300-400 elapsed seconds
+
+
+
+Saffire-IV and V Results: Acid Gases
+
+14
+
+Saffire-V, Event 2: Tracer Gas Release
+
+HF Measurements
+Saffire-IV, Event 2: Tracer Gas Release
+
+HCl Measurements
+
+• 0.59 g HCl released during Saffire-IV tracer gas release, and 0.31 g HF released during 
+Saffire-V tracer gas release
+
+• However, no acid gas was observed at the FFD during either acid release event!
+
+SFU Outlet Temp ~ 26-30°C SFU “Plume” Temp ~ 22-24°C
+
+
+
+Saffire-IV and V Results: Acid Gases
+
+15
+
+Saffire-IV, Event 4: SIBAL Burn + 0.59g HCl Release
+
+Why was HCl observed during the burn 
+event but not the tracer gas release event? 
+
+One possible explanation:
+
+• HCl interacts strongly with aluminum 
+and oxidized aluminum, so acid may 
+be adsorbing onto cabin surfaces 
+prior to reaching the FFD
+
+• When HCl is released the second 
+time, active sites on cabin surfaces are 
+occupied from previous release, 
+allowing more HCl to travel to the 
+vehicle zenith
+
+Igniter on
+
+• Niehaus et al., 49th Int. Conf. Environ. Sys., Boston, MA, 
+ICES-2019-32, July 2019.
+
+• Niehaus et al., J. Spacecr. Rockets, 57 (2), 2020, 217-224
+• Niehaus et al., 50th Int Conf. Environ. Sys., ICES 2021-
+
+271, July 2021
+
+
+
+Saffire-IV and V Results: Particle Size Distributions
+
+16
+
+Saffire-IV, Event 5: Two-Sided PMMA
+
+Smoke Eater Open, 
+
+Bypass Closed
+
+Saffire-IV, Event 4: SIBAL
+
+Smoke Eater Open, Bypass Closed
+
+• Particle mass concentration 
+dominated by submicron particles 
+(PM1) in all five burn events
+• Consistent with observations 
+
+for flaming combustion – likely 
+dominated by soot
+
+• In both Saffire-IV and V, PMMA 
+events produced higher 
+concentrations of larger particles 
+(dp > 4 μm) compared to cotton-
+containing samples
+
+• Avionics temperatures and images 
+indicate clogging of SFU outlet 
+screen – FFD measurements likely 
+missed a significant fraction of 
+larger particles
+
+ignition
+
+Preheat/
+ignition
+
+
+
+Saffire-IV and V Results: Smoke Eater Operation
+
+17
+
+• Little CO removed by the smoke eater during Saffire-IV 
+and V burn events
+
+• Potential explanations:
+• Catalyst fouling
+• Bed packing integrity
+• Concentrations of CO at the FFD are too low for 
+
+the catalyst to exhibit substantial removal activity
+• CO sensor problems – ongoing area of investigation
+
+Saffire-V, Event 5: Cotton Saffire-V, Event 6: One-sided PMMA
+
+Inlet and outlet CO 
+concentrations deplete at 
+
+~ the same rate as CO2
+
+
+
+Conclusions
+
+• Saffire-IV and V provided the first measurements of combustion 
+products from large-scale fires in microgravity
+
+• Key observations and areas for future work:
+• Lack of acid gas at the FFD during scheduled releases → gas adsorption to 
+
+cabin surfaces
+
+• Particle mass concentrations were dominated by submicron particles
+
+• Particle sizes and mass concentrations from combusting different fuels could be 
+used in future modeling studies to generate smoke emission factors to better 
+predict times to alarm for spacecraft smoke detectors
+
+• While CO2 scrubber performed nominally during all scrub events, smoke eater 
+did not remove CO as expected – still under investigation
+
+18
+
+
+
+Acknowledgements
+
+19
+
+• International Saffire Science Team
+• ZIN Technologies Saffire team
+• Universities Space Research 
+
+Association (USRA) Glenn 
+Engineering and Research Support 
+Contract No. 80GRC020D0003
+
+• Dr. Carol Kory
+• Advanced Exploration Systems Life 
+
+Support Systems Project
+
+

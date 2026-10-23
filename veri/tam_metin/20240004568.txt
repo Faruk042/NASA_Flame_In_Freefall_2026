@@ -1,0 +1,727 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Multiple Selected" content="-1">
+<meta name="pdf:PDFVersion" content="1.6">
+<meta name="xmp:CreatorTool" content="Acrobat PDFMaker 20 for PowerPoint">
+<meta name="pdf:docinfo:title" content="PowerPoint Presentation">
+<meta name="Company" content="NASA-JSC">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="ContentTypeId" content="0x01010003A83BC87320DA4AAF53A4BD39DF91DA">
+<meta name="checkedProgramsCount" content="0">
+<meta name="dc:format" content="application/pdf; version=1.6">
+<meta name="pdf:docinfo:creator_tool" content="Acrobat PDFMaker 20 for PowerPoint">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="dc:title" content="PowerPoint Presentation">
+<meta name="xmp:CreateDate" content="2024-04-22T10:55:59Z">
+<meta name="pdf:hasMarkedContent" content="true">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Document Sensitivity" content="1">
+<meta name="xmp:ModifyDate" content="2024-04-22T10:57:10Z">
+<meta name="pdf:docinfo:creator" content="Cooper, Michael (GRC-LTR0)[HX5, LLC]">
+<meta name="pdf:docinfo:custom:OCI Restriction" content="No">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="pdf:docinfo:custom:Allow Header Overwrite" content="Yes">
+<meta name="pdf:docinfo:custom:ContentTypeId" content="0x01010003A83BC87320DA4AAF53A4BD39DF91DA">
+<meta name="pdf:docinfo:custom:Document Author" content="ACCT02\mebegley">
+<meta name="OCI Restriction" content="No">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="pdf:docinfo:producer" content="Adobe PDF Library 20.5.110">
+<meta name="pdf:docinfo:custom:checkedProgramsCount" content="0">
+<meta name="Allow Footer Overwrite" content="Yes">
+<meta name="Document Author" content="ACCT02\mebegley">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="dc:creator" content="Cooper, Michael (GRC-LTR0)[HX5, LLC]">
+<meta name="dcterms:created" content="2024-04-22T14:55:59Z">
+<meta name="dcterms:modified" content="2024-04-22T14:57:10Z">
+<meta name="xmpMM:DocumentID" content="uuid:63c99447-83a8-4fe1-873e-e2bb850b5918">
+<meta name="pdf:docinfo:modified" content="2024-04-22T14:57:10Z">
+<meta name="pdf:docinfo:custom:Allow Footer Overwrite" content="Yes">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:MetadataDate" content="2024-04-22T10:57:10Z">
+<meta name="dc:language" content="EN-US">
+<meta name="pdf:producer" content="Adobe PDF Library 20.5.110">
+<meta name="pdf:docinfo:custom:Document Sensitivity" content="1">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="13">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="Allow Header Overwrite" content="Yes">
+<meta name="pdf:docinfo:custom:Company" content="NASA-JSC">
+<meta name="SensitivityID" content="0">
+<meta name="pdf:docinfo:custom:SensitivityID" content="0">
+<meta name="access_permission:can_print" content="true">
+<meta name="pdf:docinfo:custom:Multiple Selected" content="-1">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:created" content="2024-04-22T14:55:59Z">
+<title>PowerPoint Presentation</title>
+</head>
+<body><div class="page"><p></p>
+<p>Analysis of Integrated 
+Spacecraft Performance 
+Using a Rotating Detonation 
+Rocket Engine
+Michael Cooper
+NASA Glenn Research Center
+Cleveland, Ohio
+</p>
+<p>JANNAF 14th Liquid Propulsion Meeting
+May 9, 2024</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 2/13JANNAF May 2024
+</p>
+<p>Motivation: RDRE Vehicle Studies
+</p>
+<p>In-space application
+</p>
+<p>Boost phase application
+</p>
+<p>Pressure-fed system
+</p>
+<p>Hypergolic system
+</p>
+<p>Kerosene-LOX system
+</p>
+<p>Methane-LOX system
+</p>
+<p>Pump fed system
+</p>
+<p>Regenerative cooling
+</p>
+<p>Idealized RDRE Model
+</p>
+<p>Practical RDRE Model 
+(parasitic deflagration)
+</p>
+<p>Accomplished 
+by L-MAV study
+</p>
+<p>Accomplished by 
+MIURA-1 study
+</p>
+<p>Will be focuses of 
+the next studies
+</p>
+<p>♦ Rotating Detonation Rocket Engines (RDREs) may yield system 
+mass savings &amp; performance gains at the vehicle level.
+ Higher performance enabled by pressure-gain combustion
+ Vehicle trade studies were performed to evaluate the gains and losses 
+</p>
+<p>enacted by using an RDRE
+</p>
+<p>♦ Vehicle trade studies presented in this work are intended to be the 
+first of many
+ Intent is to understand how RDREs fit into system design for a wide variety of 
+</p>
+<p>vehicles
+ Highlight use-cases that are worth pursuing
+ Highlight vehicle-level impacts of RDRE, good and bad
+</p>
+<p>♦ Study #1: Liquid Mars Ascent Vehicle (L-MAV)
+ NASA design, not flown. In-space, pressure-fed, hypergolic
+ Single use and mass constrained: provides opportunity to evaluate RDRE 
+</p>
+<p>impact on system mass
+</p>
+<p>♦ Study #2: MIURA-1 Sounding Rocket
+ Developed by Payload Aerospace S.K. (PLD Space), Flown once (Oct 2023). 
+</p>
+<p>Kerolox, pressure-fed
+ Regeneratively cooled and reusable: provides opportunity to evaluate 
+</p>
+<p>regenerative cooling impacts for RDREs
+</p>
+<p>Vehicle studies roadmap</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 3/13JANNAF May 2024
+</p>
+<p>Liquid Mars Ascent Vehicle (L-MAV)
+Liquid MAV RDRE Trade Study (1/4)
+</p>
+<p>♦ First spacecraft assessed was the L-MAV
+ Design dates to a 2011 study by Collaborative 
+</p>
+<p>Modeling for Parametric Assessment of Space 
+Systems (COMPASS) group at NASA
+</p>
+<p> Storable liquid propellants (MMH &amp; MON-25) in 
+coaxial piston tanks
+</p>
+<p> 1st and 2nd stage propellant tanks are identical, for 
+cost-savings
+</p>
+<p>♦ Baseline design was not selected for flight, 
+in part due to being overweight
+ Baseline design is 756 lbm, well over 637 lbm 
+</p>
+<p>mission requirement
+</p>
+<p>♦ L-MAV is an attractive candidate for an 
+RDRE system trade
+ Highly mass-constrained
+ Pressure-fed design – pressure-gain combustion 
+</p>
+<p>enables lower tank pressures, leading to mass 
+savings
+</p>
+<p> Single-use conops reduces (but does not 
+eliminate) the need to consider harsh operating 
+environment of RDRE combustion chamber
+</p>
+<p>Co-axial piston tanks 
+with solid gas 
+generator pressurant
+</p>
+<p>Stage 1
+</p>
+<p>Stage 2
+</p>
+<p>Payload
+</p>
+<p>Power, RCS, 
+and avionics
+</p>
+<p>Mission 
+Requirement Value
+</p>
+<p>Gross Liftoff 
+Mass (GLOM) 637 lbm maximum
+</p>
+<p>Payload 
+Capsule Mass 11 lbm
+</p>
+<p>Destination 
+Orbit
+</p>
+<p>45° inclination, 460 km 
+to 580 km altitude
+</p>
+<p>Parameter Stage 1 Stage 2
+</p>
+<p>Thrust 900 lbf 300 lbf
+</p>
+<p>Specific 
+Impulse 325 sec 325 sec
+</p>
+<p>Tank 
+Pressure 1,300 psia 1,300 psia
+</p>
+<p>Chamber 
+Pressure 800 psia 800 psia
+</p>
+<p>Ablatively cooled, 
+single-use engines</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 4/13JANNAF May 2024
+</p>
+<p>Workflow for L-MAV Trade Study
+</p>
+<p>♦ The independent variables for the L-MAV trade 
+study are chamber pressure and throat area
+ Performance codes are used to calculate engine 
+</p>
+<p>performance – namely thrust and specific impulse
+ Codes account for heat losses to walls, non-ideal 
+</p>
+<p>combustion efficiency
+ RDRE performance code developed in-house at GRC, 
+</p>
+<p>available here: https://software.nasa.gov/software/LEW-
+20423-1
+</p>
+<p>♦ Mass estimation models calculate GLOM required to 
+meet mission requirements
+ Propellant tank and pressurant masses calculated as 
+</p>
+<p>function of required propellant tank pressure and volume
+ Delta-V required calculated as function of thrust-to-weight 
+</p>
+<p>ratios for each stage
+ Iterative solver converges on design parameters
+ Component masses for avionics, power, feed system,etc. 
+</p>
+<p>are held constant at baseline values
+ Further details in paper
+</p>
+<p>♦ Parametric sweep optimizes the design for minimum 
+GLOM
+</p>
+<p>Liquid MAV 
+COMPASS Study
+</p>
+<p>RDRE Reduced-
+Order Performance Code
+</p>
+<p>RDRE Thrust, ISP, 
+&amp; Tank Pressure
+</p>
+<p>CEA Combustion/ 
+Rocket Code
+</p>
+<p>Conventional 
+Rocket Thrust, ISP, 
+</p>
+<p>&amp; Tank Pressure
+</p>
+<p>Parametric Mass 
+Optimizer
+</p>
+<p>Optimized Conventional 
+Liquid MAV Mass
+</p>
+<p>Optimized RDRE 
+Liquid MAV Mass
+</p>
+<p>RDRE Mass 
+Savings
+</p>
+<p>Throat 
+Area
+</p>
+<p>Chamber 
+Pressure
+</p>
+<p>Trade Space
+</p>
+<p>Repeating the optimization for a conventional L-
+MAV and an RDRE L-MAV tells us how much 
+mass savings can be attributed to the RDRE.
+</p>
+<p>Liquid MAV Mass 
+Estimation Model
+</p>
+<p>Liquid MAV RDRE Trade Study (2/4)</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 5/13JANNAF May 2024
+</p>
+<p>Optimization Results
+</p>
+<p>♦ The parametric sweep calculated the minimum 
+GLOM as a function of propellant tank pressure
+</p>
+<p>♦ Results show optimal tank pressures:
+ Conventional L-MAV: 740 psia
+ RDRE L-MAV: 680 psia
+</p>
+<p>♦ Further performance data available in paper
+</p>
+<p>680 psia
+</p>
+<p>740 psia
+</p>
+<p>Liquid MAV RDRE Trade Study (3/4)
+</p>
+<p>Mass savings 
+enabled by RDRE
+</p>
+<p>Parameter
+Optimized 
+</p>
+<p>Conventional 
+L-MAV
+</p>
+<p>Optimized 
+RDRE L-MAV
+</p>
+<p>Required ΔV 12,692 ft/sec 12,678 ft/sec
+</p>
+<p>Total prop load 479 lbm 389 lbm
+</p>
+<p>Total tank mass 
+(incl. pressurant) 44 lbm 37 lbm
+</p>
+<p>Engine mass 22 lbm 20 lbm
+</p>
+<p>GLOM 643 lbm 591 lbm
+</p>
+<p>The RDRE L-MAV reduces 
+GLOM by 52 lbm (8%).</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 6/13JANNAF May 2024
+</p>
+<p>L-MAV Study Conclusions
+</p>
+<p>♦ L-MAV study highlights desirable characteristics of 
+RDRES
+ Pressure-gain combustion enables higher mass flow for a given 
+</p>
+<p>throat area and tank pressure
+ Can reduce propellant tank pressure (to reduce weight) and 
+</p>
+<p>accommodate a larger nozzle area ratio (to increase ISP)
+ Compounding effects – “tyranny of the rocket equation” result in 
+</p>
+<p>large mass savings
+</p>
+<p>Liquid MAV RDRE Trade Study (4/4)
+</p>
+<p>Optimized Stage 1 
+engine contours
+</p>
+<p>Design Mass
+Mass Margin 
+against 637 
+</p>
+<p>lbm req.
+</p>
+<p>Baseline Liquid MAV 756 lbm -119 lbm
+</p>
+<p>Optimized Liquid MAV 
+(Conventional) 643 lbm -6 lbm
+</p>
+<p>Optimized Liquid MAV 
+(RDRE) 591 lbm +46 lbm
+</p>
+<p>Results suggest that small-scale RDREs could enable 
+missions which are not feasible with conventional propulsion.</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 7/13JANNAF May 2024
+</p>
+<p>MIURA-1 Sounding Rocket
+</p>
+<p>♦ Second spacecraft assessed was MIURA-1
+ Developed by PLD Space; flown once in October 2023
+ Kerosene and liquid oxygen, single-stage, pressure fed
+ Regeneratively cooled
+</p>
+<p>♦ MIURA-1 is an attractive candidate for an RDRE system 
+trade
+ Similar thrust level to RDRE demonstrators ran to date
+ Can directly compare performance metrics like apogee and 
+</p>
+<p>microgravity time
+ Can assess impact of regeneratively cooling a kerosene RDRE
+ Earth boost-phase application, provides opportunity to assess 
+</p>
+<p>performance gains of RDRE under atmospheric conditions
+ PLD Space has publicly released enough vehicle data to allow for a 
+</p>
+<p>worthwhile technical analysis
+</p>
+<p>MIURA-1 Sounding Rocket RDRE Trade Study (1/6)
+</p>
+<p>source: PLD space
+</p>
+<p>Vehicle 
+Performance Reported Value
+</p>
+<p>Payload Mass Up to 200 lbm
+</p>
+<p>Apogee (with 
+100 lbm payload) 95 miles
+</p>
+<p>Microgravity 
+Time (with 100 
+lbm payload)
+</p>
+<p>250 seconds
+</p>
+<p>Propulsion System 
+Performance Reported Value
+</p>
+<p>Thrust (sea level) 6,800 lbf
+</p>
+<p>Specific Impulse 240 sec
+</p>
+<p>Tank Pressure 390 psia fuel, 
+520 psia oxid
+</p>
+<p>Chamber Pressure 320 psia
+Mixture Ratio (O/F) 2.35
+</p>
+<p>source: PLD space
+</p>
+<p>Publicly-available MIURA-1 information</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 8/13JANNAF May 2024
+</p>
+<p>Regenerative Cooling Model
+</p>
+<p>♦ MIURA-1 assessment must include a regenerative 
+cooling model
+ The regenerative cooling jacket is modeled with 1-D, steady flow
+ Channel dimensions are allowed to vary along flow path to 
+</p>
+<p>minimize pressure drop while respecting user-input geometry 
+limits and temperature limits
+</p>
+<p> Axially-varying temperature, pressure, and fluid properties are 
+calculated for exhaust and coolant
+</p>
+<p> Bartz and Sieder-Tate correlations used
+</p>
+<p>♦ Regenerative cooling model is used to calculate:
+ Jacket ΔP, Jacket ΔT
+ Performance loss due to exhaust heat losses
+ Engine mass
+</p>
+<p>♦ Regenerative cooling is a sensitive problem
+ We validated our model using RL-10 test data, with excellent 
+</p>
+<p>agreement for Jacket ΔP, Jacket ΔT, and performance loss. 
+However, RL-10 is a conventional rocket engine.
+</p>
+<p> Sparse experimental data for RDRE heat transfer, so there is 
+uncertainty in the RDRE heat transfer calculation
+</p>
+<p>MIURA-1 Sounding Rocket RDRE Trade Study (2/6)
+</p>
+<p>Heat transfer model validation 
+data is available in paper.</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 9/13JANNAF May 2024
+</p>
+<p>Regenerative Cooling Analysis
+</p>
+<p>♦ RDRE chamber pressure is described using term “initial 
+pressure”
+ This is the manifold pressure minus the injector pressure drop. It is 
+</p>
+<p>the pressure that supplies the RDRE chamber.
+</p>
+<p>♦ Engine thrust was held constant at 6,800 lbf
+ Initial pressure swept across 160 psia – 320 psia
+ For all cases, chamber diameter is set such that thrust is 6,800 lbf
+</p>
+<p>♦ Predicted RDRE wall heat loads are very high
+ In conventional combustion chambers, peak heat flux typically 
+</p>
+<p>occurs where flow is near-sonic (i.e. near throat)
+ In RDRE combustion chamber, entire flow field is near sonic, and 
+</p>
+<p>there is more surface area available due to detonation channel 
+geometry
+</p>
+<p>♦ Uncertainty in required chamber length, so maximum 
+possible chamber length (respecting kerosene coking 
+limit) was used for three cases:
+ Kerosene cooling only
+ Dual commodity cooling: Kerosene cooled inner body, liquid oxygen 
+</p>
+<p>cooled outer body
+ Dual commodity cooling with mixture ratio reduced to 1.90
+</p>
+<p>MIURA-1 Sounding Rocket RDRE Trade Study (3/6)
+</p>
+<p>Predicted wall heat flux for one RDRE 
+configuration, compared to MIURA-1’s 
+conventional rocket engine (TEPREL-B) </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 10/13JANNAF May 2024
+</p>
+<p>RDRE Geometry Used for MIURA-1 Trade Study
+</p>
+<p>Dual Cooled w/ Reduced Mixture Ratio Dual Cooled w/ Baseline Mixture Ratio Kerosene Cooled
+</p>
+<p>MIURA-1 Sounding Rocket RDRE Trade Study (4/6)</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 11/13JANNAF May 2024
+</p>
+<p>Summary of Calculated RDRE Performance
+</p>
+<p>Engine 
+Parameter
+</p>
+<p>Kerosene Cooling 
+Only
+</p>
+<p>Dual Commodity 
+Cooling
+</p>
+<p>Dual Cooling w/ 
+Reduced MR
+</p>
+<p>Initial Pressure 160 psia 220 psia 220 psia
+</p>
+<p>Mixture Ratio 2.35 2.35 1.90
+</p>
+<p>Specific Impulse 
+(sea level) 270.7 sec 265.4 sec 252.4 sec
+</p>
+<p>Channel Width 0.97” 0.73” 0.76”
+Mean Chamber 
+Diameter 5.50” 6.60” 6.84”
+</p>
+<p>Chamber Length 1.16” 3.80” 7.60”
+Wall Heat Loss
+(% Total 
+Reaction Heat)
+</p>
+<p>2.2% 6.5% 8.3%
+</p>
+<p>Inner Outer Inner Outer Inner Outer
+Coolant Kero Kero Kero LOX Kero LOX
+Jacket Inlet 
+Pressure 780 psia 780 psia 358 psia 885 psia 306 psia 815 psia
+</p>
+<p>Jacket ΔP 484 psid 550 psid 65 psid 147 psid 16 psid 80 psid
+</p>
+<p>MIURA-1 Sounding Rocket RDRE Trade Study (5/6)
+</p>
+<p>♦ Kerosene-only cooling is limited by 
+kerosene coking
+ Requires short chamber &amp; large channel 
+</p>
+<p>to limit heat load
+</p>
+<p>♦ Dual cooling enables longer 
+chambers, reduced jacket pressure 
+drop
+</p>
+<p>♦ Dual cooling requires high LOX 
+jacket inlet pressures, to keep 
+coolant from boiling in channels
+</p>
+<p>♦ Even at reduced mixture ratio, RDRE 
+still has higher specific impulse than 
+conventional rocket
+ 252 sec vs. 240 sec
+ Highlights benefit of using an RDRE for 
+</p>
+<p>sea-level conditions</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 12/13JANNAF May 2024
+</p>
+<p>MIURA-1 RDRE Trade Results
+</p>
+<p>♦ Two trades were performed:
+ Vehicle mass was held constant at 5,400 lbm (below)
+ Vehicle’s mission was held constant, delivering a 220 
+</p>
+<p>lbm payload to a 97.4 mile apogee (right)
+</p>
+<p>♦ Applied same methods used for L-MAV study
+</p>
+<p>MIURA-1 Sounding Rocket RDRE Trade Study (6/6)
+</p>
+<p>Length &amp; 
+Mass 
+</p>
+<p>Reductions
+</p>
+<p>Conventional 
+TEPREL-B
+</p>
+<p>Kerosene 
+Cooling 
+</p>
+<p>Only
+</p>
+<p>Dual 
+Commodity 
+</p>
+<p>Cooling
+</p>
+<p>Dual 
+Cooling w/ 
+Reduced 
+</p>
+<p>MR
+Vehicle 
+Length 500” 421” 466” 461”
+</p>
+<p>Length 
+Reduction N/A -16% -7% -8%
+</p>
+<p>Vehicle 
+Mass 
+(excluding 
+payload)
+</p>
+<p>5,400 lbm 4,131 lbm 4,871 lbm 4,818 lbm
+</p>
+<p>Mass 
+Reduction N/A -24% -10% -11%
+</p>
+<p>All RDRE configurations were predicted to 
+out-perform the conventional system.</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Chemical &amp; Thermal Propulsion Systems
+</p>
+<p>Page 13/13JANNAF May 2024
+</p>
+<p>Conclusion
+</p>
+<p>♦ L-MAV trade study looked at an in-space RDRE application
+ RDRE powered vehicle predicted to have 8% lower mass than conventionally powered vehicle
+ Suggests there is a use case for small, in-space RDREs in 300 to 1,500 lbf thrust class
+ Primary benefit identified: reduced propellant tank pressure &amp; throat area for a given thrust level.
+</p>
+<p>♦ MIURA-1 trade study looked at a boost-phase regeneratively cooled RDRE application
+ RDRE regenerative cooling jackets predicted to have high heat loads and high pressure drops 
+</p>
+<p>compared to conventional engine, requiring higher propellant tank pressures
+ Even with impacts of regenerative cooling challenges, RDRE powered sounding rocket predicted to 
+</p>
+<p>achieve 12% more microgravity time
+ For a reference mission, RDRE powered sounding rocket can be 8% shorter and 11% lighter
+ Suggests there is a use case for boost-phase RDREs in 6,800 lbf thrust class
+ Primary benefit identified: increased specific impulse from pressure-gain combustion
+</p>
+<p>Thank You</p>
+<p></p>
+</div>
+<ul> <li>Slide Number 1</li>
+ <li>Motivation: RDRE Vehicle Studies</li>
+ <li>Liquid Mars Ascent Vehicle (L-MAV)</li>
+ <li>Workflow for L-MAV Trade Study</li>
+ <li>Optimization Results</li>
+ <li>L-MAV Study Conclusions</li>
+ <li>MIURA-1 Sounding Rocket</li>
+ <li>Regenerative Cooling Model</li>
+ <li>Regenerative Cooling Analysis</li>
+ <li>RDRE Geometry Used for MIURA-1 Trade Study</li>
+ <li>Summary of Calculated RDRE Performance</li>
+ <li>MIURA-1 RDRE Trade Results</li>
+ <li>Conclusion</li>
+</ul>
+</body></html>

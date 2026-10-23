@@ -1,0 +1,872 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HLS CrewCo IVA GFE Textile Materials Lunar Gravity Flammability Assessment
+
+
+National Aeronautics and Space Administration
+
+www.nasa.gov
+
+Impact of Lunar Gravity on Material Flammability
+
+Gary A. Ruff
+Spacecraft Fire Safety Demonstration Project Manager
+
+NASA John H. Glenn Research Center
+Cleveland, Ohio
+
+1
+
+Lunar Surface Science Workshop
+August 18-19, 2021
+
+Presenter
+Presentation Notes
+No change
+
+
+
+Contents
+
+♦ Material flammability in lunar gravity, or any gravity level other than earth, has 
+received a limited amount of study
+
+♦ We will discuss what we have learned so far and how we are planning to 
+prepare for exploration missions to the Moon and Mars
+
+♦ The objectives of this presentation are to discuss:
+1. How do we expect flame spread to be different in lunar-g than in normal-g?
+2. What are the methods we can use to investigate lunar-g flammability?
+
+2
+
+
+
+3
+
+♦ glunar = 0.16 gearth
+♦ The primary parameter affected by the environmental changes is the buoyancy driving force
+
+dP/dx= g ρ − ρ𝑎𝑎
+that affects the buoyant flow velocity and in turn other flame parameters
+
+♦ Buoyant velocity
+• Boussinesq approximation, small density variations, length scales are equal; β = coefficient of 
+
+volumetric thermal expansion
+‒ Boussinesq approximation ignores density differences except where they appear in terms multiplied by g
+
+• Assume Tf (flame temperature) not affected by gravity changes
+
+𝑈𝑈𝑏𝑏 = g𝐿𝐿(ρ − ρ𝑎𝑎)/ρ𝑎𝑎 = g𝐿𝐿𝐿𝐿 (𝑇𝑇𝑓𝑓 − 𝑇𝑇𝑎𝑎)
+
+𝑈𝑈𝑏𝑏]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙 = glunar𝐿𝐿𝐿𝐿 (𝑇𝑇𝑓𝑓 − 𝑇𝑇𝑎𝑎) = 0.16 gearth𝐿𝐿𝐿𝐿 (𝑇𝑇𝑓𝑓 − 𝑇𝑇𝑎𝑎) = 0.4 𝑈𝑈𝑏𝑏]𝑒𝑒𝑎𝑎𝑙𝑙𝑒𝑒𝑒
+
+How is flame spread affected by Lunar-g?
+
+3
+
+
+
+4
+
+♦ Flame stand-off distance
+
+y𝑓𝑓]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙 ~ 𝛿𝛿𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙 = 𝐿𝐿 𝑅𝑅𝑒𝑒−1/2 = 𝐿𝐿0.5
+µ0.5
+
+𝑈𝑈𝑏𝑏]𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙 𝜌𝜌𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙
+0.5 ~ 0.4𝑈𝑈𝑏𝑏]𝑒𝑒𝑎𝑎𝑙𝑙𝑒𝑒𝑒
+
+−0.5𝑃𝑃𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙−0.5
+
+• Heat flux from flame to solid (convection)
+
+𝑞𝑞𝑞𝑓𝑓]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙 = 𝑒(𝑇𝑇𝑓𝑓 − 𝑇𝑇𝑎𝑎) = 𝑘𝑘(𝑇𝑇𝑓𝑓 − 𝑇𝑇𝑎𝑎)/𝑦𝑦𝑓𝑓 ~ 0.4𝑈𝑈𝑏𝑏]𝑒𝑒𝑎𝑎𝑙𝑙𝑒𝑒𝑒
+0.5𝑃𝑃𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙0.5(𝑇𝑇𝑓𝑓 − 𝑇𝑇𝑎𝑎)
+
+• Concurrent flame spread
+
+V 𝑓𝑓]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙 ~ 𝑞𝑞𝑞𝑓𝑓]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙 L 𝑓𝑓]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙~ 0.4𝑈𝑈𝑏𝑏]𝑒𝑒𝑎𝑎𝑙𝑙𝑒𝑒𝑒 0.5𝑃𝑃𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙0.5(𝑇𝑇𝑓𝑓 − 𝑇𝑇𝑎𝑎)
+
+• Convective heat transfer coefficient
+
+hlunar ~ k/ 𝑦𝑦𝑓𝑓]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙~k 𝑈𝑈𝑏𝑏]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙
+0.5(𝑃𝑃𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙)
+
+0.5
+
+Flame spread parameters*
+
+4
+
+𝑦𝑦𝑓𝑓(𝑥𝑥)
+gravity Vf lunar
+
+*Various references identified in Backup
+
+
+
+♦ Buoyant velocity: 𝑈𝑈𝑏𝑏]𝑙𝑙𝑙𝑙𝑙𝑙𝑎𝑎𝑙𝑙 ~ 0.4 𝑈𝑈𝑏𝑏]𝑒𝑒𝑎𝑎𝑙𝑙𝑒𝑒𝑒 ~ 0.4 (0.5 m/s) ~ 0.2 m/s
+
+NASA’s Lunar Lander/Habitat Environment-Summary
+
+5
+
+Assume %O2 is constant:
+♦ As pressure decreases, flame stand-off 
+
+distance increases
+♦ As a result, other flame parameters 
+
+decrease with decreasing pressure
+
+ Normoxic conditions complicate this 
+behavior
+
+
+
+Impact of Normoxic Atmosphere in Lunar Landers/Habitats
+
+6
+
+♦ Operations on the moon in either landers, rovers, or habitats will present unique operating 
+conditions
+• The purpose of being on the Moon is to conduct frequent extravehicular activities to explore, conduct 
+
+experiments, etc.
+‒ EVA suit: 4.3 psia, 100% O2 by volume (U.S. suits on ISS)
+
+Mercury/Gemini/ApolloSkylab
+
+Early Apollo Design
+
+Shuttle EVA Preparation
+
+Shuttle/Mir/ISS
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+0 10 20 30 40 50 60 70 80 90 100
+
+Cabin Volume Percent Oxygen
+
+C
+ab
+
+in
+ T
+
+ot
+al
+
+ P
+re
+
+ss
+ur
+
+e,
+ k
+
+P
+a
+
+0
+
+2
+
+4
+
+6
+
+8
+
+10
+
+12
+
+14
+
+C
+ab
+
+in
+ T
+
+ot
+al
+
+ P
+re
+
+ss
+ur
+
+e,
+ p
+
+si
+a
+
+Normoxic Equivalent
+
+Hypoxic Boundary
+
+Historical Designs
+Atmosphere Pre-breathe 
+
+Times (hours)
+10.2 psia, 28%O2 3.5
+
+8.2 psia, 34%O2 0.5
+
+♦ It is undesirable to require long pre-breathe times prior to 
+every EVA
+
+♦ Using normoxic atmospheres:
+• Helps prevent decompression sickness
+• Increases flame spread rate
+
+♦ Effects of partial gravity on the previous slide are coupled 
+with the changes in flame characteristics at elevated O2
+
+♦ Flammability limits are even more important that flame 
+spread for spacecraft fire safety
+
+Recommendations for Exploration Spacecraft Internal Atmospheres: The Final 
+Report of the NASA Exploration Atmospheres Working Group”, JSC-63309, 
+January 2006.
+
+
+
+Flammability Limit Definitions
+♦ Differences in the flammability limit are even more important for spacecraft fire safety
+
+• Upward Limiting Oxygen Index (ULOI)
+‒ Oxygen concentration where half of the samples will pass NASA-STD-6001 Test 1
+
+• Maximum Oxygen Concentration (MOC)
+‒ Oxygen concentration where at least five samples pass Test 1 and were at least one sample failed in the 
+
+environment that contained 1 percent more oxygen by volume
+
+7
+
+Δ%O2
+
+Air flow speed
+
+1-g Buoyant 
+velocity
+
+Vo
+lu
+
+m
+e 
+
+%
+O
+
+2
+
+Flammable
+
+Not Flammable
+
+1-g 
+flammability 
+limit
+
+Fundamental 
+limit
+
+0-g quiescent limit
+
+lunar-g 
+buoyant 
+velocity
+
+♦ The shape of the flammability curve 
+on the left depends on the material 
+properties
+
+♦ In both 1-g and lunar conditions, 
+extinction is by blow-off
+
+♦ The reduced buoyant velocity 
+(compared to 1-g) impacts limits by:
+• Reducing the oxygen flux to weaken 
+
+the flame
+• Strengthening the flame by reducing 
+
+the heat loss by convection
+
+Sacksteder, K. R. and T’ien, J. S., Buoyant Downward 
+Diffusion Flame Spread and Extinction in Partial-Gravity 
+Accelerations, Proc. Combust. Inst. 25:1685-1692 (1994). 
+
+Osorio, A. F., Mizutani, K., Fernandex-Pello, C., and Fujita, O., 
+Microgravity flammability limits of ETFE insulated wires exposed 
+to external radiation,” Proc. Combust. Inst. 35: 2683-2689 (2015)
+
+
+
+♦ Normoxic conditions complicate flame spread and flammability limits
+• Reduced pressure decreases the flame spread rate
+• Increasing the %O2 increases flame spread rate
+
+Flammability Limits for Various Materials
+
+8
+
+♦ Concurrent flame spread rate: Vf ~ O2* flow velocity* P0.5
+
+♦ Opposed flame spread rate: Vf ~ O20.9 * P0.05
+
+♦ The nearly vertical lines for the pressure vs. MOC show 
+that increasing oxygen has a significantly greater effect 
+than increasing pressure
+• Similar for different materials
+
+♦ MOC of many materials follow the trend of the 
+microgravity opposed flow flame spread correlation
+
+♦ The previous slides have shown the compounding 
+impacts of gravity level and normoxic atmospheres
+
+Olson, S.L., Ruff, G. A. and Miller, F.J. “Microgravity Flame Spread in Exploration 
+Atmospheres,” Paper No. Paper No. 2008-01-2055, 38th International Conference 
+on Environmental Systems, San Francisco, CA, July 2008.
+
+Hirsch, D.B, Williams, J., and Beeson, H.; “Pressure Effects on Oxygen Concentration 
+Flammability Thresholds of Polymeric Materials for Aerospace Applications” Journal of 
+Testing and Evaluation, V.36, Issue 1, (pp. 69-72). NASA Document ID 20070018178, 
+(2008).
+
+
+
+Reduced Gravity Flammability Threshold Tests
+
+Nomex MylarUltem 1000
+Right: Centrifuge test 
+rig for the Zero 
+Gravity Facility
+
+Objective
+♦ Quantify the low-g oxygen upward flammability thresholds for
+
+typical spacecraft materials and compare results with thresholds
+determined in normal gravity
+
+♦ Tests were conducted in Zero Gravity Facility at NASA-GRC for Ultem 1000, 
+Nomex, and Mylar
+
+– 5.2-sec limits samples to thin materials
+♦ Modified test technique to determine the extinguishment limit (Maximum 
+
+Oxygen Concentration)
+
+gravity
+
+9
+
+Experiment 
+Platform 
+(Turntable)
+
+Drop Bus
+
+Chamber 
+Dome
+
+Ferkul, P. V. and Olson, S.L., Zero-Gravity Centrifuge Used for the 
+Evaluation of Material Flammability in Lunar-Gravity, AIAA 2010-6260, 
+40th Int. Conf. Env. Syst, (2010). 
+
+
+
+Maximum Oxygen Concentration (MOC) at 0-g, Martian-g, 
+and Lunar-g
+
+♦ Tests were conducted at WSTF (normal-g) and GRC 
+(partial-g) to quantify changes in the MOC for Nomex, 
+Mylar, and Ultem
+
+♦ Data for normal-, Martian-, Lunar- and zero-g has 
+been obtained
+‒ Partial-g flames propagated at the normal-g MOC for all 
+
+materials (charring and non-charring)
+‒ Lunar-g MOC can be lower than either zero- or Martian-
+
+g levels
+‒ Variation of MOC with gravity level is dependent on the 
+
+material
+
+10
+
+
+
+Partial-Gravity Assessment Tools
+
+11
+
+Platform/Activity Duration Comments
+
+ZGF Centrifuge Rig 5 sec Direct partial-g burn – flammability limits
+
+P2-g Scaling Full burn Evaluated for flame propagation rather than flammability limits
+
+Modeling Full burn Status of model; Data for comparison of model is limited
+
+Parabolic Aircraft 20 sec Direct partial-g burn
+
+Electromotive Drop Tower 
+(EMDT)
+
+10 sec
+Partial-gravity drop tower being designed and planned to be 
+operational no earlier than FY28
+
+Blue Origin Rotating Capsule 120 sec
+Need to assess capability prior to full commitment to test campaign 
+starting in mid-2023
+
+Commercial Lunar Payload 
+Services (CLPS) Expt
+
+Full burn Provides a “Lunar truth” but tests are very limited in size and number
+
+♦ A plan to assess lunar-g flammability most likely contains a combination of these activities
+♦ Flights in a parabolic aircraft have been used to obtain information about material flammability in partial-g in 
+
+the references
+♦ We have discussed data from the Zero-Gravity Facility Centrifuge Rig
+
+
+
+P2-g Scaling
+
+♦ Use Grashof number scaling to conduct flammability tests at reduced pressure to 
+simulate partial-gravity combustion 
+
+( ) 2
+3
+
+2
+gP
+
+LTTg
+Gr s ∝
+
+−
+= ∞
+
+ν
+β
+
+Kleinhenz, J., Feier, I. I., Hsu, S.-Y., T’ien, J. S., Ferkul, P. V. and Sacksteder, K. R.: Pressure modeling 
+of upward flame spread and burning rates over solids in partial gravity, Combustion and Flame 154: 
+637-643 (2008).
+
+
+
+Electromotive Drop Tower
+♦ Motivation
+
+• Provide inexpensive, reliable and flexible access to 10 s of zero-g or partial-g to facilitate fundamental research, 
+technology development, and flight hardware risk mitigation testing.
+
+♦ Concept
+• Convert the existing 5.2-second GRC Zero Gravity Research Facility to a state-of-the-art ~10-
+
+second, 0 to 0.5g test facility using a vertical rail and linear synchronous motor system to provide a 
+revolutionary capability in testing at low and partial gravity at a significantly lower operating cost.
+
+♦ Target Metrics
+• 10 s duration
+• 10-5 g below 20 Hz
+• Launch/landing 4 g avg 6 g max
+• Payload size 1 m x 1 m x 1.8 m
+• Payload mass 455 kg
+• 20 tests / day (1 OOM increase)
+• $300 / test (1 OOM reduction)
+
+♦ Applications
+• Physical Sciences
+
+‒ Fundamental Physics
+‒ Combustion
+‒ Fluid Physics
+
+• Life Support
+‒ Fire Safety
+‒ Thermal Control
+‒ Fluid Acquisition/Control
+‒ Dust Behavior
+
+• Life Science
+‒ Gravitropism
+‒ Plant Thermal Model
+
+• ISRU
+‒ Reactor Design
+‒ Regolith Acquisition/ Handling
+ Science
+
+o Asteroid Sampling
+o Soil Physics
+
+♦ Draft Plan
+• Engineering Model build and testing (FY22-23)
+• EMDT Design and Assembly (FY24-27)
+• Commissioning FY28
+
+
+
+Blue Origin New Shepard Partial-g Concept
+
+14
+
+♦ Blue Origin’s New Shepard vehicle is being upgraded to enable rotation about it’s vertical axis during 
+the low gravity portion of the flight
+
+♦ Flight Opportunities Program purchased payload space on New Shepard for the initial flight
+
+♦ Concept of Operations
+• Capsule is spin-stabilized at apogee using its reaction control system
+• Up to 2 minutes of lunar-g at steady state
+• Lunar-g ~11 rpm at 1.25 m
+
+♦ Capabilities
+• Individual payloads up to 150 lbm
+• Single, double, and full stack lockers
+
+‒ 20.6’ x 16.3” x 9.5”; 20.6” x 16.3” x 18”; 28” x 32” x19”, respectively
+• Greater that 800 W available
+• Total payload capacity up to 900 lbm
+
+♦ Proof-of-concept partial-g flight planned for early 2023
+Blue Origin, used with Permission (Erika Wagner)
+
+
+
+Commercial Lunar Payload Services (CLPS)
+
+15
+
+♦ Utilize commercial end-to-end delivery services 
+to enable access to the lunar surface
+• Deliveries initiated using a Task Order (TO)
+
+‒ Any of the 14 companies on the catalog can respond 
+to a task order
+
+‒ Expected Task Order cadence of 2 per year
+• Task Orders list what NASA wants delivered, and 
+
+any constraints, e.g. landing site, specific needs of 
+instruments
+
+• First 6 lunar surface deliveries awarded with 
+deliveries commencing in 2021
+‒ 2021: Non-polar delivery 
+
+(Astrobotic and Intuitive Machines) – TO 2A & 2B
+‒ 2022: Polar delivery (Masten) – TO 19C
+‒ 2022: PRIME-1 (Intuitive Machines)
+‒ 2022: Crisium delivery (Firefly Aerospace) – TO 19D
+‒ 2023: Volatiles Investigating Polar Exploration Rover 
+
+(VIPER) to Moon’s south polar region (Astrobotic) –
+TO 20A
+
+♦ We are making plans for a flammability 
+experiment on a future CLPS mission
+• CLPS 2a: late 2024; 2b: early 2025
+
+
+
+Fire Detection in Zero-Gravity
+
+16
+
+♦ Modeling has shown that in zero-g with 
+forced convection, the spacecraft volume 
+must reach the alarm level before an 
+alarm will sound
+• Unless the smoke production rate is large
+• If the smoke production rate is too low, 
+
+smoke is scrubbed by air circulation before 
+it can reach alarm levels
+
+Brooker, J.E., Urban, D.L. and Ruff, G.A. “ISS Destiny Laboratory Smoke Detection Model,” Paper No. 
+2007-01-3076, 37th International Conference on Environmental Systems, Chicago, Illinois, July 9-12, 2007.
+
+?
+
+?
+Air intake
+
+♦ In partial-g, there will be a competition between rate of smoke 
+production, buoyancy, and ECLSS air circulation
+• Where do you put the detector relative to the ECLSS air intake?
+
+Normal gravity (ISS Destiny Module with ECLSS circulation)
+
+Zero gravity (ISS Destiny Module with ECLSS circulation)
+
+Partial gravity
+Urban, D.L., Dietrich, D. L., Brooker, J. E., Meyer, M.E., and Ruff, G.A. “Fire Detection Tradeoffs as a Function 
+of Vehicle Parameters,” Paper No. ICES-2016-318, 46th International Conference on Environmental Systems, 
+July 10-14, Vienna, Austria.
+
+
+
+Conclusions
+
+♦ Owing to lack of access to partial gravity test platforms, the data set of lunar flammability tests is 
+very small
+
+♦ Theory and experimental results indicate that oxygen flammability limits in lunar-g are lower than 
+those measured in 1-g
+• The magnitude of ∆%O2 depends not only on the material but on the direction of burning (concurrent or 
+
+opposed)
+
+♦ Configurations that will not support a flame in low-gravity could support a flame in lunar-gravity
+
+♦ The %O2 of planned habitat atmosphere exacerbates these issues by enhancing the flammability
+
+♦ Additional work is needed to establish a partial gravity flammability acceptance criterion
+
+♦ Lunar gravity can change fire detection strategy depending on vehicle design
+
+♦ Turning the ECLSS flow off to extinguish a fire in lunar-g is not effective because the reduced gravity 
+will still induce buoyant flow velocities
+
+♦ We are developing a plan to quantify the magnitude of ∆%O2 using a combination of modeling, low-
+gravity aircraft, drop tower centrifuge, and rotating capsule in a sub-orbital flight to be anchored by a 
+lunar lander test 17
+
+
+
+18
+
+Back-up
+
+
+
+References
+• Cebeci, T., and Bradshaw, P., ”Physical and Computational Aspects of Convective Heat Transfer”, (1984)
+• Cengel Y., “Heat and Mass Transfer , A Practical Approach,” McGrawHill, (2007)
+• Emmons, H., “The Film Combustion of Liquid Fuels,” Z. Agnew. Math. Mech. V. 36, (1956) 
+• Kim, J. De Ris, J., and Kroesser, F.W., “Laminar Free Convective Burning of Fuel Surfaces,” 13th Symposium 
+
+(Int.) on Combustion, Pittsburgh, PA. pp. 949, (1971) 
+• Sibulkin, M., and Kim, J., The Dependence of Flame Propagation on Surface Heat Transfer, II Upward Burning,” 
+
+Combust. Sci. Technol., 17, 39 (1977)
+• Mao, C.P., Fernandez-Pello, A.C. and Pagni P.J., “ Mixed Convective Burning of a Fuel Surface with Arbitrary 
+
+Inclination,” Transactions of ASME, 304, 106, (1984)
+• Thomsen, M., Murphy, D.C., Fernandez-Pello, C., Urban, D.L., and Ruff, G., “Flammability Limits of Fire 
+
+Resistant Fabrics,” ISFEH, 2018 
+• Olson, S.L., “Fuel Thickness Effects on Flame Spread and Extinction Limits in Low Gravity as Compared to 
+
+Normal Gravity,” Eastern States Section of the Combustion Institute, Fall 1991
+
+Special thanks to Professor Carlos Fernandez-Pello for supplying these references and his valuable 
+insights.
+
+19
+
+
+
+Experimental Results:
+Effects of pressure, oxygen concentration and gravity
+
+PMMA rods D = 12.7 mm 
+
+Decreasing Ambient Pressure
+
+D
+ec
+
+re
+as
+
+in
+g 
+
+O
+xy
+
+ge
+n 
+
+C
+on
+
+ce
+nt
+
+ra
+tio
+
+n 30 kPa 15 kPa25 kPa40 kPa80 kPa 60 kPa100 kPa
+
+21%
+
+19%
+
+20%
+
+23%
+
+50 kPa
+
+21%
+
+17%
+
+19%
+
+D
+ec
+
+re
+as
+
+in
+g 
+
+O
+xy
+
+ge
+n 
+
+C
+on
+
+ce
+nt
+
+ra
+tio
+
+n
+
+100 kPa
+
+µg1-g
+
+ Increasing the oxygen concentration dominates the effect of reducing pressure
+ The microgravity flame is weaker but can still propagate and at lower %O2 than in 1-g
+
+Micro-g images obtained 
+from the Microgravity 
+Science Glovebox on ISS
+
+20
+
+
+
+21
+
+
+ Impact of Lunar Gravity on Material Flammability
+ Contents
+ Slide Number 3
+ Slide Number 4
+ Slide Number 5
+ Impact of Normoxic Atmosphere in Lunar Landers/Habitats
+ Flammability Limit Definitions
+ Slide Number 8
+ Reduced Gravity Flammability Threshold Tests
+ Maximum Oxygen Concentration (MOC) at 0-g, Martian-g, and Lunar-g
+ Partial-Gravity Assessment Tools
+ P2-g Scaling
+ Electromotive Drop Tower
+ Blue Origin New Shepard Partial-g Concept
+ Commercial Lunar Payload Services (CLPS)
+ Fire Detection in Zero-Gravity
+ Conclusions 
+ Slide Number 18
+ References
+ Experimental Results:�Effects of pressure, oxygen concentration and gravity
+ Slide Number 21
+

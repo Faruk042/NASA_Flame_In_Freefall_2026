@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.7">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dcterms:created" content="2025-02-04T22:20:06Z">
+<meta name="dcterms:modified" content="2025-02-04T22:20:06Z">
+<meta name="dc:format" content="application/pdf; version=1.7">
+<meta name="xmpMM:DocumentID" content="uuid:80804797-7AF0-458F-8877-19182F19013D">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2025-02-04T22:20:06Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="xmp:CreateDate" content="2025-02-04T17:20:06Z">
+<meta name="pdf:hasMarkedContent" content="true">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2025-02-04T17:20:06Z">
+<meta name="dc:language" content="en">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="1">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:created" content="2025-02-04T22:20:06Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>14th United States National Combustion Meeting, Boston, MA, 16-19 March 2025 
+ 
+</p>
+<p>Fire and Flame Research in the 
+International Space Station’s Combustion Integrated Rack 
+</p>
+<p> 
+Dennis P. Stocker 
+</p>
+<p>NASA Glenn Research Center, Cleveland, Ohio 44135, USA 
+ 
+Poster abstract: 
+Experimental studies to improve both spacecraft fire safety and our fundamental understanding of 
+combustion have been conducted on the International Space Station (ISS) since 2009. Most of those 
+investigations have been conducted within the Combustion Integrated Rack (CIR). While ISS crew 
+members set up the experiments, the tests are remotely commanded from the NASA Glenn Research 
+Center. As of this conference, CIR tests have been conducted for 14 independent experiments for 
+researchers from the United States, Italy, Japan, and Russia. The first five studies featured the combustion 
+of liquid droplets, while the six subsequent investigations featured flames of gaseous fuels. The 
+flammability of solid fuels, such as polymethyl methacrylate (PMMA), is the focus of the current series of 
+experiments. While the modular hardware has enabled a variety of combustion studies, they have all 
+featured laminar, non-premixed flames at near ambient pressures. Most have been axisymmetric or 
+spherically symmetric. Non-premixed cool flames were notably discovered during the droplet combustion 
+research and later observed in tests with gaseous fuel using a porous burner to create nominally one-
+dimensional flames. The burning of mixed-fuel droplets and one-dimensional arrays of droplets were 
+both examined. The stability and structure of gas-fueled flames were studied over a range of conditions, 
+both with and without an imposed electric field. Highly sooting conditions were observed, but more often 
+excessive radiative heat loss led to an absence of soot and often oscillations that led to quenching. Yet, it 
+was found that microgravity flames of gaseous fuel can burn steadily despite the radiative heat loss. Flame 
+spread and flammability limits have been investigated with spherical, cylindrical, and flat fuel samples 
+typically with a forced oxidizer flow, but sometimes in its absence. The CIR research will be represented 
+through images and text. 
+ 
+Keywords: Microgravity combustion; International space station; Non-premixed flames; Cool flames </p>
+<p></p>
+</div>
+</body></html>

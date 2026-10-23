@@ -1,0 +1,603 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.3">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dcterms:created" content="2026-05-01T21:01:02Z">
+<meta name="dcterms:modified" content="2026-05-01T21:01:02Z">
+<meta name="dc:format" content="application/pdf; version=1.3">
+<meta name="xmpMM:DocumentID" content="uuid:181DFBCA-2C27-4C27-B807-BE6EA6323705">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2026-05-01T21:01:02Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="xmp:CreateDate" content="2026-05-01T21:00:37Z">
+<meta name="pdf:hasMarkedContent" content="true">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2026-05-01T21:00:37Z">
+<meta name="pdf:producer" content="macOS Version 15.7.4 (Build 24G517) Quartz PDFContext">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="9">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:producer" content="macOS Version 15.7.4 (Build 24G517) Quartz PDFContext">
+<meta name="pdf:docinfo:created" content="2026-05-01T21:01:02Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>55th International Conference on Environmental Systems ICES-2026-324 
+12-16 July 2026, Rio Grande, Puerto Rico 
+</p>
+<p>Surface Vehicle Atmospheric Considerations for Moon to 
+Mars Exploration 
+</p>
+<p>Brian K. Alpert1 
+NASA Johnson Space Center, Houston, TX, 77058, USA 
+</p>
+<p>Logan Kennedy2 
+NASA Marshall Space Flight Center, Huntsville, AL, 35808, USA 
+</p>
+<p>L. Daren Welsh3 
+The Aerospace Corporation, Chantilly, VA, 20151, USA 
+</p>
+<p>Adam Young4 
+HX5 LLC, Fort Walton Beach, FL, 32548, USA 
+</p>
+<p>Gregory L. Mercer5 and Daniel S. Baird6 
+NASA Communications Services (NCS), Huntsville, AL, 35816, USA 
+</p>
+<p>NASA and its Artemis commercial providers are continuing to address and mitigate 
+flammability concerns at planned vehicle atmospheres on the lunar surface. Challenges 
+include close integration between materials flammability, ignition control, fire mitigation, 
+human physiology and performance, and spacesuit mobility and performance. Past NASA 
+recommendations for vehicle atmospheres identified some of these challenges as open work, 
+but they were not funded through completion. In winter 2022, NASA created a team dedicated 
+to this problem, including all relevant stakeholders, to develop a strategy to quantify the 
+integrated issue, reduce the severity of its impacts, and, if needed, provide alternative options 
+to program management. This paper outlines key discussions, assumptions, 
+interdependencies, analysis, and testing that led to the exploration atmosphere team’s findings 
+and recommendation of an optimized vehicle atmosphere and approach for early surface 
+missions. These efforts not only shape the path to flight certification for those surface missions, 
+but will improve the development and certification processes through updated materials 
+flammability standards, vehicle configuration constraints, fire barrier effectiveness, ignition 
+guidelines, and partial gravity impacts on flammability. Additionally, recent vehicle and 
+spacesuit design efforts have allowed the team to challenge long-standing norms and 
+assumptions to potentially provide more mission flexibility through improved fire 
+suppression, elevated spacesuit operating pressures, and advanced vehicle environmental 
+control systems. The team has also identified areas where standards or guidelines are 
+insufficient for cumulative mission decompression sickness risk and partial gravity 
+compensation factors. These efforts will lay the groundwork for future surface elements and 
+missions to follow a similar process, reducing development time and flammability risk while 
+providing clear guidance on a path to certification. 
+</p>
+<p> 
+1 EHP Syncronization Focal, HLS SE&amp;I, JSC-XE2. 
+2 EHP Suit Focal, HLS SE&amp;I, MSFC-LP10. 
+3 Test Manager, EHP SE&amp;I, JSC-DI. 
+4 Surface Mission Segment Lead, HLS SE&amp;I, GRC-LSA0. 
+5 Strategic Communication, ESDMD SAO, HQ-BA0. 
+6 Strategic Communication, ESDMD SAO, HQ-BA0. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>2 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p>Acronyms and Nomenclature 
+Atmosphere = composition of gasses inside a habitable volume or spacesuit 
+Prebreathe = time spent in a higher oxygen concentration to reduce the dissolved nitrogen in the human body and 
+</p>
+<p>avoid decompression sickness before an extravehicular activity 
+Shuttle = Space Shuttle 
+Station = International Space Station 
+Station Suit = ISS/Shuttle Extravehicular Mobility Unit 
+ 
+EHP = Extravehicular Activity and Human Surface Mobility Program 
+ESDMD = Exploration Systems Development Mission Directorate 
+EVA = Extravehicular Activity 
+HLS = Human Landing System Program 
+ISS = International Space Station 
+kPa = Kilopascals 
+MOC = Maximum Oxygen Concentration 
+NASA = National Aeronautics and Space Administration 
+NESC = NASA Engineering Safety Center 
+psi = Pounds per square inch 
+SAO = Strategy and Architecture Office 
+SCUBA = Self-contained Underwater Breathing Apparatus 
+SE&amp;I = Systems Engineering and Integration 
+xEMU = Exploration Extravehicular Mobility Unit </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>3 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p>I. Introduction 
+ safe, breathable atmosphere — the gasses inside a habitable volume or spacesuit — is an essential component 
+of human spaceflight. Astronauts require breathable air while living and working in spacecraft and while 
+</p>
+<p>venturing onto planetary surfaces during extravehicular activities. Maintaining a safe atmosphere is one of the most 
+important functions of an environmental control and life support system. 
+</p>
+<p>At sea level on Earth, the atmosphere exerts an average pressure of 14.7 pounds per square inch (psi, 101.3 kPa). 
+The air is made up of approximately 78% nitrogen, 21% oxygen, and small amounts of other gasses [1]. Spaceflight 
+systems maintain various pressures and gas ratios (primarily defined by oxygen concentration) to meet their specific 
+needs. 
+</p>
+<p>For example, the International Space Station (referred to as “station” throughout this paper) maintains an 
+atmosphere similar to sea level, but the station’s EVA suits operate under significantly less pressure and use 
+exclusively oxygen. The reduced pressure makes astronaut mobility easier (i.e., by reducing the pressure differential 
+with the vacuum of space), but that reduced pressure would not be habitable without the oxygen-rich environment. A 
+higher oxygen concentration also increases fire risk (see the discussion of flammability below) therefore spacesuits 
+use special materials and limit ignition sources to mitigate this risk. 
+</p>
+<p>NASA is currently evaluating the trade space for atmospheres across many different systems, all of which must 
+work together to enable humans' exploration of the Moon and Mars. Selecting atmospheres and developing associated 
+procedures (e.g., prebreathe protocols) requires the agency to balance a series of trade-offs to maximize safety and 
+operational flexibility. 
+</p>
+<p>NASA Artemis requirements for sustained missions are targeting an average pressure of 8.2 psi (56.5 kPa) and a 
+34% oxygen concentration as one solution to those trade-offs. As discussed below, less is known about oxygen 
+concentrations above 30% oxygen, leading to flammability concerns such that NASA teams have alternatively 
+performed testing utilizing a vehicle atmopshere that stays below 30% (average pressure of 9.6 psi (66.2 kPa) and a 
+28.5% oxygen concentration) [2]. 
+</p>
+<p>II. Key Factors 
+Vehicle and suit atmospheres must balance several key factors: crew physiology, spacesuit mobility, EVA 
+</p>
+<p>duration, and flammability. Each affects the crew’s health, safety, and ability to achieve exploration objectives. 
+</p>
+<p>A. Flammability 
+Fire is one of the many hazards of spaceflight. Different atmospheric conditions can affect flammability; materials 
+</p>
+<p>that might not be flammable under sea-level conditions could present a hazard at different pressures or oxygen 
+concentrations. For example, the Apollo 1 fire was exacerbated by the increased flammability of materials inside the 
+command module under its high-pressure, pure-oxygen atmosphere [3]. Generally, higher oxygen concentrations 
+and/or higher oxygen partial pressures equate to a higher flammability risk. While the International Space Station 
+operates around 21% oxygen, historically materials used onboard have been tested up to a maximum oxygen 
+concentration (MOC) of 30% at sea level pressure to account for life support system control, error bands, etc [4]. As 
+oxygen concentrations increase beyond 30% (or as partial pressure increases), some materials are less likely to pass 
+</p>
+<p>A 
+</p>
+<p> 
+Figure 1. Graphical representation of sea level atmosphere and an example lunar surface vehicle atmosphere. 
+ </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>4 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p>testing since they become more flammable. Materials to be used in the 34% atmosphere, have typically been tested 
+up to a 37% oxygen concentration for the reasons mentioned above. 
+</p>
+<p>The desired atmosphere and materials used in the construction of spaceflight systems inform one another, with 
+engineers balancing varying needs to create the safest possible environment. If a certain oxygen concentration or 
+partial pressure is desirable, this may constrain materials selection. The selected atmosphere also dictates fire 
+prevention and mitigation systems (i.e., ignition control and fire suppression). 
+</p>
+<p>NASA and its partners are investigating new materials (such as textiles) that are safer in a range of oxygen 
+concentrations, which presents a variety of technical challenges. Even with better materials, flammability remains a 
+concern when operating in high oxygen environments and will drive many EVA and spacecraft atmosphere design 
+considerations, requirements, and operational procedures. 
+</p>
+<p>The reduced gravity on the lunar surface presents a unique challenge with respect to fire characteristics, such as 
+extinguishment and propagation. A flame can extinguish if the cabin airflow is high enough that the reactants don’t 
+have time to react while the mixture is hot enough. This effect occurs more readily on Earth because the higher gravity 
+causes higher flow velocities. Thus, a material that self-extinguishes in Earth gravity may continue to burn in lunar 
+gravity. Additionally, since airflow is needed to sustain a minimum oxygen concentration for propagation, a 
+smouldering flame in microgravity may not propogate in the absence of cabin ventilation. A smouldering flame in 
+lunar gravity, however, might have sufficient natural airflow to promote the additional oxygen concentration needed 
+to propagate [5]. 
+</p>
+<p>B. Crew Physiology 
+A spacecraft or spacesuit must keep crew members safe and healthy for the duration of their mission, including 
+</p>
+<p>providing enough oxygen and managing exhaled gasses like carbon dioxide. Oxygen is essential to the human body, 
+while excessive carbon dioxide can be toxic. However, even oxygen requires the right balance; too little oxygen can 
+cause hypoxia, while too much oxygen can cause oxygen toxicity. If nitrogen is present in the vehicle atmosphere, it 
+can cause decompression sickness so it is advantageous to remove as much of it as possible from the body 
+(denitrogenation) before performing an EVA. 
+</p>
+<p>Currently, NASA standards for 
+oxygen partial pressure limit how hypoxic 
+the atmosphere can be for crew operation. 
+The standards are based on historical 
+flight and test data; however, the data is 
+limited and does not attempt to quantify 
+degradation of health or performance 
+from extended hypoxia exposure or 
+adjusted hypoxia limits. The NASA 
+community is actively performing 
+research to further explore acceptable 
+hypoxia limits. 
+</p>
+<p>A spacecraft or spacesuit’s 
+environmental control and life support 
+system must control the above factors to 
+maintain crew safety and comfort. 
+Spaceflight systems must also control, 
+among other parameters, the rates of 
+pressure changes, as rapid changes in 
+pressure can cause physiological damage, 
+including to the ears and lungs. 
+</p>
+<p>C. Operational Timeline 
+Unlike recent objectives on station expeditions, where the goal is to enable science (which is largely conducted 
+</p>
+<p>inside the vehicle) and EVAs are utilized mostly for replacements and repairs, the primary goal of a surface mission 
+is to perform EVAs. While the majority of task durations on an EVA day are defined independently of the vehicle 
+(private medical conferences, sleep, battery charging and configuring of suits and tools), the EVA preparation time 
+includes prebreathe (the denitrogenation protocol mentioned above) which depends on vehicle atmosphere, oxygen 
+saturation levels, etc [6]. Prebreathe gives the body time to expel dissolved nitrogen to help avoid decompression 
+</p>
+<p> 
+Figure 2. Engineers test lunar spacesuits being developed by 
+Axiom Space in the Neutral Buoyancy Laboratory at NASA’s 
+Johnson Space Center in Houston [14]. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>5 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p>sickness (colloquially known to SCUBA divers as “the bends”). Symptoms of decompression sickness can range from 
+minor joint pain to neurological damage [7]. Lower vehicle pressures can reduce prebreathe time by reducing the 
+initial amount of dissolved nitrogen in the body but they usually require higher oxygen concentrations (higher 
+flammability risk) to prevent hypoxia. Minimizing prebreathe time will directly lead to more EVA time. 
+</p>
+<p>D. Suit Mobility 
+Spacesuits often use a different atmosphere than spacecraft and habitation systems. Higher atmospheric pressures 
+</p>
+<p>make spacesuits more rigid (i.e., less flexible and more physically demanding to operate), require stronger brackets 
+and other hardware to increase material strength (and mass), and increase wear and tear on hardware. For this reason, 
+it is beneficial to operate spacesuits at the lowest possible pressure. To avoid hypoxia mentioned earlier, these lower 
+pressure spacesuits must operate at higher oxygen concentrations. 
+</p>
+<p>Spacesuits worn by Apollo astronauts operated at a pressure of 3.75 psi (25.8 kPa) and 100% oxygen. The 
+Extravehicular Mobility Unit used during the Space Shuttle program and aboard the International Space Station 
+(referred to as “Station Suit” throughout this paper) maintains a pressure of 4.3 psi (29.6 kPa), while the Russian-made 
+Orlan spacesuit, also used aboard the space station, maintains a slightly higher pressure of 5.7 psi (39.2 kPa). Both 
+systems operate with a 100% oxygen atmosphere [8]. 
+</p>
+<p>Higher suit pressures operating with this 100% oxygen atmosphere can reduce prebreathe time by reducing the 
+amount of nitrogen that crew members must expel, thus also enabling longer EVA durations, but they also reduce suit 
+flexibility and mobility. Data from suited EVA performance testing, repeated at multiple suit pressures, can inform a 
+cost function characterizing the impact of suit pressure increase to crew workload, fatigue, and task duration. This 
+cost function can be compared to the prebreathe protocol options, informing a risk trade. Spacesuit engineers and 
+mission planners must strike a careful balance between the risk of decompression sickness, the operational burden of 
+prebreathe, and suit mobility. 
+</p>
+<p>NASA and its commercial partners are currently developing and testing the Exploration Extravehicular Mobility 
+Unit (xEMU) spacesuit for Artemis missions. NASA is testing the xEMU’s performance using a variety of 
+atmospheres, between 4.3 psi (29.6 kPa) to 8.2 psi (56.5 kPa) [9]. Future spacesuits designed for EVAs on planetary 
+bodies have different mobility requirements than spacesuits designed only for microgravity. The design and 
+atmosphere considerations may also vary by destination (i.e., EVAs on Mars may have different mobility requirements 
+than lunar EVAs.) 
+</p>
+<p>III. Considerations for Moon to Mars Exploration 
+The Moon to Mars Architecture includes many human-rated systems, such as the Orion spacecraft, the Human 
+</p>
+<p>Landing System, the Pressurized Rover, spacesuits, and surface habitats. These elements bring together many different 
+providers and partners. To explore the Moon, including building a Moon Base, and journey to Mars, astronauts will 
+need to be able to work seamlessly across different elements, creating the need for compatible atmospheres. 
+</p>
+<p>A. Atmosphere Transition Considerations 
+Spacecraft that dock or berth in cislunar space, like the Orion spacecraft, Gateway, and the Human Landing 
+</p>
+<p>System, must be able to maintain similar atmospheres to enable crew to transition between them. Similarly, habitation 
+assets on the lunar surface will need to maintain suitable atmospheres to enable astronauts to transition to spacesuits 
+for EVAs. 
+</p>
+<p> 
+Figure 3. Graphical representation of Apollo spacesuit atmosphere and Station US spacesuit atmosphere. 
+ </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>6 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p>The transition between different systems and 
+atmospheres is an operational consideration the 
+architecture must address. As mentioned above, a 
+prebreathe period is usually needed to prepare for an 
+EVA, with the prebreathe duration depending upon the 
+magnitude of the difference in atmospheres between 
+spacecraft and spacesuit. 
+</p>
+<p>Because surface assets may operate at different 
+atmospheres and EVA cadences will vary, there is no 
+one-size-fits-all prebreathe protocol. A lengthy 
+prebreathe period can limit EVA opportunities; a short 
+prebreathe enabled by higher suit pressures can increase 
+the risk of crew fatigue and injury. NASA aims to 
+minimize prebreathe time to maximize astronaut 
+utilization opportunities (e.g., conducting science or 
+technology demonstrations while EVA) while ensuring 
+crew safety [10]. 
+</p>
+<p>Ultimately, NASA would like to develop protocols 
+similar to those outlined on SCUBA dive tables, which 
+help divers calculate safe dive depths and times that 
+minimize the risk of decompression sickness. The 
+development of this DCS risk estimation tool is known 
+as the Aerospace Estimation Tool for Hypobaric 
+Exposure Risk (AETHER) [11]. This approach would 
+</p>
+<p>outline a suite of safe pressures, oxygen concentrations, and prebreathe times to help astronauts and mission controllers 
+plan EVAs that meet a variety of exploration needs. Decompression sickness is a complex event that combines the 
+presence of a gas phase in the tissues (venous gas emboli) with human perception of pain. Therefore, probabilistic 
+models about decompression sickness and presence of venous gas emboli require a large amount of test data to validate 
+those models [12]. 
+</p>
+<p>B. System Design Considerations 
+Atmosphere requirements also have flow-down effects on overall system design and pre-flight testing. In an 
+</p>
+<p>architecture that uses multiple systems (e.g., launch vehicles, landing vehicles, habitation modules) built by different 
+providers, ensuring compatible atmospheres will be a key design concern. Spacecraft will need to monitor and adjust 
+gas ratios to maintain the desired balance. Improvements to accuracy and reliability of spacecraft ECLSS sensors and 
+gas injection can result in smaller oxygen concentration excursions which could decrease the boundaries for material 
+flammability testing (i.e., more materials might pass). Maximum pressure requirements can also affect the design and 
+mass of a system’s structures. 
+</p>
+<p>Spacesuit pressures will also need to balance prebreathe requirements with factors such as astronaut fatigue, 
+mobility, and suit life cycle (i.e., wear and tear on the spacesuit). These architectural considerations, including the 
+characteristics of the intended destinations, will dictate many design choices. 
+</p>
+<p>Another factor for system design consideration should be commonality among multi-system architectures, where 
+practical. System design and operational choices made independently, such as atmosphere set points, resulting pre-
+breathe protocols, and even fire mitigations, could result in additional mission operational complexity in terms of crew 
+and ground operator training. 
+</p>
+<p>C. Operational Considerations 
+NASA has extensive experience with microgravity spacewalks (e.g., in low Earth orbit). Engineers and mission 
+</p>
+<p>planners have a thorough understanding of human physiological responses in these conditions and use atmospheres 
+that maximize comfort, health, and safety. 
+</p>
+<p> 
+Figure 4. Example dive table from the U.S. Navy 
+Diving Manual [13]. SCUBA divers use dive charts like 
+this one to plan for safe dives given considerations include 
+water pressure, dive time, and tank air mixture. (Credit: 
+U.S. Navy) </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>7 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p>NASA has far less operational 
+experience in partial gravity (i.e., only 
+from the lunar landings of the 1960s and 
+1970s). As the agency gains more 
+practical experience in partial gravity, 
+atmospheres (e.g., for the Human Landing 
+System, spacesuits) may change to 
+optimize for the effects of partial gravity 
+on the human body and surface assets. 
+</p>
+<p>D. Mars-Forward Considerations 
+While many lunar systems are 
+</p>
+<p>extensible to Mars exploration, 
+environmental differences between the 
+two planetary bodies may prompt design 
+differences. Operating in Mars’s 
+atmosphere, which exerts less pressure 
+than Earth’s atmosphere but more than the 
+Moon’s vacuum conditions, may call for 
+different atmospheres in habitation 
+systems and spacesuits. Flame blow-off 
+factors will be different in martian gravity 
+and the on-back mass and center of 
+gravity of the spacesuit with have an even 
+more pronounced impact on crew fatigue 
+during spacewalks. 
+</p>
+<p>IV. Conclusion 
+There is no one-size-fits-all solution for vehicle and suit atmospheres. Realizing a multi-partner architecture that 
+</p>
+<p>minimizes risk and maximizes utilization time requires NASA to develop robust, flexible systems that can operate in 
+and interface with a variety of systems. Rather than the agency dictating specific atmospheres or setting operational 
+requirements, it is imperative that NASA awards contracts and adjudicates standards with their providers with this 
+flexibility in mind. 
+</p>
+<p>As the agency grows its experience in partial gravity operations, it will refine its approaches and this knowledge 
+gain will enable an enduring presence at the Moon Base and humanity’s first journeys to Mars. 
+</p>
+<p>A. Early Artemis architectures 
+For the first missions to land astronauts on the Moon in over 40 years, NASA and its Artemis commercial providers 
+</p>
+<p>are developing multiple architecture options to enable surface EVAs. 
+ 
+</p>
+<p> 
+Figure 5. Astronauts Practice Next Giant Leap for Artemis. NASA 
+astronaut Doug “Wheels” Wheelock and Axiom Space astronaut Peggy 
+Whitson test the mobility of Artemis spacesuits conducting movements 
+and tasks similar to those necessary during lunar surface exploration on 
+Artemis missions [15]. 
+ </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>8 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p> 
+</p>
+<p>Utilizing the variables in Table 1, NASA has evaluated multiple prebreathe protocols for use on the early Artemis 
+missions 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>B. Key Takeaways 
+• Vehicle and suit atmospheres are a key factor for crew health and safety, providing the gas mixture that 
+</p>
+<p>crew members breathe. When selecting an atmosphere, NASA must consider risks like fire and 
+decompression sickness, while maximizing spacesuit mobility and EVA duration. 
+</p>
+<p>• Exploration systems will need to provide safe and compatible atmospheres, enabling crew members to 
+live and work in space while transitioning between elements. 
+</p>
+<p>• While NASA has a great deal of experience in microgravity, operating in a partial gravity environments 
+like on the Moon to Mars may have different effects on human physiology that the agency must 
+understand. 
+</p>
+<p>• NASA will manage atmospheres for the Artemis campaign and Mars missions based on many 
+considerations and trade-offs, including exercising flexibility to use a range of atmospheres for different 
+use cases. 
+</p>
+<p> 
+ 
+</p>
+<p> 
+* A PiO2 of 2.22 psi is being evaluated as a mildly hypoxic atmosphere but is not yet approved. 
+† A suit pressure of 5.2 psi is being evaluated as an elevated suit pressure but is not yet approved. 
+‡ The Architecture 1 protocol is based on modeling and indirect testing, but has not yet been tested. 
+</p>
+<p>Table 1. Early Artemis mission architecture variables related to surface EVAs. 
+Vehicle Atmospheric Variables Option 1 Option 2 
+Vehicle Pressure 8.2 psi 9.6 psi 
+Vehicle MOC 37% 30% 
+</p>
+<p> 
+Physiological Variables Option 1 Option 2 
+Partial Pressure of Inspired Oxygen 2.46 psi 2.22 psi* 
+</p>
+<p> 
+ 
+</p>
+<p>Suit Atmosphereic Variables Option 1 Option 2 
+Suit Pressure 4.3 psi 5.2 psi† 
+</p>
+<p> 
+</p>
+<p>Table 2. Early Artemis mission architecture examples. 
+ Vehicle Pressure Vehicle MOC PiO2 Suit Pressure Prebreathe Time 
+Architecture 1 8.2 psi 37% 2.46 psi 4.3 psi ~50 min‡ 
+Architecture 2 9.6 psi 30% 2.46 psi 5.2 psi ~50 min 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>9 
+International Conference on Environmental Systems 
+</p>
+<p> 
+ 
+</p>
+<p>Acknowledgments 
+The authors would like to recognize the work of the Exploration Atmosphere Issue Resolution Team members. 
+</p>
+<p>Since the winter of 2022, this team has worked with NASA commercial providers Axiom, Blue Origin, SpaceX, 
+international partner ESA, and the NASA Engineering Safety Center (NESC). Together they reviewed historical 
+lessons learned and identified key process updates and design trades needed to make NASA’s return to the lunar 
+surface successful, while safely maximizing the duration of EVAs. 
+</p>
+<p>References 
+ 
+[1] National Oceanic and Atmospheric Administration, "The Atmosphere," 2 July 2024. [Online]. Available: 
+</p>
+<p>https://www.noaa.gov/jetstream/atmosphere. [Accessed 3 March 2026]. 
+[2] C. Anchondo, P. Masi and C. Briggs, "Creating the Test Environment for Exploration Habitats," in 53rd International 
+</p>
+<p>Conference on Environmental Systems, Louisville, KY, ICES-2024-128. 
+[3] National Aeronautics and Space Administration, "Report of Apollo 204 Review Board," 5 April 1967. [Online]. Available: 
+</p>
+<p>https://www.nasa.gov/wp-content/uploads/static/history/Apollo204/summary.pdf. [Accessed 3 March 2026]. 
+[4] D. Hirsch, "An Approach to the Flammability Testing of Aerospace Materials," NASA Technical Reports Server, 
+</p>
+<p>20120010633, 2012. 
+[5] E. Johnson and P. Ferkul, Interviewees, and G. Jordan, Interviewer, "Moon Material Flammability," Houston We Have A 
+</p>
+<p>Podcast, 23 May 2025. [Podcast].Available: https://www.nasa.gov/podcasts/houston-we-have-a-podcast/moon-material-
+flammability. [Accessed 1 May 2026]. 
+</p>
+<p>[6] National Aeronautics and Space Administration, "APPENDIX H: Human Landing System Attachment A01 HLS Con Ops 
+v1.0 Release 1.3," 1 May 2020. [Online]. Available: 
+https://sam.gov/workspace/contract/opp/7e3ad9e2ec964008a7f419ae8a8511a4/view. [Accessed 4 March 2026]. 
+</p>
+<p>[7] NASA, "Decompression Sickness (DCS) Risk Mitigation," OCHMO-TB-037, Rev C, 2023. 
+[8] K. Lange, B. Duffield, F. Jeng and P. Campbell, "Exploration Spacecraft and Space Suit Internal Atmosphere Pressure and 
+</p>
+<p>Composition," in 2005 Bioastronautics Investigator''s Workshop, Galveston, TX, 2005. 
+[9] National Aeronautics and Space Administration, "Exploration Extravehicular Mobility Unit (xEMU)," 7 October 2019. 
+</p>
+<p>[Online]. Available: https://www.nasa.gov/image-article/exploration-extravehicular-mobility-unit-xemu/. [Accessed 3 
+March 2026]. 
+</p>
+<p>[10] S. McFarland, D. Campbell and R. Rhodes, "NASA Advanced Space Suit Pressure Garment System Status and Development 
+Priorities 2025," in 54th International Conference on Environmental Systems, Prague, Czech Republic, ICES-2025-385. 
+</p>
+<p>[11] NASA, "CO2 Chamber Services - 80NSSC25913595Q," SAM.gov, 2025. 
+[12] J. Conkin, "Probability of Decompression Sickness and Venous Gas Emboli from 49 NASA Hypobaric Chamber Tests with 
+</p>
+<p>Reference to Exploration Atmosphere," National Aeronautics and Space Administration, NASA/TP-2020-220529. 
+[13] U.S. Navy, "U.S. Navy Diving Manual, Revision 7," Commander, Naval Sea Systems Command, 2016. 
+[14] National Aeronautics and Space Administration, "Twitter," 8 July 2025. [Online]. Available: 
+</p>
+<p>https://x.com/NASA_Johnson/status/1942709546977567116/photo/1. [Accessed 3 March 2026]. 
+[15] SpaceX, "Astronauts Practice Next Giant Leap for Artemis," NASA Image and Video Library, 5 March 2024. [Online]. 
+</p>
+<p>Available: https://images.nasa.gov/details/hls-crew-elevator-demo-20240503-dsc00138. [Accessed 3 March 2026]. 
+ </p>
+<p></p>
+</div>
+<ul> <li>Surface Vehicle Atmospheric Considerations for Moon to Mars Exploration</li>
+ <li>Acronyms and Nomenclature</li>
+ <li>I. Introduction</li>
+ <li>II. Key Factors</li>
+<ul> <li>A. Flammability</li>
+ <li>B. Crew Physiology</li>
+ <li>C. Operational Timeline</li>
+ <li>D. Suit Mobility</li>
+</ul>
+ <li>III. Considerations for Moon to Mars Exploration</li>
+<ul> <li>A. Atmosphere Transition Considerations</li>
+ <li>B. System Design Considerations</li>
+ <li>C. Operational Considerations</li>
+ <li>D. Mars-Forward Considerations</li>
+</ul>
+ <li>IV. Conclusion</li>
+<ul> <li>A. Early Artemis architectures</li>
+ <li>B. Key Takeaways</li>
+</ul>
+ <li>Acknowledgments</li>
+ <li>References</li>
+</ul>
+</body></html>

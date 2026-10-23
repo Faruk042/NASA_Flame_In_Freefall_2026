@@ -1,0 +1,230 @@
+Sub Topic: Fire Research
+10th U. S. National Combustion Meeting
+Organized by the Eastern States Section of the Combustion Institute
+April 23-26, 2017
+College Park, Maryland
+
+Low Pressure Flame Blowoff from the Forward Stagnation
+Region of a Blunt-nosed Cast PMMA Cylinder in Axial Mixed
+Convective Flow
+J. W. Marcum1, P. Rachow2, P. V. Ferkul3, and S.L. Olson*4,
+1
+
+Purdue University, West Lafayette, IN, USA
+2
+HX5 Sierra, LLC, Cleveland, OH, USA
+3
+USRA, Cleveland, OH USA
+4
+NASA Glenn Research Center, Cleveland, OH, USA
+*
+Corresponding Author Email: sandra.olson@nasa.gov
+Abstract: Low-pressure blowoff experiments were conducted with a stagnation flame stabilized on
+the forward tip of cast PMMA rods in a vertical wind tunnel. Pressure, forced flow velocity, gravity,
+and ambient oxygen concentration were varied. Stagnation flame blowoff is determined from a
+time-stamped video recording of the test. The blowoff pressure is determined from test section
+pressure transducer data that is synchronized with the time stamp. The forced flow velocity is also
+determined from the choked flow orifice pressure. Most of the tests were performed in normal
+gravity, but a handful of microgravity tests were also conducted to determine the influence of
+buoyant flow velocity on the blowoff limits. The blowoff limits are found to have a linear
+dependence between the partial pressure of oxygen and the total pressure, regardless of forced flow
+velocity and gravity level. The flow velocity (forced and/or buoyant) affects the blowoff pressure
+through the critical Damkohler number residence time, which dictates the partial pressure of oxygen
+at blowoff. This is because the critical stretch rate increases linearly with increasing pressure at low
+pressure (sub-atmospheric pressures) since a second-order overall reaction rate with two-body
+reactions dominates in this pressure range.
+Keywords: blowoff, mixed convective flow, low pressure
+
+1.
+
+Introduction
+The effect of reduced pressure on the blowoff flammability limits has been studied in a variety
+of geometries and with a variety of fuels. Flame spread over thin fuels was shown to follow a
+power law dependence on pressure and oxygen concentration away from the extinction limit, but
+near the extinction limit, the dependence breaks down. Extinction limits for thin cellulosic fuels
+burning downward [1] and both upward and downward [2] showed that the oxygen concentration
+at extinction increased as the pressure decreased. If the data is plotted as partial pressure of oxygen
+versus total pressure, a parallel linear relationship is found for the upward and downward limits.
+More recently, eleven practical aerospace materials [3] were tested at three pressures and the
+upward flammability limits show a linear dependence of partial pressure of oxygen with total
+pressure. A similar trend of partial pressure of oxygen versus total pressure boundary was found
+
+1
+
+Sub Topic: Fire Research
+for Nomex-HT-9040 for concurrent-vertical, opposed-vertical, opposed-horizontal, and
+concurrent-horizontal extinction limits [4].
+The objective of this work is to study the effect of oxygen concentration, forced flow velocity,
+and ambient pressure on the blowoff extinction limits of concurrent vertical PMMA rods with the
+intent to evaluate the effect of these variables on the blowoff limits.
+2. Methods / Experimental
+The blowoff experiments were performed in a low-pressure 20 cm diameter vertical blow down
+wind tunnel. The flow through the wind tunnel was controlled as well to provide an additional
+variable in addition to oxygen and pressure. The flow was set using a critical flow orifice and a
+set upstream pressure. The pressure in the test section was controlled using a digital backpressure
+control valve that can be manually adjusted in 0.007 atmosphere increments. The oxygen-nitrogen
+gases used were from premixed bottles.
+The 0.3175 cm radius clear cast PMMA rods were sealed inside the test section and the test
+section was evacuated using a vacuum pump attached to the backpressure control valve. The
+control pressure for ignition was then set. The forced flow was initiated to fill the test section with
+the desired gas mixture, and the sample was ignited at a flammable pressure.
+For normal gravity experiments, the igniter was retracted, and then the pressure was decreased
+in 0.1 PSIA increments every few seconds until the flame blew off. This decreasing pressure time
+history is shown in Figure 1.
+
+Figure 1: Pressure history for a typical normal gravity blowoff test. Blowoff is
+determined from the video and the video timestamp is used to determine the pressure
+at blowoff.
+
+2
+
+Sub Topic: Fire Research
+For Zero Gravity Research Facility drop tests, the flame was ignited at a flammable oxygen
+concentration. After the igniter was retracted, the flame was allowed to stabilize, and then the
+oxygen concentration was switched at a prescribed time before the drop start based on the flow
+time for the oxygen to reach the flame. During the drop, the flame adjusts to the new oxygen
+concentration at the fixed forced flow velocity and pressure, and the flame either blows off or
+survives the 5.18 second drop.
+Blowoff is determined from the video images. The video image has a timestamp that was also
+recorded in the digital file with the pressure data. The pressure and forced flow velocity at blowoff
+are determined for each test from the digital pressure readings at blowoff.
+3. Results and Discussion
+Blowoff images for each oxygen concentration tested are shown in Figure 2. The forced flow
+is up in these images, in the same direction as buoyant flow. The flames near blowoff are
+generally blue, and blowoff occurs as the stagnation region opens up and the flame blows
+downstream. The downstream flame will often exhibit large oscillations at 2-3 Hz forward and
+back along the rod multiple times before the final retreat and complete extinction. As the
+ambient oxygen increases from 15% to 21% by volume, the extinction pressure decreases,
+causing the flame to expand. No flame could be stabilized at 14% oxygen at one atmosphere
+pressure.
+
+O2 % by volume: 21
+19
+18
+17
+16
+15
+Figure 2: flame blowoff images just as the stagnation region opens up. First image
+is using a different camera, showing the timecode used to synchronize the video of
+blowoff with the digital pressure data.
+3.1 Blowoff pressure as a function of forced flow velocity
+The effect of forced flow on the normal gravity blowoff pressure is shown for four oxygen
+concentrations in Figure 3. At each oxygen concentration, a linear relationship is found between
+the blowoff pressure and the forced flow velocity, consistent with previous results with methane
+opposed jet blowoff tests [5]. Linear fits are shown for each oxygen concentration.
+
+3
+
+Sub Topic: Fire Research
+
+Figure 3: Blowoff pressures as a function of forced flow velocity for four oxygen
+concentrations for normal gravity experiments.
+For 16% oxygen, drop test results are shown in Figure 4 with the normal gravity test results. The
+drop tower results are labeled stable if the flame survives the 5.18 s drop test, and blowoff if the
+flame blows off during the drop. The normal gravity blowoffs occur at a significantly lower forced
+flow velocity for a given pressure, indicating that a normal gravity buoyant flow is a significant
+contribution to the mixed convective flow effect on the blowoff pressure. If we shift the normal
+gravity data by linear superposition of flows Vforced + Vbuoyant, where Vbuoyant = 27 cm/s, the normal
+gravity data overlaps the drop tower test results. Surprisingly, a constant buoyant flow appears to
+be adequate, so buoyant flow is not a strong function of pressure. As was noted in [1], the flame
+temperatures are reduced only slightly near the extinction limits as pressure is reduced. The
+buoyant velocity varies with Δρ/ρ which for a given constant pressure test varies as ΔT/T and
+which does not change much with pressure near extinction. This buoyant flow shift agrees with
+an estimated buoyant velocity Vbuoyant~ Δρ/ρ (gd)1/2 ~ 25 cm/s for g=981 cm/s2, d=0.635 cm, and
+Δρ/ρ~1. Also notice that because of the inherent buoyant flow, the lowest total pressures at blowoff
+are lower in the microgravity tests since the achievable flows are lower in microgravity.
+
+Figure 4: Normal gravity blowoff tests at 16% oxygen compared to drop tower tests,
+showing the need for a buoyant flow shift of ~ 27 cm/s.
+4
+
+Sub Topic: Fire Research
+3.2 Blowoff pressures as a function of partial pressure of oxygen
+The partial pressure of oxygen at which normal gravity blowoff occurs for each % O2 is plotted
+in Figure 5 as a function of the total pressure at blowoff. The flammability limit was found
+experimentally to be between 14% and 15% oxygen in normal gravity, and the curve fit finds the
+partial pressure oxygen at one atmosphere pressure is 0.1486 atmospheres, or 14.86% O2 by
+volume, as shown in Figure 5. The R2= 0.9988 for the fit to all the normal gravity data.
+Also shown in Fig. 5 are the lines of constant oxygen mole fraction plotted as ppO2 versus total
+pressure. Of course, each data point falls on its corresponding mole fraction line. However, the
+linear trend to the blowoff data is an independent linear fit. The forced flow velocity for each test
+is reflected in the symbol size, as shown by the scale on the right axis.
+In addition to the normal gravity data, the zero gravity drop tower results are plotted, and are
+found to follow the same trend despite the velocity shift as shown in Figure 4.
+
+Figure 5: Partial pressure of oxygen at blowoff versus total pressure at blowoff. The trend
+in the data is independent of the mole fraction of oxygen lines for each oxygen mole
+fraction.
+4 Constant critical Damkohler number
+A critical Damkohler number (Dacrit) is defined as
+𝐷𝑎 𝑐𝑟𝑖𝑡 =
+
+𝑓𝑙𝑜𝑤 𝑡𝑖𝑚𝑒
+𝑟𝑒𝑎𝑐𝑡𝑖𝑜𝑛 𝑡𝑖𝑚𝑒
+
+~
+
+𝑟𝑒𝑎𝑐𝑡𝑖𝑜𝑛 𝑟𝑎𝑡𝑒
+𝑓𝑙𝑜𝑤 𝑟𝑎𝑡𝑒
+
+=
+
+𝛽𝜌 (𝑋 𝑓 )(𝑋 𝑂2 )𝑒 (−𝐸⁄ 𝑅
+𝑎
+
+𝑇 𝑐𝑟𝑖𝑡 )
+
+~
+
+𝑝𝑝𝑂2
+𝑃
+
+The critical Damkohler is assumed to be constant along the blowoff boundary [6]. In the
+numerator, the density and oxygen mole fraction are proportional to ppO2. In addition, there is a
+pressure dependence as part of the stretch rate a=aforced+abuoyant=(3/2)U/R + abuoyant, where
+theoretically, the critical stretch rate increases linearly with increasing pressure [7] at low
+5
+
+Sub Topic: Fire Research
+pressure where a second order overall reaction rate with two-body reactions dominates. This
+agrees with the observed linear dependence of blowoff pressure with forced flow velocity as
+shown in Fig. 3. The flame temperatures are reduced only slightly near the extinction limits as
+pressure is reduced [1]. Therefore, for a constant critical Damkohler number, ppO2 should be
+approximately proportional to total pressure, as is observed in Fig. 5.
+5. Conclusions
+Low-pressure blowoff experiments were conducted with a stagnation flame stabilized on the
+forward tip of cast PMMA rods in a vertical wind tunnel. Pressure, forced flow velocity, gravity,
+and ambient oxygen concentration were varied. The blowoff pressure is found to be linearly
+dependent on the forced flow velocity. The microgravity blowoff pressure for a given oxygen
+concentration occurs at a higher forced flow velocity, implying that a buoyant flow contribution
+in normal gravity is not negligible. The partial pressure of oxygen at blowoff is linearly dependent
+on the total pressure regardless of forced flow velocity and gravity level. The flow velocity (forced
+and/or buoyant) affects the blowoff pressure through the constant critical Damkohler number
+residence time, which dictates the partial pressure of oxygen at blowoff. This is because the critical
+stretch rate increases linearly with increasing pressure at low pressure (sub-atmospheric pressures)
+since a second-order overall reaction rate with two-body reactions dominates in this pressure
+range.
+Acknowledgements
+The ISS Research Project Office funded this work. We want to thank the NASA Glenn Zero
+Gravity Research Facility personnel, led by Eric Neumann.
+References
+[1] Frey, A. E. JR. and T’ien." JS, “A theory of Flame Spread over a Solid Fuel Including Finite-Rate
+Chemical Kinetics,” Combust. and Flame 36 (1979): 263-289.
+[2] Chu, L., C. H. Chen, and J. S. T'ien. "Upward propagation over paper samples." Proceedings of
+the ASME Paper 81 (1981).
+[3] Hirsch, D.B, Williams, J., and Beeson, H.; “Pressure Effects on Oxygen Concentration
+Flammability Thresholds of Polymeric Materials for Aerospace Applications” J. Testing &
+Evaluation, V.36, Issue 1, (pp. 69-72). NASA Document ID 20070018178, (2008).
+[4] Osorio, Andres Felipe. "Effect of Environmental Variables on the Flammability of Fire
+Resistant Materials." Dissertation, Univ. Cal. Berkeley (2014).
+[5] H.K. Chelliah, C.K. Law, T. Ueda; An experimental and theoretical investigation of the dilution,
+pressure and flow-field effects on the extinction condition of methane-air-nitrogen diffusion
+flames, Proc. Intl. Comb. Symp. 23(1) (1991) 503-511.
+[6] A. Alkidas, and P. Durbetaki. Stagnation-point heat transfer: the effect of the first Damkohler
+similarity parameter, Journal of Heat Transfer 94.4 (1972): 410-414.
+[7] C.H Sohn, S.H Chung, Effect of pressure on the extinction, acoustic pressure response, and
+NO formation in diluted hydrogen–air diffusion flames, Combustion and Flame 121 (1–
+2)(2000) 288–300.
+
+6
+

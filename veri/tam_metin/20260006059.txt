@@ -1,0 +1,218 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="cp:revision" content="3">
+<meta name="extended-properties:AppVersion" content="16.0000">
+<meta name="extended-properties:Notes" content="1">
+<meta name="meta:paragraph-count" content="75">
+<meta name="meta:word-count" content="859">
+<meta name="custom:ContentTypeId" content="0x0101008D5BBC9EF0066645A861E9DF6D510A0B">
+<meta name="extended-properties:PresentationFormat" content="Widescreen">
+<meta name="extended-properties:Application" content="Microsoft Office PowerPoint">
+<meta name="meta:last-author" content="Kennedy, Logan (MSFC-LP10)">
+<meta name="dc:creator" content="Elburn, Darcy E. (HQ-CJ000)[BOOZ ALLEN HAMILTON]">
+<meta name="extended-properties:Company" content="">
+<meta name="meta:slide-count" content="9">
+<meta name="xmpTPg:NPages" content="9">
+<meta name="dcterms:created" content="2021-04-26T20:13:55Z">
+<meta name="dcterms:modified" content="2026-07-09T14:02:33Z">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.microsoft.ooxml.OOXMLParser">
+<meta name="dc:title" content="PowerPoint Presentation">
+<meta name="extended-properties:DocSecurityString" content="None">
+<meta name="custom:MediaServiceImageTags" content="">
+<meta name="Content-Type-Override" content="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+<meta name="Content-Type" content="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+<meta name="dc:publisher" content="">
+<title>PowerPoint Presentation</title>
+</head>
+<body><div class="slide-content"><p>Logan Kennedy</p>
+<p>Spacesuit Integration Focal</p>
+<p>Human Landing System Program, Marshall Spaceflight Center, NASA</p>
+<p></p>
+<p></p>
+<p>ICES 2026, Rio Grande, Puerto Rico, 15 July 2026</p>
+<p>Surface Vehicle Atmospheric Considerations for Moon to Mars Exploration 
+ICES-2026-324</p>
+<p>Brian Alpert</p>
+<p>Spacesuit SE&amp;I Focal</p>
+<p>Human Landing System Program, Johnson Spaceflight Center, NASA</p>
+<p></p>
+<p></p>
+</div>
+<div class="slide-master-content"><p></p>
+</div>
+<div class="slide-content"><p>Agenda</p>
+<div class="embedded" id="slide2_rId2"></div>
+<p>Why atmospheres matter</p>
+<p>Trade space</p>
+<p>Implementation considerations</p>
+<p>Early mission architectures and future work</p>
+<p>Key takeaways</p>
+<p></p>
+</div>
+<div class="slide-master-content"></div>
+<div class="slide-content"><p>Why vehicle and suit atmospheres matter</p>
+<p>Spacesuit operating pressure is set as low as possible to maximize mobility and minimize fatigue during a spacewalk</p>
+<p>Conversely, vehicles operate at a higher pressure than suits to mitigate other issues (More on this later)</p>
+<p>Like SCUBA diving, changing pressures on the human body comes with risk of Decompression Sickness (DCS - a release of nitrogen dissolved in tissues which may result in bubble formation)</p>
+<p>Venous Gas Emboli (VGE) are “silent bubbles” (no symptoms or clinical findings)</p>
+<p>Type I DCS = mild symptoms: joint pain; single extremity tingling or numbness</p>
+<p>Type II DCS = can be life-threatening: Central neurological or cardiopulmonary symptoms</p>
+<p>Independent Variables considered include prebreathe duration, suit pressure, and vehicle atmosphere, and dependent Variables include crew timeline and crew fatigue. DCS and Flammability risks are meant to
+be held constant.</p>
+<p>An Exploration Atmosphere “Issue Resolution Team” (IRT) was set up in ~Dec 2022 to directly work the problem of lunar surface mission atmospheres</p>
+<p>The ExAtm IRT consisted of technical and programmatic experts from across the Agency</p>
+<p>2</p>
+<div class="embedded" id="slide3_rId2"></div>
+<div class="embedded" id="slide3_rId3"></div>
+</div>
+<div class="slide-master-content"></div>
+<div class="slide-content"><p>Trade Space</p>
+<p>3</p>
+<p>Example Artemis 
+Vehicle Atmosphere
+9.6 psi</p>
+<p>28.5% O2</p>
+<div class="embedded" id="slide4_rId2"></div>
+<div class="embedded" id="slide4_rId3"></div>
+<p></p>
+<p></p>
+<p>Current materials are tested to 30% flammability limit = Large selection of materials</p>
+<p>Very few materials are passing higher flammability limits needed for 34% cabin</p>
+<p></p>
+<p>Variable Suit Pressure</p>
+<p>4.3 - 8.2 psi</p>
+</div>
+<div class="slide-master-content"></div>
+<div class="slide-content"><p>Implementation considerations</p>
+<p>Higher suit pressure: perform testing in flight-analog suits at higher pressure to determine any impacts to crew fatigue, mobility, ability to perform EVA tasks</p>
+<p></p>
+<p>DCS risk: perform testing (e.g. JSC 20' chamber) to gather data on anatomical impacts from various prebreathe protocols given a starting vehicle atmosphere</p>
+<p></p>
+<p>Lower vehicle pressure: work to understand/quantify flammability risk at lower pressure (and 1/6g) from probability of ignition to material flammability to ability to detect and suppress a fire</p>
+<p></p>
+<p></p>
+<p></p>
+<div class="embedded" id="slide5_rId2"></div>
+<div class="embedded" id="slide5_rId3"></div>
+<div class="embedded" id="slide5_rId4"></div>
+<p>4</p>
+<div class="embedded" id="slide5_rId5"></div>
+</div>
+<div class="slide-master-content"></div>
+<div class="slide-content"><p>Early mission architectures and future work</p>
+<p>The ExAtm IRT was charged with making a decision about early lunar surface mission atmospheres 
+in Summer 2024</p>
+<p>Extensive test programs had started producing data, but unknowns/uncertainty drove a recommendation for 
+vehicle atmospheres to stay below a 30% O2 maximum for “early” missions</p>
+<p>Example: material flammability at O2 above 30% was extremely limited and showed “worse” behavior</p>
+<p>Example: testing at various O2%’s resulted in “propagation where we didn’t expect and no propagation where we expected it”</p>
+<p>SME work had shown that NASA’s approach to fire safety since Apollo/Skylab was oversimplified and inadequately considered complexity in how fire starts, spreads, and is suppressed</p>
+<p>Example: exposing the face of a material to fire may not cause propagation but exposing the edge might</p>
+<p>Example: adding zippers or thread to a material may drastically change how it responds to fire</p>
+<p>30% O2 limit for early missions drove urgency on Elevated Suit Pressure (ESP) testing/analysis and on optimizing prebreathe protocols to preserve as much EVA time as possible</p>
+<p>While American spacesuits historically operate at 4.3psi, ESP testing/analysis is ongoing at 5.2psi</p>
+<p>Eight 20’ chamber Prebreathe testing campaigns have occurred so far with more planned</p>
+<p></p>
+<p>ESP, Prebreathe, and Fire Safety testing/analysis is ongoing to inform future missions/vehicles</p>
+<p>Long term desire remains to safely operate vehicles at elevated O2 to maximize useful EVA time</p>
+<p>Will continue to work with Artemis commercial partners (Axiom, SpaceX, Blue Origin) to solve this problem</p>
+<p></p>
+<p></p>
+<p>5</p>
+<p></p>
+<p></p>
+<div class="embedded" id="slide6_rId2"></div>
+<div class="embedded" id="slide6_rId4"></div>
+<div class="embedded" id="slide6_rId5"></div>
+</div>
+<div class="slide-master-content"></div>
+<div class="slide-content"><p>Vehicle/suit atmosphere balancing involves many conflicting variables and passionate stakeholders</p>
+<p>Fire in space is scary for a reason (Apollo 1, etc.)</p>
+<p></p>
+<p>Past assumptions or NASA standards about fire safety may no longer be valid</p>
+<p>Simple/easy/cheap approaches/analyses from Shuttle/ISS era should not apply to Artemis</p>
+<p></p>
+<p>Small changes to powered hardware and/or material configuration can have unexpected impacts to ignition and fire behavior</p>
+<p>Flight-like, configuration-specific testing is needed to quantify responses</p>
+<p></p>
+<p>Early Artemis missions may have operational limitations (longer prebreathe, suit mobility,
+strict stowage rules) as we continue to explore this problem</p>
+<p>2028 Artemis missions will be here soon!</p>
+<p></p>
+<p>Key takeaways</p>
+<p>6</p>
+<div class="embedded" id="slide7_rId2"></div>
+<div class="embedded" id="slide7_rId3"></div>
+</div>
+<div class="slide-master-content"></div>
+<div class="slide-content"><p></p>
+</div>
+<div class="slide-master-content"><p>nasa.gov/ARTEMIS</p>
+<p>for more information</p>
+<p>nasa.gov/SOLVE</p>
+<p>for challenges, prize competitions, and citizen science opportunities</p>
+<p>nasa.gov/STEM</p>
+<p>for student activities</p>
+</div>
+<div class="slide-notes"><p>LRO image</p>
+<p>7</p>
+</div>
+<div class="slide-content"><p>Thank you to all the members of the Exploration Atmosphere Issue Resolution Team – recipient of a Group Achievement Award!</p>
+<p></p>
+<p>100+ people have worked since 2022 focused on solving this specific problem and we’re far from done</p>
+<p></p>
+</div>
+<div class="slide-master-content"></div>
+<div class="package-entry"><h1>image6.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image9.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image16.png</h1>
+</div>
+<div class="package-entry"><h1>image10.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image2.png</h1>
+</div>
+<div class="package-entry"><h1>image5.png</h1>
+</div>
+<div class="package-entry"><h1>image17.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image18.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image19.png</h1>
+</div>
+<div class="package-entry"><h1>image20.png</h1>
+</div>
+<div class="package-entry"><h1>image21.png</h1>
+</div>
+<div class="package-entry"><h1>image22.png</h1>
+</div>
+<div class="package-entry"><h1>image23.png</h1>
+</div>
+<div class="package-entry"><h1>image24.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image25.png</h1>
+</div>
+<div class="package-entry"><h1>image26.svg</h1>
+</div>
+<div class="package-entry"><h1>image27.png</h1>
+</div>
+<div class="package-entry"><h1>image28.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image29.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image30.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image12.png</h1>
+</div>
+<div class="package-entry"><h1>image13.png</h1>
+</div>
+<div class="package-entry"><h1>image14.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image15.jpeg</h1>
+</div>
+<div class="package-entry"><h1>image1.png</h1>
+</div>
+<div class="embedded" id="/docProps/thumbnail.jpeg"></div>
+</body></html>

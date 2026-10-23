@@ -1,0 +1,329 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PowerPoint Presentation
+
+
+Asymptotic Analysis of Premixed N-alkane
+Cool Flame Propagation
+
+Vedha Nayagam
+Case Western Reserve University/NASA GRC
+
+Forman A. Williams 
+University of California San Diego
+
+Daniel L. Dietrich
+NASA Glenn Research Center
+
+12th U. S. National Combustion Meeting
+Organized by the Eastern States Section of the Combustion Institute
+May 24-26, College Station, Texas
+
+
+
+Background
+
+o High Pressure Transcritical Combustion (HPTC) Project
+NASA Glenn Research Center has initiated a research 
+program in high pressure combustion following 2014 
+Combustion Workshop recommendations. A high 
+pressure experimental apparatus capable of doing 
+droplet combustion and fuel injection studies was built
+for the Zero Gravity Facility 
+
+o Combustion chamber rated up to 
+– 100 bar and 1000 K
+
+o High speed shadowgraph imaging 
+– 3000 frames per second
+
+o Color camera images at 
+– 300 frames per second
+
+o PMT tube recorded at 1000 Hz
+
+o Thermocouples (close to the droplet, oven 
+and deployment site)
+
+
+
+o Autoignition of N-dodecane droplets were studied
+under normal gravity to test the facility operations
+
+A small fuel droplet (~ 1 mm) is inserted into a high-
+pressure oven and the autoignition process is 
+imaged at 30,000 frames per second
+
+Under some conditions, ignition occurs in two 
+distinct stages: a cool flame is formed below the 
+droplet in the fuel plume and propagates toward 
+the droplet before hot-ignition occurs
+
+Cool flame propagation speeds are obtained during 
+two-stage ignition under normal gravity
+
+Pressure: 20 atm
+Temperature: 603 K
+Fuel: N-dodecane
+Pc: 18.5 atm
+Tc: 658 K
+
+Background: Autoignition and cool flame propagation 
+
+
+
+Cool Flame Location with Time*
+
+Low temperature (< 650 K) and low pressure cases are considered in this study
+
+o N-dodecane droplet (~1.1 mm) in air under normal gravity
+
+*Rose et al., Combustion Science and Technology (2021)
+
+
+
+Simplified Problem: Planar Premixed Cool Flame
+
+SL
+
+combustible mixture: Fuel + Oxidizer Igniter
+
+Three things can happen: 
+
+Detonation – SL Hot flame (~ 1000 m/s and Shock wave)
+
+Deflagration – Hot flame ( ~ 1 m/s and P=constant Mach No < 1) 
+
+Deflagration – Cool flame (~ 1 cm/s and P= constant)
+
+(autoignition fronts are not considered)
+
+Reference frame fixed to the lab
+
+Hot Flame - Deflagration
+
+𝑆𝑆𝐿𝐿 =
+λ
+ρ𝑐𝑐𝑝𝑝
+
+(𝑇𝑇𝑓𝑓−𝑇𝑇𝑖𝑖)
+(𝑇𝑇𝑖𝑖−𝑇𝑇𝑢𝑢)
+
+ω
+
+𝑇𝑇𝑓𝑓 = 𝑇𝑇𝑢𝑢 +
+𝑞𝑞
+𝑐𝑐𝑝𝑝
+
+o Final state depends on thermochemistry
+
+o Speed depends on kinetics
+
+Tu
+
+Tf
+Ti
+
+Preheat zone Reaction zone ~ δ
+
+
+
+5-step simplified chemical kinetics (based on San Diego Mechanism)*
+
+A – (cm3/mol.s) (for bimolecular reactions) & 1/s (for unimolecular reactions)
+Ta – (K )
+
+*Williams and Nayagam; Combustion Theory and Modelling (2019)
+
+*Williams and Nayagam; Combustion and Flame (2020)
+
+Heat release can 
+be associated 
+with this step
+
+Simplified Chemical Kinetics for Cool Flames
+
+RH (fuel)
+
+R
+
+RO2
+
+QOOH
+
+O2QOOH
+
+KET
+
++ O2
+
++ O2
+
+Low-T branching
+
+alkenes + R’
+
+Intermediate-T
+
+High-T
+No. Reaction A Ta
+
+1 F + OH → R + H2O 1.0 x 1012 0
+2 R + O2 → I 2.0 x 1012 0
+3 I + O2 → K + OH 3.5 x 107 -8360
+4 K → P's + OH 4.0 x 1013 19,840
+5 I → Q's 2.0 x 1012 12,090
+
+
+
+Before activation asymptotic analysis it is useful to look at the proposed structure
+
+1. Very thin Inner reaction zone-
+Heat released
+F and O partially oxidized, 
+I-produced
+
+2. Preheat zone –
+K produced
+I consumed
+
+3. Downstream 
+I - consumption Zone
+
+4. Upstream 
+I - consumption Zone
+
+1. F + OH → R + H2O 0
+2. R + O2 → I 0
+3. I + O2 → K+ OH -83 60 K 
+4. K → P’s + OH + heat 19 840 K
+5. I → Q’s 12 090 K
+
+Premixed Flame Propagation: Cool Flame
+
+𝑆𝑆𝐿𝐿
+
+
+
+Activation-Energy Asymptotic Theory
+
+Partial consumption of fuel and oxygen – both leak through the flame
+Assumed “R” and “OH” are in steady state – variables of interest: T, YI, YK, YO
+
+TQ – heat release parameter=500 K
+Wi – molecular weight if “i”
+
+𝜔𝜔4 = 𝐴𝐴 [𝐾𝐾]𝑒𝑒−𝑇𝑇4/𝑇𝑇
+
+𝜔𝜔5 = 𝐴𝐴 [𝐼𝐼]𝑒𝑒−𝑇𝑇5/𝑇𝑇
+
+𝜔𝜔3 = 𝐴𝐴 𝐼𝐼 𝑂𝑂2 𝑒𝑒−𝑇𝑇3/𝑇𝑇
+
+Equations are coupled
+
+
+
+Cool Flame Propagation Speed
+
+• The integral is solved numerically by guessing Tf until the equation is satisfied
+• Once Tf is known SL can be calculated 
+• Unlike hot flames, the flame temperature is determined from (coming from K – solution matching)
+
+• Solving the conservation equations in all the zones (analytically!) and matching the 
+results from different zones leads to the following two constraints:
+
+
+
+Comparison with Experiments
+
+Experiments
+N-dodecane
+P = 3 atm, 
+Oven temperature 580 to 703 K 
+Tu = 0.25 T0 +0.75 Tov
+
+
+
+Concluding Remarks
+
+o An activation energy asymptotic model for steady cool flame propagation has been 
+developed using a 5-step simplified chemistry for n-dodecane
+
+o During cool flame propagation both the final flame temperature and the flame 
+speed are controlled by chemical kinetics (unlike hot flame propagation)
+
+o Comparison against 1-g experimental results at lower pressures and temperatures 
+are shown to be reasonable
+
+o The model can be extended to cases with ozone addition and compared against 
+planar cool flame propagation experiments (e.g., Belmont’s work)
+
+o Detailed comparison against experimental observations are underway
+
+
+
+Questions?
+
+
+
+Backup Slide
+
+
+ Slide Number 1
+ Slide Number 2
+ Slide Number 3
+ Slide Number 4
+ Slide Number 5
+ Slide Number 6
+ Slide Number 7
+ Slide Number 8
+ Slide Number 9
+ Slide Number 10
+ Slide Number 11
+ Slide Number 12
+ Slide Number 13
+

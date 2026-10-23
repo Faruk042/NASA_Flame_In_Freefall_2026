@@ -1,0 +1,257 @@
+Applications of Machine Learning/
+Deep Learning by NASA IMPACT
+
+Dr. Katrina Virts
+2019 Spacecraft Flight Software Workshop
+9 December 2019
+
+Background
+What is IMPACT?
+
+How do we fit into NASA Earth Science?
+
+How do we use machine learning
+and deep learning to answer
+Earth Science questions?
+
+Earth Science – NASA’s Strategic Goal
+This ability to observe our planet comprehensively
+matters to each of us, on a daily level. Earth
+information - for use in Internet maps, daily weather
+forecasts, land use planning, transportation
+efficiency, and agricultural productivity, to name a
+few - is central to our lives, providing substantial
+contributions to our economies, our national
+security, and our personal safety. It helps ensure we
+are a thriving society. - NRC, 2018
+
+NASA’s Strategic Goal 1.1:
+“Understand The Sun, Earth, Solar
+System, And Universe.”
+
+Earth Science Data System Program
+The Earth Science Data System (ESDS) Program is an essential component of the
+Earth Science Division (ESD) and is responsible for:
+●
+●
+
+https://earthdata.nasa.gov
+●
+
+●
+
+●
+
+Actively managing NASA’s Earth science
+data (Satellite, Airborne, and Field).
+Developing unique data system capabilities
+optimized to support rigorous science
+investigations and interdisciplinary research.
+Processing (and reprocessing) instrument
+data to create high quality long-term Earth
+science data records.
+Upholding NASA’s policy of full and open
+sharing of all data, tools, and ancillary
+information for all users.
+Engaging members of the Earth science
+community in the evolution of data systems.
+
+The Earth Science Data and Information System (ESDIS) project at GSFC maintains and
+operates a data and information system for the Science Mission Directorate (SMD) and
+its ESD. IMPACT at MSFC supports the ESDS Program and collaborates with the ESDIS
+project.
+
+Earth Science Data System Program
+The Earth Science Data System (ESDS) Program is an essential component of the
+Earth Science Division (ESD) and is responsible for:
+●
+●
+
+https://earthdata.nasa.gov
+●
+
+●
+
+●
+
+Actively managing NASA’s Earth science
+data (Satellite, Airborne, and Field).
+Developing unique data system capabilities
+optimized to support rigorous science
+investigations and interdisciplinary research.
+Processing (and reprocessing) instrument
+data to create high quality long-term Earth
+science data records.
+Upholding NASA’s policy of full and open
+sharing of all data, tools, and ancillary
+information for all users.
+Engaging members of the Earth science
+community in the evolution of data systems.
+
+Maximize return on NASA data sets
+
+IMPACT Mission
+Empowering Science and Applications by
+Integrating Data, Technology and People Together
+
+Foster innovation
+Build strategic connections
+Enable early technology
+adoption
+Icons from thenounproject.com By Chameleon Design, IN and Vectors Market
+
+Early Technology Adoption
+New technology assessment, roadmap
+and prototyping for Data System evolution
+Success Stories:
+•MAAP – new collaboration platform for open science
+•Machine Learning – Road map and Deep Learning
+applications
+
+Machine Learning Road Map
+Need
+
+● Provide opportunities to innovate new ways of analysis
+and obtain valuable insights from EO data
+● Utilize ML techniques to improve search, access, and
+usability as well as overall operations in EOSDIS
+
+Objectives
+
+● Identify areas of strategic development
+● Track new developments in the AI and ML
+community to inform the ESDS Program
+● Develop and promote the concept of “OpenML”
+● Evaluate new tools and platforms
+
+Deliverables
+
+● Workshops focused on areas of interest
+● Develop use cases
+● Strategic recommendations
+
+Research to Operation
+
+ML Road Map
+Phenomena Portal
+
+A user interface designed to visualize
+and analyze a dynamic event catalog
+of atmospheric phenomena
+
+Phenomena Portal
+• Incorporate ML models with
+manually labeled data
+• ML models run daily to detect
+atmospheric phenomena
+• Smoke
+• High latitude dust
+• Transverse cirrus bands
+• Detections stored in event
+database
+• Visualize model output
+• Analyze events in space
+and time
+• API for accessing/parsing
+event database
+
+Smoke Detection
+2 May 2018 - Southern Florida
+•Smoke identified over both
+land and ocean
+
+• Model identifies well defined
+plumes for scenes with
+absence of complex features
+• Probabilities resemble visually
+observed optical thickness
+
+•Predictions resemble
+quality-controlled shapefiles
+
+GOES 16 pseudo-RGB with contoured model predictions (shading), HMS shapefiles (magenta
+and purple), and subject matter quality controlled shapefile (blue).
+
+Smoke Detection
+9 October 2017 - Central California
+•Large and small plumes
+detected
+•Smoke identification over
+both land and ocean
+•Coastal stratus clouds
+
+Smoke Detection
+27 October 2019 - Kincade Fire
+
+Tropical Cyclone Intensity Estimation
+Need: Fast, objective estimates of
+hurricane intensity
+
+Objectives
+●
+●
+
+●
+
+http://hurricane.dsig.net/
+
+Use a Deep Learning (DL)
+method to estimate intensity
+Create a situational awareness
+tool to display estimation and
+other information in real-time
+Use cloud infrastructure
+(Cumulus) to build a real-time
+system triggered by event
+notification
+
+Tropical Cyclone Intensity Estimation
+Hurricane Dorian (2019)
+
+http://hurricane.dsig.net/
+
+• Hourly estimation of wind
+speed
+• Get intensity estimates
+much faster than the
+current subjective methods
+(<1 minute vs. hours)
+• Class activation maps show
+that DL model is identifying
+classic signatures of intense
+hurricanes
+
+Tropical Cyclone Intensity Estimation
+Hurricane Florence (2018)
+
+http://hurricane.dsig.net/
+
+Image courtesy Reuters
+
+Lessons Learned
+• Need consistent large-scale
+training data
+• Open the AI black box
+• Training data/input data
+becomes part of the code
+• Versioning training data, model,
+algorithm becomes difficult
+• DevOps, Continuous Integration/
+Continuous Deployment (CI/CD)
+- new meaning
+• Complexity with evolving
+platforms and infrastructure
+
+Conclusions
+Empowering Science and
+Applications by Integrating Data,
+Technology and People Together
+Leveraging machine
+learning algorithms
+to analyze and
+increase usage of
+Earth system data
+
+Thank you!
+katrina.virts@uah.edu
+

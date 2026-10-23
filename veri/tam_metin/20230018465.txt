@@ -1,0 +1,1288 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.5">
+<meta name="xmp:CreatorTool" content="TeX">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dcterms:created" content="2023-12-19T16:51:44Z">
+<meta name="dcterms:modified" content="2023-12-19T16:51:44Z">
+<meta name="dc:format" content="application/pdf; version=1.5">
+<meta name="pdf:docinfo:creator_tool" content="TeX">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2023-12-19T16:51:44Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="pdf:docinfo:custom:PTEX.Fullbanner" content="This is MiKTeX-pdfTeX 4.11.0 (1.40.24)">
+<meta name="pdf:hasMarkedContent" content="false">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="PTEX.Fullbanner" content="This is MiKTeX-pdfTeX 4.11.0 (1.40.24)">
+<meta name="pdf:producer" content="MiKTeX pdfTeX-1.40.24">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="7">
+<meta name="pdf:hasXMP" content="false">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="pdf:docinfo:trapped" content="False">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:producer" content="MiKTeX pdfTeX-1.40.24">
+<meta name="pdf:docinfo:created" content="2023-12-19T16:51:44Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>Simplified Structure Models for Premixed n-Alkane Cool Flames
+</p>
+<p>Vedha Nayagam, Forman A. Williams, and Mar Battistella
+</p>
+<p>Supplementary Material
+</p>
+<p>This supplement outlines the details of the asymptotic analysis presented in the paper.
+</p>
+<p>Steady state approximations
+The seven step mechanism used in the analysis is shown in Table 1 of the main paper. We
+</p>
+<p>assume steady state for the species R and OH . As described in Section 2 of the main text, this
+allows us to eliminate ω1, and ω2 from consideration. The conservation equations along with
+their source terms are shown below.
+</p>
+<p>Conservation equations
+The conservation equations in terms of ξ are:
+</p>
+<p>ρuu = ρuSL = ρfSf = m (constant)
+</p>
+<p>dYF
+</p>
+<p>dξ
+=
+</p>
+<p>1
+</p>
+<p>L
+</p>
+<p>d2YF
+</p>
+<p>dξ2
+− ρD
+</p>
+<p>m2
+WFω4,
+</p>
+<p>dYO
+</p>
+<p>dξ
+=
+</p>
+<p>d2YO
+</p>
+<p>dξ2
+− ρD
+</p>
+<p>m2
+WOω4,
+</p>
+<p>dYI
+</p>
+<p>dξ
+=
+</p>
+<p>1
+</p>
+<p>L
+</p>
+<p>d2YI
+</p>
+<p>dξ2
++
+</p>
+<p>ρD
+</p>
+<p>m2
+WI(ω4 − ω5 − ω6 − ω7),
+</p>
+<p>dYK
+</p>
+<p>dξ
+=
+</p>
+<p>1
+</p>
+<p>L
+</p>
+<p>d2YK
+</p>
+<p>dξ2
++
+</p>
+<p>ρD
+</p>
+<p>m2
+WK(ω3 − ω4),
+</p>
+<p>dT
+</p>
+<p>dξ
+=
+</p>
+<p>d2T
+</p>
+<p>dξ2
++
+</p>
+<p>ρD
+</p>
+<p>m2
+WKTQω4.
+</p>
+<p>where
+ξ =
+</p>
+<p>∫
+m
+</p>
+<p>ρD
+dx
+</p>
+<p>Outer zone
+In this zone reactions are frozen and convection-diffusion balance occurs for all the species
+</p>
+<p>and temperature, except for I which is zero in this zone. The Lewis number is L, and it is
+the same for F,K, and I . Oxygen Lewis number is unity. The solution for the species and
+temperature are
+</p>
+<p>YF = YFu + (YFf − YFu)e
+Lξ
+</p>
+<p>YO = YOu + (YOf − YOu)e
+ξ
+</p>
+<p>YK = YKpe
+Lξ
+</p>
+<p>YI = 0
+</p>
+<p>T = Tu + (Tf − Tu)e
+ξ = Tu +∆Teξ
+</p>
+<p>The slopes of these solutions are to be matched with the inner equations as ξ → 0.
+</p>
+<p>1</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Inner zones
+Inner heat release zone:
+</p>
+<p>This is the thinnest zone with the highest activation energy corresponding to T4. In this zone fuel
+and oxygen are consumed, I is produced, K is consumed, and heat is released all at the rate of
+step 4. The independent variable ξ is stretched as
+</p>
+<p>η =
+ξ
+</p>
+<p>ϵ
+with ϵ =
+</p>
+<p>T 2
+f
+</p>
+<p>T4(Tf − Tu)
+.
+</p>
+<p>The energy conservation equation becomes in the limit ϵ → 0,
+</p>
+<p>d2T
+</p>
+<p>dη2
+= −ρD
+</p>
+<p>m2
+ϵ2WKTQ(ρYK/WK)A4e
+</p>
+<p>−T4/T ,
+</p>
+<p>where we have written [K] = ρYK/WK , and expanded T and K as
+</p>
+<p>YK = 0 + ϵ
+L
+</p>
+<p>TQ
+</p>
+<p>∆Tz; T = Tf − ϵ∆Tz
+</p>
+<p>with ∆T = Tf − Tu. The inner equation in terms of “z” then becomes,
+</p>
+<p>d2z
+</p>
+<p>dη2
+= Λze−z
+</p>
+<p>with
+</p>
+<p>Λ =
+</p>
+<p>(
+ρ2fDfL
+</p>
+<p>m2
+</p>
+<p>)(
+T 4
+f
+</p>
+<p>T 2
+4∆T 2
+</p>
+<p>)
+A4e
+</p>
+<p>−T4/Tf ,
+</p>
+<p>where we have used
+e−T4/T = e−T4/Tf e−z
+</p>
+<p>The differential equation for z is solved subject to the boundary obtained by matching the slopes
+to the downstream zone and to the upstream preheat zone, namely
+</p>
+<p>η → ∞, z → 0 (since T → Tf ),
+</p>
+<p>η → −∞, dz/dη → −1.
+</p>
+<p>The solution for z is now obtained by setting dz/dη = p, which leads to
+</p>
+<p>dp2
+</p>
+<p>dz
+= 2Λze−z
+</p>
+<p>Integrating between ∞ and −∞:
+</p>
+<p>p2|∞−∞ = −2Λ(1 + z)e−z|∞−∞
+</p>
+<p>0− 1 = −2Λ; giving Λ = 1/2.
+</p>
+<p>Note that jump conditions across this zone for the variables YO, YI , and YK can be obtained since
+coupling function between T and these variables exist.
+</p>
+<p>2</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Flame spread formula
+</p>
+<p>Using the definition of Λ, and setting it equal to 1/2, we obtained,
+</p>
+<p>T 4
+f
+</p>
+<p>T 2
+4∆T 2
+</p>
+<p>(
+ρ2fDf
+</p>
+<p>m2
+</p>
+<p>)
+LA4e
+</p>
+<p>−T4/Tf =
+1
+</p>
+<p>2
+.
+</p>
+<p>Substituting m = ρuSL, we get:
+</p>
+<p>SL =
+T 2
+f (ρf/ρu)
+</p>
+<p>T4(Tf − Tu)
+</p>
+<p>√
+2LDfA4e−T4/Tf
+</p>
+<p>or
+</p>
+<p>Sf =
+T 2
+f
+</p>
+<p>T4∆T
+</p>
+<p>√
+2LDfA4e−T4/Tf
+</p>
+<p>The flame temperature Tf is still unknown and it is obtained from the solutions of the species
+equations.
+</p>
+<p>YO solutions
+</p>
+<p>From the outer solution, the slope of YO as ξ → 0 is
+</p>
+<p>dYO
+</p>
+<p>dξ
+→ (YOf − YOu)
+</p>
+<p>The jump condition from the inner zone is
+</p>
+<p>dYK
+</p>
+<p>dξ
+</p>
+<p>∣∣∣
+0−
+</p>
+<p>= − WO
+</p>
+<p>WKTQ
+</p>
+<p>∆T
+</p>
+<p>The oxygen mass fraction at the flame becomes
+</p>
+<p>YOf = YOu −
+WO
+</p>
+<p>WKTQ
+</p>
+<p>∆T
+</p>
+<p>YI solutions
+Downstream I-consumption zone:
+</p>
+<p>In this zone consumption of I occurs through step-5 (and step-6), and the flame temperature
+remains constant at Tf . The conservation equation for I becomes,
+</p>
+<p>d2YI
+</p>
+<p>dξ2
+− L
+</p>
+<p>dYI
+</p>
+<p>dξ
+− ρD
+</p>
+<p>m2
+LρYIA5(1 + ω6/ω5)e
+</p>
+<p>−T5/Tf = 0.
+</p>
+<p>The solution to this equation subject to the boundary conditions YI(0) = YIf , and YI(∞) = 0 is
+</p>
+<p>YI(ξ) = YIfe
+− 1
+</p>
+<p>2
+ξ(
+</p>
+<p>√
+4b2+L2−L),
+</p>
+<p>where
+</p>
+<p>b2 =
+ρ2fDfLA5
+</p>
+<p>m2
+(1 + ω6/ω5)e
+</p>
+<p>−T5/Tf
+</p>
+<p>3</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>with
+ω6/ω5 = A3e
+</p>
+<p>−T3/TfA6e
+−T6/Tf/[A2A5e
+</p>
+<p>−T5/Tf ].
+</p>
+<p>The matching condition to the inner zone is
+</p>
+<p>YI
+</p>
+<p>dξ
+</p>
+<p>∣∣∣
+0+
+</p>
+<p>= −1
+</p>
+<p>2
+YIf
+</p>
+<p>(√
+4b2 + L2 − L
+</p>
+<p>)
+,
+</p>
+<p>Upstream I-consumption zone:
+</p>
+<p>Again I consumption occurs through step-5 (and step-6) in this zone. However the temperature
+here is not a constant, and therefore stretching is necessary. Let,
+</p>
+<p>ζ = −ξ/δ
+</p>
+<p>and
+T = Tf −∆Tδζ; YI = YIf − δy
+</p>
+<p>Then
+d2y
+</p>
+<p>dζ2
+= −
+</p>
+<p>ρ2fDf
+</p>
+<p>m2
+LYIfδA5(1 + ω6/ω5)e
+</p>
+<p>−T5/TfYIfe
+−ζ
+</p>
+<p>or,
+d2y
+</p>
+<p>dζ2
+= −cYIfe
+</p>
+<p>−ζ
+</p>
+<p>where
+</p>
+<p>c =
+ρ2fDf
+</p>
+<p>m2
+L
+</p>
+<p>T 2
+f
+</p>
+<p>T5∆T
+A5e
+</p>
+<p>−T5/Tf
+</p>
+<p>which can be simplified to
+</p>
+<p>c =
+1
+</p>
+<p>2
+</p>
+<p>(
+A5(1 + ω6/ω5)e
+</p>
+<p>−T5/Tf
+</p>
+<p>A4e−T4/Tf
+</p>
+<p>)
+T 2
+4
+</p>
+<p>T5
+</p>
+<p>∆T
+</p>
+<p>T 2
+f
+</p>
+<p>.
+</p>
+<p>Integrating from 0 to ∞:
+dy
+</p>
+<p>dζ
+</p>
+<p>∣∣∣∞
+0
+</p>
+<p>= +cYIfe
+−ζ
+∣∣∣∞
+0
+</p>
+<p>Change in slope across this zone is
+</p>
+<p>∆
+</p>
+<p>(
+dy
+</p>
+<p>dζ
+</p>
+<p>)
+= cYIf
+</p>
+<p>The change in slope in terms of ξ is
+</p>
+<p>∆
+</p>
+<p>(
+dYI
+</p>
+<p>dξ
+</p>
+<p>)
+=
+</p>
+<p>1
+</p>
+<p>2
+</p>
+<p>(
+A5e
+</p>
+<p>−T5/Tf
+</p>
+<p>A4e−T4/Tf
+</p>
+<p>)
+(1 + ω6/ω5)
+</p>
+<p>T 2
+4
+</p>
+<p>T5
+</p>
+<p>∆T
+</p>
+<p>T 2
+f
+</p>
+<p>YIf ,
+</p>
+<p>since
+dYI
+</p>
+<p>dξ
+= − δ
+</p>
+<p>−δ
+</p>
+<p>dy
+</p>
+<p>dζ
+=
+</p>
+<p>dy
+</p>
+<p>dζ
+.
+</p>
+<p>4</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Upstream I-destruction zone (through ω7):
+</p>
+<p>In this zone I is completely consumed. The conservation equation is
+</p>
+<p>dYI
+</p>
+<p>dξ
+=
+</p>
+<p>1
+</p>
+<p>L
+</p>
+<p>d2YI
+</p>
+<p>dξ2
+− ρD
+</p>
+<p>m2
+WIω7
+</p>
+<p>ω7 = [I][O2]
+A3A7
+</p>
+<p>A2
+</p>
+<p>e−(T3+T7)/T
+</p>
+<p>Now T3=-8,360 K and T7 = 1,760 K and let Tr = T3 + T7 =-6,600 K. The activation energy for
+K production via ω3 is -8,360 K. So we pick an intermediate value of Ts=-7,500 K to stretch this
+common zone for both K production and I destruction. Define a small positive parameter υ:
+</p>
+<p>υ =
+Tf
+</p>
+<p>(−Ts)
+T = Tf − υTfx = Tf (1− υx)
+</p>
+<p>The conservation equation for YI becomes
+</p>
+<p>dYI
+</p>
+<p>dξ
+=
+</p>
+<p>1
+</p>
+<p>L
+</p>
+<p>d2YI
+</p>
+<p>dξ2
+− ρ2D
+</p>
+<p>m2
+</p>
+<p>(
+ρYOf
+</p>
+<p>WO
+</p>
+<p>)(
+A3A7
+</p>
+<p>A2
+</p>
+<p>e−Tr/Tf
+</p>
+<p>)
+YIe
+</p>
+<p>x
+</p>
+<p>where we have assumed Tr/Ts ≈ 1. Both YI and T in the form of x appears in the equation. So,
+we write the equation in terms of x rather than a stretched independent variable. Note that:
+</p>
+<p>dYI
+</p>
+<p>dξ
+= ∆T
+</p>
+<p>dYI
+</p>
+<p>dT
+</p>
+<p>dT
+</p>
+<p>dx
+= −
+</p>
+<p>(
+∆T
+</p>
+<p>υTf
+</p>
+<p>)
+dYI
+</p>
+<p>dx
+</p>
+<p>d2YI
+</p>
+<p>dξ2
+=
+</p>
+<p>(
+∆T
+</p>
+<p>υTf
+</p>
+<p>)2
+d2YI
+</p>
+<p>dx2
+</p>
+<p>The conservation equation becomes:
+</p>
+<p>d2YI
+</p>
+<p>dx2
+= AYIe
+</p>
+<p>x,
+</p>
+<p>where
+</p>
+<p>A =
+</p>
+<p>(
+T 2
+f
+</p>
+<p>Ts∆T
+</p>
+<p>)2
+DL
+</p>
+<p>S2
+f
+</p>
+<p>(
+ρYOf
+</p>
+<p>WO
+</p>
+<p>)(
+A3A7
+</p>
+<p>A2
+</p>
+<p>e−Tr/Tf
+</p>
+<p>)
+Substituting for Sf :
+</p>
+<p>A =
+1
+</p>
+<p>2
+</p>
+<p>(
+T4
+</p>
+<p>Ts
+</p>
+<p>)2(
+ρfYOf
+</p>
+<p>WO
+</p>
+<p>)(
+A3A7
+</p>
+<p>A2A4
+</p>
+<p>)
+e(T4−Tr)/Tf
+</p>
+<p>This differential equation can be solved, requiring YI remains finite and YI(0) = YIf , to obtain
+</p>
+<p>YI(x) = c1K0(2
+√
+Aex)
+</p>
+<p>where,
+</p>
+<p>c1 =
+YIf
+</p>
+<p>K0(2
+√
+A)
+</p>
+<p>Slope at x = 0 becomes:
+dYI
+</p>
+<p>dx
+= −2
+</p>
+<p>√
+AK1(2
+</p>
+<p>√
+A)
+</p>
+<p>K0(2
+√
+A)
+</p>
+<p>YIf
+</p>
+<p>5</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>In terms of ξ:
+dYI
+</p>
+<p>dξ
+=
+</p>
+<p>(
+∆T (−Ts)
+</p>
+<p>T 2
+f
+</p>
+<p>)
+2
+√
+AK1(2
+</p>
+<p>√
+A)
+</p>
+<p>K0(2
+√
+A)
+</p>
+<p>YIf
+</p>
+<p>Putting all the slopes together and rearranging we get the following expression for YIf
+</p>
+<p>YIf =
+2WI∆T
+</p>
+<p>WKTQ
+</p>
+<p>(
+4(−Ts)∆T
+</p>
+<p>√
+AK1(2
+</p>
+<p>√
+A)
+</p>
+<p>LT 2
+fK0(2
+</p>
+<p>√
+A)
+</p>
+<p>+
+∆TT 2
+</p>
+<p>4R
+</p>
+<p>LT 2
+f T5
+</p>
+<p>+
+</p>
+<p>√
+1 +
+</p>
+<p>2T 2
+4∆T 2R
+</p>
+<p>L2T 4
+f
+</p>
+<p>− 1
+</p>
+<p>)−1
+</p>
+<p>, (1)
+</p>
+<p>which is shown as equation (1) in the main text.
+</p>
+<p>YK solutions
+</p>
+<p>YK is consumed in the inner heat release zone (by ω4). It is produced in the lower temperature
+region through ω3 (a zone in common with ω7 where YI is destroyed completely). In the preheat
+zone convection-diffusion balance occurs for YK .
+</p>
+<p>Preheat zone for YK:
+d2YK
+</p>
+<p>dξ2
+− L
+</p>
+<p>dYK
+</p>
+<p>dξ
+= 0
+</p>
+<p>The solution,
+YK(ξ) = YKpe
+</p>
+<p>Lξ
+</p>
+<p>with YKp, the maximum in the YK production zone, to be determined. Since T (ξ) = Tu+∆Teξ,
+in the preheat zone, YK can also be expressed as a function of T as
+</p>
+<p>YK(T ) = YKp
+</p>
+<p>(
+T − Tu
+</p>
+<p>∆T
+</p>
+<p>)L
+</p>
+<p>The slope as T → Tf (or ξ → 0) is
+dYK
+</p>
+<p>dT
+=
+</p>
+<p>LYKp
+</p>
+<p>∆T
+,
+</p>
+<p>which is needed for matching with the YK production zone, considered below.
+</p>
+<p>YK production zone:
+dYK
+</p>
+<p>dξ
+=
+</p>
+<p>1
+</p>
+<p>L
+</p>
+<p>d2YK
+</p>
+<p>dξ2
++
+</p>
+<p>ρD
+</p>
+<p>m2
+WKω3,
+</p>
+<p>ω3 = [I][O2]A3e
+−T3/T
+</p>
+<p>dYK
+</p>
+<p>dξ
+=
+</p>
+<p>1
+</p>
+<p>L
+</p>
+<p>d2YK
+</p>
+<p>dξ2
++
+</p>
+<p>ρ2D
+</p>
+<p>m2
+WK
+</p>
+<p>(
+ρfYOf
+</p>
+<p>WO
+</p>
+<p>)(
+YI
+</p>
+<p>WI
+</p>
+<p>)
+A3e
+</p>
+<p>−T3/T
+</p>
+<p>As in the YI destruction zone, we set
+</p>
+<p>υ =
+Tf
+</p>
+<p>(−Ts)
+, T = Tf (1− υx)
+</p>
+<p>and write the conservation equation in terms of x in the limit υ → 0, namely
+</p>
+<p>d2YK
+</p>
+<p>dx2
+= −
+</p>
+<p>(
+T 2
+f
+</p>
+<p>Ts∆T
+</p>
+<p>)2
+ρ2DL
+</p>
+<p>m2
+</p>
+<p>(
+ρfYOf
+</p>
+<p>WO
+</p>
+<p>)(
+YI
+</p>
+<p>WI
+</p>
+<p>)
+WKA3e
+</p>
+<p>−T3/Tf ebx
+</p>
+<p>6</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>or, with m = ρfSf we have
+</p>
+<p>d2YK
+</p>
+<p>dx2
+= −
+</p>
+<p>(
+T 2
+f
+</p>
+<p>Ts∆T
+</p>
+<p>)2
+DL
+</p>
+<p>S2
+f
+</p>
+<p>(
+ρfYOf
+</p>
+<p>WO
+</p>
+<p>)(
+YI
+</p>
+<p>WI
+</p>
+<p>)
+WKA3e
+</p>
+<p>−T3/Tf ebx
+</p>
+<p>or
+d2YK
+</p>
+<p>dx2
+= −BYIe
+</p>
+<p>bx
+</p>
+<p>where B is given by (after substituting for Sf )
+</p>
+<p>B =
+1
+</p>
+<p>2
+</p>
+<p>(
+T4
+</p>
+<p>Ts
+</p>
+<p>)2(
+ρfYOf
+</p>
+<p>WO
+</p>
+<p>)(
+WK
+</p>
+<p>WI
+</p>
+<p>)
+A3e
+</p>
+<p>−T3/Tf
+</p>
+<p>A4e−T4/Tf
+</p>
+<p>Since YI is known in terms of x, the ODE can be integrated once. Let p = dYK/dx, and
+t = 2
+</p>
+<p>√
+Aex ⇒ ex = t2/(4A) and dt/dx = t/2:
+</p>
+<p>dp
+</p>
+<p>dx
+=
+</p>
+<p>dp
+</p>
+<p>dt
+</p>
+<p>dt
+</p>
+<p>dx
+=
+</p>
+<p>dp
+</p>
+<p>dt
+</p>
+<p>t
+</p>
+<p>2
+= −c1BK0(t)(t
+</p>
+<p>2/4A)
+</p>
+<p>Integrate from x = 0 to x → ∞ or t = 2
+√
+A to t → ∞ to get∫ ∞
+</p>
+<p>2
+√
+A
+</p>
+<p>dp
+</p>
+<p>dt
+dt = −
+</p>
+<p>∫ ∞
+</p>
+<p>2
+√
+A
+</p>
+<p>(
+c1B
+</p>
+<p>2A
+</p>
+<p>)
+K0(t)tdt
+</p>
+<p>p(t) =
+</p>
+<p>(
+c1B
+</p>
+<p>2A
+</p>
+<p>)
+tK1(t) + const
+</p>
+<p>dYK
+</p>
+<p>dx
+</p>
+<p>∣∣∣∞
+0
+</p>
+<p>= p
+∣∣∣∞
+2
+√
+A
+= 0−
+</p>
+<p>(
+c1B√
+A
+</p>
+<p>)
+K1(2
+</p>
+<p>√
+A)
+</p>
+<p>This is the change in slope of YK across this zone. Matching with the inner zone and the preheat
+zone we get
+</p>
+<p>−(υTf )
+LYKp
+</p>
+<p>∆T
+− υTfL
+</p>
+<p>TQ
+</p>
+<p>= −
+(
+c1B√
+A
+</p>
+<p>)
+K1(2
+</p>
+<p>√
+A),
+</p>
+<p>which in turn yields,
+</p>
+<p>YKp =
+YIfWK(−Ts)(Tf − Tu)A2
+</p>
+<p>√
+AK1(2
+</p>
+<p>√
+A)
+</p>
+<p>WILT 2
+fA7e−T7/TfK0(2
+</p>
+<p>√
+A)
+</p>
+<p>− Tf − Tu
+</p>
+<p>TQ
+</p>
+<p>,
+</p>
+<p>which is shown as equation (2) in the main text. Setting YKp to be small, we get
+</p>
+<p>YIf =
+T 2
+f
+</p>
+<p>(−Ts)
+</p>
+<p>L
+</p>
+<p>TQ
+</p>
+<p>(√
+A
+</p>
+<p>B
+</p>
+<p>K0(2
+√
+A)
+</p>
+<p>K1(2
+√
+A)
+</p>
+<p>)
+(2)
+</p>
+<p>with
+A
+</p>
+<p>B
+=
+</p>
+<p>WI
+</p>
+<p>WK
+</p>
+<p>A7
+</p>
+<p>A2
+</p>
+<p>e−T7/Tf .
+</p>
+<p>We now have two expressions for YIf , equation (1) and (2), and they can be iteratively solved to
+get Tf for a given condition. A simplified version of that equation is shown as equation (3) in
+the main text. This completes the problem formulation.
+</p>
+<p>7</p>
+<p></p>
+</div>
+</body></html>

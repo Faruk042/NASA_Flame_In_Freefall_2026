@@ -1,0 +1,1009 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progress and Challenges in Spacecraft 
+Fire Detection
+
+Claire Fortenberry, PhD
+
+Universities Space Research Association at NASA Glenn Research Center
+
+June 15, 2022
+
+claire.fortenberry@nasa.gov
+
+
+
+Why are spacecraft fires so dangerous?
+
+Mir Space Station Fire: 
+February 23-24, 1997
+
+Image taken by Dr. Jerry Linenger following Mir fire; 
+spaceflight.nasa.gov/history/shuttle-mir/multimedia/linenger-
+
+photos/linenger-p-003.htm
+
+2
+
+• Crew fire safety strategies are more 
+challenging
+
+• Reduced gravity challenges early-stage 
+fire detection
+
+• Reduced gravity can change 
+characteristics of the fire itself
+
+• Post-fire cleanup of toxic combustion 
+products challenged by low gravity and 
+limited short-term resources → long 
+term health effects for crew
+
+
+
+Spacecraft Fire Detection History
+
+• Mercury, Gemini, Apollo: no fire 
+detection systems (short mission 
+durations)
+
+• Skylab: UV fire detector
+
+• Big issue: false alarms
+
+• Space Shuttle: ionization detector
+
+• ISS: photoelectric detector 
+
+• Light scattering calibrated to an 
+obscuration alarm threshold
+
+Spacecraft fire detection systems 
+developed based on most advanced 
+
+terrestrial technology of the time
+
+3
+
+https://www.nasa.gov/mission_pages/station/mai
+n/index.html
+
+https://www.nasa.gov/mission_pages/shuttle/flyout/
+shuttleachievements.html
+
+
+
+Smoke Detection Methods
+
+4
+
++ +
+
+--
+
++
+
+-
+
++ -
+
+α
+α
+α
+
+Battery
+
+Radiation 
+Source
+
+Alarm
+
+Light source 
+& optics
+
+Alarm
+
+Detector
+
+Ionization Light Scattering Obscuration
+
+Space Shuttle ISS
+
+Smoke detector 
+sensitivity standards
+
+Detector
+
+Light 
+source
+
+Different detectors are sensitive to different particle sizes!
+
+
+
+5
+
+Spacecraft Smoke Detection Challenges
+
+• In microgravity, no buoyancy → plume does not rise to ceiling
+
+• How much smoke needs to be produced to reach detector alarm thresholds?
+
+Earth Gravity Microgravity
+
+Urban et al., 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-318, July 2016.
+
+Suspended cabin dust
+
+
+
+SAME = First major effort to 
+characterize smoke from early-stage 
+
+microgravity fires!
+
+• Target particles from oxidative pyrolysis 
+rather than flaming combustion
+
+• Identify relevant particle 
+sizes/morphologies from spacecraft-
+relevant fuels
+
+• Evaluate detector performance for these 
+particles
+
+SAME Publications:
+• Urban et al., 070FR-0171, 8th U. S. National Combustion 
+
+Meeting, Salt Lake City, UT, May 2013.
+• Meyer et al., Aerosol Sci. Tech., 49:5, 299-309, 2015.
+• Mulholland et al., Aerosol Sci. Tech., 49:310–321, 2015.
+• Meyer et al., Fire Safety Journal, 98. 74-81, 2018.
+
+6
+
+Image credit: NASA, SAME experiments, 
+grc.nasa.gov/space/iss-research/msg/same/#lightbox-gallery-1-2
+
+The Smoke Aerosol Measurement Experiment (SAME)
+
+
+
+Summary of SAME Results
+
+• “Aging” occurs over time scales relevant to 
+detection
+
+• Below a flow threshold, air flow influences 
+smoke particle size 
+
+• Detector response dependent on particle size 
+and detection mechanism:
+
+• ISS forward light scattering detector had 
+diminished response to smallest particles
+
+• Space shuttle ionization detector had 
+slightly better response to smallest 
+particles
+
+• “One size fits all” detector does not exist!
+
+7
+
+Air flow = 8 cm s-1Air flow = 0 cm s-1
+
++12 min
+
+Unaged Aged ~12 min
+
+5 µm 5 µm
+
+
+
+Summary of Detection Challenges
+
+8
+
+1. Different smoke detector designs are biased towards different particle sizes
+
+2. Particle sizes/morphologies vary by fuel type and oxidative pyrolysis conditions
+
+3. Particles can grow/evolve over time depending on flow conditions
+
+Kapton (ox. pyrolysis) Teflon (ox. pyrolysis)
+• Need for particle size/morphology 
+
+measurements from large-scale 
+flaming combustion in microgravity
+
+• Need for “emission factors”
+(amount of smoke produced 
+relative to amount of fuel burned) 
+to improve models for predicting 
+fire outcomes and smoke transport
+
+All from burning very small amounts of fuel!
+
+Meyer et al., Aerosol Sci. Tech., 49, 5, 299-309, 2015.
+Meyer et al., Fire Safety Journal, 98, 74-81, 2018.
+
+
+
+Spacecraft Fire Safety (Saffire) Experiments
+
+9
+
+Opportunity to study large-scale fires in 
+microgravity with lower risk to crew
+
+• Saffire I-III (2016-2017): 
+
+• Measured flame spread rate, fuel 
+mass consumption, heat release
+
+• Saffire IV-VI (2020, 2021; S-VI TBD):
+
+• In addition to flame properties, 
+measure combustion products
+from variety of fuels
+
+• Test novel post-fire cleanup 
+technology: “Smoke Eater”
+
+Image credits: NASA
+
+nasa.gov/feature/northrop-grumman-cygnus-launches-
+arrivals-and-departures/
+
+nasa.gov/feature/glenn/2020/the-flame-of-discovery-grows-as-saffire-sets-new-fires-in-space
+
+Ruff and Urban, 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-428, July 2016.
+
+NG Cygnus 
+Vehicle
+
+
+
+S
+F
+
+U
+
+FFD
+
+1
+
+3
+
+2
+
+4
+
+5
+
+6
+
+Saffire-IV and V Experiment Description
+
+• Fire experiments housed within the Saffire Flow Unit (SFU)
+
+• Plume transport through cabin tracked by remote CO2 sensors
+
+• Far-field diagnostics (FFD) unit located at the opposite end of the cabin from the SFU
+
+• Materials tested: cotton/fiberglass blend (“SIBAL”), cotton jersey, PMMA (one-sided, two-sided, 
+structured)
+
+10
+
+Northrop-Grumman Cygnus Resupply Vehicle
+(filled with packed garbage)
+
+= remote CO2 sensor
+
+Saffire Flow Unit (SFU)
+Far-Field Diagnostics Unit (FFD)
+
+1.3 m
+
+0.52 m
+
+Urban et al., “Preliminary Results from Saffire IV and V Experiments on Large Scale 
+Spacecraft Fires,” 50th Int. Conf. Environ. Sys., ICES-2021-266, July 2021.
+
+
+
+The Far-Field Diagnostics Unit (FFD)
+
+11
+
+INLET
+
+FAN
+
+OUTLET
+
+CO
+
+ION
+
+TEMP
+
+CPM
+
+TEMP
+
+ΔP
+
+CO2
+
+O2
+
+AVIONICS
+
+DUSTTRAK DRX
+
+CO
+
+ION
+
+S
+
+CO2
+SCRUBBER
+
+SMOKE 
+
+EATER
+
+BYPASS
+
+ACT2
+
+ACT1
+
+RHHF/HCl
+
+ACT3
+
+• Three main flow paths: CO2 scrubber, smoke eater, and bypass
+
+• Gas sensors: CO, CO2, acid gas (HF/HCl), Combustion Products Monitor (CPM: CO, CO2, HF, 
+HCl, H2O, O2; Vista Photonics)
+
+• Particle measurements: DustTrak DRX (TSI, Inc.), ionization smoke detectors (First Alert)
+
+Inlet 
+sensors
+
+CPM
+
+0.52 m
+
+
+
+Particle Instrumentation
+
+12
+
+• Combination of photometry (measurement of particle 
+ensemble) and single-particle counting
+
+• Provides particle mass concentrations (mg m-3) for five size 
+ranges: PM1, PM2.5, PM4, PM10, total mass concentration
+
+• Wang et al., Aerosol Sci. Tech., 43:939-950, 2009
+
+• Chambers modified/ rehoused from a commercial device
+• Approximately proportional to aerosol diameter 
+
+concentration (mm cm-3): average dp × total number 
+concentration
+
+• Placed at inlet and outlet of FFD to evaluate smoke eater 
+filtration capability
+
+DustTrak DRX (Model 8533, TSI, Inc.) Ionization Chamber (First Alert)
+
+
+
+Saffire-IV Particle Mass Distributions
+
+1316
+
+Saffire-IV, Event 4: SIBAL
+
+• Particle mass concentration 
+dominated by submicron particles 
+(PM1) in all five burn events
+
+• PMMA event produced higher 
+concentrations of larger particles 
+(dp > 4 μm) compared to SIBAL 
+(cotton/fiberglass blend)
+
+• Avionics temperatures and images 
+indicate clogging of SFU outlet 
+screen – FFD measurements likely 
+missed a significant fraction of 
+larger particles
+
+ignition
+
+Preheat/
+ignition Saffire-IV, Event 5: Two-Sided PMMA
+
+R
+e
+
+p
+o
+
+rt
+e
+
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+.,
+
+ 
+
+d
+p
+
+≤
+ 1
+
+ µ
+m
+
+ (
+m
+
+g
+ m
+
+-3
+)
+
+R
+e
+
+p
+o
+
+rt
+e
+
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+.,
+
+ 
+
+d
+p
+
+≤
+ 1
+
+ µ
+m
+
+ (
+m
+
+g
+ m
+
+-3
+)
+
+R
+e
+
+p
+o
+
+rte
+d
+
+ M
+a
+
+s
+s
+ C
+
+o
+n
+
+c
+., 
+
+d
+p
+
+>
+ 1
+
+ µ
+m
+
+ (m
+g
+ m
+
+-3)
+
+R
+e
+
+p
+o
+
+rte
+d
+
+ M
+a
+
+s
+s
+ C
+
+o
+n
+
+c
+., 
+
+d
+p
+
+>
+ 1
+
+ µ
+m
+
+ (m
+g
+ m
+
+-3)
+
+
+
+Saffire-V Particle Mass Distributions
+
+14
+
+• As in Saffire-IV, particle mass 
+concentration dominated by submicron 
+particles (PM1) in all five burn events
+
+• PMMA events produced higher 
+concentrations of larger particles (dp > 4 
+μm) compared to cotton jersey
+
+What can we do with Saffire measurements?
+
+• Goal: relate mass concentration 
+measurements to detection readings (e.g., 
+obscuration)
+
+• Major challenge: Detection methods 
+depend on aerosol properties (size, shape, 
+optical parameters)
+
+Saffire-V, Event 5: Cotton Jersey
+
+Saffire-V, Event 6: 
+
+One-Sided PMMA
+
+Saffire-V, Event 8: 
+
+Structured PMMA
+
+R
+e
+
+p
+o
+
+rt
+e
+
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+.,
+
+ 
+
+d
+p
+
+≤
+ 1
+
+ µ
+m
+
+ (
+m
+
+g
+ m
+
+-3
+)
+
+R
+e
+
+p
+o
+
+rt
+e
+
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+.,
+
+ 
+
+d
+p
+
+≤
+ 1
+
+ µ
+m
+
+ (
+m
+
+g
+ m
+
+-3
+)
+
+R
+e
+
+p
+o
+
+rt
+e
+
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+.,
+
+ 
+
+d
+p
+
+≤
+ 1
+
+ µ
+m
+
+ (
+m
+
+g
+ m
+
+-3
+)
+
+R
+e
+
+p
+o
+
+rte
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+., 
+
+d
+p
+
+>
+ 1
+
+ µ
+m
+
+ (m
+g
+
+ m
+-3)
+
+R
+e
+
+p
+o
+
+rte
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+., 
+
+d
+p
+
+>
+ 1
+
+ µ
+m
+
+ (m
+g
+
+ m
+-3)
+
+R
+e
+
+p
+o
+
+rte
+d
+ M
+
+a
+s
+s
+ C
+
+o
+n
+
+c
+., 
+
+d
+p
+
+>
+ 1
+
+ µ
+m
+
+ (m
+g
+
+ m
+-3)
+
+
+
+Future Fire Safety Challenges: Lunar Missions
+
+In future lunar missions (e.g., Artemis), will 
+need to distinguish smoke particles from 
+
+lunar dust.
+
+• Park et al. (2008): lunar dust samples from 
+Apollo missions have lognormal distribution, 
+with modes 100-200 nm
+
+• Distinguishing smoke and dust particles 
+for smoke detection based on size could 
+be challenging
+
+• Lunar dust (dp < 20 µm) is harmful to crew 
+health
+
+• Sharp, irregularly-shaped shards
+• During Apollo missions, astronauts 
+
+experienced eye, nose, throat irritation
+• Health effects will dictate air flow and 
+
+filtration strategies 15
+
+2 µm
+
+1 µm
+5 µm
+
+2 µm
+
+1 µm
+
+Image credit: NASA. 
+nasa.gov/exploration/humanresearch/multimedia/images/hrpg_img_05.html.
+
+
+
+Future Fire Safety Challenges: Lunar Missions
+
+• Lunar gravity ~ 1/6 g
+• Some buoyant flow and settling expected, but 
+
+smaller particles will stay in air for longer
+
+• Sacksteder and T’ien (1994): “flammability 
+zone” different in partial-g compared to either 
+1g or 0g, but limited data exist
+
+• Novel mission parameters → new risks
+• Longer mission durations → need to store 
+
+more oxygen and/or ignitable/reactive 
+materials (e.g., batteries)
+
+• Increased extravehicular activities → oxygen 
+handling, dust transport, use of oxygen to 
+mitigate decompression sickness, etc.
+
+Ruff et al., Int. Conf. Environ. Sys., ICES-2020-173, 2020.
+Sacksteder and T’ien, 25th Symposium (International) on Combustion, The Combustion Institute, Pittsburgh, PA, 1685-1692, 1994 
+
+16
+
+Image credit: NASA, Artemis Lunar Exploration Program Overview 
+nasa.gov/specials/artemis/
+
+
+
+Future Fire Safety Challenges: Lunar Missions
+
+• How can we design an optimal detector for a lunar habitat? Martian 
+habitat?
+
+• How much does buoyancy contribute to plume transport in lunar gravity? 
+Does smoke rise to the ceiling even if air returns are on the floor?
+
+17
+
+
+
+Acknowledgements
+
+19
+
+• Saffire FFD analysis coauthors: Michael 
+Casteel, John Graf, John Easton, Justin Niehaus, 
+Marit Meyer, Gary Ruff, David Urban
+
+• International Saffire Science Team
+• ZIN Technologies Saffire team
+• Universities Space Research Association 
+
+(USRA) Glenn Engineering and Research 
+Support Contract No. 80GRC020D0003
+
+• Dr. Carol Kory
+• Advanced Exploration Systems Life Support 
+
+Systems Project
+
+

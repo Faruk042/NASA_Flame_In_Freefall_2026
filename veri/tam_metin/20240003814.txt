@@ -1,0 +1,2942 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.6">
+<meta name="xmp:CreatorTool" content="Acrobat PDFMaker 20 for Word">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dc:creator" content="Shelley Cohen">
+<meta name="dcterms:created" content="2024-04-24T19:31:43Z">
+<meta name="dcterms:modified" content="2024-04-24T19:32:51Z">
+<meta name="dc:format" content="application/pdf; version=1.6">
+<meta name="xmpMM:DocumentID" content="uuid:a7d827bd-7413-43e3-a8d5-999536caf176">
+<meta name="pdf:docinfo:creator_tool" content="Acrobat PDFMaker 20 for Word">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2024-04-24T19:32:51Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="xmp:CreateDate" content="2024-04-24T15:31:43Z">
+<meta name="pdf:docinfo:custom:SourceModified" content="D:20240424193120">
+<meta name="pdf:hasMarkedContent" content="false">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2024-04-24T15:32:51Z">
+<meta name="pdf:docinfo:creator" content="Shelley Cohen">
+<meta name="xmp:MetadataDate" content="2024-04-24T15:32:51Z">
+<meta name="dc:language" content="EN-US">
+<meta name="pdf:producer" content="Adobe PDF Library 20.5.110">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="29">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="SourceModified" content="D:20240424193120">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:producer" content="Adobe PDF Library 20.5.110">
+<meta name="pdf:docinfo:created" content="2024-04-24T19:31:43Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 1 
+ 
+</p>
+<p>ANALYSIS OF INTEGRATED SPACECRAFT PERFORMANCE USING A ROTATING DETONATION 
+ROCKET ENGINE 
+</p>
+<p>M.J. Cooper, D.E. Paxson, and H.D. Perkins 
+NASA Glenn Research Center 
+</p>
+<p>Cleveland, Ohio 
+ 
+</p>
+<p>J.E. Fittje 
+Science Application International Corporation 
+</p>
+<p>Fairfax, Virginia 
+</p>
+<p>ABSTRACT 
+</p>
+<p>For spacecraft with especially stringent mass fraction constraints, the use of a rotating detonation 
+rocket engine (RDRE) may yield potentially significant system mass savings. The pressure gain combustion 
+inherent to RDREs provides higher thrust than traditional rocket engines for a given supply pressure and 
+throat area. This opens multiple avenues for reducing system mass via higher specific impulse, reduced 
+gravity losses, and reduced feed pressures. 
+</p>
+<p>To highlight the potentially weight-saving characteristics of RDRE systems, the integrated 
+performance of representative spacecraft designs using either a conventional rocket engine or an RDRE 
+was assessed. This paper details the assumptions, methods, and results of this trade study. Two 
+representative spacecraft were assessed. The first is a Liquid Mars Ascent Vehicle (MAV). This spacecraft 
+was designed by NASA in 2011 for the Mars Sample Return Campaign but was not selected for flight due 
+in part to it exceeding the mass requirements by 119 lbm. The second is MIURA-1, a kerolox sounding 
+rocket developed by Payload Aerospace S.L.. 
+</p>
+<p>The Liquid MAV assessment showed that an RDRE powered design met the mass requirements 
+with a total vehicle mass 46 lbm below the limit. The MIURA-1 assessment showed that wall heat transfer 
+and regenerative cooling are significant challenges for kerolox RDREs, but these challenges may be 
+mitigated by reducing mixture ratio and using both propellants to cool the chamber. The assessment 
+showed that an RDRE powered sounding rocket could achieve 12% more microgravity time than a 
+conventional sounding rocket with the same payload and total vehicle mass. Alternately, if the payload 
+mass and target apogee are held constant, then an RDRE powered sounding rocket can be 8% shorter 
+and 11% lighter than a conventional sounding rocket. These results suggest that the advent of RDREs for 
+in-space propulsion may unlock new missions for which conventional propulsion is not feasible. 
+</p>
+<p>INTRODUCTION 
+</p>
+<p>In a conventional rocket engine, propellants are injected into a chamber at high pressure, undergo 
+combustion at constant pressure via deflagration, and are expelled through a nozzle to produce thrust. 
+Although there is no one parameter governing rocket engine performance, this chamber pressure has a 
+significant impact on a system’s performance. The engine thrust will typically increase with chamber 
+pressure. The chamber pressure during engine operation is constant at a given design point in a 
+conventional rocket engine. Thus, increasing chamber pressure can only be achieved by increasing the 
+manifold pressure supplying the chamber. This incurs a mass penalty. 
+</p>
+<p>An alternative method for increasing chamber pressure exists via pressure gain combustion (PGC) 
+[1]. PGC differs from constant pressure combustion by, as the name implies, increasing the chamber 
+pressure during the combustion process. The most basic form of a PGC cycle is one where combustion 
+occurs within a constant volume. This results in a higher average chamber pressure without paying the 
+mass penalty of increasing manifold pressure. The rocket propulsion community has indicated considerable 
+interest in PGC technology [1], in particular the rotating detonation rocket engine (RDRE). In an RDRE, the 
+combustion chamber is an annulus with a narrow detonation channel. A supersonic detonation wave travels 
+circumferentially around this channel. Propellants are injected into this chamber axially to form a detonable </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 2 
+ 
+</p>
+<p>mixture. When the detonation wave 
+passes through this mixture, the coupled 
+shock and combustion wave act similarly 
+to a constant volume process, 
+substantially raising both the 
+temperature and total pressure. The 
+exhaust products are then expelled 
+through a nozzle. Meanwhile, the 
+detonation wave continues its journey 
+around the annulus, propelled by the 
+combustion reaction as it ingests fresh 
+propellant. A simplified diagram is 
+provided in Figure 1. The shock 
+generated by the detonation reaction is 
+expected to produce excellent propellant 
+mixing characteristics, thus giving high 
+combustion efficiency. An RDRE can theoretically achieve the same thrust as a conventional rocket engine 
+while being smaller, lighter, and requiring a lower propellant supply pressure. 
+</p>
+<p>NASA requires efficient and high-performance propulsion systems for its sustainable Moon to Mars 
+architecture. The mass allowances for lunar and Martian missions are especially stringent. Some missions 
+may require propulsion system performance that exceeds currently available technology. Thus, the RDRE 
+is a potentially game-changing development for NASA’s exploration goals. Test programs underway at 
+Marshall Space Flight Center (MSFC) have completed long duration RDRE hot fires lasting up to 133 
+seconds [2]. In this paper, the integrated performance of RDRE-powered spacecraft is assessed via system 
+trades. The performance of two spacecraft will be evaluated, trading their conventional propulsion system 
+for an RDRE. The performance gains and losses caused by this trade will be discussed in detail. The first 
+spacecraft that will be discussed is the Liquid Mars Ascent Vehicle (L-MAV), a NASA in-house design for 
+carrying soil samples to orbit from the Martian surface [3]. The second spacecraft that will be discussed is 
+MIURA-1, a suborbital sounding rocket developed by Payload Aerospace S.L. (PLD Space) [4]. 
+</p>
+<p>LIQUID MARS ASCENT VEHICLE 
+</p>
+<p>The L-MAV was designed by the Collaborative Modeling for 
+Parametric Assessment of Space Systems (COMPASS) group at NASA. The 
+design was intended for the Mars Sample Return Campaign (MSRC). The 
+required wet mass was 637 lbm; however, the conventional bipropellant rocket 
+powered design had a final wet mass of 756 lbm. Thus, the vehicle was 119 
+lbm overweight, and alternate strategies were pursued for the MSRC. For this 
+reason, the L-MAV is an attractive candidate for an RDRE trade, where utilizing 
+an RDRE could result in significant mass savings. Additionally, since the L-
+MAV is a NASA design, all design information is available in detail. A simplified 
+model of the L-MAV is provided in Figure 2. 
+</p>
+<p>The L-MAV design uses monomethyl hydrazine (MMH) for fuel and a 
+mixture of 75% nitrogen tetroxide plus 25% nitric oxide (MON-25) for oxidizer. 
+The propellants are stored in coaxial piston tanks. A solid propellant gas 
+generator system is used to apply pressure to the piston and drive propellant 
+out of the tank. The tanks are constructed of laminated carbon fiber-reinforced 
+polymer matrix composite, with aluminum endcaps. The tanks were designed 
+with a safety factor of 1.5. For cost-savings, the 1st stage and 2nd stage have 
+identical tanks. The engine is a single use ablatively cooled design. An 
+overview of the L-MAV design parameters is provided in Table 1. All dry 
+masses are provided with an added 30% mass growth allowance per NASA 
+and AIAA guidelines. 
+</p>
+<p>Figure 1: Simplified diagram of RDRE concept [1] 
+</p>
+<p>Figure 2: Simplified L-
+MAV design model [3] </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 3 
+ 
+</p>
+<p>The ground rules for this system trade are: 
+ 
+</p>
+<p>1. The design shall be optimized for 
+minimum mass. For fair comparison, this 
+optimization will be performed for the 
+conventionally powered L-MAV, and an 
+RDRE powered L-MAV. The results will 
+be compared to evaluate how much 
+mass reduction can be directly attributed 
+to the RDRE. 
+</p>
+<p>2. Engine envelope must not exceed the 
+original design’s engine envelope. 
+</p>
+<p>3. The 1st and 2nd stages shall use identical 
+propellant tank dimensions, pressures, 
+and propellant loads, as in the original 
+design. 
+</p>
+<p>4. Mixture ratio, tank diameter, injector 
+pressure drop, and feed system pressure 
+drop are held constant at the baseline 
+values. 
+</p>
+<p>5. Tank pressure, tank length, tank mass, 
+engine mass, pressurant mass, and 
+propellant mass are allowed to vary. 
+</p>
+<p>6. Minimum RDRE mean chamber diameter 
+of 1 inch. 
+</p>
+<p> 
+Several models are used to assess the L-MAV 
+performance. These models are described below 
+. 
+</p>
+<p>CONVENTIONAL ROCKET PERFORMANCE MODEL 
+</p>
+<p>The L-MAV conventional rocket engine’s performance is modeled using Chemical Equilibrium with 
+Applications (CEA) [6]. The combustion heat released per mass of reactant (heat of reaction) is calculated 
+using CEA’s constant-enthalpy and constant-temperature reaction models, which assume complete 
+combustion. This value is then multiplied by a thermal efficiency and added to the reactant mixture enthalpy 
+to get an effective chamber enthalpy. The thermal efficiency is analogous to combustion efficiency, but it 
+also accounts for heat losses to the ablatively cooled chamber walls. CEA’s rocket model can then be used 
+with this chamber enthalpy to model the rocket performance. The chamber pressure, mixture ratio, and 
+nozzle area ratio are input to the model. The Martian atmosphere’s effect on engine performance is 
+neglected, vacuum operation is assumed. The engine specific impulse and characteristic velocity are 
+calculated using a weighted average of the CEA results, with 1/3 weight applied to the result where flow 
+composition is assumed frozen at the throat, and 2/3 weight is applied to the result where flow composition 
+is assumed to be at equilibrium throughout the nozzle. 
+</p>
+<p>The engine’s thermal efficiency is assumed to be 80%, as this results in a 325 second vacuum 
+specific impulse at a 150:1 nozzle area ratio. The model predicts that the characteristic velocity at this 
+condition is 5398 ft/sec. Note that, since CEA does not model chamber heat losses, the combustion 
+efficiency used here is not a true combustion efficiency. Rather, it is a measure of how much available 
+reaction energy is spent to produce thrust. Using the CEA results for specific impulse and characteristic 
+velocity, the thrust is calculated using Eqn 1. 
+</p>
+<p> 
+ 
+</p>
+<p>𝐹𝐹 =
+𝑔𝑔𝑐𝑐𝑃𝑃𝑐𝑐𝐴𝐴𝑡𝑡𝐼𝐼𝑠𝑠𝑠𝑠
+</p>
+<p>𝐶𝐶∗
+ Eqn 1 
+</p>
+<p> 
+</p>
+<p>Parameter Stage 1 Stage 2 
+Thrust 900 lbf 300 lbf 
+Specific Impulse 325 sec 325 sec 
+Mixture Ratio 2.2 O/F 2.2 O/F 
+Nozzle Area Ratio 150 150 
+Throat Diameter 0.86” 0.50” 
+Chamber Pressure 800 psia 800 psia 
+Tank Pressure 1300 psia 1300 psia 
+Injector ΔP 400 psid 400 psid 
+Feed System ΔP 100 psid 100 psid 
+</p>
+<p>Engine Envelope 18.6” long, 
+10.7” dia. 
+</p>
+<p>9.9” long, 
+10.7” dia. 
+</p>
+<p>Tank Mass 35.9 lbm 35.7 lbm 
+Engine Mass 9.9 lbm 6.2 lbm 
+Pressurant Mass 7.9 lbm 10.1 lbm 
+Other Mass (i.e. 
+avionics, payload) 29.3 lbm 116.2 lbm 
+</p>
+<p>Usable Propellant 247.6 lbm 246.0 lbm 
+Unusable 
+Propellant 2.6 lbm 8.6 lbm 
+</p>
+<p>Total Mass 333.3 lbm 422.8 lbm 
+</p>
+<p>Table 1: Design information used for Liquid Mars 
+Ascent Vehicle trade study </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 4 
+ 
+</p>
+<p>Where: 
+𝐹𝐹 = Thrust 
+𝑔𝑔𝑐𝑐 = Unit conversion factor for English units (32.174 lbm-ft/lbf/s2) 
+𝑃𝑃𝑐𝑐 = Chamber pressure 
+𝐴𝐴𝑡𝑡 = Throat area 
+𝐼𝐼𝑠𝑠𝑠𝑠 = Specific impulse 
+𝐶𝐶∗ = Characteristic velocity 
+ 
+</p>
+<p>RDRE PERFORMANCE MODEL 
+</p>
+<p>RDRE performance is modeled using a reduced-order cycle code, developed in-house at Glenn 
+Research Center [7]. A public version of this code is maintained by the authors of this study and is available 
+on the NASA Software Catalog (https://software.nasa.gov/software/LEW-20423-1). This cycle code has 
+been previously reported in detail. A brief description is provided here. 
+</p>
+<p>The cycle code simplifies the exhaust gas mixture into a calorically perfect ideal gas. The reactant 
+mixture’s specific gas constant (R) is used. The specific heat ratio (γ) is determined by first simulating an 
+ideal Atkinson cycle using thermodynamic data from CEA. In this CEA calculation, the specific heat ratio is 
+allowed to vary. Then, an ideal Atkinson cycle is simulated using isentropic flow equations with constant 
+specific heat ratio. An iterative procedure is used to calculate the specific heat ratio that results in the same 
+specific impulse between the two methods. The heat of reaction is calculated using the same method 
+described for the conventional rocket performance model. 
+</p>
+<p>A radial slice of the RDRE chamber is simulated as a lumped volume. When the detonation wave 
+passes over this slice, the reaction heat is released instantaneously. A constant volume calculation 
+determines the post-detonation total pressure and total temperature in the chamber. A blowdown process 
+is then simulated by numerically integrating the time dependent continuity and energy equations using a 
+two-step Runge-Kutta method. A wall heat transfer model estimates the thermal energy loss to the chamber 
+walls. The chamber refill process is simulated based on user-input information on the manifold pressure 
+and the injector pressure loss. The manifold pressure minus the injector pressure loss is referred to as the 
+initial pressure. Further detail is provided in Section II of [7]. 
+</p>
+<p>The RDRE chamber dimensions are described using three parameters. Hub-to-tip ratio is the ratio 
+of the annulus inner diameter over the annulus outer diameter (Eqn 2). Chamber aspect ratio is the chamber 
+length divided by the channel hydraulic diameter, namely, 2x the detonation channel width (Eqn 3). Mean 
+diameter is the average of the annulus inner and outer diameters (Eqn 4). The limits of hub-to-tip ratio and 
+chamber aspect ratio are not well understood for RDREs. Lower hub-to-tip ratios increase the throat area, 
+enabling more thrust for a given initial pressure and mean 
+diameter. Lower aspect ratios reduce the available surface 
+area for heat losses for a given mean diameter. [22] provides 
+an overview of experimental liquid bipropellant RDE 
+configurations, including chamber dimensions, that have 
+been ran successfully. For the L-MAV study, the hub-to-tip 
+ratio is assumed to be 0.8, and the aspect ratio is assumed 
+to be 5. 
+</p>
+<p>RDRE Cycle Code 
+Input Value Used 
+</p>
+<p>Specific Heat Ratio 1.2360 
+Heat of Reaction 9939 BTU/lbm 
+Specific Gas Constant 61 ft-lbf/lbm/°R 
+Hub-to-Tip Ratio 0.80 
+Chamber Aspect Ratio 5 
+Wall Temperature 2500 °R 
+Throat Area Ratio 0.80 
+Exhaust Prandtl 
+Number 0.7 
+</p>
+<p>Combustion Efficiency 97% 
+Initial Temperature 540 °R 
+</p>
+<p> [ℎ/𝑡𝑡]𝑐𝑐ℎ𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎 =
+𝐷𝐷𝑖𝑖𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎
+𝐷𝐷𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎
+</p>
+<p> Eqn 2 
+</p>
+<p> 𝐴𝐴𝑅𝑅𝑐𝑐ℎ𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎 =
+𝐿𝐿𝑐𝑐ℎ𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎
+</p>
+<p>𝐷𝐷𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎 − 𝐷𝐷𝑖𝑖𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎
+ Eqn 3 
+</p>
+<p> 𝐷𝐷𝑎𝑎𝑎𝑎𝑎𝑎𝑖𝑖 =
+1
+2
+</p>
+<p>(𝐷𝐷𝑖𝑖𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎 + 𝐷𝐷𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎) Eqn 4 
+</p>
+<p>Table 2: RDRE cycle code settings for L-
+MAV trade study </p>
+<p></p>
+<div class="annotation"><a href="https://software.nasa.gov/software/LEW-20423-1">https://software.nasa.gov/software/LEW-20423-1</a></div>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 5 
+ 
+</p>
+<p> 
+Where: 
+ℎ/𝑡𝑡 = Hub-to-tip ratio 
+𝐷𝐷 = Diameter 
+𝐴𝐴𝑅𝑅 = Aspect Ratio 
+𝐿𝐿 = Length 
+ 
+</p>
+<p>The conventional L-MAV system is an expendable, ablatively cooled engine. The RDRE system is 
+assumed to be the same. Based on prior experience with passively cooled in-space thrusters, the wall 
+material is assumed to be a C-103 alloy at 2500 °R with material properties in Table 4. A nozzle heat 
+transfer model, developed for the MIURA-1 trade study, showed that nozzle heat losses account for 5% of 
+the total exhaust heat loss for the L-MAV. Chamber heat losses account for the remaining 95%. As such, 
+nozzle heat losses are neglected for the L-MAV study. The cycle code settings used for the L-MAV trade 
+study are provided in Table 2. 
+</p>
+<p>NOZZLE GEOMETRY MODEL 
+</p>
+<p>Since the engine envelope must not exceed the original design’s engine envelope, an accurate 
+estimate of the nozzle contour is required. The converging section of the nozzle is assumed to follow a 30° 
+wall angle. The diverging section of the nozzle is a parabolic Rao nozzle with a specified length, throat wall 
+angle, and exit wall angle [5]. The diverging section length is calculated by initially setting the wall angle to 
+15°. The length required to achieve the desired nozzle area ratio is calculated. Then, the true nozzle’s 
+diverging section length is set equal to 80% of this value. The throat wall angle is set equal to 1/3 the 
+Prandtl-Meyer angle of the nozzle exit Mach number. The exit wall 
+angle is set according to Eqn 5. 
+ 
+</p>
+<p>θ𝑎𝑎𝑒𝑒𝑖𝑖𝑡𝑡 =
+1
+2
+∗ sin−1 �
+</p>
+<p>2
+𝛾𝛾𝑀𝑀𝑎𝑎
+</p>
+<p>2 cot (sin−1
+1
+𝑀𝑀𝑎𝑎
+</p>
+<p>) � Eqn 5 
+</p>
+<p> 
+Where: 
+𝜃𝜃𝑎𝑎𝑒𝑒𝑖𝑖𝑡𝑡 = Exit wall angle 
+𝑀𝑀𝑎𝑎 = Exit Mach number 
+ 
+A parabolic contour is fit to the required length, throat wall angle, and exit wall angle. The nozzle geometry 
+model was run at the L-MAV design point. An excellent agreement between the model length and actual 
+length is shown in Table 3. For a given L-MAV configuration, the maximum possible nozzle area ratio that 
+can fit within the engine envelope is used. This maximizes specific impulse. An example of the nozzle 
+geometry model output is provided in Figure 4 and Figure 5. Note that the combustion chamber geometry 
+is a user-input. 
+ 
+</p>
+<p>MASS ESTIMATE MODEL 
+</p>
+<p>The chamber and nozzle mass are calculated by integrating the wall thickness over the engine 
+contour length. The required wall thickness is calculated using the circumferentially averaged pressure at 
+each nozzle station, based on the isentropic nozzle equations and the chamber stagnation state. Note that 
+for a conventional rocket engine, a circumferential average does not need to be calculated as the pressure 
+at a given nozzle station is constant in time and space. For the outer body, a hoop stress calculation 
+determines the wall thickness (Eqn 6). For the inner body, a buckling calculation determines the wall 
+thickness (Eqn 7) [8]. 
+ 
+</p>
+<p> 
+𝜎𝜎ℎ𝑜𝑜𝑜𝑜𝑠𝑠 = 𝑃𝑃𝑒𝑒 ∗
+</p>
+<p>𝐷𝐷𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎,𝑒𝑒
+2 + 𝐷𝐷𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎,𝑒𝑒𝑡𝑡𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎,𝑒𝑒 + 𝑡𝑡𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎,𝑒𝑒
+</p>
+<p>2 
+𝐷𝐷𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎,𝑒𝑒𝑡𝑡𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎,𝑒𝑒 + 𝑡𝑡𝑜𝑜𝑜𝑜𝑡𝑡𝑎𝑎𝑎𝑎,𝑒𝑒
+</p>
+<p>2 
+=
+𝜎𝜎𝑦𝑦𝑖𝑖𝑎𝑎𝑦𝑦𝑦𝑦
+𝐹𝐹𝐹𝐹
+</p>
+<p> Eqn 6 
+</p>
+<p> 
+</p>
+<p>Nozzle 
+Length Stage 1 Stage 2 
+</p>
+<p>Predicted 14.4” 8.3” 
+Actual 14.1” 7.8” 
+Error +2.1% +6.4% 
+</p>
+<p>Table 3: L-MAV nozzle model 
+validation </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 6 
+ 
+</p>
+<p>𝑃𝑃𝑎𝑎𝑜𝑜𝑐𝑐𝑏𝑏𝑦𝑦𝑎𝑎 = 0.35 ∗
+𝐸𝐸
+</p>
+<p>1 − 𝜈𝜈2
+�
+</p>
+<p>2 ∗ 𝑡𝑡𝑖𝑖𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎,𝑒𝑒
+</p>
+<p>𝐷𝐷𝑖𝑖𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎,𝑒𝑒
+�
+2
+</p>
+<p>= 𝑃𝑃𝑒𝑒 ∗ 𝐹𝐹𝐹𝐹 Eqn 7 
+</p>
+<p> 
+Where: 
+𝜎𝜎 = Wall stress 
+𝑃𝑃𝑒𝑒 = Pressure at an axial station 
+𝐷𝐷𝑒𝑒 = Diameter at an axial station 
+𝑡𝑡𝑒𝑒 = Wall thickness at an axial station 
+𝐹𝐹𝐹𝐹 = Factor of safety 
+𝐸𝐸 = Young’s Modulus 
+𝜈𝜈 = Poisson’s ratio 
+ 
+</p>
+<p>Scaling laws were developed for the remaining 
+engine mass – that is, the injector head mass, valve mass, 
+ablator mass, and any other components not captured by the 
+nozzle and chamber mass. The chamber and nozzle masses 
+were estimated for the baseline L-MAV using a minimum 
+allowable wall thickness of 0.001” and a safety factor of 1.5. 
+Using a very small minimum allowable wall thickness and 
+safety factor produces an underestimate for the nozzle and 
+chamber mass. This is done to make the assumed 
+component mass conservatively high. The estimated 
+chamber and nozzle mass were subtracted from the baseline 
+L-MAV engine mass to produce an assumed component mass. The resulting mass breakdown is provided 
+in Table 5. 
+</p>
+<p>Since the engine is ablatively cooled, the ablator mass is assumed to scale linearly with the mass-
+averaged chamber temperature. It should be noted that this is a very blunt estimate of the impact from 
+exhaust heat transfer – for the L-MAV study, understanding the impact of heat transfer is low-priority due 
+to its ablatively cooled expendable system. For this reason, the MIURA study investigates heat transfer 
+effects in greater detail. The resulting scaling law for Stage 1 engine mass is listed in Eqn 8. The scaling 
+law for Stage 2 engine mass is listed in Eqn 9. 
+</p>
+<p> 
+ 
+</p>
+<p>𝑚𝑚𝑎𝑎𝑖𝑖𝑒𝑒𝑖𝑖𝑖𝑖𝑎𝑎,1 = 7.4[𝑙𝑙𝑙𝑙𝑚𝑚] ∗
+</p>
+<p>⎝
+</p>
+<p>⎛�
+𝑇𝑇𝑐𝑐ℎ𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎,𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠 𝑎𝑎𝑎𝑎𝑒𝑒,1
+</p>
+<p>5600[°𝑅𝑅] � + �
+�̇�𝑚1
+</p>
+<p>2.8 �𝑙𝑙𝑙𝑙𝑚𝑚𝑠𝑠𝑠𝑠𝑠𝑠 �
+�
+</p>
+<p>⎠
+</p>
+<p>⎞ + 𝑚𝑚𝑐𝑐ℎ𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎,1 + 𝑚𝑚𝑖𝑖𝑜𝑜𝑛𝑛𝑛𝑛𝑦𝑦𝑎𝑎,1 Eqn 8 
+</p>
+<p> 
+</p>
+<p>𝑚𝑚𝑎𝑎𝑖𝑖𝑒𝑒𝑖𝑖𝑖𝑖𝑎𝑎,2 = 5.1[𝑙𝑙𝑙𝑙𝑚𝑚] ∗
+</p>
+<p>⎝
+</p>
+<p>⎛�
+𝑇𝑇𝑐𝑐ℎ𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎,𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠 𝑎𝑎𝑎𝑎𝑒𝑒,2
+</p>
+<p>5600[°𝑅𝑅] � + �
+�̇�𝑚2
+</p>
+<p>0.9 �𝑙𝑙𝑙𝑙𝑚𝑚𝑠𝑠𝑠𝑠𝑠𝑠 �
+�
+</p>
+<p>⎠
+</p>
+<p>⎞ + 𝑚𝑚𝑐𝑐ℎ𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎,2 + 𝑚𝑚𝑖𝑖𝑜𝑜𝑛𝑛𝑛𝑛𝑦𝑦𝑎𝑎,2 Eqn 9 
+</p>
+<p> 
+Since all L-MAV design information is known, the propellant tank mass can be estimated very 
+</p>
+<p>accurately. Since the propellant tank diameter is held constant at the baseline value, the tank barrel length 
+scales linearly with tank propellant load. The barrel thickness scales linearly with pressure. Some tank 
+component masses are independent of pressure – i.e. pistons and mechanisms. The resulting scaling law 
+for propellant tank pressure is listed in Eqn 10. 
+ 
+</p>
+<p> 
+ 
+</p>
+<p>Assumed Wall 
+Material Properties Value Used 
+</p>
+<p>Elastic modulus 24,500 ksi 
+Yield strength 18,000 psi 
+Poisson’s ratio 0.33 
+Density 0.320 lbm/in3 
+Safety factor 1.5 
+</p>
+<p>Baseline Engine 
+Mass Stage 1 Stage 2 
+Chamber &amp; 
+nozzle mass, 
+predicted 
+</p>
+<p>2.5 lbm 1.1 lbm 
+</p>
+<p>Total mass, 
+actual 9.9 lbm 6.2 lbm 
+</p>
+<p>Assumed 
+component mass 7.4 lbm 5.1 lbm 
+</p>
+<p> 
+𝑚𝑚𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏 = 28.7[𝑙𝑙𝑙𝑙𝑚𝑚] ∗ �
+</p>
+<p>𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠[𝑙𝑙𝑙𝑙𝑚𝑚]
+252.4[𝑙𝑙𝑙𝑙𝑚𝑚]� �
+</p>
+<p>𝑃𝑃𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏
+1300[𝑝𝑝𝑠𝑠𝑝𝑝𝑝𝑝]� + 3.4[𝑙𝑙𝑙𝑙𝑚𝑚] Eqn 
+</p>
+<p>10 
+</p>
+<p>Table 4: Engine material properties 
+used for L-MAV trade study [9] 
+</p>
+<p>Table 5: Baseline engine mass values 
+used for L-MAV trade study [3] </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 7 
+ 
+</p>
+<p>The Stage 1 and Stage 2 propellant tank pressurant mass is estimated 
+using a similar method in Eqn 11 and Eqn 12, respectively. 
+ 
+</p>
+<p> 
+</p>
+<p>TRAJECTORY MODEL 
+</p>
+<p>At the design point, the required delta-V to achieve the desired orbit is 3907 m/s. A 1.5% flight 
+performance reserve is bookkept for delta-V, increasing the design delta-V to 3966 m/s. A COMPASS 
+trajectory analysis showed that over a limited range of thrust-to-weight ratios (TWR) for each stage, the 
+required delta-V is a linear function of TWR. This linear relationship holds for Stage 1 TWR from 3.1 to 6.4, 
+and Stage 2 TWR from 1.8 to 5.5. The lower TWR limit for this relationship is the design point for the 
+conventional L-MAV. This produces a simple model for the delta-V required as a function of Stage 1 TWR 
+and Stage 2 TWR in Eqn 13. This model includes the effect of Mars atmospheric drag. 
+ 
+ 
+</p>
+<p>Δ𝑉𝑉𝑎𝑎𝑎𝑎𝑟𝑟 = 1.015 ∗ �3907 �
+𝑚𝑚
+𝑠𝑠
+� − 31.8 �
+</p>
+<p>𝑚𝑚
+𝑠𝑠
+� ∗ (𝑇𝑇𝑇𝑇𝑅𝑅1 − 3.13) − 53.9 �
+</p>
+<p>𝑚𝑚
+𝑠𝑠
+� (𝑇𝑇𝑇𝑇𝑅𝑅2 − 1.85)� Eqn 13 
+</p>
+<p> 
+Designs with TWR outside of this range are out of the scope of this trade study. Note that TWR is calculated 
+using Mars surface gravity. The delta-V delivered by the L-MAV is calculated using the rocket equation. 
+The wet and dry masses for each stage are calculated using the mass estimate models (Eqn 14-Eqn 17). 
+ 
+ 
+</p>
+<p>𝑚𝑚𝑦𝑦𝑎𝑎𝑦𝑦,2 = 𝑚𝑚𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏 + 𝑚𝑚𝑠𝑠𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠𝑜𝑜𝑎𝑎𝑎𝑎𝑖𝑖𝑡𝑡,2 + 𝑚𝑚𝑎𝑎𝑖𝑖𝑒𝑒𝑖𝑖𝑖𝑖𝑎𝑎,2 + 124.8[𝑙𝑙𝑙𝑙𝑚𝑚] Eqn 14 
+</p>
+<p> 
+𝑚𝑚𝑤𝑤𝑎𝑎𝑡𝑡,2 = 𝑚𝑚𝑦𝑦𝑎𝑎𝑦𝑦,2 + (𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠 − 8.6[𝑙𝑙𝑙𝑙𝑚𝑚]) Eqn 15 
+</p>
+<p> 
+𝑚𝑚𝑦𝑦𝑎𝑎𝑦𝑦,1 = 𝑚𝑚𝑤𝑤𝑎𝑎𝑡𝑡,2 + 𝑚𝑚𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏 + 𝑚𝑚𝑠𝑠𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠𝑜𝑜𝑎𝑎𝑎𝑎𝑖𝑖𝑡𝑡,1 + 𝑚𝑚𝑎𝑎𝑖𝑖𝑒𝑒𝑖𝑖𝑖𝑖𝑎𝑎,1 + 31.9[𝑙𝑙𝑙𝑙𝑚𝑚] Eqn 16 
+</p>
+<p> 
+𝑚𝑚𝑤𝑤𝑎𝑎𝑡𝑡,1 = 𝑚𝑚𝑦𝑦𝑎𝑎𝑦𝑦,1 + (𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠 − 2.6[𝑙𝑙𝑙𝑙𝑚𝑚]) Eqn 17 
+</p>
+<p> 
+Note that the mass and delta-V equations are coupled with the scaling laws and performance models 
+described above. An iterative procedure is used to calculate the gross liftoff mass (GLOM) for any particular 
+L-MAV configuration. 
+ 
+</p>
+<p>𝑚𝑚𝑠𝑠𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠𝑜𝑜𝑎𝑎𝑎𝑎𝑖𝑖𝑡𝑡,1 = 7.9[𝑙𝑙𝑙𝑙𝑚𝑚] ∗ �
+𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠[𝑙𝑙𝑙𝑙𝑚𝑚]
+252.4[𝑙𝑙𝑙𝑙𝑚𝑚]� �
+</p>
+<p>𝑃𝑃𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏
+1300[𝑝𝑝𝑠𝑠𝑝𝑝𝑝𝑝]� Eqn 11 
+</p>
+<p>𝑚𝑚𝑠𝑠𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠𝑜𝑜𝑎𝑎𝑎𝑎𝑖𝑖𝑡𝑡,2 = 10.1[𝑙𝑙𝑙𝑙𝑚𝑚] ∗ �
+𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠[𝑙𝑙𝑙𝑙𝑚𝑚]
+252.4[𝑙𝑙𝑙𝑙𝑚𝑚]� �
+</p>
+<p>𝑃𝑃𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏
+1300[𝑝𝑝𝑠𝑠𝑝𝑝𝑝𝑝]� Eqn 12 
+</p>
+<p>Baseline Tank 
+Properties Value 
+</p>
+<p>Barrel mass 28.7 lbm 
+Component 
+mass 3.3 lbm 
+</p>
+<p>Design pressure 1,300 psia 
+Design 
+propellant load 252.4 lbm 
+</p>
+<p>Table 6: L-MAV baseline 
+propellant tank properties [3] </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 8 
+ 
+</p>
+<p>L-MAV TRADE STUDY RESULTS 
+</p>
+<p>Per the system trade ground rules, the conventionally powered L-MAV system was optimized for 
+minimum GLOM. A parametric sweep was performed on all parameters in the trade space. The tank 
+pressure and throat diameters are the independent variables. If these values are known, then all other 
+parameters can be calculated using the models described above. The minimum GLOM achieved for each 
+tank pressure evaluated is shown in Figure 3. The results show that the optimal propellant tank pressure 
+for a conventionally powered L-MAV is 740 psia. The GLOM as a function of throat diameter at 740 psia 
+tank pressure is shown in Figure 17 in the appendix. At the optimal point, the 1st stage TWR is maximized 
+to minimize gravity losses. This requires the largest possible throat diameter, which reduces the nozzle 
+area ratio. The 2nd stage uses the smallest possible throat diameter to maximize the nozzle area ratio. 
+Further optimization may be possible if the allowable TWR range is expanded, but this is outside the scope 
+of this trade study. The optimal point GLOM is 643 lbm for the conventionally powered L-MAV. This is 6 
+lbm greater than the required GLOM of 637 lbm. Thus, even after optimizing for minimum mass, a 
+conventionally powered L-MAV cannot meet the design requirements. 
+</p>
+<p>Next, the RDRE powered L-MAV system 
+was optimized for minimum GLOM. A parametric 
+sweep was once again performed on all 
+parameters in the trade space. The tank pressure 
+and mean chamber diameters are the 
+independent variables. The minimum GLOM 
+achieved for each tank pressure evaluated is 
+shown in Figure 3. The results show that the 
+optimal propellant tank pressure for an RDRE 
+powered L-MAV is 680 psia. The GLOM as a 
+function of RDRE mean chamber diameter at 680 
+psia tank pressure is shown in Figure 18 in the 
+appendix. As was the case for the conventional L-
+MAV, the optimal point has the 1st stage TWR 
+maximized to minimize gravity losses, and the 2nd 
+stage has the nozzle area ratio maximized to 
+maximize specific impulse. The optimal point 
+GLOM is 591 lbm for the RDRE powered L-MAV. 
+This is 46 lbm below the required GLOM of 637 
+lbm. Thus, an RDRE powered L-MAV meets the 
+design requirements. 
+</p>
+<p>The optimization results are compared in Table 8. Increasing TWR reduced the required ΔV for 
+both the optimized L-MAVs. Therefore, mass savings due to increased thrust cannot be solely attributed to 
+the RDRE. However, the propellant tank mass is significantly reduced for the RDRE optimized L-Mav. Using 
+an RDRE reduced the propellant tank mass significantly, due to the lower tank pressures enabled by 
+pressure gain combustion. Therefore, mass savings due to reduced tank pressure can be attributed to the 
+RDRE. The lower inert mass reduced the amount of propellant needed to meet the ΔV requirement. The 
+RDRE geometry required a lower nozzle area ratio to fit within the engine envelope. This reduced specific 
+impulse compared to the baseline L-MAV; however, this was balanced by the RDRE’s increased 
+combustion efficiency. The RDRE powered L-MAV achieved a 165 lbm mass reduction over the baseline 
+design. Based on the optimization comparison, 52 lbm of this mass reduction can be directly attributed to 
+the usage of an RDRE. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</p>
+<p>Parameter Stage 1 Stage 2 
+Thrust 1,450 lbf 230 lbf 
+Initial pressure 180 psia 180 psia 
+Nozzle area ratio 41.0 113.7 
+Mean diameter 2.8” 1.1” 
+Specific impulse 321.8 sec 330.4 sec 
+</p>
+<p>Wall heat loss 1,200 
+BTU/sec 
+</p>
+<p>219 
+BTU/sec 
+</p>
+<p>Wall heat loss as 
+percent of total 
+reaction heat 
+</p>
+<p>8.8% 10.3% 
+</p>
+<p>Combustion chamber 
+channel width 0.31” 0.12” 
+</p>
+<p>Combustion chamber 
+length 3.1” 1.2” 
+</p>
+<p>Detonation frequency 12,400 Hz 31,500 Hz 
+</p>
+<p>Table 7: Model outputs for engine performance in 
+optimized RDRE L-MAV. Engine geometry is shown 
+</p>
+<p>in Figure 3 and Figure 4. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 9 
+ 
+</p>
+<p>Table 8: Comparison of different L-MAV configurations 
+</p>
+<p>Parameter Baseline L-
+MAV 
+</p>
+<p>Optimized 
+Conventional 
+</p>
+<p>L-MAV 
+Optimized 
+</p>
+<p>RDRE L-MAV 
+</p>
+<p>Required ΔV 13,011 ft/sec 12,692 ft/sec 12,678 ft/sec 
+Total propellant load 504.8 lbm 432.5 lbm 389.0 lbm 
+Total tank mass (incl. pressurant) 89.7 lbm 43.7 lbm 37.3 lbm 
+Total engine mass 16.1 lbm 21.7 lbm 19.5 lbm 
+Gross liftoff mass 756.2 lbm 643.4 lbm 591.3 lbm 
+Mass margin -119.2 lbm -6.4 lbm +45.7 lbm 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Figure 3: Optimized GLOM as a function of tank pressure for a conventional or RDRE powered L-MAV 
+</p>
+<p> 
+</p>
+<p>600 700 800 900 1000 1100 1200
+Tank Pressure (psia)
+</p>
+<p>580
+</p>
+<p>600
+</p>
+<p>620
+</p>
+<p>640
+</p>
+<p>660
+</p>
+<p>680
+</p>
+<p>700
+</p>
+<p>M
+in
+</p>
+<p>im
+um
+</p>
+<p> G
+ro
+</p>
+<p>ss
+ L
+</p>
+<p>ift
+of
+</p>
+<p>f M
+as
+</p>
+<p>s 
+(lb
+</p>
+<p>m
+)
+</p>
+<p>Conventional L-MAV
+RDRE L-MAV
+</p>
+<p>0 5 10
+Axial Position (in)
+</p>
+<p>-6
+</p>
+<p>-4
+</p>
+<p>-2
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+</p>
+<p>N
+oz
+</p>
+<p>zle
+ C
+</p>
+<p>on
+to
+</p>
+<p>ur
+ R
+</p>
+<p>ad
+iu
+</p>
+<p>s 
+(in
+</p>
+<p>) Conventional
+RDRE Inner
+RDRE Outer
+</p>
+<p>-5 0 5 10
+Axial Position (in)
+</p>
+<p>-6
+</p>
+<p>-4
+</p>
+<p>-2
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+</p>
+<p>N
+oz
+</p>
+<p>zle
+ C
+</p>
+<p>on
+to
+</p>
+<p>ur
+ R
+</p>
+<p>ad
+iu
+</p>
+<p>s 
+(in
+</p>
+<p>) Conventional
+RDRE Inner
+RDRE Outer
+</p>
+<p>Figure 4: Optimized L-MAV stage 1 engine 
+geometry 
+</p>
+<p>Figure 5: Optimized L-MAV stage 2 engine 
+geometry </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 10 
+ 
+</p>
+<p>MIURA-1 
+</p>
+<p>MIURA-1 is a suborbital sounding rocket developed by Payload Aerospace S.L. 
+(PLD Space). MIURA-1 is a single stage pressure-fed design powered by kerosene and 
+liquid oxygen. Pressure is provided by helium stored in a composite overwrapped 
+pressure vessel (COPV). It is intended to carry up to 200 lbm of science payload on a 
+suborbital trajectory. PLD space performed a test flight on October 7, 2023 which the 
+company stated met all test objectives. MIURA-1 exhibits desirable characteristics for an 
+RDRE trade. For one, its conventional TEPREL-B propulsion system puts out 6,800 lbf of 
+sea level thrust, which is a similar thrust class to the RDRE demonstrators run on test 
+stands to date [2]. Unlike the L-MAV, MIURA-1 has been built and flown, and is designed 
+to be recovered and reused. MIURA-1 lifts off from Earth sea level under ambient 
+atmospheric conditions, meaning the pressure gain combustion achieved by an RDE 
+provides a more potent efficiency gain compared to vacuum conditions. Most significantly 
+for this study, the conventional rocket engine (TEPREL-B) is regeneratively cooled. This 
+provides an excellent opportunity to evaluate the integrated performance of a 
+regeneratively cooled kerolox RDRE. 
+</p>
+<p>An overview of known MIURA-1 design information is provided below. All 
+information in Table 9 is provided by PLD Space in their public materials [4]. Information 
+in Table 10 is calculated from public information. The propellant flow rates are calculated 
+from the reported thrust, specific impulse, and mixture ratio. The flow rates are multiplied 
+by the reported burn time to calculate the usable propellant load. The supply delta-P 
+describes the pressure drop from the propellant tanks to the combustion chamber. This 
+delta-P includes all feed system and injector pressure losses. 
+ 
+ The ground rules for this system trade are as follows: 
+ 
+</p>
+<p>1. RDRE thrust shall be held constant at the 6,800 lbf baseline sea level value. 
+2. Tank diameter, injector pressure drop, and feed system pressure drop are held constant at the 
+</p>
+<p>baseline values. 
+3. Tank pressure, tank length, tank mass, engine mass, pressurant mass, and propellant mass are 
+</p>
+<p>allowed to vary. 
+ 
+ 
+ 
+</p>
+<p>Parameter Known Value 
+Thrust (sea level) 6,800 lbf 
+Specific impulse 240 sec 
+Mixture ratio 2.35 O/F 
+Engine burn time 122 sec 
+Chamber pressure 320 psia 
+Diameter 27.5” 
+Total wet mass 5,620 lbm 
+Fuel tank pressure 390 psia 
+Fuel tank volume 600 L 
+Oxid tank pressure 520 psia 
+Oxid tank volume 1000 L 
+Oxid tank temperature 164 °R 
+Helium COPV volume 260 L 
+Helium COPV pressure 6,000 psia 
+</p>
+<p>Parameter Calculated Value 
+Fuel Flow Rate 8.44 lbm/sec 
+Usable Fuel Load 1,030 lbm 
+Fuel Supply ΔP 70 psid 
+Oxid Flow Rate 19.8 lbm/sec 
+Usable Oxid Load 2,420 lbm 
+Oxid Supply ΔP 200 psid 
+Ullage Volume Fraction 4% 
+Total Inert Mass 
+(excluding payload) 1,950 lbm 
+</p>
+<p>Total Usable Propellant 3,450 lbm 
+</p>
+<p>Figure 6: 
+MIURA-1 [4] 
+</p>
+<p>Table 9: Publicly available baseline MIURA-1 
+design information 
+</p>
+<p> 
+Table 10: Additional MIURA-1 information, 
+</p>
+<p>calculated from Table 9 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 11 
+ 
+</p>
+<p>REGENERATIVE COOLING MODEL 
+</p>
+<p>A regenerative cooling 
+jacket model was developed 
+for trading an RDRE with the 
+TEPREL-B rocket engine. The 
+regen jacket model solves for 
+the coolant temperature rise 
+and pressure drop through 
+rectangular cooling channels in 
+the combustion chamber and 
+nozzle walls. The model 
+simultaneously solves for the 
+exhaust temperature and 
+pressure decrease through the 
+combustion chamber and 
+nozzle. The performance of 
+regeneratively cooled RDREs 
+is the primary focus of the 
+MIURA-1 trade, therefore the 
+regenerative cooling model is 
+necessarily complex. An overview is provided here, but it is not exhaustive of every detail. 
+</p>
+<p>The exhaust and coolant flows are modeled as 1-dimensional by marching along the engine axis 
+and solving for temperature and pressure changes. The combustion chamber and nozzle are discretized 
+axially into stations. The curved walls are simplified into multiple flat, trapezoidal panels. These panels are 
+drawn in-between the axial stations, and are centered on the cooling channels, i.e. a jacket with 4 cooling 
+channels will have 4 panels per station, giving a square cross-section. The nozzle geometry model 
+previously described for the L-MAV is used to calculate the nozzle contour. The hot wall temperature, cold 
+wall temperature, and fluid temperature are assumed to be uniform throughout a panel. The coolant channel 
+dimensions and wall temperatures are allowed to vary from station to station. The flow conditions are 
+assumed to be identical for all channels at a given nozzle station. 
+</p>
+<p>The hot wall heat flux at each axial station is calculated using a modified Bartz [10] correlation. This 
+correlation was identified in [11], which describes a similar regenerative cooling model. 
+</p>
+<p> �̇�𝑞𝑤𝑤𝑎𝑎𝑦𝑦𝑦𝑦𝑠𝑠 = ℎ𝑒𝑒 ∗ �𝑇𝑇𝑒𝑒 − 𝑇𝑇ℎ𝑤𝑤� =
+𝑘𝑘𝑦𝑦𝑖𝑖𝑒𝑒
+𝑡𝑡𝑦𝑦𝑖𝑖𝑒𝑒
+</p>
+<p>∗ (𝑇𝑇ℎ𝑤𝑤 − 𝑇𝑇𝑐𝑐𝑤𝑤) Eqn 18 
+</p>
+<p> ℎ𝑒𝑒 =
+𝑘𝑘𝑒𝑒
+</p>
+<p>𝐷𝐷ℎ𝑦𝑦𝑦𝑦,𝑒𝑒
+∗ 0.026 ∗ 𝑅𝑅𝑠𝑠𝑒𝑒0.8𝑃𝑃𝑃𝑃𝑒𝑒0.4 ∗ �
+</p>
+<p>𝜌𝜌𝑒𝑒 + 𝜌𝜌𝑒𝑒,ℎ𝑤𝑤
+</p>
+<p>2𝜌𝜌𝑒𝑒,0
+�
+0.8
+</p>
+<p>∗ �
+𝜇𝜇𝑒𝑒 + 𝜇𝜇𝑒𝑒,ℎ𝑤𝑤
+</p>
+<p>2𝜇𝜇𝑒𝑒,0
+�
+0.2
+</p>
+<p> Eqn 19 
+</p>
+<p>Where: 
+𝐹𝐹𝑆𝑆𝑙𝑙𝑠𝑠𝑠𝑠𝑃𝑃𝑝𝑝𝑝𝑝𝑡𝑡 𝑔𝑔 = Exhaust gas 
+𝐹𝐹𝑆𝑆𝑙𝑙𝑠𝑠𝑠𝑠𝑃𝑃𝑝𝑝𝑝𝑝𝑡𝑡 0 = Stagnation properties 
+𝐷𝐷ℎ𝑦𝑦𝑦𝑦 = Hydraulic diameter 
+𝑘𝑘 = Thermal conductivity 
+𝑅𝑅𝑠𝑠 = Reynolds number 
+𝑃𝑃𝑃𝑃 = Prandtl number 
+𝜌𝜌 = Density 
+𝜇𝜇 = Dynamic viscosity 
+ 
+The resulting heat load is used to calculate the net exhaust heat loss as the flow marches from station to 
+station. Exhaust viscosity, thermal conductivity, and specific heat are calculated using CEA. Exhaust 
+density is calculated assuming an ideal gas. The Mach number, static pressure, and static temperature are 
+calculated at each station from the nozzle area ratio and stagnation conditions. The stagnation conditions 
+</p>
+<p>closeout treated 
+as adiabatic 
+</p>
+<p>ribs treated as fins 
+</p>
+<p>hot wall absorbs 
+heat from exhaust 
+</p>
+<p>heat conducts 
+through ligament 
+</p>
+<p>coolant absorbs 
+heat from cold wall 
+</p>
+<p>channel 
+depth 𝐻𝐻𝑐𝑐ℎ 
+</p>
+<p>closeout 
+thickness 𝑡𝑡𝑐𝑐𝑦𝑦𝑎𝑎𝑦𝑦 
+</p>
+<p>channel 
+width 𝑇𝑇𝑐𝑐ℎ 
+</p>
+<p>ligament 
+thickness 𝑡𝑡𝑦𝑦𝑖𝑖𝑒𝑒 
+</p>
+<p>rib thickness 
+𝑡𝑡𝑎𝑎𝑖𝑖𝑎𝑎 
+</p>
+<p>trapezoidal panel 
+width 𝑇𝑇𝑡𝑡𝑎𝑎𝑎𝑎𝑠𝑠 
+</p>
+<p>coolant 
+temperature 
+</p>
+<p>𝑇𝑇𝑐𝑐 
+</p>
+<p>cold wall 
+temperature 
+</p>
+<p>𝑇𝑇𝑐𝑐𝑤𝑤 
+</p>
+<p>𝑇𝑇ℎ𝑤𝑤 
+hot wall 
+</p>
+<p>temperature 
+</p>
+<p>coolant 
+flow 
+area 
+</p>
+<p>Figure 7: Geometry diagram showing a coolant channel cross section for 
+the regenerative cooling jacket model </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 12 
+ 
+</p>
+<p>are updated as the flow marches along using a quasi-1-dimensional frictionless flow model (Eqn 20 and 
+Eqn 21). A flowchart of the exhaust calculation is provided in Figure 19. 
+</p>
+<p> Δ𝑇𝑇𝑒𝑒,0 =
+�̇�𝑄𝑤𝑤𝑎𝑎𝑦𝑦𝑦𝑦𝑠𝑠
+�̇�𝑚𝑒𝑒𝑠𝑠𝑠𝑠,𝑒𝑒
+</p>
+<p> Eqn 20 
+</p>
+<p> Δ𝑃𝑃𝑒𝑒,0 = −𝑃𝑃𝑒𝑒,0 ∗
+𝛾𝛾𝑀𝑀2 ∗ Δ𝑇𝑇𝑒𝑒,0
+</p>
+<p>2𝑇𝑇𝑒𝑒,0
+ Eqn 21 
+</p>
+<p>Where: 
+𝑀𝑀 = Mach number 
+𝑠𝑠𝑠𝑠 = Specific heat 
+ 
+</p>
+<p>The exhaust calculation produces the wall heat flux as a 
+function of axial position in the combustion chamber and nozzle. 
+When simulating a conventional propulsion system, the exhaust 
+calculation only needs to be performed once for the steady-state 
+chamber conditions. When simulating an RDRE, the time 
+dependent nature of the exhaust flow must be accounted for. The 
+RDRE performance code discussed previously is used to 
+calculate the time dependent RDRE chamber conditions. The 
+exhaust marching calculation is repeated at each time step to 
+calculate wall heat flux as a function of both axial position and 
+time. The RDRE performance code includes its own heat transfer 
+correlation. An iterative procedure scales this heat transfer 
+correlation until the time-averaged heat load simulated by the 
+performance code matches the time-averaged heat load 
+calculated by the exhaust marching calculation, thus closing 
+conservation of energy between the two models. A flowchart of 
+this solution process is provided in Figure 8. 
+</p>
+<p> The cold wall heat flux adsorbed by each trapezoidal 
+panel is calculated using a Sieder-Tate [12] correlation (Eqn 23). 
+The channel ribs are treated as finned heat transfer surfaces with 
+adiabatic tips (Eqn 24). The closeout wall is treated as adiabatic. 
+ 
+</p>
+<p> 
+Where: 
+𝐹𝐹𝑆𝑆𝑙𝑙𝑠𝑠𝑠𝑠𝑃𝑃𝑝𝑝𝑝𝑝𝑡𝑡 𝑠𝑠 = Coolant 
+𝐴𝐴𝑡𝑡𝑎𝑎𝑎𝑎𝑠𝑠 = Area of trapezoidal panel being evaluated 
+𝐿𝐿𝑡𝑡𝑎𝑎𝑎𝑎𝑠𝑠 = Length of trapezoidal panel being evaluated 
+𝐴𝐴𝑦𝑦𝑖𝑖𝑒𝑒 = Area of cold wall ligament 
+ 
+</p>
+<p>�̇�𝑞𝑤𝑤𝑎𝑎𝑦𝑦𝑦𝑦𝑠𝑠𝐴𝐴𝑡𝑡𝑎𝑎𝑎𝑎𝑠𝑠 =
+𝑘𝑘𝑦𝑦𝑖𝑖𝑒𝑒
+𝑡𝑡𝑦𝑦𝑖𝑖𝑒𝑒
+</p>
+<p>∗ (𝑇𝑇ℎ𝑤𝑤 − 𝑇𝑇𝑐𝑐𝑤𝑤) = ℎ𝑐𝑐𝐴𝐴𝑦𝑦𝑖𝑖𝑒𝑒(𝑇𝑇𝑐𝑐𝑤𝑤 − 𝑇𝑇𝑐𝑐) + �̇�𝑄𝑓𝑓𝑖𝑖𝑖𝑖 Eqn 22 
+</p>
+<p>ℎ𝑐𝑐 =
+𝑘𝑘𝑒𝑒
+</p>
+<p>𝐷𝐷ℎ𝑦𝑦𝑦𝑦 ,𝑐𝑐
+0.027 ∗ 𝑅𝑅𝑠𝑠𝑐𝑐0.8𝑃𝑃𝑃𝑃𝑐𝑐
+</p>
+<p>1
+3 ∗ �
+</p>
+<p>𝜇𝜇𝑐𝑐
+𝜇𝜇𝑐𝑐𝑤𝑤
+</p>
+<p>�
+0.14
+</p>
+<p> Eqn 23 
+</p>
+<p>�̇�𝑄𝑓𝑓𝑖𝑖𝑖𝑖 = tanh�𝐻𝐻𝑓𝑓𝑖𝑖𝑖𝑖 ∗ �
+2ℎ𝑐𝑐
+</p>
+<p>𝑘𝑘𝑦𝑦𝑖𝑖𝑒𝑒𝑡𝑡𝑎𝑎𝑖𝑖𝑎𝑎
+� ∗ 𝐿𝐿𝑡𝑡𝑎𝑎𝑎𝑎𝑠𝑠 ∗ �2ℎ𝑐𝑐𝑡𝑡𝑎𝑎𝑖𝑖𝑎𝑎 ∗ (𝑇𝑇𝑐𝑐𝑤𝑤 − 𝑇𝑇𝑐𝑐) Eqn 24 
+</p>
+<p>Start 
+</p>
+<p>Calculate �̇�𝑞(𝑥𝑥) using 
+initial guess for 𝑇𝑇ℎ𝑤𝑤(𝑥𝑥) 
+</p>
+<p>Calculate time-averaged 
+wall heat load �̇�𝑄𝑡𝑡𝑜𝑜𝑡𝑡𝑎𝑎𝑦𝑦 
+</p>
+<p>Run RDRE cycle code to 
+get RDRE performance 
+and chamber conditions 
+</p>
+<p>Calculate 𝑇𝑇ℎ𝑤𝑤(𝑥𝑥) 
+using �̇�𝑞(𝑥𝑥) 
+</p>
+<p>Results 
+converged? 
+</p>
+<p>Yes 
+</p>
+<p>No 
+</p>
+<p>Calculate �̇�𝑞(𝑥𝑥) 
+using 𝑇𝑇ℎ𝑤𝑤(𝑥𝑥) 
+</p>
+<p>Finished 
+</p>
+<p>Re-run cycle code with heat transfer 
+correlation updated to reflect wall heat 
+load, and initial temperature updated to 
+</p>
+<p>reflect regen jacket outlet conditions 
+</p>
+<p>Figure 8: Flowchart of regenerative 
+cooling model solution process. Further 
+information is provided in Figure 19 and 
+</p>
+<p>Figure 20 in the appendix. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 13 
+ 
+</p>
+<p>The resulting heat load is used to calculate the coolant temperature rise across each panel. The coolant 
+pressure drop across each panel is calculated using the Darcy-Weisbach equation. The coolant 
+temperature and pressure are updated accordingly from station to station as the flow marches along the 
+cooling channel. 
+</p>
+<p>Cooling channel dimensions are optimized at each station. The number of channels (as measured 
+at the throat) is a user input. The maximum allowable channel depth, minimum allowable rib thickness, 
+minimum allowable channel width, and maximum allowable hot wall temperature are user inputs. For RDRE 
+models, if more inner body channels are input than can fit in the aerospike, the jacket is bifurcated at the 
+necessary location. The aerospike is truncated to 50% of its length to reduce the inner body wall area. Prior 
+work on RDRE nozzles indicates that the truncation’s effect on engine performance can be neglected [13]. 
+The model selects the cooling channel dimensions based on three criteria, listed in order of priority. First, 
+the hot wall temperature cannot exceed the user input. Second, the channel aspect ratio – the channel 
+depth over the channel width – is maximized for heat transfer efficiency. Third, the channel flow area is 
+maximized to reduce the pressure drop. If a single commodity is used as coolant, the mass flow rate ratio 
+for the outer vs. inner body is set according to the heat load ratio. A flowchart of the coolant calculation is 
+provided in Figure 20. 
+</p>
+<p>The regenerative cooling jacket model is critical to the MIURA-1 trade study. Given this, a 
+significant model validation effort was performed using the RL-10 rocket engine as a benchmark. The RL-
+10 regenerative cooling jacket dimensions and engine operating conditions were input to the model. To 
+simulate conventional rocket engines, CEA is used in place of the RDRE cycle code within the regen model. 
+The model’s predicted jacket temperature rise, 
+jacket pressure loss, and exhaust specific impulse 
+were compared to test data from hotfires conducted 
+without the passively cooled nozzle extension [14]. 
+The results show excellent agreement in Table 17, 
+Figure 21, and Figure 22. 
+</p>
+<p>GRCop-42 is used for the regen cooling 
+jacket material due to its high thermal conductivity 
+at high temperatures [16]. This limits the maximum 
+hot wall temperature to 1800 °R. The minimum 
+channel dimensions are limited to 0.010” based on 
+the authors’ experience with minimum-size 
+chemically etched cooling channels. The regen 
+cooling jacket model settings for the MIURA-1 trade 
+study are listed in Table 14. 
+</p>
+<p> 
+</p>
+<p>MASS ESTIMATE MODEL 
+</p>
+<p>The regenerative cooling jacket mass is 
+calculated from the geometry shown in 
+Figure 7. The regen cooling model breaks 
+the engine geometry into flat panels and 
+outputs the full regen jacket geometry. 
+This makes calculating the jacket mass 
+simple. The closeout is assumed to be 
+quarter inch thick stainless steel and is 
+included in the jacket mass calculation. 
+The regenerative cooling jacket model 
+was run for the TEPREL-B rocket engine 
+using the public information in Table 9. To 
+match the cited TEPREL-B specific 
+</p>
+<p>Parameter Value 
+Combustion efficiency 91% (assumed) 
+Specific impulse 240.0 sec 
+Coolant flow rate 8.4 lbm/sec 
+Number of channels 100 (assumed) 
+Jacket pressure drop 4 psid 
+Jacket temperature rise 570 °R 
+Nozzle area ratio 4 (assumed) 
+Exhaust exit pressure 14.7 psia 
+Jacket mass 93 lbm 
+</p>
+<p>-10 -5 0 5
+Axial Position (in)
+</p>
+<p>-6
+</p>
+<p>-4
+</p>
+<p>-2
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+</p>
+<p>C
+on
+</p>
+<p>to
+ur
+</p>
+<p> R
+ad
+</p>
+<p>iu
+s 
+</p>
+<p>(in
+)
+</p>
+<p>TEPREL-B
+</p>
+<p>Figure 9: The TEPREL-B regen cooling jacket with closeout 
+removed [20] (left) alongside the TEPREL-B geometry model 
+</p>
+<p>used for the MIURA-1 trade study (right). 
+</p>
+<p>Table 11: Baseline TEPREL-B performance and 
+mass calculation </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 14 
+ 
+</p>
+<p>impulse, the combustion efficiency is assumed to be 91%. The settings listed in Table 14 were used for the 
+TEPREL-B calculation. These are the settings used for the RDRE calculations, and so they are used for 
+the TEPREL-B calculation to allow good comparison between the results. Note that these settings produce 
+cooling channels that are likely thinner and have a higher aspect ratio than the true TEPREL-B cooling 
+channels. The results of the TEPREL-B calculation agree with the public information and are shown in 
+Table 11. The calculated TEPREL-B jacket mass is 93 lbm. The modeled geometry is shown in Figure 9. 
+The TEPREL-B mass is not publicly available for anchoring this calculation. However, it agrees well with 
+the mass of the SpaceX Kestrel rocket engine, a 114 lbm pressure-fed kerolox engine in the same thrust 
+class [18]. 
+</p>
+<p> The propellant tank wall thickness is calculated using the 
+simple hoop stress formula for thin-walled cylindrical pressure 
+vessels [8]. The propellant tanks are modeled as cylindrical with 
+hemisphere endcaps. A scaling law is used to calculate the required 
+propellant tank volume in Eqn 25 (fuel) and Eqn 26 (oxidizer). The 
+propellant tank mass is estimated using Eqn 28. The propellant tank 
+mass was estimated for the baseline MIURA-1 design using the 
+public information in Table 9. The calculation is shown in Table 12. 
+</p>
+<p>𝑉𝑉𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠,𝑓𝑓𝑜𝑜 = 𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠,𝑓𝑓𝑜𝑜 ∗
+600[𝐿𝐿]
+</p>
+<p>1,030[𝑙𝑙𝑙𝑙𝑚𝑚]
+ Eqn 25 
+</p>
+<p>𝑉𝑉𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠,𝑜𝑜𝑒𝑒 = 𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠,𝑓𝑓𝑜𝑜 ∗
+1000[𝐿𝐿]
+</p>
+<p>2,420[𝑙𝑙𝑙𝑙𝑚𝑚]
+ Eqn 26 
+</p>
+<p>𝐻𝐻𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠 =
+𝑉𝑉𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠
+𝜋𝜋𝑃𝑃2
+</p>
+<p>−
+4
+3
+𝑃𝑃 Eqn 27 
+</p>
+<p>𝑚𝑚𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏 = 𝜋𝜋𝜌𝜌 �𝐻𝐻𝑐𝑐𝑦𝑦𝑦𝑦 ∗ ((𝑃𝑃 + 𝑡𝑡)2 − 𝑃𝑃2) +
+4
+3
+</p>
+<p>((𝑃𝑃 + 𝑡𝑡)3 − 𝑃𝑃3)� Eqn 28 
+</p>
+<p> 
+Where: 
+𝐻𝐻𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠 = Height of propellant tank barrel 
+𝑉𝑉𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠 = Volume of propellant held by tank 
+𝜈𝜈𝑜𝑜𝑦𝑦𝑦𝑦𝑎𝑎𝑒𝑒𝑎𝑎 = Ullage volume fraction (4% for MIURA-1) 
+𝑃𝑃 = Tank inner radius (13.8” for MIURA-1) 
+𝑡𝑡 = Tank wall thickness 
+𝜌𝜌 = Tank wall density 
+ 
+</p>
+<p>The helium COPV mass is calculated using the same method 
+as the propellant tanks. The helium COPV is a carbon fiber overwrap 
+with an aluminum liner. The aluminum liner is neglected. The COPV 
+geometry is cylindrical with hemisphere endcaps. The initial COPV 
+pressure and temperature is held constant at 6,000 psia, 68 °F. The tank volume is changed to vary the 
+amount of helium in the tank. A scaling law is used to calculate the required COPV volume in Eqn 29. The 
+total pressurant mass – including helium gas and COPV wall – is estimated using Eqn 28. The helium 
+COPV and helium gas mass were estimated for the baseline MIURA-1. The calculation is shown in Table 
+13. 
+</p>
+<p>𝑉𝑉𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶 = 260[𝐿𝐿] ∗ �
+𝑃𝑃𝑓𝑓𝑜𝑜𝑎𝑎𝑦𝑦 ∗ 𝑉𝑉𝑓𝑓𝑜𝑜𝑎𝑎𝑦𝑦 + 𝑃𝑃𝑜𝑜𝑒𝑒𝑖𝑖𝑦𝑦 ∗ 𝑉𝑉𝑜𝑜𝑒𝑒𝑖𝑖𝑦𝑦
+</p>
+<p>390[𝑝𝑝𝑠𝑠𝑝𝑝𝑝𝑝] ∗ 600[𝐿𝐿] + 520[𝑝𝑝𝑠𝑠𝑝𝑝𝑝𝑝] ∗ 1000[𝐿𝐿
+� Eqn 29 
+</p>
+<p>𝑚𝑚𝑠𝑠𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠 = 𝑉𝑉𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝜌𝜌𝐺𝐺𝐺𝐺𝑎𝑎 + 𝜋𝜋𝜌𝜌𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶 �𝐻𝐻𝐶𝐶𝐶𝐶𝐶𝐶𝐶𝐶 ∗ ((𝑃𝑃 + 𝑡𝑡)2 − 𝑃𝑃2) +
+4
+3
+</p>
+<p>((𝑃𝑃 + 𝑡𝑡)3 − 𝑃𝑃3)� Eqn 30 
+</p>
+<p> 
+</p>
+<p>Parameter Value 
+Wall material Aluminum 
+</p>
+<p>6061-T6 
+Wall yield 
+strength [17] 39 ksi 
+</p>
+<p>Wall density [17] 174 lbm/ft3 
+Safety factor 1.5 
+Calculated fuel 
+tank mass 126 lbm 
+</p>
+<p>Calculated oxid 
+tank mass 270 lbm 
+</p>
+<p>Parameter Value 
+</p>
+<p>Wall material 
+T800-H 
+</p>
+<p>Carbon Fiber 
+Composite 
+</p>
+<p>Wall yield 
+strength [19] 424 ksi 
+</p>
+<p>Wall density [19] 113 lbm/ft3 
+Safety factor 1.5 
+Calculated 
+COPV mass 58 lbm 
+</p>
+<p>Helium density 3.54 lbm/ft3 
+Calculated 
+helium mass 33 lbm 
+</p>
+<p>Table 12: Baseline MIURA-1 
+propellant tank mass calculation 
+</p>
+<p>Table 13: Baseline MIURA-1 
+pressurant mass calculation </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 15 
+ 
+</p>
+<p>Where: 
+𝑃𝑃 = Propellant tank pressures 
+𝑉𝑉 = Propellant tank volumes 
+ 
+The gross liftoff mass is estimated using Eqn 31. 
+ 
+</p>
+<p> 𝑚𝑚𝐺𝐺𝐺𝐺𝐶𝐶𝐺𝐺 = 1,370[𝑙𝑙𝑙𝑙𝑚𝑚] + 𝑚𝑚𝑠𝑠𝑎𝑎𝑜𝑜𝑠𝑠 + 𝑚𝑚𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏,𝑓𝑓𝑜𝑜 + 𝑚𝑚𝑡𝑡𝑎𝑎𝑖𝑖𝑏𝑏,𝑜𝑜𝑒𝑒 + 𝑚𝑚𝑠𝑠𝑎𝑎𝑎𝑎𝑠𝑠𝑠𝑠 + 𝑚𝑚𝑗𝑗𝑎𝑎𝑐𝑐𝑏𝑏𝑎𝑎𝑡𝑡 + 𝑚𝑚𝑠𝑠𝑎𝑎𝑦𝑦𝑦𝑦𝑜𝑜𝑎𝑎𝑦𝑦 Eqn 31 
+</p>
+<p>TRAJECTORY MODEL 
+</p>
+<p>A simple model was developed for calculating the MIURA-1 trajectory in two dimensions. The 
+trajectory model numerically integrates the velocity and acceleration vectors. The vehicle mass is 
+numerically integrated assuming engine propellant consumption is constant. The forces due to gravity, 
+thrust, and atmospheric drag are accounted for. The engine thrust is calculated using Eqn 32, which 
+compensates for the performance increase at 
+higher altitudes. 
+</p>
+<p>𝐹𝐹 = �̇�𝑚𝑎𝑎𝑔𝑔𝐼𝐼𝑠𝑠𝑠𝑠,𝑆𝑆𝐺𝐺 + (𝑃𝑃𝑎𝑎 − 𝑃𝑃𝑎𝑎𝑎𝑎𝑎𝑎)𝐴𝐴𝑎𝑎 Eqn 32 
+</p>
+<p>Where: 
+𝐼𝐼𝑠𝑠𝑠𝑠,𝑆𝑆𝐺𝐺 = Sea-level specific impulse 
+𝑃𝑃𝑎𝑎𝑎𝑎𝑎𝑎 = Local ambient pressure 
+𝐴𝐴𝑎𝑎 = Nozzle exit area 
+ 
+Curves for atmospheric pressure and density 
+are provided in the appendix (Figure 23 and 
+Figure 24). The MIURA-1 drag coefficient is 
+assumed to be 0.35. The trajectory model is 
+validated by comparing its baseline MIURA-1 
+performance predictions to those cited in the 
+payload user’s manual [4]. The results in 
+Figure 10 show acceptable agreement. 
+ 
+</p>
+<p>REGENERATIVE COOLING ANALYSIS 
+</p>
+<p>It should be noted that the results 
+of the MIURA-1 trade study are highly 
+dependent on the heat transfer 
+calculations. The regenerative cooling 
+jacket model’s predictions were validated 
+using a conventional rocket model 
+compared to RL-10 experimental data. 
+Ideally, the RDRE model would be 
+compared to experimental data as well. 
+Both models use the same heat transfer 
+correlations. However, experimental data 
+for RDRE heat transfer is sparse. 
+Therefore, there is significant uncertainty 
+in the RDRE heat transfer calculations. 
+The regen cooling jacket model settings for 
+the MIURA-1 trade study are listed in Table 
+14. 
+</p>
+<p>Parameter Assumed Value 
+Max allowable hot wall temperature 1,800 °R 
+Min allowable rib thickness 0.010” 
+Min allowable channel width 0.010” 
+Max allowable channel depth 0.500” 
+Max allowable kerosene temperature 1,100 °R 
+Ligament thickness 0.030” 
+Ligament thermal conductivity 330 W/m-K 
+Channel wall roughness 1 μm 
+Kerosene inlet temperature 430 °R 
+Oxygen inlet temperature 166 °R 
+Jacket material GRCop-42 
+Jacket density 549 lbm/ft3 
+Closeout material Stainless Steel 
+Closeout density 490 lbm/ft3 
+</p>
+<p>50 100 150
+Payload Mass (lbm)
+</p>
+<p>85
+</p>
+<p>90
+</p>
+<p>95
+</p>
+<p>100
+</p>
+<p>105
+</p>
+<p>110
+</p>
+<p>Ap
+og
+</p>
+<p>ee
+ (m
+</p>
+<p>ile
+s)
+</p>
+<p>200
+</p>
+<p>220
+</p>
+<p>240
+</p>
+<p>260
+</p>
+<p>280
+</p>
+<p>M
+ic
+</p>
+<p>ro
+gr
+</p>
+<p>av
+ity
+</p>
+<p> T
+im
+</p>
+<p>e 
+(s
+</p>
+<p>ec
+)
+</p>
+<p>Apogee (Model)
+Apogee (PLD Space)
+Microgravity Time (Model)
+Microgravity Time (PLD Space)
+</p>
+<p>Table 14: Regen cooling jacket model settings for MIURA-1 
+trade study 
+</p>
+<p>Figure 10: Trajectory model validation against cited 
+MIURA-1 performance data [4] </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 16 
+ 
+</p>
+<p>For regenerative cooling schemes using 
+kerosene, coking must be considered. For this 
+study, the kerosene coolant is not allowed to 
+exceed a coking limit of 1100 °R [21]. The 
+combustion chamber must be sufficiently short 
+so that the total heat load absorbed by the 
+kerosene coolant does not result in a jacket outlet 
+temperature exceeding 1100 °R. For RDREs, the 
+combustion chamber should also respect the 
+effective length limit. The effective length is the 
+chamber length required such that the cycle is 
+complete by the time the detonation wave has 
+traveled around the chamber circumference. Its 
+calculation and physical interpretation are 
+discussed in [7]. In brief it correlates reasonably 
+closely with 1.2-1.5 times the detonation height, 
+where the flow field is almost entirely sonic or 
+supersonic. The required combustion chamber 
+length for an RDRE is a topic of active research; 
+the optimal value is not known. However, it is 
+believed that at minimum, the combustion 
+chamber length cannot be below the effective 
+length. 
+</p>
+<p> Using these limits, one can determine the 
+feasibility of a kerosene regeneratively cooled 
+RDRE. The regenerative cooling model and 
+RDRE cycle code were used to run a parametric 
+sweep across a range of hub-to-tip ratios and 
+initial pressures. The mean combustion chamber 
+diameter required to produce 6,800 lbf of thrust 
+was calculated. Then, the required combustion 
+chamber length such that the jacket outlet 
+temperature is below 1100 °R was calculated. The 
+jacket inlet temperature is set to 430 °R; any 
+lower, and kerosene gelling must be considered. 
+Nozzle area ratio was held constant at 5.0. Initial 
+pressures were evaluated from 120 psia to 320 
+psia. REFPROP was used to generate RP-1 fluid 
+properties [15]. 
+</p>
+<p> The results of the kerosene regeneratively cooled 6,800 pound thrust RDRE parameter sweep in 
+Figure 11 show that hub-to-tip ratios greater than 0.74 are not feasible. Larger hub-to-tip ratios result in 
+chamber lengths shorter than the effective length. Although the results show that kerosene-cooled RDREs 
+can close thermally with chamber lengths greater than the effective length, these chambers are still very 
+short – an effective length ratio of 1 typically corresponds to a chamber aspect ratio of about 1.5. Assuming 
+that an RDRE of this length scale is feasible, a regen jacket was designed for each case. The jacket design 
+is not optimized, and simply uses the maximum possible amount of cooling channels. This enables a 
+qualitative comparison of the jacket pressure drop required to cool each RDRE configuration. The results 
+are normalized to the minimum pressure drop across all cases, for comparison. The results show that as 
+hub-to-tip ratio and initial pressure increase, the jacket pressure drop increases. 
+</p>
+<p> The results present a difficult situation for regeneratively cooled kerosene RDREs. The results 
+show that, for a design which closes thermally, a short chamber and a low hub-to-tip ratio are required. [22] 
+provides an overview of experimental liquid bipropellant RDE configurations that have been ran 
+successfully, but the lower limits for these parameters are not known. Figure 11 shows that a longer 
+</p>
+<p>150 200 250 300 350
+Initial Pressure (psia)
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+</p>
+<p>8
+</p>
+<p>10
+</p>
+<p>12
+</p>
+<p>14
+N
+</p>
+<p>or
+m
+</p>
+<p>al
+iz
+</p>
+<p>ed
+ J
+</p>
+<p>ac
+ke
+</p>
+<p>t P
+re
+</p>
+<p>ss
+ur
+</p>
+<p>e 
+D
+</p>
+<p>ro
+p
+</p>
+<p>h/t = 0.70
+h/t = 0.72
+h/t = 0.74
+</p>
+<p>150 200 250 300 350
+Initial Pressure (psia)
+</p>
+<p>1
+</p>
+<p>1.05
+</p>
+<p>1.1
+</p>
+<p>1.15
+</p>
+<p>1.2
+</p>
+<p>1.25
+</p>
+<p>1.3
+</p>
+<p>1.35
+</p>
+<p>1.4
+</p>
+<p>Ef
+fe
+</p>
+<p>ct
+iv
+</p>
+<p>e 
+Le
+</p>
+<p>ng
+th
+</p>
+<p> R
+at
+</p>
+<p>io
+</p>
+<p>h/t = 0.70
+h/t = 0.72
+h/t = 0.74
+</p>
+<p>Figure 11: Parameter sweep results for kerosene 
+regeneratively cooled 6,800 pound thrust RDRE 
+</p>
+<p>effective length ratios. The effective length ratio is 
+the chamber length divided by the effective length. 
+</p>
+<p>Figure 12: Parameter sweep results for kerosene 
+regeneratively cooled 6,800 pound thrust RDRE 
+</p>
+<p>regen jacket pressure drop. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 17 
+ 
+</p>
+<p>chamber can be achieved if the initial RDRE pressure is increased. However, even if the conventional 
+TEPREL-B chamber pressure is used for the initial RDRE pressure, the effective length ratio is still less 
+than 1.5. Additionally, the jacket pressure drop increases with hub-to-tip ratio and initial pressure. These 
+factors suggest that, to increase the chamber length beyond the effective length for a kerosene cooled 
+6,800 lbf RDRE, the supply pressure required will be too great to make an RDRE trade feasible. 
+</p>
+<p>Alternative strategies are available for 
+achieving longer RDRE chambers. The annulus 
+configuration of an RDRE combustion chamber 
+naturally lends itself to using both propellants to cool 
+the chamber. One commodity can be used to cool the 
+inner body, and the other commodity can be used to 
+cool the outer body. By sharing the heat load with the 
+liquid oxygen, the heat absorbed per mass of 
+kerosene is reduced. The feasibility of regenerative 
+cooling using liquid oxygen has been experimentally 
+demonstrated in conventional rocket engines with 
+copper jackets [23]. However, it is noted that these 
+experiments had hot wall temperatures at 900 °R, 
+below the assumed hot wall temperature for this 
+study. If the oxidizer is used to cool the outer body, 
+then the kerosene only needs to cool the inner body 
+and aerospike. Note that dual cooling is not 
+necessary for the conventional TEPREL-B rocket 
+engine since its jacket pressure drop and temperature 
+rise (shown in Table 11) are already acceptably low 
+when using kerosene. Another parametric sweep was run using this cooling scheme. REFPROP was used 
+to generate LOX fluid properties [15]. The results of this dual commodity cooling parameter sweep are 
+shown in Figure 13. The results indicate that using both commodities to cool the chamber results in a 4x 
+increase in the chamber effective length ratio. Hub-to-tip ratios greater than 0.74 become possible. 
+However, if liquid oxygen is used as a coolant, it must be kept above its critical pressure (732 psia). 
+Otherwise, the fluid will boil in the coolant tubes. Running more fuel-rich is another strategy for reducing 
+the heat load on the kerosene. A final parametric sweep found that reducing the mixture ratio to 1.90 results 
+in a 2x increase in the chamber effective length ratio compared to the baseline 2.35 mixture ratio. 
+</p>
+<p>Three cases were selected from the parametric sweeps. The first case uses kerosene cooling only, 
+at a 0.70 hub-to-tip ratio and 160 psia initial pressure. The chamber aspect ratio for this case is 0.6. This is 
+the highest aspect ratio that could be used without 
+violating the coking limit. The 160 psia initial pressure 
+was selected to respect the effective length limit – 
+lower initial pressures were found to require chamber 
+lengths below the effective length (seen in Figure 11). 
+The second case uses dual commodity cooling, at a 
+0.80 hub-to-tip ratio and 220 psia initial pressure. The 
+chamber aspect ratio for this case is 2.6, which 
+similarly is the largest value that could be used without 
+violating the coking limit. The 220 psia initial pressure 
+was selected because it produces a high specific 
+impulse with a reasonable pressure drop. The third 
+case reduces the mixture ratio to 1.90. This enables 
+the chamber aspect ratio to increase to 5.0 without 
+violating the coking limit. These three cases are used 
+to perform the MIURA-1 RDRE trade. The RDRE 
+geometry for each case is provided in Figure 25, 
+Figure 26, and Figure 27 in the appendix. 
+</p>
+<p>150 200 250 300 350 400
+Initial Pressure (psia)
+</p>
+<p>1
+</p>
+<p>1.5
+</p>
+<p>2
+</p>
+<p>2.5
+</p>
+<p>3
+</p>
+<p>3.5
+</p>
+<p>4
+</p>
+<p>4.5
+</p>
+<p>5
+</p>
+<p>Ef
+fe
+</p>
+<p>ct
+iv
+</p>
+<p>e 
+Le
+</p>
+<p>ng
+th
+</p>
+<p> R
+at
+</p>
+<p>io
+</p>
+<p>h/t = 0.70
+h/t = 0.72
+h/t = 0.74
+h/t = 0.76
+h/t = 0.78
+h/t = 0.80
+</p>
+<p>Figure 13: Parameter sweep results for dual 
+commodity cooled 6,800 pound thrust RDRE 
+</p>
+<p>effective length ratios. 
+</p>
+<p>-15 -10 -5 0 5 10
+Axial Station (inch)
+</p>
+<p>0
+</p>
+<p>10
+</p>
+<p>20
+</p>
+<p>30
+</p>
+<p>40
+</p>
+<p>W
+al
+</p>
+<p>l H
+ea
+</p>
+<p>t F
+lux
+</p>
+<p> (M
+W
+</p>
+<p>/m
+2 )
+</p>
+<p>Conventional TEPREL-B
+Dual Cooled Fuel Rich RDRE
+</p>
+<p>Figure 14: Predicted wall heat fluxes for the 
+conventional TEPREL-B and the dual cooled, fuel 
+</p>
+<p>rich RDRE </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 18 
+ 
+</p>
+<p>To highlight why RDRE, regenerative cooling has such a significant impact on system performance, 
+Figure 14 shows the model prediction for wall heat fluxes in the conventional TEPREL-B rocket engine, and 
+in the dual cooled fuel rich RDRE. The peak heat flux is typically experienced by conventional rocket 
+engines at the throat, where the flow is sonic. In an RDRE, the flow is sonic or near sonic throughout the 
+entire combustion chamber. Additionally, the chamber temperatures are higher due to the nature of 
+detonative combustion. The result is a peak RDRE wall heat flux about 1.6x greater than the conventional 
+engine’s peak wall heat flux, despite the RDRE running more fuel rich. This peak heat flux is spread across 
+the entire combustion chamber for an RDRE, whereas a conventional rocket engine experiences its peak 
+heat flux only in a localized region near the throat. Thus, the cooling channels must absorb a larger amount 
+of heat per wall surface area. This necessitates higher coolant velocities and correspondingly higher coolant 
+pressure drops. Additionally, an RDRE chamber has a larger amount of surface area than a conventional 
+chamber due to the annular detonation channel geometry. This further exacerbates the total heat load that 
+an RDRE regen cooling jacket must handle. The high heat loads lead to performance losses due to wall 
+heat losses. The high pressure drops require higher propellant tank pressures, increasing the propellant 
+tank mass. This is why RDRE regenerative cooling has a significant impact on system performance. 
+</p>
+<p>Table 15: Model outputs for three regenerative cooling analysis cases 
+</p>
+<p>Parameter Kerosene Cooling 
+Only 
+</p>
+<p>Dual Commodity 
+Cooling 
+</p>
+<p>Dual Cooling With 
+Reduced Mixture 
+</p>
+<p>Ratio 
+Thrust 6,800 lbf 6,800 lbf 6,800 lbf 
+Initial pressure 160 psia 220 psia 220 psia 
+Nozzle area ratio 5 5 5 
+Mixture ratio 2.35 2.35 1.90 
+Hub-to-tip ratio 0.70 0.8 0.8 
+Chamber aspect ratio 0.6 2.6 5.0 
+Mean diameter 5.50” 6.60” 6.84” 
+Specific impulse 270.7 sec 265.4 sec 252.4 sec 
+Wall heat loss as percent 
+of total reaction heat 2.2% 6.5% 8.3% 
+</p>
+<p>Chamber channel width 0.97” 0.73” 0.76” 
+Chamber outer diameter 6.47” 7.33” 7.60” 
+Chamber inner diameter 4.53” 5.87” 6.08” 
+Chamber length 1.16” 3.80” 7.60” 
+Detonation frequency 5,860 Hz 4,870 Hz 4,520 Hz 
+Jacket mass 27 lbm 42 lbm 74 lbm 
+Jacket heat load 2,166 BTU/sec 6,455 BTU/sec 8,040 BTU/sec 
+Initial temperature 609 °R 958 °R 1,059 °R 
+ Inner Outer Inner Outer Inner Outer 
+Coolant Kerosene Kerosene Kerosene LOX Kerosene LOX 
+Coolant flow rate 2.8 lbm/s 4.7 lbm/s 7.7 lbm/s 18.1 lbm/s 9.3 lbm/s 17.6 lbm/s 
+Number of channels 724 826 920 772 954 800 
+Inlet temperature 430 °R 430 °R 430 °R 166 °R 430 °R 166 °R 
+Outlet temperature 1,043 °R 1,093 °R 1,093 °R 776 °R 1,085 °R 1,005 °R 
+Jacket temperature rise 613 °R 663 °R 663 °R 619 °R 655 °R 839 °R 
+Inlet pressure 780 psia 780 psia 358 psia 885 psia 306 psia 815 psia 
+Outlet pressure 296 psia 232 psia 293 psia 738 psia 290 psia 735 psia 
+Jacket pressure drop 484 psid 550 psid 65 psid 147 psid 16 psid 80 psid </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 19 
+ 
+</p>
+<p> MIURA-1 TRADE STUDY RESULTS 
+</p>
+<p> A parametric sweep was run on chamber 
+pressure for the conventionally powered MIURA-1. 
+This sweep sought to identify if the performance of 
+the MIURA-1 system could be enhanced by 
+increasing propellant tank pressure, thereby 
+increasing the chamber pressure. This is similar to 
+the optimization that was performed on the 
+conventionally powered L-MAV. The optimal throat 
+diameter and expansion ratio was solved for at each 
+chamber pressure. The sweep found that the system-
+level impacts of increasing the TEPREL-B chamber 
+pressure result in reduced apogee and microgravity 
+time if gross liftoff mass is held fixed. Therefore, since 
+the baseline MIURA-1 already represents the optimal 
+configuration, the RDRE configuration is compared to 
+the baseline configuration. Figure 10 shows the 
+trajectory model output for the conventional MIURA-
+1. For good comparison, the model outputs for the 
+RDRE MIURA-1 are compared to these model 
+outputs for the conventional MIURA-1. 
+</p>
+<p> The predicted microgravity time for each 
+MIURA-1 configuration is shown in Figure 15. All 
+RDRE configurations achieve higher 
+performance than the baseline. Figure 16 also 
+shows the predicted apogee for each MIURA-1 
+configuration. Higher propellant tank pressures are 
+required when using an RDRE due to the regen 
+jacket pressure drop. Despite this, there is a net 
+performance gain from using an RDRE on this 
+vehicle. These performance predictions were 
+generated holding vehicle mass constant at 5,400 
+lbm for all cases to compare performance. An 
+alternate comparison can be drawn by holding the 
+payload mass constant at 220 lbm. The apogee is 
+held constant at 94.7 miles – this is the predicted 
+apogee for the baseline MIURA-1 configuration. The 
+total vehicle mass is allowed to vary to achieve this 
+apogee. This enables comparison of the vehicle size required for each configuration to achieve a reference 
+mission. The results for this reference mission are shown in Table 16. 
+</p>
+<p>There is uncertainty in the optimal hub-to-tip ratio and chamber aspect ratio for an RDRE; this is why 
+multiple RDRE configurations were examined. Of the three RDRE configurations examined, the dual cooled 
+fuel rich RDRE is the most conservative (in terms of wall heat loss) because it uses the largest hub-to-tip 
+ratio and chamber aspect ratio. Large hub-to-tip ratios correspond to smaller detonation channel widths. 
+Large aspect ratios correspond to longer chambers for a given mean diameter. Both of these factors 
+increase the amount of wall heat loss for a given thrust class, and therefore the most conservative case is 
+the one with the largest hub-to-tip ratio and largest chamber aspect ratio. If vehicle mass is held constant 
+at the 5,400 lbm baseline, then the dual cooled fuel rich RDRE MIURA-1 can achieve 12% more 
+microgravity time than the baseline. If the payload mass is held constant at 220 lbm, then the dual cooled 
+fuel rich RDRE MIURA-1 can be 8% shorter and 11% lighter than the baseline. 
+</p>
+<p> 
+</p>
+<p>Figure 15: Predicted microgravity time for each 
+MIURA-1 configuration. Total vehicle mass 
+</p>
+<p>(excluding payload) is 5,400 lbm for all cases. 
+</p>
+<p>100 150 200 250 300
+Payload Mass (lbm)
+</p>
+<p>250
+</p>
+<p>300
+</p>
+<p>350
+</p>
+<p>M
+ic
+</p>
+<p>ro
+gr
+</p>
+<p>av
+ity
+</p>
+<p> T
+im
+</p>
+<p>e 
+(s
+</p>
+<p>ec
+)
+</p>
+<p>Conventional TEPREL-B
+Kero Cooled RDRE
+Dual Cooled RDRE
+Dual Cooled Fuel Rich RDRE
+</p>
+<p>150 200 250 300
+Payload Mass (lbm)
+</p>
+<p>70
+</p>
+<p>80
+</p>
+<p>90
+</p>
+<p>100
+</p>
+<p>110
+</p>
+<p>120
+</p>
+<p>130
+</p>
+<p>140
+Ap
+</p>
+<p>og
+ee
+</p>
+<p> (m
+ile
+</p>
+<p>s)
+</p>
+<p>Conventional TEPREL-B
+Kero Cooled RDRE
+Dual Cooled RDRE
+Dual Cooled Fuel Rich RDRE
+</p>
+<p>Figure 16: Predicted apogee for each MIURA-1 
+configuration. Total vehicle mass (excluding 
+</p>
+<p>payload) is 5,400 lbm for all cases. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 20 
+ 
+</p>
+<p>Table 16: Vehicle length and mass reductions achieved by different MIURA-1 RDRE configurations for a 
+reference mission. The reference payload is 220 lbm, and the reference apogee is 97.4 miles. 
+</p>
+<p>Component Conventional 
+TEPREL-B 
+</p>
+<p>Kero Cooled 
+RDRE 
+</p>
+<p>Dual Cooled 
+RDRE 
+</p>
+<p>Dual Cooled 
+Fuel Rich 
+</p>
+<p>RDRE 
+COPV barrel length 15.5” 11.3” 22.5” 15.6” 
+Fuel barrel length 56.5” 33.7” 43.9” 53.5” 
+Oxid barrel length 107.2” 65.6” 89.2” 81.6” 
+Engine length 19.0” 8.4” 8.6” 8.9” 
+Total vehicle length 500.0” 420.8” 466.0” 461.4” 
+Length reduction N/A -15.8% -6.8% -7.7% 
+Fuel tank pressure 390 psia 780 psia 360 psia 310 psia 
+Oxid tank pressure 520 psia 520 psia 890 psia 740 psia 
+Fuel tank mass 126 lbm 179 lbm 98 lbm 96 lbm 
+Oxid tank mass 270 lbm 185 lbm 396 lbm 309 lbm 
+Pressurant mass 91 lbm 80 lbm 107 lbm 91 lbm 
+Jacket mass 93 lbm 27 lbm 42 lbm 74 lbm 
+Usable propellant 3,450 lbm 2,290 lbm 2,857 lbm 2,878 lbm 
+Total vehicle mass 
+(excluding payload) 5,400 lbm 4,131 lbm 4,871 lbm 4,818 lbm 
+</p>
+<p>Mass reduction N/A -23.5% -9.8% -10.8% 
+ 
+</p>
+<p>SUMMARY AND CONCLUSIONS 
+</p>
+<p>A system trade was presented which analyzed the vehicle-level impact of including a Rotating 
+Detonation Rocket Engine (RDRE) as the propulsion for the Mars Sample Return Campaign (MSRC) Liquid 
+Mars Ascent Vehicle (L-MAV). This trade focused on potential reductions in overall vehicle mass enabled 
+by using an RDRE. The results showed that a L-MAV optimized to use an RDRE achieved a gross liftoff 
+mass of 591 lbm. A similar analysis showed that a L-MAV optimized to use a conventional rocket engine 
+achieved a gross liftoff mass of 643 lbm. Therefore, the use of an RDRE resulted in an an 8.1% mass 
+reduction. This suggests there is a tangible system-level benefit to using an RDRE for highly mass-
+constrained, in-space applications in the 300 to 1,500 lbf thrust class. The primary benefit identified for in-
+space applications is the reduced propellant tank pressure enabled by pressure gain combustion. 
+</p>
+<p>An additional system trade was presented which analyzed the vehicle-level impact of including an 
+RDRE as the propulsion for the MIURA-1 sounding rocket. This trade focused on the implications of 
+regeneratively cooling a 6,800 lbf kerolox RDRE. The results showed that RDRE regenerative cooling 
+jackets experience high heat loads and high jacket pressure drops relative to a conventional rocket engine 
+in the same thrust class. These issues can be mitigated by using both propellants for regenerative cooling, 
+and by running more fuel rich. The results of the MIURA-1 trade showed that, holding total vehicle mass 
+constant, an RDRE powered sounding rocket could achieve 12% more microgravity time than a 
+conventionally powered sounding rocket. Alternately, holding payload mass and target apogee constant, 
+an RDRE powered sounding rocket can be 8% shorter and 11% lighter than a conventional sounding rocket. 
+These results suggest there is a tangible system-level benefit to using an RDRE for terrestrial applications 
+in the 6,800 lbf thrust class. The primary benefit identified for terrestrial applications is the increased specific 
+impulse enabled by pressure gain combustion. 
+</p>
+<p> 
+ </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 21 
+ 
+</p>
+<p>FUTURE WORK 
+</p>
+<p> This work is planned to continue with further vehicle trade studies. The next vehicle trade study is 
+tentatively planned to focus on turbopump-fed methalox systems. 
+</p>
+<p>ACKNOWLEDGMENTS 
+</p>
+<p>The authors thank Arland Zatania Lojo for his work pulling together public information on the 
+MIURA-1 vehicle. The authors thank Nathan Ballintyn for sharing his test cell experience with rotating 
+detonation engines, and for recommending an assessment of dual commodity cooling. 
+</p>
+<p>REFERENCES 
+</p>
+<p>1. Perkins, H. D. and Paxson, D.E., Summary of Pressure Gain Combustion Research at NASA, 
+NASA/TM-2018-219874, Glenn Research Center, OH (Apr 2018) 
+</p>
+<p>2. Teasley, T.W., Fedotowsky, T.M., Gradl, P.R., Austin, B.L., and Heister, S.D., Current State of NASA 
+Continuously Rotating Detonation Cycle Engine Development, AIAA SciTech Forum, MD (Jan 2023) 
+</p>
+<p>3. Oleson, S.R., McGuire, M.L., Sandifer, C.E., Mars Sample Return Mission Liquid Mars Ascent 
+Vehicle (MAV) Concept Design, CD-2011-62, Collaborative Modeling for Parametric Assessment of 
+Space Systems, NASA Internal Document (June 2011) 
+</p>
+<p>4. MIURA 1 – Payload User’s Guide, Payload Aerospace S.L. (Nov 2018) 
+https://www.pldspace.com/images/MIURA_1/MIURA1_Payload_Users_Guide.pdf 
+</p>
+<p>5. Rao, G.V.R., Exhaust Nozzle Contour for Optimum Thrust, Journal of Jet Propulsion, Vol. 28, Iss. 6, 
+(Jun 1958) 
+</p>
+<p>6. McBride, B.J. and Gordon, S., Computer Program for Calculation of Complex Chemical Equilibrium 
+Compositions and Applications, NASA-RP-1311, Lewis Research Center, OH (Jun 1996) 
+</p>
+<p>7. Paxson, D.E. and Perkins, H.D., A Simple Model for Rotating Detonation Rocket Engine Sizing and 
+Performance Estimates, AIAA SciTech Forum, Virtual Event (Jan 2021) 
+</p>
+<p>8. Young, W.C. and Budynas, R.G., Roark’s Formulas for Stress and Strain, Seventh Edition, McGraw-
+Hill (2002) 
+</p>
+<p>9. Niobium C-103 Alloy for Space Exploration, Materion (Dec 2022) https://materion.com/-
+/media/files/alloy/datasheets/other-alloy-products/niobium-c103-alloy-for-space-data-sheet.pdf (retrieved 
+Mar 2024) 
+</p>
+<p>10. Bartz, D.R., A Simple Equation for Rapid Estimation of Rocket Nozzle Convective Heat Transfer 
+Coefficients, Journal of Jet Propulsion, Technical Notes (Jan 1957) 
+</p>
+<p>11. Schuff, R., Maier, M., Sindiy, O., Ulrich, C, and Fugger, S., Integrated Modeling and Analysis for a 
+LOX/Methane Expander Cycle Engine: Focusing on Regenerative Cooling Jacket Design, 42nd 
+AIAA/ASME/SAE/ASEE Joint Propulsion Conference &amp; Exhibit, CA (July 2006) 
+</p>
+<p>12. Sieder, E.N., Tate, G.E., Heat Transfer and Pressure Drop of Liquids in Tubes, Industrial and 
+Engineering Chemistry, Vol. 28, Iss. 12 (Dec 1936) 
+</p>
+<p>13. Paxson, D.E., Miki, K., Perkins, H.D., and Yungster, S., Computational Fluid Dynamic Optimization 
+of an Experimental Rotating Detonation Rocket Engine Nozzle, AIAA AVIATION 2022 Forum, IL (Jul 
+2022) 
+</p>
+<p>14. Design, Fabrication, and Test of the RL-10 Derivative II Chamber/Primary Nozzle, NASA CR-
+179595, Pratt &amp; Whitney, FL (Apr 1989) 
+</p>
+<p>15. Lemmon, E.W., Bell, I.H., Huber, M.L., McLinden, M.O., NIST Standard Reference Database 23: 
+Reference Fluid Thermodynamic and Transport Properties – REFPROP, Version 10.0, National 
+Institute of Standards and Technology, Standard Reference Data Program, MD (2018) </p>
+<p></p>
+<div class="annotation"><a href="https://www.pldspace.com/images/MIURA_1/MIURA1_Payload_Users_Guide.pdf">https://www.pldspace.com/images/MIURA_1/MIURA1_Payload_Users_Guide.pdf</a></div>
+<div class="annotation"><a href="https://materion.com/-/media/files/alloy/datasheets/other-alloy-products/niobium-c103-alloy-for-space-data-sheet.pdf">https://materion.com/-/media/files/alloy/datasheets/other-alloy-products/niobium-c103-alloy-for-space-data-sheet.pdf</a></div>
+<div class="annotation"><a href="https://materion.com/-/media/files/alloy/datasheets/other-alloy-products/niobium-c103-alloy-for-space-data-sheet.pdf">https://materion.com/-/media/files/alloy/datasheets/other-alloy-products/niobium-c103-alloy-for-space-data-sheet.pdf</a></div>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 22 
+ 
+</p>
+<p>16. Minneci, R.P., Lass, E.A., Bunn, J.R., Choo, H. and Rawn, C.J., Copper-based alloys for structural 
+high-heat-flux applications: a review of development, properties, and performance of Cu-rich Cu-
+Cr-Nb alloys, International Materials Reviews, UK (Oct 2020) 
+</p>
+<p>17. 6061-T6 Aluminum, MakeItFrom.com https://www.makeitfrom.com/material-properties/6061-T6-
+Aluminum/ (retrieved Mar 2024) 
+</p>
+<p>18. Kestrel, Encyclopedia Astronautica 
+https://web.archive.org/web/20131216104115/http://www.astronautix.com/engines/kestrel.htm (retrieved 
+Mar 2024) 
+</p>
+<p>19. T800H Intermediate Modulus Carbon Fiber Technical Data Sheet, Toray Composite Materials 
+America Inc. (Apr 2018) https://www.toraycma.com/wp-content/uploads/T800H-Technical-Data-Sheet-
+1.pdf.pdf (retrieved Mar 2024) 
+</p>
+<p>20. TEPREL-B Photo, PLD Space Twitter (Jul 2017) 
+https://twitter.com/pld_space/status/882630152831721473 (retrieved Mar 2024) 
+</p>
+<p>21. Roback, R., Szetela, E.J., and Spadaccini, L.J., Deposit Formation in Hydrocarbon Rocket Fuels, 
+NASA CR-165405, United Technologies Research Center, CT (Aug 1981) 
+</p>
+<p>22. Ballintyn, N.D., Harroun, A.J., and Heister, S.D., Current Status of Liquid Bipropellant Detonation-
+Based Propulsion Devices, to appear in Journal of Propulsion &amp; Power (retrieved Mar 2024) 
+</p>
+<p>23. Armstrong, E.S., and Schlumberger, J.A., Cooling of Rocket Thrust Chambers With Liquid 
+Oxygen, NASA TM-103146, 26th Joint Propulsion Conference, FL (Jul 1990) </p>
+<p></p>
+<div class="annotation"><a href="https://www.makeitfrom.com/material-properties/6061-T6-Aluminum/">https://www.makeitfrom.com/material-properties/6061-T6-Aluminum/</a></div>
+<div class="annotation"><a href="https://www.makeitfrom.com/material-properties/6061-T6-Aluminum/">https://www.makeitfrom.com/material-properties/6061-T6-Aluminum/</a></div>
+<div class="annotation"><a href="https://web.archive.org/web/20131216104115/http:/www.astronautix.com/engines/kestrel.htm">https://web.archive.org/web/20131216104115/http:/www.astronautix.com/engines/kestrel.htm</a></div>
+<div class="annotation"><a href="https://www.toraycma.com/wp-content/uploads/T800H-Technical-Data-Sheet-1.pdf.pdf">https://www.toraycma.com/wp-content/uploads/T800H-Technical-Data-Sheet-1.pdf.pdf</a></div>
+<div class="annotation"><a href="https://www.toraycma.com/wp-content/uploads/T800H-Technical-Data-Sheet-1.pdf.pdf">https://www.toraycma.com/wp-content/uploads/T800H-Technical-Data-Sheet-1.pdf.pdf</a></div>
+<div class="annotation"><a href="https://twitter.com/pld_space/status/882630152831721473">https://twitter.com/pld_space/status/882630152831721473</a></div>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 23 
+ 
+</p>
+<p>APPENDIX 
+</p>
+<p> 
+</p>
+<p>Figure 17: Results of conventional L-MAV optimization for 740 psia tank pressure. 
+</p>
+<p> 
+</p>
+<p>Figure 18: Results of RDRE L-MAV optimization for 680 psia tank pressure. 
+</p>
+<p>1.6 1.7 1.8 1.9 2 2.1
+Stage 1 Throat Diameter (in)
+</p>
+<p>0.9
+</p>
+<p>1
+</p>
+<p>1.1
+</p>
+<p>1.2
+</p>
+<p>1.3
+</p>
+<p>1.4
+</p>
+<p>1.5
+St
+</p>
+<p>ag
+e 
+</p>
+<p>2 
+Th
+</p>
+<p>ro
+at
+</p>
+<p> D
+ia
+</p>
+<p>m
+et
+</p>
+<p>er
+ (i
+</p>
+<p>n)
+</p>
+<p>645
+</p>
+<p>650
+</p>
+<p>655
+</p>
+<p>660
+</p>
+<p>665
+</p>
+<p>670
+</p>
+<p>675
+</p>
+<p>G
+LO
+</p>
+<p>M
+ (l
+</p>
+<p>bm
+)
+</p>
+<p>2 2.1 2.2 2.3 2.4 2.5 2.6 2.7
+Stage 1 Mean Chamber Diameter (in)
+</p>
+<p>1.2
+</p>
+<p>1.3
+</p>
+<p>1.4
+</p>
+<p>1.5
+</p>
+<p>1.6
+</p>
+<p>1.7
+</p>
+<p>1.8
+</p>
+<p>1.9
+</p>
+<p>St
+ag
+</p>
+<p>e 
+2 
+</p>
+<p>M
+ea
+</p>
+<p>n 
+C
+</p>
+<p>ha
+m
+</p>
+<p>be
+r D
+</p>
+<p>ia
+m
+</p>
+<p>et
+er
+</p>
+<p> (i
+n)
+</p>
+<p>592
+</p>
+<p>594
+</p>
+<p>596
+</p>
+<p>598
+</p>
+<p>600
+</p>
+<p>602
+</p>
+<p>604
+</p>
+<p>606
+</p>
+<p>G
+LO
+</p>
+<p>M
+ (l
+</p>
+<p>bm
+)</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 24 
+ 
+</p>
+<p> 
+ 
+</p>
+<p> 
+</p>
+<p>Yes 
+</p>
+<p>Reached 
+nozzle 
+exit? 
+</p>
+<p>Calculate heat loss to walls 
+using Bartz 
+</p>
+<p>Step to next station, update 
+stagnation conditions 
+</p>
+<p>Calculate Mach number, static 
+conditions, fluid properties 
+</p>
+<p>Calculate �̇�𝑞(𝑥𝑥) 
+</p>
+<p>Return time-averaged 
+�̇�𝑞(𝑥𝑥) 
+</p>
+<p>Reached 
+last 
+</p>
+<p>timestep? 
+No 
+</p>
+<p>Step to next 
+time step, 
+</p>
+<p>update 
+chamber 
+</p>
+<p>conditions 
+</p>
+<p>Start at 
+injector face 
+</p>
+<p>Yes 
+</p>
+<p>No 
+</p>
+<p>Figure 19: Flowchart of exhaust flow calculation for 
+regenerative cooling model, returning the hot wall heat flux </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 25 
+ 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Calculate 𝑇𝑇ℎ𝑤𝑤(𝑥𝑥) 
+</p>
+<p>Start at jacket 
+inlet 
+</p>
+<p>Calculate fluid 
+properties, heat 
+</p>
+<p>load for this panel 
+</p>
+<p>Set channel dimensions 
+𝐻𝐻𝑐𝑐ℎ, 𝑇𝑇𝑐𝑐ℎ to max 
+allowable values 
+</p>
+<p>Calculate 𝑇𝑇ℎ𝑤𝑤 from heat 
+load, coolant 
+</p>
+<p>temperature, and 
+Sieder-Tate 
+</p>
+<p>Hot wall 
+temperature 
+acceptable? 
+</p>
+<p>Set channel width 𝑇𝑇𝑐𝑐ℎ to 
+minimum allowable value, 
+</p>
+<p>recalculate 𝑇𝑇ℎ𝑤𝑤 
+</p>
+<p>Hot wall 
+temperature 
+acceptable? 
+</p>
+<p>Solve for max channel width 𝑇𝑇𝑐𝑐ℎ 
+with acceptable wall temperature 
+</p>
+<p>Reduce channel 
+depth 𝐻𝐻𝑐𝑐𝑤𝑤 until hot 
+wall temperature 
+</p>
+<p>acceptable 
+</p>
+<p>Get coolant temperature increase, 
+Darcy-Weisbach pressure loss 
+</p>
+<p>Step to next panel, 
+update coolant 
+</p>
+<p>temperature and 
+pressure 
+</p>
+<p>Reached 
+jacket exit? 
+</p>
+<p>Return hot wall 
+temperature 𝑇𝑇ℎ𝑤𝑤(𝑥𝑥) 
+</p>
+<p>No 
+</p>
+<p>No 
+</p>
+<p>Yes 
+</p>
+<p>No 
+</p>
+<p>Yes 
+</p>
+<p>Yes 
+</p>
+<p>Figure 20: Flowchart of coolant flow calculation for regenerative cooling 
+model, returning the hot wall temperature </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 26 
+ 
+</p>
+<p>Table 17: Regenerative cooling model validation for RL-10. Model predictions are compared to test data 
+shown in [14] 
+</p>
+<p>Mixture 
+Ratio 
+</p>
+<p>Chamber 
+Pressure Parameter Predicted Value Actual Value [14] Error 
+</p>
+<p>5.00 403 psia 
+Jacket ΔT 240 °R 300 °R -60 °R 
+Jacket ΔP 154 psia 174 psia -20 psia 
+Specific Impulse 420.0 sec 421.7 sec -1.7 sec 
+</p>
+<p>5.00 443 psia 
+Jacket ΔT 284 °R 281 °R +3 °R 
+Jacket ΔP 185 psia 183 psia +2 psia 
+Specific Impulse 422.3 sec 423.2 sec -0.9 psia 
+</p>
+<p>6.00 403 psia 
+Jacket ΔT 337 °R 348 °R -11 °R 
+Jacket ΔP 136 psia 161 psia -25 psia 
+Specific Impulse 407.0 sec 416.9 sec -9.9 sec 
+</p>
+<p>6.00 443 psia 
+Jacket ΔT 325 °R 332 °R -7 °R 
+Jacket ΔP 162 psia 167 psia -5 °R 
+Specific Impulse 409.3 sec 417.5 sec -8.2 sec 
+</p>
+<p> 
+</p>
+<p>Figure 22: Regen cooling jacket model temperature 
+rise validation against RL-10 test data at 450 psia 
+</p>
+<p>chamber pressure and varying mixture ratio 
+</p>
+<p>Figure 21: Regen cooling jacket model pressure 
+drop validation against RL-10 test data at 450 psia 
+</p>
+<p>chamber pressure and varying mixture ratio </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 27 
+ 
+</p>
+<p> 
+</p>
+<p>Figure 23: Atmospheric density model 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Figure 24: Atmospheric pressure model 
+</p>
+<p> 
+</p>
+<p>0 0.02 0.04 0.06 0.08
+Ambient density (lbm/ft 3)
+</p>
+<p>100
+</p>
+<p>101
+</p>
+<p>102
+</p>
+<p>Al
+tit
+</p>
+<p>ud
+e 
+</p>
+<p>(k
+m
+</p>
+<p>)
+</p>
+<p>Density
+</p>
+<p>0 5 10 15
+Ambient Pressure (psia)
+</p>
+<p>100
+</p>
+<p>101
+</p>
+<p>102
+</p>
+<p>Al
+tit
+</p>
+<p>ud
+e 
+</p>
+<p>(k
+m
+</p>
+<p>)
+</p>
+<p>Pressure</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 28 
+ 
+</p>
+<p> 
+</p>
+<p>Figure 25: MIURA-1 kerosene cooled RDRE geometry 
+</p>
+<p> 
+</p>
+<p>Figure 26: MIURA-1 dual cooled RDRE geometry 
+</p>
+<p>-8 -6 -4 -2 0 2 4 6
+Axial Position (in)
+</p>
+<p>-6
+</p>
+<p>-4
+</p>
+<p>-2
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+</p>
+<p>N
+oz
+</p>
+<p>zle
+ C
+</p>
+<p>on
+to
+</p>
+<p>ur
+ R
+</p>
+<p>ad
+iu
+</p>
+<p>s 
+(in
+</p>
+<p>)
+</p>
+<p>Outer Contour
+Inner Contour
+Outer Jacket Inlet
+Inner Jacket Inlet
+Inner Bifurcation Point
+</p>
+<p>-8 -6 -4 -2 0 2 4 6
+Axial Position (in)
+</p>
+<p>-6
+</p>
+<p>-4
+</p>
+<p>-2
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+</p>
+<p>N
+oz
+</p>
+<p>zle
+ C
+</p>
+<p>on
+to
+</p>
+<p>ur
+ R
+</p>
+<p>ad
+iu
+</p>
+<p>s 
+(in
+</p>
+<p>)
+</p>
+<p>Outer Contour
+Inner Contour
+Outer Jacket Inlet
+Inner Jacket Inlet
+Inner Bifurcation Point</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Distribution Statement A: Approved for public release; distribution is unlimited 29 
+ 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Figure 27: MIURA-1 dual cooled fuel rich RDRE geometry 
+</p>
+<p> 
+ 
+</p>
+<p>-8 -6 -4 -2 0 2 4 6
+Axial Position (in)
+</p>
+<p>-6
+</p>
+<p>-4
+</p>
+<p>-2
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+N
+</p>
+<p>oz
+zle
+</p>
+<p> C
+on
+</p>
+<p>to
+ur
+</p>
+<p> R
+ad
+</p>
+<p>iu
+s 
+</p>
+<p>(in
+)
+</p>
+<p>Outer Contour
+Inner Contour
+Outer Jacket Inlet
+Inner Jacket Inlet
+Inner Bifurcation Point</p>
+<p></p>
+</div>
+<ul> <li>Analysis of Integrated Spacecraft Performance Using a Rotating Detonation Rocket Engine</li>
+ <li>Abstract</li>
+ <li>Introduction</li>
+ <li>Liquid Mars Ascent Vehicle</li>
+<ul> <li>Conventional Rocket Performance Model</li>
+ <li>RDRE Performance Model</li>
+ <li>Nozzle Geometry Model</li>
+ <li>Mass Estimate Model</li>
+ <li>Trajectory Model</li>
+ <li>L-MAV Trade Study Results</li>
+</ul>
+ <li>MIURA-1</li>
+<ul> <li>Regenerative Cooling Model</li>
+ <li>Mass Estimate Model</li>
+ <li>Trajectory Model</li>
+ <li>Regenerative Cooling Analysis</li>
+ <li>MIURA-1 Trade Study Results</li>
+</ul>
+ <li>Summary and Conclusions</li>
+ <li>Future work</li>
+ <li>Acknowledgments</li>
+ <li>References</li>
+ <li>Appendix</li>
+</ul>
+</body></html>

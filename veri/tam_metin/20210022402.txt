@@ -1,0 +1,669 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Word - GollnerMichaelJ.docx
+
+
+ 
+
+ 
+
+Topical: Solid Fuel Combustion in Partial and Micro-Gravity 
+
+Primary Author: 
+Michael Gollner, University of California, Berkeley 
+mgollner@berkeley.edu / (510) 642-3371 
+
+Coauthors: 
+Indrek S. Wichman, Michigan State University 
+Ya-Ting Liao, Case Western Reserve University 
+Luca Carmignani, University of California, Berkeley 
+
+Co-Signers: 
+Erica Belmont, University of Wyoming 
+Subrata Bhattacharjee, San Diego State University 
+John de Ris, FM Global 
+Daniel Dietrich, NASA Glenn Research Center 
+Christian Eigenbrod, ZARM - University of Bremen 
+Makato Endo, NASA GRC 
+Carlos Fernandez-Pello, University of California, Berkeley 
+Claire Fortenberry, Universities Space Research Association 
+Augustin Guibaud, University College London 
+Michael Johnston, Universities Space Research Association 
+Grunde Jomaas, FRISSBE, Slovenian National Building and Civil Engineering Institute (ZAG) 
+Amanda Kimball, Fire Protection Research Foundation 
+Sara McAllister, US Forest Service 
+Randall McDermott, National Institute of Standards and Technology 
+Fletcher Miller, San Diego State University 
+Justin Niehaus, NASA Glenn Research Center 
+Vedha Nayagam, Case Western Reserve University 
+Sandra Olson, NASA Glenn Research Center 
+Rosa Padilla, Universities Space Research Association 
+James Quintiere, University of Maryland 
+Guillermo Rein, Imperial College, London 
+Paul Ronney, University of Southern California 
+Sarah Scott, Sandia National Laboratory 
+Albert Simeoni, Worcester Polytechnic Institute 
+Ali Tohidi, San Jose State University 
+James Urban, Worcester Polytechnic Institute 
+Qingsheng Wang, Texas A&M 
+Forman Williams, University of California, San Diego 
+Jiann Yang, National Institute of Standards and Technology 
+ 
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+Introduction 
+The risk of fire remains an ever-present danger in spaceflight. Most fire safety hazards originate 
+in or eventually involve solid fuels, whether they be cellulosic (e.g., cotton fabric), hydrocarbons 
+(e.g., plastics) or high-energy density electrode materials (e.g., batteries). A key approach to 
+ensuring safety has been to focus on reducing the potential flammability of these materials – 
+achieved by limiting their ignitability, potential for flame spread, and ultimate heat-release 
+potential if ignited [1-3]. This approach has been relatively effective despite several close calls [4]. 
+The limits of our understanding, however, are continually being challenged as future spaceflight 
+missions incorporate partial gravity, enhanced oxygen, new types and classes of materials (e.g., 
+composites), and higher energy-density batteries. This presents both an exciting scientific 
+opportunity to enhance our understanding of solid fuel combustion processes while also posing a 
+dire threat to future long-duration missions to the Moon and Mars. 
+ 
+
+Physical Processes 
+Combustion of solid fuels typically initiates when sufficient energy has been transferred to some 
+region of a solid material, such as from an adjacent overheating wire or nearby flame. This infusion 
+of heat pyrolyzes material, consequently releasing hazardous and flammable gases. If the 
+concentration of flammable vapors reaches a critical level, ignition can be achieved with or without 
+a pilot depending on the concentration of flammable vapors and the surrounding thermal 
+conditions [5-9]. If the resulting flame provides sufficient heating, flaming combustion of the solid 
+can then continue. In charring materials, a solid-phase combustion process called smoldering may 
+occur if sufficient heating, often at lower temperatures, is achieved. Regardless of the mode of 
+combustion, if the generated combustion front sufficiently heats adjacent material the flame can 
+spread, which increases the size of the burning region and the eventual fire hazard. While these 
+principles are shared between terrestrial and extraterrestrial fires, changes in the gravitational field, 
+pressure, oxygen concentrations, and the incredibly high-risk environments encountered in 
+spaceflight require further understanding specifically for spaceflight applications. 
+
+The reduction or near elimination of gravity limits the buoyancy-induced flows around 
+solids that would support enhanced convective heat transfer; however, it also slows the transport 
+of flammable gases that can cause them to accumulate in some regions [10-12], as well as the heat 
+loss, which would tend to cool the solid. Previous investigations have identified the importance of 
+changes in gravity and burning conditions on extending the flammability boundary of certain 
+materials, allowing them to burn at conditions in partial or micro gravity that cannot be tested or 
+observed under Earth gravity [13]. These effects on material flammability and flame growth have 
+only been partially characterized in terms of heat and mass transfer mechanisms between the fuel, 
+flame, and surroundings. Radiation losses to the environment from the fuel surface and flame 
+become increasingly significant without the buoyant flow induced by gravity, but the microgravity 
+results also showed how mild air flows from ventilation systems can strengthen the flames with 
+fresh oxidizer [14]. Even if the externally forced air flow could be temporarily turned off, the fuel 
+could continue to burn through molecular diffusion effects, convective stirring from fuel vapor 
+jetting, the flame spreading fast enough into fresh quiescent oxidizer, or the system could be hot 
+enough to reignite when the external oxidizer flow is turned back on [15]. 
+
+ 
+
+Past Investigations 
+Both ground and space-based experiments have provided a basis for understanding solid fuel 
+combustion processes in spaceflight. Because solid fuels are often thick and their burning process 
+requires long-duration experiments, only a limited number of opportunities have been available in 
+
+
+
+ 
+
+ 
+
+microgravity. Some of these were possible onboard the International Space Station (ISS) (e.g., 
+BASS [16-17], Confined Combustion [18-19]) and on a cargo spacecraft (i.e., SAFFIRE [20]). For 
+instance, BASS experiments [16-17] have generally agreed with ground-based predictions of 
+flammability, except that the limiting regimes for combustion in terms of parameters such as air 
+flow, oxygen concentration, etc. are expanded in actual (i.e., not simulated) microgravity. This 
+becomes a safety issue whereby materials thought to be inflammable via ground-based testing may 
+present spaceflight hazards under a wider range of conditions. SAFFIRE was a significant 
+development as the first and only set of experiments investigating larger fuel samples (41 cm wide 
+and 94 cm long). These experiments clearly identified the influence of fuel geometry, structure, 
+and scale on concurrent and opposed flame spread in microgravity. Furthermore, they showed how 
+a temporary flow suppression can be ineffective depending on the burning conditions. A thin 
+charring sample (cotton) kept smoldering (with possible flamelets) after the flow was turned off 
+for 70 s, and eventually reignited when the flow was turned back on [20]. A similar behavior was 
+observed for thick acrylic materials, where the vapor jetting occurring in the pyrolysis region 
+provided enough mixing to keep the flame alive and growing. 
+ Partial gravity presents new challenges as limited testing has been conducted due to the 
+lack of facilities for long-duration experiments. The lack of direct tests in partial gravity is 
+troubling from the viewpoint of fire safety because available results suggest that Lunar and Martian 
+gravity levels could actually enhance the propensity for concurrent-flow flame spread [21]. The 
+limited available testing to date was conducted in aircraft flying parabolic trajectories or in a 
+centrifuge on the 5.2 s drop tower [21-23]. This testing identified a “sweet spot” for expanded 
+flammability regimes with enhanced propensity for flame spread close to Lunar gravity conditions. 
+ 
+
+Research Needs 
+Despite improvements in our understanding of solid fuel combustion, our accumulated 
+experiments and modeling have not yet led to an era of predictive fire safety during spaceflight as 
+it has in the built-on-Earth (1g) environment. In 1g a robust understanding of solid-phase kinetics, 
+a rich experimental dataset, and continuous model development have allowed for performance-
+based design of fire protection systems: here, fire initiation, growth, spread, and suppression 
+effectiveness can be predicted and tested. While micro-and partial-g applications will be more 
+challenging, improved understanding offers the possibility of approaching this guideline such that 
+long duration spaceflight missions as well as long term partial gravity habitation can be safely 
+conducted. Specific scientific challenges addressing these issues are outlined below. 
+ 
+
+Solid phase chemical kinetics are poorly understood both for specific materials and conditions 
+encountered in spaceflight. While the combustion community has approached gas-phase chemical 
+kinetic modeling with great vigor [24], relatively little work has appeared by comparison on 
+systematic solid-phase kinetics. Specific to microgravity, there has been even less work, or 
+application, of advanced solid-phase kinetic studies of materials. This is important as the rate of 
+thermal degradation in the solid phase controls the release of flammable vapors. Although on Earth 
+it is often the case that simple rate equations correlated with temperature are adequate, this may 
+no longer be the case for space applications. In spacecraft, changes in pressure and oxygen 
+concentration, as well as the use of novel materials, play an important role in the solid phase 
+chemical degradation and decomposition process. For fire to become more predictive in space, 
+solid-phase kinetics must be more broadly incorporated to supplement the limited experiments 
+under realistic conditions that are possible. This approach may be helpful in the selection of novel 
+materials for long duration spaceflight because many fire retardants are no longer considered safe: 
+
+
+
+ 
+
+ 
+
+the evaluation of solid phase kinetics is an important means for assessing the action (and possibly 
+the inaction) of fire retardants. Further description of this degradation will also assist with the 
+prediction of effluents, whether used to assess toxicity or heat-release rates. 
+ The processes that control solid phase degradation in microgravity have not been studied, 
+hence it is unknown what differences may arise with the 1-g studies. For example, in a degrading 
+cellulosic fuel, part of the fundamental mechanism of vapor released from the degrading solid 
+occurs through a web of tortuous paths in the solid as it degrades to a char. This flow is largely 
+driven by the temperature difference between the flame, in-depth solid, and the associated buoyant 
+flow that is established thereby. Since buoyancy is lacking in microgravity, there may be additional 
+channels for vapor expulsion that form the dominant part in the mass transfer process. 
+ 
+
+Solid phase physical processes in terms of basic transport, material breakdown, and coupled 
+communication with the surrounding gas phase are poorly understood. Since the flame exists in 
+the gas phase (unless smoldering occurs), volatile gases called pyrolysates must “escape” into the 
+gas phase where they encounter flowing oxidant. The nature of the process by which this 
+communication occurs differs depending on the type of material. For example, it has been shown 
+that thermoplastic materials can form internal bubbles that transport volatile gases to the surface 
+when they burst [25,26]. Not only that, but the bursting bubbles generate local flows that can 
+enhance the survivability of the flame [27]. As another example, it has recently been shown that 
+charring materials can form deep fissures and cracks, which serve to link the in-depth solid material 
+(which is degrading) via tortuous paths to the gas phase above it [28-30]. In microgravity the notion 
+of “above” or “below” is largely irrelevant, and so this mode of transport (as well as bubble 
+transport for thermoplastics) can always be relevant. In the case of partial gravity there will be 
+asymmetry, although the influences of this are entirely unknown for problems involving inside-to-
+outside transport. New methods of analysis of solid phase processes, such as the transformative 
+theoretical/computational solution method known as “peridynamics,” have recently become 
+available and can be deployed to study the thermal breakdown of materials in microgravity [31]. 
+Older, but still sophisticated, methods based on the Boltzmann equation and the evaluation of its 
+moments to generate the conservation equations can also be deployed when more accurate 
+measurements of in-depth bubble distribution functions can be made. 
+ 
+
+The influence of scale and geometry plays an outsize role in the ignition, growth, and eventual 
+development of fires in micro and partial gravity. On Earth, geometry often affects solid phase 
+combustion via modification of the direction of buoyant forces (e.g., tilted samples) or through 
+different thicknesses of fuels which exhibit steady thermally thin or acceleratory thermally thick 
+behavior [32]. Solid phase materials are particularly affected by their surroundings in micro and 
+partial gravity fires as the role of buoyancy is diminished and re-radiation between surfaces and 
+small changes such as “tripped” flows serve to influence fire growth. Such a change was observed 
+in the SAFFIRE experiments where “peeling” from upstream cotton experiments affected 
+downstream testing on PMMA, substantially altering downstream fire spread and growth [20]. 
+Examining these effects is incredibly challenging in spaceflight as an appropriate scale must be 
+reached, so new approaches for scaling and modeling should be developed alongside further 
+experiments. This may include further pursuit of pressure modeling, where lower pressures on 
+Earth simulate some effects of microgravity on fire, however these may not all be realistic with 
+associated changes in mass and heat transfer arising from lower pressures [33,34]. While the 
+connection between these methods and the condition of partial gravity flames and fire spread have 
+
+
+
+ 
+
+ 
+
+not been established, the influence of pressure and gravity on characteristics such as the heat-
+release rate of fires have been proposed by de Ris [35]. 
+ As knowledge accumulates, there is also potential to further enhance and possibly multiply 
+our understanding between different scales by using machine learning (ML) and other tools based 
+on artificial intelligence (AI) methods. These modern techniques may serve to establish heretofore 
+unnoticed or neglected correlations between limited experiments on materials in spaceflight and 
+the comparatively extensive work done in 1-g; however, correlations must remain grounded in 
+chemical and physical properties known to scale [36]. 
+ 
+
+Lithium-ion batteries have become ubiquitous in electronics applications. As a consequence, they 
+are ever present in spaceflight from the craft itself (i.e., the myriad electronic connections and 
+devices) to laptops, cameras, and many other on-board electronics for standard human use. The 
+high energy density that is stored in these components raises significant fire safety hazard 
+considerations as they can be released under pressure from sealed packages. Battery failure often 
+occurs when internal faults or external damage cause thermal runaway within a single battery cell. 
+Spaceflight applications present new challenges – changes in pressure and gravity may 
+considerably change the way in which cooling occurs over batteries and affect the likelihood or 
+process of thermal runaway. Cooling of battery cells may in particular be influenced by the absence 
+or reduction of buoyancy in required cooling processes. The potential release of large amounts of 
+energy and toxic gases into spacecraft present enormous safety concerns. Focused study is urgently 
+needed to classify the energy and species release from batteries used aboard spacecraft, to 
+investigate effects on cooling of cells caused by microgravity and low-pressure conditions, as well 
+as approaches to extinguishing potentially failing, and actively burning, batteries [37]. 
+ 
+
+Partial gravity presents a prime opportunity for fire to grow as the condition of limited buoyancy 
+leads to a buildup of flammable vapors. By contrast, full buoyancy “fans” the flames as they 
+continue to spread and grow. Heat and mass transfer processes under these unique conditions are 
+not well understood. Neither is the response of the fuel to these altered heating conditions. There 
+are opportunities for additional experiments on earth, such as through the proposed upgrade to the 
+Zero Gravity Research Facility at NASA Glenn Research Center to include a controlled fall 
+capsule for partial gravity, a space-based centrifuge platform, or testing time on the lunar surface, 
+which could all supplement experimental knowledge of partial gravity combustion of solid phase 
+fuels. However, a connection between actual microgravity and simulated microgravity, as has been 
+established in the Narrow Channel Apparatus in prior BASS and BASS-II research [38] or pressure 
+modeling [33,34], is completely absent for the condition of partial gravity. An open, and very 
+challenging question is therefore: “How does one simulate, on Earth, the partial gravity conditions 
+encountered in destinations such as the Moon, or Mars?.” 
+ 
+
+Experimental Facility and Computational Needs 
+On Earth, standard apparatus have been designed to evaluate material flammability from the 
+microscale all the way to full room tests [39]. While some tests are similar to NASA’s upward 
+flame spread STD-6001 Test 1 in offering a pass/fail criteria for material flammability [40], earth-
+based tests such as the microscale calorimeter [41], cone calorimeter [42], lateral ignition and 
+spread test [43,44], and others can provide quantitative measures of ignition, flame spread, and 
+sometimes material properties alongside pass/fail criteria, enabling future performance-based 
+design of whole compartments [45]. Despite some efforts [46], none of these apparatus are 
+specially adapted to restricted gravity conditions. Some apparatus, such as the Narrow Channel 
+Apparatus (NCA) may serve as a model to follow. Here, a geometric alteration of the flame spread 
+
+
+
+ 
+
+ 
+
+process (restriction to a very narrow channel to suppress buoyancy) produced flame spread 
+measurements that were in good agreement with actual microgravity measurements to date [47]. 
+More measurements in microgravity and actual or simulated partial gravity are still sought. 
+ In general, it is true that much of flame spread and flammability research involves 
+diagnostic measurements that lack sophistication. Part of this is a necessary condition, because 
+sophisticated diagnostics require simple physical configurations; however, clear opportunities 
+exist to improve both physical understanding and the validation data sets needed for numerical 
+modeling. These include laser diagnostics for low-speed flow and spatial chemical species 
+measurements, multispectral imaging for thermal measurements on solids, and gas sensing for 
+integrated toxic product and heat-release measurements. Extension of 1g diagnostics to 
+microgravity conditions has also been performed primarily over axisymmetric configurations [48, 
+49] such as electric wires, providing detail mappings and new insights regarding radiative heat 
+transfer, radiative quenching, and smoke emission [50-52], but without application to more 
+complex, realistic configurations. Flame and fire spread are highly dependent on the transfer of 
+heat from a flame to the surface immediately ahead of the flame; therefore, even increased densities 
+of simple thermocouples and heat-flux gauges may improve our physical understanding. 
+Alongside scaling, analytical methods, and directed simulation, dissection of the flame structure 
+may be accomplished to improve our understanding of fire in micro and partial gravity. 
+ 
+
+Numerical modeling for coupled solid and gas phase combustion (i.e., fire) is important for 
+spacecraft fire safety and the broader fire science community [53]. Current numerical models for 
+microgravity fires [54-56] solve fully elliptic Navier-Stokes equations of mass, momentum, 
+species, and energy for the gas phase. These models may include flame radiation, finite-rate 
+kinetics, soot formation, conduction, and solid fuel thermal decomposition. Such models have 
+replicated features of fires in small (~ cm) [57,58] and moderate (~1 m) scale [59,60] microgravity 
+experiments for idealized solid materials. 
+ It is anticipated that more materials will be used when humans build a permanent habitat 
+on the Lunar surface requiring additional phenomena to be incorporated in the solid model. For 
+example, most previous models did not consider pyrolysate mass transport in-depth for solid 
+materials. Charring, smoldering, swelling, shrinkage, and in-depth solid radiation were not 
+modeled either. In addition, determination of solid kinetic models (both decomposition steps and 
+kinetic parameters) remains challenging. The model parameters depend on the geometry and scale 
+of the test to which they are deduced. Gravity can also play a role for thick samples (when 
+inhomogeneity presents). To simulate realistic solid materials, considerable efforts need to be 
+made in multi-dimensional multi-physics solid phase modeling. 
+ For the gas-phase, most microgravity models rely on Direct Numerical Simulation (DNS) 
+to capture the gas-solid coupling, a key factor for robust fire modeling. However, DNS is 
+computationally expensive and might not be a practical strategy in partial gravity as the fire is 
+expected to scale up with buoyant flows. In normal gravity, most computational fire models are 
+based on Large-Eddy Simulation (LES). Assumptions are needed for sub-grid phenomena and the 
+near-wall (solid-fire interface) phenomena. However, these assumptions have been based solely 
+on Earth observations. Over the next decade, a novel numerical strategy will be needed to precisely 
+capture the solid-gas interaction and effectively handle the thermal, chemical, and transport 
+processes in the gas phase. 
+ 
+
+
+
+ 
+
+ 
+
+References 
+
+1. Huang, X, Yuji N, and Urban, D. “Introduction to special issue on spacecraft fire safety.” 
+(2020): 1-4. Fire Technology. https://doi.org/10.1007/s10694-019-00941-6 
+
+2. Friedman R (1996) Fire safety in spacecraft. Fire Mater 20:235–243. 
+https://doi.org/10.1002/(SICI)1099-1018(199609)20:5%3C235::AID-
+FAM580%3E3.0.CO;2-Y 
+
+3. Ross HD (2001) Microgravity combustion: fire in free fall. Academic Press, New York 
+(ISBN: 0080549977, 9780080549972) 
+
+4. Packham N, Wood B, Pate D (2015) Significant incidents and close calls in human 
+spaceflight. NASA JSC S&MA Flight Safety Office, JS-2015-004 NNJ13RA01B 
+
+5. Fernandez-Pello, A. C. (1979). Flame spread in a forward forced flow. Combustion and 
+Flame, 36, 63-78. https://doi.org/10.1016/0010-2180(79)90046-4 
+
+6. G. H. Markstein and J. de Ris, "Upward fire spread over textiles," Proceedings of the 
+Combustion Institute, vol. 14, no. 1, pp. 1085-1097, 1973. https://doi.org/10.1016/S0082-
+0784(73)80098-0 
+
+7. H. T. Loh and A. C. Fernandez-Pello, "Flow assisted flame spread over thermally thin 
+fuels," Fire Safety Science, vol. 1, pp. 65-74, 1986. doi:10.3801/IAFSS.FSS.1-65 
+
+8. K. Saito, J. G. Quintiere and F. A. Williams, "Upward turbulent flame spread," Fire 
+Safety Science, vol. 1, pp. 75-86, 1986. doi:10.3801/IAFSS.FSS.1-75 
+
+9. L. K. Honda and P. D. Ronney, "Mechanisms of concurrent-flow flame spread over solid 
+fuel beds," Proceeding of Combustion Institute, vol. 28, pp. 2793-2801, 2000. 
+https://doi.org/10.1016/S0082-0784(00)80701-8 
+
+10. M. C. Johnston, J. S. T'ien, D. E. Muff, X. Zhao, S. L. Olson and P. V. Ferkul, "Self 
+induced buoyant blow off in upward flame spread on thin solid," Fire Safety Journal, vol. 
+71, pp. 279-286, 2015. https://doi.org/10.1016/j.firesaf.2014.11.007 
+
+11. S. L. Olson, P. V. Ferkul and J. S. T'ien, "Near-limit flame spread over a thin solid fuel in 
+microgravity," Symposium (International) on Combustion, vol. 22, no. 1, pp. 1213-1222, 
+1988. https://doi.org/10.1016/S0082-0784(89)80132-8 
+
+12. S. L. Olson and F. J. Miller, "Experimental comparison of opposed and concurrent flame 
+spread in a forced convective microgravity environment," Proceedings of the Combustion 
+Institute, vol. 32, no. 2, pp. 2445-2452, 2009. https://doi.org/10.1016/j.proci.2008.05.081 
+
+13. Feier, I. I., Shih, H. Y., Sacksteder, K. R., & Tien, J. S. (2002). Upward flame spread 
+over thin solids in partial gravity. Proceedings of the Combustion Institute, 29(2), 2569-
+2577. https://doi.org/10.1016/S1540-7489(02)80313-3 
+
+14. Olson, S. L., Ferkul, P. V., Microgravity flammability boundary for PMMA rods in axial 
+stagnation flow: Experimental results and energy balance analyses, Combustion and 
+Flame 180 (2017), pp. 217-229. https://doi.org/10.1016/j.combustflame.2017.03.001 
+
+15. Urban, D. L., Ferkul, P., Olson, S., Ruff, G. A., Easton, J., James, S., Liao, Y. T., Li, C., 
+Fernandez-Pello, C., Toreo, J. L., Legros, G., Eigenbrod, C., Smirnov, N., Fujita, O., 
+Rouvreau, S., Toth, B., and Jomaas, G. (2019). Flame spread: effects of microgravity and 
+scale. Combustion and Flame, 199, 168-182. 
+https://doi.org/10.1016/j.combustflame.2018.10.012 
+
+16. Olson, S., Ferkul, P., Fernandez-Pello, C., Miller, F., Wichman, I., & T'Ien, J. (2019, 
+July). Flammability limits from BASS-II testing in microgravity compared to normal 
+
+
+
+ 
+
+ 
+
+gravity limits. 49th International Conference on Environmental Systems. 
+https://hdl.handle.net/2346/84505 
+
+17. X. Zhao, Y.-T. T. Liao, M. C. Johnston, J. S. T'ien, P. V. Ferkul and S. L. Olson, 
+"Concurrent flame growth, spread, and quenching over composite fabric samples in low 
+speed purely forced flow in microgravity," Proceedings of the Combustion Institute, vol. 
+36, no. 2, pp. 2971-2978, 2017. https://doi.org/10.1016/j.proci.2016.06.028 
+
+18. Y. Li, Y.-T. Liao, P. V. Ferkul, M. C. Johnston, and C. Bunnell: Confined Combustion of 
+Polymeric Solid Materials in Microgravity, Combustion and Flame, Vol. 234, 111637, 
+2021. https://doi.org/10.1016/j.combustflame.2021.111637 
+
+19. Y. Li, Y.-T. T. Liao, P. V. Ferkul, M. C. Johnston, and C. Bunnell: Experimental Study 
+of Concurrent-Flow Flame Spread over Thin Solids in Confined Space in Microgravity, 
+Combustion and Flame, Vol. 227, pp. 39-51, 2021. 
+https://doi.org/10.1016/j.combustflame.2020.12.042 
+
+20. Urban, D.L., Ruff, G.A., Ferkul, P., Easton, J., Owens, J., Olson, S., Meyer, M., 
+Fortenberry, C., Brooker, J., Graf, J., Casteel, M., Toth, B., Meyer, F., Eigenbrod, C., 
+T’ien, J.S., Liao, Y-T. T., Fernandez-Pello, A.C., Legros, G., Guibaud, A., Smirnov, N., 
+Fujita, O., Jomaas, G., Fire safety implications of preliminary results from Saffire IV and 
+V experiments on large scale spacecraft fires, 50th Int. Conf. Environmental Systems, 12-
+15 July 2021. https://hdl.handle.net/2346/87224 
+
+21. K. R. Sacksteder and J. S. T'ien, "Buoyant downward diffusion flame spread and 
+extinction in partial-gravity accelerations," Symposium (International) on Combustion, 
+vol. 25, no. 1, pp. 1685-1692 , 1994. https://doi.org/10.1016/S0082-0784(06)80816-7 
+
+22. I. I. Feier, H.-Y. Shih, K. R. Sacksteder and J. S. T'ien, "Upward flame spread over thin 
+solids in partial gravity," Symposium (International) on Combustion, vol. 29, no. 2, pp. 
+2569-2577, 2002. https://doi.org/10.1016/S1540-7489(02)80313-3 
+
+23. Kleinhenz, J., Feier, I. I., Hsu, S. Y., James, S., Ferkul, P. V., and Sacksteder, K. R. 
+(2008). Pressure modeling of upward flame spread and burning rates over solids in partial 
+gravity. Combustion and flame, 154(4), 637-643. 
+https://doi.org/10.1016/j.combustflame.2008.05.023 
+
+24. Miller, James A., Robert J. Kee, and Charles K. Westbrook. "Chemical kinetics and 
+combustion modeling." Annual Review of Physical Chemistry 41.1 (1990): 345-387. 
+https://doi.org/10.1146/annurev.pc.41.100190.002021 
+
+25. Kashiwagi, T. and Ohlenmiller, T., “A Study of Oxygen Effects on Nonflaming Transient 
+Gasification of PMMA and PE During Thermal Irradiation,” 19th Symposium on 
+Combustion, pp. 815-823 (1982). https://doi.org/10.1016/S0082-0784(82)80257-9 
+
+26. Butler, K. M., “A Numerical Model for Combustion of Bubbling Thermoplastic 
+Materials in Microgravity,” NISTIR 6894, U. S. Department of Commerce, August 
+(2002). 
+
+27. Olson, S. L., & Hegde, U. (1994). Imposed radiation effects on flame spread over black 
+pmma in low gravity. Eastern States Section Fall Technical Meeting of the Combustion 
+Inst., January 1994. https://ntrs.nasa.gov/citations/19970003275 
+
+28. Nguyen, Y. T., Pence, T. J. and Wichman, I. S., “Crack Formation During Solid 
+Pyrolysis: Evolution, Pattern Formation and Statistical Behaviour,” Proceedings of the 
+Royal Society A, Vol. 475, 20190211. http://dx.doi.org/10.1098/rspa.2019.0211. 
+
+
+
+ 
+
+ 
+
+29. Nguyen, Y. T., Wichman, I. S. and Pence, T. J., “Cracking During Flame Spread over 
+Pyrolyzing Solids,” Progress in Scale Modeling, Vol. 1 (2020). 
+https://doi.org/10.13023/psmij.2020.09 
+
+30. Wichman, I. S., Nguyen, Y. and Pence, T. J., “A Model for Crack Formation During 
+Active Solid Pyrolysis of a Char-Forming Solid: Crack Patterns; Surface Area 
+Generation; Volatile Mass Efflux, Combustion Theory and Modelling, 2020. 
+https://doi.org/10.1080/13647830.2020.1772510. 
+
+31. Javili, A., Morasata, R., Oterkus, E., & Oterkus, S. (2019). Peridynamics review. 
+Mathematics and Mechanics of Solids, 24(11), 3714-3739. 
+https://doi.org/10.1177/1081286518803411 
+
+32. Gollner, M. J., Miller, C. H., Tang, W., & Singh, A. V. (2017). The effect of flow and 
+geometry on concurrent flame spread. Fire Safety Journal, 91, 68-78. 
+https://doi.org/10.1016/j.firesaf.2017.05.007 
+
+33. Thomsen, M., Fernandez-Pello, C., Urban, D. L., Ruff, G. A., and Olson, S. L. (2019). 
+On simulating concurrent flame spread in reduced gravity by reducing ambient pressure. 
+Proceedings of the Combustion Institute, 37(3), 3793-3800. 10.1016/j.proci.2018.05.004 
+
+34. Kleinhenz, J., Feier, I. I., Hsu, S. Y., James, S., Ferkul, P. V., and Sacksteder, K. R. 
+(2008). Pressure modeling of upward flame spread and burning rates over solids in partial 
+gravity. Combustion and flame, 154(4), 637-643. 10.1016/j.combustflame.2008.05.023 
+
+35. J.L. de Ris, “Mechanism of buoyant turbulent diffusion flames”, Procedia Engineering 
+62, pp. 13-27, 2013. https://doi.org/10.1016/j.proeng.2013.08.040 
+
+36. Gagnon, L., Carey, V. P., & Fernandez-Pello, C. (2021). Using an Artificial Neural 
+Network to Predict Flame Spread Across Electrical Wires. Journal of Energy Resources 
+Technology, 143(9), 092305. https://doi.org/10.1115/1.4050816 
+
+37. Padilla Rosa E., Dietrich, Daniel L, Pitz, William, Ruff, Gary, Urban, David. “Battery 
+Fire Risk Assessment” International Conference on Environmental Systems, 2021. 
+https://ttu-ir.tdl.org/handle/2346/87240?locale-attribute=es 
+
+38. Olson, S., Ferkul, P., Fernandez-Pello, C., Miller, F., Wichman, I., & T'Ien, J. (2019, 
+July). Flammability limits from BASS-II testing in microgravity compared to normal 
+gravity limits. 49th International Conference on Environmental Systems. 
+
+39. Janssens, M. L. (2005). Material flammability. In Handbook of Environmental 
+Degradation of Materials (pp. 207-225). William Andrew Publishing. 
+https://www.elsevier.com/books/handbook-of-environmental-degradation-of-
+materials/kutz/978-0-323-52472-8 
+
+40. NASA STD-6001, Flammability, Odor, Offgassing, and Compatibility Requirements and 
+Test Procedures for Materials in Environments that Support Combustion,, Test 1, Upward 
+Flame Propagation, (formerly NHB 8060.1C), (February 9, 1998). 
+
+41. Lyon, R. E., & Walters, R. (2002). A microscale combustion calorimeter. Federal 
+Aviation Administration, Washington DC Office of Aviation Research. 
+https://apps.dtic.mil/sti/citations/ADA401490 
+
+42. Babrauskas, V. (2016). The cone calorimeter. In SFPE handbook of fire protection 
+engineering (pp. 952-980). Springer, New York, NY. 
+
+43. Quintiere, J. (1981). A simplified theory for generalizing results from a radiant panel rate 
+of flame spread apparatus. Fire and Materials, 5(2), 52-60. 
+https://doi.org/10.1002/fam.810050204 
+
+
+
+ 
+
+ 
+
+44. Quintiere, J., Harkleroad, M., & Walton, D. (1983). Measurement of material flame 
+spread properties. Combustion Science and Technology, 32(1-4), 67-89 
+https://doi.org/10.1080/00102208308923653 
+
+45. Quintiere, J. G. (1993). A simulation model for fire growth on materials subject to a 
+room-corner test. Fire Safety Journal, 20(4), 313-339. https://doi.org/10.1016/0379-
+7112(93)90053-S 
+
+46. Fujita, O. (2015). Solid combustion research in microgravity as a basis of fire safety in 
+space. Proceedings of the Combustion Institute, 35(3), 2487-2502. 
+10.1016/j.proci.2014.08.010 
+
+47. Wichman, I. S., Olson, S. L., Miller, F. J. and Tanaya, S. A., “On the Uses of the Narrow 
+Channel Apparatus in Evaluations of Flame and Flamelet Spread over Cellulosic 
+Materials,” Fire and Materials. Online: 3 JUL 2012. https://dx.doi.org/10.1002/fam.2143. 
+Print: Vol. 37/7, pp. 503-519 (2013). 
+
+48. Guibaud, A., Citerne, J.M., Orlac’h, J.M., Fujita, O., Consalvi, J.L., Torero, J.L. and 
+Legros, G., 2019. Broadband modulated absorption/emission technique to probe sooting 
+flames: Implementation, validation, and limitations. Proceedings of the Combustion 
+Institute, 37(3), pp.3959-3966. https://doi.org/10.1016/j.proci.2018.06.199 
+
+49. Comparions with 2-color pyrometry for future space-bound diagnostics: Guibaud, A., 
+Citerne, J.M., Consalvi, J.L., Torero, J.L., Fujita, O., Kikuchi, M., Ferkul, P.V., Smirnov, 
+N., Jomaas, G., Toth, B. and Rouvreau, S., 2021. Accessing the soot-related radiative 
+heat feedback in a flame spreading in microgravity: optical designs and associated 
+limitations. Proceedings of the Combustion Institute, 38(3), pp.4805-4814. 
+https://doi.org/10.1016/j.proci.2020.06.036 
+
+50. Guibaud, A., Citerne, J.M., Consalvi, J.L., Fujita, O., Torero, J. and Legros, G., 2020. 
+Experimental evaluation of flame radiative feedback: methodology and application to 
+opposed flame spread over coated wires in microgravity. Fire Technology, 56(1), pp.185-
+207. https://doi.org/10.1007/s10694-019-00853-5 
+
+51. Guibaud, A., Citerne, J.M., Consalvi, J.L. and Legros, G., 2020. On the effects of 
+opposed flow conditions on non-buoyant flames spreading over polyethylene-coated 
+wires–Part I: Spread rate and soot production. Combustion and Flame, 221, pp.530-543. 
+https://doi.org/10.1016/j.combustflame.2020.07.044 
+
+52. Guibaud, A., Citerne, J.M., Consalvi, J.L. and Legros, G., 2020. On the effects of 
+opposed flow conditions on non-buoyant flames spreading over polyethylene-coated 
+wires–Part II: Soot oxidation quenching and smoke release. Combustion and Flame, 221, 
+pp.544-551. https://doi.org/10.1016/j.combustflame.2020.08.038 
+
+53. Brown, A., Bruns, M., Gollner, M., Hewson, J., Maragkos, G., Marshall, A., McDermott, 
+R., Merci, B., Rogaume, T., Stoliarov, S. and Torero, J., 2018. Proceedings of the first 
+workshop organized by the IAFSS Working Group on Measurement and Computation of 
+Fire Phenomena (MaCFP). Fire safety journal, 101, pp.1-17.1-
+17.https://doi.org/10.1016/j.firesaf.2018.08.009 
+
+54. C. Li, Y.-T. T. Liao, J. S. T’ien, D. L. Urban, P. Ferkul, S. Olson, G. A. Ruff, and J. 
+Easton: Transient Flame Growth and Spread Processes over a Large Solid Fabric in 
+Concurrent Low-Speed Flows in Microgravity – Model versus Experiment, Proceedings 
+of the Combustion Institute, Vol. 37, Issue 3, pp. 4163-4171, 2019 
+https://doi.org/10.1016/j.proci.2018.05.168 
+
+
+
+ 
+
+ 
+
+55. J.-L. Consalvi, A. Guibaud, A. Coimbra, J.-M. Citerne, and G. Legros, "Effects of 
+oxygen depletion on soot production, emission and radiative heat transfer in opposed-
+flow flame spreading over insulated wire in microgravity", Combustion and Flame, vol. 
+230, 111447, 2021. https://doi.org/10.1016/j.combustflame.2021.111447 
+
+56. A. Guibaud, J.-L. Consalvi, J.-M. Citerne, and G. Legros, "Pressure Effects on the Soot 
+Production and Radiative Heat Transfer of Non-Buoyant Laminar Diffusion Flames 
+Spreading in Opposed Flow over Insulated Wires", Combustion and Flame, vol. 222, pp. 
+383-391, 2020. https://doi.org/10.1016/j.combustflame.2020.09.003 
+
+57. X. Zhao, Y.-T. T. Liao, M. C. Johnston, J. S. T’ien, P. V. Ferkul, and S. L. Olson: 
+Concurrent Flame Growth, Spread, and Quenching over Composite Fabric Samples in 
+Low Speed Purely Forced Flow in Microgravity, Proceedings of the Combustion 
+Institute, Vol. 36, pp. 2971-2978, 2017. 10.1016/j.proci.2016.06.028 
+
+58. Y. Li, Y.-T. Liao: Numerical Study of Flame Spread in a Narrow Flow Duct in 
+Microgravity – Effects of Flow Confinement and Radiation Reflection, Combustion and 
+Flame, in press. https://doi.org/10.1016/j.combustflame.2021.111714 
+
+59. C. Li and Y.-T. T. Liao: Effects of Ambient Conditions on Concurrent-Flow Flame 
+Spread over a Wide Thin Solid in Microgravity, Proceedings of the Combustion Institute, 
+Vol. 38, Issue 3 pp. 4775-4784, 2021. https://dx.doi.org/10.1016/j.proci.2020.05.011 
+
+60. C. Li, Y.-T. T. Liao, J. S. T’ien, D. L. Urban, P. Ferkul, S. Olson, G. A. Ruff, and J. 
+Easton: Transient Flame Growth and Spread Processes over a Large Solid Fabric in 
+Concurrent Low-Speed Flows in Microgravity – Model versus Experiment, Proceedings 
+of the Combustion Institute, Vol. 37, Issue 3, pp. 4163-4171, 2019 
+https://doi.org/10.1016/j.proci.2018.05.168 
+
+ 
+
+ 
+
+

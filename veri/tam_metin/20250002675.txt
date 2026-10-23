@@ -1,0 +1,980 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.7">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dcterms:created" content="2025-05-02T14:04:34Z">
+<meta name="dcterms:modified" content="2025-05-02T14:04:34Z">
+<meta name="dc:format" content="application/pdf; version=1.7">
+<meta name="xmpMM:DocumentID" content="uuid:6F63054C-D9B1-432C-A713-4CEE08846D3A">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2025-05-02T14:04:34Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="xmp:CreateDate" content="2025-05-02T10:04:34Z">
+<meta name="pdf:hasMarkedContent" content="true">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2025-05-02T10:04:34Z">
+<meta name="dc:language" content="en">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="14">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:created" content="2025-05-02T14:04:34Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>54th International Conference on Environmental Systems ICES-2025-156 
+13 - 17 July 2025, Prague, Czech Republic 
+</p>
+<p> 
+ 
+</p>
+<p>Vehicle Modeling During the Burn Events in the Saffire VI 
+</p>
+<p>Experiments 
+Justin Niehaus1, John Brooker2, David Urban3, Gary Ruff4 
+</p>
+<p>NASA Glenn Research Center, Cleveland, OH 44135, USA 
+</p>
+<p> 
+</p>
+<p>In order to design a fire-safe environment inside a spacecraft, knowledge of the transport of heat and 
+</p>
+<p>combustion products in a reduced gravity environment is needed. After a resupply mission to the ISS, the 
+</p>
+<p>Saffire project provided large-scale fire data in a microgravity environment inside of Northrup Grumman’s 
+</p>
+<p>Cygnus vehicle. Solid materials were burned, including a thin cotton-based sample and thick thermoplastic 
+</p>
+<p>samples, to study a large-scale fire’s effect on a spacecraft. Sensors were placed in Cygnus that measured 
+</p>
+<p>temperature and species concentration at four different standoffs, as well as nadir and zenith locations. 
+</p>
+<p>Pyrosim was used to develop a model to predict the three burn events from Saffire VI using inlet and outlet 
+</p>
+<p>data from the Saffire payload. The convective heat transfer coefficient between the cargo and the cabin air 
+</p>
+<p>that was previously calibrated in the Saffire V model was used to predict the temperature response in the 
+</p>
+<p>Saffire VI burn events. Good predictions of the CO2 and temperature responses for the remote sensors 
+</p>
+<p>throughout Cygnus were realized. 
+</p>
+<p>Nomenclature 
+</p>
+<p>AP = Aft Port 
+</p>
+<p>AS = Aft Starboard 
+</p>
+<p>ECLSS = Environmental Control and Life Support System 
+</p>
+<p>FDS = Fire Dynamics Simulator 
+</p>
+<p>FFD = Far Field Diagnostics 
+</p>
+<p>FP = Forward Port 
+</p>
+<p>FS = Forward Starboard 
+</p>
+<p>h = Convective Heat Transfer Coefficient 
+</p>
+<p>HAR = Heat Addition Rate 
+</p>
+<p>ISS = International Space Station 
+</p>
+<p>k = Conductive Heat Transfer Coefficient 
+</p>
+<p>L = Characteristic Length 
+</p>
+<p>MGR = Mass Generation Rate 
+</p>
+<p>NG = Northrop Grumman 
+</p>
+<p>NIST = National Institute of Standards and Technology 
+</p>
+<p>Nu = Nusselt Number 
+</p>
+<p>PMMA = Polymethyl Methacrylate 
+</p>
+<p>ppm = Parts per Million 
+</p>
+<p>q’’ = Heat Flux 
+</p>
+<p>Re = Reynolds Number 
+</p>
+<p>RS = Remote Sensor 
+</p>
+<p>SFU = Saffire Flow Unit 
+</p>
+<p>Tg = Temperature of gas 
+</p>
+<p>Ts = Temperature of surface 
+</p>
+<p>u = Flow Speed 
+</p>
+<p>V̇air = SFU volume flow rate 
+</p>
+<p>Y = Mass Fraction 
+</p>
+<p>ρ = Density 
+</p>
+<p>µ = Dynamic Viscosity 
+</p>
+<p> 
+1 Aerospace Engineer, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. 
+2 Aerospace Engineer, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. 
+3 Supervisor Aerospace Engineer, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. 
+4 Project Manager, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>2 
+</p>
+<p>I. Introduction 
+</p>
+<p>ire events present some of the most catastrophic risks to a spacecraft. Previous programs such as Apollo and 
+</p>
+<p>Skylab have undergone full-scale fire testing to help quantify this risk1-3. It is also standard practice in ground 
+</p>
+<p>systems and submarines4,5. As planned oxygen levels in spacecraft begin to rise, it is important to have full-scale fire 
+</p>
+<p>tests to help determine the spread of heat and combustion products. The Saffire project has provided such data in a 
+</p>
+<p>microgravity environment. The sixth campaign, which took place on Northrop Grumman’s (NG) Cygnus vehicle 
+</p>
+<p>after undocking from a resupply mission to the ISS, burned a cotton-based fabric, two Polymethyl (Methacrylate) 
+</p>
+<p>(PMMA) samples and attempted to burn a Nomex fabric. The data collected from these tests, such as flame 
+</p>
+<p>temperature and spread velocity will be useful to combustion scientists and fire-safety engineers in designing a safer 
+</p>
+<p>spacecraft. 
+</p>
+<p>The first three Saffire campaigns focused primarily on the large-scale flame spread inside the Saffire payload6-9, 
+</p>
+<p>while the next three Saffire campaigns expanded the experiments to investigate the effect of a fire on the spacecraft. 
+</p>
+<p>Sensors were placed throughout the vehicle to measured temperature and species concentration, such as CO2. These 
+</p>
+<p>far-field gas and particle sensors will provide data that will increase understanding of smoke plume and combustion 
+</p>
+<p>product transport within an orbiting vehicle10-13. In addition to the burn events, the test campaign includes flow 
+</p>
+<p>visualization events, CO2 scrubs, and gas releases. Six remote sensors (RS) were utilized in Saffire IV-VI to 
+</p>
+<p>measure temperature and product concentration at various locations in the cabin. A far-field device (FFD) was also 
+</p>
+<p>placed in the zenith section, representing the cabin’s average temperature and species concentrations. All Saffire IV 
+</p>
+<p>through VI campaigns used a cotton-based fuel and PMMA for the burn events. 
+This paper presents the development of a model of the Cygnus vehicle during the Saffire VI experimental 
+</p>
+<p>campaign and the simulation of the three burn events. The vehicle’s geometry and the trash and cargo placement 
+</p>
+<p>after the resupply mission were determined from a map provided by NG, as well as photographs taken by the ISS 
+</p>
+<p>crew. Inlet and outlet sensor data from the Saffire payload was used to calculate the heat input and species 
+</p>
+<p>generation rate from Saffire to the Cygnus vehicle. The effective convective heat transfer between the cargo and the 
+</p>
+<p>cabin air that was calibrated in the work describing model development of Saffire V is also used in this work14. The 
+</p>
+<p>primary verification mechanism of the model was temperature and CO2 data provided at the RS locations. 
+</p>
+<p>Developing verified models using full-scale fire tests is an excellent way to gain knowledge of the unknown and 
+</p>
+<p>move towards a safer environment in space. 
+</p>
+<p>II. Saffire Experiment 
+</p>
+<p>The Saffire campaign of experiments has taken place on the NG Cygnus vehicle during a resupply mission to the 
+</p>
+<p>ISS. Figure 1 shows a schematic of the Saffire experiment within the Cygnus vehicle without the trash and cargo 
+</p>
+<p>that form standoffs for heat and combustion product transfer. Vital instrumentation and the vehicle Environmental 
+</p>
+<p>Control and Life Support System (ECLSS) are illustrated. The size of the pressure vessel is nearly 3 meters in 
+</p>
+<p>diameter by 4 meters in length. 
+</p>
+<p> 
+Figure 1. Schematic of Cygnus vehicle without forward side pallet foam. 
+</p>
+<p>F </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>3 
+</p>
+<p>In between the arrival and departure of the Cygnus vehicle from the ISS, trash and cargo were placed to make a 
+</p>
+<p>free air volume that would allow for control of the oxygen concentration when O2 bottles are released in between 
+</p>
+<p>specified events in the campaign. The placement of the cargo, shown in Figure 2, creates channels or standoffs that 
+</p>
+<p>transport heat and smoke from the Saffire payload at the nadir end of the vehicle to the zenith end of the vehicle. In 
+</p>
+<p>the model, a mass generation rate (MGR) and a heat addition rate (HAR) are applied to the Saffire outlet, which has 
+</p>
+<p>a surface area of 50 cm2, to apply heat and combustion products into the domain. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+Figure 2. Saffire Experiment Model. A) This view shows the Cygnus vehicle on the forward side, highlighting 
+</p>
+<p>the forward port standoff without the pallet foam. Heat and combustion products flow through the standoff over 
+</p>
+<p>RS3 and into the zenith section where RS6 and the FFD are located, and the air gets recycled through the Cygnus 
+</p>
+<p>ECLSS system. B) This view shows the Cygnus vehicle on the aft side, highlighting the aft port standoff without 
+</p>
+<p>the pallet foam. Air flows out of the ECLSS outlet where RS1 is located and into the aft port standoff where the 
+</p>
+<p>Saffire inlet and RS4 are located. 
+</p>
+<p> 
+</p>
+<p> Nine events occurred during the Saffire VI experimental campaign, including the three burn events that are 
+</p>
+<p>simulated in this work. These events are described in Table 1. Similar to previous Saffire campaigns, Saffire VI 
+</p>
+<p>started with pulling cabin air through the FFD to scrub the vehicle of CO2. A scrub was also performed during event 
+</p>
+<p>7, between the two PMMA burn events. During event 2, CO2 was released into the vehicle to calculate the free 
+</p>
+<p>volume in the cabin and aid in analyzing the O2 that would need to be released during the burn events. HCl was also 
+</p>
+<p>released during event 2 to study acid gas adsorption to surfaces. After all the planned burns were completed, a flow 
+</p>
+<p>visualization test was performed during 9 to determine any major differences in the Saffire Flow Unit (SFU) from 
+</p>
+<p>event 3. An attempt to burn Nomex occurred during event 4, but no ignition was successful. Event 5 burned SIBAL 
+</p>
+<p>fabric at 31.0% O2 and is the first event simulated in this work. This work also simulates the two-sided PMMA burn 
+</p>
+<p>and one-sided PMMA burn in events 6 and 8, respectively. The initial atmospheric conditions for the experimental 
+</p>
+<p>campaign at the start of the burn events were 54.1 kPA and 31.0% oxygen, with a temperature of approximately 
+</p>
+<p>24.3°C. 
+</p>
+<p>III. Modeling 
+</p>
+<p>A model was developed to predict the effect of the three burn events of the Cygnus vehicle by utilizing the Fire 
+</p>
+<p>Dynamics Simulator (FDS), a code developed by the National Institute of Standards and Technology (NIST). This 
+</p>
+<p>code is optimized for large-eddy turbulent simulations and for low-speed flows usually found in compartment 
+</p>
+<p>fires17. The graphical interface that was used to develop the vehicle model is Pyrosim TM18. Figure 2 provides a 
+</p>
+<p>picture of this model, highlighting the important flow boundary conditions and sensors. This geometry was </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>4 
+</p>
+<p>comprised of a cargo placement map and photographs provided by NG. The mesh size was 0.05 m. A mesh 
+</p>
+<p>sensitivity analysis was completed to determine the effect of mesh size on accuracy of results. 
+</p>
+<p>The model was primarily compared to the experiments using the CO2 and temperature readings at the locations 
+</p>
+<p>of the six remote sensors. All six of these sensors can be seen in Figure 1, while the cargo hides RS2 and RS5 in 
+</p>
+<p>Figure 2, which has also been described in detail in previous papers about Saffire IV and V14-16. The initial 
+</p>
+<p>temperature of the cabin used for each simulation was the initial temperature of RS3 since that was closest to the 
+</p>
+<p>Saffire outlet, which created the greatest response for comparison. Since the initial temperature of all the remote 
+</p>
+<p>sensors was different in the experiment, the other remote sensor simulation curves were adjusted after the simulation 
+</p>
+<p>to match the initial temperature of the experimental curves. 
+</p>
+<p> The flow rates used for the boundary conditions in the simulations are provided in Table 2, which are provided 
+</p>
+<p>experimentally. The SFU used a flow rate of 0.028 m3/s to give a flow of approximately 20 cm/s over the samples 
+</p>
+<p>during times of burning but was ramped down at certain times to promote flame extinguishment. The heat from the 
+</p>
+<p>burn event is captured at the outlet of the Cygnus vehicle by the HAR, which is calculated using the inlet and outlet 
+</p>
+<p>temperature of the SFU. The HAR is calculated using Eq. 1 and demonstrated in Figure 3 using data from event 5. 
+</p>
+<p>Since no flame or combustion properties are inputted into the model, the SFU simply acts as an object that intakes 
+</p>
+<p>cool cabin air and outputs combustion products and hot air. Radiation from the SFU has been assumed to be 
+</p>
+<p>negligible. The initial atmospheric conditions of the Cygnus vehicle are shown in Table 3. The density and specific 
+</p>
+<p>heat of the air used to calculate the HAR are taken at the initial temperature since the outlet of the SFU does not 
+</p>
+<p>exceed 75°C during any burn. Density and specific heat would also be negligibly affected by the increase in main 
+</p>
+<p>combustion products CO2 and H2O in the atmosphere, which reaches no more than 2% during any burn event. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Table 1. Summary of Saffire VI events. 
+</p>
+<p>Event Number Description of Event Purpose of Event 
+1 CO
+</p>
+<p>2
+ Scrub 
+</p>
+<p>Reduce background CO
+2
+, evaluate CO
+</p>
+<p>2
+ 
+</p>
+<p>scrubber performance 
+</p>
+<p>2 CO
+2 
+and HCl release 
+</p>
+<p>Track tracer gas transport throughout cabin 
+</p>
+<p>for vehicle volume calculation and observe 
+</p>
+<p>HCl surface adsorption 
+3 Flow visualization test Assess SFU air flow 
+4 Nomex Burn: 31.9% O2. Did not Ignite Sample burn 
+</p>
+<p>5 
+SIBAL fabric Burn: 40 cm wide × 50 cm 
+</p>
+<p>long, concurrent flow, 31.0% O2 at 54.1 
+</p>
+<p>kPa 
+Sample burn and HCl release 
+</p>
+<p>6 
+PMMA Burn: 40 cm wide × 18 cm long 
+</p>
+<p>× 1.0 cm thick two-sided flame spread, 
+</p>
+<p>concurrent flow, 30.3% O2 at 54.6 kPa 
+Sample burn 
+</p>
+<p>7 CO
+2
+ Scrub Evaluate CO2 scrubber performance 
+</p>
+<p>8 
+ PMMA Burn: 40 cm wide × 18 cm long 
+</p>
+<p>× 0.5 cm thick one-sided flame spread, 
+</p>
+<p>concurrent flow, 28.8% O2 at 55.2 kPa 
+ Sample burn 
+</p>
+<p>9 Flow visualization test Assess SFU air flow 
+ </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>5 
+</p>
+<p>Table 2. Flow Rates used in Saffire VI Simulations 
+</p>
+<p>Cygnus Location Flow Rate (m3/s) 
+</p>
+<p>Vehicle ECLSS 0.062 
+</p>
+<p>Saffire Flow Duct 0.028 
+</p>
+<p>Saffire Avionics 0.013 
+</p>
+<p>FFD 0.017 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+Figure 3. Calculation of Mass Generation Rate (MGR) and Heat Addition Rate (HAR) from Saffire to 
+</p>
+<p>Cygnus. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Table 3. Initial Atmospheric Conditions in for Saffire VI Simulations 
+</p>
+<p> Event 5 Event 6 Event 8 
+</p>
+<p>Pressure (Pa) 5.42x104 5.46x104 5.52x104 
+</p>
+<p>Volume (m3) 16.2 16.2 16.2 
+</p>
+<p>Density (kg/m3) 0.639 0.642 0.643 
+</p>
+<p>Cp (J/kg-K) 1018 1018 1020 
+</p>
+<p>Temperature (K) 297.5 298.1 300.62 
+</p>
+<p>CO2 (ppm) 5381 8164 8788 
+</p>
+<p>O2 (%) 30.9 30.3 28.9 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>6 
+</p>
+<p>The MGR of the combustion products is calculated and applied to the outlet of the SFU in the same manner as 
+</p>
+<p>the HAR. It utilizes the difference in combustion product mass fraction across the SFU, volume flow rate through 
+</p>
+<p>the SFU and initial air density. This is provided by Eq. 2. Once CO2 flux out of the SFU is known, H2O flux is 
+</p>
+<p>determined by assuming stoichiometric conversion of either cotton (cellulose) or PMMA into CO2 and H2O, as is 
+</p>
+<p>given by either Eq. 3 for SIBAL or Eq. 4 for PMMA. A video of the flame events was used to determine how long 
+</p>
+<p>products were being transferred into the cabin from Saffire. Once the main flame went out, the creation of 
+</p>
+<p>combustion products was assumed to be finished, which was 145s for the SIBAL event, 796s for the two-sided 
+</p>
+<p>PMMA event and 921s for the one-sided PMMA event. The calculated MGR and HAR for the SIBAL burning event 
+</p>
+<p>are shown in Figure 4. The HAR is on the right axis, while the CO2 and H2O generation rates are on the left. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 𝐻𝐴𝑅 = 𝐶𝑝 𝜌𝑎𝑖𝑟�̇�𝑎𝑖𝑟(𝑇𝑜𝑢𝑡-𝑇𝑖𝑛) (1) 
+</p>
+<p> 
+</p>
+<p> 𝑀𝐺𝑅 = 𝜌𝑎𝑖𝑟�̇�𝑎𝑖𝑟(𝑌𝑂𝑢𝑡-𝑌𝑖𝑛) (2) 
+</p>
+<p> 
+ 
+</p>
+<p> 𝐶6𝐻10𝑂5(v)+6𝑂2→6𝐶𝑂2+5𝐻2𝑂(v) (3) 
+</p>
+<p> 
+</p>
+<p> 𝐶5𝐻8𝑂2(v)+6𝑂2→5𝐶𝑂2+4𝐻2𝑂(v) (4) 
+ 
+</p>
+<p> The default equation to handle convective heat transfer over planar surfaces in FDS, or specifically in these 
+</p>
+<p>simulations, convective heat transfer between the cabin air and the tan trash/cargo surfaces, is provided by Eq. 5, as 
+</p>
+<p>outlined in the FDS user guide and referenced previously19: 
+</p>
+<p> 
+</p>
+<p> 𝑁𝑢 =
+ℎ𝐿
+</p>
+<p>𝑘
+= 0.037𝑅𝑒0.80𝑃𝑟0.33 (5) 
+</p>
+<p> 
+</p>
+<p>where h is the convective heat transfer coefficient, L is the characteristic length, k is the conductive heat transfer 
+</p>
+<p>coefficient of the fluid, and Pr is the Prandtl number, which equals 0.71 for air at room temperature. The Reynolds 
+</p>
+<p>number, Re, is written as: 
+</p>
+<p> 𝑅𝑒 =
+𝜌|𝑢|𝐿
+</p>
+<p>𝜇
+ (6) 
+</p>
+<p>where ρ is the air density, µ is the dynamic viscosity, and u is the airflow speed. Table 4 presents the parameters 
+</p>
+<p>used to estimate h at the RS3 location, which uses flow over the first large box of cargo (1 meter in length). Using 
+</p>
+<p>this approach in previous predictions overestimated the temperature rise from the Saffire burn events. Hence, h was 
+</p>
+<p>calibrated to match the Saffire V RS3 temperature during the cotton burn event as was discussed in previous work14 
+</p>
+<p>and was determined to be 150 W/m2-K. This effective heat transfer coefficient is significantly larger than the 
+</p>
+<p>estimated default used in Pyrosim, likely to account for the increased surface area of the porous cargo and trash. The 
+</p>
+<p>convective heat loss to the cargo is visualized in Figure 5. 
+</p>
+<p> 
+</p>
+<p> 
+Figure 4. Mass and heat inputs for the Saffire VI SIBAL burn event. The left axis in blue corresponds to CO2 
+</p>
+<p>and H2O mass generation rates while the red axis on the right corresponds to the heat input coming out of Saffire. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>7 
+</p>
+<p>Table 4. Initial Parameters of the Air Flow to Approximate the Default Heat Transfer Coefficient 
+</p>
+<p>u (m/s) 0.2 
+</p>
+<p>µ (Pa-s) 1.81x10-5 
+</p>
+<p>ρ (kg/m3) 1.17 
+</p>
+<p>L (m) 1 
+</p>
+<p>Re 1.25x104 
+</p>
+<p>k (W/m-K) 0.025 
+</p>
+<p>Nu 62.3 
+</p>
+<p>estimated FDS default h (W/m2-K) 1.56 
+</p>
+<p>calibrated h used in simulations (W/m2-K) 150 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+Figure 5. Convective heat transfer applied to cargo surfaces. 
+</p>
+<p>IV. Results and Discussion 
+</p>
+<p> The initial experimental RS CO2 values for the SIBAL burn event ranged from 5,078 to 5,704 ppm, giving an 
+</p>
+<p>average of 5,381 ppm as given by Table 3. This average value was used for the initial cabin CO2 concentration for 
+</p>
+<p>the event 5 simulation, and then the prediction curves were increased or decreased after the simulation to match the 
+</p>
+<p>initial experimental values. This method was used consistently for event 6 and 8 as well. Figure 6 shows the 
+</p>
+<p>experimental CO2 results at the six RS locations against the simulated results. An excellent agreement is realized 
+</p>
+<p>once the curves reached steady state. This is expected since the CO2 added to the cabin from the MGR (46.5 g) was 
+</p>
+<p>close to the average CO2 rise predicted from the six remote sensors (46.8 g). However, the rise in the curve is 
+</p>
+<p>underpredicted by the model at all locations. The largest overshoot of the steady state was RS3 and RS6, which were 
+</p>
+<p>in the direct path of the Saffire outlet flow. RS2 also had a considerable overshoot in the experimental curve, which 
+</p>
+<p>was the RS below RS3, indicating that the flow was able to be diverted down into the starboard standoff. It is clear 
+</p>
+<p>the total amount of CO2 being delivered into the cabin from Saffire is accurate, but how much reaches various parts 
+</p>
+<p>of the cabin early on during the burn event is inaccurate. If this was a consistent problem among all three burn 
+</p>
+<p>events, a reasonable conclusion would be that the cargo in the model, especially at the FP standoff needs to be 
+</p>
+<p>adjusted for more flow to go over RS3. However, as will be discussed later, the CO2 predictions are better during 
+</p>
+<p>event 6 and 8. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>8 
+</p>
+<p> 
+Figure 6. Saffire VI CO2 RS response curves during the SIBAL burn test (event 5). 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> The temperature prediction during the SIBAL burn at the six RS locations are shown in Figure 7. The same 
+</p>
+<p>convective heat transfer coefficient of 150 W/m2-K that was used for the cargo surfaces in the Saffire V model was 
+</p>
+<p>used for this work14,15. Since the remote sensors ranged from 19.9 to 24.3 °C initially, the prediction curves were 
+</p>
+<p>adjusted so that the initial value matched that of each location to compare the temperature increase. This method was 
+</p>
+<p>also used for events 6 and 8 as well. The prediction given by the model is in excellent agreement with the 
+</p>
+<p>experimental model. Besides RS3 and RS6, which are the two in the most direct path of the Saffire outlet flow, there 
+</p>
+<p>was negligible increase in temperature observed during the burn event compared to the sensitivity of the 
+</p>
+<p>thermocouples (+/- 0.25 °C). The model predicted this behavior. The total amount of heat input into the Cygnus 
+</p>
+<p>cabin from Saffire was 124 kJ, which can be calculated by integrating the HAR provided by Eq.1 and Figure 4. This 
+</p>
+<p>agrees well with the cotton sample in Saffire V that provided 110 kJ of heat into the Cygnus vehicle from the 
+</p>
+<p>payload. 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>9 
+</p>
+<p> 
+Figure 7. Saffire VI Temperature RS response curves during the SIBAL burn test (event 5). 
+</p>
+<p> 
+</p>
+<p> Figure 8 shows the CO2 RS predictions for the two-sided PMMA burn during event 6. Excellent agreement 
+</p>
+<p>between prediction and experimental data during the ramp-up phase and steady-state part of the curve is realized for 
+</p>
+<p>all RS locations. Unlike the SIBAL burn, the experimental curves did not overshoot the steady state quite as much, 
+</p>
+<p>which was predicted well in the model. The average increase in the RS data was 8164 ppm, representing a 128.1 g 
+</p>
+<p>increase in CO2. This matches well with the total input from the MGR of 127.8 g. 
+</p>
+<p> The predictions for RS temperature response during the two-sided PMMA burn are provided in Figure 9. As 
+</p>
+<p>discussed above, only RS3 and RS6, which are in the direct path of the Saffire outlet flow, are shown here since they 
+</p>
+<p>are the only locations that register a temperature response. A good agreement can be seen during the ramp-up phase 
+</p>
+<p>from RS3 and RS6. However, the model does overpredict the maximum temperature. A slight overprediction in 
+</p>
+<p>temperature rise is realized during the SIBAL burn, but it is less noticeable due to the lower heat input. Other 
+</p>
+<p>surfaces besides the trash and cargo are set to be adiabatic in the model, but could be contributing extra heat loss 
+</p>
+<p>(rails, straps, etc.). Integrating the heat addition rate for this event gave a total energy addition of 497 kJ. This is 
+</p>
+<p>significantly higher than the 233 kJ calculated by a similarly sized PMMA burned during Saffire V. This is likely 
+</p>
+<p>attributed to the higher O2 level in Saffire VI (30.3%) as compared to Saffire V (26.5%). </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>10 
+</p>
+<p> 
+Figure 8. Saffire VI CO2 RS response curves during the two-sided PMMA burn test (event 6). 
+</p>
+<p> 
+</p>
+<p> 
+Figure 9. Saffire VI Temperature RS response curves during the two-sided PMMA burn test (event 6). 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>11 
+</p>
+<p>Figure 10 shows the CO2 RS predictions for the one-sided PMMA burn during event 8. This simulation provides 
+</p>
+<p>the best prediction out of the three burn events, which gives added evidence that the bulk cargo placement and air 
+</p>
+<p>flow within the model are well represented. The average increase in the RS data was 8229 ppm, representing a 130.3 
+</p>
+<p>g increase in CO2. This matches well with the total input from the MGR of 130.8 g. 
+</p>
+<p> 
+Figure 10. Saffire VI CO2 RS response curves during one-sided PMMA burn test (event 8). 
+</p>
+<p> 
+</p>
+<p>During the two PMMA burn events, a dip in CO2 concentration is observed at the RS2 location after the ramp up 
+</p>
+<p>before quickly recovering. This is not captured by the model. One explanation for this dip is that RS2 is close to the 
+</p>
+<p>ECLSS outlet, which cycles on and off in an attempt to keep the conditions of Cygnus within certain parameters. 
+</p>
+<p>RS3 is also close to the ECLSS outlet, but also close to the hot gas coming from the Saffire outlet, which likely 
+</p>
+<p>dictates its behavior. RS2 can be reasonably assumed to be more influenced by slight changes in vehicle flow 
+</p>
+<p>patterns. 
+</p>
+<p>The temperature RS predictions for the one-sided PMMA burn during event 8 are presented in Figure 11. An 
+</p>
+<p>excellent agreement is realized for RS3, while an over-prediction is realized for RS6. The experimental data for RS6 
+</p>
+<p>appears nonresponsive, similar to the other four locations. While it can be explained why the heat from the fire does 
+</p>
+<p>not reach those locations, RS6 has been responsive in the previous two burn events, as well as burn events in the 
+</p>
+<p>previous two Saffire campaigns14,15,16. This indicates that RS6 might not be responding properly during the burn 
+</p>
+<p>event. 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>12 
+</p>
+<p> 
+Figure 11. Saffire VI Temperature RS response curves during one-sided PMMA burn test (event 8). 
+</p>
+<p> 
+</p>
+<p>These large-scale experiments and numerical models highlighted the effect a spacecraft fire has on a vehicle, 
+</p>
+<p>such as heat transfer and product mixing. The results from this work demonstrate the feasibility of predicting a fire’s 
+</p>
+<p>impact on a spacecraft’s habitability. These verified models from Saffire IV to Saffire VI can be used to predict 
+</p>
+<p>“worst-case” fire scenarios. For example, heat release rates from experimental calorimetry experiments, such as Li-
+</p>
+<p>ion batteries, could be provided as input to the model, or the gravity level could be adjusted to study the buoyant 
+</p>
+<p>effects of heat transfer inside a vehicle under lunar or Martian gravity. 
+</p>
+<p> 
+</p>
+<p>V. Conclusions 
+</p>
+<p> The effects of the Saffire burn events on the Cygnus vehicle were revealed using a model developed using FDS. 
+</p>
+<p>Inlet and outlet sensors to the Saffire payload served as the main inputs into the model, while six remote sensors 
+</p>
+<p>placed throughout the cabin served as the verification of the model. In previous work, an effective convective heat 
+</p>
+<p>transfer coefficient of 150 W/m2-K for the cargo in the standoffs that was calibrated at RS3 for the Saffire V cotton 
+</p>
+<p>burn was used for the three simulations in this work and provided adequate temperature predictions in the cabin. 
+</p>
+<p>Besides a couple of locations during specific burn events, the model predicted CO2 and temperature throughout the 
+</p>
+<p>cabin well. These results, and the simulations of the other Saffire campaigns demonstrate the feasibility of predicting 
+</p>
+<p>a fire’s impact on the habitability of an orbiting spacecraft. With validated models in place, other fire sources, such 
+</p>
+<p>as Li-ion batteries, can be used to determine the effect of that type of fire in a spacecraft. Similar methods of 
+</p>
+<p>modeling could also be incorporated with other spacecrafts and gravity levels. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>13 
+</p>
+<p>Acknowledgments 
+</p>
+<p>The Saffire project was supported by NASA’s Advanced Exploration Systems Division. The authors would like 
+</p>
+<p>to thank the international Saffire science team, with various agencies that include ESA, JAXA, CNES, RSA, DLR, 
+</p>
+<p>the Russian Academy of Sciences and NASA. The authors are grateful for the efforts of ZIN Technologies, NG, and 
+</p>
+<p>the on-orbit crew of the ISS on the Saffire project. 
+</p>
+<p> 
+</p>
+<p>References 
+ 
+</p>
+<p>1Bricker, R. W., Crabb, J. P., and Spiker, I. K., “Apollo Command Module and Lunar Module Mockup Flammability Tests,” 
+</p>
+<p>NASA TN D-5654, 1970. 
+2Friedman, R., “Fire safety concerns in space operations,” NASA TM 89848, 1987. 
+3Kimzey, J. H., “Skylab experiment M479 zero gravity flammability,” Skylab Results, Proc. Third Space Processing Symp. 
+</p>
+<p>Vol. 1, 1974, pp. 115-130. 
+</p>
+<p> 4Hoover, J. B., Bailey, J. L., Willauer, H. D., and Williams, F. W., “Evaluation of Submarine Hydraulic System Explosion 
+</p>
+<p>and Fire Hazards, NRL/MR/6180-05-8908, 2005. 
+5Wickström, U., Sundström, B., and Holmstedt, G., “The development of a full-scale room fire test,” Fire Safety 
+</p>
+<p>Journal, Vol. 5.(3-4), 1983, pp. 191-195. 
+ 6Ruff, G. A., Urban, D. L., Fernandez-Pello, A. C., T’ien, J. S., Torero, J. L., Legros, G., Eigenbrod, C., Smirnov, N., Fujita, 
+</p>
+<p>O., Cowlard, A. J., Rouvreau, S., Minster, O., Toth, B., and Jomaas, G., “Spacecraft Fire Experiment (Saffire) Development 
+</p>
+<p>Status,” 44th International Conference on Environmental Systems, ICES-2014-265, Texas Tech University Libraries, 2014. 
+7Jomaas, G., Torero, J. T., Eigenbrod, C., Niehaus, J., Olson, S. L., Ferkul, P. V., Legros, G., Fernandez-Pello, C., Cowlard, 
+</p>
+<p>A. J., Rouvreau, S., Smirnov, N., Fujita, O., T’ien, J. S., Ruff, G. A., and Urban, D. L., “Fire Safety in Space – Beyond 
+</p>
+<p>Flammability Testing of Small Sample,” Acta Astronautica, Vol. 109, 2015, pp. 208-216. 
+</p>
+<p> 8Ruff, G. and Urban, D., “Operation and Development Status of the Spacecraft Fire Experiments (Saffire),” 46th International 
+</p>
+<p>Conference on Environmental Systems, ICES-2016-428, Texas Tech University Libraries, 2016. 
+</p>
+<p> 9Ferkul, P. V., Olson, S., Urban, D. L., Ruff, G. A., Easton, J., T’ien, J. S., Liao, Y.-T. T., Fernandez-Pello, A. C., Torero, J. 
+</p>
+<p>L., Eigenbrod, C., Legros, G., Smirnov, N., Fujita, O., Rouvreau, S., Toth, B., and Jomaas, G., “Results of Large-Scale 
+</p>
+<p>Spacecraft Flammability Tests,” 47th International Conference on Environmental Systems, ICES-2017-224, Texas Tech 
+</p>
+<p>University Libraries, 2017. 
+</p>
+<p> 10Thomsen, M., Fernandez-Pello, A. C., Urban, D. L., Ruff, G. A., and Olson, S. L. “Upward Flame Spread over a Thin 
+</p>
+<p>Composite Fabric: The Effect of Pressure and Microgravity,” 48th International Conference on Environmental Systems, ICES-
+</p>
+<p>2018-231, Texas Tech University Libraries, 2018. 
+11Urban, D., Ruff, G., Ferkul, P., Owens, J., Olson, S., Meyer, M., Fortenberry, C., Brooker, J., Graf, J., Casteel, M., Jomaas, 
+</p>
+<p>G., Toth, B., Eigenbrod, C., T’Ien, J., Liao, Y.-T., Fernandez-Pello, C., Meyer, F., Legros, G., Guibaud, A., Smirnov, N., and 
+</p>
+<p>Fujita, O., “Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires,” 
+</p>
+<p>50th International Conference on Environmental Systems, ICES-2021-266, Texas Tech University Libraries, 2021. 
+12Fortenberry, C., Casteel, M., Graf, J., Easton, J., Niehaus, J., Meyer, M., Urban, D., Ruff, G., “Evaluation of Combustion 
+</p>
+<p>Products from Large-Scale Spacecraft Fires during the Saffire-IV and Saffire-V Experiments,” 50th International Conference on 
+</p>
+<p>Environmental Systems, ICES-2021-244, Texas Tech University Libraries, 2021. 
+</p>
+<p> 13Wang, X., Zhou, H., Arnott, W.P., Meyer, M.E., Taylor, S., Firouzkouhi, H., Moosmüller, H., Chow, J.C. and Watson, J.G., 
+</p>
+<p>“Evaluation of gas and particle sensors for detecting spacecraft-relevant fire emissions,” Fire Safety Journal, Vol. 113, 2020, pp. 
+</p>
+<p>102977-102988. 
+14Niehaus, J., and Brooker, J., “Vehicle Modeling during the Burning of Cotton Samples in the Saffire IV and V 
+</p>
+<p>Experiments,” 52nd International Conference on Environmental Systems, ICES-2023-204, Texas Tech University Libraries, 
+</p>
+<p>2023. 
+15Niehaus, J., Brooker, J., Urban, D., and Ruff, G., “Vehicle Modeling during the Burning of Thermally Thick Samples in the 
+</p>
+<p>Saffire V Experiments,” 53rd International Conference on Environmental Systems, ICES-2024-310, Texas Tech University 
+</p>
+<p>Libraries, 2024. 
+16Brooker, J., and Niehaus, J., “Model Development of Large-Scale Spacecraft Fires during the Saffire-IV Experiments,” 51st 
+</p>
+<p>International Conference on Environmental Systems, ICES-2022-278, Texas Tech University Libraries, 2022. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>14 
+</p>
+<p> 17FDS, Fire Dynamics Simulator, Software Package, Ver. FDS6.7.5-0-g71f025606, National Institute of Standards and 
+</p>
+<p>Technology, Gaithersburg, MD, 2004. http://dx.doi.org/10.6028/NIST.SP.1019. 
+</p>
+<p> 18Pyrosim, Software Package, Ver. 2021-2, Thunderhead Engineering, Manhattan, KS, 2014. 
+ 19J.P. Holman, Heat Transfer, 7th ed., McGraw-Hill, New York, 1990. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> </p>
+<p></p>
+<div class="annotation"><a href="http://dx.doi.org/10.6028/NIST.SP.1019">http://dx.doi.org/10.6028/NIST.SP.1019</a></div>
+</div>
+</body></html>

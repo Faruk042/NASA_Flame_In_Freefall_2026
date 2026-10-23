@@ -1,0 +1,837 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.6">
+<meta name="xmp:CreatorTool" content="PScript5.dll Version 5.2.2">
+<meta name="pdf:docinfo:title" content="Microsoft Word - ICES_2025-392 Lunar G Flamm2025-0509 - revised - 070825 changes accpeted.docx">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dc:creator" content="durban">
+<meta name="dcterms:created" content="2025-07-08T21:14:11Z">
+<meta name="dcterms:modified" content="2025-07-08T21:14:11Z">
+<meta name="dc:format" content="application/pdf; version=1.6">
+<meta name="xmpMM:DocumentID" content="uuid:85fb0eea-f822-46fa-b07f-5fcbdc6d60c4">
+<meta name="pdf:docinfo:creator_tool" content="PScript5.dll Version 5.2.2">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2025-07-08T21:14:11Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="dc:title" content="Microsoft Word - ICES_2025-392 Lunar G Flamm2025-0509 - revised - 070825 changes accpeted.docx">
+<meta name="xmp:CreateDate" content="2025-07-08T17:14:11Z">
+<meta name="pdf:hasMarkedContent" content="false">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2025-07-08T17:14:11Z">
+<meta name="pdf:docinfo:creator" content="durban">
+<meta name="pdf:producer" content="Acrobat Distiller 20.0 (Windows)">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="12">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:producer" content="Acrobat Distiller 20.0 (Windows)">
+<meta name="pdf:docinfo:created" content="2025-07-08T21:14:11Z">
+<title>Microsoft Word - ICES_2025-392 Lunar G Flamm2025-0509 - revised - 070825 changes accpeted.docx</title>
+</head>
+<body><div class="page"><p></p>
+<p>54th International Conference on Environmental Systems ICES-2025-392 
+13-17 July 2025, Prague, Czech Republic 
+</p>
+<p>Solid Fuel Ignition Testing for Lunar Applications, Theory 
+</p>
+<p>and Experimental Results 
+</p>
+<p>David Urban1, Sandra Olson2, Daniel Dietrich3, Dennis Stocker4, Michael Johnston5, Paul Ferkul6, Gary Ruff7, 
+Jennifer Zayac8 
+</p>
+<p>NASA Glenn Research Center, Cleveland, OH, 44135 
+</p>
+<p>Susana Harper9, Alfredo Juarez 10,Steven Peralta11 
+NASA JSC White Sands Test Facility, Las Cruces, NM 88012 
+</p>
+<p>Carlos Fernandez-Pello12, 
+University of California, Berkeley, Berkeley, CA, 94720, USA 
+</p>
+<p>Maria Thomsen13 
+Universidad Adolfo Ibáñez, Santiago, Chile 
+</p>
+<p>Ya-Ting Liao14 
+Case Western Reserve University, Cleveland, Ohio 44106 
+</p>
+<p>Harold Beeson15 
+WHA International Inc., Las Cruces, NM, 88007 
+</p>
+<p>and 
+</p>
+<p>Gregory Harrigan16 
+ NASA Kennedy Space Center, Merritt Island, FL, 32899 
+</p>
+<p>To address the risk of enhanced flammability in lunar gravity, NASA has initiated a 
+program to develop a new test method that provides an estimate of the flammability 
+enhancement expected in lunar gravity. An overview of the physical phenomena that control 
+NASA material flammability testing is presented with discussion of how this testing is being 
+adapted to evaluate material flammability in lunar gravity. Testing in drop towers and on 
+</p>
+<p> 
+1 Aerospace Engineer, Low-Gravity Exploration Technology Branch, NASA GRC, 21000 Brookpark Road 
+2 Aerospace Engineer, Low-Gravity Exploration Technology Branch, NASA GRC, 21000 Brookpark Road 
+3 Aerospace Engineer, Low-Gravity Exploration Technology Branch, NASA GRC, 21000 Brookpark Road 
+4 Aerospace Engineer, Low-Gravity Exploration Technology Branch, NASA GRC, 21000 Brookpark Road 
+5 Aerospace Engineer, Low-Gravity Exploration Technology Branch, NASA GRC, 21000 Brookpark Road 
+6 Aerospace Engineer (Retired), NASA GRC, 21000 Brookpark Road 
+7 Staff Scientist, Universities Space Research Assoc. (USRA), 21000 Brookpark Road 
+8 Intern, Low-Gravity Exploration Technology Branch, NASA GRC, 21000 Brookpark Road 
+9 Cabin Materials Flight Acceptance Standard Testing Manager, NASA WSTF, 12600 NASA Rd 
+10 Flight Acceptance Standard Test and Oxygen Hazards Branch Manager, Sierra Lobo Inc. NASA WSTF, 12600 
+NASA Rd 
+11 Project Manager, NASA WSTF, 12600 NASA Rd 
+12 Professor of the Graduate School, Mechanical Engineering, Berkeley, CA, 94720. 
+13 Faculty of Engineering and Science, Diagonal Las Torres 2640, Peñalolén, Santiago, Chile. 
+14 Associate Professor, Mechanical and Aerospace Engineering, Glennan 479 
+15 Principal Chemist, WHA International Inc.,5605 Dona Ana Rd, 
+16 Senior Technical Leader, NASA Engineering &amp; Safety Center, M7-0355:1702. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>2 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>reduced gravity aircraft has shown that there can be enhanced flammability (flames can exist 
+at lower ambient oxygen concentrations compared to terrestrial gravity) at partial gravity 
+levels close to those found on the moon. This was identified as a risk for the Human Landing 
+System program. However, lunar gravity testing is largely limited to using a centrifuge in the 
+NASA GRC 5.2 second drop tower. This paper discusses the fundamentals of material 
+flammability and extinction, and develops a Damköhler-number based estimate of the blow-
+off flammability limit. This relationship is compared to the results from material flammability 
+tests in a highspeed blow-off facility at the NASA White Sands Test Facility (WSTF) (1-g) and 
+the Glenn Research Center (GRC) Zero Gravity Facility partial gravity centrifuge. 
+</p>
+<p>Acronyms and Nomenclature 
+ 
+CKL = Chemical Kinetic Limit 
+HLS = Human Landing System 
+HOI = High Gas Velocity Oxygen Index 
+HTL = Heat Transfer Limit 
+LOC = Limiting Oxygen Concentration 
+UHOI = Upward High Gas Velocity Oxygen Index 
+</p>
+<p>I. Introduction 
+ASA has focused on material selection as a primary means of fire prevention. The method for selecting fire safe 
+materials has been NASA STD 6001 Test 1 (hereafter referred to as Test 1)1. Test 1 is an upward flammability 
+</p>
+<p>test that uses a consistent ignition source (known as the chemical igniter) that is considered to be a very strong ignition 
+source1. If the flame damaged zone is found to be less than 15.2 cm (6”), the material is determined to be self-
+extinguishing for the test conditions. The concept was that with a strong ignition source in upward spread, the test will 
+be conservative. The purpose of the test is not to identify materials that will never burn but rather to identify materials 
+that do not burn easily and will self-extinguish in most situations. Given the test design, for most materials, Test 1 is 
+an ignition test, if the material has enough specific heat or low enough heat release, it will pass but it might not pass 
+with a bigger igniter or if the material were 
+slightly preheated. In the case of thin materials 
+of limited spread rate, it is possible for Test 1 to 
+function as a flammability test. 
+ Testing in drop towers and on reduced 
+gravity aircraft2,3 has shown that materials can 
+have broader flammability limits (e.g. oxygen 
+limits) at partial gravity levels close to those 
+found on the moon and this was identified as a 
+risk for the Human Landing System (HLS). 
+Since our only repeatable access to lunar gravity 
+is in the NASA GRC 5.2 second drop tower, 
+using a centrifuge3, testing has been limited to 
+thinner materials that can be tested in 5.2 
+seconds. This paper discusses the result of a test 
+campaign to assess the change in material 
+flammability at lunar gravity levels and to 
+determine if there is a correction factor that could 
+be applied to the results of NASA Test 1 to 
+encompass lunar flammability limits. 
+ NASA habitability requirements dictate that 
+low gravity spacecraft4 demonstrate continuous 
+ventilation in all open areas and there will be 
+buoyant air flow on lunar habitats, so in many 
+cases it is reasonable that NASA’s material 
+</p>
+<p>N
+</p>
+<p> 
+Figure 1. Extinction Boundary for opposed flame spread 
+over thin cellulosic fuel (Ref. 5). This figure combines 
+quiescent and low-speed tests with high-speed wind tunnel 
+tests. The left side represents the quenching branch where the 
+flame extinguishes due to heat loss and the right side is the 
+blowoff branch where the flow rate exceeds the chemical 
+reaction rate, so the flame is blown off the fuel. These two 
+mechanisms combine to establish a limiting oxygen 
+concentration at the intersection of the two sides. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>3 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>flammability testing is based on blow-off limits where air flow dominates the transport rather than the diffusion 
+quenching possible at very low flow conditions. However, it is possible that some materials will experience quenching 
+extinction rather than blow-off at lunar or Martian gravity levels. This important issue is addressed in this work. 
+</p>
+<p>II. Flammability Limits 
+The existence of a low-speed quenching extinguishment boundary and a higher speed blowoff boundary was 
+</p>
+<p>predicted numerically for solid fuels in stagnation flow5. This phenomenon was subsequently shown experimentally6 
+for thin cellulosic materials in opposed flow (Fig 1). Fire and flames can be divided into several classes: gaseous 
+(premixed and nonpremixed (diffusion)), with diffusion flames including gaseous flames and liquid and solid fuels 
+(charring, noncharring and surface burning), and smoldering combustion of solid fuels. This paper will discuss solid 
+fuel combustion with some overlap with surface smoldering/char combustion as schematically depicted in figure2. 
+With the exception of smoldering combustion and burning of metals and carbon, all materials burn in the gas phase. 
+This fuel phase-change creates a fundamental difference between condensed fuel combustion and that of gaseous 
+fuels. Continued burning of the fuel requires sufficient energy feedback from the flame to the fuel to pyrolyze or 
+vaporize more fuel. This feedback controls the flame size and spread rate. Extinction of the gaseous flame also occurs 
+by different processes than extinguishment of the smoldering char phase. Many of the nonmelting compounds that 
+must pyrolyze to burn, do not completely convert to gaseous compounds and instead also produce a substantial mass 
+fraction of char which is primarily carbon and burns in the solid phase. This class of fuels are known as charring fuels 
+of which the most common example is cellulosic materials (wood, cotton, paper). The glowing coals are the surface 
+combustion of the char residue from the pyrolysis. Many important spacecraft materials (Nomex and Kevlar) are also 
+charring materials. This work will focus on extinguishment of the gas phase flame over the solid fuel rather than the 
+surface reaction of the charring solid. 
+</p>
+<p>Flame spread over solid fuels is often modeled as a progressive ignition process where the flame heats the next 
+portion of fuel to produce the necessary fuel vapor and then provides the ignition pilot, enabling the flame to spread 
+forward7,8. Figure 28 depicts the most important transport processes in an upward spreading flame. The flame base at 
+the bottom end of the flame is the attachment point of the flame 
+where oxygen diffuses to the flame surface from the free stream and 
+reacts with the fuel vapor emerging from the fuel surface by surface 
+blowing and diffusion. If the incoming oxidizer flow is too fast for 
+the flame chemistry, the flame will be blown downstream (blowoff). 
+</p>
+<p>Beneath the flame is a region designated as the pyrolysis length. 
+This region of fuel has been heated to the pyrolysis temperature and 
+is emitting the unburned fuel vapor that supports the flame. Further 
+downstream is the heating length portion of the fuel which is being 
+heated from ambient temperature to the pyrolysis temperature by the 
+flame. The major transport mechanisms for a thin fuel are 
+convective/conductive heating of the fuel by the flame, radiative 
+heating of the fuel by the flame, and radiative heat loss from the fuel. 
+As the fuel becomes thicker, conductive transport in the solid phase 
+fuel becomes more significant although for upward buoyant spread, 
+heat transfer from the gas phase has been shown to be remain more 
+significant than conduction in the solid phase9. The process is similar 
+for opposed (downward) flame spread except the view factor for 
+radiation from the flame to the fuel surface (Qfr*) becomes less 
+significant and the preheat length is shorter. 
+</p>
+<p>Under normal gravity conditions, concurrent flame spread is faster than opposed flow flame spread and often 
+grows continuously until the fire becomes quite large. Opposed spread can achieve steady conditions in normal 
+gravity. The Saffire experiment found that both concurrent and opposed spread could be steady for samples roughly 
+0.8 m in length for a thin cellulosic fuel10. The progressive or creeping ignition process has been represented as the 
+ratio of the heated length and the time to heat this length of fuel to the pyrolysis temperature and to ignite the gas.7,8 
+</p>
+<p> 𝑉 𝑙 / 𝑡 𝑡 ) (Eq. 1) 
+Where 𝑉 is the flame spread rate, 𝑙 is the heated length, 𝑡 is the solid pyrolysis time and 𝑡 is the gas-phase 
+</p>
+<p>ignition time. The solid pyrolysis time can be estimated (Eq. 2) by calculating the energy needed to raise the fuel 
+temperature to the pyrolysis temperature 𝜌 𝑐 𝑑 𝑇 𝑇 for a thin fuel and dividing it by the sum of the heat fluxes 
+</p>
+<p>Figure 2. Schematic diagram of 
+concurrent flame spread over a thick 
+sample8. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>4 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>(convective flux to the sample, radiative loss from the solid and radiative flux to the sample from the flame). The 
+formulation is similar for a thick solid, but this discussion will focus on thermally thin solids. 
+</p>
+<p> 𝑡 
+ 
+</p>
+<p> 
+ (Eq. 2) 
+</p>
+<p>Where h is the convective heat transfer coefficient; 𝑞′′ is the flame radiant flux to the solid; 𝑞′′ is the external 
+radiant flux; 𝑞′′ is the re-radiation from the solid surface; 𝜌 , 𝑐 are solid density and specific heat; d is the solid 
+thickness; 𝑇 and 𝑇 are the pyrolysis and initial temperatures of the solid. 
+</p>
+<p>Using the approximations developed by Niioka11, Thomsen8 developed a simplified relationship for 𝑡 based on 
+the Damköhler number which is the ratio of the flow time to the chemical reaction time (Da= tfl/ tch) and is used to 
+capture the chemical reaction rate in the parameter related to the ratio of the critical Damköhler number (Dacr) of the 
+problem and the local Damköhler number (Dax). 
+</p>
+<p>𝑡 𝐶 𝑡 ln 1
+ 
+</p>
+<p> (Eq. 3) 
+</p>
+<p>Where the numbering convention for coefficients is taken from Pello7. For flow dominated transport, the 
+Damköhler number is the ratio of the flow time to the chemical time. 
+</p>
+<p>𝐷𝑎 (Eq. 4) 
+</p>
+<p>where 𝑙 is the characteristic length and 𝑞 is the reaction rate which is calculated using Arrhenius kinetics for flow 
+dominated transport.8 
+</p>
+<p>𝐷𝑎 𝐴 exp 𝑋 𝑋 (Eq. 5) 
+</p>
+<p>Where 𝐴 and 𝐸 are the pre-exponential factor and activation energy, 𝑅 is the universal gas constant, 𝑋 is 
+the mole fraction of fuel, and 𝑋 is the mole fraction of fuel and oxygen respectively, and 𝑃 is ambient pressure, 𝑎 
+and 𝑏 represent the order of the reaction and are assumed to be unity. In the blowoff regime, the Damköhler number 
+identifies when the reaction rate is sufficiently high that the flame can keep up with the flow field and not blow off. If 
+the number is small, the chemical time is larger than the flow time. In equation 5 it is clear that increased air flow (u∞) 
+decreases the Da and increasing the oxygen concentration or the temperature increases the Da. 
+</p>
+<p>Combining equations 2 and 3 through equation 1 gives the formulation for the flame spread rate for thin fuels 
+yields equation 6. 
+</p>
+<p>𝑉 𝑙
+ 
+</p>
+<p>𝐶 𝑡 ln 1
+ 
+</p>
+<p> (Eq. 6) 
+</p>
+<p>The first term in the bracketed factor is the heat transfer term which comprises the heat transfer processes that 
+define the pyrolysis time (specific heat versus heat transport). The second term is the chemical kinetics term that 
+defines the ignition time. 
+</p>
+<p>As the spread rate approaches zero, the Limiting Oxygen Concentration (LOC) for flame spread has been achieved 
+and can be assumed to be very close to the extinction limit. Rearranging equation 6, we can examine the mechanisms 
+for the LOC in the section below. 
+</p>
+<p>𝑉 
+ 
+</p>
+<p> 
+ (Eq. 7) 
+</p>
+<p>A. Heat Transfer Limit / impact of external heating: 
+If the radiative loss from the sample 𝑞 equals the other forms of heat supply to the fuel, the numerator in equation 
+</p>
+<p>7 will equal zero and the flame will extinguish. This is referred to as the Heat Transfer Limit (HTL) or the Quenching 
+limit which is the left side of the LOC curve in figure 1. In marginal cases, the heat from external sources 𝑞 can 
+have a significant effect in supporting the flame. The effect of external heating on flame spread and ignitability has 
+been studied both with the ASTM E 132112 (LIFT) test and using the cone calorimeter as reported by Quintiere13. As 
+seen in figure 3, at low flux levels, external heating increases the spread rate and at higher levels it reduces the piloted 
+ignition delay. This external energy input does not have to occur simultaneously with the fire event, as it will increase 
+T0 which will increase the spread rate. Preheating of the fuel by an external source can reduce the time to ignition or 
+the oxygen limit14, 15. 
+</p>
+<p>Again, using the numbering convention for coefficients from Pello7, the energy balance in the numerator can be 
+expanded to: 
+</p>
+<p>𝐶 𝑘 𝜌 𝑐
+/
+</p>
+<p> 𝑇 𝑇 𝐹 𝜀𝜎 𝑇 𝑇 𝐹 𝜀𝜎 𝑇 𝑇 𝑞 0 (Eq. 8) </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>5 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>In the case of 
+upward flame spread 
+with no external 
+heating, the last term 
+can be neglected and 
+for near HTL flames, 
+the radiative 
+transport from the 
+flame to the solid can 
+be expected to be 
+small due to the small 
+size of the flames on 
+the quenching side. 
+This will cause the 
+radiative transport 
+from the flame to the 
+solid to be small due 
+to the limited view 
+factor. That leaves a 
+balance between the 
+first two terms: 
+conductive transport 
+to the fuel and 
+radiative loss from 
+</p>
+<p>the solid. The gas properties and the flow rate are all low order while the fuel pyrolysis temperature (Tp) is fourth 
+order. This suggests that high temperature materials with a high Tp will have a HTL that is significantly displaced to 
+higher velocities.16 
+</p>
+<p>B. Chemical Kinetic Limit (Damköhler number Dax reaches the critical Damköhler number Dacr) 
+As the gas velocity increases, the Damköhler number decreases (flow residence time decreases compare to reaction 
+</p>
+<p>time). When it reaches the critical Damköhler number Dacr then ln 1 ∞ (where Da is calculated using 
+</p>
+<p>equation 5) so the denominator in equation 7 becomes infinite (reaction time is infinite) and the flame extinguishes. 
+This determines the right-hand side of the LOC curve in figure 1. This is also known as the Chemical Kinetic Limit 
+(CKL) or the blow-off limit because the flame can often be seen to be blown downstream. Combining predictions of 
+the Heat Transfer Limit and the Chemical Kinetics Limit, the LOC curve can be predicted. The details of the prediction 
+of the limits are described elsewhere8. 
+</p>
+<p>These analyses were combined in8 to calculate the extinction limits and produce figure 48. For each limit it was 
+necessary to adjust one parameter (C1) in equation 8 and a parameter (𝐴 ) in equation 5. The combined limits do an 
+excellent job of recovering the flammability diagram. Takahashi and co-workers assembled a similar analysis16 for 
+opposed spread for a variety of polymers over forced flow in normal gravity to low-gravity conditions. Fundamentally, 
+the approach followed here analytically describing the extinction limits of thin materials is consistent with that 
+developed by Takahashi et al.16 An important difference is that in Takahashi’s analysis the heat transfer and chemical 
+kinetics terms were derived phenomenologically with a scaling analysis, while in this work they are derived from a 
+rigorous analysis of the ignition of a solid in a hot boundary layer flow7, 17. The boundary layer analysis is based on 
+the novel and rigorous analysis by Niioka and co-workers17 on the ignition of a solid fuel in a stagnation point flow. 
+Both works successfully address the problem with similar concepts, basing the flame extinction problem in terms of 
+heat transfer and chemical kinetics processes. 
+</p>
+<p>Experimental Method 
+The goal was to measure the change in the extinction limit between 1-g testing and lunar-g testing in the centrifuge. 
+</p>
+<p>NASA Test 1 has a 15 cm (6 inch) burn criterion, so the test time is much longer than the 5 seconds available in the 
+drop tower. Consequently a 5 second extinction criterion test program was developed to determine the change in the 
+extinction limit in 1-g and lunar-g and apply this offset to NASA Test 1 flammability limits for lunar material 
+certification. The approach used in this test program was to conduct a study of concurrent-flow flammability-limits in 
+</p>
+<p> 
+Figure 3. Flammability diagram for PMMA13 using a cone calorimeter for the 
+ignition testing and a radiatively heated flame spread apparatus [12]. Proceeding 
+from the right, the time to ignition (right axis) increases exponentially as the external 
+heat flux decreases until the minimum (critical) heat flux necessary for ignition. At heat 
+fluxes below the critical flux, the material will burn and proceeding from the left, the 
+spread rate increases with heat flux. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>6 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>the planned NASA lunar habitat pressure of 56.5 kPa (8.2 psia) for several materials where the higher speed blow-off 
+behavior in 1-g could be compared to the flame extinguishment in lunar-gravity buoyant flow. This required a test 
+program that included work at the NASA White Sands Test Facility (WSTF) for the 1-g buoyant flow testing and the 
+NASA Glenn Research Center (GRC) Zero-Gravity Research Facility (ZGRF) for a quiescent lunar gravity 
+environment. Major challenges of this comparison were the inherent difference in the ignition due to the orientation 
+as will be described below and the short test time provided by the ZGF (5.2 seconds). This 5.2 second limitation 
+required the testing to be based on a 5 second extinction limit rather than the 15 cm (6 inch) burn limit in NASA Test 
+1. Since the testing was targeting a flammability limit rather than an ignition limit, the materials were ignited in a 
+known flammable condition and the environment was changed to the test condition by reducing the oxygen 
+concentration (ZGRF) or increasing the gas velocity (WSTF). 
+</p>
+<p>A. NASA White Sands Test Facility (WSTF) Upward High-flow Oxygen Index Testing 
+The WSTF testing was conducted using a WSTF 1.4 m3 (50 ft3) 
+</p>
+<p>chamber that could provide continuous operation at 57 kPa. Installed 
+in the chamber was a 7.4 cm ID by 30 cm long quartz tube duct (Fig 
+5) where the 5.2 cm by 14.0 cm samples were tested. This system was 
+based on the HOI ISO Standard.18 Below the test section was a flow 
+conditioning section above an inlet plenum. The flow was supplied 
+by a mass flow system which established the desired oxygen 
+concentration and flow rate. The sample material was sandwiched 
+between two, u-shaped, thin stainless-steel plates with the open end 
+oriented downwards towards the igniter. The igniter was a retractable 
+2.2 mm OD ceramic rod that swung away from the sample after 
+ignition. The ceramic rod was heated by 0.29 mm Kanthal-A wire 
+woven through the 4 holes in the ceramic. The front and the back of 
+the sample were recorded by video cameras. After installation in the 
+flow duct, and pressure was established in the chamber, the sample 
+was exposed to a 10 cm/s primer flow at the target oxygen 
+concentration. The igniter was activated until the sample was ignited. 
+The igniter was retracted, and the flame was allowed to establish for 
+1 second before the flow was increased to the test condition at the 
+same oxygen concentration. The flow increase occurs in 
+approximately a second. If the flame extinguished in 5 seconds, it was 
+</p>
+<p> 
+Figure 4. Heat transfer limit and chemical kinetic limit calculated by equations 8 and 9 respectively for 
+thin paper and thin PMMA (from Thomsen et al. 8). 
+</p>
+<p> 
+Figure 5. Flow Duct and flow 
+conditioner at WSTF. Lower portion is 
+the flow straightener, top portion 
+contains the sample. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>7 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>considered to have extinguished (passed the test). If the flame was burning at 5 seconds, it was deemed to have not 
+extinguished (failed the test). In this upward configuration the unburned sample was directly heated by the energy of 
+the igniter-assisted combustion and the preheating during the primer flow period. If the sample was flammable, the 
+test was repeated at a lower oxygen concentration until a condition was found where 5 sequential tests extinguished 
+(passed). 
+</p>
+<p>B. NASA Glenn Research Center (GRC) Partial Gravity Testing 
+The GRC testing was conducted using the centrifuge test facility in the ZGRF 5.2 second drop tower (Fig. 6).3 The 
+</p>
+<p>chamber is 299 l in volume with an I.D. of 81.2 cm and an internal height if 30.5 cm. To achieve lunar gravity, the 
+chamber was rotated at 20.4 RPM for several minutes before the drop (I.e. onset of microgravity) to bring the air in 
+the chamber to near solid body rotation. In this configuration, (during the drop) the gravity vector was radially 
+outwards, and the resulting buoyant flow was radially inward To achieve upward spread the long axis of the sample 
+is oriented radially and ignited on the outside edge so the resulting buoyant flow is concurrent with the direction of 
+flame spread. Owing to the short radius of rotation, there was a significant gravity gradient. The flames, however, 
+(especially when near the extinction limits) did not spread significantly during the drop, so the g-variation was 
+considered to have a minimal impact on the results. The short radius of rotation also caused a significant Coriolis force 
+in the tangential direction19. Initial tests found that the effect was mitigated by orienting the sample surface parallel to 
+the axis of rotation (long edge down) so the Coriolis flow was impeded by the sample surface. The igniter was a 
+ceramic igniter very similar to the one used at WSTF except it withdrew vertically. To increase the number of tests 
+for repeatability, two samples were ignited and tested in each drop. The samples were several cm apart and offset 
+vertically (Fig. 6) so they did not interfere with each other. The ignition region of the sample was exposed to a slow 
+flow (~30 cm/s) of gas with an oxygen concentration 5 to 10% higher than the ambient. This enabled sample ignition 
+in a chamber condition where the sample might be near the flammability limit. During the ignition interval, the drop 
+rig is hanging at the top of the tower and is spinning to produce a 1/6 g radial acceleration in addition to the 1-g vertical 
+force. This resulting buoyant flow primarily directed laterally across the sample is less successful at heating the 
+unburned sample than the purely upward flow at WSTF. The drop tower operations require the system to operate 
+autonomously so the entire process was controlled automatically by the drop rig. The ignition duration and the oxygen 
+enhancement were varied based on experience with ignitability of the material being tested. After a prescribed 
+duration, the igniter is turned off and retracted. One second later, the oxygen enhanced flow is turned off and the 
+package is released. At this point, the flow is entirely driven by buoyancy. Since the bulk of the chamber is already at 
+the target atmosphere, the buoyant flow immediately sweeps in the target conditions. Both samples were observed 
+with separate front and edge view cameras. In post-test video analysis, if the sample was still burning at the end of the
+</p>
+<p> 
+</p>
+<p> 
+Figure 6: Left: GRC Centrifuge rig in 5.2 second drop tower bus. Black dome is raised exposing the deck. 
+Right: samples installed vertically to minimize Coriolis effects. Edge and front view cameras for each sample are 
+visible. Igniter on near sample is retracted and installed on far sample. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>8 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>5 second drop, it was identified as flammable (failed). If it extinguished before the end of the drop, it was identified 
+as non-flammable (passed). Tests were repeated until 4 sequential extinguishments occurred 1% lower in oxygen 
+concentration than a case where it did not extinguish. 
+</p>
+<p>III. Results and Discussion 
+Five materials were tested in both facilities. The results are plotted with oxygen concentration versus force flow 
+</p>
+<p>speed in figures 7-12. All materials were tested in the WSTF facility for at least 4 flow rates (60, 80, 100, 144 cm/s) 
+with PMMA having additional testing at 25 and 40 cm/s. Three of the materials typically fail NASA test 1 (are 
+flammable) in air (PMMA, P213 Tape (fiberglass with an acrylic (PMMA) adhesive), and cotton t-shirt material) and 
+two materials pass Test 1 in air (polycarbonate and Nomex Velcro). The passed (o) and failed (x) tests are all shown 
+on the plot. The limit (black circle) is the highest concentration where 5 (out of 5) consecutive passes were observed. 
+The horizontal axis is what could be measured in the laboratory, the forced flow velocity. Although estimates exist 
+for the buoyant flow of spreading flames,16,20 near the extinction limit, the validity of these estimates is less clear, so 
+the data are plotted with the forced velocity. The lunar gravity centrifuge data is shown with a horizontal line in the 
+lower velocity range because the actual velocity (induced by the simulated gravity) is not known. The lunar-g limit
+</p>
+<p> 
+</p>
+<p> 
+Figure 7: 0.8 mm PMMA Sample, 8.2 psia 
+UHOI values with the best fit for the WSTF data 
+for 60 cm/s and above with the GRC lunar gravity 
+data shown as a horizontal line. 
+</p>
+<p>Figure 8: P-213 Tape sample, 8.2 psia UHOI 
+values with the best fit for the WSTF data with the 
+GRC lunar gravity data shown as a horizontal line. 
+ 
+</p>
+<p> 
+ 
+</p>
+<p>Figure 9: Cotton T-Shirt material (Beefy-T), 8.2 
+psia UHOI values for extinction of the gas phase 
+flame with the best fit for the WSTF data with the 
+GRC lunar gravity data shown as a horizontal line. 
+ 
+</p>
+<p>Figure 10: Cotton T-Shirt material (Beefy-T), 8.2 
+psia UHOI values for smolder extinction with the 
+best fit for the WSTF data with the GRC lunar 
+gravity data shown as a horizontal line. As a charring 
+fuel, cotton exhibits two extinguishment modes, 
+blow off extinction of the flame and extinguishment 
+of the smoldering char. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>9 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>was also found by multiple passes (usually 4) below the lowest oxygen concentration fail. In figures 7, 8 and 9, the 
+lunar-g buoyant limit was found to be less than the extrapolated value (for any assumed buoyant velocity) from the 
+WSTF testing. This result is contrary to expected behavior. The WSTF upward ignition is expected to heat the material 
+more effectively thereby increasing the fuel concentration and increasing the Damköhler number seen in equation 8. 
+The lower extinction concentration for the lunar-g testing for PMMA, P213 and flaming Beefy-T suggest that the 
+buoyant velocity is very low, but it does not correlate with the WSTF data. Various differences in the test methods 
+have been considered (turbulence at high flow rates, ignition times, delay after ignition before initiating the test, 
+oxygen augmentation during ignition, and buoyancy-enhanced ignition heat transfer to the unburned fuel due to the 
+sample orientation with respect to gravity) but have not been definitively found to be the cause. Further study of this 
+unexplained behavior is warranted to before the UHOI can be accepted as a material flammability standard. Comparing 
+the results for polycarbonate with Takahashi’s16 low gravity tests, good agreement is seen in figure 13. Less good 
+agreement is seen for the Nomex tests. This is likely because the Takahashi tested a Nomex fabric while this test series 
+used a much thicker Nomex Velcro product. 
+</p>
+<p>The extinction curves in figure 13 were calculated similarly to figure 4 using the values in table 1 and equations 8 
+and 9. Ambient properties were determined at a reference temperature of 1250 K, which is approximately the mean 
+between Tf and To, rendering: ρg=0.275 [kg/m3], kg=24.35×10-3 [W/mK], cp=1.38×103 [J/kgK]. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+ 
+</p>
+<p>Figure11: Polycarbonate, 8.2 psia UHOI values 
+with the best fit for the WSTF data with the GRC 
+lunar gravity data shown as a horizontal line. 
+</p>
+<p>Figure 12: Nomex Velcro, 8.2 psi UHOI values 
+with the best fit for the WSTF data with the GRC 
+lunar gravity data shown as a horizontal line. 
+</p>
+<p>Table 1 Material Properties used to calculate the limits 
+Property PMMA 21,22 Nomex 23 Polycarbonate24,25 
+𝜌 𝑘𝑔/𝑚 1190 1370 1200 
+𝑐 𝐽/𝑘𝑔𝐾 1400 1255 1150 
+𝜀 0.9 0.9 0.9 
+</p>
+<p>Δ𝐻 𝐽/𝑘𝑔 1350 10 1350 10 1350 10 
+Δ𝐻 𝐽/𝑘𝑔 60.2 10 44.1 10 33.6 10 
+𝐸 𝐽/𝑚𝑜𝑙 125000 408000 200000 
+𝐴 𝑐𝑚 /𝑔𝑠 1.2 10 4.3 10 3.04 10 
+</p>
+<p>a [-] 1 1 1 
+b [-] 1 1 1 
+𝑇 𝐾 618 750 700 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>10 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>A. Compensation Factor Determination 
+The method to determine the compensation factor involved performing a best fit line to the WSTF limit points 
+</p>
+<p>(black circles). The best fit line to those points is the estimated dependence of the limiting oxygen concentration on 
+forced flow velocity. To get a conservative estimate of the slope (and thus the compensation factor) we used the one-
+tailed 95 percent confidence interval. Table 2 shows both the best fit line and the conservative estimate from the 95 
+percent confidence interval. To estimate the change in the flammability limit at 1-g compared to lunar-g, the 
+extrapolated value from the WSTF testing can be compared to the extrapolated value at lunar g. A major limitation to 
+this analysis is identification of the relevant buoyant velocity which is an area worthy of significant research. In a 
+forced-flow low-gravity experiment, the average duct velocity can be known exactly, however, due to effects such as 
+boundary layer growth and thermal expansion, the velocity varies with time and location so while the average duct 
+velocity is representative of the flow field, it is not necessarily the same value as the velocity at the controlling location. 
+For buoyant flames, with or without forced flow, the velocity at any location varies similarly to the non-buoyant case 
+but it is not easily measured, particularly because the location of greatest interest is not known. For flames on the CKL 
+side, the velocity at the flame tip can be assumed to be likely the most important location but this has not been verified 
+or measured accurately. In a buoyant boundary layer, the velocity at the flame tip would not be comparable to the 
+average duct velocity in non-buoyant cases. The 1-g buoyant velocity was estimated by Takahashi16 to be 35 cm/s, 
+but the lunar gravity velocity is not known. The lunar gravity velocity has been estimated20, for spreading flames, by 
+equating the buoyant boundary layer thickness with the forced flow boundary layer. However, both of these estimates 
+are difficult to verify. Furthermore, near the extinction limit, the flame is weaker resulting in less buoyant flow. 
+Consequently, given the absence of a common understanding of the relevant velocity, the buoyant velocity is 
+considered to be not determined in this paper. Given this uncertainty, 35 cm/s could be considered to be a 
+conservatively high estimate of the buoyant 1-g velocity. Since the lunar velocity is also not known, extrapolating to 
+zero flow would give a conservative estimate of the limit. Extrapolating the worst-case 95% confidence interval slope 
+from the data for each material (Table 2) from the presumed 1-g buoyant velocity of 35 cm/s to zero would give a 
+conservative 1-g to lunar-g flammability delta that could be applied to other test methods. These values are tabulated 
+in Table 2. The worst-case delta for these materials can be seen to be 2.3%. 
+</p>
+<p>The Beefy-T smoldering data are included because the NASA emphasis is on complete extinction, however since 
+smoldering is a surface reaction rather than a gas-phase flame, the Damköhler number blow-off limit would not be 
+expected to be applicable. However, it is clear in figure 10 that the extinction shows similar flow dependence. 
+</p>
+<p> 
+Figure 13: Comparison of the Nomex and Polycarbonate data with the opposed flow data of Takahashi16 
+and the polycarbonate and Nomex data with corresponding data of Takahashi. Closed symbols are from 
+this work and open symbols are Takahashi16 the colors identify the material. The closed symbols at ~25 cm/s are 
+the centrifuge data. The predictions are developed as described above with the PMMA and P213 grouped together 
+since both are forms of PMMA. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>11 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Figures 11 and 12 present the extinction data for polycarbonate and Nomex Velcro. For both of these materials, 
+the lunar-g buoyant extinction is at substantially higher oxygen concentrations that the WSTF data. One possible 
+explanation for this is that the quench boundary for these materials shift to higher velocities than seen in the lunar-g 
+tests, putting the lunar-gravity tests on the quenching (HTL) branch. This shift of the HTL could be attributed to 
+increased radiative loss (Eq. 8) resulting from higher pyrolysis temperatures. This mechanism was suggested by 
+Takahashi16 who saw similar behavior for several high temperature materials in downward spread. This mechanism 
+merits additional study as it suggests that high temperature materials may not exhibit enhanced flammability at lunar-
+g. This would be significant because most of the candidate materials for enhanced oxygen use are higher pyrolysis 
+temperature materials. In addition, this behavior requires additional study because there may still be a flammability 
+enhancement at Martian-g levels since Martian buoyant flows may still be on the blow-off (CKL) branch. 
+</p>
+<p>IV. Conclusion 
+Comparative testing in 1-g under forced flow and buoyant flow at lunar-g conditions has demonstrated that for 
+</p>
+<p>some materials, there is a clear increased flammability at lunar gravity conditions. Other, higher temperature materials 
+may show decreased flammability at lunar conditions than would be predicted from 1-g testing. This suggests that 
+increased flammability at lunar conditions may not be a universal issue, however further research is needed to validate 
+this possibility. At Martian g-levels, the buoyant flow will be higher and increased flammability is possible for 
+materials that do not exhibit it at lunar-g levels. 
+</p>
+<p>Acknowledgments 
+The authors would like to acknowledge the support of the testing teams at the NASA GRC Zero-Gravity facility 
+</p>
+<p>and the NASA WSTF. The support of the NASA Engineering and Safety Center (NESC) and the Mars Campaign 
+Office are gratefully acknowledged. 
+</p>
+<p>References 
+[1] NASA STD 6001 NASA-STD-6001B Flammability, Offgassing, and Compatibility Requirements and Test Procedures, 
+</p>
+<p>National Aeronautics and Space Administration. Washington, DC, 2011. 
+[2] Sacksteder, K.R., and T'ien, J. S., “Buoyant Downward Diffusion Flame Spread and Extinction in Partial Gravity 
+</p>
+<p>Accelerations,” Twenty-Fifth Symposium (International) on Combustion, The Combustion Institute, Pittsburgh, PA, 1994, pp. 
+1685-1692. 
+</p>
+<p>[3] Ferkul, P.V., and Olson, S.L., "Zero-gravity centrifuge used for the evaluation of material flammability in lunar gravity." 
+Journal of Thermophysics and Heat Transfer Vol. 25, no. 3, 2011, pp. 457-461. 
+</p>
+<p>[4] NASA-STD-3001, Volume 2, Revision D, Nasa Spaceflight Human-System Standard, Volume 2: Human Factors, 
+Habitability, And Environmental Health, National Aeronautics and Space Administration. Washington, DC, 2011. 
+</p>
+<p>[5] Foutch, D.W., and T’ien, J.S., “Extinction of a Stagnation-Point Diffusion Flame at Reduced Gravity,” AIAA Journal, Vol. 
+25, No. 7, 1987, pp. 972-976. 
+</p>
+<p>[6] Olson, Sandra L., Ferkul, Paul V., and T'ien, James S., “Near-Limit Flame Spread Over a Thin Solid Fuels in Microgravity,” 
+Twenty-Second Symposium (International) on Combustion, The Combustion Institute, Pittsburgh, PA, 1988, pp.1213-1222. 
+</p>
+<p>[7] Fernandez-Pello, A. C. "The solid phase," Combustion Fundamentals of Fire, 1995, pp. 31-100. 
+</p>
+<p>Table 2 Flammability Compensation Factors 
+Extinction Limit Slope for Oxygen 
+Concentration Versus Flow Rate 
+</p>
+<p> 
+</p>
+<p>Best Fit Slope 
+(s/cm) 
+</p>
+<p>95% Confidence 
+Interval Slope (s/cm) 
+</p>
+<p>∆O2% (at 35 cm/s) for 95% 
+Confidence Interval 
+</p>
+<p>PMMA 0.00022 0.00056 1.9 
+</p>
+<p>Polycarbonate 0.00040 0.00065 2.3 
+</p>
+<p>Nomex Velcro 0.000016 0.000090 0.32 
+</p>
+<p>P 213 0.00030 0.00040 1.4 
+</p>
+<p>Beefy-T (flaming) 0.00017 0.00023 0.82 
+</p>
+<p>Beefy-T (smolder) 0.00034 0.00050 1.8 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>12 
+International Conference on Environmental Systems 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>[8] Thomsen, M., Fernandez-Pello, C., Urban, D.L., and Olson, S., “Extinction of Opposed Flame Spread Over Thin Solids”, 
+13th Mediterranean Combustion Symposium, Corfu, Greece, June 1-5, 2025. 
+</p>
+<p>[9] Ito, A. and Kashiwagi, T.,. “Characterization of flame spread over PMMA using holographic interferometry sample 
+orientation effects, “ Combustion and Flame, Vol. 71 No 2., 1988 pp.189-204. 
+</p>
+<p>[10] Urban, D.L., Ferkul, P.V., Olson, S.L., Ruff, G.A., Easton, J., James, J.S., Liao, Y.T., Li, C., Fernandez-Pello, C., Torero, 
+J.L., Legros, G., Eigenbrod, C., Smirnov, N., Fujita, O., Rouvreau, S., Toth, B., Jomaas, G., "Flame spread: Effects of Microgravity 
+and Scale," Combustion and Flame, Vol. 199, 2019, pp. 168-182. 
+</p>
+<p>[11] Niioka, T., “Ignition time in the stretched-flow field, ” 18th Symposium (International) on Combustion, 1981 pp. 1807-
+1813. 
+</p>
+<p>[12] ASTM E 1321 ASTM. Test Method for Determining Material Ignition and Flame Spread Properties, ASTM E 1321. 
+ASTM International: Conshohocken, PA. 
+</p>
+<p>[13] Quintiere, J. G., "A theoretical basis for flammability properties." Fire and Materials: An International Journal Vol. 30, 
+No. 3, 2006, pp. 175-214. 
+</p>
+<p>[14] Hirsch, D., Motto, S., Hshieh, F.Y., and Beeson, H., "Limiting Conditions for Flammability of Polymers," SAE 
+Transactions, 2004, pp. 370-373. 
+</p>
+<p>[15] Martinka, J., Balog, K., Chrebet, T., Hroncová, E., and Dibdiaková, J., "Effect of oxygen concentration and temperature 
+on ignition time of polypropylene," Journal of Thermal Analysis and Calorimetry, Vol. 110, No. 1, 2012, pp. 485-487. 
+</p>
+<p>[16]Takahashi, S., Terashima, K., bin Borhan, M.A.F., and Kobayashi, Y., "Relationship Between Blow-Off Behavior and 
+Limiting Oxygen Concentration in Microgravity Environments of Flame Retardant Materials." Fire Technology, Vol. 56, 2020, 
+pp. 169-183. 
+</p>
+<p>[17] Niioka, T., Takahashi, M. and Izumikawa, M., “Gas-phase ignition of a solid fuel in a hot stagnation-point flow,” 
+Symposium (International) on Combustion, Vol. 18, pp. 741-747, 1981. 
+</p>
+<p>[18] “Plastics — Determination of Burning Behaviour by Oxygen Index —Part 4: High gas velocity test,” International 
+Standard, ISO 4589-4:2021(E), Geneva, Switzerland. 
+[19] Lojo, A.Z., Sharma, A., Liao, Y.T., Johnston, M.C., and Ferkul, P.V., "A Numerical Study of Liquid Fuel Wick Flames 
+</p>
+<p>in Artificial Partial Gravity in a Centrifuge Facility," 51st International Conference on Environmental Systems, 2022. 
+[20] Thomsen, Maria, Carlos Fernandez-Pello, David L. Urban, and Gary A. Ruff. "On simulating the effect of gravity on 
+</p>
+<p>concurrent flame spread over thin paper through variations in ambient pressure." Combustion and Flame Vol. 232, 2021, 111538. 
+[21] Fernandez-Pello, C., Ray, S.R., Glassman, I., “Flame Spread in an Opposed Forced Flow: The Effect of Ambient 
+</p>
+<p>Oxygen Concentration,” Symposium (International) on Combustion, Vol. 18, pp. 579–589, 1981. 
+[22] Fereres, S., Fernandez-Pello, C., Urban, D.L., Ruff, G.A., “Identifying the Roles of Reduced Gravity and Pressure on 
+</p>
+<p>the Piloted Ignition of Solid Combustibles,” Combust Flame, Vol. 162, pp. 1136–1143, 2015. 
+[23] DuPont, Technical Guide for NOMEX Brand Fiber, 2001. 
+[24] Siddiqui, M.N., Redhwi, H.H., Antonakou, E.V., Achilias, D.S., “Pyrolysis Mechanism and Thermal Degradation 
+</p>
+<p>Kinetics of Poly(Bisphenol A Carbonate)-Based Polymers Originating in Waste Electric and Electronic Equipment”, J Anal Appl 
+Pyrolysis Vol. 132, 2018, pp. 123–133. 
+</p>
+<p>[25] Walters, R.N., Hackett, S.M., Lyon, R.E., “Heats of Combustion of High Temperature Polymers,” Fire and materials, 
+2000, Vol. 24, No. 5, pp.245-252. </p>
+<p></p>
+</div>
+</body></html>

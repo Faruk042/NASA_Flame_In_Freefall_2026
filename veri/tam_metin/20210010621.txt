@@ -1,0 +1,1145 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ICES-2021-271 
+ 
+ 
+
+Modeling the Uptake of Hydrogen Chloride onto Interior 
+
+Spacecraft Materials 
+Justin E. Niehaus1,2, Suleyman A. Gokoglu3, Gordon Berger5, John Easton6 
+
+NASA Glenn Research Center, Cleveland, OH, 44135 
+
+Sandip Mazumder4 
+
+Ohio State University, Columbus, OH, 43210 
+
+Hydrogen chloride (HCl) is a major combustion product from the pyrolysis of polyvinyl chloride (PVC) 
+
+insulated electrical wires, a common spacecraft fire safety concern. Models at two different scales were 
+
+developed to predict HCl uptake on anodized, chromate conversion coated (Iridite), and bare aluminum 
+
+surfaces, as well as on Nomex fabric: a macroscopic one-step global surface reaction model where all the active 
+
+sites are on the exterior surface, and a pore model where the interior active sites deeper into the oxide layer 
+
+can also be accessed by HCl. Experiments were performed to calibrate kinetic and diffusion constants in the 
+
+models. A cast acrylic test cell was used to measure the differences between the inlet and outlet concentration 
+
+of HCl after inserting a sample rod of the test material. For the materials with a thin (< 200 µm) or no oxide 
+
+layer, the macroscopic surface reaction model adequately predicts the experimental measurements. For the 
+
+anodized aluminum with a thicker oxide layer, the pore model provided a better match to experimental results. 
+
+The results will be discussed with respect to the spacecraft fire safety project (Saffire). 
+
+ 
+
+Nomenclature 
+
+A = Pre-exponential factor, 1/s 
+
+Apo = Surface area of pore, m
+2
+ 
+
+Asample = Surface area of aluminum sample, m
+2
+ 
+
+c = Concentration, mol/m3 
+
+CO2 = Carbon dioxide 
+
+Deff = Effective diffusion coefficient, m
+2/s 
+
+Dop = Diffusion coefficient through the open pore, m
+2/s 
+
+Dpl = Diffusion coefficient through the product layer, m
+2/s 
+
+Ea = Activation energy, J 
+
+ε = Coverage dependence for activation energy 
+
+εop = Volume fraction of open pore 
+
+εpl = Volume fraction of product layer 
+
+HCl = Hydrogen chloride 
+
+HCN = Hydrogen cyanide 
+
+HF = Hydrogen fluoride 
+
+H2O = Water 
+
+ISS = International Space Station 
+
+k = Reaction rate constant for surface model, 1/s 
+
+kr = Reaction rate at pore wall, m/s 
+
+�̇� = Mass flow rate, kg/s 
+M = Molar mass, kg/mol 
+
+MFC = Mass flow controller 
+
+ 
+1 Engineering Scientist, NASA Glenn Research Center, 21000 Brookpark Rd., MS 77-5, Cleveland, OH 44135 
+2 PhD Student, Ohio State University, 201 West 19th Avenue, Columbus, OH 43210 
+3 Senior Scientist, NASA Glenn Research Center, 21000 Brookpark Rd., MS 77-5, Cleveland, OH 44135 
+4 Professor, Ohio State University, 201 West 19th Avenue, Columbus, OH 43210 
+5 Research Associate, Universities Space Research Association, 21000 Brookpark Rd., MS 110-3, Cleveland, OH 
+
+44135 
+6 Associate Staff Scientist, Case Western Reserve University, 21000 Brookpark Rd., MS 110-3, Cleveland, OH 44135 
+
+ 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+2 
+
+ppm = Parts per million 
+
+PMMA = Polymethyl methacrylate 
+
+PVC = Poly(vinyl chloride) 
+
+XPS = X-ray photoelectron spectroscopy 
+
+R = Universal gas constant, J/(mol-K) 
+
+�̇� = Reaction rate, kmol/(m3-s) 
+S.E. = Standard error 
+
+SEM = Scanning electron microscope 
+
+T = Temperature, K 
+
+ρsite = Surface site density, mol/m
+2 
+
+θ = Surface coverage site fraction 
+
+µ = Site dependent exponential factor 
+
+2D = Two dimensional 
+
+ 
+
+I. Introduction 
+
+Electrical fires are a common spacecraft safety concern. Acid gases, such as hydrogen chloride (HCl), hydrogen 
+
+fluoride (HF) and hydrogen cyanide (HCN) are combustion products from the pyrolysis of electrical wire insulation 
+
+typically found inside a spacecraft. It is important to track acid gases for potential fire detection applications as well 
+
+as general crew health and safety concerns. Unlike other combustion products such as CO2 and H2O, acid gas does 
+
+not stay in the atmosphere long because it rapidly interacts with surfaces1,2. Knowing the capacity and rate of acid gas 
+
+uptake of surfaces will determine how much stays in the atmosphere for detection purposes, as well as determining 
+
+when the cabin becomes safe for habitation after a fire. Determining the uptake by the surfaces and the products 
+
+contained within the surface will help with the post fire cleanup effort. 
+
+ Aluminum is a metal abundantly found inside a spacecraft, due to its strong and lightweight nature. Like most 
+
+metals, aluminum has a natural oxide layer that protects it from corrosion. This oxide layer is often enhanced with 
+
+surface treatments such as chromate conversion (Iridite) and anodization3,4,5,6. The oxide layer, referred to as aluminum 
+
+oxide or alumina is affected by the water vapor in the atmosphere, changing its structure and reactivity7,8. Alumina 
+
+has been shown to uptake HCl from the atmosphere9,10,11. 
+
+Another common material found inside a spacecraft is Nomex, a flame-resistant synthetic polymer related to nylon. 
+
+This commercially available material is used for cargo storage bags and as a fire barrier. It is particularly abundant in 
+
+cargo vehicles like Cygnus where Nomex bags are used to contain trash and other items to be removed from the 
+
+International Space Station (ISS). This material has also been shown to uptake acid gases12. 
+
+ Previous work has shown that HCl uptake on anodized aluminum is significantly more than an Iridite treated or 
+
+stock aluminum with a natural oxide layer9,10. While the oxide layer is significantly thicker for anodized aluminum, 
+
+the structure is also unique. Anodized aluminum form reproducible circular pores, often in a hexagonal array13,14,15. 
+
+This adds additional surface area, and the HCl can diffuse down into the pores. Hence, a modeling approach which 
+
+accounts for these factors is expected to provide more accurate uptake predictions. 
+
+ This work builds upon earlier studies in predicting the interaction of HCl with materials in the context of a 
+
+spacecraft fire9,10,16. A two-dimensional (2D) axisymmetric model of the test cell was previously developed to capture 
+
+the interaction of HCl with aluminum and was expanded to predict HCl uptake by Nomex. This model, referred to as 
+
+the “surface model”, features a one-step global surface kinetic rate with parameters that were calibrated from a baseline 
+
+experimental case. A second model was developed to capture the physics taking place in the scale of the oxide layer. 
+
+This model captured the diffusion of HCl into the open pores inside the oxide layer of the anodized aluminum surface, 
+
+The analysis in this work shows that the surface model can predict the uptake of HCl by Nomex and the thin oxide 
+
+layer aluminum surfaces (stock and Iridite); however, for anodized aluminum, the oxide layer needs to be modeled to 
+
+predict the uptake of HCl and to determine the depth chlorine diffuses into the oxide layer. 
+
+ 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+3 
+
+II. Experimental Methods 
+
+An apparatus was constructed that was used in previous studies to determine the uptake of HCl by surfaces of 
+
+interest9,10,16. Hard samples such as aluminum were fashioned into circular rods of 2.54 cm diameter to be inserted 
+
+into the test cell after it had been saturated with HCl. For fabrics, the sample was wrapped around an acrylic rod that 
+
+was inserted into the test cell after it had been saturated. Figure 1 shows the experimental setup. 
+
+The test cell is made of cast acrylic due to its low reactivity with acid gases. For this experimental series, HCl was 
+
+injected from a source bottle with a concentration of approximately 50 ppm in air. The air used for dilution is zero 
+
+ultra-high purity. Mass flow controllers (MFC) allowed for the flow of HCl and diluting air up to 5000 cubic 
+
+centimeters per minute (ccm) with an accuracy of 50 ccm. HCl was measured with an accuracy of 0.1 ppm at the inlet 
+
+of the test cell to confirm the gas mixture, and at the outlet. These two measurements were used to determine the 
+
+amount of HCl adsorbed on the surface. 
+
+A typical experiment would start by making HCl flow into the empty test cell until adsorption onto the walls of 
+
+the test cell reached equilibrium. This was deemed to have been achieved when the inlet and outlet sensors reached 
+
+equal values. A total flow of 1000 ccm was used in all tests. After saturation, the sample was inserted into the test cell 
+
+and the HCl sensor responses were recorded. 
+
+The 6061-T6 aluminum rods used in this study were anodized by MIL-A-8625F Type II Class 1, were treated by 
+
+chrome conversion (Iridite) using MIL-DTL-5541F Type I, or left untreated. The Nomex used was HT90-40 (Stern 
+
+and Stern Industries Inc., Hornell, NY, USA). 
+
+III. Modeling 
+
+Two types of models were considered: a surface model and a pore model. The surface model is a model of the test 
+
+cell and was developed to calibrate surface kinetic parameters of a one-step global surface reaction. The predictions 
+
+from this model proved accurate for thin (under 200 nm) oxide layer surfaces and Nomex but were less suited for 
+
+thicker oxide layer surfaces. Therefore, the pore model was adopted, which accounts for the diffusion of HCl into the 
+
+pores of the anodized aluminum oxide layer, and the reaction of that HCl with the pore walls. Figure 2 shows a 
+
+schematic of the model with the boundary conditions. 
+
+A. Surface Model 
+
+The surface model is a 2D axisymmetric model of the test cell, which solves the conservation equations of mass, 
+
+momentum and species using computational fluid dynamics (CFD) code Fluent. A brief review of the model is given 
+
+below. A comprehensive review can be found in previous works including mesh and time independence, calibration 
+
+and validation of the model9,10. The global reaction utilized by the model is shown by Eq. (1). 
+
+ 
+
+ 𝐻𝐶𝑙(𝑔) + 𝑠 → 𝐻𝐶𝑙(𝑠) (1) 
+ 
+
+ 
+Figure 1. Schematic of test apparatus. When the test cell has reached equilibrium, the sample is pushed into it. 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+4 
+
+where HCl(g) represents a gaseous HCl molecule, s is an active surface site, onto which an HCl molecule can adsorb, 
+
+and HCl(s) is an adsorbed HCl molecule. The rate at which HCl disappears from the atmosphere is equal to the rate 
+
+of aluminum surface site consumption, and may be written as 
+
+ 
+
+ 
+𝑑[𝐻𝐶𝑙]
+
+𝑑𝑡
+=
+
+𝑑[𝑠]
+
+𝑑𝑡
+= 𝑅
+
+.
+
+= 𝑘[𝐻𝐶𝑙]𝑎[𝑠]𝑏 (2) 
+
+ 
+
+where quantities within square brackets represent molar concentrations (kmol/m3), and Ṙ is the molar reaction rate (in 
+
+kmol/m3/s). The reaction rate constant is denoted by k and is expressed by an Arrhenius rate expression with additional 
+
+consideration that accounts for surface coverage. 
+
+ 
+
+𝑘 = 𝐴𝑝𝑇
+𝛽 𝑒
+
+−
+𝐸𝑎
+𝑅𝑇 𝜃𝜇 𝑒
+
+−
+𝜀
+
+𝑅𝑇 (3) 
+ 
+
+ 
+Figure 2. Multiscale model schematic. The surface model is represented by the reactor scale (A), where HCl 
+
+can only interact with the active surface sites that are assumed to all be on the surface. The sample saturates 
+
+when the surface sites are filled. The pore model allows HCl to diffuse into the porous oxide layer (B) and 
+
+develop less general reactions (C). 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+5 
+
+The total site concentration is sometimes referred to as the surface site density, ρsite, and has units of mol/m
+2. Thus, 
+
+θ = [s]/ρsite. This site fraction starts at unity and decreases towards zero as active sites fill, which consequently brings 
+
+k from a maximum value for a clean (unreacted) surface to zero for a filled (completely reacted) surface. The parameter 
+
+µ is associated with the surface coverage. The parameter ε allows for the activation energy to be a function of the 
+
+surface coverage. 
+
+Since the experiments were conducted at near-room temperature, the temperature dependent terms may be treated 
+
+as constants. Furthermore, it may be assumed that the reaction proposed in Eq. (1) is first order in HCl (a = 1) as 
+
+evidenced in previous studies17,18. Consequently, Eq. (3) simplifies to 
+
+ 
+
+ �̇� = 𝐴[HCl][𝑠]𝜃𝜇 (4) 
+ 
+
+where A is a new pre-exponential factor. Both A and µ are constants to be calibrated using experimental data. 
+
+Increasing A leads to a higher reaction rate, and in this model, a lower minimum concentration in the prediction. The 
+
+parameter µ is used to account for the dependence of the active site fraction. Increasing µ results in a slower recovery 
+
+of the HCl uptake curves. 
+
+B. Pore Model 
+
+ X-ray photoelectron spectroscopy (XPS) analyses of samples revealed that chlorine diffuses deeper into the 
+
+anodized oxide layer. This explains why the anodized aluminum has a higher uptake capacity and is possibly the 
+
+reason for why the surface model is inadequate to predict the uptake of anodized samples. Since chlorine is found 
+
+deeper inside the anodized surface, it stands to reason that active surface sites are also deeper down in the oxide layer, 
+
+requiring a multiscale model that can account for acid gas diffusion through the oxide layer. 
+
+ As previously mentioned, anodized aluminum has been modeled as hexagonal cells of pores. McIntosh et al. 
+
+studied the adsorption of hydrogen fluoride (HF) in smelter grade alumina, indicating that clogging of the pores is the 
+
+mechanism of saturation, while determining a minimum pore diameter in which uptake of HF becomes ineffective19,20. 
+
+When HCl reaches the alumina at the pore walls, it creates a deposit of aluminum chloride or aluminum 
+
+hydrochloride,21,22. This deposit can be porous, and HCl must diffuse through it to get to the wall for further reaction, 
+
+creating more deposition and resistance to reach the reaction front buried even deeper, similar to the shrinking core 
+
+model used in coal combustion23,24. 
+
+ A model of the pore in the anodized aluminum is developed in this work. The 2D transient diffusion equation 
+
+describes the transport of HCl through the pore 
+
+ 
+𝑑𝑐
+
+𝑑𝑡
+=
+
+1
+
+𝑟
+
+𝑑
+
+𝑑𝑟
+(𝑟𝐷
+
+𝑑𝑐
+
+𝑑𝑟
+) +
+
+𝑑
+
+𝑑𝑧
+(𝐷
+
+𝑑𝑐
+
+𝑑𝑧
+) (5) 
+
+ 
+where c is the concentration of HCl in mol/m3, and D is the diffusion coefficient of HCl in m2/s. The model uses the 
+
+finite volume method to discretize Eq. (5) and then solve for the concentration of HCl at every control volume (cell) 
+
+center, details of which may be obtained from Mazumder25. A 2D axisymmetric model was used based on the 
+
+assumption of uniform concentration in the azimuthal coordinate. 
+
+When HCl reaches the pore wall, it creates aluminum chloride and deposits on the pore wall at the rate given in 
+
+Eq. 6 
+
+ 
+
+ 𝑀𝑎𝑠𝑠 𝐷𝑒𝑝𝑜𝑠𝑖𝑡𝑒𝑑 (𝑘𝑔) = 𝑘𝑟 𝑐𝑤 𝐴𝑝𝑜 𝑀 𝑑𝑡 (6) 
+
+ 
+where kr is the reaction rate in m/s, cw is the concentration of HCl at the wall, Apo is the surface area of the pore, M is 
+
+the molar mass of the deposit, and dt is the time step. Much like in the shrinking core model, there is now greater 
+
+resistance for HCl to reach the pore wall to react, as it diffuses through the product layer. The diffusion coefficient 
+
+of a particular cell can either be the open pore diffusion coefficient (Dop), the product layer diffusion coefficient 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+6 
+
+(Dpl) or an effective diffusion 
+
+coefficient somewhere in between 
+
+Dop and Dpl for when the product 
+
+layer does not completely fill the 
+
+cell during a particular time step. 
+
+The effective diffusion resistance, 
+
+analogous to heat transfer 
+
+resistance, is used to determine the 
+
+effective diffusion through that cell 
+
+as given by Eq. (7). The volume of 
+
+the computational cell and effective 
+
+diffusivity are represented by Vc and 
+
+Deff, respectively. The volume 
+
+fraction taken up by the product 
+
+layer is denoted as εpl and εop gives 
+
+the volume fraction left of the open 
+
+pore. As more mass is deposited inside the oxide layer pores, the diffusion resistance increases, and the reaction 
+
+slows to a stop. Table 1 shows the parameters used in the model. 
+
+ 
+
+ 𝑅𝑒𝑓𝑓 = 𝑅𝑝𝑙 + 𝑅𝑜𝑝 =
+𝑉𝑐
+
+𝐷𝑒𝑓𝑓
+=
+
+𝜀𝑝𝑙
+
+𝐷𝑝𝑙
++
+
+𝜀𝑜𝑝
+
+𝐷𝑜𝑝
+ (7) 
+
+IV. Results and Discussion 
+
+The surface model parameters were first calibrated to 
+
+the Iridite sample, since it was in the middle of the uptake 
+
+values of all aluminum surface treatments. This 
+
+produced A = 30,000 and µ = 1. Figure 3 shows the 
+
+experimental Iridite case as well as its prediction. These 
+
+numbers were applied to the model to predict the stock 
+
+and anodized cases. The same parameters predicted the 
+
+stock HCl uptake very well, as shown in Figure 4. A 
+
+slight decrease in the parameter A could produce a better 
+
+prediction, but the standard error between the experiment 
+
+and model is only 1.11 ppm, as calculated in 
+ 
+
+Figure 3. Uptake of HCl by Iridite aluminum 
+
+predicted using the surface model. 
+
+Table 1: Parameters used in pore model 
+
+Diffusion coefficient through product layer: Dpl 2.75x10
+-13 m2/s 
+
+Diffusion coefficient through pore: Dop 1.85x10
+-9 m2/s 
+
+Reaction rate at pore wall: kr 5.00x10
+-5 m/s 
+
+Pore radius 30 nm 
+
+Porosity of oxide layer 0.15 
+
+HCl concentration at the inlet 42 ppm 
+
+Molar mass of deposit layer: aluminum chloride 0.133 kg/mol 
+
+Density of aluminum oxide 3950 kg/m3 
+
+Density of product layer 2480 kg/m3 
+
+Number of cells in z direction 500 
+
+Number of cells in r direction 50 
+
+ 
+
+ 
+Figure 4. Uptake of HCl by stock aluminum 
+
+predicted using the surface model. 
+
+ 
+Figure 5. Uptake of HCl by Nomex predicted 
+
+using the surface model. 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+7 
+
+previouswork9, compared to 0.70 ppm standard error between the experimental baseline Iridite case and the model. 
+
+This indicates the same chemical and physical processes are taking place in both stock and Iridite aluminum. The 
+
+model also predicted the uptake of HCl by Nomex remarkably well, as shown in Figure 5, producing a standard error 
+
+of 0.74 ppm. In this case, the parameter A was decreased substantially to 2,500. This decrease indicates a slower rate 
+
+of uptake, likely due to no chemical reaction between the Nomex and HCl, only physisorption. However, the fact that 
+
+the model predicts the uptake for Nomex as well as stock and Iridite aluminum points to the same physical mechanisms 
+
+of saturation, which is the filling of active surface sites. Table 2 gives the site density of each surface used as input in 
+
+the model, as well as the oxide layer thicknesses 
+
+measured by XPS for the aluminum surfaces. 
+
+The surface model applied to anodized aluminum did 
+
+not provide as good of a prediction, as demonstrated by 
+
+Figure 6. Modifying the parameters µ and A did not 
+
+provide much difference in the prediction. Most notably, 
+
+increasing A failed to bring down the minimum any 
+
+further in order to match the experiment. This implies that 
+
+the process may be diffusion controlled. Further proof is 
+
+demonstrated by the XPS data that detects chlorine found 
+
+deeper in the oxide layer in the anodized case when 
+
+compared to the Iridite or stock case. The pore model 
+
+described above was utilized to predict the uptake by 
+
+anodized aluminum. The model also has the added 
+
+benefit of predicting the depth that chlorine can be found for added validation. 
+
+Ideally, the pore model would be able to be calibrated with two parameters: reaction rate, kr and diffusion through 
+
+the product layer, Dpl. Using a scanning electron microscope (SEM), the average pore radius, as well as porosity of a 
+
+sample could be estimated. Additionally, there are numerous studies that produce anodized oxide pores for various 
+
+ 
+Table 2: Site density and oxide layer thickness of test materials 
+
+ 
+
+Sample Site density (µmol/m2) Oxide layer thickness (nm) 
+
+Anodized aluminum 2902 5500 
+
+Iridite aluminum 409 200 
+
+Stock aluminum 82 50 
+
+Nomex 852 N/A 
+
+ 
+
+ 
+Figure 6. Uptake of HCl by anodized aluminum 
+
+predicted using the surface model. 
+
+ 
+Figure 7. Effect of pore radius on HCl uptake. 
+
+ 
+Figure 8. Effect of oxide porosity on HCl uptake. 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+8 
+
+purposes (humidity sensors, pressure sensitive paint, nanoscale research)26,27,28,29. Using the voltage and preparation 
+
+time of these studies, and comparing it to the ones on this sample, it can be estimated that the pore radius between 25 
+
+and 30 nm. A radius of 30 nm gave the best fit for the experiment. These studies also give a porosity between 0.05 
+
+and 0.15, with 0.15 giving the best fit. Figure 7 shows the effect of changing the pore radius on the model results, 
+
+while Figure 8 shows the effect of changing the porosity in the oxide layer. Decreasing the pore radius increases the 
+
+uptake rate at first, due to there being more pores and hence more surface area at constant porosity. However, this 
+
+quicker rate closes the pore faster and hence the uptake levels off at a lower level. 
+
+An average pore radius of 30 nm would give a diameter of 60 nm, which is close to the mean free path of air at 
+
+room temperature (68 nm), meaning the particles begin to hit the walls of the pore more than themselves. Continuum 
+
+assumptions begin to break down when the characteristic length is below the mean free path. Added friction of the 
+
+particles hitting the wall is often accounted for by a decrease in the diffusion coefficient. The diffusion of gaseous 
+
+HCl through air is well known. Gaseous diffusion in 
+
+general is on the order of 10-5 m2/s, or in the case of HCl 
+
+through air at room temperature, 1.55x10-5 m2/s30,31. 
+
+Using an open pore diffusion coefficient (Dop) value this 
+
+low did not produce an adequate prediction. It is possible 
+
+due to the humidity in the air, capillary condensation 
+
+could create liquid water. Studies using anodized nano 
+
+channels and other nano channels have observed 
+
+capillary condensation in pores between 10 and 60 
+
+nm32,33. Diffusion coefficients in liquids are on the order 
+
+of 1x10-9 m2/s, and value s for chlorine diffusion in water 
+
+reported in the literature are consistent with this (1.85 
+
+x10-9 m2/s) 34. This provides a better prediction for both 
+
+the transient uptake curve and the depth in which chlorine 
+
+is found. Figure 9 shows the effect of changing Dop on 
+
+the model. 
+
+Calibrating the model to the experimental case yielded a kr of 5x10
+-5 m/s and a Dpl of 2.75x10
+
+-13m2/s. Diffusion of 
+
+chlorine through concrete, a porous solid, has shown to be between 10-12 and 10-14 m2/s, depending on conditions such 
+
+as humidity35. Figure 10 shows the model with the calibrated parameters against the experimental cases. Overall, the 
+
+model predicts uptake quite well. It predicts the time of 
+
+saturation and total uptake remarkably well. There are 
+
+some slight differences in curvature between the model 
+
+and the experimental case. The uptake for the 
+
+experimental case increases more linearly and then 
+
+rounds off fast as it saturates, where the model has a 
+
+more rounded curve throughout. This can be seen in 
+
+other cases, as Figures 11 and 12 show the effect of 
+
+changing kr and Dpl, respectively. 
+
+Figure 13 shows the pore filling at 10 minutes, 30 
+
+minutes, right before the pore fills up (55 minutes), and 
+
+at complete saturation (65 minutes). A sharp decrease in 
+
+uptake rate can be seen in Figure 10 at the time where 
+
+the pore closes off. It is difficult to compare 
+
+quantitatively the results from XPS and the model, but 
+
+qualitative comparisons can be made. XPS collects electron population spectra of every element in the mixture. The 
+
+data analysis for chlorine is relative to other elements, aluminum and oxygen being the most prevalent other elements. 
+
+Figure 14 shows the XPS results for chlorine on an anodized aluminum surface after saturation in HCl. A sharp 
+
+ 
+Figure 9. Effect of open pore diffusion on HCl 
+
+uptake. 
+
+ 
+Figure 10. Anodized experimental uptake with 
+
+calibrated pore model. 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+9 
+
+decrease from 0 to 100 nm from the 
+
+surface is observed followed by no 
+
+detection after 2200 nm. Figure 13 shows 
+
+a similar trend in the model at the 
+
+saturation point, where a sharp drop is 
+
+noticed nearly immediately, and little to no 
+
+chlorine deposit is observed past 3000 nm. 
+
+Further studies could partially saturate the 
+
+sample and determine its effect on the 
+
+depth of chlorine found by XPS for further 
+
+validation of the model. 
+
+This model simplifies many complex 
+
+physiochemical processes involved in HCl 
+
+transport and reaction with an aluminum 
+
+surface. It is highly likely that the radius of 
+
+each pore differs slightly, which could 
+
+place some pores below the radius for 
+
+continuum transport, or above the radius 
+
+where there is capillary condensation. This 
+
+would mean treating a subset of pores in a 
+
+different manner. Imaging techniques such 
+
+as SEM could provide an estimate of the 
+
+pore radius distribution. If there is water in 
+
+the pore, dissolution of HCl, ion transport, 
+
+and other solution mechanisms would play 
+
+a role in transport. Water could just be 
+
+adsorbed as a gas, creating hydroxyl groups 
+
+with different adsorption and reaction 
+
+properties. Overall, the pore model gives a 
+
+good prediction of HCl uptake despite the 
+
+simplifications. 
+
+This work lays the foundation to predict 
+
+acid gas uptake by surfaces in a real 
+
+spacecraft fire scenario. Changes in 
+
+ 
+Figure 13. Pore fill at 10 minutes, 30 minutes, 55 minutes, and 65 
+
+minutes. 
+
+ 
+Figure 14. Chlorine found as a percent of total elements in XPS 
+
+as function of oxide layer depth. 
+
+ 
+Figure 11. Effect of reaction rate on HCl uptake. 
+
+ 
+Figure 12. Effect of product layer diffusion on HCl 
+
+uptake. 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+10 
+
+temperature and humidity need to be addressed in order to develop a complete model. The results from this study 
+
+assumes the uptake is happening in an atmosphere void of water vapor, even though the nominal humidity level on 
+
+the ISS is between 40 and 60% humidity. This is before considering the water vapor released into the atmosphere from 
+
+the fire. A previous study has already shown that water vapor influences the uptake of HCl, with the uptake increasing 
+
+with increasing humidity on an aluminum surface, and uptake decreasing with increasing humidity on a Nomex 
+
+surface16. Temperature has also been shown to affect the adsorption and desorption of HCl. The Saffire-IV experiment 
+
+burned several cotton and Polymethyl methacrylate (PMMA) samples, as well as released HCl both as a stand-alone 
+
+event, and simultaneously with flame events36. The HCl sensor had the lowest response during the stand-alone gas 
+
+release, and a higher response when HCl was released during a flaming event. Early analysis of these events during 
+
+Saffire-IV indicate that more HCl can be adsorbed onto surfaces at room temperature, and less gets adsorbed or more 
+
+gets desorbed from previous events at higher temperatures. Ground testing in the future can be used to verify these 
+
+results, as well as to calibrate temperature dependent terms in the models. 
+
+V. Conclusions 
+
+Determining the fate of acid gases after a fire in spacecraft is an important part of crew health and safety. These 
+
+results lay the foundation to predict the fate of acid gas during a spacecraft fire. The uptake of HCl by common surfaces 
+
+found inside a spacecraft were predicted using two models at different scales. For surfaces with a thin or no oxide 
+
+layer, a macroscopic surface model where the saturation of the sample is due to filling of a thin layer of active surface 
+
+sites, adequately predicts experimental results. For metal oxides with a thick oxide layer, a pore model that accounts 
+
+for the diffusion of HCl into the pore before it reaches the active surface sites can predict the results better than the 
+
+surface model wherein the effect of the oxide layer is neglected. The pore model has the added advantage of predicting 
+
+the depth chlorine can be found in the oxide layer. 
+
+ 
+
+Acknowledgments 
+
+This work was supported by the Saffire Project at NASA GRC. The authors like would like to thank Gary Ruff 
+
+and David Urban for their leadership on the project and technical expertise on the subject. They would also like to 
+
+thank Dan Gotti for his support in the engineering of the test cell and Dorothy Lukco for surface testing of the samples. 
+
+ 
+
+References 
+1Galloway, F. M., and Hirschler, M. M., "A model for the spontaneous removal of airborne hydrogen chloride by common 
+
+surfaces," Fire Safety Journal, Vol. 14.4, 1989, pp. 251-268. 
+2Galloway, F. M., and Hirschler, M. M., "The use of a model for hydrogen chloride transport and decay to predict airborne 
+
+hydrogen chloride concentrations in a full-scale room-corridor scenario," Fire safety journal, Vol. 19.1, 1992, pp. 73-101. 
+3Friel, J. J. “Atmospheric corrosion products on Al, Zn and AlZn metallic coatings,” Corrosion, Vol. 42.7, 1986, pp. 422-426. 
+4Bhatt, H., “Trivalent Chromium Conversion Coating for Corrosion Protection of Aluminum Surface,” 2009 DoD Corrosion 
+
+Conference, NACE International, Houston, Texas, Vol. 89423, 2009. 
+5Pugel, D. B., Rummel, J. R., and Conley, C., “Tiny houses: Planetary protection-focused materials selection for spaceflight 
+
+hardware surfaces,” 2016 IEEE Aerospace Conference, IEEE, New York, 2016. 
+6Campestrini, P., Goeminne, G., Terryn, H., Vereecken, J., and De Wit, J. H. W., “Chromate conversion coating on aluminum 
+
+alloys: I. formation mechanism,” Journal of the Electrochemical Society, Vol. 151.2, 2004, pp. B59-B70. 
+7Alwitt, R. S. “The growth of hydrous oxide films on aluminum,” Journal of the Electrochemical Society, Vol. 121.10, 1974, 
+
+pp. 1322-1328. 
+8Volpe, L., “A Technique for Measuring Adsorption of Gases on Flat Surfaces,” Proceedings of the 10th International Congress 
+
+on Metallic Corrosion, 1987, pp. 4091-4097. 
+9Niehaus, J., Gokoglu, S., Mazumder, S., Berger, G., Easton, J., “Development and Validation of a Model to Account for 
+
+Gaseous HCl and Aluminum Surface Interactions for Spacecraft Fire Safety Applications,” 49th International Conference on 
+
+Environmental Systems, ICES-2019-180, Texas Tech University Libraries, 2019. 
+
+
+
+ 
+
+International Conference on Environmental Systems 
+ 
+
+ 
+
+11 
+
+10Niehaus, J. E., Gokoglu, S. A., Berger, G., Easton, J., & Mazumder, S., “Modeling Hydrogen Chloride and Aluminum Surface 
+
+Interactions for Spacecraft Fire Safety Applications,” Journal of Spacecraft and Rockets, Vol. 57.2, 2020, pp. 217-224. 
+11Graedel, T.E., “Corrosion mechanisms for aluminum exposed to the atmosphere,” Journal of the Electrochemical Society, 
+
+Vol. 136.4, 1989, pp. 204C-212C. 
+12Tsai, C. J., Huang, C. H., and Lu, H. H., "Adsorption capacity of a nylon filter of filter pack system for HCl and HNO3 
+
+gases," Separation science and technology, Vol. 39.3, 2005 pp. 629-643. 
+13Li, F., Zhang, L., and Metzger, R. M., “On the growth of highly ordered pores in anodized aluminum oxide,” Chemistry of 
+
+materials, Vol. 10.9, 1998, pp. 2470-2480. 
+14Itaya, K., Sugawara, S., Arai, K., & Saito, S., "Properties of porous anodic aluminum oxide films as membranes," Journal of 
+
+chemical engineering of Japan, Vol. 17.5, 1984, pp. 514-520. 
+15Lira, H., & Paterson, R., "New and modified anodic alumina membranes: Part III. Preparation and characterisation by gas 
+
+diffusion of 5 nm pore size anodic alumina membranes," Journal of membrane science, Vol. 206.1-2, 2002, pp. 375-387. 
+16Niehaus, J., Gokoglu, S., Mazumder, S., Berger, G., Easton, J., “Effect of Humidity on Surface Interaction of Gaseous HCl 
+
+and Aluminum for Spacecraft Fire Safety Applications,” 50th International Conference on Environmental Systems, ICES-2020-
+
+341, Texas Tech University Libraries, 2020. 
+17Paereli, S., “Sorption of hydrogen chloride on solid sorbents,” MS thesis, Chemical Engineering Dept., Norwegian University 
+
+of Science and Technology, 2015. 
+18O’Mara, M. M., "Combustion of PVC" Pure and Applied Chemistry, Vol. 49.5, 1977 pp. 649-660. 
+19McIntosh, G. J., Agbenyegah, G. E., Hyland, M. M., and Metson, J. B., “Adsorptive capacity and evolution of the pore 
+
+structure of alumina on reaction with gaseous hydrogen fluoride,” Langmuir, Vol. 31.19, 2015, pp. 5387-5397. 
+20McIntosh, G. J., Agbenyegah, G. E., Hyland, M. M., and Metson, J. B., “The pivotal role of alumina pore structure in HF 
+
+capture and fluoride return in aluminum reduction,” Journal of Metals Vol. 68.9, 2016, pp. 2463-2471. 
+21Cofer III, W. R., Pellett, G. L., Sebacher, D. I., and Wakelyn, N. T., “Surface chloride salt formation on space shuttle exhaust 
+
+alumina,” Journal of Geophysical Research: Atmospheres, Vol. 89.D2, 1984, pp. 2535-2540. 
+22Cofer, W. R., and Pellett, G. L., “Adsorption and chemical reaction of gaseous mixtures of hydrogen chloride and water on 
+
+aluminum oxide and application to solid-propellant rocket exhaust clouds” NASATM-1105, 1978. 
+23Daggupati, V. N., Naterer, G. F., and Gabriel, K. S., “Diffusion of gaseous products through a particle surface layer in a 
+
+fluidized bed reactor,” International journal of heat and mass transfer, Vol. 53, 2010, pp. 2449-2458. 
+24Chisholm, P. N., and Rochelle, G. T., “Dry absorption of HCl and SO2 with hydrated lime from humidified flue 
+
+gas,” Industrial & engineering chemistry research, Vol. 38.10, 1999, pp. 4068-4080. 
+25Mazumder, S., Numerical methods for partial differential equations: finite difference and finite volume methods. Academic 
+
+Press, 2015, Chapter 6. 
+26Chen, Z., and Lu, C.. “Humidity sensors: a review of materials and mechanisms,” Sensor letters, Vol. 3.4, 2005, pp, 274-295. 
+27Nahar, R. K., “Study of the performance degradation of thin film aluminum oxide sensor at high humidity,” Sensors and 
+
+Actuators B: Chemical, Vol. 63, 2000, pp. 49-54. 
+28Peng, D., Jensen, C. D., Juliano, T. J., Gregory, J. W., Crafton, J., Palluconi, S., & Liu, T. (2013). Temperature-compensated 
+
+fast pressure-sensitive paint. AIAA journal, 51(10), 2420-2431. 
+29Jani, A., Losic, D., & Voelcker, N., "Nanoporous anodic aluminium oxide: Advances in surface engineering and emerging 
+
+applications," Progress in Materials Science, Vol. 58.5, 2013, pp. 636-704. 
+30Tang, M. J., Cox, R. A., & Kalberer, M. (2014). Compilation and evaluation of gas phase diffusion coefficients of reactive 
+
+trace gases in the atmosphere: volume 1. Inorganic compounds. Atmospheric Chemistry and Physics, 14(17), 9233-9247. 
+31Mian, A. A., “Measurement of binary gaseous diffusion coefficients of polar system,” MS thesis, Chemical Engineering 
+
+Dept., University of British Columbia, 1962. 
+32Casanova, F., Chiang, C. E., Li, C. P., Roshchin, I. V., Ruminski, A. M., Sailor, M. J., and Schuller, I. K., “Gas adsorption 
+
+and capillary condensation in nanoporous alumina films,” Nanotechnology, Vol. 19.31, 2008, pp. 315709-315714. 
+33Bruschi, L., Mistura, G., Liu, L., Lee, W., Gösele, U., and Coasne B., “Capillary condensation and evaporation in alumina 
+
+nanopores with controlled modulations,” Langmuir, Vol. 26.14, 2010, pp. 11894-11898. 
+34Leaist, D. G., “Absorption of chlorine into water,” Journal of solution chemistry, Vol. 15.10, 1986, pp.827-838. 
+35Climent, M. A., de Vera, G., López, J. F., Viqueira, E., & Andrade, C., “A test method for measuring chloride diffusion 
+
+coefficients through nonsaturated concrete: Part I. The instantaneous plane source diffusion case. Cement and concrete 
+
+Research, Vol. 32.7, 2002, pp. 1113-1123. 
+36Fortenberry, C., Casteel, M., Graf, J., Easton, J., Niehaus, J., Meyer, M., Urban, D., Ruff, G., “Evaluation of Combustion 
+
+Products from Large-Scale Spacecraft Fires during the Saffire-IV and Saffire-V Experiments,” 50th International Conference on 
+
+Environmental Systems, ICES-2021-244, Texas Tech University Libraries, 2021. 
+
+

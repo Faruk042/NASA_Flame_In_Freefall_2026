@@ -1,0 +1,1386 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.5">
+<meta name="pdf:docinfo:title" content="Asymptotic Analysis of Influence of Ozone on Cool-Flame Propagation in Mixtures of an n-Alkane, Oxygen, and Nitrogen">
+<meta name="xmp:CreatorTool" content="LaTeX with hyperref">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dc:creator" content="Vedha Nayagam; Timothy S. Krause; Forman A. Williams; Daniel L. Dietrich; ">
+<meta name="dcterms:created" content="2025-07-02T15:47:17Z">
+<meta name="dcterms:modified" content="2025-07-02T15:47:17Z">
+<meta name="dc:format" content="application/pdf; version=1.5">
+<meta name="pdf:docinfo:creator_tool" content="LaTeX with hyperref">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2025-07-02T15:47:17Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="dc:title" content="Asymptotic Analysis of Influence of Ozone on Cool-Flame Propagation in Mixtures of an n-Alkane, Oxygen, and Nitrogen">
+<meta name="pdf:docinfo:custom:PTEX.Fullbanner" content="This is MiKTeX-pdfTeX 4.11.0 (1.40.24)">
+<meta name="pdf:hasMarkedContent" content="false">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="pdf:docinfo:creator" content="Vedha Nayagam; Timothy S. Krause; Forman A. Williams; Daniel L. Dietrich; ">
+<meta name="PTEX.Fullbanner" content="This is MiKTeX-pdfTeX 4.11.0 (1.40.24)">
+<meta name="pdf:producer" content="MiKTeX pdfTeX-1.40.24">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="8">
+<meta name="pdf:hasXMP" content="false">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="pdf:docinfo:trapped" content="False">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:producer" content="MiKTeX pdfTeX-1.40.24">
+<meta name="pdf:docinfo:created" content="2025-07-02T15:47:17Z">
+<title>Asymptotic Analysis of Influence of Ozone on Cool-Flame Propagation in Mixtures of an n-Alkane, Oxygen, and Nitrogen</title>
+</head>
+<body><div class="page"><p></p>
+<p>Asymptotic Analysis of Influence of Ozone on
+Cool-Flame Propagation in Mixtures of an n-Alkane,
+Oxygen, and Nitrogen
+</p>
+<p>Vedha Nayagama,∗, Timothy S. Krauseb, Forman A. Williamsc, Daniel L.
+Dietrichd
+</p>
+<p>aDepartment of Mechanical and Aerospace Engineering, Case Western Reserve University, Cleveland, Ohio 44106, USA
+bUniversities Space Research Association, NASA Glenn Research Center, Cleveland, Ohio 44135, USA
+cDepartment of Mechanical and Aerospace Engineering, University of California San Diego, La Jolla, CA 92093, USA
+dNASA Glenn Research Center, Cleveland, Ohio, 44135, USA
+</p>
+<p>Abstract
+</p>
+<p>A simplified chemical-kinetic cool-flame mechanism for n-alkanes has recently been updated and applied to the
+description of the structure of a freely propagating cool premixed flame controlled by this chemistry, resulting in
+formulas for calculating the corresponding laminar burning velocity. Although comparisons with experiments were
+made in that investigation, reasonably accurate data were lacking to test the predicted burning velocities carefully.
+More accurate data are, however, available on burning rates of such cool flames with ozone addition employed
+to enhance stability. In the present work, two additional steps associated with ozone are appended to the latest
+simplified chemistry, and predicted flame temperatures and laminar burning velocities are calculated and are found
+to agree with the measured flame temperatures within about 50 K or better and (with a few exceptions) to agree
+with the measured burning velocities within a factor of 2.
+</p>
+<p>Keywords: Premixed cool flames, Laminar burning velocity, N-alkanes, Simplified chemical kinetics
+</p>
+<p>∗Corresponding author: Department of Mechanical and Aerospace Engineering, Case Western Reserve University,
+Cleveland, Ohio 44106, USA
+</p>
+<p>Novelty and significance statement
+</p>
+<p>A compact nine-step chemical kinetic model for
+n-alkane cool flames, with rate parameters ob-
+tained from a detailed mechanism, to predict ozone-
+enhanced laminar burning velocities is presented.
+The theoretical model that employs activation energy
+asymptotics is first validated against numerical sim-
+ulations with semi-detailed chemical kinetics. Theo-
+retical calculations of ozone-assisted premixed cool-
+flame propagation speeds for propane, n-heptane,
+and n-decane are shown to compare reasonably well
+with earlier experimental measurements, demonstrat-
+ing the effectiveness of the simplified theory.
+</p>
+<p>1. Introduction
+</p>
+<p>Cool-flame chemistry occurs at temperatures
+within and below the temperature region (entirely be-
+low 1000 K) over which a negative temperature coef-
+</p>
+<p>e-mail: vedha.nayagam-1@nasa.gov (Vedha
+Nayagam)
+</p>
+<p>ficient (NTC, induction time increasing with increas-
+ing temperature) is observed during autoignition of
+normal alkanes [1]. Measurements of the combus-
+tion and extinction of normal-alkane droplets sup-
+ported by cool-flame chemistry [2], performed in the
+International Space Station (ISS), revealed a stage of
+quasi-steady burning supported by cool-flame chem-
+istry, and, in order to describe this stage as simply
+as possible, a maximally simplified chemical-kinetic
+description (developed beginning with the San Diego
+mechanism [3]) was employed to represent the cool
+diffusion-flame structure and to calculate its extinc-
+tion conditions [4, 5, 6]. The reader is referred to the
+previous publication [2] for further background infor-
+mation on cool flames.
+</p>
+<p>That simplified chemistry was later applied to pre-
+dict structures and propagation velocities of premixed
+cool flames [7], which were observed in recently pub-
+lished ground-based normal gravity [8], and micro-
+gravity [9] droplet autoignition experiments. Exper-
+imentally, these cool premixed flames initially begin
+to propagate at a constant velocity, in approximate
+agreement with the predicted velocity, but they began</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>2 Nayagam et al. /Combustion and Flame (2025)
+</p>
+<p>to accelerate towards hot-flame velocities as they pro-
+gressed. Foster and Pearlman [10] have reported ob-
+servations of unsteady, premixed cool flame propaga-
+tion in equimolar propane/oxygen mixtures in a spher-
+ical static reactor under microgravity at initial temper-
+atures around 600 K. This unsteady behavior makes it
+difficult to obtain accurate comparisons between pre-
+dictions and measurements. There are, however, ex-
+periments involving ozone addition to the mixture,
+in which premixed cool flames are stabilized on a
+flat-flame burner [11], [12], [13], [14]. The aim of
+the present work is to determine whether the simpli-
+fied kinetic mechanism can be augmented by addition
+of suitable ozone-related steps to describe the flames
+with ozone addition and, if so, to test whether that
+augmentation can improve tendencies towards static
+stability. To facilitate that augmentation, ozone and
+its necessary steps have recently been added to the San
+Diego mechanism [3].
+</p>
+<p>The remainder of the paper is organized as fol-
+lows. First a nine-step chemical kinetic mechanism
+is presented, followed by the formulation of the pre-
+mixed cool-flame propagation problem, and the ar-
+rangement of asymptotic reaction zones. An ana-
+lytical solution for the ozone concentration profile
+is presented next. Since the formulation and the
+solution techniques closely follow the recently de-
+veloped seven-step premixed cool-flame propagation
+model [7], only the modifications introduced by the
+addition of ozone in the fresh mixture are presented.
+Section 6 describes changes resulting from the ozone
+addition. Before comparing the predictions of the
+asymptotic model with experimental data, the model
+is tested against numerical computations with “de-
+tailed" chemistry for normal propane. Comprehen-
+sive comparisons with experimental data for propane,
+n-heptane and n-decane, are then presented and dis-
+cussed, followed by concluding remarks summarizing
+the key findings.
+</p>
+<p>2. The Nine-Step Reduced Chemistry
+</p>
+<p>The chemical reactions in the simplified descrip-
+tion addressed here are shown in Table 1, where F de-
+notes the normal alkane, R is its alkyl radical, I repre-
+sents the most relevant species resulting from the first
+oxygen addition to R (generally denoted as QOOH),
+and K stands for the associated alkylketohydroperox-
+ide. In the table, the P’s stand for collections of prod-
+uct species that do not have to be considered, and the
+last two steps have been added to the previous seven
+[7] to account for the influence of ozone. The San
+Diego mechanism [3] is selected as the detailed mech-
+anism from which the reduced mechanism is derived.
+According to this mechanism, the rate parameters for
+step 8 have been taken from previous work [15], while
+the value for step 9 is an estimate based on recent lit-
+erature. For n-heptane, the values used are the same
+as in a previous publication [6] which again is based
+on the San Diego mechanism. Because the San Diego
+</p>
+<p>mechanism does not include detailed chemistry for n-
+decane, the rate parameters are estimated following
+the approach in [5], scaling the values based on the
+number of relevant isomers (5 decane isomers versus
+4 heptane isomers).
+</p>
+<p>In this description, following hydrogen abstraction
+from the original fuel by hydroxyl or the oxygen atom,
+the second step presumes rapid isomerization follow-
+ing the first oxygen-molecule addition. The third step
+was derived from steady-state approximations for the
+species formed by the second oxygen-molecule addi-
+tion and for its isomerizations, resulting in maintain-
+ing partial equilibrium for its re-dissociation, and the
+fourth step completes the low-temperature branching,
+having generated two hydroxyl radicals for the one
+initially consumed. The next two steps are needed
+to slow down this process by removing intermediates,
+thereby providing improved accuracy, and the seventh
+step affects the flame structure by confining the chem-
+istry to a narrow region around the flame. The im-
+portance of the seventh step in the context of the San
+Diego mechanism is further explained in [7]. The ef-
+fect of ozone is to elevate the importance of O in H-
+abstraction from F through the last step, thereby aug-
+menting the rate of production of hydroxyl, which in-
+creases the low-temperature branching, speeding up
+that rate.
+</p>
+<p>As in the previous descriptions, both R and OH
+maintain accurate chemical-kinetic steady-state ap-
+proximations. In the most recent work [7], this led
+to an effectively five-step formulation, but with ozone
+addition this increases to six steps, the accuracy of
+an O-atom steady state being even better than that for
+OH; it is the elimination of O from the last two steps
+that results in the addition of only one more step in
+the formulation. After the rates of the first and last
+steps are eliminated by introduction of the steady-
+state approximations for OH and O, the steady-state
+expression for R indicates that the net rate of the I-
+production becomes (ω4 −ω5 −ω6 −ω7 +2ω8), where
+ω j is the rate step j in Table 1. The ozone addition
+thus promotes I production through the addition of
+step 8. As before [7], the amount of heat release is
+considered to be an empirically adjustable parame-
+ter, the rate of heat release being proportional to the
+rate of step 4 (chain branching step). Throughout the
+present paper, that heat release is characterized by the
+constant value of 2000 K for the temperature TQ that
+measures the heat release, selected for all cases con-
+sidered, rather than making finer adjustments individ-
+ually. Decreasing this value decreases the predicted
+flame temperature somewhat and the predicted lam-
+inar burning velocity appreciably, leading to overall
+poorer agreements.
+</p>
+<p>3. Formulation
+</p>
+<p>The formulation is the same as that which was re-
+ported previously [7], based on conservation equa-
+tions for mass, energy, and chemical species (the</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Nayagam et al. /Combustion and Flame (2025) 3
+</p>
+<p>Step Reaction A(C3) Ta(C3) A(C7) Ta(C7) A(C10) Ta(C10)
+</p>
+<p>1 F + OH→ R + H2O 1.0 × 1012 0 1.0 × 1012 0 1.25 × 1012 0
+2 R + O2 → I 2.0 × 1012 0 2.0 × 1012 0 3.0 × 1012 0
+3 I + O2 → K + OH 1.5 × 108 -3520 3.5 × 107 -8360 5.25 × 107 -8360
+4 K→ P4 + OH 1.0 × 1015 21640 4.0 × 1013 19840 5.0 × 1013 19840
+5 I→ P5 3.0 × 107 4050 2.0 × 1012 12090 2.5 × 1012 12090
+6 R→ P6 5.0 × 1012 15110 3.2 × 1013 15110 4.0 × 1013 15110
+7 R + O2 → P7 3.0 × 1011 1760 5.0 × 1011 1760 7.5 × 1011 1760
+8 O3 +M→ O2 + O +M 5.5 × 1014 11161 5.5 × 1014 11161 5.5 × 1014 11161
+9 F + O→ R + OH 1.0 × 1012 0 2.0 × 1012 0 3.0 × 1012 0
+</p>
+<p>Table 1: The elementary reactions and their rate coefficients are given in Arrhenius form k = A exp(−Ta/T ), with rate parameters
+in mol, s, cm3, and K. Entries C3, C7, and C10 pertain to propane, heptane, and decane, respectively. The values for steps 1 and
+9 are estimates and do not affect predictions significantly in the experimental temperature range. The activation temperature for
+step j is denoted T j, and A j is the corresponding pre-exponential factor.
+</p>
+<p>equation for ozone now being added), the concentra-
+tion [i] of species i being related to its mass fraction Yi
+according to [i] = Yiρ/Wi, where Wi is the molecular
+mass of species i, ρ is the density of the gas, and the
+Lewis number is denoted by L, taken to be unity for
+oxygen and ozone and 4 for F, I, and K. In the frame
+of reference of the propagating flame, with m denot-
+ing the constant total mass flow rate per unit area in
+that frame and D the thermal diffusivity of the mix-
+ture, the dimensionless streamwise co-ordinate ξ was
+taken to be the integral over distance of m/(ρD). Af-
+ter imposition of steady-state approximations for OH,
+O, and R, the conservation equations for the remain-
+ing species become the same as before [7] with the
+exception that, in the chemical source term for the in-
+termediate species I, the rate (ω4 − ω5 − ω6 − ω7) be-
+comes (ω4 − ω5 − ω6 − ω7 + 2ω8). To simplify the
+expression for energy conservation, the specific heat
+at constant pressure is taken to be constant, and its
+product with WKTQ, namely cpWKTQ is defined as the
+heat release associated with step 4, that heat release
+being measured by the (empirical) temperature TQ.
+</p>
+<p>Boundary conditions are applied upstream (sub-
+script u) at ξ = −∞ and downstream (subscript f )
+at ξ = ∞. The values Tu, YFu, YO2u, and YO3u spec-
+ify the mixture into which the flame is propagating,
+which may be lean, rich, or stoichiometric, with nor-
+mal, diluted, or enriched air, while the intermediate
+mass fractions YI and YK must vanish at upstream
+infinity. The final temperature T f is the flame tem-
+perature, which is approached at downstream infinity,
+but its value is determined by the flame structure and
+is not known in advance. Similarly, since both fuel
+and oxygen leak through the flame, the downstream
+values YF f and YO2 f depend on the flame structure.
+The downstream boundary conditions for T and these
+leaking chemical species therefore are simply zero-
+gradient conditions, while the intermediate mass frac-
+tions YI and YK must vanish at downstream infinity,
+just as they do upstream.
+</p>
+<p>4. Reaction Zones
+</p>
+<p>The arrangement of the reaction zones is the same
+as was described previously [7]. The large value of Ta
+for step 4 led to that being the thinnest zone, and, in
+the approximations that were introduced, that was the
+only zone in which heat was released, fuel and oxygen
+were consumed, and the intermediate I was produced,
+while K was consumed completely there. For fuel and
+oxygen, in particular, as well as for K, this involved
+assuming that ω3, and ω6 were small compared with
+ω4 there, and, with ozone addition, this also requires
+ω8 to be negligible compared with ω4 there, a con-
+dition that is maintained at the relatively small ozone
+concentrations of interest. Activation-energy asymp-
+totics was applied to this heat-release zone.
+</p>
+<p>Downstream from this thin heat-release zone, to
+leading order YK is zero, and T , YF , and YO2 are con-
+stant, resulting in YI decaying unimolecularly, from
+its value, YI f , in the thin reaction zone where it is pro-
+duced, to zero at downstream infinity, at the constant
+reaction rates of step 5 and step 6, as in [7]. Note that
+in step 6 and elsewhere, we have expressed the con-
+centration of R in terms of I as [R] = [I](A3/A2)e−T3/T ,
+using the steady-sate approximations for R and OH.
+</p>
+<p>Upstream of the thin heat-release zone, in the lead-
+ing order, the I mass fraction remains constant at the
+value of YI f , while the derivative dYI/dξ changes as
+in [7]. The I consumption, however, occurs at a rate
+(ω5 + ω6 − 2ω8) due to the presence of ozone which
+produces R through step 9, which equal to step 8 un-
+der O steady state. This term is treated as a con-
+sumption term for sufficiently small values of ozone
+concentrations in the fresh mixture. It may be seen
+from the values of Ta listed in the table that the activa-
+tion energy for the ozone-consumption step 8 is very
+close to that of step 5, so that it becomes reasonable
+to assume that ozone decomposition also occurs in
+what originally was this thin upstream I-consumption
+zone. The presence of ω8 in the chemical source term
+for I then implies that this I-consumption zone may
+become an I-production zone, instead, if a sufficient</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>4 Nayagam et al. /Combustion and Flame (2025)
+</p>
+<p>amount of ozone is added to the initial mixture. It
+then is necessary to address ozone consumption in this
+zone, as well as the possible I production or consump-
+tion.
+</p>
+<p>Further upstream, I is completely consumed in the
+I-destruction zone at a rate ω7, which is expressed as
+[I][O2](A3A7/A2)e−(T3+T7)/T with an effective activa-
+tion energy being negative. The K production zone
+upstream of the heat-release zone, and the convective-
+diffusive preheat zones remain unaltered from those
+of [7] by the the addition of ozone.
+</p>
+<p>5. The Ozone Profile
+</p>
+<p>In the conservation equation for ozone,
+</p>
+<p>dYO3
+</p>
+<p>dξ
+=
+</p>
+<p>d2YO3
+</p>
+<p>dξ2 −
+ρD
+m2 WO3ω8, (1)
+</p>
+<p>the factor WO3ω8 can be written as
+(ρ2/W)A8e−T8/T YO3 , where W denotes the molecular
+weight of the mixture. Because of the large value
+of T8, the reaction-rate term in this equation is
+seen to be negligibly small except in a thin ozone-
+consumption zone located at ξ = 0, the assigned
+position of the heat-release zone. In the preheat
+zone upstream from this thin zone, at leading order
+the profile of the ozone mass fraction is readily
+related to that of the temperature according to
+YO3 = YO3u[1 − (T − Tu)/(T f − Tu)] = YO3u(1 − eξ).
+This provides, as a boundary condition at ξ = 0,
+dYO3/dξ = −YO3u, a result that is needed for matching
+at the upstream end of the ozone-consumption
+zone as the inner-zone independent variable
+ζ = −ξT8(T f − Tu)/T 2
+</p>
+<p>f approaches infinity, in an
+analysis by activation-energy asymptotics that treats
+δ = T 2
+</p>
+<p>f /[T8(T f − Tu)] as a small parameter. Use can
+be made of the formula for the burning rate [7] to
+show that, with
+</p>
+<p>BO3 =
+</p>
+<p>( ρ f
+</p>
+<p>2WL
+</p>
+<p>) (T4
+2A8e−T8/T f
+</p>
+<p>T 2
+8 A4e−T4/T f
+</p>
+<p>)
+, (2)
+</p>
+<p>at leading order in activation-energy asymptotics, the
+conservation equation for f = YO3/(δYO3u) in the
+ozone-consumption zone is
+</p>
+<p>d2 f /dζ2 = BO3 f e−ζ . (3)
+</p>
+<p>where we have also expanded the temperature T as
+T f − (T f − Tu)δζ. Here f has been defined so that,
+besides the downstream boundary condition that f
+approaches zero as ζ approaches −∞, the upstream
+boundary condition obtained from matching is that
+d f /dζ approaches 1 as ζ approaches ∞. The solution
+to equation(3) subject to these boundary conditions is
+</p>
+<p>f = 2K0
+</p>
+<p>(
+2
+√
+</p>
+<p>BO3 e−ζ
+)
+</p>
+<p>(4)
+</p>
+<p>where K0 is the modified Bessel function of the sec-
+ond kind of order zero. Although this solution may be
+of interest in itself, it will be seen not to play a role
+</p>
+<p>in the results that are needed from the analysis of the
+revised upstream I-consumption zone.
+</p>
+<p>6. Modified Upstream I-Consumption Zone and
+Burning Velocity
+</p>
+<p>This is the only zone that is affected by the intro-
+duction of ozone in the fresh mixture. In this zone, at
+leading order, the I mass fraction was found to remain
+constant at the value YI f , while the derivative dYI/dξ
+changes. The conservation equation for YI , with the
+addition of step 8 and 9 and the O steady-state as-
+sumption, becomes
+</p>
+<p>dYI
+</p>
+<p>dξ
+=
+</p>
+<p>1
+L
+</p>
+<p>d2YI
+</p>
+<p>dξ2 −
+ρD
+m2 WI(ω5 + ω6 − 2ω8). (5)
+</p>
+<p>Defining a stretched coordinate η = ξ/γ, and ex-
+panding the temperature and I mass fractions as T =
+T f − ∆Tγη; YI = YI f − γy, we obtain, as the conser-
+vation equation for this thin zone,
+</p>
+<p>d2y
+dη2 = −ce−η,
+</p>
+<p>where the small parameter of expansion is γ, defined
+as T 2
+</p>
+<p>f /(T f −Tu)T5, since the activation energy for step
+8 is very close to that of step 5. The only difference
+between the previous analysis [7] and the present for-
+mulation is in the expression for c, which now be-
+comes,
+</p>
+<p>c =
+1
+2
+</p>
+<p>T 2
+4∆T
+</p>
+<p>T 2
+f T5
+</p>
+<p> [YI f
+</p>
+<p> A5e−T5/T f +
+A3A6
+</p>
+<p>A2
+e−(T3+T6)/T f
+</p>
+<p>A4e−T4/T f
+</p>
+<p>
+− 2
+</p>
+<p>WI
+</p>
+<p>WO3
+</p>
+<p>YO3u
+ρ f
+</p>
+<p>W
+A8e−T8/T f
+</p>
+<p>A4e−T4/T f
+</p>
+<p>]
+(6)
+</p>
+<p>where ∆T = T f − Tu. After completion of the subse-
+quent procedures in [7], the revised expression for YI f
+becomes
+</p>
+<p>YI f =
+</p>
+<p>(
+2WI∆T
+WKTQ
+</p>
+<p>)
++
+</p>
+<p>2T 2
+4∆T
+</p>
+<p>T 2
+f T5
+</p>
+<p>RO3
+</p>
+<p>×
+</p>
+<p>4(−Ts)∆T
+√
+</p>
+<p>AK1(2
+√
+</p>
+<p>A)
+</p>
+<p>LT 2
+f K0(2
+</p>
+<p>√
+A)
+</p>
+<p>+
+∆TT 2
+</p>
+<p>4 R
+</p>
+<p>LT 2
+f T5
+</p>
+<p>+
+</p>
+<p>√
+1 +
+</p>
+<p>2T 2
+4∆T 2R
+</p>
+<p>L2T 4
+f
+</p>
+<p>− 1
+</p>
+<p>
+−1
+</p>
+<p>(7)
+</p>
+<p>where,
+</p>
+<p>R =
+A5e−T5/T f + (A6A3/A2)e−(T6+T3)/T f
+</p>
+<p>A4e−T4/T f
+, (8)
+</p>
+<p>RO3 =
+WI
+</p>
+<p>LWO3
+</p>
+<p>YO3uρ f
+</p>
+<p>W
+A8e−T8/T f
+</p>
+<p>A4e−T4/T f
+. (9)</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Nayagam et al. /Combustion and Flame (2025) 5
+</p>
+<p>3.0 3.5 4.0 4.5 5.0 5.5
+Distance (cm)
+</p>
+<p>0.0
+</p>
+<p>0.2
+</p>
+<p>0.4
+</p>
+<p>0.6
+</p>
+<p>0.8
+</p>
+<p>1.0
+</p>
+<p>1.2
+</p>
+<p>1.4
+</p>
+<p>M
+ol
+</p>
+<p>e 
+fr
+</p>
+<p>ac
+tio
+</p>
+<p>n,
+ H
+</p>
+<p>R
+R
+</p>
+<p> (W
+/m
+</p>
+<p>3 )
+</p>
+<p>XO2
+</p>
+<p>XO3 × 10
+</p>
+<p>XF × 5
+</p>
+<p>T
+</p>
+<p>HRR ×0.2 × 10 6
+</p>
+<p>XI × 105
+</p>
+<p>XK × 100
+</p>
+<p>300
+</p>
+<p>400
+</p>
+<p>500
+</p>
+<p>600
+</p>
+<p>700
+</p>
+<p>800
+</p>
+<p>900
+</p>
+<p>Te
+m
+</p>
+<p>pe
+ra
+</p>
+<p>tu
+re
+</p>
+<p> (K
+)
+</p>
+<p>Fig. 1: Flame structure according to the truncated detailed mechanism, for a propane-oxidizer mixture, initially at 300 K and
+0.2 atm, at an equivalence ratio of 0.17, with an ozone mole percentage of 6.2 in the oxidizer mixture of molecular oxygen and
+ozone.
+</p>
+<p>Another expression for YI f that comes from the solu-
+tion of YK remains unchanged from [7], namely
+</p>
+<p>YI f =
+T 2
+</p>
+<p>f
+</p>
+<p>(−Ts)
+L
+</p>
+<p>TQ
+</p>
+<p> √A
+B
+</p>
+<p>K0(2
+√
+</p>
+<p>A)
+</p>
+<p>K1(2
+√
+</p>
+<p>A)
+</p>
+<p> (10)
+</p>
+<p>with
+</p>
+<p>A =
+1
+2
+</p>
+<p>(
+T4
+</p>
+<p>−Ts
+</p>
+<p>)2 (
+ρ f YO f
+</p>
+<p>WO
+</p>
+<p>) (
+(A3A7/A2)e−(T3+T7/T f
+</p>
+<p>A4e−T4/T f
+</p>
+<p>)
+,
+</p>
+<p>and
+A
+B
+=
+</p>
+<p>WI
+</p>
+<p>WK
+</p>
+<p>A7
+</p>
+<p>A2
+e−T7/T f .
+</p>
+<p>In equation (10) K0, and K1 are the modified Bessel
+functions of the second kind of order zero, and one,
+respectively. The definitions of other terms appearing
+above are the same as those in the supplemental mate-
+rial in [7], and therefore they are not reproduced here.
+</p>
+<p>Substitution of equation (10) into equation (7) pro-
+vides an equation that can be solved iteratively for the
+flame temperature. That can be used in the formula
+derived in [7] for the burning velocity, namely
+</p>
+<p>S L =
+T 2
+</p>
+<p>f (ρ f /ρu)
+</p>
+<p>T4(T f − Tu)
+</p>
+<p>√
+2LD f A4e−T4/T f , (11)
+</p>
+<p>to complete the revised analysis that includes the in-
+fluence of ozone.
+</p>
+<p>7. Comparison of Reduced and Detailed Chem-
+istry
+</p>
+<p>Propane is selected as the fuel for which the de-
+tailed and reduced mechanisms are compared because
+it is the normal alkane for which the San Diego mech-
+anism is most complete. For that fuel, the full chem-
+</p>
+<p>istry in the mechanism involves 271 steps among 59
+species, so the 9 steps among the 13 species in the re-
+duced mechanism represents a very substantial reduc-
+tion. The computations for freely-propagating flames
+with the detailed chemistry were performed using
+Cantera [16]. When the full mechanism is employed,
+the solutions always converge to the hot-flame struc-
+ture, preventing the cool flame from being captured.
+Deletions in the mechanism therefore have to be made
+to recover the cool flame. Earlier computational work
+has demonstrated that cool flames produce only small
+amounts of CO and trace amounts of CO2 [17]. Those
+two species therefore can be deleted from the chem-
+istry while still obtaining sufficiently accurate descrip-
+tions of cool-flame structures. The result is a mecha-
+nism of 226 reactions among 57 species. For fuel-
+lean flames, the resulting carbon-containing products
+are then only aldehydes, consistent with the dominant
+products found previously. Figure 1, pertaining to one
+of the experimental conditions [11], shows a repre-
+sentative computed flame structure. It is seen in this
+figure that, while the ozone is completely used up and
+the fuel is substantially depleted in the millimeter-size
+flame, there is very little depletion of oxygen, and the
+flame temperature remains well below 1000 K, as is
+needed for the cool flame.
+</p>
+<p>Figure 2 shows the predictions of this truncated de-
+tailed mechanism for the laminar burning velocity (a)
+and the flame temperature (b) as functions of the mole
+percentage of ozone in the ozone-oxygen oxidizing
+stream, for mixtures of propane, oxygen, and ozone,
+initially at 300 K and at 0.2 atm pressure, with fuel-
+lean equivalence ratios of 0.2 and 0.6, defined (as is
+traditional) for burning to CO2 and H2O as products.
+The increasing burning velocity with increasing ozone</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>6 Nayagam et al. /Combustion and Flame (2025)
+</p>
+<p>3 4 5 6
+O3 mol %
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>4
+</p>
+<p>6
+</p>
+<p>8
+</p>
+<p>10
+S L
+</p>
+<p> (m
+m
+</p>
+<p>/s
+)
+</p>
+<p>(a)
+=0.2
+=0.6
+</p>
+<p>=0.2
+=0.6
+</p>
+<p>3 4 5 6
+O3 mol %
+</p>
+<p>500
+</p>
+<p>600
+</p>
+<p>700
+</p>
+<p>800
+</p>
+<p>900
+</p>
+<p>T f
+ (K
+</p>
+<p>)
+</p>
+<p>(b)
+</p>
+<p>=0.2
+=0.6
+</p>
+<p>=0.2
+=0.6
+</p>
+<p>Fig. 2: Comparisons of predictions of detailed (points) and
+reduced (lines) chemistry for flame speeds (a) and flame tem-
+peratures (b) of propane-oxygen-ozone mixtures at 0.2 atm
+and 300 K initial temperature at two different equivalence ra-
+tios.
+</p>
+<p>concentrations is evident in the figure. Also shown
+there are the corresponding predictions of the reduced
+chemistry introduced here. The agreement seen in the
+figure is quite good, especially for the burning veloc-
+ity, while the flame temperature is over-predicted by
+the reduced mechanism, by as much as 50 K at the
+lower ozone content. Although this last discrepancy
+could be reduced by decreasing the assumed heat re-
+lease, it was felt that the accuracy sought for the nine-
+step mechanism did not warrant such an adjustment.
+These comparisons thus are considered to indicate
+sufficient accuracy of the current kinetic description in
+representing the predictions of the detailed chemistry,
+especially in view of the previously indicated uncer-
+tainties in the detailed-chemistry results shown, where
+allowing for the production of some CO may increase
+the computed flame temperature.
+</p>
+<p>8. Comparisons of Predictions with Experiment
+</p>
+<p>The experiments with ozone addition employed a
+Hencken flat-flame burner that stabilizes a flat flame
+at its outlet [11]. Since the pressure, and the flow
+rate are controlled experimentally, they can be kept
+low enough to avoid the occurrence of hot flames,
+</p>
+<p>and the cool-flame burning velocity can then be deter-
+mined by gradually increasing the flow rate until the
+burner-attached cool flame lifts off. Experimental re-
+sults were reported for normal propane [11], heptane
+[12, 14], and decane [13].
+</p>
+<p>Figure 3 compares the predictions of the nine-step
+chemistry with the experiment for flame temperatures
+and burning velocities as functions of pressure for the
+reported propane measurements [11]. In the experi-
+mental results reported, the equivalence ratio was de-
+creased to 0.17 at the lowest pressures, as indicated
+in the figure. The agreements are seen to be reason-
+able except at the lowest pressures, corresponding to
+the smallest equivalence ratios, where the predicted
+burning velocities lie well below the measured val-
+ues. Under those conditions the reduced chemistry
+likely is very inaccurate because the associated pre-
+dictions also lie below those of the detailed chemistry,
+although that, too, (not shown) predicts burning ve-
+locities well below the measurements. It is curious
+that the measured flame speeds decrease as the mea-
+sured flame temperatures increase, which is counter-
+intuitive and does not appear to be predicted by any
+existing mechanism.
+</p>
+<p>At the lowest pressures, the ozone mole fraction
+is nearly twice that of the fuel, so the system is ap-
+proaching one of an ozone decomposition flame. One
+would think that any ozone contribution would not in-
+crease the burning velocity without also increasing the
+flame temperature, contrary to what is observed in the
+experiments at different pressures, but the influence
+of the ozone chemistry is unclear. As has often been
+remarked recently, the chemistry of ozone decomposi-
+tion flames suffers from a number of uncertainties and
+would benefit from additional study, not having been
+addressed in detail recently; for example, a possible
+autocatalytic influence of O atoms on ozone decom-
+position may be responsible for the high burning ve-
+locities seen in the experiment at low pressures. The
+reduced chemistry is designed to describe influences
+of ozone on normal-alkane cool flames and would not
+correctly predict structures of ozone decomposition
+flames, which would require additional steps to be in-
+cluded in the mechanism, some of which may not be
+known, so the large discrepancy may be understand-
+able as a consequence of an improper description of
+the ozone effects under those conditions. The large
+discrepancies at the low-pressure, low-equivalence-
+ratio conditions thus may be attributed to deficiencies
+in the description of the ozone effects rather than lim-
+itations of the experimental measurements.
+</p>
+<p>For heptane, accurate burning velocities were mea-
+sured [12] at equivalence ratios from 0.4 to 1.0, for
+a mixture of n-heptane with an oxidizer having an
+O2/N2 ratio of 3.81:1, and an ozone mole percent of
+4.8 % in the O2/O3 mixture at a pressure of 22.7 kPa,
+for an initial temperature of 300 K, and those results
+are compared with the reduced-chemistry predictions
+in figure (4a), where it is seen that the predicted flame</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>Nayagam et al. /Combustion and Flame (2025) 7
+</p>
+<p>10 20 30 40
+P (kPa)
+</p>
+<p>0
+</p>
+<p>10
+</p>
+<p>20
+</p>
+<p>30
+</p>
+<p>40
+</p>
+<p>50
+</p>
+<p>60
+S L
+</p>
+<p> (m
+m
+</p>
+<p>/s
+)
+</p>
+<p> =0.17
+0.33 0.50 0.67
+</p>
+<p>600
+</p>
+<p>650
+</p>
+<p>700
+</p>
+<p>750
+</p>
+<p>800
+</p>
+<p>850
+</p>
+<p>900
+</p>
+<p>T f
+ (K
+</p>
+<p>)
+</p>
+<p>Fig. 3: Burning velocities (circles) and flame temperatures
+(triangles) as functions of pressure for different equivalence
+ratios (as noted on the figure) for mixtures of propane with
+an oxidizer consisting of a mixture of ozone and molecular
+oxygen having 6.2 mole percent of ozone. Solid symbols
+are experimental measurements and open symbols are pre-
+dictions of the nine-step reduced mechanism.
+</p>
+<p>0.4 0.6 0.8 1.0
+ 
+</p>
+<p>0
+</p>
+<p>10
+</p>
+<p>20
+</p>
+<p>30
+</p>
+<p>40
+</p>
+<p>50
+</p>
+<p>S L
+ (m
+</p>
+<p>m
+/s
+</p>
+<p>)
+</p>
+<p>(a)
+</p>
+<p>500
+</p>
+<p>600
+</p>
+<p>700
+</p>
+<p>800
+</p>
+<p>900
+</p>
+<p>T f
+ (K
+</p>
+<p>)
+</p>
+<p>3.0 3.5 4.0 4.5 5.0 5.5 6.0
+O3 mol% 
+</p>
+<p>0
+</p>
+<p>10
+</p>
+<p>20
+</p>
+<p>30
+</p>
+<p>40
+</p>
+<p>50
+</p>
+<p>S L
+ (m
+</p>
+<p>m
+/s
+</p>
+<p>)
+</p>
+<p>TU = 336 K
+</p>
+<p>(b)
+</p>
+<p>500
+</p>
+<p>600
+</p>
+<p>700
+</p>
+<p>800
+</p>
+<p>900
+</p>
+<p>T f
+ (K
+</p>
+<p>)
+</p>
+<p>Fig. 4: Burning velocities (circles) and flame temperatures
+(triangles) for mixtures of heptane, oxygen, nitrogen, and
+ozone with a molar ratio of oxygen to nitrogen of 3.81 to
+1, at an initial temperature of 300 K and a pressure of 22.7
+kPa, as a function of the equivalence ratio at a molar ratio of
+ozone to oxygen of 0.048 (a), and as a function of the mole
+percent of ozone in the initial stream of ozone and oxygen
+at an equivalence ratio of 0.4 (b). Closed symbols are ex-
+periments and open symbols are predictions of the nine-step
+mechanism.
+</p>
+<p>0.25 0.50 0.75 1.00 1.25 1.50
+0
+</p>
+<p>10
+</p>
+<p>20
+</p>
+<p>30
+</p>
+<p>40
+</p>
+<p>50
+</p>
+<p>S L
+ (m
+</p>
+<p>m
+/s
+</p>
+<p>)
+</p>
+<p>500
+</p>
+<p>600
+</p>
+<p>700
+</p>
+<p>800
+</p>
+<p>900
+</p>
+<p>T f
+ (K
+</p>
+<p>)
+</p>
+<p>Fig. 5: Burning velocities and flame temperatures as func-
+tions of the equivalence ratio at an initial temperature of 373
+K and a pressure of 22.7 kPa for mixtures of decane, oxy-
+gen, nitrogen, and ozone with a molar ratio of nitrogen to
+oxygen of 1 to 2.54 and a molar ratio of ozone to oxygen
+of 0.041. Closed symbols represent experiments and open
+symbols predictions of the 9-step mechanism.
+</p>
+<p>temperatures are about 50 K above the experimental
+value of around 800 K, independent of the equiva-
+lence ratio, while the predicted burning velocities lie
+below the experimental values by less than a factor
+of 2, showing a slight decrease with increasing equiv-
+alence ratio, as is also seen experimentally. Depen-
+dencies on the ozone content for heptane also were
+measured experimentally [14], and those results are
+compared with the predictions in figure (4b), where,
+as expected, flame temperatures and burning veloci-
+ties are seen to increase with increasing ozone con-
+tent, both experimentally and computationally. The
+agreements again are somewhat high for flame tem-
+peratures, although somewhat better when the ozone
+content is in the higher range that includes the value
+in figure (4a), while exhibiting predictions for burn-
+ing velocities that are too low by amounts on the or-
+der of a factor of 2, as was seen in figure (4a). At the
+lower ozone concentrations in figure (4b) the burning-
+velocity agreements are better, but the predicted flame
+temperatures exceed those measured, by amounts that
+increase with decreasing ozone concentrations, reach-
+ing a difference of 50 K. The general agreement when
+ozone does not dominate the fuel, typically better than
+a factor of 2 for burning velocities and 50 K for flame
+temperatures, thus extends to heptane, as well.
+</p>
+<p>Experimental measurements also have been re-
+ported [13] for normal decane with an oxygen con-
+tent near that of figure (4a) (N2/O2 ratio 1:2.54 and 4.1
+mol% O3 in the O2/O3 mixture at 373 K inlet tempera-
+ture). Figure 5, which compares those results with our
+predictions, exhibit agreements noticeably better than
+those found for heptane, although with differences in
+the same direction. The general observations concern-
+ing the extent of agreement thus remain valid for de-
+cane as well, and so they may be considered likely to</p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p>8 Nayagam et al. /Combustion and Flame (2025)
+</p>
+<p>apply to essentially all normal alkanes.
+</p>
+<p>9. Conclusions
+</p>
+<p>It may be concluded from these studies that, be-
+sides providing a simplified understanding of cool-
+flame structures, the greatly reduced chemistry de-
+veloped here will produce agreement with measured
+flame temperatures and burning velocities for pre-
+mixed cool flames that is close enough for many pur-
+poses. The key intermediate, alkylketohydroperoxide,
+carries the cool-flame structure, forming the reaction
+products, aldehydes and water, that raise the temper-
+ature of the mixture to values above 500 K but below
+1000 K. Cool premixed flames are unique in that their
+essential chemistry is entirely different from that of
+other premixed flames, thereby raising interest in their
+further study for future applications, including possi-
+ble production of novel chemicals and use when there
+are requirements for low-level heating rates.
+</p>
+<p>CrediT authorship contribution statement
+</p>
+<p>V. Nayagam: Formal analysis, Methodology,
+Writing - review &amp; editing. T.S. Krause: Formal
+analysis. F.A. Williams: Conceptualization, Method-
+ology, Writing - original draft, Writing - review &amp;
+editing. D.L. Dietrich: Writing - review &amp; editing,
+Project administration.
+</p>
+<p>Declaration of competing interest
+</p>
+<p>The authors declare that they have no known com-
+peting financial interests or personal relationships that
+could have appeared to influence the work reported in
+this paper.
+</p>
+<p>Acknowledgments
+</p>
+<p>The work of VN and TSK was supported by NASA
+through the GEARS Contract (80GRC020D003) at
+the NASA Glenn Research Center. We thank Antonio
+Sanchez and Howard Pearlman for useful comments
+on the manuscript.
+</p>
+<p>References
+</p>
+<p>[1] Y. Ju, Understanding cool flames and warm flames,
+Proc. Combust. Inst. 38 (1) (2021) 83–119.
+</p>
+<p>[2] V. Nayagam, D. L. Dietrich, P. Ferkul, M. C. Hicks,
+F. A. Williams, Can cool flames support quasi-steady
+alkane droplet burning?, Combust. Flame 159 (2012)
+3583–3588.
+</p>
+<p>[3] Chemical-kinetic mechanisms for combustion applica-
+tions, San Diego Mechanism web page, Mechanical
+and Aerospace Engineering (Combustion Research),
+University of California at San Diego. version 2016-
+12-14, (http://web.eng.ucsd.edu/mae/groups/
+combustion/mechanism.html), Last accessed on 2
+April 2025.
+</p>
+<p>[4] F. A. Williams, V. Nayagam, Quasi-steady combus-
+tion of normal-alkane droplets supported by cool-flame
+chemistry near diffusive extinction, Combust. Theor.
+Model. 23 (4) (2019) 748–770.
+</p>
+<p>[5] F. A. Williams, V. Nayagam, Cool-flame dodecane-
+droplet extinction diameters, Combust. Flame 212
+(2020) 242–244.
+</p>
+<p>[6] F. A. Williams, V. Nayagam, Updated asymptotic
+structure of cool diffusion flames, Combust. Theor.
+Model. 27 (7) (2023) 869–882.
+</p>
+<p>[7] V. Nayagam, F. A. Williams, M. Battistella, Simplified
+structure models for premixed n-alkane cool flames,
+Combust. Flame 260 (2024) 113272.
+</p>
+<p>[8] E. N. Rose, V. Nayagam, D. L. Dietrich, M. C. Hicks,
+U. G. Hegde, R. E. Padilla, F. A. Williams, Autoigni-
+tion dynamics of n-dodecane droplets under normal
+gravity, Combust. Sci. Technol. 194 (9) (2022) 1830–
+1849.
+</p>
+<p>[9] T. S. Krause, V. Nayagam, D. L. Dietrich, M. B.
+Colket, F. A. Williams, The effects of oxygen dilu-
+tion on two-stage autoignition of isolated n-dodecane
+droplets in microgravity, Combust. Sci. Technol.
+196 (16) (2024) 3802–3814.
+</p>
+<p>[10] M. Foster, H. Pearlman, Cool flame propagation
+speeds, Combust. Sci. Technol. 179 (7) (2007) 1349–
+1360.
+</p>
+<p>[11] M. Hajilou, E. Belmont, Characterization of ozone-
+enhanced propane cool flames at sub-atmospheric pres-
+sures, Combust. Flame 196 (2018) 416–423.
+</p>
+<p>[12] M. Hajilou, M. Q. Brown, M. C. Brown, E. Belmont,
+Investigation of the structure and propagation speeds
+of n-heptane cool flames, Combust. Flame 208 (2019)
+99–109.
+</p>
+<p>[13] M. C. Brown, E. L. Belmont, Experimental character-
+ization of ozone-enhanced n-decane cool flames and
+numerical investigation of equivalence ratio depen-
+dence, Combust. Flame 230 (2021) 111429.
+</p>
+<p>[14] M. Q. Brown, E. L. Belmont, Effects of ozone on n-
+heptane low temperature chemistry and premixed cool
+flames, Combust. Flame 225 (2021) 20–30.
+</p>
+<p>[15] B. Rogg, A. Linan, F. A. Williams, Deflagration
+regimes of laminar flames modeled after the ozone de-
+composition flame, Combust. Flame 65 (1) (1986) 79–
+101.
+</p>
+<p>[16] D. G. Goodwin, H. K. Moffat, I. Schoegl, R. L.
+Speth, B. W. Weber, Cantera: An object-oriented soft-
+ware toolkit for chemical kinetics, thermodynamics,
+and transport processes, https://www.cantera.
+org, version 3.1.0 (2024). doi:10.5281/zenodo.
+14455267.
+</p>
+<p>[17] K. Seshadri, N. Peters, F. A. Williams, V. Nayagam,
+G. Paczko, Asymptotic analysis of quasi-steady n-
+heptane droplet combustion supported by cool-flame
+chemistry, Combust. Theor. Model. 20 (6) (2016)
+1118–1130.</p>
+<p></p>
+<div class="annotation"><a href="http://web.eng.ucsd.edu/mae/groups/combustion/mechanism.html">http://web.eng.ucsd.edu/mae/groups/combustion/mechanism.html</a></div>
+<div class="annotation"><a href="http://web.eng.ucsd.edu/mae/groups/combustion/mechanism.html">http://web.eng.ucsd.edu/mae/groups/combustion/mechanism.html</a></div>
+<div class="annotation"><a href="https://www.cantera.org">https://www.cantera.org</a></div>
+<div class="annotation"><a href="https://www.cantera.org">https://www.cantera.org</a></div>
+<div class="annotation"><a href="https://doi.org/10.5281/zenodo.14455267">https://doi.org/10.5281/zenodo.14455267</a></div>
+<div class="annotation"><a href="https://doi.org/10.5281/zenodo.14455267">https://doi.org/10.5281/zenodo.14455267</a></div>
+</div>
+<ul> <li>Introduction</li>
+ <li>The Nine-Step Reduced Chemistry</li>
+ <li>Formulation</li>
+ <li>Reaction Zones</li>
+ <li>The Ozone Profile</li>
+ <li>Modified Upstream I-Consumption Zone and Burning Velocity</li>
+ <li>Comparison of Reduced and Detailed Chemistry</li>
+ <li>Comparisons of Predictions with Experiment</li>
+ <li>Conclusions</li>
+</ul>
+</body></html>

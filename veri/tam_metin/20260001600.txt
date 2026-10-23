@@ -1,0 +1,984 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.7">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dcterms:created" content="2026-06-23T15:33:26Z">
+<meta name="dcterms:modified" content="2026-06-23T15:33:26Z">
+<meta name="dc:format" content="application/pdf; version=1.7">
+<meta name="xmpMM:DocumentID" content="uuid:F1B98646-7C10-47F5-A5AA-ADFE7EBB598F">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2026-06-23T15:33:26Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="xmp:CreateDate" content="2026-06-23T11:33:26Z">
+<meta name="pdf:hasMarkedContent" content="true">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="xmp:ModifyDate" content="2026-06-23T11:33:26Z">
+<meta name="dc:language" content="en">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="13">
+<meta name="pdf:hasXMP" content="true">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:created" content="2026-06-23T15:33:26Z">
+<title></title>
+</head>
+<body><div class="page"><p></p>
+<p>55th International Conference on Environmental Systems ICES-2026-092 
+12 - 16 July 2026, Rio Grande, Puerto Rico 
+</p>
+<p> 
+ 
+</p>
+<p>Spacecraft Fire Safety Predictions using Validated Saffire 
+</p>
+<p>Model 
+Justin Niehaus1, David Urban2, Gary Ruff3, Gordon Berger4 and John Easton5 
+</p>
+<p>NASA Glenn Research Center, Cleveland, OH 44135, USA 
+</p>
+<p> 
+</p>
+<p>A model developed using Fire Dynamics Simulator (FDS) that aimed to determine the effect of a fire in a 
+</p>
+<p>spacecraft was validated by data collected during the Saffire campaign. The model used inlet and outlet 
+</p>
+<p>temperatures and CO2 concentrations of the Saffire payload where fire spread was taking place to determine 
+</p>
+<p>the amount of heat and combustion products that made it into Northrop Grumman’s Cygnus vehicle. The 
+</p>
+<p>model was then validated using six remote sensors in various places in the vehicle, as well as a far field device 
+</p>
+<p>(FFD) in the open zenith section that was representative of average vehicle values. The current work focuses 
+</p>
+<p>on using the model to predict fire safety scenarios. One simulation aimed to determine the fate of HCl, which 
+</p>
+<p>sticks to surfaces. The model prediction showed that the HCl was removed from the atmosphere rapidly. This 
+</p>
+<p>compared well against the FFD data in the Saffire VI campaign event where a bottle of 5% HCl was released 
+</p>
+<p>into the vehicle. An additional simulation where the Environmental Control and Life Support System (ECLSS) 
+</p>
+<p>was shut off once the FFD reached 5 ppm of HCl showed that HCl stayed in the atmosphere considerably 
+</p>
+<p>longer. Continuing the simulation with the ECLSS activated and after temperatures returned to their initial 
+</p>
+<p>conditions, resulted in a rapid removal of HCL similar to that observed in the original HCl release scenario 
+</p>
+<p>model. Finally, a simulation that used the heat release rate from a lithium-ion battery test to determine the 
+</p>
+<p>effect it would have on a spacecraft was performed. This simulation used a heat addition rate that is 
+</p>
+<p>considerably higher than what was determined from the burning of solid fuels in the Saffire campaign and 
+</p>
+<p>hence produced a non-trivial temperature increase in more locations within the vehicle. 
+</p>
+<p> 
+</p>
+<p>Nomenclature 
+</p>
+<p>Cp = specific heat 
+</p>
+<p>ECLSS = Environmental Control and Life Support System 
+</p>
+<p>FDS = Fire Dynamics Simulator 
+</p>
+<p>FFD = Far Field Diagnostics 
+</p>
+<p>HAR = Heat Addition Rate 
+</p>
+<p>HEPA = High-Efficiency Particulate Air 
+</p>
+<p>ISS = International Space Station 
+</p>
+<p>k = conductive heat transfer coefficient 
+</p>
+<p>LIB = Lithium Ion Battery 
+</p>
+<p>lpm = liters per minute 
+</p>
+<p>MFC = Mass Flow Controller 
+</p>
+<p>MGR = Mass Generation Rate 
+</p>
+<p>NG = Northrop Grumman 
+</p>
+<p>NIST = National Institute of Standards and Technology 
+</p>
+<p>PMMA = Polymethyl Methacrylate 
+</p>
+<p>ppm = parts per million 
+</p>
+<p>psig = pounds per square inch gauge 
+</p>
+<p>RS = Remote Sensor 
+</p>
+<p> 
+1 Aerospace Engineer, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. 
+2 Supervisor Aerospace Engineer, Low-Gravity Exploration Technology Branch, 21000 Brookpark Road, Cleveland, OH 44135. 
+3 Fire Safety Subject Matter Expert, NASA NESC, Langley, VA 23681. 
+4 Scientist, E Street Technologies, 21000 Brookpark Rd., MS 77-5, Cleveland, OH 44135 
+5 Associate Staff Scientist, Case Western Reserve University, 21000 Brookpark Rd., MS 77-5, Cleveland, OH 44135 
+</p>
+<p> 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>2 
+</p>
+<p>SFU = Saffire Flow Unit 
+</p>
+<p>SIBAL = Solid Inflammatory Boundary at Low-Speed fabric 
+</p>
+<p>SMAC = Spacecraft Maximum Allowable Concentration 
+</p>
+<p>α = thermal diffusivity 
+</p>
+<p>ρ = density 
+</p>
+<p>I. Introduction 
+</p>
+<p>lanning effective responses to a fire on a spacecraft is one of the most impactful ways to reduce the risk to a 
+</p>
+<p>spacecraft’s mission success and crew safety. Oxygen levels for planned missions will be elevated, only adding 
+</p>
+<p>to this risk [1-3]. Increased oxygen reduces prebreathe time requirements and complexity for EVA operations, as well 
+</p>
+<p>as decreases mass required for structural containment due to smaller pressure differentials between cabin and the 
+</p>
+<p>vacuum of space [3]. Full-scale testing at the planned atmosphere, as implemented in previous space programs [4-6], 
+</p>
+<p>are a way of quantifying the increased risk. This type of fire data was collected during the Saffire project in a 
+</p>
+<p>microgravity environment [7-9]. Over six sets of orbital experiments, the Saffire payload burned thermally thick 
+</p>
+<p>polymethyl methacrylate (PMMA) and thin (cotton or solid inflammatory boundary at low-speed fabric (SIBAL)) 
+</p>
+<p>fuels on Northrop Grumman’s (NG) Cygnus vehicle to study flame spread and fire effects on a space craft in a 
+</p>
+<p>microgravity environment. These were carried out after Cygnus undocked from a resupply mission to the International 
+</p>
+<p>Space Station (ISS). 
+</p>
+<p>A computational model of Saffire VI was previously developed and validated against six remote sensors (RS) in 
+</p>
+<p>Cygnus that measured temperature and CO2 during burn events in the Saffire campaign [10-13]. The model used the 
+</p>
+<p>CO2 response or the six RS to validate that the trash and cargo placement in the model provided the appropriate flow 
+</p>
+<p>paths, as well as the free volume matched the experimental value. The temperature response of the RS closest to the 
+</p>
+<p>Saffire payload was used to calibrate an effective heat transfer coefficient of the cargo, and validate it against the other 
+</p>
+<p>RS. The work described in this paper uses the validated computational model to predict other spacecraft fire scenarios 
+</p>
+<p>not produced in the Saffire experiments. The first scenario being set of simulations explored acid gas transport with 
+</p>
+<p>the objective of determining the effect flow had on the fate of acid gas in a spacecraft. The second set of simulations 
+</p>
+<p>involved using experimental data from a lithium-ion battery (LIB) fire, an increasingly relevant fire hazard, with the 
+</p>
+<p>objective of simulating a more energetic fire than what was provided by the Saffire burn event. 
+</p>
+<p>A fire in a spacecraft can create acid gases such as HCl from the burning of electronics, which stick to surfaces 
+</p>
+<p>unlike other combustion products. In addition to the burn events in the Saffire VI experiments, a bottle of HCl was 
+</p>
+<p>released to study the fate of acid gas in a spacecraft. While not measured at the RS locations, it was measured at the 
+</p>
+<p>Far Field Device (FFD) in the zenith section of the cabin, which was representative of average cabin values. To 
+</p>
+<p>complement the microgravity tests, small-scale ground testing was performed to determine the uptake of acid gas by 
+</p>
+<p>typical spacecraft materials, predominantly treated aluminum [14,15]. This uptake rate was applied to the surfaces of 
+</p>
+<p>the Saffire model and the transport to the FFD in the model was compared to the experiment. Once a reasonable 
+</p>
+<p>comparison was observed, additional simulations were performed with the objective to determine the effect on cabin 
+</p>
+<p>flow on the fate of acid gas. A typical recommendation during a fire in spacecraft is to turn off the flow to prohibit 
+</p>
+<p>oxygen transport to the flame to encourage extinction [5, 16]. Simulations were run where once HCl reached a 
+</p>
+<p>threshold value, the environmental control and life support system (ECLSS) flow, as well as any flow associated with 
+</p>
+<p>the Saffire Flow Unit (SFU) were shut off to see the effect on the fate of HCl. An additional simulation was run where 
+</p>
+<p>the flow was turned back on once the temperature returned to the initial value. 
+</p>
+<p>The last set simulation used the heat addition rate (HAR) produced from lithium-ion battery (LIB) tests with the 
+</p>
+<p>objective of predicting a relevant fire hazard and a more energetic fire than that produced by the burning of SIBAL 
+</p>
+<p>or PMMA would have on a spacecraft. The heat released into Cygnus from the burn events of Saffire proved to not 
+</p>
+<p>increase the temperature in the vehicle significantly. The ground tests involving LIB fires provided a larger max HAR 
+</p>
+<p>and more overall heat than the Saffire burn events, and hence a hotter cabin. 
+</p>
+<p>II. Experiments 
+</p>
+<p>A. Saffire Microgravity Experiments 
+</p>
+<p>The Saffire campaign of experiments performed large-scale burn events to study the smoke plume and combustion 
+</p>
+<p>product transport within an orbiting vehicle [7-9]. All six of these set of experiments took place in between separate 
+</p>
+<p>resupply missions to the ISS and controlled burn up in the atmosphere, giving approximately three days of 
+</p>
+<p>microgravity combustion experimentation and data downlink. Saffire VI, which is the focus of this paper, took place 
+</p>
+<p>P </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>3 
+</p>
+<p>in December of 2023. The pressure vessel, which is approximately 3 meters in diameter by 4 meters in length, also 
+</p>
+<p>contained the environmental control and life support system (ECLSS) for maintaining flow conditions, and various 
+</p>
+<p>instrumentation for measuring temperature and combustion product concentrations throughout the vehicle. Figure 1 
+</p>
+<p>gives a schematic of the Cygnus vehicle and Saffire experiments. 
+</p>
+<p>Cargo and trash were placed in Cygnus to create channels to transport heat and combustion products from the 
+</p>
+<p>outlet of Saffire in the nadir section to the zenith section of the spacecraft. This created four different channels, similar 
+</p>
+<p>to the forward port standoff illustrated in Figure 1. Each channel had an RS that measured temperature and combustion 
+</p>
+<p>products, such as CO2. In order to apply heat and combustion products into the domain, or the gas volume of the 
+</p>
+<p>model, a HAR and a mass generation rate (MGR) are applied to the 50 cm2 SFU outlet that flows hot air into the 
+</p>
+<p>Cygnus vehicle. 
+</p>
+<p> 
+Figure 1. Saffire VI experimental schematic. Dashed box area represents the Cygnus vehicle from the Nadir side 
+</p>
+<p>for a view of the ECLSS outlet, RS1 and RS4 in the Aft Port standoff. Foam is removed in the Forward Port and Aft 
+</p>
+<p>Port standoffs for visualization purposes. RS2 and RS5 are shown outside the foam for visualization purposes. 
+</p>
+<p> 
+</p>
+<p>Nine experimental events took place during the Saffire VI campaign, including four attempted burn events, two 
+</p>
+<p>flow visualization tests, a gas release event, and two CO2 scrubs. The initial atmospheric conditions used in the model 
+</p>
+<p>were the same used during the SIBAL burn of Saffire VI: 54.1 kPA, 31.0% oxygen, and a temperature of 24.3°C. 
+</p>
+<p>More details of the experiment can be found in previous work [7-9]. 
+</p>
+<p>B. HCl Ground Testing 
+</p>
+<p>Experiments to characterize the uptake of acid gas onto surfaces have taken place to support the Saffire project 
+</p>
+<p>and help determine the fate of acid gases after a spacecraft fire. Specifically, HCl uptake onto treated aluminum 
+</p>
+<p>surfaces has been measured in past studies [14, 15]. Figure 2 gives a schematic of the experimental setup. A bottle of 
+</p>
+<p>dry air and a bottle of approximately 50 parts per million (ppm) of HCl balanced with nitrogen were used to flow a </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>4 
+</p>
+<p> 
+Figure 2. Acid gas experimental schematic and results. 
+</p>
+<p> 
+</p>
+<p>gas stream through a cast acrylic test cell until it was saturated by HCl. An aluminum rod would then be inserted into 
+</p>
+<p>the test cell, decreasing the response of the outlet HCl sensor. The air stream could be passed through a bubbler to 
+</p>
+<p>control the humidity of the air stream. 
+</p>
+<p>In mostly dry flow conditions, there is a finite capacity of aluminum to uptake HCl [14]. In the presence of the 
+</p>
+<p>type of humidity you would find in a comfortable room or spacecraft (40-60% humidity at approximately 20 °C), 
+</p>
+<p>there is a near infinite capacity to uptake HCl. The graph in Figure 2 shows a typical response of the outlet HCl sensor 
+</p>
+<p>when flowing 2 liters per minute (lpm) of HCl into the reactor and 2 lpm of air through the bubbler, providing a 
+</p>
+<p>humidity of approximately 50%, [17]. The difference between the inlet and outlet sensor was used to determine the 
+</p>
+<p>rate of uptake by the sample inserted into the reactor. This rate of HCl uptake was applied to the cargo in the Saffire 
+</p>
+<p>model. More information on the experimental setup and previous results can be found in earlier research [14, 17]. 
+</p>
+<p>Saffire VI flew 1-liter HCl bottles at 100 pounds per square inch gauge (psig) pressure and 5% concentration balanced 
+</p>
+<p>with N2 producing a total HCl of 0.59 g which was released from the bottle in the SFU at a rate of 2.68x10-3 kg-
+</p>
+<p>HCl/m2-s. 
+</p>
+<p>C. Lithium-Ion Battery Ground Testing 
+</p>
+<p>An experiment was set up to determine the heat and product release of a LIB cell pack during thermal runaway. The 
+</p>
+<p>apparatus included an outer enclosure that was connected to room ventilation air flow 2.29 m tall by 2.44 m in width 
+</p>
+<p>and depth. Inside the outer enclosure was an inner enclosure where the battery cell pack was ignited with two hot 
+</p>
+<p>plates. The inner enclosure connected to a measurement duct that was 76 mm in diameter and probed the air stream 
+</p>
+<p>for O2, CO2, CO concentration and temperature. Figure 3 shows a schematic of the experimental apparatus. 
+</p>
+<p>The data used to provide the HAR for the Saffire model was collected from the burning of a 97 Watt-hour, 6 LIB 
+</p>
+<p>cell pack. The batteries were at their fully charged state. The cells were ignited with two 500 W strip heaters, each 
+</p>
+<p>igniting three of the cells. The measurement duct was designed and built to allow for real-time calculation of mass 
+</p>
+<p>flow rate, temperature, static pressure, and combustion products using ISO standard 5167. Two measurement devices, 
+</p>
+<p>each with their own pump to draw in a sample of gas through the air stream, determined oxygen, CO2 and CO 
+</p>
+<p>concentrations. A HEPA filter and a cold trap filtered out particulates before concentration measurements. The flow 
+</p>
+<p>through the measurement duct for the test used in the model was 1.99 m3/min. The HAR that was used in the model 
+</p>
+<p>was determined with oxygen consumption calorimetry, which used an energy release of 13.1 MJ/kg of O2 consumed. 
+</p>
+<p>More information on the development of the test cell, and oxygen consumption calorimetry measurements can be 
+</p>
+<p>found in work performed by Easton et al. [18]. 
+</p>
+<p> 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>5 
+</p>
+<p> 
+Figure 3. Lithium-ion battery experimental schematic. 
+</p>
+<p>III. Modeling 
+</p>
+<p> A previously developed model of the Cygnus vehicle during the Saffire burn events was used to predict the effect 
+</p>
+<p>of a fire inside a spacecraft. This model uses Fire Dynamics Simulator (FDS), which is a large-eddy turbulent code 
+</p>
+<p>developed by the National Institute of Standards and Technology (NIST) [19]. Placement of cargo were discussed in 
+</p>
+<p>previous work [13]. Table 1 gives the initial atmospheric conditions for all models, as well as the flow boundary 
+</p>
+<p>conditions. 
+</p>
+<p> For the validated Saffire model, the HAR and MGR were calculated from the SFU inlet and outlet temperature 
+</p>
+<p>and CO2 concentration experimental data, respectively [13]. The HCl MGR was also determined from experimental 
+</p>
+<p>data. The LIB HAR was determined from oxygen consumption calorimetry [18]. The CO2 MGR for LIB tests was 
+</p>
+<p>calculated from CO2 measurements in the measurement duct, but is not the focus of this paper. These values in the 
+</p>
+<p>various simulations are applied to the outlet of the SFU, which is a thermally inert object that intakes cool cabin air 
+</p>
+<p>and outputs combustion products and hot air. Figure 4 gives a schematic of how the HAR and MGR are applied to 
+</p>
+<p>the SFU and input heat and combustion products into Cygnus. The graphs in Figure 4 represent the HAR and MGR 
+</p>
+<p>that are used in the LIB simulations. No combustion or flame properties were used in the model. The same convective 
+</p>
+<p>heat transfer coefficient of 150 W/m2-K that was calibrated to experimental data in previous work was applied to the 
+</p>
+<p>surfaces of the cargo in these simulations [15]. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>Table 1. Atmospheric initial conditions 
+</p>
+<p>and flow boundary conditions. 
+</p>
+<p>Pressure (Pa) 5.42x104 
+</p>
+<p>Volume (m3) 16.2 
+</p>
+<p>Density (kg/m3) 0.639 
+</p>
+<p>Temperature (K) 297.5 
+</p>
+<p>CO2 (ppm) 5381 
+</p>
+<p>O2 (%) 30.9 
+</p>
+<p>Vehicle ECLSS (m3/min) 3.72 
+</p>
+<p>Saffire Flow Duct (m3/min) 1.68 
+</p>
+<p>Saffire Avionics (m3/min) 0.78 
+</p>
+<p>FFD (m3/min) 1.02 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>6 
+</p>
+<p> 
+Figure 4. Cygnus vehicle model schematic highlighting implementation of MGR and HAR for the LIB fire 
+</p>
+<p>predictions. 
+</p>
+<p> 
+</p>
+<p>The first set of simulations focused on HCl transport in the vehicle. Since the SIBAL burn event in Saffire VI also 
+</p>
+<p>released a bottle of HCl, concentration data was available in the FFD to compare to the simulation. The Saffire VI 
+</p>
+<p>SIBAL simulations from previous work was re-simulated after adding the MGR of HCl from the SFU into Cygnus 
+</p>
+<p>and applying the uptake rate at the cargo. The MGR of HCl into Cygnus from the SFU was 2.68x10-3 kg/m2-s applied 
+</p>
+<p>to a 5 cm x 5 cm surface area for 90s. Integrating this gave a total mass of HCl of 0.59 g, which matched the calculated 
+</p>
+<p>amount in the bottle, as well as the steady state value of the HCl concentration in a simulation that did not have any 
+</p>
+<p>surface adsorption imposed. Tests were executed on anodized aluminum surfaces at 50% humidity as described in 
+</p>
+<p>section II and were shown to have an approximate rate of uptake given by Eq. 1: [17] 
+</p>
+<p> 
+</p>
+<p> �̇� = 3.32𝑥10−3[𝐻𝐶𝑙] 𝑘𝑔/𝑚2 − 𝑠 (1) 
+</p>
+<p> 
+</p>
+<p>where [HCl] is the mass fraction of HCl. This uptake rate of HCl was applied to the tan cargo bags in Cygnus, as 
+</p>
+<p>demonstrated by Figure 5 which provides two contours of HCl in the forward port standoff. It was also assumed that 
+</p>
+<p>any HCl that made its way into the ECLSS was fully adsorbed. 
+</p>
+<p> 
+</p>
+<p> 
+Figure 5. Example HCl contours highlighting the tan cargo surfaces the HCl uptake rate is applied. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>7 
+</p>
+<p> A strategy for extinguishing a fire in an enclosed pressure vessel in a microgravity environment is to turn off the 
+</p>
+<p>flow in a vehicle in order to starve the fire of oxygen. While this can be effective, stagnation of flow can lead to 
+</p>
+<p>pockets of high concentration of hazardous combustion products. A simulation was run in which the ECLSS, SFU, 
+</p>
+<p>and avionics flow were turned off once the FFD reached the 1-hour Spacecraft Maximum Allowable Concentration 
+</p>
+<p>(SMAC) [20] of HCl, which was approximately 90 s for this simulation. A subsequent simulation turned the flow 
+</p>
+<p>back on once the temperature returned to initial values. 
+</p>
+<p> The last set of simulations focused on the effect that the increased HAR provided by the LIB had on the vehicle. 
+</p>
+<p>The temperature at the RS locations for the LIB simulation are compared to the temperatures of the Saffire VI SIBAL 
+</p>
+<p>burn event. Additional simulations were completed that assigned material thermal properties to the cargo to see if the 
+</p>
+<p>surfaces became hot enough to become hazardous. 
+</p>
+<p>IV. Results and Discussion 
+</p>
+<p>The concentration of HCl from the bottle release in Saffire VI SIBAL at the FFD is shown in Figure 6 against the 
+</p>
+<p>model prediction. The peak concentration of 32 ppm and time to peak of 100 s match well with experimental results. 
+</p>
+<p>This indicates that the bulk cabin flow and the release of the HCl bottle from the SFU in the simulation match the 
+</p>
+<p>experiment. The drop in concentration happened significantly faster in the experiment than in the model. There are a 
+</p>
+<p>couple reasons this discrepancy might exist. First, there was a lot of surface area in the FFD, as well as losses from 
+</p>
+<p>the combustion product monitor that are not accounted for in the model which could add further decay. This is similar 
+</p>
+<p>to the explanation of lower temperature in the FFD experiments compared to simulations during previous model 
+</p>
+<p>development [10]. Second, the heat transfer coefficient that was calibrated during previous model development [11] 
+</p>
+<p>is representative of an effective heat transfer coefficient to account for surfaces that are not perfectly rectangular or 
+</p>
+<p>smooth, but amorphous, rough, and porous, hence underestimating the real surface area participating in heat transfer, 
+</p>
+<p>and likely mass transfer. This increased surface area, as well as mixed materials of the surface would lend itself to the 
+</p>
+<p>same type of calibration of an effective uptake rate as the effective heat transfer coefficient if a more accurate 
+</p>
+<p>prediction is needed. For this work, the simulation compares well enough with experimental data that it can be used 
+</p>
+<p>to explore the effect of flow on the fate of acid gas. 
+</p>
+<p> 
+</p>
+<p> 
+Figure 6. Prediction of HCl concentration at FFD against experiment during Saffire VI SIBAL burn. 
+</p>
+<p> 
+</p>
+<p>Next, the ECLSS, as well as the SFU and avionics flow in Saffire were turned off when the FFD reached 5ppm, 
+</p>
+<p>which is the 1 hour SMAC for HCl. This event was triggered in the simulation at 90 s. With the flow turned off, the 
+</p>
+<p>concentration reached above 50 ppm and fell much slower. Figure 7 shows the original prediction against the 
+</p>
+<p>prediction where the flow is shut off. The next simulation turned all the flow systems back on after the temperature in 
+</p>
+<p>the cabin reached its initial value, which was at 410 s. The concentration at the FFD immediately began to fall at an 
+</p>
+<p>accelerated rate, indicating the importance of flow for the removal of hazardous products from the atmosphere. This 
+</p>
+<p>could further be demonstrated by the mass of HCl in the domain across the three simulations, which is provided by </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>8 
+</p>
+<p> 
+Figure 7. Prediction of HCl concentration at FFD with various settings of the ECLSS system. 
+</p>
+<p> 
+</p>
+<p>Figure 8. An additional simulation was performed to highlight the ECLSS’s contribution to the HCl decay from the 
+</p>
+<p>atmosphere, which is shown in gray in Figure 7. This proves to be a significant contribution and additional 
+</p>
+<p>experimental HCl sensors at the outlet of the ECLSS would be needed to validate the assumption. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+Figure 8. Total HCl mass in domain of model. 
+</p>
+<p> 
+</p>
+<p> Figure 9 and Figure 10 show the response of RS3 and RS6, respectively for the three simulations. Concentration 
+</p>
+<p>reached approximately 160 ppm at RS3 and 120 ppm for RS6. For RS3, HCl returned to effectively 0 by 1000 s, 
+</p>
+<p>compared to RS6 where the concentration was still decreasing in the case where the flow was shut off. RS3 is in a 
+</p>
+<p>standoff where the volume to surface area was much higher, allowing for more uptake and hence more removal of 
+</p>
+<p>HCl from the atmosphere. RS6 was located in a more open area, away from surfaces that uptake HCl. In that case, the 
+</p>
+<p>HCl stayed in the atmosphere surrounding RS6 until the flow is turned back on. 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>9 
+</p>
+<p> 
+Figure 9. Prediction of HCl concentration at RS3 with various settings of the ECLSS system. 
+</p>
+<p> 
+</p>
+<p> 
+Figure 10. Prediction of HCl concentration at RS6 with various settings of the ECLSS system. 
+</p>
+<p> 
+</p>
+<p>The next set of simulations used the HAR of the LIB cell pack test in place of the HAR from the SIBAL test in 
+</p>
+<p>Saffire VI. The HAR is derived from ground based (1-g testing) and applied as an input in a 0-g model. Despite not 
+</p>
+<p>having 0-g data of a LIB fire and the differences that it would provide in the HAR curve (fire growth, entrainment, 
+</p>
+<p>heat transfer, etc.), this still provides a good prediction of a fire with an order of magnitude more peak and total energy 
+</p>
+<p>compared to the Saffire material burn events. The max heat release rate for the battery was 23.63 kW, compared to 
+</p>
+<p>0.45 kW for the SIBAL burn. The total heat addition into the domain was 798 kJ vs. 124 kJ. Similar to the SIBAL 
+</p>
+<p>test, the two remote sensors in the main flow path of Saffire (RS3 and RS6) produced the most noticeable temperature 
+</p>
+<p>response, with RS2, RS4, and RS5 providing negligible response. RS1, which was near the ECLSS outlet on the nadir 
+</p>
+<p>side of the vehicle, saw a brief 1 °C increase in the LIB case, compared to negligible response for the SIBAL case. 
+</p>
+<p>Figure 11 shows the temperature at the exhaust of the SFU for the LIB case. The SFU outlet reached over 450 °C 
+</p>
+<p>in the LIB simulation and returned to baseline at around 100 s. This is consistent with the profile of the HAR presented 
+</p>
+<p>in Figure 4, as is expected with the surfaces of the SFU being adiabatic. The HAR for the SIBAL case was determined 
+</p>
+<p>to effectively match the exhaust temperature of the SFU. This is why even though the flame spread ended at 140 s, </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>10 
+</p>
+<p> 
+</p>
+<p> 
+Figure 11. Prediction of temperature at the SFU exhaust for LIB simulation, compared to SFU exhaust 
+</p>
+<p>temperature for SIBAL case. 
+</p>
+<p> 
+</p>
+<p>heat is still transported into the cabin from the SFU. The HAR effectively included all the heat from the combustion 
+</p>
+<p>of SIBAL and the heat from the surfaces that were released into the cabin. 
+</p>
+<p> Figures 12 and 13 give the temperature prediction for the LIB against the Saffire SIBAL case at RS3 and RS6, 
+</p>
+<p>respectively. While the increase in temperature for the SIBAL case was no more than 3 degrees, significant 
+</p>
+<p>temperature increase could be seen in the LIB case. This increased atmospheric temperature poses a hazard to the 
+</p>
+<p>crew both externally via skin burn and internally via the inhalation of high temperature gas [21]. 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+Figure 12. Prediction of temperature at RS3 for LIB against Saffire VI SIBAL case. </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>11 
+</p>
+<p> 
+Figure 13. Prediction of temperature at RS6 for LIB against Saffire VI SIBAL case. 
+</p>
+<p> 
+</p>
+<p>To explore additional hazards in regard to increased surface temperature, additional simulations were run where 
+</p>
+<p>surface thermal properties were also assigned to cargo in the channels. Steel and aluminum were first chosen as 
+</p>
+<p>realistic metals, despite the bags of trash and cargo likely having multiple materials. Table 2 shows the material 
+</p>
+<p>properties used. Figure 14 shows the surface temperature at the surface directly below RS3. In comparing the two 
+</p>
+<p>metals, the increased thermal diffusivity of the aluminum transported heat away from the surface and into the cool 
+</p>
+<p>center, while heat stayed longer at the surface of the steel. The increased thermal mass of the steel corresponds to a 
+</p>
+<p>lower steady state temperature. In any case, the temperature did not reach above 0.5 °C of the initial temperature, 
+</p>
+<p>showing that surface temperature was not likely to be a critical hazard to the crew beyond surfaces directly in contact 
+</p>
+<p>with a flame. This is also an indication that using an isothermal boundary condition at surfaces will in most cases 
+</p>
+<p>provide a good prediction of the conditions of the atmosphere inside the vehicle. 
+</p>
+<p>The material was then changed to foam to demonstrate how hot a material with a much lower thermal mass could 
+</p>
+<p>become. Foam is present in Cygnus, as well as being an available material in the Pyrosim library. The surface reached 
+</p>
+<p>45 °C but returned to its initial temperature by 200 s. Surface temperatures reaching 60 °C, as cited by ASTM standard 
+</p>
+<p>C1055-03 [22], are often deemed hazardous. While the amount of heat added to the vehicle in these simulations did 
+</p>
+<p>not produce surfaces hot enough to be hazardous, tests are planned to burn entire laptops and multiple battery packs. 
+</p>
+<p>These tests could produce a larger and more sustained burn event, in which case the surface temperature could become 
+</p>
+<p>a risk factor. 
+ 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+Table 2. Solid surface thermal properties. 
+</p>
+<p> Aluminum Steel Foam 
+</p>
+<p>k (W/m-K) 237 45.8 0.05 
+</p>
+<p>Cp (J/kg-K) 900 460 1700 
+</p>
+<p>ρ (kg/m3) 2700 7850 28 
+</p>
+<p>α (m2/s) 9.75x10-5 1.3x10-5 1.05x10-6 </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>12 
+</p>
+<p> 
+Figure 14. Surface temperature prediction during LIB simulation at cargo below RS3. 
+</p>
+<p> 
+</p>
+<p>V. Conclusions 
+</p>
+<p> A previously validated model of the Cygnus vehicle during the burn events of the Saffire experimental campaign 
+</p>
+<p>was used to simulate other fire scenarios of interest. First, an HCl MGR was added to the Saffire VI SIBAL model 
+</p>
+<p>that was provided experimentally and an HCl uptake rate that was experimentally measured was implemented at the 
+</p>
+<p>cargo of the vehicle. The simulated prediction of the HCl at the FFD matched the peak of the experimental data, with 
+</p>
+<p>some deviations at the tail end of the response. Next, the flow in the vehicle was turned off once HCl reached 5 ppm 
+</p>
+<p>at the FFD, which greatly reduced the rate of uptake and left high concentrations of HCl in the vehicle for extended 
+</p>
+<p>periods of time. An additional simulation where the flow was turned back on after the temperature returned to baseline 
+</p>
+<p>showed that the rate of uptake of HCl returned to the previous rate. The next set of simulations focused on the heat 
+</p>
+<p>transfer from a LIB fire, and the results were compared to the previous SIBAL simulation. As expected, the increased 
+</p>
+<p>HAR provided by the LIB produced higher temperatures for the remote sensors that were in the flow path of Saffire. 
+</p>
+<p>Simulations where the material were changed from isothermal to either steel or aluminum and measured the surface 
+</p>
+<p>temperature of the cargo provided an insignificant difference. Future experiments could provide heat and product 
+</p>
+<p>release of multicell LIBs with entire laptops and battery fire bags burned that would provide even larger heat release 
+</p>
+<p>for a sustained time. The burning of these LIBs, as well as other electronics, will create other acid gases that will need 
+</p>
+<p>to be further investigated to determine their fate in a spacecraft. 
+</p>
+<p>Acknowledgments 
+</p>
+<p>The Saffire project was supported by NASA’s Advanced Exploration Systems Division. The authors would like 
+</p>
+<p>to thank the international Saffire science team, with various agencies that include ESA, JAXA, CNES, RSA, DLR, 
+</p>
+<p>the Russian Academy of Sciences and NASA. The authors are grateful for the efforts of ZIN Technologies, NG, and 
+</p>
+<p>the on-orbit crew of the ISS on the Saffire project, as well as Ryan Briggs and Mathieu Fradet from JPL for CPM 
+</p>
+<p>development and testing. 
+</p>
+<p> 
+ 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p> </p>
+<p></p>
+</div>
+<div class="page"><p></p>
+<p> 
+</p>
+<p>International Conference on Environmental Systems 
+ 
+</p>
+<p> 
+</p>
+<p>13 
+</p>
+<p>References 
+</p>
+<p>[1] Fortenberry, C., and Meyer, M., "Smoke Aerosol Experiments for the Next Generation of Space Vehicles," in 54th International 
+</p>
+<p>Conference on Environmental Systems, Prague, Czechia, ICES-2025-551, 2025. 
+</p>
+<p>[2] NASA Exploration Atmospheres Working Group, "Recommendations for exploration spacecraft internal atmospheres: The 
+</p>
+<p>final report of the NASA exploration atmospheres working group," NASA/TP-2010-216134, NASA, 2010. 
+</p>
+<p>[3] J., Norcross, P., Norsk, J., Law, D., Arias, J., Conkin, M., Perchonok, A., Menon, J., Huff, J., Fogarty, J. H., and Wessel, S., 
+</p>
+<p>Whitmire, "Effects of the 8 psia / 32% O2 Atmosphere on the Human in the Spaceflight Environment," NASA/TM-2013-217377, 
+</p>
+<p>2013. 
+</p>
+<p>[4] R. W., Bricker, J. P., Crabb, and I. K., Spiker, "Apollo Command Module and Lunar Module Mockup Flammability Tests," 
+</p>
+<p>NASA TN D-5654, 1970. 
+</p>
+<p>[5] R., Friedman, "Fire safety concerns in space operations," NASA TM 89848, 1987. 
+</p>
+<p>[6] J. H., Kimzey, "Skylab experiment M479 zero gravity flammability," Skylab Results, Proc. Third Space Processing Symp. Vol. 
+</p>
+<p>1, pp. 115-130, 1974. 
+</p>
+<p>[7] D., Urban, G., Ruff, P., Ferkul, J., Owens, S., Olson, M., Meyer, C., Fortenberry, J., Brooker, J., M., Graf, F., Casteel, G., 
+</p>
+<p>Jomaas, B., Toth, C., Eigenbrod, J., T’ien, Y.-T., Liao, C., Fernandez-Pello, F., Meyer, G., Legros, A., Guibaud, N., Smirnov, and 
+</p>
+<p>O., Fujita, "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires," 
+</p>
+<p>in 50th International Conference on Environmental Systems, ICES-2021-266, 2021. 
+</p>
+<p>[8] G., Jomaas, J. T., Torero, C., Eigenbrod, J., Niehaus, S. L., Olson, P. V., Ferkul, G., Legros, C., Fernandez-Pello, A. J., Cowlard, 
+</p>
+<p>S., Rouvreau, N., Smirnov, O., Fujita, J. S., T’ien, G. A., Ruff, and D. L., Urban, "Fire Safety in Space – Beyond Flammability 
+</p>
+<p>Testing of Small Sample," Acta Astronautica, Vol. 109, pp. 208-216, 2015. 
+</p>
+<p>[9] D. L., Urban, G. A., Ruff, P., Ferkul, J., Easton, M., Johnston, J., Owens, J., S., Olson, C., Fortenberry, G., Graf, O., George, 
+</p>
+<p>B., Toth, F., Meyer, C., Eigenbrod, J., S., T’ien, Y.-T., Liao, C., Fernandez-Pello, G., Legros, A., Guibaud, N. Smirnov, O., Fujita, 
+</p>
+<p>U. R., Rojas, and G., Jomaas, "Preliminary Results from the Saffire VI Experiment," in 53rd International Conference on 
+</p>
+<p>Environmental Systems, Louisville, KY, ICES-2024-365, 2024. 
+</p>
+<p>[10] J., Brooker, and J., Niehaus, “Model Development of Large-Scale Spacecraft Fires during the Saffire-IV Experiments,” in 
+</p>
+<p>51st International Conference on Environmental Systems, Minneapolis, MN, ICES-2022-278, 2022. 
+</p>
+<p>[11] J., Niehaus, and J., Brooker, "Vehicle Modeling during the Burning of Cotton Samples in the Saffire IV and V Experiments," 
+</p>
+<p>in 52nd International Conference on Environmental Systems, Calgary, Canada, ICES-2023-204, 2023. 
+</p>
+<p>[12] J., Niehaus, J., Brooker, D., Urban, and G., Ruff, "Vehicle Modeling during the Burning of Thermally Thick Samples in the 
+</p>
+<p>Saffire V Experiments," in 53rd International Conference on Environmental Systems, Louisville, KY, ICES-2024-310, 2024. 
+</p>
+<p>[13] J., Niehaus, J., Brooker, D., Urban, and G., Ruff, "Vehicle Modeling During the Burn Events in the Saffire VI Experiments," 
+</p>
+<p>in 54th International Conference on Environmental Systems, Prague, Czechia, ICES-2025-156, 2025. 
+</p>
+<p>[14] J., Niehaus, S., Gokoglu, S., Mazumder, G., Berger, and J., Easton, "Modeling hydrogen chloride and aluminum surface 
+</p>
+<p>interactions for spacecraft fire safety applications," Journal of Spacecraft and Rockets vol. 57, no. 2, pp. 217-224, 2020. 
+</p>
+<p>[15] J. E., Niehaus, and S., Mazumder, "Multiscale Model for Hydrogen Chloride Uptake on Aluminum for Spacecraft Fire 
+</p>
+<p>Safety," Journal of Spacecraft and Rockets, vol. 61, no. 3, pp. 839-846, 2024. 
+</p>
+<p>[16] B., Tobias, and C., McMillan, C., "Evolution of Hardware and Philosophy of Emergency Response Actions on the International 
+</p>
+<p>Space Station and Future Spacecrafts," in 17th International Conference on Space Operations, Dubai, United Arab Emirates, 
+</p>
+<p>SpaceOps- 2020, ID # 187, 2023. 
+</p>
+<p>[17] J., Niehaus, S., Gokoglu, S., Mazumder, G., Berger, and J., Easton, "Effect of Humidity on Surface Interaction of Gaseous 
+</p>
+<p>HCl and Aluminum for Spacecraft Fire Safety Applications," in International Conference on Environmental Systems, ICES-2020-
+</p>
+<p>341, 2020. 
+</p>
+<p>[18] J., Easton, Y.-T., Liao, R., Padilla, G., Berger, J., Owens, C., Fortenberry, D., Urban, D., Dietrich, T., Miller, and T., 
+</p>
+<p>DeMichael, "Measurement of Heat Release Rate, Aerosol, and Gas Products During Lithium-Ion Battery Thermal Runaway in 
+</p>
+<p>Devices." in 54th International Conference on Environmental Systems, Prague, Czechia, ICES-2025-426, 2025. 
+</p>
+<p>[19] Pyrosim, Software Package, Ver. 2021-2, Thunderhead Engineering, Manhattan, KS, 2014. 
+</p>
+<p>[20] J. T., James, "Spacecraft maximum allowable concentrations for airborne contaminants," No. JSC-CN-18135, 2008. 
+</p>
+<p>[21] Y.-G., Lva, J., Liua, and J., Zhang, "Theoretical evaluation of burns to the human respiratory tract due to inhalation of hot gas 
+</p>
+<p>in the early stage of fires," Burns, vol. 32, no. 4, pp. 436-446, 2006. 
+</p>
+<p>[22]. American Society for Testing and Materials, "Standard guide for heated system surface conditions that produce contact burn 
+</p>
+<p>injuries," ASTM C1055-03, 2009. </p>
+<p></p>
+</div>
+</body></html>

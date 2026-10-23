@@ -1,0 +1,518 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+An Overview of Smoke Detection and 
+Spacecraft Fire Safety in Low Gravity
+
+Claire Fortenberry1, Marit Meyer2, David Urban2, Daniel Dietrich2, Gary Ruff2
+
+1 Universities Space Research Association, Cleveland, OH
+2 NASA Glenn Research Center, Cleveland, OH
+
+38th Annual Conference, American Association of Aerosol Research
+
+October 6, 2020
+
+claire.fortenberry@nasa.gov
+
+
+
+Why are spacecraft fires so dangerous?
+
+• Typical fire safety strategies for 
+crew (e.g., escape options) are 
+more challenging
+
+• Lack of gravity challenges early-
+stage fire detection
+
+• Lack of gravity can change 
+propagation of the fire itself
+
+• Post-fire cleanup of toxic 
+combustion products challenged by 
+low gravity and limited short-term 
+resources → long term health 
+effects for crew
+
+Mir Space Station Fire: 
+February 23-24, 1997
+
+Image taken by Dr. Jerry Linenger following Mir fire; 
+spaceflight.nasa.gov/history/shuttle-mir/multimedia/linenger-
+
+photos/linenger-p-003.htm
+
+2
+
+
+
+How are fires different in microgravity?
+
+Without gravity, flames are 
+unaffected by buoyancy.
+
+• Material flammability limits are lower 
+in microgravity than terrestrial gravity
+
+• Changes in flame → changes in 
+combustion products
+
+• Particle transport and evolution: 
+Lack of settling and buoyancy →
+longer particle residence times 
+within and outside the flame →
+larger particles
+
+0 g 1 g
+
+Marcum et al., Proceedings of the Combustion Institute, 37, 4001–4008, 2019. 
+Gokoglu et al., A Researcher’s Guide to: Combustion Science; NASA ISS Program Science Office, 2016.
+Urban et al., AIAA 2008-806, 46th AIAA Aerospace Sciences Meeting and Exhibit, Reno, NV, January 2008.
+
+Image credit: NASA, BASS experiments, 
+nasa.gov/mission_pages/station/research/news/bassII 
+
+3
+
+
+
+Microgravity Smoke Detection Challenges
+
+• Challenges with detector placement (no buoyancy → smoke does not rise)
+
+• Plume dilution and slower propagation through volume→ opportunity for fire to 
+grow prior to detection
+
+• False alarms from background particles (no gravitational settling)
+
+Earth Gravity Microgravity
+
+Urban et al., 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-318, July 2016.
+
+Suspended dust
+4
+
+
+
+Characterizing Particles from Microgravity Fires
+
+• Need to detect smoke before a 
+flame grows:
+• Target particles from smoldering 
+
+rather than flaming combustion
+
+• Identify relevant particle 
+sizes/morphologies by measuring 
+smoke particles from spacecraft-
+relevant “fire-resistant” materials
+
+• Evaluate detector performance for 
+these particles
+
+• Smoke Aerosol Measurement 
+Experiment (SAME): measured 
+particle sizes and morphologies in 
+microgravity
+
+SAME Publications:
+• Urban et al., 070FR-0171, 8th U. S. National Combustion Meeting, 
+
+Salt Lake City, UT, May 2013.
+• Meyer et al., Aerosol Sci. Tech., 49:5, 299-309, 2015.
+• Mulholland et al., Aerosol Sci. Tech., 49:310–321, 2015.
+• Meyer et al., Fire Safety Journal, 98. 74-81, 2018.
+
+5
+
+Image credit: NASA, SAME experiments, 
+grc.nasa.gov/space/iss-research/msg/same/#lightbox-
+gallery-1-2
+
+
+
+Characterizing Particles from Microgravity Fires
+
+SAME key findings:
+
+• All tested fuels produced substantial PM1
+
+• Particle dynamics predominated by 
+factors other than gravity (e.g., changes 
+in air flow alters coagulation rates)
+
+• Detector response dependent on particle 
+size and mechanism of detection:
+
+• ISS forward light scattering detector 
+had diminished response to smallest 
+particles (Kapton and Teflon, <300 nm)
+
+• Ionization detector had slightly better 
+response to smallest particles 
+(particularly Teflon)
+
+Kapton Teflon
+
+Material images: Marit Meyer
+TEM images: Meyer et al., Aerosol Science and Technology, 49:5, 299-
+309, 2015.
+
+Meyer et al., Aerosol Sci. Tech., 49:5, 299-309, 2015.
+Meyer et al., Fire Safety Journal, 98. 74-81, 2018.
+
+6
+
+
+
+Characterizing Particles from Microgravity Fires
+
+Ongoing experiments: Spacecraft 
+Fire Safety experiments (Saffire)
+
+• Opportunity to study large-scale fires in 
+microgravity with lower risk to crew
+
+• Saffire I-III (2016-2017): 
+
+• Measured flame spread rate, fuel 
+mass consumption, heat release
+
+• Saffire IV-VI (2020-2021; in progress):
+
+• In addition to flame properties, 
+measure combustion products from 
+variety of fuels
+
+• Test post-fire cleanup technology
+Image credits: NASA
+
+nasa.gov/feature/nasa-ignites-fire-experiment-aboard-
+space-cargo-ship
+
+nasa.gov/feature/northrop-grumman-cygnus-launches-
+arrivals-and-departures/
+
+nasa.gov/feature/glenn/2020/the-flame-of-discovery-grows-as-saffire-sets-new-fires-in-space
+
+Ruff and Urban, 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-428, July 2016.
+7
+
+
+
+Detection Challenges: Smoke Detector Performance
+
+• ISS smoke detector: forward light scattering; 
+Space shuttle (ret. 2011) smoke detector: 
+radioisotope ionization
+
+• Detector standards typically based on Earth 
+standards (e.g., Underwriters’ Laboratory #217 
+and #268)
+
+• Problem: compared to terrestrial applications, 
+early detection is especially critical and minimum 
+concentration detection thresholds must be small
+
+12CO.9 (Wed 10/7, 6:00-7:30PM EDT): Wang et al., 
+“Laboratory-Generated Aerosols as Transfer Standards 
+
+to Characterize Smoke Detector Performance”
+
+Light 
+Scattering 
+Detector
+
+Ionization 
+Detector
+
+Urban et al., 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-318, July 2016.
+Urban et al., 2009 Int. Conf. Environ. Sys., Savannah, GA, 2009-01-2468, July 2009.
+
+8
+
++ +
+
+--
+
++
+
+-
+
++ -
+
+α
+α
+α
+
+Battery
+
+Radiation 
+Source
+
+Alarm
+
+Light source 
+& optics
+
+Alarm
+
+Detector
+
+
+
+Detection Challenges: Influence of Vehicle Characteristics
+
+• Brooker et al. (2007): modeled ventilation 
+flow and detector response in ISS Destiny
+• Proximity of smoke source to detector was 
+
+unreliable predictor of alarm time
+• Alarm times dictated by air flow patterns
+
+• Dietrich et al. (2012, 2013): outcomes (e.g., 
+long and short-term survivability) depend on 
+parameters specific to vehicle
+• No “one size fits all” solution for successful 
+
+detection and suppression
+
+• Urban et al. (2016): compared smoke/heat 
+release rates with mixing and filtration rates
+• How much material must be smoldered to 
+
+trigger an alarm?
+• HEPA filtration in ISS greatly increases time to 
+
+alarm
+• Toxic gases could have opportunity to 
+
+accumulate in mixing volume before alarm 
+even sounds
+
+If a fire breaks out, what determines the time to alarm?
+
+Brooker et al., 2007 Int. Conf. Environ. Sys., Chicago, IL, 07ICES-113, July 2007.
+Dietrich et al., 42nd Int. Conf. Environ. Sys., San Diego, CA, AIAA-2012-3512, July 2012. 
+
+Dietrich et al., 43rd Int. Conf. Environ. Sys., Vail, CO, July 2013. 
+Urban et al., 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-318, July 2016.
+
+Ruff et al., Int. Conf. Environ. Sys., ICES-2020-173, 2020.
+
+9
+
+Image credit: NASA
+nasa.gov/offices/oct/image-feature/space-
+
+station-regenerative-eclss-flow-diagram
+
+ISS ECLSS: life support system, including atmospheric regulation 
+and fire detection/suppression
+
+
+
+Detection Challenges: Reducing False Alarms
+
+• Dietrich et al. (2017): certain activities 
+can generate particle concentrations 
+high enough to induce false alarms
+
+• Suggested strategies:
+• Urban et al. (2016): Measure combustion 
+
+gas (e.g., CO) in parallel with particles 
+
+• Schultze et al. (2020): Improve detector 
+design to optically distinguish smoke 
+particles from dust based on particle 
+morphology
+
+• Future deep-space missions: light 
+scattering detector with threshold based 
+on rate of rise
+
+Dietrich et al., 47th International Conference on Environmental Systems, Charleston, SC, ICES-2017-195, July 2017.
+Urban et al., 46th Int. Conf. Environ. Sys., Vienna, Austria, ICES-2016-318, July 2016.
+Schultze et al., Int. Conf. Environ. Sys., ICES-2020-125, 2020.
+
+Suspended dust from crew 
+activities (e.g., vacuuming)
+
+10
+
+POLARISE Detector:
+Schultze et al., Int. 
+Conf. Environ. Sys., 
+ICES-2020-125, 2020.
+
+
+
+Future Challenges: Lunar Missions
+
+In future lunar missions (e.g., Artemis), 
+will need to distinguish smoke particles 
+from lunar dust.
+• Park et al. (2008): lunar dust samples 
+
+from Apollo missions have lognormal 
+distribution, with modes 100-200 nm
+• Distinguishing smoke and dust 
+
+particles for smoke detection based 
+on size could be challenging
+
+• Lunar dust (dp < 20 µm) is harmful to crew 
+health
+• Sharp, irregularly-shaped shards
+• During Apollo missions, astronauts 
+
+experienced eye, nose, throat 
+irritation
+
+• Health effects will dictate air flow 
+and filtration strategies
+
+2 µm
+
+1 µm
+5 µm
+
+2 µm
+
+1 µm
+
+Park et al., J. Aerosp. Eng., 21(4): 266-271, 2008
+Image credit: NASA. 
+nasa.gov/exploration/humanresearch/multimedia/images/hrpg_img_05.html.
+
+11
+
+
+
+Future Challenges: Lunar Missions
+
+• Lunar gravity ~ 1/6 g
+• Some buoyant flow and settling expected, but 
+
+smaller particles will stay in air for longer
+
+• Sacksteder and T’ien (1994): “flammability 
+zone” different in partial-g compared to either 
+1g or 0g, but limited data exist
+
+• Novel mission parameters → new risks
+• Longer mission durations → need to store 
+
+more oxygen and/or ignitable/reactive 
+materials (e.g., batteries)
+
+• Increased extravehicular activities → oxygen 
+handling, dust transport, use of oxygen to 
+mitigate decompression sickness, etc.
+
+Ruff et al., Int. Conf. Environ. Sys., ICES-2020-173, 2020.
+Sacksteder and T’ien, 25th Symposium (International) on Combustion, The Combustion Institute, Pittsburgh, PA, 1685-1692, 1994 
+
+12
+
+Image credit: NASA, Artemis Lunar Exploration Program Overview 
+nasa.gov/specials/artemis/
+
+
+
+Acknowledgements
+
+• Universities Space Research 
+Association (USRA) Glenn 
+Engineering and Research 
+Support Contract No. 
+80GRC020D0003
+
+• Dr. Carol Kory
+• Advanced Exploration Systems 
+
+Life Support Systems Project
+
+13
+
+
+
+Extra Slides
+
+14
+
+
+
+Smoke Detection in Microgravity
+
+Meyer et al. (2015) describes “moment method” for determining particle size 
+distributions:
+
+• “Zeroth Moment” = particle number concentration 
+
+• “First Moment” = number average particle diameter 
+
+• “Third Moment” = particle volume (and mass) concentration
+
+• If you have three moments, and assumptions about particle properties hold (e.g., spherical shape),
+particle size distributions can be approximated.
+
+• SAME experiments: moment method works well only for spherical particles 
+
+𝑀𝑣 𝑟,𝑡 = න
+0
+
+∞
+
+𝑛𝑑𝑑𝑝
+𝑣𝑑(𝑑𝑝)
+
+Size distribution Particle diameter to vth power
+
+vth moment
+
+15
+
+
+
+Urban et al., 46th Int. Conf. Environ. Sys., Vienna, Austria, July 2016, ICES-2016-318.
+16
+
+

@@ -1,0 +1,317 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PowerPoint Presentation
+
+
+Desko Inferno – Overcoming COVID hurdles to light our fire
+
+Danelle Fogle
+
+Project Support Division Manager / 
+
+Senior Project Scheduling Analyst
+
+Peraton
+
+Glenn Research Center
+
+2021 NASA Cost and Schedule Symposium
+
+Virtual
+
+April 7, 2021
+
+
+
+Introduction
+
+2
+
+• Overview of the Saffire Experiment 
+
+
+
+Overview
+
+3
+
+• Saffire IV, V, VI Summary
+• Photos of Saffire V while Berthed to ISS
+• Challenges
+• Solutions
+• Lessons Learned
+• Results
+
+
+
+Saffire IV, V, VI Summary
+
+4
+
+Far Field Diagnostics (in Mid Deck Locker)
+Avionics, CO2 scrubber, Smoke Eater, Combustion 
+
+Products Monitor, particulate monitors (DustTrack & Ion 
+Chamber)
+
+Remote Sensors (6)
+Measure temp & CO2 in 
+
+standoffs,
+hatch and end cone
+
+Saffire Flow Unit
+Approx. 53x90x133cm. 
+New features include 2 
+side view cameras, acid 
+
+gas, O2, heat and 
+byproduct release to 
+
+cabin 
+
+Needs:
+ Demonstrate spacecraft fire monitoring and 
+
+cleanup technologies in a realistic spacecraft fire 
+scenario
+
+ Characterize fire growth in high O2, low pressure 
+
+atmospheres in microgravity
+ Obtain data to validate models of realistic 
+
+spacecraft fire scenarios
+
+Objectives:
+ Assess flame growth and spread of large-scale 
+
+microgravity fire (spread rate, mass consumption, 
+heat release) in exploration atmospheres
+
+ Evaluate fire behavior for a range of materials 
+and configurations
+
+ Demonstrate fire monitoring and response 
+technology on all three flights
+
+
+
+Photos of Saffire V while Berthed to ISS
+
+5
+
+Far Field 
+Diagnostics 
+
+(FFD)
+
+Saffire 
+Flow Unit 
+
+(SFU)
+
+Remote Sensors (RS) 
+[6 total, 2 end cones, 4 
+
+central]
+
+Snorkel 
+tip
+
+Remote 
+Sensor
+
+Exhaust 
+end of the 
+SFU and a 
+
+Remote 
+Sensor
+
+
+
+Saffire IV & V Challenges
+
+6
+
+• Conduct mission simulations with remote operations
+• Develop an alternate method to view NG MAESTRO screens (since the team couldn’t travel to Dulles, 
+
+VA)
+
+• Work with NG & NASA JSC to gain remote access to the Cygnus data due to Solarwinds breach
+• Figure out how ZIN personnel will view Cygnus/Saffire data
+• Conduct mission rehearsals with NG
+• Identify means for Mission Ops Team members to have backup internet connectivity
+• Ensure reliable communication between Saffire’s FOT-Console and NG and between FOT-Console and 
+
+NG Systems Engineer 
+
+• Get additional GSE laptops so more Mission Ops Team can run the Ground Application
+• Set up servers at GRC so that data processing can be accomplished by computers inside the GRC 
+
+firewall
+
+• Develop method to maintain and communicate Operations Timeline
+
+
+
+Solutions
+
+7
+
+• Successfully conducted mission simulations using remote access.
+• MAESTRO screens were visible via streaming through WebEx (back-up)
+• Data flow test was conducted and the Saffire data displays were accessible to the Saffire 
+
+Mission Operations Team. Tied into Mission Support Environment (MSE) via JSC VPN
+
+• ZIN personnel accessed the data via a shared display from MS Teams
+• Rehearsal was successfully completed being 100% remote
+• Smart phones with hotspot capability and/or MiFi hotspots were requested for all Mission 
+
+Ops Team members for additional communication and back-up Wi-Fi
+
+• NG set up an audio WebEx on the Ops1 loop so that FOT-Console could communicate with 
+NG Mission Control. Telecon lines were used for communication between NG System 
+Engineer and Saffire
+
+• Obtained two additional GSE laptops that were configured to run the ground support 
+software.
+
+• Check-out and testing was done. This was a backup plan because we had approved access to 
+GRC for Data Download - RTOW
+
+• Operations Timeline Teams Channel
+
+
+
+Lessons Learned
+
+• Have backup plan for displaying telemetry
+• Needed a backup method to communicate with the OPS1 loop
+• Don’t have Ops start right after the holidays
+• Besides emailing exact start times, also text
+• Start Teams chat the day before
+• Use the Teams Chat function to maintain another record of progress, issues, data, 
+
+etc.
+
+• Check the Ops Handbook for usability prior to Ops
+• Simulations highlighted the susceptibility of the approach to transferring large files 
+
+over home internet connections; get on-site access for data download
+
+• More tool training
+• More data download training
+• Do equipment check prior to the mission
+
+8
+
+
+
+Results
+
+9
+
+Igniter
+
+1-sided 
+PMMA 
+sample
+
+ The impact for spacecraft fire safety is that thin structures on a thick 
+material can propagate a flame in zero-g even though the flame does 
+not propagate on the thick material
+
+· The test conditions are nominally at 
+10.2 psia and 26.5 %O2. The flow is 20 
+
+cm/s. The video is 10x actual speed
+
+ About 5 seconds into the video, the 
+igniter initiates a flame on the 
+downstream 1-sided sample.
+
+· For the wide samples, a flame travels 
+along each edge of the rib
+
+· When the flow speed decreases to 5 
+cm/s about 38 seconds into the video, 
+the yellow in the flames disappear
+
+· At times you can see a second flame 
+trailing the leading flame. This is the 
+flame on the back side of the sample
+
+· Note that the thinner ribs have the 
+faster flame spread. Also note that the 
+flame on the right-hand side of the 
+sample doesn’t ignite the cross-stream 
+ribs.
+
+Air 
+Flow
+
+
+
+Results
+
+10
+
+
+
+Q/A
+
+Thank you!
+
+11
+
+
+ Slide 1
+ Introduction
+ Overview
+ Saffire IV, V, VI Summary
+ Photos of Saffire V while Berthed to ISS
+ Saffire IV & V Challenges
+ Solutions
+ Lessons Learned
+ Results
+ Results
+ Q/A
+

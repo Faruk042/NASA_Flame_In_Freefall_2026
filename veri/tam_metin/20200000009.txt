@@ -1,0 +1,217 @@
+Two-Stage Autoignition Dynamics of N-dodecane Droplets
+Under Normal Gravity at High Pressures
+Evan Rose1, Vedha Nayagam1, Daniel Dietrich2,
+Michael Hicks2, Uday Hegde1, Rosa Padilla2,
+and
+Forman Williams3
+1Case
+
+Western Reserve University, Cleveland, Ohio 44106
+
+2NASA
+
+Glenn Research Center, Cleveland, OH44135
+
+3University
+
+of California, San Diego, La Jolla, CA92093
+
+35th Annual Meeting of the American Society for Gravitational and Space Research
+November 20th – November 23rd 2019, Denver, Colorado
+1
+
+Background
+● The study of autoignition of an isolated, single droplet is important from the spray
+
+combustion point of view, which is quite complex
+● Earlier experimental and numerical simulations with detailed chemistry
+o Tanabe et al. (1994, 1995, 1996)
+o Moriue et al. (2000)
+o Eigenbrod et al. (2016)
+o Cuoci et al. (2015)
+Numerical simulation
+● Many aspects of single, isolated fuel droplet autoignition still remains to be thoroughly
+
+investigated, particularly at high pressures (both chemical and physical processes are
+important)
+● A new experimental hardware is being developed at NASA Glenn to study high pressure
+
+droplet ignition and combustion
+● Preliminary results using the newly developed apparatus is presented here
+
+2
+
+NASA Glenn High Pressure Experimental Hardware
+o Combustion chamber rated up to
+100 bar and 1000 K
+
+o High speed shadowgraph imaging –
+3000 frames per second
+
+o Color camera images at
+300 frames per second
+
+o PMT tube recorded at 1000 Hz
+o 3-thermocouples (close to the droplet, oven and
+deployment)
+
+3
+
+Test matrix shown on homogeneous mixture induction time map (CANTERA)
+833 K
+
+714 K
+
+625 K
+
+555 K
+
+ Homogeneous stoichiometric ndodecane/air mixture
+ Experimental conditions:
+o P=3 atm T= 560 to 780 K
+o T=603 K and P = 2 to 25 atm
+ T varying case NTC behavior
+ P varying case remains in Low-T
+
+region: t1/t2 varies (~1 to 400) as
+P increases from 1 to 25 atm
+
+4
+
+High speed video
+
+n-dodecane droplet in air
+autoignition
+P = 20 atm
+T = 603 K
+D0 = 1.1 mm
+captured at 3000 fps
+playback at 30 fps
+Pc = 18.1 atm
+Tc = 658.2 K
+
+5
+
+Temperature and diameter histories
+
+P=3 atm
+T=623 K
+
+6
+
+Four different ignition scenarios
+1. Cool flame only mode (CFO):
+Observed at low pressures and low temperatures (e.g., P=2 atm T=603)
+droplet lifetime is shorter than second induction time
+2. Cool flame followed by hot flame mode (CF-HF):
+Cool flame propagates and surrounds the droplet, followed by hot flame
+in its wake. Observed at higher pressures and temperatures (e.g., P=3
+atm and T =643 K)
+
+3. Cool flame and hot flame mode (CF&HF):
+As the cool flame propagates, hot flame kernel appears before the CF
+reaches the droplet. Both cool and hot flame structures appear for a brief
+period.
+4. Hot flame only mode (HF):
+Observed at high temperatures. Cool flame never forms. The temperature
+is above the “upper-turnover” temperature (e.g, P=3 atm T=783 K)
+7
+
+Autoignition modes
+High Pressure Transcritical Combustion (HPTC)
+CF-HF mode: ( 3 atm 623 K)
+
+1/3 s time step
+
+2/3 ms time step
+
+CF&HF mode: ( 10 atm 600 K)
+
+8
+
+Cool and hot flame starting locations:
+P = 3 atm and 584 K < T < 780 K
+Cool flame forms closer to the droplet as
+The temperature is increased
+
+Lcs ~ U tc ; tc ~ t1
+Ec ~ 17.4 kcal/mole
+Compared to 28 kcal/mole for homogeneous
+mixture. Physical delay is important
+Lcs
+
+Lhs – controlled by second induction time
+
+Eh ~ - 4 kcal/mole
+t2 increase with T in the NTC region
+
+9
+
+Cool and hot flame starting Transcritical Combustion (HPTC)
+High Pressure locations:
+T = 603 K; 2 atm < P < 25 atm
+Non-Monotonic Pressure
+Dependence
+
+Initial decrease in Lcs is caused by
+increased reactivity
+
+Lcs
+
+Buoyancy induced flow dominates
+above 15 atm (Gr – increases)
+
+10
+
+Cool-flame High position asTranscritical Combustion (HPTC)
+front Pressure function of time
+
+11
+
+Cool-flame High Pressure Transcritical Combustion (HPTC)
+speed
+Initially a constant speed is observed
+3 atm and 603K => 14.5 mm/s
+10 atm and 603 K => 23.5 mm/s
+
+Constant-speed duration decreases
+as ambient T or P is increased
+Theories of cool-flame propagation
+are needed
+
+12
+
+Induction times Pressure Transcritical Combustion (HPTC)
+High
+P = 3 atm and 584 K < T < 780 K
+
+13
+
+Induction times Pressure Transcritical Combustion (HPTC)
+High
+T = 603 K; 2 atm < P < 25 atm
+
+Physical Delays Dominant at High Pressures and at Low Temperatures.
+14
+
+Conclusions and Pressure Transcritical Combustion (HPTC)
+High Future Work
+
+o Ignition dynamics at normal gravity are much more complex
+than in microgravity because of the downward moving buoyant
+plume.
+o Physical ignition delays are most important for the first-stage at
+high temperatures and low pressures, and for the Second Stage
+at low temperatures and high pressures.
+o Quasi-steady Cool-Flame Propagation appears to occur in these
+experiments at measurable velocities of a few centimeters per
+second, calling for calculations to be made for comparison.
+o Diffusion and heat conduction around the droplet cause
+subcritical conditions to persist at supercritical pressures and
+temperatures.
+15
+
+Questions?
+
+16
+

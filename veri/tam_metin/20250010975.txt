@@ -1,0 +1,244 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="pdf:PDFVersion" content="1.7">
+<meta name="pdf:docinfo:title" content="Microsoft PowerPoint - ASGSR2025_presentation">
+<meta name="pdf:hasXFA" content="false">
+<meta name="access_permission:modify_annotations" content="true">
+<meta name="access_permission:can_print_degraded" content="true">
+<meta name="dc:creator" content="Jocelyn Schechter">
+<meta name="dcterms:created" content="2025-12-02T21:26:32Z">
+<meta name="dcterms:modified" content="2025-12-02T21:26:32Z">
+<meta name="dc:format" content="application/pdf; version=1.7">
+<meta name="access_permission:fill_in_form" content="true">
+<meta name="pdf:docinfo:modified" content="2025-12-02T21:26:32Z">
+<meta name="pdf:hasCollection" content="false">
+<meta name="pdf:encrypted" content="false">
+<meta name="dc:title" content="Microsoft PowerPoint - ASGSR2025_presentation">
+<meta name="pdf:hasMarkedContent" content="false">
+<meta name="Content-Type-Override" content="application/pdf">
+<meta name="Content-Type" content="application/pdf">
+<meta name="pdf:docinfo:creator" content="Jocelyn Schechter">
+<meta name="pdf:producer" content="Microsoft: Print To PDF">
+<meta name="access_permission:extract_for_accessibility" content="true">
+<meta name="access_permission:assemble_document" content="true">
+<meta name="xmpTPg:NPages" content="1">
+<meta name="pdf:hasXMP" content="false">
+<meta name="access_permission:extract_content" content="true">
+<meta name="access_permission:can_print" content="true">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.DefaultParser">
+<meta name="X-TIKA:Parsed-By" content="org.apache.tika.parser.pdf.PDFParser">
+<meta name="access_permission:can_modify" content="true">
+<meta name="pdf:docinfo:producer" content="Microsoft: Print To PDF">
+<meta name="pdf:docinfo:created" content="2025-12-02T21:26:32Z">
+<title>Microsoft PowerPoint - ASGSR2025_presentation</title>
+</head>
+<body><div class="page"><p></p>
+<p>Centrifuge:
+ Spins to generate centripetal force
+ Simulates Lunar gravity (~1.62 m/s2)
+</p>
+<p> Drop tower:
+ Tested at 28% oxygen
+</p>
+<p> Ground testing:
+ Oxygen: 25%, 28%, and 38%
+</p>
+<p>Characterizing the Flammability of Nomex Fabric for the Preparation of FM2
+</p>
+<p>Jocelyn Schechter1, Jennifer Zayac2, Paul Ferkul4, Daniel Dietrich3, Ya-Ting Liao1
+</p>
+<p>1Case Western Reserve University
+2Ohio Northern University
+</p>
+<p>3National Aeronautics and Space Administration
+4Universities Space Research Association
+</p>
+<p>Lf = Xtip−Xbase
+</p>
+<p>Software: Python
+ Used OpenCV for video processing
+</p>
+<p>o BGR (Blue, Green, Red) HSV (Hue, Saturation, Value)
+Approach:
+ Tracks flame base (Xbase) and tip (Xtip) positions.
+ Deduce flame length (Lf = Xtip - Xbase)
+ Plot positions and apply fit line to deduce flame spread 
+</p>
+<p>rates (Vbase, Vtip).
+</p>
+<p>Tracking Method
+</p>
+<p>0G
+38% O2
+30 cm/s
+</p>
+<p>1G
+38% O2 
+~7 cm/s
+</p>
+<p>Results
+Space flight safety
+ Increased oxygen level
+ Reduced cabin pressure 
+ Change in gravity (buoyancy)
+Materials that are not flammable on Earth can become 
+</p>
+<p>flammable when these conditions change.
+</p>
+<p>FM2 (Flammability of Materials on the Moon)
+ Planned fire experiments on the moon.
+ Currently scheduled in the next few years.
+ Will determine limiting oxygen concentration (LOC) for a 
+</p>
+<p>flight-relevant material (Synergy Pro). 
+</p>
+<p>Research Objectives
+To complement the FM2 data and understand how fire 
+behaves for spaceflight relevant materials in different 
+environmental conditions.
+</p>
+<p>Introduction Testing Method
+</p>
+<p> Limiting oxygen concentrations (LOC):
+</p>
+<p>o 1G  ~23% Oxygen
+</p>
+<p>o Lunar-G  ~29% Oxygen
+</p>
+<p>o 0G  ~38% Oxygen
+</p>
+<p> Data from tracking is collected and plotted to compare the effects of different 
+</p>
+<p>conditions for 1G flow tunnel tests.
+</p>
+<p>o Independent variables  Flow Rate and Oxygen % 
+</p>
+<p>o Dependent variables  flame length, base spread rate, and tip spread rate.
+</p>
+<p>Flame Length
+</p>
+<p>|
+Xbase
+</p>
+<p>|
+Xtip
+</p>
+<p>|
+X = 0
+</p>
+<p>Lf = Xtip - Xbase
+</p>
+<p>Centrifuge
+</p>
+<p>Flow Tunnel
+</p>
+<p>Flow Tunnel:
+ Drop tower:
+ Oxygen: 24% to 38% oxygen
+ Flow speed: 15 cm/s and 30 cm/s
+</p>
+<p> Ground testing:
+ Oxygen: 22% to 38%
+ Flow speed: 5 cm/s to 30 cm/s 
+</p>
+<p>(increments of 5 cm/s)
+</p>
+<p>O
+xy
+</p>
+<p>ge
+n 
+</p>
+<p>%
+</p>
+<p>Flow Velocity 
+(or Gravity Level)
+</p>
+<p>Flammable 
+Region
+</p>
+<p>Blow-off 
+Extinction
+</p>
+<p>Radiative 
+Extinction
+</p>
+<p>Conclusion
+</p>
+<p> Gravity has significant effects on the material’s flammability.
+o Nomex HT90-40® behaves differently than other materials when burned.
+</p>
+<p> Oxygen concentration is observed to increase flame length and tip spread rate.
+o Inconclusive for base spread rate (need more testing).
+</p>
+<p> Flow rate has negligible effect on flame length and flame spread over the tested range.
+ Likely due to the buoyant force outweighing the imposed flow
+</p>
+<p>* Assuming a buoyant velocity of 25 cm/s
+</p>
+<p>Acknowledgements
+</p>
+<p>• Support from Zero-G Facility Staff.
+• NASA’s Office of STEM Engagement.
+• Ohio Space Grant Consortium.
+• CWRU School of Engineering.
+• NASA Glenn Research Center (Grant 
+</p>
+<p>#80NSSC22M0011). 
+</p>
+<p>Centrifuge:
+ Spins to generate centrifugal force
+ Simulates Lunar gravity (~1.62 m/s2)
+</p>
+<p> Drop tower:
+ Oxygen: 28%
+</p>
+<p> Ground testing:
+ Oxygen: 25%, 28%, and 38%
+</p>
+<p>gU∞
+</p>
+<p>Pressurized 
+Bottles
+</p>
+<p>Testing 
+Chamber
+</p>
+<p>Specific Aims
+ Investigate flammability of 
+</p>
+<p>Nomex HT90-40® in different 
+environments.
+</p>
+<p> Understand the effects of oxygen 
+and concurrent flow rate 
+(pressure is constant at 8.2 psi).
+</p>
+<p> Determine LOC.
+</p>
+<p>Example:
+Oxygen: 23% 
+Flow rate: 10 cm/s
+Ignition time: 5 seconds
+</p>
+<p> Vbase = 3.41 mm/s
+ Vtip = 3.55 mm/s
+ Lf = 23.14 mm
+</p>
+<p>5.2 Second Drop Tower
+</p>
+<p>g
+ω
+</p>
+<p>Zero Gravity Research Facility 
+ A 5.2 s drop tower.
+ In the drop tower, the unit is in free fall, 
+</p>
+<p>simulating microgravity
+</p>
+<p>1G Flow Tunnel Flame Tracking:
+</p>
+<p>U∞</p>
+<p></p>
+</div>
+</body></html>

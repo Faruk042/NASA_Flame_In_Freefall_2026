@@ -1,0 +1,3314 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+All-sky search in early O3 LIGO data for continuous gravitational-wave signals from
+unknown neutron stars in binary systems
+
+The LIGO Scientific Collaboration and the Virgo Collaboration
+(Dated: March 22, 2021)
+
+Rapidly spinning neutron stars are promising sources of continuous gravitational waves. Detecting
+such a signal would allow probing of the physical properties of matter under extreme conditions. A
+significant fraction of the known pulsar population belongs to binary systems. Searching for unknown
+neutron stars in binary systems requires specialized algorithms to address unknown orbital frequency
+modulations. We present a search for continuous gravitational waves emitted by neutron stars in
+binary systems in early data from the third observing run of the Advanced LIGO and Advanced
+Virgo detectors using the semicoherent, GPU-accelerated, BinarySkyHough pipeline. The search
+analyzes the most sensitive frequency band of the LIGO detectors, 50 − 300 Hz. Binary orbital
+parameters are split into four regions, comprising orbital periods of 3 − 45 days and projected
+semimajor axes of 2 − 40 light-seconds. No detections are reported. We estimate the sensitivity
+of the search using simulated continuous wave signals, achieving the most sensitive results to date
+across the analyzed parameter space.
+
+I. INTRODUCTION
+
+Continuous gravitational waves (CWs) are a long-
+lasting form of gravitational radiation. For ground-
+based interferometric detectors the canonical sources
+are rapidly spinning neutron stars (NSs) sustaining a
+quadrupolar deformation. Several emission mechanisms
+have been proposed, such as crustal deformations, r-
+modes, or free precession (see [1] for a recent review).
+Detecting CWs would probe the physics of such compact
+objects, leading us to a better understanding of the
+equation of state of matter under extreme conditions.
+More exotic types of CW sources are also theorized, such
+as boson clouds around spinning black holes [2].
+
+Every CW search method assumes certain information
+about the intended sources. All-sky searches, such as the
+one reported in this paper, impose the least constraints
+on the CW emission. The latest results obtained by
+the LIGO-Virgo collaboration using Advanced LIGO [3]
+and Advanced Virgo [4] data, covering targeted (known
+pulsars), directed (known sky locations), and all-sky
+searches, can be found in [5–10].
+
+All-sky searches require highly efficient analysis
+methods because they must account for a Doppler
+modulation due to the Earth’s movement with respect
+to the Solar System Barycenter (SSB), an effect that
+depends on sky position. In principle, one can construct
+a search pipeline using fully coherent matched filtering;
+for wide parameter space searches, however, such an
+approach quickly becomes computationally unaffordable
+[11]. As a result, semicoherent methods are used,
+splitting the data stream into smaller time segments
+that can be coherently analyzed. Then, per-segment
+results are combined according to the expected frequency
+evolution of the template under analysis. This method
+reduces the computational cost of a search while
+achieving a reasonable sensitivity.
+
+Only a small fraction of the expected population
+of galactic NSs has been detected electromagnetically
+[12]. Through gravitational waves we could access
+these unknown populations of NSs. About half
+
+of the NSs detected using electromagnetic means
+within the most sensitive frequency band of current
+ground-based detectors are part of a binary system
+[13, 14]. Searches for CWs from this class of
+NSs pose an additional, substantial computational
+challenge compared to standard all-sky searches that
+target isolated NSs because additional unknown binary
+orbital parameters increase the search parameter space
+dimensionality. As a result, one must use specialized
+methods in order to search for this type of signal.
+
+We present an all-sky search for CWs produced
+by NSs in binary systems using the semicoherent
+BinarySkyHough pipeline [13]. It builds upon SkyHough
+[15], inheriting its characteristic noise robustness and
+computational efficiency, and uses Graphics Processing
+Units (GPUs) to speed up the core part of the
+search. The concept of BinarySkyHough is to
+compute search statistics over the parameter space
+and to use those statistics to rank the interesting
+regions for subsequent follow up using more sensitive,
+computationally demanding techniques. This balance
+between sensitivity and computational cost has proven
+effective in previous searches of the LIGO O2 observing
+run data using both the isolated SkyHough [8] and
+BinarySkyHough [16] flavors of this pipeline.
+
+In Sec. II we introduce the signal model; Sec. III
+describes the early third observing run of the Advanced
+LIGO and Advanced Virgo detectors; Sec. IV briefly
+describes the main analysis pipeline; Sec. V introduces
+the first post processing stage; and in Sec. VI we
+estimate the sensitivity of this search. In Sec. VII we
+further analyze the most significant outliers and rule
+them out as non-astrophysical candidates. We present
+our conclusions in Sec. VIII.
+
+II. SIGNAL MODEL
+
+A non-axisymmetric neutron star spinning about one
+of its principal axes is expected to emit gravitational
+waves at twice its rotation frequency f0 = 2frot with
+
+ar
+X
+
+iv
+:2
+
+01
+2.
+
+12
+12
+
+8v
+2 
+
+ [
+gr
+
+-q
+c]
+
+ 1
+9 
+
+M
+ar
+
+ 2
+02
+
+1
+
+
+
+2
+
+a strain amplitude given by [17]
+
+h(t) =h0 [F+(t; ψ,n̂)
+1 + cos ι
+
+2
+cos φ(t)
+
++ F×(t; ψ,n̂) cos ι sin φ(t)] ,
+(1)
+
+where F+,× are the antenna patterns of the
+interferometric detectors, depending on the polarization
+angle ψ and the sky position n̂ of the source; h0 and
+cos ι are the characteristic CW amplitude and the cosine
+of the inclination of the source with respect to the line
+of sight, respectively; φ(t) represents the phase of the
+gravitational wave signal.
+
+The CW amplitude h0 can be expressed in terms of
+the physical properties of the source once an emission
+mechanism has been assumed. The three principal
+moments of inertia of a non-axisymmetric NS are given
+by Ix, Iy, Iz, and the equatorial ellipticity is given by
+� = |Ix − Iy|/Iz, assuming the spin axis is aligned with
+Iz. The gravitational wave amplitude can be expressed
+as
+
+h0 =
+4π2G
+
+c4
+Iz�
+
+d
+f20 , (2)
+
+where d denotes the distance to the source from the
+detector, f0 the gravitational wave frequency, and G and
+c respectively refer to the gravitational constant and the
+speed of light. We can further relate this quantity to the
+mass quadrupole Q22 of the star through the equatorial
+ellipticity
+
+� =
+
+√
+8π
+
+15
+
+Q22
+Iz
+
+. (3)
+
+We can describe the signal phase via Taylor expansion
+with respect to a fiducial starting time τ0 in the source
+frame
+
+φ(τ) = φ0 + 2π [f0 · (τ − τ0) + . . . ] , (4)
+where τ is the proper source frame time and φ0 represents
+the initial phase at τ0. The number of higher order terms
+to include in this expansion depends on the population
+of NSs under consideration. After analyzing the ATNF
+pulsar catalog [14], it was argued in [13] that searching
+for NSs in binary systems need not take into account
+any spindown parameters when using datasets lasting for
+less than a few years. As we will discuss in Sec. VIII,
+this search remains sensitive to signals up to a certain
+spindown value, but there is an implicit limit on the
+astrophysical reach.
+
+Because of the relative motion of the detector around
+the SSB and the relative motion of the source around the
+Binary System Barycenter (BSB), the phase as measured
+by the detector at time t is Doppler-modulated according
+to the timing relation
+
+τ + ap sin [Ω (τ − τasc)] = t +
+~r(t) · n̂
+c
+
+− d
+c
+, (5)
+
+where ap represents the semi-major axis of the binary
+orbit projected onto the line of sight (measured in light-
+seconds), Ω represents the orbital frequency of the source,
+
+τasc represents the time of passage through the ascending
+node as measured from the source frame and ~r represents
+the position of the detector in the SSB. In order to derive
+this expression, we assumed circular, Keplerian orbits;
+the search remains sensitive, however, to signals from
+sources in binary systems up to a certain eccentricity as
+discussed in Section VII A and [13].
+
+We define a template as λ = {f0, n̂,ap, Ω, tasc}. The
+parameter space (i.e. the set of all templates searched)
+will be denoted as P. The orbital period is related to the
+orbital angular frequency by P = 2π/Ω.
+
+We refer the reader to [18] for a complete derivation
+of Eq. (5) and a discussion about how to express Eq. (4)
+in the detector frame. The gravitational wave frequency
+evolution associated to a template λ as measured from
+the detector frame is thus
+
+fλ(t) = f0 ·
+(
+
+1 +
+~v(t) · n̂
+
+c
+−apΩ cos [Ω(t− tasc)]
+
+)
+, (6)
+
+where ~v(t) refers to the detector velocity and tasc is akin
+to τasc measured from the detector frame. We choose
+the initial phase tasc to be located within the range[
+tmid − P2 , tmid +
+
+P
+2
+
+]
+, where tmid represents the mean
+
+time between the start and the end of the run measured
+in GPS seconds.
+
+III. DATA USED
+
+The first part of the third observing run of the
+Advanced LIGO and Advanced Virgo detectors (O3a)
+comprises six months of data collected from the 1st
+of April 2019 at 15:00 UTC to the 1st of October
+2019 at 15:00 UTC. Data was taken by the Advanced
+LIGO detectors, located in Hanford (Washington,
+USA, designated H1) and Livingston (Lousiana, USA,
+designated L1), together with the Advanced Virgo
+detector, located in Cascina (Pisa, Italy). We did
+not make use of Advanced Virgo data because of
+an unfavorable trade-off between computing cost and
+expected sensitivity improvement of the search. The
+detector duty factor (the fraction of the run when the
+detector is collecting observational-quality data) was
+71.2% for H1 and 75.8% for L1. The implementation
+of instrumental upgrades has allowed the detectors to
+improve their overall sensitivities with respect to the
+previous observing run (O2) [19].
+
+For the duration of the run, several artificial signals
+were injected into both detectors in order to calibrate and
+monitor their performance. Calibration lines are artificial
+monochromatic signals, injected at different frequencies
+in each detector to avoid coherent artifacts. They
+are used to monitor time-varying detector operating
+parameters. Hardware injections, on the other hand,
+are artificial quasi-monochromatic signals consistently
+injected into both detectors in order to mimic the
+effects of an actual CW signal present in both detectors.
+They are used to verify expected detector response and
+characterize calibrated data [20]. Both of these artificial
+
+
+
+3
+
+Search setup parameter Value
+
+TSFT 1024 s
+βTukey 0.5
+Tobs 14832675 s
+tmid 1245582821.5 s
+∆f 0.125 Hz
+
+TABLE I. Miscellaneous parameters used in the search. TSFT
+denotes the time span employed to compute Short Fourier
+Transforms (SFTs). βTukey refers to the tapering parameter
+of the Tukey window, denoting the fractional length of the
+window’s central unitary plateau. Tobs is the observing time
+of the run. tmid represents the mean time between the start
+and the end of the run measured in GPS seconds. ∆f refers to
+the bandwidth of the individual sub-bands analyzed by each
+computing job.
+
+signals may interfere with CW searches in general,
+showing up as significant candidates due to their high
+strength in the detector spectrum. Spectral artifacts
+in detector data can be produced by environmental or
+instrumental noise and also interfere with CW searches
+[21].
+
+The search was performed using Short Fourier
+Transforms (SFTs) created from the C00 (initial
+calibration version) time-domain observing-quality strain
+data [22]. These SFTs were extracted from SFDB
+(Short Fourier Data Base) data [23], which incorporates
+a time-domain cleaning procedure to avoid noise-
+floor degradation due to glitches and other forms
+of transient noise. Every SFT lies completely
+within observing-quality data. Fourier transforms
+were computed using a Tukey-windowed baseline of
+TSFT = 1024 s with tapering parameter βTukey = 0.5 and
+a 50% overlap. These values are collected in table I.
+
+Following the same procedure used in the O2 SkyHough
+search [8], SFT data are split into two datasets to be
+used in two different stages of the search. The first
+dataset, which we refer to as non-overlapping, leaves out
+overlapping SFTs (i.e. every SFT starts at the end of
+the previous one). The second dataset, which we refer to
+as overlapping, contains all of the SFTs. Using the non-
+overlapping set for the first stage of the analysis reduces
+the computational cost of the search at a manageable loss
+in sensitivity. Table II lists the number of SFTs in each
+of the datasets. Datasets contain SFTs from both LIGO
+detectors (i.e. we perform a multi-detector search [13]).
+
+IV. THE SEARCH PIPELINE
+
+We split the search into two main frequency bands:
+the low-frequency band, from 50 Hz to 100 Hz, and the
+high-frequency band, from 100 Hz to 300 Hz. These
+bands are further divided into ∆f = 0.125 Hz sub-bands,
+which constitute the basic working unit of our setup: each
+computing job performs an all-sky search over one such
+sub-band, searching for binary modulated signals within
+a certain region of the binary parameter space among
+
+Non-overlapping Overlapping
+
+H1 10172 20577
+L1 10962 22049
+Total 21234 42626
+
+TABLE II. Number of Short Fourier Transforms (SFTs) in
+each of the datasets. Characteristics of these SFTs are
+summarized in table I and section III.
+
+the ones specified in Fig. 1 and Table III. Because of the
+limited computing power available, the high-frequency
+search focuses on a single binary parameter space region,
+denoted as B in Table III; the low-frequency search is
+performed in all four binary parameter space regions.
+
+The search parameter space is gridded with templates
+as described in [13]:
+
+δf0 =
+1
+
+TSFT
+, δθ =
+
+c/v
+
+TSFT f0 Pf
+, δap =
+
+√
+6m
+
+πTSFTf0Ω
+,
+
+δΩ =
+
+√
+72m
+
+πTSFTf0apΩTobs
+, δtasc =
+
+√
+6m
+
+πTSFTf0apΩ2
+,
+
+(7)
+
+where δθ refers to the angular sky position resolution,
+v = |~v| and v/c ∼ 10−4. Tobs denotes the observing time
+of the search, quoted in Table I. The variables Pf and m
+are the so-called pixel factor and mismatch parameters,
+which can be used to manually control the parameter
+space template density. In this search, we tune them in
+order to adjust the computing cost as we reach higher
+frequencies, where template spacing naturally becomes
+finer. Table IV summarizes the choices made for each of
+the frequency bands.
+
+The pipeline uses the Hough transform to relate tracks
+in the digitized spectrogram, as explained below, to
+points in the parameter space. For each point in the
+parameter space λ ∈ P there is a corresponding track [see
+Eq. (6)] of the time-frequency evolution, which denotes
+the instantaneous frequency of the signal as observed by
+the detector.
+
+A. Ranking statistics
+
+Let us assume the data can be described as a noise
+background plus a CW signal
+
+x(t; λ) = n(t) + h(t; λ) . (8)
+
+We start by computing the normalized power of SFT data
+
+ραk =
+|x̃αk |
+
+2
+
+〈|ñαk |
+2〉
+, (9)
+
+where tildes represents a Fourier transformed quantity, k
+indexes frequency bins, α indexes SFTs and 〈·〉 denotes
+a running median average using 101 frequency bins, as
+explained in [13]. Each SFT α can be related to a certain
+starting time tα, effectively obtaining a spectrogram
+
+
+
+4
+
+2 4 6 8 10 20 40
+
+Orbital Period [days]
+
+1
+
+2
+
+4
+
+6
+
+8
+
+10
+
+20
+
+40
+P
+
+ro
+je
+
+ct
+ed
+
+S
+em
+
+im
+a
+
+jo
+r
+
+A
+x
+is
+
+[s
+]
+
+A
+
+B
+
+C
+
+D
+
+FIG. 1. Binary orbital parameters considered by the present search. Solid color regions denote parameter space regions in
+which a search was performed; blue dots mark binary orbital parameters corresponding to the known binary pulsar population.
+Regions A, B, C and D were covered by the low-frequency analysis, while region B was covered by the high-frequency analysis
+as well. Time of ascending node passage is taken into account according to the orbital frequency, as explained in Sec. II. Pulsar
+population data was taken from [14] using [24].
+
+Binary Region P [days] ap [s]
+
+A [15, 45] [10, 40]
+B [7, 15] [5, 15]
+C [5, 7] [2, 10]
+D [3, 5] [2, 5]
+
+TABLE III. Binary parameter space regions analyzed by the
+search, corresponding to the four colored regions in Fig. 1.
+Time of passage through the ascending node tasc is searched
+along the interval specified in Sec. II.
+
+where each bin (α,k) corresponds to the normalized
+power ραk present at a certain frequency bin k in a certain
+SFT α. Then, we impose a normalized power threshold
+ρth = 1.6 to digitize the spectrogram, obtaining a discrete
+spectrogram populated by ones and zeros.
+
+For each template, we follow the corresponding track
+and define the first ranking statistic, the number count,
+as the weighted sum of ones and zeroes
+
+n(λ) =
+∑
+
+(α,k)∈fλ
+wαk H(ραk −ρth) , (10)
+
+where H denotes the Heaviside step function and the
+weights wαk account for varying noise floor and antenna
+response effects [25].
+
+The number count statistic can be efficiently computed
+by means of the Look Up Table (LUT) approach
+described in [15]. Incidentally, this strategy simplifies
+the cost by analyzing multiple sky positions (called sky
+patches) together. The approach applies the Doppler
+modulation used to analyze a particular frequency bin
+to a neighborhood of frequency bins. The sensitivity loss
+introduced by this approximation is later compensated
+
+Label Frequency [Hz] m Pf
+
+L [50, 100) 0.4 1
+H1 [100, 125) 0.4 1
+H2 [125, 150) 0.6 1
+H3 [150, 200) 0.9 0.8
+H4 [200, 250) 1.6 0.75
+H5 [250, 300) 2 0.7
+
+TABLE IV. Mismatch and pixel factor configurations for the
+different frequency bands of the search. L refers to the low-
+frequency band; H1-5 refer to each of the five sub-bands into
+which the high-frequency band was partitioned: 1 and 2 span
+25Hz each, while 3 to 5 span 50 Hz each.
+
+by re-analyzing the most significant candidates using
+their exact time-frequency tracks [26].
+
+The re-analysis uses the weighted normalized power
+statistic,
+
+ρ(λ) =
+∑
+
+(α,k)∈fλ
+wαk ρ
+
+α
+k . (11)
+
+Using this new ranking statistic instead of simply re-
+computing Eq. (10) along the exact track yields a
+10 − 20% improvement in detection efficiency for the
+toplists (ranking of the most significant candidates)
+based on the number-count statistic used here and
+discussed below [8].
+
+In order to further select candidates across different
+sky patches, we compute a significance statistic by
+normalizing Eq. (11) to the expected noise values derived
+in [15]:
+
+sρ (λ) =
+ρ(λ) − ρ̄
+σρ̄
+
+, (12)
+
+
+
+5
+
+Result: Toplist per 0.125 Hz sub-band
+Select 0.125 Hz sub-band;
+for SkyPatchIndex p do
+
+Initialize per-patch toplist p;
+for FrequencyBinIndex k do
+
+Rank candidates by number count (10);
+Select top 5 candidates;
+Rank candidates by norm. power (11);
+Select top 0.1 candidates;
+Write candidates into per-patch toplist p;
+
+end
+end
+Initialize sub-band toplist;
+Collect all per-patch toplists into sub-band toplist;
+Rank sub-band toplist by significance (12);
+Select top 80000 candidates.
+
+FIG. 2. Explicit description of the BinarySkyHough toplist
+construction process.
+
+where ρ̄ and σρ̄ represent the expected value and
+standard deviation of weighted normalized power in pure
+Gaussian noise. This statistic removes any dependency
+on the sky position of the source due to the weights, being
+well suited for comparisons across different sky patches.
+
+B. Toplist construction
+
+Toplists are constructed frequency-bin wise across sky
+patches, as shown schematically in Fig. 2. For a
+given sky patch and frequency bin, the top 5% of
+parameter space candidates are selected according to the
+number count statistic Eq. (10) using the LUT approach
+and the non-overlapping set of SFTs. Then, they are
+re-analyzed computing their corresponding normalized
+power Eq. (11) along the exact time-frequency evolution
+given by Eq. (6) using the overlapping set of SFTs.
+Finally, top candidates according to Eq. (12) are collected
+into a final toplist. We collect the top 80000 candidates
+from each 0.125 Hz sub-band.
+
+This approach optimizes the GPU usage in the number
+count stage (preventing loud spectral artifacts from
+saturating the toplist) as each frequency bin provides a
+controlled number of candidates.
+
+V. POST PROCESSING
+
+Similar to previous searches [8, 16], we apply a
+clustering algorithm to the resulting candidates in order
+to look for particularly interesting candidates. Clustering
+candidates reduces the total number of candidates to
+follow up since typically many candidates are found to
+be produced by a single source (either a CW signal or an
+instance of instrumental noise).
+
+We implement a new clustering algorithm using the
+frequency evolution of a candidate to define a parameter
+space distance [27]. This choice allows the algorithm
+to naturally take into account the parameter space
+structure, avoiding the usage of ad hoc sky projections
+
+or mishandling periodic boundary conditions.
+After the cluster selection, we apply the well-known
+
+line veto, used in previous searches (e.g. [8, 16, 28, 29])
+in order to rule out non-astrophysical candidates.
+
+A. Clustering
+
+The clustering algorithm is summarized below; see [27]
+for further details. Given two candidates with template
+values λ,λ∗ ∈ P, we define the parameter space distance
+as
+
+d(λ∗,λ) =
+TSFT
+Nα
+
+∑
+tα
+
+|fλ∗ (tα) −fλ(tα)| , (13)
+
+where fλ(tα) represents the instantaneous frequency of a
+CW produced by a source with parameters λ as measured
+by the detector at time tα and Nα denotes the number
+of SFT timestamps used. Essentially, Eq. (13) is the
+average mismatch among time-frequency tracks.
+
+Clusters are formed by grouping together candidates
+from connected components, i.e. each candidate in a
+cluster is closer than a maximum distance dth = 1 to
+at least one other candidate in the same cluster. Final
+clusters are ranked according to the significance of their
+loudest candidate, which we will refer to as the cluster
+center.
+
+For each 0.125 Hz toplist, the top 5 clusters according
+to their significance are selected. This leaves us with a
+total of 16000 clusters: 8000 for the high-frequency search
+and 2000 for each region of the low-frequency search.
+
+B. Line Veto
+
+Before the outlier follow up, we apply the line veto
+to the obtained cluster centers. Using the list of
+identified narrow spectral artifacts [30], the veto discards
+any candidate whose time-frequency track crosses an
+instrumental line, since such a candidate would likely
+become significant not because of astrophysical reasons
+but rather instrumental ones.
+
+For every cluster center with parameters λ, we
+compute its bandwidth
+
+BW(λ) = [min
+tα
+
+fλ(tα), max
+tα
+
+fλ(tα)] . (14)
+
+If the bandwidth of a candidate contains or overlaps with
+any of the lines present in [30], then the candidate is
+discarded because of its likely non-astrophysical origin.
+This veto reduces the number of clustered candidates by
+∼20% in the low-frequency search and by a few percent in
+the high-frequency search (see Table V). This difference
+is to be expected, considering the greater amount of
+instrumental lines present at lower frequencies.
+
+Other narrow spectral artifacts have not yet been
+identified as clearly non-astrophysical in origin in an
+unidentified list [31]. Although this list has not been used
+to veto clustered candidates, some of them are consistent
+with artifacts in the unidentified list (see appendix A).
+
+
+
+6
+
+Regions LA LB LC LD H1B H2B H3B H4B H5B
+
+Initial Clusters 2000 2000 2000 2000 1000 1000 2000 2000 2000
+Vetoed by Identified Line 366 359 359 373 44 0 32 30 30
+
+Surviving Clusters 1634 1641 1641 1627 956 1000 1968 1970 1970
+Fraction (%) 81.7 82.05 82.05 81.35 95.6 100 98.4 98.5 98.5
+
+Surviving Outliers after 2F̂th veto 73 72 71 71 7 6 8 3 0
+
+TABLE V. Numbers of cluster centers discarded by the line veto using lines present in [30]. The number of surviving outliers
+after the follow-up stage (see Sec. VII) is here specified for the sake of completeness. Five clusters were collected from each
+0.125 Hz band: regions H1B and H2B, being the only ones spanning 25 Hz, yield a lower number of clusters.
+
+VI. SENSITIVITY
+
+The sensitivity of the search is determined using a
+similar procedure as for previous all-sky searches [8, 16,
+28, 29]. A campaign of adding software-simulated signals
+to the data in order to estimate the h0 that corresponds
+to a 95% average detection rate was carried out. We
+quantify sensitivity using the sensitivity depth [32, 33]
+
+D =
+√
+Sn
+h0
+
+(15)
+
+where Sn represents the single-sided Power Spectral
+Density of the data (PSD),
+
+√
+Sn is referred to as
+
+the Amplitude Spectral Density (ASD) and h0 is the
+previously defined CW amplitude. This figure of merit
+characterizes the sensitivity of the search to putative
+signals and accounts for the detector sensitivity as a
+function of frequency. The actual single-sided PSD in
+Eq. (15) depends on the analysis method being used.
+BinarySkyHough sensitivity is dominated by the first
+stage using the weighted number count statistic meaning
+one should use the inverse squared averaged PSD as
+shown in equations (42) to (44) of [34]
+
+Sn(f) =
+
+√
+Nα∑
+
+α [Sα(f)]
+−2 , (16)
+
+where Sα(f) represents the running-median noise floor
+estimation using 101 bins corresponding to the SFT
+labeled by starting time tα at frequency f. The
+goal is to characterize the average detection rate by
+numerically computing the efficiency distribution with
+respect to the depth. The result is interpolated to find
+the estimated sensitivity depth that corresponds to 95%
+detection efficiency. Using Eq. (15) the sensitivity depth
+is converted to the sensitivity amplitude. It is in this
+last step where the systematic error of the calibration is
+potentially relevant.
+
+Systematic error in the amplitude of calibration of C01
+data (final calibration version) is estimated to be lower
+than 7% (68% confidence interval) for both detectors over
+all frequencies throughout O3a [20]. Relative deviations
+of ASDs computed using C00 data with respect to
+ASDs computed using C01 data (used as a proxy for
+an estimate of systematic error in C00 data calibration
+which otherwise does not exist for all time or frequencies)
+
+are below 7% for all frequency bands except in the
+[59, 61] Hz sub-band, where the relative deviation is
+10%. Assuming the proxy for C00 systematic error is
+complete, the impact of such 10%-level of systematic
+error is negligible to the conclusions of this analysis.
+
+Five representative frequency bands are selected
+across each 25 Hz band and binary parameter space
+region, and five sensitivity depth values used, namely
+[18, 20, 22, 24, 26] Hz−1/2. Two hundred signals drawn
+from uniform distributions in phase and amplitude
+parameters are added to the data at each depth, band
+and binary parameter space region. For each simulated
+signal, BinarySkyHough analyzes the data again in order
+to evaluate how many of them are detected. Sensitivity
+depth values are selected such that the 95% efficiency
+depth was properly bracketed; regions H4B and H5B
+required two extra depth values [14, 16] Hz−1/2 to
+ensure this. Using a small number of frequency bands
+drastically reduces the computing cost of the sensitivity
+estimation procedure while yielding consistent results
+when compared to an exhaustive injection campaign, as
+justified in [16].
+
+Three criteria must be fulfilled in order to label a
+simulated signal as “detected”. First, the toplist obtained
+from the injection search should contain at least one
+candidate whose significance Eq. (12) is greater than the
+minimum significance present in the corresponding all-
+sky toplist. Second, after clustering the injection toplist,
+at least one cluster with a significance greater than the
+lowest significance recovered by the corresponding all-
+sky clustering must be obtained. These two criteria
+ensure the injection is prominent enough so as not to
+be discarded by the first stage of the search. Lastly,
+we require at least one of the top five clusters from the
+injection toplist to be located closer than two parameter
+space bins in each of the parameters with respect to
+the injection parameters. This last criterion takes into
+account the fact that, in the actual search, a follow up will
+be done in corresponding regions around each significant
+cluster center.
+
+After separating detected from non-detected simulated
+signals, we construct efficiency curves akin to the example
+shown in Fig. 3. Each point is the fraction of simulated
+signals detected (i.e. detection efficiency) as a function
+of the sensitivity depth. For each sensitivity depth set of
+NI = 200 simulated signals, the uncertainty on detection
+
+
+
+7
+
+18 19 20 21 22 23 24 25 26
+
+Depth [Hz−1/2]
+
+0.5
+
+0.6
+
+0.7
+
+0.8
+
+0.9
+
+1.0
+E
+
+ffi
+ci
+
+en
+cy
+
+FIG. 3. Example of 95% sensitivity depth interpolation. Five
+sensitivity depths were selected at 124.625 Hz in region H1B.
+200 injections were injected at each of these depths, applying
+the criteria exposed in the text in order to label injections
+as detected/not detected. Blue dots represent the fraction
+of detected injections; the sigmoid fit is represented by a
+blue line; fit uncertainties at one, two and three sigmas are
+represented by pale yellow shades. The interpolated 95%
+sensitivity depth D95% = 21 ± 0.4 is marked using a star.
+
+efficiency E is given by
+
+δE =
+
+√
+E · (1 −E)
+
+NI
+. (17)
+
+Then, using SciPy’s curve_fit function [35], we fit a
+sigmoid curve to the data given by
+
+S(D; ~p ) = 1 − 1
+1 + e−p0(D−p1)
+
+, (18)
+
+with fitted parameters ~p = (p0,p1). This expression can
+be inverted in order to find the 95% sensitivity depth.
+
+The interpolations are accompanied by a
+corresponding uncertainty, obtained through the
+covariance matrix of the fit C(D) as
+
+δD95% =
+√
+~p T · C(D) ·~p
+
+∣∣∣∣
+D=D95%
+
+. (19)
+
+The resulting interpolated depths per frequency band are
+shown in Fig. 4. The high-frequency search shows a
+clear degradation of depth values as frequency increases.
+This is related to the decaying density of parameter
+space templates: the higher the frequency, the finer one
+must construct a template bank in order to achieve a
+comparable level of sensitivity.
+
+Finally, we compute an average 95% sensitivity depth
+for each of the regions quoted in Table VI. We also quote
+a corresponding 3σ uncertainty, which previous studies
+have proven to deliver a good coverage of the actual
+95% efficiency sensitivity depth [16]. These values are
+translated to CW amplitude h0 via Eq. (15) and shown
+in Fig. 5.
+
+50 60 70 80 90 100
+
+Frequency [Hz]
+
+22
+
+24
+
+26
+
+D
+9
+5
+%
+
+[H
+z−
+
+1
+/
+2
+]
+
+LA
+
+LB
+
+LC
+
+LD
+
+100 125 150 175 200 225 250 275 300
+
+Frequency [Hz]
+
+18
+
+20
+
+22
+
+24
+
+D
+9
+5
+%
+
+[H
+z−
+
+1
+/
+2
+]
+
+H1B H2B H3B H4B H5B
+
+FIG. 4. Average 95% sensitivity depths obtained in the
+low-frequency (top panel) and high-frequency (bottom panel)
+bands. Data points correspond to the interpolated results
+obtained through the sigmoid fit of the efficiencies at the
+selected frequency bands (5 bands randomly selected in each
+25 Hz). Error bars correspond to 95% efficiency uncertainties
+towards low depth values. Shaded regions show the averaged
+results with their uncertainties, as summarized in Table VI. In
+the top panel, shading is only shown for the results obtained
+for the binary parameter space region B.
+
+Region 〈D95%〉± 3σ [Hz−1/2]
+
+LA 22.9 ± 2.5
+LB 22.8 ± 2.1
+LC 23.0 ± 2.5
+LD 23.0 ± 2.5
+H1B 21.8 ± 1.2
+H2B 21.1 ± 1.0
+H3B 20.1 ± 2.0
+H4B 18.7 ± 1.2
+H5B 19.3 ± 2.0
+
+TABLE VI. Average 95% sensitivity depths for the parameter
+space regions analyzed in this search. Region labels are
+defined in Tables III and IV.
+
+VII. FOLLOW UP
+
+Remaining candidates from the main search are
+followed up applying a more sensitive method to the data.
+Longer coherence times constrain the phase evolution of
+the candidate under consideration and would yield higher
+significance for a true continuous wave signal. A potential
+downside remains that a true signal could be discarded
+
+
+
+8
+
+50 60 70 80 90 100
+
+Frequency [Hz]
+
+10−24
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+0.6
+
+0.7
+0.8
+0.9
+
+2.0
+
+3.0
+
+4.0
+h
+
+9
+5
+%
+
+0
+
+100 125 150 175 200 225 250 275 300
+
+Frequency [Hz]
+
+10−24
+
+3 × 10−25
+
+4 × 10−25
+
+6 × 10−25
+
+h
+9
+5
+%
+
+0
+
+H1B H2B H3B H4B H5B
+
+FIG. 5. Implied 95% efficiency amplitude from the obtained sensitivity depth values. The h95%0 amplitude estimates are obtained
+from the 95% efficiency depth values shown in Table VI and the inverse squared averaged PSD using Eq. (15). Low-frequency
+results are shown for binary parameter space region B.
+
+if it is not well modeled by the assumed phase evolution.
+Moreover, increasing the coherence time also requires
+increasing the density of templates so as not to overlook
+a putative signal.
+
+An effective way to cover small parameter regions is
+through Markov Chain Monte Carlo (MCMC) methods,
+which, rather than following a prescribed parameter
+space grid, sample the parameter space following a
+certain probability density function. Reference [36]
+describes how this can be implemented in a search for
+continuous waves by using the so-called F-statistic, a
+well-established CW analysis technique, as a likelihood
+function. We refer to [36] and references therein for an
+in-depth explanation of this method.
+
+The F-statistic is a coherent statistic, usually referred
+to as 2F̃, which compares data against templates by
+matched filtering. A semicoherent F-statistic 2F̂ can be
+defined by adding individual 2F̃ values computed over
+Nseg segments spanning Tcoh each, in the same way as
+weighted normalized power was computed from weighted
+power in Eq. (11):
+
+2F̂(λ) =
+Nseg−1∑
+s=0
+
+2F̃s(λ) , (20)
+
+where the index s indicates the coherent quantity has
+been computed for a certain segment spanning Tcoh.
+
+We use software injections in order to calibrate a
+threshold 2F̂th. Candidates such that 2F̂(λ) < 2F̂th will
+be deemed as non-significant and consequently discarded.
+
+This algorithm is implemented in PyFstat [37, 38]. It
+builds on top of LALSuite [39], which provides the CW
+data analysis functionality, and ptemcee [40, 41], which
+implements the MCMC algorithms.
+
+Hyperparameter Value
+
+Parallel chains 3
+Walkers per chain 100
+Burn-in & Production steps 100 + 100
+
+TABLE VII. MCMC hyperparameter choice for the first stage
+of the follow up. Each of the parallel chains sample the
+likelihood at a different temperature, as explained in [41].
+
+A. MCMC follow-up configuration
+
+The MCMC follow up employed is not intended to
+describe the posterior distribution of parameters defining
+a candidate. Rather, we only require enough convergence
+such that the sampled F-statistic values are close enough
+to the local maximum to establish a reliable veto
+threshold.
+
+1. Sampler configuration
+
+The ptemcee package implements an ensemble-based
+sampler that uses several walker chains to sample
+multimodal distributions. Expensive setups are not
+required in order to perform a first-stage follow up using
+a threshold-based approach. The reason for this is two-
+fold: we are increasing the coherence time with respect to
+the search, and we do not require extensive convergence
+to be achieved. No second-stage follow up was required
+because all of the first-stage outliers were attributed
+to instrumental causes. If this was not the case, we
+would have applied a second follow-up stage using a more
+expensive setup. The number of parallel chains, walkers
+per chain, and number of steps to take are summarized
+in Table VII.
+
+We choose to use Nseg = 260, which corresponds to
+
+
+
+9
+
+Tcoh ' 17 h. This is a longer coherence time with respect
+to that of the initial stage of the search, a choice used in
+previous searches [16].
+
+2. Prior choice
+
+Following a similar prescription as the one given in
+[36], we set up uniform priors in each parameter space
+dimension, forming a box centered on each cluster center.
+Each edge of this box spans two parameter space bins
+according to the spacing given in Eq. (7), where the
+parameter-space-dependent quantities are computed at
+the center of the cluster. This is in agreement with
+the detection criteria imposed to perform the sensitivity
+estimation.
+
+Although BinarySkyHough targets CW sources in
+circular orbits, it is still sensitive to signals with
+eccentricities up to a certain value, as long as the Doppler
+modulation derived from eccentricity is smaller than half
+a frequency bin. The upper bound for the maximum
+allowable eccentricity according to this argument was
+derived in [13]
+
+em.a. = [2 TSFT f0 ap Ω]
+−1
+
+. (21)
+
+Therefore, uniform priors on eccentricity, [0,em.a.], and
+argument of periastron, [0, 2π] are included as MCMC
+parameters. Maximum eccentricities range from 0.2−0.5
+at 50 Hz to less than 0.1 at 300 Hz.
+
+B. Setting up a threshold
+
+We use the BinarySkyHough and the MCMC follow
+up on a total of 71306 software injections in order
+to calibrate a significance threshold. The employed
+injections are consistent with the ones used for
+the sensitivity estimation, focusing on those detected
+according to the three criteria (see Sec. VI). This
+implies a significant fraction of the injections will
+possess an amplitude below the obtained 95% sensitivity
+amplitude, as they will be distributed according to the
+five original depths. The threshold obtained using this
+calibration strategy will have a low false-dismissal rate
+(. 1/71306 ' 1.5 × 10−5) against signals detectable by
+this pipeline.
+
+We run the MCMC algorithm in order to sample 2F̂
+values, retrieving the maximum value for each of the
+injections. Resulting 2F̂ values for these simulations are
+plotted in Fig. 6. These results support the choice of
+2F̂th = 2500 as the threshold value, with all detected
+injections above this threshold.
+
+C. Surviving Outliers
+
+After executing the MCMC follow up and imposing
+the 2F̂th = 2500 threshold, 287 outliers remain in the
+
+50 60 70 80 90 100
+Frequency [Hz]
+
+10000
+
+20000
+
+30000
+
+40000
+
+M
+a
+x
+.
+
+S
+a
+m
+
+p
+le
+
+d
+2
+F̂
+
+LA LB LC LD
+
+100 125 150 175 200 225 250 275 300
+Frequency [Hz]
+
+10000
+
+20000
+
+30000
+
+40000
+
+M
+a
+x
+.
+
+S
+a
+m
+
+p
+le
+
+d
+2
+F̂
+
+H1B H2B H3B H4B H5B
+
+FIG. 6. Recovered 2F̂ values using a set of injections
+labeled as detected by the sensitivity estimation criteria. The
+amplitudes of these injections were distributed using the five
+sensitivity depth values explained in Sec. VI. The top panel
+shows the results for the four regions of the low-frequency
+search, involving 33757 injections; the bottom panel shows
+the same result for the high-frequency search, using 37549
+injections. The horizontal orange line marks the threshold
+2F̂th = 2500.
+
+low-frequency band and 24 outliers remain in the high-
+frequency band, as shown in Fig. 7. It is clear from the
+figure that low-frequency outliers mostly belong to the
+same frequency bands across the four binary parameter
+space regions. We next analyze each candidate using a
+cumulative semicoherent F-statistic, defined as
+
+2F̂(λ; t) =
+∑
+α:tα<t
+
+2F̃α(λ) , (22)
+
+in order to discern those candidates originating from
+instrumental noise.
+
+We use three flavors of Eq. (22), one for each of the
+detectors (H1 and L1) and another one using a multi-
+detector approach (H1 + L1). These statistics lead to the
+rejection of the remaining outliers, as described below.
+
+1. Line-crossing outliers
+
+CWs are expected to accumulate a 2F̂ value linearly
+with respect to the observing time. We find that 263
+outliers surpass the 2F̂th = 2500 threshold due to the
+
+
+
+10
+
+50 60 70 80 90 100
+Frequency [Hz]
+
+2000
+
+3000
+
+5000
+7000
+9000
+
+20000
+
+30000
+40000
+50000
+
+M
+a
+x
+.
+
+S
+a
+m
+
+p
+le
+
+d
+2
+F̂
+
+Low Frequency Follow Up - LA
+
+50 60 70 80 90 100
+Frequency [Hz]
+
+2000
+
+3000
+
+5000
+7000
+9000
+
+20000
+
+30000
+
+M
+a
+x
+.
+
+S
+a
+m
+
+p
+le
+
+d
+2
+F̂
+
+Low Frequency Follow Up - LB
+
+50 60 70 80 90 100
+Frequency [Hz]
+
+2000
+
+3000
+
+5000
+
+7000
+9000
+
+20000
+
+30000
+
+M
+a
+x
+.
+
+S
+a
+m
+
+p
+le
+
+d
+2
+F̂
+
+Low Frequency Follow Up - LC
+
+50 60 70 80 90 100
+Frequency [Hz]
+
+2000
+
+3000
+
+5000
+
+7000
+9000
+
+20000
+
+30000
+
+M
+a
+x
+.
+
+S
+a
+m
+
+p
+le
+
+d
+2
+F̂
+
+Low Frequency Follow Up - LD
+
+100 125 150 175 200 225 250 275 300
+Frequency [Hz]
+
+2000
+
+3000
+
+4000
+
+M
+a
+x
+.
+
+S
+a
+m
+
+p
+le
+
+d
+2
+F̂
+
+H1B H2B H3B H4B H5B
+
+High Frequency Follow Up
+
+FIG. 7. MCMC follow-up results. Dots represent cluster
+centers not vetoed by the identified line veto, and a horizontal
+line represents the imposed threshold 2F̂th = 2500, calibrated
+by software injections (see Fig. 6). The horizontal axis
+represents the frequency value associated to each cluster
+center, and the vertical axis represents the maximum 2F̂ value
+sampled by the MCMC run.
+
+presence of prominent values of segment-wise F-statistic
+at certain times of the run in one of the detectors (260
+in H1 and 3 in L1), as exemplified in Fig. 8. The higher
+number of outliers in H1 arise from the greater number
+of instrumental lines present in that detector [30, 31].
+
+This behavior would be expected from a candidate
+whose frequency evolution track crosses a narrow
+instrumental artifact (line) for a limited duration, either
+because of the frequency track drifting away from the
+
+line or the transient nature of the line itself. Most
+strong persistent instrumental disturbances are already
+discarded using the known lines list [30], but weaker lines
+or transient disturbances (lasting hours to days), which
+are more difficult to identify in the run-averaged spectra,
+could still affect our searches [21, 42].
+
+In Table VIII in Appendix A, we present a list of
+frequency bands containing these 263 candidates whose
+behavior suggests a brief line crossing or the presence
+of a transient instrumental disturbance. Outliers were
+selected as belonging to this category if they have at least
+one per-segment F-statistic value greater than 100, and
+for each frequency band listed in the table, the first/last
+timestamps bracket the data segments where F-statistic
+values greater than 50 were observed for at least one
+of those candidates. Overlapping frequency bands were
+merged together for the sake of clarity.
+
+2. Detector consistency veto
+
+A second set of 28 outliers is discarded by the detector
+consistency veto (see e.g. [28]). During O3a, the L1
+detector presents a better sensitivity than H1 at low
+frequencies [19]. A CW candidate would be expected to
+behave consistently, i.e. 2F̂L1 > 2F̂H1 for most signals.
+We calibrate this veto using the aforementioned set of
+software injections in order to take detector sensitivity
+anisotropies due to the antenna pattern functions into
+account, obtaining a maximum relative 5% excess of
+2F̂H1 with respect to 2F̂L1.
+
+The 28 outliers rejected with this veto show more than
+a 30% relative excess of 2F̂H1 with respect to 2F̂L1.
+Hence, we discard them as being inconsistent with an
+astrophysical signal. Figure 9 shows an example of these
+outliers. After computing the bandwidth covered by each
+of these candidates, we obtain seven distinct frequency
+bands affected by instrumental disturbances of this type,
+summarized in Table IX in appendix A.
+
+3. Powerline sidebands
+
+The last 20 outliers were consistently present in
+each one of the four parameter space regions within
+the [60.46, 60.48] Hz sub-band. These outliers were
+not vetoed by any of the previous stages. As shown
+in Fig. 10, 2F̂ was accumulated in a fairly linear
+fashion, achieving greater values in L1 than H1. The
+detector ASD (Fig. 11), however, shows that these
+candidates were caused by sidebands of the 60 Hz power
+supply artifact. These sidebands can be explained by
+a non-linear coupling between the main power supply
+frequency and a low-frequency noise. They do not appear
+in the line lists [30, 31] as they do not correspond to
+narrow spectral artifacts and their effect on CW searches
+is highly dependent on the search method. Due to the
+presence of said artifact in the data and the wide spread
+of the candidates obtained by our search across these
+
+
+
+11
+
+0 25 50 75 100 125 150 175
+Days since the start of O3a
+
+0
+
+200
+
+400
+
+S
+eg
+
+m
+en
+
+t-
+w
+
+is
+e
+
+2
+F̃
+
+Outlier in LA at 64.4163Hz
+
+0 25 50 75 100 125 150 175
+Days since the start of O3a
+
+0
+
+2000
+
+4000
+
+6000
+
+C
+u
+
+m
+u
+
+la
+ti
+
+v
+e
+
+2
+F̂
+
+0 25 50 75 100 125 150 175
+Days since the start of O3a
+
+0
+
+250
+
+500
+
+750
+
+S
+eg
+
+m
+en
+
+t-
+w
+
+is
+e
+
+2
+F̃
+
+Outlier in H4B at 213.2873Hz
+
+0 25 50 75 100 125 150 175
+Days since the start of O3a
+
+0
+
+1000
+
+2000
+
+3000
+
+C
+u
+
+m
+u
+
+la
+ti
+
+v
+e
+
+2
+F̂
+
+FIG. 8. Example of outliers produced by instrumental noise
+in one of the Advanced LIGO detectors. Each pair of panels
+corresponds to a different outlier; the segment-wise 2F̃α
+statistic is shown at the top of each pair; the cumulative
+semicoherent 2F̂ as described in Eq. (22) is shown at the
+bottom of each pair. Dashed lines denote an H1-only analysis,
+dotted blue lines an L1-only analysis, and solid black lines a
+multi-detector analysis. The 2F̂th = 2500 threshold is shown
+as a horizontal line.
+
+0 25 50 75 100 125 150 175
+Days since the start of O3a
+
+0
+
+1000
+
+2000
+
+C
+u
+
+m
+u
+
+la
+ti
+
+v
+e
+
+2
+F̂
+
+FIG. 9. Example of an outlier vetoed by the multi-detector
+consistency veto. Dashed lines denote an H1-only analysis,
+dotted blue lines an L1-only analysis, and solid black lines a
+multi-detector analysis. The 2F̂th = 2500 threshold is shown
+as a horizontal line.
+
+0 25 50 75 100 125 150 175
+Days since the start of O3a
+
+0
+
+1000
+
+2000
+
+C
+u
+
+m
+u
+
+la
+ti
+
+v
+e
+
+2
+F̂
+
+FIG. 10. Example of an outlier surpassing the 2F̂th = 2500
+threshold later vetoed by inspection of the detector spectra.
+The combined ASD of both detectors around the frequency of
+this group of outliers is shown in Fig. 11. Candidates related
+to this signal saturated the toplist in the four regions LA,
+LB, LC, LD. Dashed lines denote an H1-only analysis, dotted
+blue lines an L1-only analysis, and solid black lines a multi-
+detector analysis. The 2F̂th = 2500 threshold is shown as a
+horizontal line.
+
+59.00 59.25 59.50 59.75 60.00 60.25 60.50 60.75 61.00
+Frequency [Hz]
+
+0.8
+
+1.0
+
+1.2
+
+1.4
+
+1.6
+
+1.8
+
+2.0
+
+A
+S
+
+D
+[H
+
+z−
+1
+/
+2
+]
+
+×10−23
+
+FIG. 11. Location of the manually inspected outliers (vertical
+dashed line) with respect to the amplitude spectral density
+of the detector, here represented as a multi-detector inverse
+squared average (orange line). A diamond and a square mark
+the twin peaks’ frequency, 59.53Hz and 60.47Hz respectively.
+
+bands, we deem this final set of candidates as non-
+astrophysical.
+
+VIII. CONCLUSION
+
+We report on a search for continuous gravitational
+wave signals from unknown sources in binary systems
+using LIGO data from the first six months of the third
+Advanced LIGO and Advanced Virgo observing run.
+Four different binary parameter space regions, spanning
+orbital periods of 3 − 45 days and projected semimajor
+axes of 2 − 40 light-seconds, are searched across the
+50 − 300 Hz frequency band. We claim no detections
+and estimate the sensitivity of the search in terms of
+the gravitational wave amplitude corresponding to the
+interpolated 95% detection efficiency using a simulated
+population of signals.
+
+The minimum amplitude sensitivity attains an average
+value of h95%0 = (2.4 ± 0.1) × 10−25 in the f0 = 149.5 Hz
+sub-band. This is a factor of ∼1.6 lower than the lowest
+
+
+
+12
+
+50 100 150 200 250 300
+Frequency [Hz]
+
+10−3
+
+10−2
+
+10−1
+
+100
+
+101
+R
+
+a
+n
+
+g
+e
+
+[k
+p
+
+c]
+
+� =10−4
+
+� =10−5
+
+� =10−6
+
+50 100 150 200 250 300
+Frequency [Hz]
+
+10−6
+
+10−5
+
+10−4
+
+10−3
+
+E
+ll
+ip
+
+ti
+ci
+
+ty
+
+d = 2 [kpc]
+
+d = 1 [kpc]
+
+d = 0.5 [kpc]
+
+FIG. 12. Astrophysical reach (left) and equatorial ellipticity (right) implied by the search sensitivity h95%0 . These results were
+obtained assuming a canonical neutron star moment of inertia Iz = 1038kg ·m2. Shaded areas denote regions excluded due to
+the spindown limit implied by the maximum spindown value considered in this search.
+
+amplitude sensitivity obtained by a previous search
+performed on data from the second Advanced LIGO
+observing run [16]. The estimated amplitude sensitivity
+can be interpreted in terms of astrophysical reach and
+equatorial ellipticity by means of equation Eq. (2), as
+shown in Fig. 12.
+
+The validity of this estimation must be discussed in
+terms of the spindown limit, which corresponds to the
+maximum gravitational wave amplitude achievable by a
+neutron star assuming its rotational energy is solely lost
+via gravitational waves. We refer the reader to Appendix
+A of [6] for its definition and the relevant conversion
+equations.
+
+The maximum spindown value probed by our search is
+|ḟ0| ≡ (TSFT ·Tobs)−1 ' 6.5 × 10−11Hz/s [13], meaning
+sources braking at higher rates would not be detected
+by our pipeline (see Table I for the definition of TSFT
+and Tobs). Assuming the canonical emission model of a
+deformed NS as in Eq. (2), this implies the existence
+of a distance beyond which the required ellipticity to
+emit a detectable amplitude would imply a greater
+spindown than the one probed by the search, as long
+as no processes balancing the rotational energy loss are
+in place1. Regions excluded by the spindown limit
+correspond to shaded areas in Fig. 12.
+
+Equatorial ellipticity values can be constrained below
+� = 10−5 for sources in binary systems such as the ones
+analyzed by this search located at 1 kpc emitting within
+the 150 − 300 Hz band. Constraints below � = 10−4
+can be set for sources located at 2 kpc emitting within
+the 75 − 150 Hz band. These sensitivities approach
+the expected allowed maximum ellipticities of relativisitic
+
+1 An accretion-driven torque balance [43] could be subject to
+fluctuating accretion [44], leading to long-term phase wandering.
+This effect is unlikely to affect a semicoherent search like the one
+here reported, but it could have a significant impact during the
+follow-up stage, where longer coherence times are used [45, 46].
+
+stars, which range from the order of 10−6−10−7 to values
+around 10−5 for more exotic equations of state [47].
+
+Future enhancements of the terrestrial gravitational
+wave detector network will improve our sensitivity to
+fainter gravitational wave signals, providing a valuable
+tool to prospect the expected population of galactic NSs
+in binary systems [48–52].
+
+IX. ACKNOWLEDGEMENTS
+
+The authors gratefully acknowledge the support of the
+United States National Science Foundation (NSF) for
+the construction and operation of the LIGO Laboratory
+and Advanced LIGO as well as the Science and
+Technology Facilities Council (STFC) of the United
+Kingdom, the Max-Planck-Society (MPS), and the
+State of Niedersachsen/Germany for support of the
+construction of Advanced LIGO and construction and
+operation of the GEO600 detector. Additional support
+for Advanced LIGO was provided by the Australian
+Research Council. The authors gratefully acknowledge
+the Italian Istituto Nazionale di Fisica Nucleare (INFN),
+the French Centre National de la Recherche Scientifique
+(CNRS) and the Netherlands Organization for Scientific
+Research, for the construction and operation of the
+Virgo detector and the creation and support of the EGO
+consortium. The authors also gratefully acknowledge
+research support from these agencies as well as by
+the Council of Scientific and Industrial Research of
+India, the Department of Science and Technology, India,
+the Science & Engineering Research Board (SERB),
+India, the Ministry of Human Resource Development,
+India, the Spanish Agencia Estatal de Investigación,
+the Vicepresidència i Conselleria d’Innovació, Recerca i
+Turisme, the Conselleria d’Educació i Universitat and the
+Direcció General de Política Universitaria i Recerca del
+Govern de les Illes Balears, the Conselleria d’Innovació,
+Universitats, Ciència i Societat Digital de la Generalitat
+
+
+
+13
+
+Valenciana and the CERCA Programme Generalitat
+de Catalunya, the Barcelona Supercomputing Center
+- Centro Nacional de Supercomputación, Spain, the
+National Science Centre of Poland and the Foundation
+for Polish Science (FNP), the Swiss National Science
+Foundation (SNSF), the Russian Foundation for Basic
+Research, the Russian Science Foundation, the European
+Commission, the European Regional Development Funds
+(ERDF), the Royal Society, the Scottish Funding
+Council, the Scottish Universities Physics Alliance,
+the Hungarian Scientific Research Fund (OTKA),
+the French Lyon Institute of Origins (LIO), the
+Belgian Fonds de la Recherche Scientifique (FRS-FNRS),
+Actions de Recherche Concertées (ARC) and Fonds
+Wetenschappelijk Onderzoek - Vlaanderen (FWO),
+Belgium, the Paris Île-de-France Region, the National
+Research, Development and Innovation Office Hungary
+
+(NKFIH), the National Research Foundation of Korea,
+the Natural Science and Engineering Research Council
+Canada, Canadian Foundation for Innovation (CFI),
+the Brazilian Ministry of Science, Technology, and
+Innovations, the International Center for Theoretical
+Physics South American Institute for Fundamental
+Research (ICTP-SAIFR), the Research Grants Council
+of Hong Kong, the National Natural Science Foundation
+of China (NSFC), the Leverhulme Trust, the Research
+Corporation, the Ministry of Science and Technology
+(MOST), Taiwan, the United States Department of
+Energy, and the Kavli Foundation. The authors
+gratefully acknowledge the support of the NSF, STFC,
+INFN and CNRS for provision of computational
+resources. This paper has been assigned document
+number LIGO-P2000298.
+
+[1] M. Sieniawska and M. Bejger, Universe 5, 217 (2019),
+arXiv:1909.12600 [astro-ph.HE].
+
+[2] A. Arvanitaki and S. Dubovsky, Physical Review D 83,
+044026 (2011), arXiv:1004.3558 [hep-th].
+
+[3] J. Aasi et al. (LIGO Scientific Collaboration and Virgo
+Collaboration), Classical and Quantum Gravity 32,
+074001 (2015), arXiv:1411.4547 [gr-qc].
+
+[4] F. Acernese et al., Classical and Quantum Gravity 32,
+024001 (2014), arXiv:1408.3978 [gr-qc].
+
+[5] B. P. Abbott et al. (LIGO Scientific Collaboration and
+Virgo Collaboration), Physical Review D 99, 122002
+(2019), arXiv:1902.08442 [gr-qc].
+
+[6] B. P. Abbott et al., The Astrophysical Journal 879, 10
+(2019), arXiv:1902.08507 [astro-ph.HE].
+
+[7] B. P. Abbott et al. (LIGO Scientific Collaboration and
+Virgo Collaboration), Physical Review D 100, 122002
+(2019), arXiv:1906.12040 [gr-qc].
+
+[8] B. P. Abbott et al. (LIGO Scientific Collaboration and
+Virgo Collaboration), Physical Review D 100, 024004
+(2019), arXiv:1903.01901 [astro-ph.HE].
+
+[9] R. Abbott et al. (LIGO Scientific Collaboration and
+Virgo Collaboration), The Astrophysical Journal Letters
+902, L21 (2020), arXiv:2007.14251 [astro-ph.HE].
+
+[10] R. Abbott et al. (LIGO Scientific Collaboration and
+Virgo Collaboration and KAGRA Collaboration), arXiv
+e-prints (2020), arXiv:2012.12926 [astro-ph.HE].
+
+[11] P. R. Brady, T. Creighton, C. Cutler, and B. F. Schutz,
+Physical Review D 57, 2101 (1998), arXiv:gr-qc/9702050.
+
+[12] K. Rajwade, J. Chennamangalam, D. Lorimer,
+and A. Karastergiou, Monthly Notices of the
+Royal Astronomical Society 479, 3094 (2018),
+arXiv:1802.04690 [astro-ph.HE].
+
+[13] P. B. Covas and A. M. Sintes, Physical Review D 99,
+124019 (2019), arXiv:1904.04873 [astro-ph.IM].
+
+[14] R. N. Manchester, G. B. Hobbs, A. Teoh, and M. Hobbs,
+arXiv e-prints 129, 1993 (2005), arXiv:astro-ph/0412641.
+
+[15] B. Krishnan, A. M. Sintes, M. A. Papa, B. F. Schutz,
+S. Frasca, and C. Palomba, Physical Review D 70, 082001
+(2004), arXiv:gr-qc/0407001.
+
+[16] P. B. Covas and A. M. Sintes, Physical Review Letters
+124, 191102 (2020), arXiv:2001.08411 [gr-qc].
+
+[17] P. Jaranowski and A. Królak, Physical Review D 59,
+063003 (1999), arXiv:gr-qc/9809046.
+
+[18] P. Leaci and R. Prix, Physical Review D 91, 102003
+(2015), arXiv:1502.00914 [gr-qc].
+
+[19] A. Buikema et al., Physical Review D 102, 062003
+(2020), arXiv:2008.01301 [astro-ph.IM].
+
+[20] L. Sun et al., Classical and Quantum Gravity 37, 225008
+(2020), arXiv:2005.02531 [astro-ph.IM].
+
+[21] P. B. Covas et al. (LSC Instrument Authors), Physical
+Review D 97, 082002 (2018), arXiv:1801.07204 [astro-
+ph.IM].
+
+[22] A. Viets et al., Classical and Quantum Gravity 35,
+095015 (2018), arXiv:1710.09973 [astro-ph.IM].
+
+[23] P. Astone, S. Frasca, and C. Palomba, Classical and
+Quantum Gravity 22, S1197 (2005).
+
+[24] M. Pitkin, Journal of Open Source Software 3, 538
+(2018).
+
+[25] A. M. Sintes and B. Krishnan, Journal of Physics:
+Conference Series 32, 206 (2006), arXiv:gr-qc/0601081.
+
+[26] L. Sancho de la Jordana (LIGO Scientific Collaboration
+and Virgo Collaboration), Journal of Physics: Conference
+Series 228, 012004 (2010).
+
+[27] R. Tenorio, D. Keitel, and A. M. Sintes, arXiv e-prints
+(2020), arXiv:2012.05752 [gr-qc].
+
+[28] B. P. Abbott et al. (LIGO Scientific Collaboration and
+Virgo Collaboration), Physical Review D 96, 062002
+(2017), arXiv:1707.02667 [gr-qc].
+
+[29] B. P. Abbott et al. (LIGO Scientific, Virgo), Phys. Rev.
+D 97, 102003 (2018), arXiv:1802.05241 [gr-qc].
+
+[30] E. Goetz, A. Neunzert, K. Riles, A. Mateas,
+S. Kandhasamy, J. Tasson, et al. (LIGO Scientific
+Collaboration), O3a lines and combs in C00 data, https:
+//dcc.ligo.org/T2000719/public (2020).
+
+[31] E. Goetz, A. Neunzert, K. Riles, A. Mateas,
+S. Kandhasamy, J. Tasson, et al. (LIGO Scientific
+Collaboration), Unidentified O3a lines and combs in C00
+data, https://dcc.ligo.org/T2000720/public (2020).
+
+[32] B. Behnke, M. A. Papa, and R. Prix, Physical Review D
+91, 064007 (2015), arXiv:1410.5997 [gr-qc].
+
+[33] C. Dreissigacker, R. Prix, and K. Wette, Physical Review
+D 98, 084058 (2018), arXiv:1808.02459 [gr-qc].
+
+https://doi.org/10.3390/universe5110217
+https://arxiv.org/abs/1909.12600
+https://doi.org/10.1103/PhysRevD.83.044026
+https://doi.org/10.1103/PhysRevD.83.044026
+https://arxiv.org/abs/1004.3558
+https://doi.org/10.1088/0264-9381/32/7/074001
+https://doi.org/10.1088/0264-9381/32/7/074001
+https://arxiv.org/abs/1411.4547
+https://doi.org/10.1088/0264-9381/32/2/024001
+https://doi.org/10.1088/0264-9381/32/2/024001
+https://arxiv.org/abs/1408.3978
+https://doi.org/10.1103/PhysRevD.99.122002
+https://doi.org/10.1103/PhysRevD.99.122002
+https://arxiv.org/abs/1902.08442
+https://doi.org/10.3847/1538-4357/ab20cb
+https://doi.org/10.3847/1538-4357/ab20cb
+https://arxiv.org/abs/1902.08507
+https://doi.org/10.1103/PhysRevD.100.122002
+https://doi.org/10.1103/PhysRevD.100.122002
+https://arxiv.org/abs/1906.12040
+https://doi.org/10.1103/PhysRevD.100.024004
+https://doi.org/10.1103/PhysRevD.100.024004
+https://arxiv.org/abs/1903.01901
+https://doi.org/10.3847/2041-8213/abb655
+https://doi.org/10.3847/2041-8213/abb655
+https://arxiv.org/abs/2007.14251
+https://arxiv.org/abs/2012.12926
+https://doi.org/10.1103/PhysRevD.57.2101
+https://arxiv.org/abs/gr-qc/9702050
+https://doi.org/10.1093/mnras/sty1695
+https://doi.org/10.1093/mnras/sty1695
+https://arxiv.org/abs/1802.04690
+https://doi.org/10.1103/PhysRevD.99.124019
+https://doi.org/10.1103/PhysRevD.99.124019
+https://arxiv.org/abs/1904.04873
+https://doi.org/10.1086/428488
+https://arxiv.org/abs/astro-ph/0412641
+https://doi.org/10.1103/PhysRevD.70.082001
+https://doi.org/10.1103/PhysRevD.70.082001
+https://arxiv.org/abs/gr-qc/0407001
+https://doi.org/10.1103/PhysRevLett.124.191102
+https://doi.org/10.1103/PhysRevLett.124.191102
+https://arxiv.org/abs/2001.08411
+https://doi.org/10.1103/PhysRevD.59.063003
+https://doi.org/10.1103/PhysRevD.59.063003
+https://arxiv.org/abs/gr-qc/9809046
+https://doi.org/10.1103/PhysRevD.91.102003
+https://doi.org/10.1103/PhysRevD.91.102003
+https://arxiv.org/abs/1502.00914
+https://doi.org/10.1103/PhysRevD.102.062003
+https://doi.org/10.1103/PhysRevD.102.062003
+https://arxiv.org/abs/2008.01301
+https://doi.org/10.1088/1361-6382/abb14e
+https://doi.org/10.1088/1361-6382/abb14e
+https://arxiv.org/abs/2005.02531
+https://doi.org/10.1103/PhysRevD.97.082002
+https://doi.org/10.1103/PhysRevD.97.082002
+https://arxiv.org/abs/1801.07204
+https://arxiv.org/abs/1801.07204
+https://doi.org/10.1088/1361-6382/aab658
+https://doi.org/10.1088/1361-6382/aab658
+https://arxiv.org/abs/1710.09973
+https://doi.org/10.1088/0264-9381/22/18/s34
+https://doi.org/10.1088/0264-9381/22/18/s34
+https://doi.org/10.21105/joss.00538
+https://doi.org/10.21105/joss.00538
+https://doi.org/10.1088/1742-6596/32/1/031
+https://doi.org/10.1088/1742-6596/32/1/031
+https://arxiv.org/abs/gr-qc/0601081
+https://doi.org/10.1088/1742-6596/228/1/012004
+https://doi.org/10.1088/1742-6596/228/1/012004
+https://arxiv.org/abs/2012.05752
+https://doi.org/10.1103/PhysRevD.96.062002
+https://doi.org/10.1103/PhysRevD.96.062002
+https://arxiv.org/abs/1707.02667
+https://doi.org/10.1103/PhysRevD.97.102003
+https://doi.org/10.1103/PhysRevD.97.102003
+https://arxiv.org/abs/1802.05241
+https://dcc.ligo.org/T2000719/public
+https://dcc.ligo.org/T2000719/public
+https://dcc.ligo.org/T2000720/public
+https://doi.org/10.1103/PhysRevD.91.064007
+https://doi.org/10.1103/PhysRevD.91.064007
+https://arxiv.org/abs/1410.5997
+https://doi.org/10.1103/PhysRevD.98.084058
+https://doi.org/10.1103/PhysRevD.98.084058
+https://arxiv.org/abs/1808.02459
+
+
+14
+
+[34] B. Abbott et al. (LIGO Scientific Collaboration and
+Virgo Collaboration), Physical Review D 77, 022001
+(2008), arXiv:0708.3818 [gr-qc].
+
+[35] P. Virtanen et al., Nature Methods 17, 261 (2020),
+arXiv:1907.10121 [cs.MS].
+
+[36] G. Ashton and R. Prix, Physical Review D 97, 103020
+(2018), arXiv:1802.05450 [astro-ph.IM].
+
+[37] D. Keitel, R. Tenorio, G. Ashton, and R. Prix, arXiv
+e-prints (2021), arXiv:2101.10915 [gr-qc].
+
+[38] G. Ashton, D. Keitel, R. Prix, and R. Tenorio, PyFstat
+v1.7.3 (2020), 10.5281/zenodo.4041983.
+
+[39] LIGO Scientific Collaboration, LIGO Algorithm Library
+- LALSuite, 10.7935/GT1W-FZ16 (2018).
+
+[40] D. Foreman-Mackey, D. W. Hogg, D. Lang, and
+J. Goodman, Publications of the Astronomical Society
+of the Pacific 125, 306 (2013), arXiv:1202.3665 [astro-
+ph.IM].
+
+[41] W. D. Vousden, W. M. Farr, and I. Mandel, Monthly
+Notices of the Royal Astronomical Society 455, 1919
+(2015), arXiv:1501.05823 [astro-ph.IM].
+
+[42] D. Keitel, Physical Review D 93, 084024 (2016),
+arXiv:1509.02398 [gr-qc].
+
+[43] L. Bildsten, Astrophys. J. Lett. 501, L89 (1998),
+arXiv:astro-ph/9804325.
+
+[44] A. Watts, B. Krishnan, L. Bildsten, and B. F.
+Schutz, Mon. Not. Roy. Astron. Soc. 389, 839 (2008),
+arXiv:0803.4097 [astro-ph].
+
+[45] A. Mukherjee, C. Messenger, and K. Riles, Phys. Rev. D
+97, 043016 (2018), arXiv:1710.06185 [gr-qc].
+
+[46] G. Ashton, R. Prix, and D. I. Jones, Phys. Rev. D 96,
+063004 (2017), arXiv:1704.00742 [gr-qc].
+
+[47] N. K. Johnson-McDaniel and B. J. Owen, Physical
+Review D 88, 044004 (2013), arXiv:1208.5227 [astro-
+ph.SR].
+
+[48] T. Akutsu et al., Nature Astronomy 3, 35 (2019),
+arXiv:1811.08079 [gr-qc].
+
+[49] M. Maggiore et al., Journal of Cosmology and
+Astroparticle Physics 03, 050, arXiv:1912.02622 [astro-
+ph.CO].
+
+[50] D. Reitze et al., Bulletin of the American Astronomical
+Society 51, 035 (2019), arXiv:1907.04833 [astro-ph.IM].
+
+[51] J. Miller, L. Barsotti, S. Vitale, P. Fritschel, M. Evans,
+and D. Sigg, Physical Review D 91, 062005 (2015),
+arXiv:1410.5882 [gr-qc].
+
+[52] B. P. Abbott et al. (KAGRA Collaboration, LIGO
+Scientific Collaboration, and Virgo Collaboration),
+Living Reviews in Relativity 23, 3 (2020),
+arXiv:1304.0670v10 [gr-qc].
+
+Appendix A: Frequency bands containing outliers
+
+We provide a list of frequency bands in which outliers
+surviving the follow up were found. These outliers were
+discarded due to their inconsistent behavior with respect
+to an astrophysical signal, as discussed in Sec. VII.
+Table VIII lists frequency bands where line-crossing
+outliers were found. Table IX corresponds to frequency
+bands presenting outliers discarded by the detector
+consistency veto. In both tables, overlapping frequency
+bands are merged together for the sake of compactness.
+
+https://doi.org/10.1103/PhysRevD.77.022001
+https://doi.org/10.1103/PhysRevD.77.022001
+https://arxiv.org/abs/0708.3818
+https://doi.org/10.1038/s41592-019-0686-2
+https://arxiv.org/abs/1907.10121
+https://doi.org/10.1103/PhysRevD.97.103020
+https://doi.org/10.1103/PhysRevD.97.103020
+https://arxiv.org/abs/1802.05450
+https://arxiv.org/abs/2101.10915
+https://doi.org/10.5281/zenodo.3967045
+https://doi.org/10.5281/zenodo.3967045
+https://doi.org/10.7935/GT1W-FZ16
+https://doi.org/10.7935/GT1W-FZ16
+https://doi.org/10.1086/670067
+https://doi.org/10.1086/670067
+https://arxiv.org/abs/1202.3665
+https://arxiv.org/abs/1202.3665
+https://doi.org/10.1093/mnras/stv2422
+https://doi.org/10.1093/mnras/stv2422
+https://doi.org/10.1093/mnras/stv2422
+https://arxiv.org/abs/1501.05823
+https://doi.org/10.1103/PhysRevD.93.084024
+https://arxiv.org/abs/1509.02398
+https://doi.org/10.1086/311440
+https://arxiv.org/abs/astro-ph/9804325
+https://doi.org/10.1111/j.1365-2966.2008.13594.x
+https://arxiv.org/abs/0803.4097
+https://doi.org/10.1103/PhysRevD.97.043016
+https://doi.org/10.1103/PhysRevD.97.043016
+https://arxiv.org/abs/1710.06185
+https://doi.org/10.1103/PhysRevD.96.063004
+https://doi.org/10.1103/PhysRevD.96.063004
+https://arxiv.org/abs/1704.00742
+https://doi.org/10.1103/PhysRevD.88.044004
+https://doi.org/10.1103/PhysRevD.88.044004
+https://arxiv.org/abs/1208.5227
+https://arxiv.org/abs/1208.5227
+https://doi.org/https://doi.org/10.1038/s41550-018-0658-y
+https://arxiv.org/abs/1811.08079
+https://doi.org/10.1088/1475-7516/2020/03/050
+https://doi.org/10.1088/1475-7516/2020/03/050
+https://arxiv.org/abs/1912.02622
+https://arxiv.org/abs/1912.02622
+https://arxiv.org/abs/1907.04833
+https://doi.org/10.1103/PhysRevD.91.062005
+https://arxiv.org/abs/1410.5882
+https://doi.org/10.1007/s41114-020-00026-9
+https://arxiv.org/abs/1304.0670v10
+
+
+15
+
+Min. frequency [Hz] Max. frequency [Hz] First timestamp [GPS] Last timestamp [GPS] Duration [days] Detector Listed
+
+55.605 55.606 1239194624 1253831680 169 H1 Yes
+57.588 57.592 1243670016 1253770240 116 H1 Yes
+59.501 59.513 1238290944 1253831680 179 H1 Yes
+62.474 62.478 1244523008 1251895296 85 H1 Yes
+64.257 64.266 1241190400 1252681728 133 H1 No
+64.284 64.291 1238955520 1253831680 172 H1 Yes
+64.470 64.475 1239557632 1253770240 164 H1 Yes
+64.403 64.408 1240341504 1253588992 153 H1 Yes
+64.364 64.375 1238529536 1253831680 177 H1 Yes
+64.415 64.417 1239375872 1253831680 167 H1 Yes
+70.124 70.128 1238408192 1245484544 81 H1 Yes
+80.067 80.070 1238351360 1238351360 0 H1 No
+83.307 83.316 1238351360 1253831680 179 H1 Yes
+83.446 83.448 1238831616 1253831680 173 H1 Yes
+85.712 85.715 1239194624 1253831680 169 H1 Yes
+85.964 85.965 1239738880 1253165568 155 H1 Yes
+99.966 99.979 1238290944 1253831680 179 H1 Yes
+107.113 107.119 1241129984 1253709824 145 H1 Yes
+140.253 140.254 1238955520 1245424128 74 H1 Yes
+151.800 151.800 1253105152 1253105152 0 H1 Yes
+199.946 199.955 1242149888 1253770240 134 H1 Yes
+213.301 213.301 1242339840 1242339840 0 L1 Yes
+
+TABLE VIII. Frequency bands containing line-crossing outliers. As described in Sec. VII C 1, these could be produced because
+of the presence of a transient instrumental artifact or the frequency evolution of a candidate drifting away from the spectral
+disturbance. Overlapping frequency bands were grouped together for the sake of simplicity. Outliers belonging to this category
+show at least one per-segment F-statistic value greater than 100. Timestamps refer to the first and last coherent segments
+(Tcoh ' 17h) for which at least one of those candidates showed an F-statistic value over 50. The last column relates these
+bands to the list of unidentified lines [31].
+
+Min. frequency [Hz] Max. frequency [Hz] Listed
+
+53.709 53.721 No
+55.603 55.609 Yes
+57.583 57.600 Yes
+62.823 62.828 Yes
+64.400 64.411 Yes
+83.442 83.453 Yes
+85.815 85.824 No
+
+TABLE IX. Frequency bands containing outliers discarded by the detector consistency veto as described in Sec. VII C 2.
+Overlapping frequency bands were grouped together for the sake of simplicity. The last column relates these bands to the list
+of unidentified lines of the H1 detector [31].
+
+
+
+All-sky search in early O3 LIGO data for continuous gravitational-wave signals from
+unknown neutron stars in binary systems
+
+R. Abbott,1 T. D. Abbott,2 S. Abraham,3 F. Acernese,4, 5 K. Ackley,6 A. Adams,7 C. Adams,8 R. X. Adhikari,1
+
+V. B. Adya,9 C. Affeldt,10, 11 D. Agarwal,3 M. Agathos,12, 13 K. Agatsuma,14 N. Aggarwal,15 O. D. Aguiar,16
+
+L. Aiello,17, 18, 19 A. Ain,20, 21 P. Ajith,22 K. M. Aleman,23 G. Allen,24 A. Allocca,25, 5 P. A. Altin,9 A. Amato,26
+
+S. Anand,1 A. Ananyeva,1 S. B. Anderson,1 W. G. Anderson,27 S. V. Angelova,28 S. Ansoldi,29, 30 J. M. Antelis,31
+
+S. Antier,32 S. Appert,1 K. Arai,1 M. C. Araya,1 J. S. Areeda,23 M. Arène,32 N. Arnaud,33, 34 S. M. Aronson,35
+
+K. G. Arun,36 Y. Asali,37 G. Ashton,6 S. M. Aston,8 P. Astone,38 F. Aubin,39 P. Aufmuth,10, 11 K. AultONeal,31
+
+C. Austin,2 S. Babak,32 F. Badaracco,18, 19 M. K. M. Bader,40 S. Bae,41 A. M. Baer,7 S. Bagnasco,42 Y. Bai,1
+
+J. Baird,32 M. Ball,43 G. Ballardin,34 S. W. Ballmer,44 M. Bals,31 A. Balsamo,7 G. Baltus,45 S. Banagiri,46
+
+D. Bankar,3 R. S. Bankar,3 J. C. Barayoga,1 C. Barbieri,47, 48, 49 B. C. Barish,1 D. Barker,50 P. Barneo,51
+
+S. Barnum,52 F. Barone,53, 5 B. Barr,54 L. Barsotti,52 M. Barsuglia,32 D. Barta,55 J. Bartlett,50 M. A. Barton,54
+
+I. Bartos,35 R. Bassiri,56 A. Basti,21, 20 M. Bawaj,57, 58 J. C. Bayley,54 A. C. Baylor,27 M. Bazzan,59, 60 B. Bécsy,61
+
+V. M. Bedakihale,62 M. Bejger,63 I. Belahcene,33 V. Benedetto,64 D. Beniwal,65 M. G. Benjamin,31 T. F. Bennett,66
+
+J. D. Bentley,14 M. BenYaala,28 F. Bergamin,10, 11 B. K. Berger,56 S. Bernuzzi,13 D. Bersanetti,67 A. Bertolini,40
+
+J. Betzwieser,8 R. Bhandare,68 A. V. Bhandari,3 D. Bhattacharjee,69 S. Bhaumik,35 J. Bidler,23 I. A. Bilenko,70
+
+G. Billingsley,1 R. Birney,71 O. Birnholtz,72 S. Biscans,1, 52 M. Bischi,73, 74 S. Biscoveanu,52 A. Bisht,10, 11
+
+B. Biswas,3 M. Bitossi,34, 20 M.-A. Bizouard,75 J. K. Blackburn,1 J. Blackman,76 C. D. Blair,77, 8 D. G. Blair,77
+
+R. M. Blair,50 F. Bobba,78, 79 N. Bode,10, 11 M. Boer,75 G. Bogaert,75 M. Boldrini,80, 38 F. Bondu,81 E. Bonilla,56
+
+R. Bonnand,39 P. Booker,10, 11 B. A. Boom,40 R. Bork,1 V. Boschi,20 N. Bose,82 S. Bose,3 V. Bossilkov,77
+
+V. Boudart,45 Y. Bouffanais,59, 60 A. Bozzi,34 C. Bradaschia,20 P. R. Brady,27 A. Bramley,8 A. Branch,8
+
+M. Branchesi,18, 19 J. E. Brau,43 M. Breschi,13 T. Briant,83 J. H. Briggs,54 A. Brillet,75 M. Brinkmann,10, 11
+
+P. Brockill,27 A. F. Brooks,1 J. Brooks,34 D. D. Brown,65 S. Brunett,1 G. Bruno,84 R. Bruntz,7 J. Bryant,14
+
+A. Buikema,52 T. Bulik,85 H. J. Bulten,40, 86 A. Buonanno,87, 88 R. Buscicchio,14 D. Buskulic,39 R. L. Byer,56
+
+L. Cadonati,89 M. Caesar,90 G. Cagnoli,26 C. Cahillane,1 H. W. Cain III,2 J. Calderón Bustillo,91 J. D. Callaghan,54
+
+T. A. Callister,92, 93 E. Calloni,25, 5 J. B. Camp,94 M. Canepa,95, 67 M. Cannavacciuolo,78 K. C. Cannon,96 H. Cao,65
+
+J. Cao,97 E. Capote,23 G. Carapella,78, 79 F. Carbognani,34 J. B. Carlin,98 M. F. Carney,15 M. Carpinelli,99, 100
+
+G. Carullo,21, 20 T. L. Carver,17 J. Casanueva Diaz,34 C. Casentini,101, 102 G. Castaldi,103 S. Caudill,40, 104
+
+M. Cavaglià,69 F. Cavalier,33 R. Cavalieri,34 G. Cella,20 P. Cerdá-Durán,105 E. Cesarini,102 W. Chaibi,75
+
+K. Chakravarti,3 B. Champion,106 C.-H. Chan,107 C. Chan,96 C. L. Chan,91 K. Chandra,82 P. Chanial,34 S. Chao,107
+
+P. Charlton,108 E. A. Chase,15 E. Chassande-Mottin,32 D. Chatterjee,27 M. Chaturvedi,68 K. Chatziioannou,1, 92, 93
+
+A. Chen,91 H. Y. Chen,109 J. Chen,107 X. Chen,77 Y. Chen,76 Z. Chen,17 H. Cheng,35 C. K. Cheong,91
+
+H. Y. Cheung,91 H. Y. Chia,35 F. Chiadini,110, 79 R. Chierici,111 A. Chincarini,67 M. L. Chiofalo,21, 20
+
+A. Chiummo,34 G. Cho,112 H. S. Cho,113 S. Choate,90 R. K. Choudhary,77 S. Choudhary,3 N. Christensen,75
+
+Q. Chu,77 S. Chua,83 K. W. Chung,114 G. Ciani,59, 60 P. Ciecielag,63 M. Cieślar,63 M. Cifaldi,101, 102
+
+A. A. Ciobanu,65 R. Ciolfi,115, 60 F. Cipriano,75 A. Cirone,95, 67 F. Clara,50 E. N. Clark,116 J. A. Clark,89
+
+L. Clarke,117 P. Clearwater,98 S. Clesse,118 F. Cleva,75 E. Coccia,18, 19 P.-F. Cohadon,83 D. E. Cohen,33
+
+L. Cohen,2 M. Colleoni,119 C. G. Collette,120 M. Colpi,47, 48 C. M. Compton,50 M. Constancio Jr.,16 L. Conti,60
+
+S. J. Cooper,14 P. Corban,8 T. R. Corbitt,2 I. Cordero-Carrión,121 S. Corezzi,58, 57 K. R. Corley,37 N. Cornish,61
+
+D. Corre,33 A. Corsi,122 S. Cortese,34 C. A. Costa,16 R. Cotesta,88 M. W. Coughlin,46 S. B. Coughlin,15, 17
+
+J.-P. Coulon,75 S. T. Countryman,37 B. Cousins,123 P. Couvares,1 P. B. Covas,119 D. M. Coward,77 M. J. Cowart,8
+
+D. C. Coyne,1 R. Coyne,124 J. D. E. Creighton,27 T. D. Creighton,125 A. W. Criswell,46 M. Croquette,83
+
+S. G. Crowder,126 J. R. Cudell,45 T. J. Cullen,2 A. Cumming,54 R. Cummings,54 E. Cuoco,34, 127, 20
+
+M. Curyło,85 T. Dal Canton,88, 33 G. Dálya,128 A. Dana,56 L. M. DaneshgaranBajastani,66 B. D’Angelo,95, 67
+
+S. L. Danilishin,129 S. D’Antonio,102 K. Danzmann,10, 11 C. Darsow-Fromm,130 A. Dasgupta,62 L. E. H. Datrier,54
+
+V. Dattilo,34 I. Dave,68 M. Davier,33 G. S. Davies,131, 132 D. Davis,1 E. J. Daw,133 R. Dean,90 D. DeBra,56
+
+M. Deenadayalan,3 J. Degallaix,134 M. De Laurentis,25, 5 S. Deléglise,83 V. Del Favero,106 F. De Lillo,84 N. De
+Lillo,54 W. Del Pozzo,21, 20 L. M. DeMarchi,15 F. De Matteis,101, 102 V. D’Emilio,17 N. Demos,52 T. Dent,131
+
+A. Depasse,84 R. De Pietri,135, 136 R. De Rosa,25, 5 C. De Rossi,34 R. DeSalvo,103 R. De Simone,110 S. Dhurandhar,3
+
+M. C. Díaz,125 M. Diaz-Ortiz Jr.,35 N. A. Didio,44 T. Dietrich,88 L. Di Fiore,5 C. Di Fronzo,14 C. Di Giorgio,78, 79
+
+F. Di Giovanni,105 T. Di Girolamo,25, 5 A. Di Lieto,21, 20 B. Ding,120 S. Di Pace,80, 38 I. Di Palma,80, 38
+
+F. Di Renzo,21, 20 A. K. Divakarla,35 A. Dmitriev,14 Z. Doctor,43 L. D’Onofrio,25, 5 F. Donovan,52 K. L. Dooley,17
+
+S. Doravari,3 I. Dorrington,17 M. Drago,18, 19 J. C. Driggers,50 Y. Drori,1 Z. Du,97 J.-G. Ducoin,33 P. Dupej,54
+
+O. Durante,78, 79 D. D’Urso,99, 100 P.-A. Duverne,33 S. E. Dwyer,50 P. J. Easter,6 M. Ebersold,137 G. Eddolls,54
+
+
+
+17
+
+B. Edelman,43 T. B. Edo,1, 133 O. Edy,132 A. Effler,8 J. Eichholz,9 S. S. Eikenberry,35 M. Eisenmann,39
+
+R. A. Eisenstein,52 A. Ejlli,17 L. Errico,25, 5 R. C. Essick,109 H. Estellés,119 D. Estevez,138 Z. Etienne,139 T. Etzel,1
+
+M. Evans,52 T. M. Evans,8 B. E. Ewing,123 V. Fafone,101, 102, 18 H. Fair,44 S. Fairhurst,17 X. Fan,97 A. M. Farah,109
+
+S. Farinon,67 B. Farr,43 W. M. Farr,92, 93 N. W. Farrow,6 E. J. Fauchon-Jones,17 M. Favata,140 M. Fays,45, 133
+
+M. Fazio,141 J. Feicht,1 M. M. Fejer,56 F. Feng,32 E. Fenyvesi,55, 142 D. L. Ferguson,89 A. Fernandez-Galiana,52
+
+I. Ferrante,21, 20 T. A. Ferreira,16 F. Fidecaro,21, 20 P. Figura,85 I. Fiori,34 M. Fishbach,15, 109 R. P. Fisher,7
+
+J. M. Fishner,52 R. Fittipaldi,143, 79 V. Fiumara,144, 79 R. Flaminio,39, 145 E. Floden,46 E. Flynn,23
+
+H. Fong,96 J. A. Font,105, 146 B. Fornal,147 P. W. F. Forsyth,9 A. Franke,130 S. Frasca,80, 38 F. Frasconi,20
+
+C. Frederick,148 Z. Frei,128 A. Freise,149 R. Frey,43 P. Fritschel,52 V. V. Frolov,8 G. G. Fronzé,42 P. Fulda,35
+
+M. Fyffe,8 H. A. Gabbard,54 B. U. Gadre,88 S. M. Gaebel,14 J. R. Gair,88 J. Gais,91 S. Galaudage,6 R. Gamba,13
+
+D. Ganapathy,52 A. Ganguly,22 S. G. Gaonkar,3 B. Garaventa,67, 95 C. García-Núñez,71 C. García-Quirós,119
+
+F. Garufi,25, 5 B. Gateley,50 S. Gaudio,31 V. Gayathri,35 G. Gemme,67 A. Gennai,20 J. George,68 L. Gergely,150
+
+P. Gewecke,130 S. Ghonge,89 Abhirup. Ghosh,88 Archisman Ghosh,151 Shaon Ghosh,27, 140 Shrobana Ghosh,17
+
+Sourath Ghosh,35 B. Giacomazzo,47, 48, 49 L. Giacoppo,80, 38 J. A. Giaime,2, 8 K. D. Giardina,8 D. R. Gibson,71
+
+C. Gier,28 M. Giesler,76 P. Giri,20, 21 F. Gissi,64 J. Glanzer,2 A. E. Gleckl,23 P. Godwin,123 E. Goetz,152 R. Goetz,35
+
+N. Gohlke,10, 11 B. Goncharov,6 G. González,2 A. Gopakumar,153 M. Gosselin,34 R. Gouaty,39 B. Grace,9
+
+A. Grado,154, 5 M. Granata,134 V. Granata,78 A. Grant,54 S. Gras,52 P. Grassia,1 C. Gray,50 R. Gray,54 G. Greco,57
+
+A. C. Green,35 R. Green,17 A. M. Gretarsson,31 E. M. Gretarsson,31 D. Griffith,1 W. Griffiths,17 H. L. Griggs,89
+
+G. Grignani,58, 57 A. Grimaldi,155, 156 E. Grimes,31 S. J. Grimm,18, 19 H. Grote,17 S. Grunewald,88 P. Gruning,33
+
+J. G. Guerrero,23 G. M. Guidi,73, 74 A. R. Guimaraes,2 G. Guixé,51 H. K. Gulati,62 H.-K. Guo,147 Y. Guo,40
+
+Anchal Gupta,1 Anuradha Gupta,157 P. Gupta,40, 104 E. K. Gustafson,1 R. Gustafson,158 F. Guzman,116
+
+L. Haegel,32 O. Halim,159, 30 E. D. Hall,52 E. Z. Hamilton,17 G. Hammond,54 M. Haney,137 J. Hanks,50 C. Hanna,123
+
+M. D. Hannam,17 O. A. Hannuksela,104, 40, 91 H. Hansen,50 T. J. Hansen,31 J. Hanson,8 T. Harder,75 T. Hardwick,2
+
+K. Haris,40, 104, 22 J. Harms,18, 19 G. M. Harry,160 I. W. Harry,132 D. Hartwig,130 B. Haskell,63 R. K. Hasskew,8
+
+C.-J. Haster,52 K. Haughian,54 F. J. Hayes,54 J. Healy,106 A. Heidmann,83 M. C. Heintze,8 J. Heinze,10, 11
+
+J. Heinzel,161 H. Heitmann,75 F. Hellman,162 P. Hello,33 A. F. Helmling-Cornell,43 G. Hemming,34 M. Hendry,54
+
+I. S. Heng,54 E. Hennes,40 J. Hennig,10, 11 M. H. Hennig,10, 11 F. Hernandez Vivanco,6 M. Heurs,10, 11 S. Hild,129, 40
+
+P. Hill,28 A. S. Hines,116 S. Hochheim,10, 11 D. Hofman,134 J. N. Hohmann,130 A. M. Holgado,24 N. A. Holland,9
+
+I. J. Hollows,133 Z. J. Holmes,65 K. Holt,8 D. E. Holz,109 P. Hopkins,17 J. Hough,54 E. J. Howell,77 C. G. Hoy,17
+
+D. Hoyland,14 A. Hreibi,10, 11 Y. Hsu,107 Y. Huang,52 M. T. Hübner,6 A. D. Huddart,117 E. A. Huerta,24
+
+B. Hughey,31 V. Hui,39 S. Husa,119 S. H. Huttner,54 R. Huxford,123 T. Huynh-Dinh,8 B. Idzkowski,85 A. Iess,101, 102
+
+H. Inchauspe,35 C. Ingram,65 G. Intini,80, 38 M. Isi,52 K. Isleif,130 B. R. Iyer,22 V. JaberianHamedan,77 T. Jacqmin,83
+
+S. J. Jadhav,163 S. P. Jadhav,3 A. L. James,17 A. Z. Jan,106 K. Jani,89 K. Janssens,164 N. N. Janthalur,163
+
+P. Jaranowski,165 D. Jariwala,35 R. Jaume,119 A. C. Jenkins,114 M. Jeunon,46 W. Jia,52 J. Jiang,35 G. R. Johns,7
+
+A. W. Jones,77 D. I. Jones,166 J. D. Jones,50 P. Jones,14 R. Jones,54 R. J. G. Jonker,40 L. Ju,77 J. Junker,10, 11
+
+C. V. Kalaghatgi,17 V. Kalogera,15 B. Kamai,1 S. Kandhasamy,3 G. Kang,41 J. B. Kanner,1 Y. Kao,107
+
+S. J. Kapadia,22 D. P. Kapasi,9 C. Karathanasis,167 S. Karki,69 R. Kashyap,123 M. Kasprzack,1 W. Kastaun,10, 11
+
+S. Katsanevas,34 E. Katsavounidis,52 W. Katzman,8 T. Kaur,77 K. Kawabe,50 F. Kéfélian,75 D. Keitel,119
+
+J. S. Key,168 S. Khadka,56 F. Y. Khalili,70 I. Khan,18, 102 S. Khan,17 E. A. Khazanov,169 N. Khetan,18, 19
+
+M. Khursheed,68 N. Kijbunchoo,9 C. Kim,170 J. C. Kim,171 K. Kim,172 W. S. Kim,173 Y.-M. Kim,174 C. Kimball,15
+
+P. J. King,50 M. Kinley-Hanlon,54 R. Kirchhoff,10, 11 J. S. Kissel,50 L. Kleybolte,130 S. Klimenko,35 A. M. Knee,152
+
+T. D. Knowles,139 E. Knyazev,52 P. Koch,10, 11 G. Koekoek,40, 129 S. Koley,40 P. Kolitsidou,17 M. Kolstein,167
+
+K. Komori,52 V. Kondrashov,1 A. Kontos,175 N. Koper,10, 11 M. Korobko,130 M. Kovalam,77 D. B. Kozak,1
+
+V. Kringel,10, 11 N. V. Krishnendu,10, 11 A. Królak,176, 177 G. Kuehn,10, 11 F. Kuei,107 A. Kumar,163 P. Kumar,178
+
+Rahul Kumar,50 Rakesh Kumar,62 K. Kuns,52 S. Kwang,27 D. Laghi,21, 20 E. Lalande,179 T. L. Lam,91
+
+A. Lamberts,75, 180 M. Landry,50 B. B. Lane,52 R. N. Lang,52 J. Lange,181, 106 B. Lantz,56 I. La Rosa,39
+
+A. Lartaux-Vollard,33 P. D. Lasky,6 M. Laxen,8 A. Lazzarini,1 C. Lazzaro,59, 60 P. Leaci,80, 38 S. Leavey,10, 11
+
+Y. K. Lecoeuche,50 H. M. Lee,172 H. W. Lee,171 J. Lee,112 K. Lee,56 J. Lehmann,10, 11 A. Lemaître,182 E. Leon,23
+
+N. Leroy,33 N. Letendre,39 Y. Levin,6 J. N. Leviton,158 A. K. Y. Li,1 B. Li,107 J. Li,15 T. G. F. Li,91 X. Li,76
+
+F. Linde,183, 40 S. D. Linker,66 J. N. Linley,54 T. B. Littenberg,184 J. Liu,10, 11 K. Liu,107 X. Liu,27
+
+M. Llorens-Monteagudo,105 R. K. L. Lo,1 A. Lockwood,185 M. L. Lollie,2 L. T. London,52 A. Longo,186, 187
+
+D. Lopez,137 M. Lorenzini,101, 102 V. Loriette,188 M. Lormand,8 G. Losurdo,20 J. D. Lough,10, 11 C. O. Lousto,106
+
+G. Lovelace,23 H. Lück,10, 11 D. Lumaca,101, 102 A. P. Lundgren,132 R. Macas,17 M. MacInnis,52 D. M. Macleod,17
+
+I. A. O. MacMillan,1 A. Macquet,75 I. Magaña Hernandez,27 F. Magaña-Sandoval,35 C. Magazzù,20
+
+R. M. Magee,123 R. Maggiore,14 E. Majorana,80, 38 I. Maksimovic,188 S. Maliakal,1 A. Malik,68 N. Man,75
+
+
+
+18
+
+V. Mandic,46 V. Mangano,80, 38 J. L. Mango,189 G. L. Mansell,50, 52 M. Manske,27 M. Mantovani,34 M. Mapelli,59, 60
+
+F. Marchesoni,190, 57 F. Marion,39 Z. Mark,76 S. Márka,37 Z. Márka,37 C. Markakis,12 A. S. Markosyan,56
+
+A. Markowitz,1 E. Maros,1 A. Marquina,121 S. Marsat,32 F. Martelli,73, 74 I. W. Martin,54 R. M. Martin,140
+
+M. Martinez,167 V. Martinez,26 K. Martinovic,114 D. V. Martynov,14 E. J. Marx,52 H. Masalehdan,130 K. Mason,52
+
+E. Massera,133 A. Masserot,39 T. J. Massinger,52 M. Masso-Reid,54 S. Mastrogiovanni,32 A. Matas,88
+
+M. Mateu-Lucena,119 F. Matichard,1, 52 M. Matiushechkina,10, 11 N. Mavalvala,52 J. J. McCann,77 R. McCarthy,50
+
+D. E. McClelland,9 P. McClincy,123 S. McCormick,8 L. McCuller,52 G. I. McGhee,54 S. C. McGuire,191
+
+C. McIsaac,132 J. McIver,152 D. J. McManus,9 T. McRae,9 S. T. McWilliams,139 D. Meacher,27 M. Mehmet,10, 11
+
+A. K. Mehta,88 A. Melatos,98 D. A. Melchor,23 G. Mendell,50 A. Menendez-Vazquez,167 C. S. Menoni,141
+
+R. A. Mercer,27 L. Mereni,134 K. Merfeld,43 E. L. Merilh,50 J. D. Merritt,43 M. Merzougui,75 S. Meshkov,1, ∗
+
+C. Messenger,54 C. Messick,181 P. M. Meyers,98 F. Meylahn,10, 11 A. Mhaske,3 A. Miani,155, 156 H. Miao,14
+
+I. Michaloliakos,35 C. Michel,134 H. Middleton,98 L. Milano,25 A. L. Miller,84, 35 M. Millhouse,98 J. C. Mills,17
+
+E. Milotti,159, 30 M. C. Milovich-Goff,66 O. Minazzoli,75, 192 Y. Minenkov,102 Ll. M. Mir,167 A. Mishkin,35
+
+C. Mishra,193 T. Mishra,35 T. Mistry,133 S. Mitra,3 V. P. Mitrofanov,70 G. Mitselmakher,35 R. Mittleman,52
+
+Geoffrey Mo,52 K. Mogushi,69 S. R. P. Mohapatra,52 S. R. Mohite,27 I. Molina,23 M. Molina-Ruiz,162 M. Mondin,66
+
+M. Montani,73, 74 C. J. Moore,14 D. Moraru,50 F. Morawski,63 A. More,3 C. Moreno,31 G. Moreno,50
+
+S. Morisaki,96 B. Mours,138 C. M. Mow-Lowry,14 S. Mozzon,132 F. Muciaccia,80, 38 Arunava Mukherjee,194, 54
+
+D. Mukherjee,123 Soma Mukherjee,125 Subroto Mukherjee,62 N. Mukund,10, 11 A. Mullavey,8 J. Munch,65
+
+E. A. Muñiz,44 P. G. Murray,54 R. Musenich,67, 95 S. L. Nadji,10, 11 A. Nagar,42, 195 I. Nardecchia,101, 102
+
+L. Naticchioni,38 B. Nayak,66 R. K. Nayak,196 B. F. Neil,77 J. Neilson,64, 79 G. Nelemans,197 T. J. N. Nelson,8
+
+M. Nery,10, 11 A. Neunzert,168 K. Y. Ng,52 S. W. S. Ng,65 C. Nguyen,32 P. Nguyen,43 T. Nguyen,52 S. A. Nichols,2
+
+S. Nissanke,198, 40 F. Nocera,34 M. Noh,152 M. Norman,17 C. North,17 L. K. Nuttall,132 J. Oberling,50
+
+B. D. O’Brien,35 J. O’Dell,117 G. Oganesyan,18, 19 J. J. Oh,173 S. H. Oh,173 F. Ohme,10, 11 H. Ohta,96
+
+M. A. Okada,16 C. Olivetto,34 R. Oram,8 B. O’Reilly,8 R. G. Ormiston,46 N. D. Ormsby,7 L. F. Ortega,35
+
+R. O’Shaughnessy,106 E. O’Shea,178 S. Ossokine,88 C. Osthelder,1 D. J. Ottaway,65 H. Overmier,8 A. E. Pace,123
+
+G. Pagano,21, 20 M. A. Page,77 G. Pagliaroli,18, 19 A. Pai,82 S. A. Pai,68 J. R. Palamos,43 O. Palashov,169
+
+C. Palomba,38 P. K. Panda,163 P. T. H. Pang,40, 104 C. Pankow,15 F. Pannarale,80, 38 B. C. Pant,68 F. Paoletti,20
+
+A. Paoli,34 A. Paolone,38, 199 W. Parker,8, 191 D. Pascucci,40 A. Pasqualetti,34 R. Passaquieti,21, 20 D. Passuello,20
+
+M. Patel,7 B. Patricelli,34, 20 E. Payne,6 T. C. Pechsiri,35 M. Pedraza,1 M. Pegoraro,60 A. Pele,8 S. Penn,200
+
+A. Perego,155, 156 A. Pereira,26 T. Pereira,201 C. J. Perez,50 C. Périgois,39 A. Perreca,155, 156 S. Perriès,111
+
+J. Petermann,130 D. Petterson,1 H. P. Pfeiffer,88 K. A. Pham,46 K. S. Phukon,40, 183, 3 O. J. Piccinni,38 M. Pichot,75
+
+M. Piendibene,21, 20 F. Piergiovanni,73, 74 L. Pierini,80, 38 V. Pierro,64, 79 G. Pillant,34 F. Pilo,20 L. Pinard,134
+
+I. M. Pinto,64, 79, 202 B. J. Piotrzkowski,27 K. Piotrzkowski,84 M. Pirello,50 M. Pitkin,203 E. Placidi,80, 38
+
+W. Plastino,186, 187 C. Pluchar,116 R. Poggiani,21, 20 E. Polini,39 D. Y. T. Pong,91 S. Ponrathnam,3 P. Popolizio,34
+
+E. K. Porter,32 J. Powell,204 M. Pracchia,39 T. Pradier,138 A. K. Prajapati,62 K. Prasai,56 R. Prasanna,163
+
+G. Pratten,14 T. Prestegard,27 M. Principe,64, 202, 79 G. A. Prodi,205, 156 L. Prokhorov,14 P. Prosposito,101, 102
+
+L. Prudenzi,88 A. Puecher,40, 104 M. Punturo,57 F. Puosi,20, 21 P. Puppo,38 M. Pürrer,88 H. Qi,17 V. Quetschke,125
+
+P. J. Quinonez,31 R. Quitzow-James,69 F. J. Raab,50 G. Raaijmakers,198, 40 H. Radkins,50 N. Radulesco,75
+
+P. Raffai,128 S. X. Rail,179 S. Raja,68 C. Rajan,68 K. E. Ramirez,125 T. D. Ramirez,23 A. Ramos-Buades,88
+
+J. Rana,123 P. Rapagnani,80, 38 U. D. Rapol,206 B. Ratto,31 V. Raymond,17 N. Raza,152 M. Razzano,21, 20 J. Read,23
+
+L. A. Rees,160 T. Regimbau,39 L. Rei,67 S. Reid,28 D. H. Reitze,1, 35 P. Relton,17 P. Rettegno,207, 42 F. Ricci,80, 38
+
+C. J. Richardson,31 J. W. Richardson,1 L. Richardson,116 P. M. Ricker,24 G. Riemenschneider,207, 42 K. Riles,158
+
+M. Rizzo,15 N. A. Robertson,1, 54 R. Robie,1 F. Robinet,33 A. Rocchi,102 J. A. Rocha,23 S. Rodriguez,23
+
+R. D. Rodriguez-Soto,31 L. Rolland,39 J. G. Rollins,1 V. J. Roma,43 M. Romanelli,81 R. Romano,4, 5 C. L. Romel,50
+
+A. Romero,167 I. M. Romero-Shaw,6 J. H. Romie,8 C. A. Rose,27 D. Rosińska,85 S. G. Rosofsky,24 M. P. Ross,185
+
+S. Rowan,54 S. J. Rowlinson,14 Santosh Roy,3 Soumen Roy,208 D. Rozza,99, 100 P. Ruggi,34 K. Ryan,50 S. Sachdev,123
+
+T. Sadecki,50 J. Sadiq,131 M. Sakellariadou,114 O. S. Salafia,49, 48, 47 L. Salconi,34 M. Saleem,36 F. Salemi,155, 156
+
+A. Samajdar,40, 104 E. J. Sanchez,1 J. H. Sanchez,23 L. E. Sanchez,1 N. Sanchis-Gual,209 J. R. Sanders,210
+
+A. Sanuy,51 T. R. Saravanan,3 N. Sarin,6 B. Sassolas,134 H. Satari,77 O. Sauter,35, 39 R. L. Savage,50 V. Savant,3
+
+D. Sawant,82 H. L. Sawant,3 S. Sayah,134 D. Schaetzl,1 M. Scheel,76 J. Scheuer,15 A. Schindler-Tyka,35 P. Schmidt,14
+
+R. Schnabel,130 M. Schneewind,10, 11 R. M. S. Schofield,43 A. Schönbeck,130 B. W. Schulte,10, 11 B. F. Schutz,17, 10
+
+E. Schwartz,17 J. Scott,54 S. M. Scott,9 M. Seglar-Arroyo,39 E. Seidel,24 D. Sellers,8 A. Sergeev,169
+
+A. S. Sengupta,208 N. Sennett,88 D. Sentenac,34 E. G. Seo,91 V. Sequino,25, 5 Y. Setyawati,10, 11 T. Shaffer,50
+
+M. S. Shahriar,15 B. Shams,147 S. Sharifi,2 A. Sharma,18, 19 P. Sharma,68 P. Shawhan,87 N. S. Shcheblanov,182
+
+H. Shen,24 M. Shikauchi,96 R. Shink,179 D. H. Shoemaker,52 D. M. Shoemaker,181 K. Shukla,162 S. ShyamSundar,68
+
+
+
+19
+
+M. Sieniawska,85 D. Sigg,50 L. P. Singer,94 D. Singh,123 N. Singh,85 A. Singha,129, 40 A. M. Sintes,119 V. Sipala,99, 100
+
+V. Skliris,17 B. J. J. Slagmolen,9 T. J. Slaven-Blair,77 J. Smetana,14 J. R. Smith,23 R. J. E. Smith,6 S. N. Somala,211
+
+E. J. Son,173 K. Soni,3 S. Soni,2 B. Sorazu,54 V. Sordini,111 F. Sorrentino,67 N. Sorrentino,21, 20 R. Soulard,75
+
+T. Souradeep,206, 3 E. Sowell,122 V. Spagnuolo,129, 40 A. P. Spencer,54 M. Spera,59, 60 A. K. Srivastava,62
+
+V. Srivastava,44 K. Staats,15 C. Stachie,75 D. A. Steer,32 J. Steinlechner,129, 40 S. Steinlechner,129, 40 D. J. Stops,14
+
+M. Stover,148 K. A. Strain,54 L. C. Strang,98 G. Stratta,212, 74 A. Strunk,50 R. Sturani,201 A. L. Stuver,90
+
+J. Südbeck,130 S. Sudhagar,3 V. Sudhir,52 H. G. Suh,27 T. Z. Summerscales,213 H. Sun,77 L. Sun,9, 1 S. Sunil,62
+
+A. Sur,63 J. Suresh,96 P. J. Sutton,17 B. L. Swinkels,40 M. J. Szczepańczyk,35 P. Szewczyk,85 M. Tacca,40
+
+S. C. Tait,54 C. Talbot,1 A. J. Tanasijczuk,84 D. B. Tanner,35 D. Tao,1 A. Tapia,23 E. N. Tapia San Martin,40
+
+J. D. Tasson,161 R. Tenorio,119 L. Terkowski,130 M. Test,27 M. P. Thirugnanasambandam,3 M. Thomas,8
+
+P. Thomas,50 J. E. Thompson,17 S. R. Thondapu,68 K. A. Thorne,8 E. Thrane,6 Shubhanshu Tiwari,137
+
+Srishti Tiwari,153 V. Tiwari,17 K. Toland,54 A. E. Tolley,132 M. Tonelli,21, 20 A. Torres-Forné,105 C. I. Torrie,1
+
+I. Tosta e Melo,99, 100 D. Töyrä,9 A. Trapananti,190, 57 F. Travasso,57, 190 G. Traylor,8 M. C. Tringali,34
+
+A. Tripathee,158 L. Troiano,214, 79 A. Trovato,32 R. J. Trudeau,1 D. S. Tsai,107 D. Tsai,107 K. W. Tsang,40, 215, 104
+
+M. Tse,52 R. Tso,76 L. Tsukada,96 D. Tsuna,96 T. Tsutsui,96 M. Turconi,75 A. S. Ubhi,14 R. P. Udall,89, 1 K. Ueno,96
+
+D. Ugolini,216 C. S. Unnikrishnan,153 A. L. Urban,2 S. A. Usman,109 A. C. Utina,129, 40 H. Vahlbruch,10, 11
+
+G. Vajente,1 A. Vajpeyi,6 G. Valdes,2 M. Valentini,155, 156 V. Valsan,27 N. van Bakel,40 M. van Beuzekom,40
+
+J. F. J. van den Brand,129, 86, 40 C. Van Den Broeck,104, 40 D. C. Vander-Hyde,44 L. van der Schaaf,40
+
+J. V. van Heijningen,77, 84 M. Vardaro,183, 40 A. F. Vargas,98 V. Varma,76 M. Vasúth,55 A. Vecchio,14 G. Vedovato,60
+
+J. Veitch,54 P. J. Veitch,65 K. Venkateswara,185 J. Venneberg,10, 11 G. Venugopalan,1 D. Verkindt,39 Y. Verma,68
+
+D. Veske,37 F. Vetrano,73 A. Viceré,73, 74 A. D. Viets,189 V. Villa-Ortega,131 J.-Y. Vinet,75 S. Vitale,52 T. Vo,44
+
+H. Vocca,58, 57 E. R. G. von Reis,50 J. von Wrangel,10, 11 C. Vorvick,50 S. P. Vyatchanin,70 L. E. Wade,148
+
+M. Wade,148 K. J. Wagner,106 R. C. Walet,40 M. Walker,7 G. S. Wallace,28 L. Wallace,1 S. Walsh,27 J. Z. Wang,158
+
+W. H. Wang,125 R. L. Ward,9 J. Warner,50 M. Was,39 N. Y. Washington,1 J. Watchi,120 B. Weaver,50 L. Wei,10, 11
+
+M. Weinert,10, 11 A. J. Weinstein,1 R. Weiss,52 C. M. Weller,185 F. Wellmann,10, 11 L. Wen,77 P. Weßels,10, 11
+
+J. W. Westhouse,31 K. Wette,9 J. T. Whelan,106 D. D. White,23 B. F. Whiting,35 C. Whittle,52 D. Wilken,10, 11
+
+D. Williams,54 M. J. Williams,54 A. R. Williamson,132 J. L. Willis,1 B. Willke,10, 11 D. J. Wilson,116
+
+W. Winkler,10, 11 C. C. Wipf,1 T. Wlodarczyk,88 G. Woan,54 J. Woehler,10, 11 J. K. Wofford,106 I. C. F. Wong,91
+
+D. S. Wu,10, 11 D. M. Wysocki,27, 106 L. Xiao,1 H. Yamamoto,1 F. W. Yang,147 L. Yang,141 Y. Yang,35
+
+Z. Yang,46 M. J. Yap,9 D. W. Yeeles,17 A. B. Yelikar,106 M. Ying,107 A. Yoon,7 Hang Yu,76 Haocun Yu,52
+
+A. Zadrożny,177 M. Zanolin,31 T. Zelenova,34 J.-P. Zendri,60 M. Zevin,15 J. Zhang,77 L. Zhang,1 R. Zhang,35
+
+T. Zhang,14 C. Zhao,77 G. Zhao,120 Y. Zhao,147 Z. Zhou,15 X. J. Zhu,6 M. E. Zucker,1, 52 and J. Zweizig1
+
+(The LIGO Scientific Collaboration and the Virgo Collaboration)
+1LIGO Laboratory, California Institute of Technology, Pasadena, CA 91125, USA
+
+2Louisiana State University, Baton Rouge, LA 70803, USA
+3Inter-University Centre for Astronomy and Astrophysics, Pune 411007, India
+
+4Dipartimento di Farmacia, Università di Salerno, I-84084 Fisciano, Salerno, Italy
+5INFN, Sezione di Napoli, Complesso Universitario di Monte S.Angelo, I-80126 Napoli, Italy
+
+6OzGrav, School of Physics & Astronomy, Monash University, Clayton 3800, Victoria, Australia
+7Christopher Newport University, Newport News, VA 23606, USA
+
+8LIGO Livingston Observatory, Livingston, LA 70754, USA
+9OzGrav, Australian National University, Canberra, Australian Capital Territory 0200, Australia
+
+10Max Planck Institute for Gravitational Physics (Albert Einstein Institute), D-30167 Hannover, Germany
+11Leibniz Universität Hannover, D-30167 Hannover, Germany
+
+12University of Cambridge, Cambridge CB2 1TN, United Kingdom
+13Theoretisch-Physikalisches Institut, Friedrich-Schiller-Universität Jena, D-07743 Jena, Germany
+
+14University of Birmingham, Birmingham B15 2TT, United Kingdom
+15Center for Interdisciplinary Exploration & Research in Astrophysics (CIERA),
+
+Northwestern University, Evanston, IL 60208, USA
+16Instituto Nacional de Pesquisas Espaciais, 12227-010 São José dos Campos, São Paulo, Brazil
+
+17Gravity Exploration Institute, Cardiff University, Cardiff CF24 3AA, United Kingdom
+18Gran Sasso Science Institute (GSSI), I-67100 L’Aquila, Italy
+
+19INFN, Laboratori Nazionali del Gran Sasso, I-67100 Assergi, Italy
+20INFN, Sezione di Pisa, I-56127 Pisa, Italy
+
+21Università di Pisa, I-56127 Pisa, Italy
+22International Centre for Theoretical Sciences, Tata Institute of Fundamental Research, Bengaluru 560089, India
+
+23California State University Fullerton, Fullerton, CA 92831, USA
+24NCSA, University of Illinois at Urbana-Champaign, Urbana, IL 61801, USA
+
+
+
+20
+
+25Università di Napoli “Federico II”, Complesso Universitario di Monte S.Angelo, I-80126 Napoli, Italy
+26Université de Lyon, Université Claude Bernard Lyon 1,
+
+CNRS, Institut Lumière Matière, F-69622 Villeurbanne, France
+27University of Wisconsin-Milwaukee, Milwaukee, WI 53201, USA
+
+28SUPA, University of Strathclyde, Glasgow G1 1XQ, United Kingdom
+29Dipartimento di Matematica e Informatica, Università di Udine, I-33100 Udine, Italy
+
+30INFN, Sezione di Trieste, I-34127 Trieste, Italy
+31Embry-Riddle Aeronautical University, Prescott, AZ 86301, USA
+
+32Université de Paris, CNRS, Astroparticule et Cosmologie, F-75006 Paris, France
+33Université Paris-Saclay, CNRS/IN2P3, IJCLab, 91405 Orsay, France
+
+34European Gravitational Observatory (EGO), I-56021 Cascina, Pisa, Italy
+35University of Florida, Gainesville, FL 32611, USA
+
+36Chennai Mathematical Institute, Chennai 603103, India
+37Columbia University, New York, NY 10027, USA
+
+38INFN, Sezione di Roma, I-00185 Roma, Italy
+39Laboratoire d’Annecy de Physique des Particules (LAPP), Univ. Grenoble Alpes,
+
+Université Savoie Mont Blanc, CNRS/IN2P3, F-74941 Annecy, France
+40Nikhef, Science Park 105, 1098 XG Amsterdam, Netherlands
+
+41Korea Institute of Science and Technology Information, Daejeon 34141, South Korea
+42INFN Sezione di Torino, I-10125 Torino, Italy
+43University of Oregon, Eugene, OR 97403, USA
+44Syracuse University, Syracuse, NY 13244, USA
+
+45Université de Liège, B-4000 Liège, Belgium
+46University of Minnesota, Minneapolis, MN 55455, USA
+
+47Università degli Studi di Milano-Bicocca, I-20126 Milano, Italy
+48INFN, Sezione di Milano-Bicocca, I-20126 Milano, Italy
+
+49INAF, Osservatorio Astronomico di Brera sede di Merate, I-23807 Merate, Lecco, Italy
+50LIGO Hanford Observatory, Richland, WA 99352, USA
+
+51Institut de Ciències del Cosmos, Universitat de Barcelona,
+C/ Martí i Franquès 1, Barcelona, 08028, Spain
+
+52LIGO Laboratory, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+53Dipartimento di Medicina, Chirurgia e Odontoiatria “Scuola Medica Salernitana”,
+
+Università di Salerno, I-84081 Baronissi, Salerno, Italy
+54SUPA, University of Glasgow, Glasgow G12 8QQ, United Kingdom
+
+55Wigner RCP, RMKI, H-1121 Budapest, Konkoly Thege Miklós út 29-33, Hungary
+56Stanford University, Stanford, CA 94305, USA
+
+57INFN, Sezione di Perugia, I-06123 Perugia, Italy
+58Università di Perugia, I-06123 Perugia, Italy
+
+59Università di Padova, Dipartimento di Fisica e Astronomia, I-35131 Padova, Italy
+60INFN, Sezione di Padova, I-35131 Padova, Italy
+
+61Montana State University, Bozeman, MT 59717, USA
+62Institute for Plasma Research, Bhat, Gandhinagar 382428, India
+
+63Nicolaus Copernicus Astronomical Center, Polish Academy of Sciences, 00-716, Warsaw, Poland
+64Dipartimento di Ingegneria, Università del Sannio, I-82100 Benevento, Italy
+65OzGrav, University of Adelaide, Adelaide, South Australia 5005, Australia
+
+66California State University, Los Angeles, 5151 State University Dr, Los Angeles, CA 90032, USA
+67INFN, Sezione di Genova, I-16146 Genova, Italy
+68RRCAT, Indore, Madhya Pradesh 452013, India
+
+69Missouri University of Science and Technology, Rolla, MO 65409, USA
+70Faculty of Physics, Lomonosov Moscow State University, Moscow 119991, Russia
+
+71SUPA, University of the West of Scotland, Paisley PA1 2BE, United Kingdom
+72Bar-Ilan University, Ramat Gan, 5290002, Israel
+
+73Università degli Studi di Urbino “Carlo Bo”, I-61029 Urbino, Italy
+74INFN, Sezione di Firenze, I-50019 Sesto Fiorentino, Firenze, Italy
+
+75Artemis, Université Côte d’Azur, Observatoire de la Côte d’Azur, CNRS, F-06304 Nice, France
+76CaRT, California Institute of Technology, Pasadena, CA 91125, USA
+
+77OzGrav, University of Western Australia, Crawley, Western Australia 6009, Australia
+78Dipartimento di Fisica “E.R. Caianiello”, Università di Salerno, I-84084 Fisciano, Salerno, Italy
+
+79INFN, Sezione di Napoli, Gruppo Collegato di Salerno,
+Complesso Universitario di Monte S. Angelo, I-80126 Napoli, Italy
+
+80Università di Roma “La Sapienza”, I-00185 Roma, Italy
+81Univ Rennes, CNRS, Institut FOTON - UMR6082, F-3500 Rennes, France
+
+82Indian Institute of Technology Bombay, Powai, Mumbai 400 076, India
+83Laboratoire Kastler Brossel, Sorbonne Université, CNRS,
+
+ENS-Université PSL, Collège de France, F-75005 Paris, France
+
+
+
+21
+
+84Université catholique de Louvain, B-1348 Louvain-la-Neuve, Belgium
+85Astronomical Observatory Warsaw University, 00-478 Warsaw, Poland
+
+86VU University Amsterdam, 1081 HV Amsterdam, Netherlands
+87University of Maryland, College Park, MD 20742, USA
+
+88Max Planck Institute for Gravitational Physics (Albert Einstein Institute), D-14476 Potsdam, Germany
+89School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+
+90Villanova University, 800 Lancaster Ave, Villanova, PA 19085, USA
+91The Chinese University of Hong Kong, Shatin, NT, Hong Kong
+
+92Stony Brook University, Stony Brook, NY 11794, USA
+93Center for Computational Astrophysics, Flatiron Institute, New York, NY 10010, USA
+
+94NASA Goddard Space Flight Center, Greenbelt, MD 20771, USA
+95Dipartimento di Fisica, Università degli Studi di Genova, I-16146 Genova, Italy
+
+96RESCEU, University of Tokyo, Tokyo, 113-0033, Japan.
+97Tsinghua University, Beijing 100084, China
+
+98OzGrav, University of Melbourne, Parkville, Victoria 3010, Australia
+99Università degli Studi di Sassari, I-07100 Sassari, Italy
+
+100INFN, Laboratori Nazionali del Sud, I-95125 Catania, Italy
+101Università di Roma Tor Vergata, I-00133 Roma, Italy
+
+102INFN, Sezione di Roma Tor Vergata, I-00133 Roma, Italy
+103University of Sannio at Benevento, I-82100 Benevento,
+Italy and INFN, Sezione di Napoli, I-80100 Napoli, Italy
+
+104Institute for Gravitational and Subatomic Physics (GRASP),
+Utrecht University, Princetonplein 1, 3584 CC Utrecht, Netherlands
+
+105Departamento de Astronomía y Astrofísica, Universitat de València, E-46100 Burjassot, València, Spain
+106Rochester Institute of Technology, Rochester, NY 14623, USA
+
+107National Tsing Hua University, Hsinchu City, 30013 Taiwan, Republic of China
+108OzGrav, Charles Sturt University, Wagga Wagga, New South Wales 2678, Australia
+
+109University of Chicago, Chicago, IL 60637, USA
+110Dipartimento di Ingegneria Industriale (DIIN),
+
+Università di Salerno, I-84084 Fisciano, Salerno, Italy
+111Institut de Physique des 2 Infinis de Lyon (IP2I), CNRS/IN2P3,
+
+Université de Lyon, Université Claude Bernard Lyon 1, F-69622 Villeurbanne, France
+112Seoul National University, Seoul 08826, South Korea
+
+113Pusan National University, Busan 46241, South Korea
+114King’s College London, University of London, London WC2R 2LS, United Kingdom
+
+115INAF, Osservatorio Astronomico di Padova, I-35122 Padova, Italy
+116University of Arizona, Tucson, AZ 85721, USA
+
+117Rutherford Appleton Laboratory, Didcot OX11 0DE, United Kingdom
+118Université libre de Bruxelles, Avenue Franklin Roosevelt 50 - 1050 Bruxelles, Belgium
+
+119Universitat de les Illes Balears, IAC3—IEEC, E-07122 Palma de Mallorca, Spain
+120Université Libre de Bruxelles, Brussels 1050, Belgium
+
+121Departamento de Matemáticas, Universitat de València, E-46100 Burjassot, València, Spain
+122Texas Tech University, Lubbock, TX 79409, USA
+
+123The Pennsylvania State University, University Park, PA 16802, USA
+124University of Rhode Island, Kingston, RI 02881, USA
+
+125The University of Texas Rio Grande Valley, Brownsville, TX 78520, USA
+126Bellevue College, Bellevue, WA 98007, USA
+
+127Scuola Normale Superiore, Piazza dei Cavalieri, 7 - 56126 Pisa, Italy
+128MTA-ELTE Astrophysics Research Group, Institute of Physics, Eötvös University, Budapest 1117, Hungary
+
+129Maastricht University, 6200 MD, Maastricht, Netherlands
+130Universität Hamburg, D-22761 Hamburg, Germany
+
+131IGFAE, Campus Sur, Universidade de Santiago de Compostela, 15782 Spain
+132University of Portsmouth, Portsmouth, PO1 3FX, United Kingdom
+
+133The University of Sheffield, Sheffield S10 2TN, United Kingdom
+134Laboratoire des Matériaux Avancés (LMA), Institut de Physique des 2 Infinis (IP2I) de Lyon,
+
+CNRS/IN2P3, Université de Lyon, Université Claude Bernard Lyon 1, F-69622 Villeurbanne, France
+135Dipartimento di Scienze Matematiche, Fisiche e Informatiche, Università di Parma, I-43124 Parma, Italy
+
+136INFN, Sezione di Milano Bicocca, Gruppo Collegato di Parma, I-43124 Parma, Italy
+137Physik-Institut, University of Zurich, Winterthurerstrasse 190, 8057 Zurich, Switzerland
+
+138Université de Strasbourg, CNRS, IPHC UMR 7178, F-67000 Strasbourg, France
+139West Virginia University, Morgantown, WV 26506, USA
+140Montclair State University, Montclair, NJ 07043, USA
+
+141Colorado State University, Fort Collins, CO 80523, USA
+142Institute for Nuclear Research, Hungarian Academy of Sciences, Bem t’er 18/c, H-4026 Debrecen, Hungary
+
+143CNR-SPIN, c/o Università di Salerno, I-84084 Fisciano, Salerno, Italy
+
+
+
+22
+
+144Scuola di Ingegneria, Università della Basilicata, I-85100 Potenza, Italy
+145Gravitational Wave Science Project, National Astronomical
+
+Observatory of Japan (NAOJ), Mitaka City, Tokyo 181-8588, Japan
+146Observatori Astronòmic, Universitat de València, E-46980 Paterna, València, Spain
+
+147The University of Utah, Salt Lake City, UT 84112, USA
+148Kenyon College, Gambier, OH 43022, USA
+
+149Vrije Universiteit Amsterdam, 1081 HV, Amsterdam, Netherlands
+150University of Szeged, Dóm tér 9, Szeged 6720, Hungary
+
+151Universiteit Gent, B-9000 Gent, Belgium
+152University of British Columbia, Vancouver, BC V6T 1Z4, Canada
+
+153Tata Institute of Fundamental Research, Mumbai 400005, India
+154INAF, Osservatorio Astronomico di Capodimonte, I-80131 Napoli, Italy
+
+155Università di Trento, Dipartimento di Fisica, I-38123 Povo, Trento, Italy
+156INFN, Trento Institute for Fundamental Physics and Applications, I-38123 Povo, Trento, Italy
+
+157The University of Mississippi, University, MS 38677, USA
+158University of Michigan, Ann Arbor, MI 48109, USA
+
+159Dipartimento di Fisica, Università di Trieste, I-34127 Trieste, Italy
+160American University, Washington, D.C. 20016, USA
+
+161Carleton College, Northfield, MN 55057, USA
+162University of California, Berkeley, CA 94720, USA
+
+163Directorate of Construction, Services & Estate Management, Mumbai 400094 India
+164Universiteit Antwerpen, Prinsstraat 13, 2000 Antwerpen, Belgium
+
+165University of Białystok, 15-424 Białystok, Poland
+166University of Southampton, Southampton SO17 1BJ, United Kingdom
+
+167Institut de Física d’Altes Energies (IFAE), Barcelona Institute
+of Science and Technology, and ICREA, E-08193 Barcelona, Spain
+
+168University of Washington Bothell, Bothell, WA 98011, USA
+169Institute of Applied Physics, Nizhny Novgorod, 603950, Russia
+
+170Ewha Womans University, Seoul 03760, South Korea
+171Inje University Gimhae, South Gyeongsang 50834, South Korea
+
+172Korea Astronomy and Space Science Institute, Daejeon 34055, South Korea
+173National Institute for Mathematical Sciences, Daejeon 34047, South Korea
+
+174Ulsan National Institute of Science and Technology, Ulsan 44919, South Korea
+175Bard College, 30 Campus Rd, Annandale-On-Hudson, NY 12504, USA
+
+176Institute of Mathematics, Polish Academy of Sciences, 00656 Warsaw, Poland
+177National Center for Nuclear Research, 05-400 Świerk-Otwock, Poland
+
+178Cornell University, Ithaca, NY 14850, USA
+179Université de Montréal/Polytechnique, Montreal, Quebec H3T 1J4, Canada
+
+180Laboratoire Lagrange, Université Côte d’Azur,
+Observatoire Côte d’Azur, CNRS, F-06304 Nice, France
+
+181Department of Physics, University of Texas, Austin, TX 78712, USA
+182NAVIER, École des Ponts, Univ Gustave Eiffel, CNRS, Marne-la-Vallée, France
+
+183Institute for High-Energy Physics, University of Amsterdam,
+Science Park 904, 1098 XH Amsterdam, Netherlands
+
+184NASA Marshall Space Flight Center, Huntsville, AL 35811, USA
+185University of Washington, Seattle, WA 98195, USA
+
+186Dipartimento di Matematica e Fisica, Università degli Studi Roma Tre, I-00146 Roma, Italy
+187INFN, Sezione di Roma Tre, I-00146 Roma, Italy
+
+188ESPCI, CNRS, F-75005 Paris, France
+189Concordia University Wisconsin, Mequon, WI 53097, USA
+
+190Università di Camerino, Dipartimento di Fisica, I-62032 Camerino, Italy
+191Southern University and A&M College, Baton Rouge, LA 70813, USA
+192Centre Scientifique de Monaco, 8 quai Antoine Ier, MC-98000, Monaco
+
+193Indian Institute of Technology Madras, Chennai 600036, India
+194Saha Institute of Nuclear Physics, Bidhannagar, West Bengal 700064, India
+195Institut des Hautes Etudes Scientifiques, F-91440 Bures-sur-Yvette, France
+
+196Indian Institute of Science Education and Research, Kolkata, Mohanpur, West Bengal 741252, India
+197Department of Astrophysics/IMAPP, Radboud University Nijmegen,
+
+P.O. Box 9010, 6500 GL Nijmegen, Netherlands
+198GRAPPA, Anton Pannekoek Institute for Astronomy and Institute for High-Energy Physics,
+
+University of Amsterdam, Science Park 904, 1098 XH Amsterdam, Netherlands
+199Consiglio Nazionale delle Ricerche - Istituto dei Sistemi Complessi, Piazzale Aldo Moro 5, I-00185 Roma, Italy
+
+200Hobart and William Smith Colleges, Geneva, NY 14456, USA
+201International Institute of Physics, Universidade Federal do Rio Grande do Norte, Natal RN 59078-970, Brazil
+
+202Museo Storico della Fisica e Centro Studi e Ricerche “Enrico Fermi”, I-00184 Roma, Italy
+
+
+
+23
+
+203Lancaster University, Lancaster LA1 4YW, United Kingdom
+204OzGrav, Swinburne University of Technology, Hawthorn VIC 3122, Australia
+
+205Università di Trento, Dipartimento di Matematica, I-38123 Povo, Trento, Italy
+206Indian Institute of Science Education and Research, Pune, Maharashtra 411008, India
+
+207Dipartimento di Fisica, Università degli Studi di Torino, I-10125 Torino, Italy
+208Indian Institute of Technology, Palaj, Gandhinagar, Gujarat 382355, India
+
+209Centro de Astrofísica e Gravitação (CENTRA),
+Departamento de Física, Instituto Superior Técnico,
+Universidade de Lisboa, 1049-001 Lisboa, Portugal
+
+210Marquette University, 11420 W. Clybourn St., Milwaukee, WI 53233, USA
+211Indian Institute of Technology Hyderabad, Sangareddy, Khandi, Telangana 502285, India
+
+212INAF, Osservatorio di Astrofisica e Scienza dello Spazio, I-40129 Bologna, Italy
+213Andrews University, Berrien Springs, MI 49104, USA
+
+214Dipartimento di Scienze Aziendali - Management and Innovation Systems (DISA-MIS),
+Università di Salerno, I-84084 Fisciano, Salerno, Italy
+
+215Van Swinderen Institute for Particle Physics and Gravity,
+University of Groningen, Nijenborgh 4, 9747 AG Groningen, Netherlands
+
+216Trinity University, San Antonio, TX 78212, USA
+(Dated: March 22, 2021)
+
+∗ Deceased, August 2020.
+
+
+ All-sky search in early O3 LIGO data for continuous gravitational-wave signals from unknown neutron stars in binary systems
+ Abstract
+ I Introduction
+ II Signal Model
+ III Data used
+ IV The Search Pipeline
+ A Ranking statistics
+ B Toplist construction
+
+ V Post Processing
+ A Clustering
+ B Line Veto
+
+ VI Sensitivity
+ VII Follow Up
+ A MCMC follow-up configuration
+ 1 Sampler configuration
+ 2 Prior choice
+
+ B Setting up a threshold
+ C Surviving Outliers
+ 1 Line-crossing outliers
+ 2 Detector consistency veto
+ 3 Powerline sidebands
+
+
+ VIII Conclusion
+ IX Acknowledgements
+ References
+ A Frequency bands containing outliers
+
+ All-sky search in early O3 LIGO data for continuous gravitational-wave signals from unknown neutron stars in binary systems
+
